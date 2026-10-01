@@ -198,7 +198,7 @@ python3 harness/task1_failure_modes.py data/grid-2026-09-20/answers --json data/
 python3 harness/build_report.py</pre>
 <p>No GPU needed. To add runs: <span class="mono">RUNS=3 harness/run_all.sh &lt;model-key&gt;</span>.</p>
 
-<footer>Fieldbook · code Apache-2.0, text and results CC BY 4.0 (saved model outputs excluded) · Copyright 2026 Rafael Kyra ·
+<footer>Model names are trademarks of their owners and appear only to identify what was tested; no affiliation or endorsement is implied. “Fieldbook” here means a notebook of dated field notes, not a product. · Fieldbook · code Apache-2.0, text and results CC BY 4.0 (saved model outputs excluded) · Copyright 2026 Rafael Kyra ·
 <a href="https://github.com/rafaelKyra/local-llm-fieldbook">source</a> · <a href="https://github.com/rafaelKyra/local-llm-fieldbook/blob/main/CORRECTIONS.md">corrections</a></footer>
 </body></html>
 """

@@ -68,6 +68,17 @@ treat them as claims, not results:
 
 See [CORRECTIONS.md](CORRECTIONS.md) for what has been retracted or changed, and why.
 
+## Names and affiliation
+
+Model names (Qwen, Gemma, Nemotron, MiniCPM, Phi and others) are trademarks of their owners and
+are used only to say which model was tested. This project is not affiliated with, endorsed by or
+sponsored by any of them. "Fieldbook" is used here as a plain description of a notebook of dated
+field notes; it is not a product name, and this project is unrelated to any software of the same
+name.
+
+Results describe specific builds, run once on one machine; they are not statements about the
+models' makers or about how the models behave elsewhere.
+
 ## Layout
 
 ```
