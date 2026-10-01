@@ -1,0 +1,155 @@
+{
+ "dirk-qwen3.8-27b": {
+  "reason": "pass",
+  "first_tool": "search_code",
+  "tools": [
+   "search_code",
+   "read_file",
+   "write_file"
+  ],
+  "sed_in_run_command": false
+ },
+ "gemma-4-26b-a4b-it-qat-claude-opus-distill-v2": {
+  "reason": "never reaches write_file",
+  "first_tool": "search_code",
+  "tools": [
+   "search_code"
+  ],
+  "sed_in_run_command": false
+ },
+ "gemma-4-a4b-98e-v7-coder-it": {
+  "reason": "never reaches write_file",
+  "first_tool": "search_code",
+  "tools": [
+   "search_code"
+  ],
+  "sed_in_run_command": false
+ },
+ "ista-daslab-qwen3.8-27b-gsq-rco-unsloth-mtp": {
+  "reason": "never reaches write_file",
+  "first_tool": "run_command",
+  "tools": [
+   "run_command"
+  ],
+  "sed_in_run_command": true
+ },
+ "kat-coder-v2.5-dev-35b-a3b-mtp-abliterated-i1": {
+  "reason": "pass",
+  "first_tool": "search_code",
+  "tools": [
+   "search_code",
+   "search_code",
+   "read_file",
+   "write_file",
+   "read_file",
+   "write_file"
+  ],
+  "sed_in_run_command": false
+ },
+ "minicpm5-2b": {
+  "reason": "never reaches write_file",
+  "first_tool": "search_code",
+  "tools": [
+   "search_code",
+   "read_file"
+  ],
+  "sed_in_run_command": false
+ },
+ "nex-agi_nex-n2.5-mini": {
+  "reason": "never reaches write_file",
+  "first_tool": "search_code",
+  "tools": [
+   "search_code",
+   "run_command"
+  ],
+  "sed_in_run_command": false
+ },
+ "nvidia-nemotron-3.5-lightning-30b-a3b-mtp": {
+  "reason": "never reaches write_file",
+  "first_tool": "search_code",
+  "tools": [
+   "search_code",
+   "run_command",
+   "run_command"
+  ],
+  "sed_in_run_command": true
+ },
+ "qwen3.8-27b-cold-fusion-gain-v1.1-nm-dau-neo-max-mtp": {
+  "reason": "never reaches write_file",
+  "first_tool": "run_command",
+  "tools": [
+   "run_command"
+  ],
+  "sed_in_run_command": true
+ },
+ "qwen3.8-27b-gsq-rco": {
+  "reason": "never reaches write_file",
+  "first_tool": "run_command",
+  "tools": [
+   "run_command"
+  ],
+  "sed_in_run_command": false
+ },
+ "qwen3.8-27b-twin-turbo-fable-cold-fusion-709-ultra-heretic-uncensored-nm-dau-neo-mtp": {
+  "reason": "pass",
+  "first_tool": "search_code",
+  "tools": [
+   "search_code",
+   "read_file",
+   "write_file",
+   "read_file",
+   "write_file",
+   "read_file",
+   "write_file"
+  ],
+  "sed_in_run_command": false
+ },
+ "qwen3.8-27b@q4_k_s": {
+  "reason": "never reaches write_file",
+  "first_tool": "run_command",
+  "tools": [
+   "run_command"
+  ],
+  "sed_in_run_command": true
+ },
+ "qwen3.8-27b@q4_k_xl": {
+  "reason": "never reaches write_file",
+  "first_tool": "search_code",
+  "tools": [
+   "search_code",
+   "run_command"
+  ],
+  "sed_in_run_command": true
+ },
+ "qwen3.8-27b@q5_k_m": {
+  "reason": "never reaches write_file",
+  "first_tool": "run_command",
+  "tools": [
+   "run_command"
+  ],
+  "sed_in_run_command": true
+ },
+ "qwopus3.8-27b-flash-1m": {
+  "reason": "incomplete (cut off or errored)",
+  "first_tool": null,
+  "tools": [],
+  "sed_in_run_command": false
+ },
+ "swift-qwen3.8-27b": {
+  "reason": "never reaches write_file",
+  "first_tool": "run_command",
+  "tools": [
+   "run_command"
+  ],
+  "sed_in_run_command": false
+ },
+ "tiel-coder-35b-a3b-mtp": {
+  "reason": "never reaches write_file",
+  "first_tool": "search_code",
+  "tools": [
+   "search_code",
+   "run_command"
+  ],
+  "sed_in_run_command": true
+ }
+}

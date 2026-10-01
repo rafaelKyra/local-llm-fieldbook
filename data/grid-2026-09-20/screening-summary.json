@@ -1,0 +1,47 @@
+{
+ "dirk-qwen3.8-27b": {
+  "runs": 6,
+  "solved": 0,
+  "edited": 2,
+  "hyp": 6,
+  "broke": 0,
+  "calls": 261,
+  "min": 47.3
+ },
+ "qwen3.8-27b-twin-turbo-fable-cold-fusion-709-ultra-heretic-uncensored-nm-dau-neo-mtp": {
+  "runs": 6,
+  "solved": 0,
+  "edited": 1,
+  "hyp": 6,
+  "broke": 0,
+  "calls": 181,
+  "min": 27.499999999999996
+ },
+ "qwen3.8-27b@q5_k_m": {
+  "runs": 6,
+  "solved": 0,
+  "edited": 1,
+  "hyp": 6,
+  "broke": 0,
+  "calls": 269,
+  "min": 85.3
+ },
+ "nvidia-nemotron-3.5-lightning-30b-a3b-mtp": {
+  "runs": 6,
+  "solved": 0,
+  "edited": 1,
+  "hyp": 5,
+  "broke": 0,
+  "calls": 197,
+  "min": 7.5
+ },
+ "kat-coder-v2.5-dev-35b-a3b-mtp-abliterated-i1": {
+  "runs": 6,
+  "solved": 0,
+  "edited": 0,
+  "hyp": 6,
+  "broke": 0,
+  "calls": 152,
+  "min": 15.0
+ }
+}
