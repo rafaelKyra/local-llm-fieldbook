@@ -1,0 +1,71 @@
+{
+ "model": "nail-qwen3.6-35b-a3b-mtp",
+ "elapsedSeconds": 350,
+ "timedOut": false,
+ "threw": null,
+ "planSteps": 4,
+ "planAbandoned": null,
+ "upstreamError": null,
+ "stepsFailed": [
+  "s4:final_report_evidence_missing",
+  "s4:final_report_evidence_missing"
+ ],
+ "aborts": [],
+ "tools": {
+  "submit_plan": 2,
+  "bash": 25,
+  "write": 1
+ },
+ "toolCalls": 28,
+ "stepTokens": 171328,
+ "stepCosts": [
+  14556,
+  5675,
+  27829,
+  32173,
+  2266,
+  10628,
+  2744,
+  35120,
+  40337
+ ],
+ "gates": {
+  "passed": 7,
+  "blocked": 2,
+  "blockedKinds": [
+   "\"no_change_contradiction\"",
+   "\"no_change_contradiction\""
+  ]
+ },
+ "contextWindows": [
+  100000
+ ],
+ "readOnlyKept": false,
+ "reportChecks": {
+  "mentionsJavac": true,
+  "mentionsTests74": true,
+  "mentionsApkSize": true,
+  "claimsNoChanges": true
+ },
+ "loadedContext": "100000",
+ "vramMiBAfterLoad": 23843,
+ "loadSeconds": 63,
+ "projectChanges": {
+  "created": {
+   "count": 1,
+   "names": [
+    "VERIFICATION_REPORT.md"
+   ]
+  },
+  "modified": {
+   "count": 0,
+   "names": []
+  },
+  "deleted": {
+   "count": 0,
+   "names": []
+  }
+ },
+ "armExit": 0,
+ "arm": "Harness Lab (primary arm)"
+}

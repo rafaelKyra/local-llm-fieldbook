@@ -69,6 +69,22 @@ def build(data_dir: Path) -> str:
     if full and best == 3 and worst == 0:
         fisher = (f"<p>Even the best against the worst separate only weakly: 3 of 3 against 0 of 3 gives a Fisher exact "
                   f"two-sided p = {2 / comb(6, 3):.2f}. Three runs per model can order the extremes, not the middle.</p>")
+    add_rows = ""
+    for f in sorted(glob.glob(str(data_dir / "addendum" / "*.json"))):
+        d = json.load(open(f))
+        facts = sum(1 for v in (d.get("reportChecks") or {}).values() if v)
+        wrote = not d.get("readOnlyKept", True)
+        v = ("FAIL" if (d.get("timedOut") or d.get("upstreamError") or d.get("stepsFailed") or d.get("aborts") or wrote)
+             else "PASS" if facts == 4 else "PARTIAL" if facts >= 2 else "FAIL")
+        note = "wrote into the project" if wrote else ""
+        add_rows += (f'<tr><td class="mono">{e(d["model"][:46])}</td><td class="mono">{SYM[v]}</td>'
+                     f'<td class="n">{fmt(d.get("elapsedSeconds"))}</td><td class="n">{fmt(d.get("stepTokens"))}</td>'
+                     f'<td class="n">{d.get("toolCalls", "–")}</td><td class="n">{d.get("loadedContext") or "–"}</td>'
+                     f'<td class="mut">{note}</td></tr>')
+    addendum = (f'''<p><b>Addendum: the two missing models, one extra run each.</b> Both were reinstalled after runs 2 and 3
+and run once, same prompt and settings, outside the registered protocol. They do not change the table above.</p>
+<div class="sc"><table><thead><tr><th>Model</th><th>Verdict</th><th>Seconds</th><th>Tokens</th><th>Tool calls</th><th>Context</th><th>Note</th></tr></thead>
+<tbody>{add_rows}</tbody></table></div>''' if add_rows else "")
     n_pass_all = sum(1 for r in repeated if r["runs"] and r["pass"] == r["runs"])
     consistent = sum(1 for r in repeated if r["repeatable"])
     return f"""
@@ -94,6 +110,7 @@ LM Studio when runs 2 and 3 were made, and keep their single run-1 result.</p>
 <p><b>Screened once, not repeated.</b> These did not meet the repeat rule in run 1. One run is an observation, not evidence
 that a model fails reproducibly.</p>
 <div class="sc"><table><thead><tr>{head}</tr></thead><tbody>{once_rows}</tbody></table></div>
+{addendum}
 <p class="mut">Did not load (excluded from rates): {inf}.</p>
 <h2>Harness notes (secondary)</h2>
 <p>Observations about the arm, not about the models. None was changed in order to obtain the table above.</p>
