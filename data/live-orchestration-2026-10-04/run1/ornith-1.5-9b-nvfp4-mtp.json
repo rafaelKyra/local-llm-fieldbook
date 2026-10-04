@@ -1,0 +1,60 @@
+{
+ "model": "ornith-1.5-9b-nvfp4-mtp",
+ "elapsedSeconds": 600,
+ "timedOut": true,
+ "threw": null,
+ "planSteps": 4,
+ "planAbandoned": null,
+ "upstreamError": null,
+ "stepsFailed": [],
+ "aborts": [],
+ "tools": {
+  "task": 1,
+  "submit_plan": 1,
+  "bash": 16,
+  "read_text_file": 1
+ },
+ "toolCalls": 19,
+ "stepTokens": 16169,
+ "stepCosts": [
+  16169
+ ],
+ "gates": {
+  "passed": 1,
+  "blocked": 0,
+  "blockedKinds": []
+ },
+ "contextWindows": [
+  100000
+ ],
+ "readOnlyKept": false,
+ "reportChecks": {
+  "mentionsJavac": false,
+  "mentionsTests74": false,
+  "mentionsApkSize": false,
+  "claimsNoChanges": false
+ },
+ "loadedContext": "100000",
+ "vramMiBAfterLoad": 9581,
+ "loadSeconds": 18,
+ "projectChanges": {
+  "created": {
+   "count": 3,
+   "names": [
+    "20261004-083640-explorer-qrznq.md",
+    "step1_java.txt",
+    "step2_tests.log"
+   ]
+  },
+  "modified": {
+   "count": 0,
+   "names": []
+  },
+  "deleted": {
+   "count": 0,
+   "names": []
+  }
+ },
+ "armExit": 0,
+ "arm": "Harness Lab (primary arm)"
+}

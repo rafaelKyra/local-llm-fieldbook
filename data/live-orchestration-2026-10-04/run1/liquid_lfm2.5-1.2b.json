@@ -1,0 +1,80 @@
+{
+ "model": "liquid/lfm2.5-1.2b",
+ "elapsedSeconds": 39,
+ "timedOut": false,
+ "threw": null,
+ "planSteps": 4,
+ "planAbandoned": "replan produced no valid plan — no JSON plan found in model output",
+ "upstreamError": null,
+ "stepsFailed": [
+  "s3:ghost",
+  "s4:final_report_evidence_missing",
+  "s4:final_report_evidence_missing"
+ ],
+ "aborts": [],
+ "tools": {
+  "tool_search": 2,
+  "task": 6,
+  "submit_plan": 1
+ },
+ "toolCalls": 9,
+ "stepTokens": 101399,
+ "stepCosts": [
+  16452,
+  17145,
+  16575,
+  17210,
+  16654,
+  17363
+ ],
+ "gates": {
+  "passed": 2,
+  "blocked": 8,
+  "blockedKinds": [
+   "\"no_change_contradiction\"",
+   "\"no_change_contradiction\"",
+   "\"no_change_contradiction\"",
+   "",
+   "\"no_change_contradiction\"",
+   "\"no_change_contradiction\"",
+   "\"no_change_contradiction\"",
+   "\"no_change_contradiction\""
+  ]
+ },
+ "contextWindows": [
+  128000
+ ],
+ "readOnlyKept": false,
+ "reportChecks": {
+  "mentionsJavac": false,
+  "mentionsTests74": false,
+  "mentionsApkSize": false,
+  "claimsNoChanges": false
+ },
+ "loadedContext": "100000",
+ "vramMiBAfterLoad": 3173,
+ "loadSeconds": 5,
+ "projectChanges": {
+  "created": {
+   "count": 6,
+   "names": [
+    "20261004-090406-explorer-yi3pk.md",
+    "20261004-090407-explorer-8udry.md",
+    "20261004-090408-explorer-zvjpt.md",
+    "20261004-090409-explorer-qifuz.md",
+    "20261004-090410-explorer-8tyqz.md",
+    "20261004-090411-verifier-4kip9.md"
+   ]
+  },
+  "modified": {
+   "count": 0,
+   "names": []
+  },
+  "deleted": {
+   "count": 0,
+   "names": []
+  }
+ },
+ "armExit": 0,
+ "arm": "Harness Lab (primary arm)"
+}

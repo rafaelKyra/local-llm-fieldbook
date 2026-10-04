@@ -1,0 +1,68 @@
+{
+ "model": "captaineris-davidau-fusion-12b-i1",
+ "elapsedSeconds": 167,
+ "timedOut": false,
+ "threw": null,
+ "planSteps": 4,
+ "planAbandoned": "replan produced no valid plan — no JSON plan found in model output",
+ "upstreamError": null,
+ "stepsFailed": [
+  "s2:ghost",
+  "s4:final_report_evidence_missing",
+  "s4:final_report_evidence_missing"
+ ],
+ "aborts": [],
+ "tools": {},
+ "toolCalls": 0,
+ "stepTokens": 5093,
+ "stepCosts": [
+  821,
+  522,
+  935,
+  804,
+  1000,
+  1011
+ ],
+ "gates": {
+  "passed": 4,
+  "blocked": 7,
+  "blockedKinds": [
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   ""
+  ]
+ },
+ "contextWindows": [
+  100000
+ ],
+ "readOnlyKept": true,
+ "reportChecks": {
+  "mentionsJavac": false,
+  "mentionsTests74": false,
+  "mentionsApkSize": false,
+  "claimsNoChanges": false
+ },
+ "loadedContext": "100000",
+ "vramMiBAfterLoad": 23364,
+ "loadSeconds": 20,
+ "projectChanges": {
+  "created": {
+   "count": 0,
+   "names": []
+  },
+  "modified": {
+   "count": 0,
+   "names": []
+  },
+  "deleted": {
+   "count": 0,
+   "names": []
+  }
+ },
+ "armExit": 0,
+ "arm": "Harness Lab (primary arm)"
+}

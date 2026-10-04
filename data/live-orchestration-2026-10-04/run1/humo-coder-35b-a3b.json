@@ -1,0 +1,56 @@
+{
+ "model": "humo-coder-35b-a3b",
+ "elapsedSeconds": 601,
+ "timedOut": true,
+ "threw": null,
+ "planSteps": 6,
+ "planAbandoned": null,
+ "upstreamError": null,
+ "stepsFailed": [],
+ "aborts": [],
+ "tools": {
+  "submit_plan": 1,
+  "bash": 8
+ },
+ "toolCalls": 9,
+ "stepTokens": 18864,
+ "stepCosts": [
+  14386,
+  3422,
+  1056
+ ],
+ "gates": {
+  "passed": 3,
+  "blocked": 0,
+  "blockedKinds": []
+ },
+ "contextWindows": [
+  65000
+ ],
+ "readOnlyKept": true,
+ "reportChecks": {
+  "mentionsJavac": false,
+  "mentionsTests74": false,
+  "mentionsApkSize": false,
+  "claimsNoChanges": false
+ },
+ "loadedContext": "65000-auto-offload",
+ "vramMiBAfterLoad": 20050,
+ "loadSeconds": 105,
+ "projectChanges": {
+  "created": {
+   "count": 0,
+   "names": []
+  },
+  "modified": {
+   "count": 0,
+   "names": []
+  },
+  "deleted": {
+   "count": 0,
+   "names": []
+  }
+ },
+ "armExit": 0,
+ "arm": "Harness Lab (primary arm)"
+}

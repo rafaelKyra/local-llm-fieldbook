@@ -1,0 +1,59 @@
+{
+ "model": "nail-qwen3.6-35b-a3b-mtp",
+ "elapsedSeconds": 134,
+ "timedOut": false,
+ "threw": null,
+ "planSteps": 4,
+ "planAbandoned": null,
+ "upstreamError": null,
+ "stepsFailed": [],
+ "aborts": [],
+ "tools": {
+  "submit_plan": 1,
+  "bash": 8
+ },
+ "toolCalls": 9,
+ "stepTokens": 50787,
+ "stepCosts": [
+  14520,
+  5420,
+  27490,
+  3357
+ ],
+ "gates": {
+  "passed": 3,
+  "blocked": 1,
+  "blockedKinds": [
+   ""
+  ]
+ },
+ "contextWindows": [
+  100000
+ ],
+ "readOnlyKept": true,
+ "reportChecks": {
+  "mentionsJavac": true,
+  "mentionsTests74": false,
+  "mentionsApkSize": false,
+  "claimsNoChanges": true
+ },
+ "loadedContext": "100000",
+ "vramMiBAfterLoad": 23530,
+ "loadSeconds": 50,
+ "projectChanges": {
+  "created": {
+   "count": 0,
+   "names": []
+  },
+  "modified": {
+   "count": 0,
+   "names": []
+  },
+  "deleted": {
+   "count": 0,
+   "names": []
+  }
+ },
+ "armExit": 0,
+ "arm": "Harness Lab (primary arm)"
+}

@@ -1,0 +1,60 @@
+{
+ "model": "qwen3.8-27b-orcarouter-gsq-rco-uncensored",
+ "elapsedSeconds": 250,
+ "timedOut": false,
+ "threw": null,
+ "planSteps": 4,
+ "planAbandoned": null,
+ "upstreamError": null,
+ "stepsFailed": [],
+ "aborts": [],
+ "tools": {
+  "submit_plan": 1,
+  "bash": 7
+ },
+ "toolCalls": 8,
+ "stepTokens": 61654,
+ "stepCosts": [
+  14130,
+  22468,
+  3436,
+  21620
+ ],
+ "gates": {
+  "passed": 2,
+  "blocked": 2,
+  "blockedKinds": [
+   "\"diff_or_content\",\"test_run\"",
+   "\"no_change_contradiction\""
+  ]
+ },
+ "contextWindows": [
+  100000
+ ],
+ "readOnlyKept": true,
+ "reportChecks": {
+  "mentionsJavac": false,
+  "mentionsTests74": false,
+  "mentionsApkSize": false,
+  "claimsNoChanges": true
+ },
+ "loadedContext": "100000",
+ "vramMiBAfterLoad": 19436,
+ "loadSeconds": 9,
+ "projectChanges": {
+  "created": {
+   "count": 0,
+   "names": []
+  },
+  "modified": {
+   "count": 0,
+   "names": []
+  },
+  "deleted": {
+   "count": 0,
+   "names": []
+  }
+ },
+ "armExit": 0,
+ "arm": "Harness Lab (primary arm)"
+}

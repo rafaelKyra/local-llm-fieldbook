@@ -1,0 +1,67 @@
+{
+ "model": "plano-orchestrator-4b",
+ "elapsedSeconds": 135,
+ "timedOut": false,
+ "threw": null,
+ "planSteps": 4,
+ "planAbandoned": "replan produced no valid plan — plan has no steps",
+ "upstreamError": null,
+ "stepsFailed": [
+  "s4:final_report_evidence_missing",
+  "s4:final_report_evidence_missing"
+ ],
+ "aborts": [],
+ "tools": {
+  "submit_plan": 1,
+  "bash": 2,
+  "read_text_file": 5,
+  "search_files": 1
+ },
+ "toolCalls": 9,
+ "stepTokens": 37030,
+ "stepCosts": [
+  3558,
+  20871,
+  6180,
+  3645,
+  2776
+ ],
+ "gates": {
+  "passed": 5,
+  "blocked": 3,
+  "blockedKinds": [
+   "",
+   "\"test_run\"",
+   ""
+  ]
+ },
+ "contextWindows": [
+  100000
+ ],
+ "readOnlyKept": true,
+ "reportChecks": {
+  "mentionsJavac": false,
+  "mentionsTests74": false,
+  "mentionsApkSize": false,
+  "claimsNoChanges": false
+ },
+ "loadedContext": "100000",
+ "vramMiBAfterLoad": 17989,
+ "loadSeconds": 8,
+ "projectChanges": {
+  "created": {
+   "count": 0,
+   "names": []
+  },
+  "modified": {
+   "count": 0,
+   "names": []
+  },
+  "deleted": {
+   "count": 0,
+   "names": []
+  }
+ },
+ "armExit": 0,
+ "arm": "Harness Lab (primary arm)"
+}

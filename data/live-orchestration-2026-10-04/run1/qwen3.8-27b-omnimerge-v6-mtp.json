@@ -1,0 +1,60 @@
+{
+ "model": "qwen3.8-27b-omnimerge-v6-mtp",
+ "elapsedSeconds": 345,
+ "timedOut": false,
+ "threw": null,
+ "planSteps": 4,
+ "planAbandoned": null,
+ "upstreamError": null,
+ "stepsFailed": [
+  "s4:read_only_write_mandate_pending"
+ ],
+ "aborts": [],
+ "tools": {
+  "submit_plan": 1,
+  "bash": 18
+ },
+ "toolCalls": 19,
+ "stepTokens": 64150,
+ "stepCosts": [
+  14933,
+  2343,
+  17998,
+  25379,
+  3497
+ ],
+ "gates": {
+  "passed": 5,
+  "blocked": 0,
+  "blockedKinds": []
+ },
+ "contextWindows": [
+  80000
+ ],
+ "readOnlyKept": true,
+ "reportChecks": {
+  "mentionsJavac": true,
+  "mentionsTests74": true,
+  "mentionsApkSize": true,
+  "claimsNoChanges": true
+ },
+ "loadedContext": "80000",
+ "vramMiBAfterLoad": 23800,
+ "loadSeconds": 77,
+ "projectChanges": {
+  "created": {
+   "count": 0,
+   "names": []
+  },
+  "modified": {
+   "count": 0,
+   "names": []
+  },
+  "deleted": {
+   "count": 0,
+   "names": []
+  }
+ },
+ "armExit": 0,
+ "arm": "Harness Lab (primary arm)"
+}

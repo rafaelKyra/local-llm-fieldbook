@@ -1,0 +1,78 @@
+{
+ "model": "minicpm5-2b",
+ "elapsedSeconds": 361,
+ "timedOut": false,
+ "threw": null,
+ "planSteps": 4,
+ "planAbandoned": null,
+ "upstreamError": null,
+ "stepsFailed": [
+  "s4:final_report_evidence_missing",
+  "s4:final_report_evidence_missing"
+ ],
+ "aborts": [],
+ "tools": {
+  "submit_plan": 2,
+  "bash": 60,
+  "write": 3,
+  "read_text_file": 2,
+  "read": 1
+ },
+ "toolCalls": 68,
+ "stepTokens": 77421,
+ "stepCosts": [
+  14199,
+  6057,
+  2501,
+  2118,
+  668,
+  19565,
+  1649,
+  1332,
+  29332
+ ],
+ "gates": {
+  "passed": 2,
+  "blocked": 7,
+  "blockedKinds": [
+   "\"no_change_contradiction\"",
+   "\"no_change_contradiction\"",
+   "\"archive\",\"size\"",
+   "\"archive\",\"size\"",
+   "\"archive\",\"size\"",
+   "\"no_change_contradiction\"",
+   "\"no_change_contradiction\""
+  ]
+ },
+ "contextWindows": [
+  100000
+ ],
+ "readOnlyKept": false,
+ "reportChecks": {
+  "mentionsJavac": true,
+  "mentionsTests74": true,
+  "mentionsApkSize": true,
+  "claimsNoChanges": true
+ },
+ "loadedContext": "100000",
+ "vramMiBAfterLoad": 5729,
+ "loadSeconds": 9,
+ "projectChanges": {
+  "created": {
+   "count": 1,
+   "names": [
+    "verification_report.txt"
+   ]
+  },
+  "modified": {
+   "count": 0,
+   "names": []
+  },
+  "deleted": {
+   "count": 0,
+   "names": []
+  }
+ },
+ "armExit": 0,
+ "arm": "Harness Lab (primary arm)"
+}

@@ -1,0 +1,20 @@
+{
+ "model": "qwen3.8-27b-twinturbo-residual-bonsai-2-pq2_0",
+ "loadFailed": true,
+ "projectChanges": {
+  "created": {
+   "count": 0,
+   "names": []
+  },
+  "modified": {
+   "count": 0,
+   "names": []
+  },
+  "deleted": {
+   "count": 0,
+   "names": []
+  }
+ },
+ "armExit": null,
+ "arm": "Harness Lab (primary arm)"
+}

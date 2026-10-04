@@ -1,0 +1,49 @@
+{
+ "model": "nemotron-orchestrator-8b",
+ "elapsedSeconds": 600,
+ "timedOut": true,
+ "threw": null,
+ "planSteps": null,
+ "planAbandoned": "proposal rejected after retry — plan JSON failed to parse",
+ "upstreamError": null,
+ "stepsFailed": [],
+ "aborts": [],
+ "tools": {},
+ "toolCalls": 0,
+ "stepTokens": 0,
+ "stepCosts": [],
+ "gates": {
+  "passed": 2,
+  "blocked": 0,
+  "blockedKinds": []
+ },
+ "contextWindows": [
+  100000
+ ],
+ "readOnlyKept": true,
+ "reportChecks": {
+  "mentionsJavac": false,
+  "mentionsTests74": false,
+  "mentionsApkSize": false,
+  "claimsNoChanges": false
+ },
+ "loadedContext": "100000",
+ "vramMiBAfterLoad": 19777,
+ "loadSeconds": 13,
+ "projectChanges": {
+  "created": {
+   "count": 0,
+   "names": []
+  },
+  "modified": {
+   "count": 0,
+   "names": []
+  },
+  "deleted": {
+   "count": 0,
+   "names": []
+  }
+ },
+ "armExit": 0,
+ "arm": "Harness Lab (primary arm)"
+}

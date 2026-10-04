@@ -1,0 +1,56 @@
+{
+ "model": "spark-x2.5-4b",
+ "elapsedSeconds": 600,
+ "timedOut": true,
+ "threw": null,
+ "planSteps": null,
+ "planAbandoned": "proposal rejected after retry — no JSON plan found in model output",
+ "upstreamError": null,
+ "stepsFailed": [],
+ "aborts": [],
+ "tools": {
+  "bash": 15,
+  "background_processes": 1
+ },
+ "toolCalls": 16,
+ "stepTokens": 0,
+ "stepCosts": [],
+ "gates": {
+  "passed": 1,
+  "blocked": 3,
+  "blockedKinds": [
+   "",
+   "\"no_change_contradiction\"",
+   "\"no_change_contradiction\""
+  ]
+ },
+ "contextWindows": [
+  100000
+ ],
+ "readOnlyKept": true,
+ "reportChecks": {
+  "mentionsJavac": false,
+  "mentionsTests74": false,
+  "mentionsApkSize": false,
+  "claimsNoChanges": false
+ },
+ "loadedContext": "100000",
+ "vramMiBAfterLoad": 7612,
+ "loadSeconds": 6,
+ "projectChanges": {
+  "created": {
+   "count": 0,
+   "names": []
+  },
+  "modified": {
+   "count": 0,
+   "names": []
+  },
+  "deleted": {
+   "count": 0,
+   "names": []
+  }
+ },
+ "armExit": 0,
+ "arm": "Harness Lab (primary arm)"
+}

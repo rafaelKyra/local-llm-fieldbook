@@ -1,0 +1,76 @@
+{
+ "model": "nvidia_orchestrator-8b",
+ "elapsedSeconds": 389,
+ "timedOut": false,
+ "threw": null,
+ "planSteps": 4,
+ "planAbandoned": null,
+ "upstreamError": null,
+ "stepsFailed": [
+  "s4:final_report_evidence_missing",
+  "s4:final_report_evidence_missing"
+ ],
+ "aborts": [
+  "sdk_replay_loop_exceeded"
+ ],
+ "tools": {
+  "submit_plan": 2,
+  "bash": 35,
+  "todo_write": 6,
+  "write": 3,
+  "read": 2,
+  "stop_background": 1
+ },
+ "toolCalls": 49,
+ "stepTokens": 103090,
+ "stepCosts": [
+  21257,
+  37547,
+  20181,
+  3037,
+  1702,
+  19366
+ ],
+ "gates": {
+  "passed": 1,
+  "blocked": 5,
+  "blockedKinds": [
+   "\"no_change_contradiction\"",
+   "\"no_change_contradiction\"",
+   "\"no_change_contradiction\"",
+   "\"no_change_contradiction\"",
+   "\"no_change_contradiction\""
+  ]
+ },
+ "contextWindows": [
+  100000
+ ],
+ "readOnlyKept": false,
+ "reportChecks": {
+  "mentionsJavac": false,
+  "mentionsTests74": false,
+  "mentionsApkSize": false,
+  "claimsNoChanges": true
+ },
+ "loadedContext": "100000",
+ "vramMiBAfterLoad": 19563,
+ "loadSeconds": 14,
+ "projectChanges": {
+  "created": {
+   "count": 1,
+   "names": [
+    "final_report.txt"
+   ]
+  },
+  "modified": {
+   "count": 0,
+   "names": []
+  },
+  "deleted": {
+   "count": 0,
+   "names": []
+  }
+ },
+ "armExit": 0,
+ "arm": "Harness Lab (primary arm)"
+}

@@ -1,0 +1,63 @@
+{
+ "model": "oxcoder-9b-mernik",
+ "elapsedSeconds": 352,
+ "timedOut": false,
+ "threw": null,
+ "planSteps": 4,
+ "planAbandoned": null,
+ "upstreamError": null,
+ "stepsFailed": [],
+ "aborts": [],
+ "tools": {
+  "submit_plan": 1,
+  "bash": 10,
+  "write": 1,
+  "read_text_file": 1
+ },
+ "toolCalls": 13,
+ "stepTokens": 72785,
+ "stepCosts": [
+  14134,
+  5260,
+  23321,
+  30070
+ ],
+ "gates": {
+  "passed": 2,
+  "blocked": 1,
+  "blockedKinds": [
+   ""
+  ]
+ },
+ "contextWindows": [
+  100000
+ ],
+ "readOnlyKept": false,
+ "reportChecks": {
+  "mentionsJavac": true,
+  "mentionsTests74": false,
+  "mentionsApkSize": true,
+  "claimsNoChanges": true
+ },
+ "loadedContext": "100000",
+ "vramMiBAfterLoad": 9074,
+ "loadSeconds": 4,
+ "projectChanges": {
+  "created": {
+   "count": 1,
+   "names": [
+    "FINAL-VERIFICATION-REPORT.md"
+   ]
+  },
+  "modified": {
+   "count": 0,
+   "names": []
+  },
+  "deleted": {
+   "count": 0,
+   "names": []
+  }
+ },
+ "armExit": 0,
+ "arm": "Harness Lab (primary arm)"
+}

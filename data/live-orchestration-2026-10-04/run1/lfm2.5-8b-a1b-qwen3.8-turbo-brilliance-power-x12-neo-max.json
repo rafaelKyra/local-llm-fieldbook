@@ -1,0 +1,49 @@
+{
+ "model": "lfm2.5-8b-a1b-qwen3.8-turbo-brilliance-power-x12-neo-max",
+ "elapsedSeconds": 16,
+ "timedOut": false,
+ "threw": null,
+ "planSteps": null,
+ "planAbandoned": "proposal rejected after retry — planner_endpoint_failure: Request rejected by upstream (400), possibly model/protocol incompatibility. Check model name, protoco",
+ "upstreamError": "Request rejected by upstream (400), possibly model/protocol incompatibility. Check model name, protocol settings and API endpoint.",
+ "stepsFailed": [],
+ "aborts": [],
+ "tools": {},
+ "toolCalls": 0,
+ "stepTokens": 0,
+ "stepCosts": [],
+ "gates": {
+  "passed": 0,
+  "blocked": 0,
+  "blockedKinds": []
+ },
+ "contextWindows": [
+  100000
+ ],
+ "readOnlyKept": true,
+ "reportChecks": {
+  "mentionsJavac": false,
+  "mentionsTests74": false,
+  "mentionsApkSize": false,
+  "claimsNoChanges": false
+ },
+ "loadedContext": "100000",
+ "vramMiBAfterLoad": 10731,
+ "loadSeconds": 13,
+ "projectChanges": {
+  "created": {
+   "count": 0,
+   "names": []
+  },
+  "modified": {
+   "count": 0,
+   "names": []
+  },
+  "deleted": {
+   "count": 0,
+   "names": []
+  }
+ },
+ "armExit": 0,
+ "arm": "Harness Lab (primary arm)"
+}

@@ -1,0 +1,44 @@
+{
+ "rule": "run-1 final report held at least 2 of the 4 facts and the model loaded and the endpoint did not reject the request",
+ "candidates": [
+  "aztec-coder-4b",
+  "cyber-tiel-coder-35b-a3b-apex-i-nanoplus",
+  "dirk-qwen3.8-27b",
+  "holo4-35b-a3b-i1",
+  "kat-coder-v2.5-dev-apex-i-miniplus-v2.1",
+  "kiwen1.1-27b-mtp",
+  "minicpm5-2b",
+  "nail-qwen3.6-35b-a3b-mtp",
+  "neohorse-1-4b",
+  "neohorse-1-9b",
+  "nex-n2.5-mini-apex-i-miniplus-v2.1",
+  "orchestra-o1-8b",
+  "orchestrator_v1_gguf",
+  "oxcoder-9b-mernik",
+  "qwen3.8-27b-omnimerge-v6-mtp",
+  "qwen3.8-27b-twin-turbo-fable-cold-fusion-709-l-uncensored-nm-dau-neo-mtp"
+ ],
+ "screening_only": [
+  "captaineris-davidau-fusion-12b-i1",
+  "humo-coder-35b-a3b",
+  "hunter-4b",
+  "liquid/lfm2.5-1.2b",
+  "nemotron-orchestrator-8b",
+  "nvidia_orchestrator-8b",
+  "ornith-1.5-9b-nvfp4-mtp",
+  "plano-orchestrator-4b",
+  "qwen3.8-27b-orcarouter-gsq-rco-uncensored",
+  "spark-x2.5-4b",
+  "tiel-coder-35b-a3b-apex-i-miniplus-v2.1",
+  "triumvirate-qwopus-mimo-ornith-9b-coder",
+  "vibe-coder-7b-max"
+ ],
+ "registered_before_runs": [
+  2,
+  3
+ ],
+ "order_seeds": {
+  "run2": 2026100402,
+  "run3": 2026100403
+ }
+}

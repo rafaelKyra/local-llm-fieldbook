@@ -1,0 +1,63 @@
+{
+ "model": "tiel-coder-35b-a3b-apex-i-miniplus-v2.1",
+ "elapsedSeconds": 508,
+ "timedOut": false,
+ "threw": null,
+ "planSteps": 6,
+ "planAbandoned": null,
+ "upstreamError": null,
+ "stepsFailed": [],
+ "aborts": [],
+ "tools": {
+  "submit_plan": 1,
+  "bash": 16
+ },
+ "toolCalls": 17,
+ "stepTokens": 96289,
+ "stepCosts": [
+  14187,
+  2671,
+  25394,
+  3630,
+  22031,
+  28376
+ ],
+ "gates": {
+  "passed": 2,
+  "blocked": 3,
+  "blockedKinds": [
+   "",
+   "",
+   ""
+  ]
+ },
+ "contextWindows": [
+  100000
+ ],
+ "readOnlyKept": true,
+ "reportChecks": {
+  "mentionsJavac": false,
+  "mentionsTests74": false,
+  "mentionsApkSize": false,
+  "claimsNoChanges": false
+ },
+ "loadedContext": "100000",
+ "vramMiBAfterLoad": 17610,
+ "loadSeconds": 45,
+ "projectChanges": {
+  "created": {
+   "count": 0,
+   "names": []
+  },
+  "modified": {
+   "count": 0,
+   "names": []
+  },
+  "deleted": {
+   "count": 0,
+   "names": []
+  }
+ },
+ "armExit": 0,
+ "arm": "Harness Lab (primary arm)"
+}
