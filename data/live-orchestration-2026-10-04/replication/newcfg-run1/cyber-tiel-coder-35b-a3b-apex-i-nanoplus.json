@@ -1,0 +1,73 @@
+{
+ "model": "cyber-tiel-coder-35b-a3b-apex-i-nanoplus",
+ "elapsedSeconds": 601,
+ "timedOut": true,
+ "threw": null,
+ "planSteps": 5,
+ "planAbandoned": null,
+ "upstreamError": null,
+ "stepsFailed": [
+  "s5:final_report_evidence_missing",
+  "s5:final_report_evidence_missing",
+  "s5:final_report_evidence_missing"
+ ],
+ "aborts": [],
+ "tools": {
+  "submit_plan": 3,
+  "bash": 17,
+  "write": 1
+ },
+ "toolCalls": 21,
+ "stepTokens": 64705,
+ "stepCosts": [
+  14297,
+  1941,
+  18594,
+  4119,
+  1375,
+  2260,
+  22119
+ ],
+ "gates": {
+  "passed": 2,
+  "blocked": 5,
+  "blockedKinds": [
+   "\"no_change_contradiction\"",
+   "\"no_change_contradiction\"",
+   "\"no_change_contradiction\"",
+   "\"no_change_contradiction\"",
+   "\"no_change_contradiction\""
+  ]
+ },
+ "contextWindows": [
+  100000
+ ],
+ "readOnlyKept": false,
+ "reportChecks": {
+  "mentionsJavac": false,
+  "mentionsTests74": false,
+  "mentionsApkSize": false,
+  "claimsNoChanges": false
+ },
+ "loadedContext": "100000",
+ "vramMiBAfterLoad": 15273,
+ "loadSeconds": 6,
+ "projectChanges": {
+  "created": {
+   "count": 1,
+   "names": [
+    "verification-report.md"
+   ]
+  },
+  "modified": {
+   "count": 0,
+   "names": []
+  },
+  "deleted": {
+   "count": 0,
+   "names": []
+  }
+ },
+ "armExit": 0,
+ "arm": "Harness Lab (primary arm)"
+}

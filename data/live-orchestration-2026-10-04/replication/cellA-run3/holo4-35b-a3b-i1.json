@@ -1,0 +1,65 @@
+{
+ "model": "holo4-35b-a3b-i1",
+ "elapsedSeconds": 156,
+ "timedOut": false,
+ "threw": null,
+ "planSteps": 4,
+ "planAbandoned": null,
+ "upstreamError": null,
+ "stepsFailed": [
+  "s4:final_report_evidence_missing"
+ ],
+ "aborts": [],
+ "tools": {
+  "submit_plan": 1,
+  "bash": 6,
+  "write": 2
+ },
+ "toolCalls": 9,
+ "stepTokens": 45062,
+ "stepCosts": [
+  14059,
+  5289,
+  1282,
+  23298,
+  1134
+ ],
+ "gates": {
+  "passed": 4,
+  "blocked": 1,
+  "blockedKinds": [
+   "\"size\""
+  ]
+ },
+ "contextWindows": [
+  100000
+ ],
+ "readOnlyKept": false,
+ "reportChecks": {
+  "mentionsJavac": false,
+  "mentionsTests74": false,
+  "mentionsApkSize": false,
+  "claimsNoChanges": true
+ },
+ "loadedContext": "100000",
+ "vramMiBAfterLoad": 23500,
+ "loadSeconds": 19,
+ "projectChanges": {
+  "created": {
+   "count": 1,
+   "names": [
+    "FINAL_REPORT.md"
+   ]
+  },
+  "modified": {
+   "count": 0,
+   "names": []
+  },
+  "deleted": {
+   "count": 0,
+   "names": []
+  }
+ },
+ "armExit": 0,
+ "arm": "Harness Lab (primary arm)"
+}

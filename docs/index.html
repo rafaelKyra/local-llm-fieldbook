@@ -117,6 +117,15 @@ that a model fails reproducibly.</p>
 and run once, same prompt and settings, outside the registered protocol. They do not change the table above.</p>
 <div class="sc"><table><thead><tr><th>Model</th><th>Verdict</th><th>Seconds</th><th>Tokens</th><th>Tool calls</th><th>Context</th><th>Note</th></tr></thead>
 <tbody><tr><td class="mono">nail-qwen3.6-35b-a3b-mtp</td><td class="mono">x</td><td class="n">350</td><td class="n">171328</td><td class="n">28</td><td class="n">100000</td><td class="mut">wrote into the project</td></tr><tr><td class="mono">qwen3.8-27b-omnimerge-v6-mtp</td><td class="mono">P</td><td class="n">278</td><td class="n">66904</td><td class="n">12</td><td class="n">80000</td><td class="mut"></td></tr></tbody></table></div>
+<h3>Replication check, same day (outside the registered protocol)</h3>
+<div class="note"><b>The 3-of-3 result did not repeat.</b> After the confirmatory runs, the two models with a stable verdict were
+run again under three different LM Studio configurations, three runs each. Neither model reproduced three passes in any
+cell. The original runs did not record the KV-cache type or the sampling values (the harness sends none, so the runtime
+applies its own), so the replication cannot say which setting differs; the runtime's engine selection did not change between
+the later original runs and the replication (judged from its preference file, not from a per-load log). For holo4, the original 3 of 3 against 2 of 9 in the replication gives a Fisher exact two-sided p = 0.045. Read the stable verdict above as "passed three times, once", not as a
+property of the model.</div>
+<div class="sc"><table><thead><tr><th>Configuration</th><th>Model</th><th>Verdicts</th><th>Median s</th></tr></thead><tbody><tr><td>KV cache q8_0; sampling from the model cards (temperature 0.6, top_p 0.95, top_k 20, repeat 1.0; min_p 0 for holo4, 0.05 for cyber-tiel)</td><td class="mono">holo4-35b-a3b-i1</td><td class="mono">~ P ~</td><td class="n">149</td></tr><tr><td>KV cache q8_0; sampling from the model cards (temperature 0.6, top_p 0.95, top_k 20, repeat 1.0; min_p 0 for holo4, 0.05 for cyber-tiel)</td><td class="mono">cyber-tiel-coder-35b-a3b</td><td class="mono">x ~ P</td><td class="n">339</td></tr><tr><td>KV cache q4_0; sampling from the model card (temperature 0.6, top_p 0.95, top_k 20, min_p 0, repeat 1.0)</td><td class="mono">holo4-35b-a3b-i1</td><td class="mono">~ ~ x</td><td class="n">156</td></tr><tr><td>KV cache q8_0; sampling as the owner normally sets it (temperature 0.7, top_p 0.90, top_k 20, min_p 0, repeat 1.0)</td><td class="mono">holo4-35b-a3b-i1</td><td class="mono">~ ~ P</td><td class="n">158</td></tr></tbody></table></div>
+
 <p class="mut">Did not load (excluded from rates): qwen3.8-27b-twinturbo-residual-bonsai-2-pq2_0.</p>
 <h2>Harness notes (secondary)</h2>
 <p>Observations about the arm, not about the models. None was changed in order to obtain the table above.</p>

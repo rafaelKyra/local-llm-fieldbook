@@ -85,6 +85,52 @@ def build(data_dir: Path) -> str:
 and run once, same prompt and settings, outside the registered protocol. They do not change the table above.</p>
 <div class="sc"><table><thead><tr><th>Model</th><th>Verdict</th><th>Seconds</th><th>Tokens</th><th>Tool calls</th><th>Context</th><th>Note</th></tr></thead>
 <tbody>{add_rows}</tbody></table></div>''' if add_rows else "")
+    repl = ""
+    rdir = data_dir / "replication"
+    if rdir.exists():
+        labels = [
+            ("newcfg", "KV cache q8_0; sampling from the model cards (temperature 0.6, top_p 0.95, top_k 20, repeat 1.0; min_p 0 for holo4, 0.05 for cyber-tiel)"),
+            ("cellA", "KV cache q4_0; sampling from the model card (temperature 0.6, top_p 0.95, top_k 20, min_p 0, repeat 1.0)"),
+            ("cellB", "KV cache q8_0; sampling as the owner normally sets it (temperature 0.7, top_p 0.90, top_k 20, min_p 0, repeat 1.0)"),
+        ]
+
+        def v_of(d):
+            facts = sum(1 for x in (d.get("reportChecks") or {}).values() if x)
+            if d.get("upstreamError") or d.get("timedOut") or d.get("threw") or d.get("noResult") or not d.get("readOnlyKept", False):
+                return "FAIL"
+            return "PASS" if facts == 4 else "PARTIAL" if facts >= 2 else "FAIL"
+
+        trs = ""
+        new_pass = new_n = 0
+        for key, label in labels:
+            for model in ("holo4-35b-a3b-i1", "cyber-tiel-coder-35b-a3b-apex-i-nanoplus"):
+                ds = [json.load(open(f)) for f in sorted(glob.glob(str(rdir / f"{key}-run*" / f"{model}.json")))]
+                if not ds:
+                    continue
+                vs = [v_of(d) for d in ds]
+                secs = sorted(d["elapsedSeconds"] for d in ds if d.get("elapsedSeconds") is not None)
+                if model.startswith("holo4"):
+                    new_pass += sum(v == "PASS" for v in vs)
+                    new_n += len(vs)
+                trs += (f'<tr><td>{e(label)}</td><td class="mono">{e(model[:24])}</td><td class="mono">{" ".join(SYM[v] for v in vs)}</td>'
+                        f'<td class="n">{fmt(secs[len(secs) // 2]) if secs else "–"}</td></tr>')
+        old = next((r for r in rows if r["model"].startswith("holo4")), None)
+        fisher2 = ""
+        if old and old["runs"] == 3 and old["pass"] == 3 and new_n:
+            tot, succ = 3 + new_n, 3 + new_pass
+            p_two = sum(comb(succ, k) * comb(tot - succ, 3 - k) for k in range(0, 4)
+                        if comb(succ, k) * comb(tot - succ, 3 - k) <= comb(succ, 3) * comb(tot - succ, 0)) / comb(tot, 3)
+            fisher2 = (f"For holo4, the original 3 of 3 against {new_pass} of {new_n} in the replication gives a Fisher exact "
+                       f"two-sided p = {p_two:.3f}.")
+        repl = f"""<h3>Replication check, same day (outside the registered protocol)</h3>
+<div class="note"><b>The 3-of-3 result did not repeat.</b> After the confirmatory runs, the two models with a stable verdict were
+run again under three different LM Studio configurations, three runs each. Neither model reproduced three passes in any
+cell. The original runs did not record the KV-cache type or the sampling values (the harness sends none, so the runtime
+applies its own), so the replication cannot say which setting differs; the runtime's engine selection did not change between
+the later original runs and the replication (judged from its preference file, not from a per-load log). {fisher2} Read the stable verdict above as "passed three times, once", not as a
+property of the model.</div>
+<div class="sc"><table><thead><tr><th>Configuration</th><th>Model</th><th>Verdicts</th><th>Median s</th></tr></thead><tbody>{trs}</tbody></table></div>
+"""
     n_pass_all = sum(1 for r in repeated if r["runs"] and r["pass"] == r["runs"])
     consistent = sum(1 for r in repeated if r["repeatable"])
     return f"""
@@ -111,6 +157,7 @@ LM Studio when runs 2 and 3 were made, and keep their single run-1 result.</p>
 that a model fails reproducibly.</p>
 <div class="sc"><table><thead><tr>{head}</tr></thead><tbody>{once_rows}</tbody></table></div>
 {addendum}
+{repl}
 <p class="mut">Did not load (excluded from rates): {inf}.</p>
 <h2>Harness notes (secondary)</h2>
 <p>Observations about the arm, not about the models. None was changed in order to obtain the table above.</p>
