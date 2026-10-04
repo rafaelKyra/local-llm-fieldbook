@@ -1,6 +1,6 @@
 # Local LLM Coding Multitest — Tool Execution & Agentic Capabilities
 
-**Purpose:** Evaluate local LLMs (3B-35B) on coding-relevant tasks that test tool execution, agentic reasoning, and structured output. Designed for RTX 3090 24GB + 256GB RAM rigs running LM Studio / OpenCode / rafa.ai.
+**Purpose:** Evaluate local LLMs (3B-35B) on coding-relevant tasks that test tool execution, agentic reasoning, and structured output. Designed for RTX 3090 24GB + 256GB RAM rigs running LM Studio / OpenCode / Harness Lab (primary arm).
 
 **Scoring:** Each task is pass/fail. Median of 3 runs per model. Wall-clock time recorded. Total: 14 tasks.
 
