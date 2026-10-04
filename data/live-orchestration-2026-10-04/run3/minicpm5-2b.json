@@ -1,0 +1,57 @@
+{
+ "model": "minicpm5-2b",
+ "elapsedSeconds": 222,
+ "timedOut": false,
+ "threw": null,
+ "planSteps": 3,
+ "planAbandoned": null,
+ "upstreamError": null,
+ "stepsFailed": [],
+ "aborts": [],
+ "tools": {
+  "submit_plan": 1,
+  "bash": 21,
+  "todo_write": 3
+ },
+ "toolCalls": 25,
+ "stepTokens": 71314,
+ "stepCosts": [
+  11652,
+  33412,
+  26250
+ ],
+ "gates": {
+  "passed": 3,
+  "blocked": 0,
+  "blockedKinds": []
+ },
+ "contextWindows": [
+  100000
+ ],
+ "readOnlyKept": true,
+ "reportChecks": {
+  "mentionsJavac": false,
+  "mentionsTests74": false,
+  "mentionsApkSize": false,
+  "claimsNoChanges": true
+ },
+ "loadedContext": "100000",
+ "vramMiBAfterLoad": 6064,
+ "loadSeconds": 8,
+ "projectChanges": {
+  "created": {
+   "count": 0,
+   "names": []
+  },
+  "modified": {
+   "count": 0,
+   "names": []
+  },
+  "deleted": {
+   "count": 0,
+   "names": []
+  }
+ },
+ "armExit": 0,
+ "arm": "Harness Lab (primary arm)"
+}

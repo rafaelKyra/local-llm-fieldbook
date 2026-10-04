@@ -1,0 +1,685 @@
+[
+ {
+  "model": "holo4-35b-a3b-i1",
+  "runs": 3,
+  "verdicts": [
+   "PASS",
+   "PASS",
+   "PASS"
+  ],
+  "pass": 3,
+  "pass_rate": 1.0,
+  "ci95": [
+   0.438,
+   1.0
+  ],
+  "pass_rate_runs_2plus": 1.0,
+  "median_seconds_when_finished": 176,
+  "median_tokens_when_finished": 44192,
+  "median_tool_calls_when_finished": 11,
+  "repeatable": true,
+  "loadedContext": "100000",
+  "vramMiB": 20634,
+  "band": 1
+ },
+ {
+  "model": "cyber-tiel-coder-35b-a3b-apex-i-nanoplus",
+  "runs": 3,
+  "verdicts": [
+   "PASS",
+   "PASS",
+   "PASS"
+  ],
+  "pass": 3,
+  "pass_rate": 1.0,
+  "ci95": [
+   0.438,
+   1.0
+  ],
+  "pass_rate_runs_2plus": 1.0,
+  "median_seconds_when_finished": 368,
+  "median_tokens_when_finished": 54395,
+  "median_tool_calls_when_finished": 8,
+  "repeatable": true,
+  "loadedContext": "100000",
+  "vramMiB": 15804,
+  "band": 1
+ },
+ {
+  "model": "qwen3.8-27b-omnimerge-v6-mtp",
+  "runs": 1,
+  "verdicts": [
+   "PASS",
+   "INFRA",
+   "INFRA"
+  ],
+  "pass": 1,
+  "pass_rate": 1.0,
+  "ci95": [
+   0.207,
+   1.0
+  ],
+  "pass_rate_runs_2plus": null,
+  "median_seconds_when_finished": 345,
+  "median_tokens_when_finished": 64150,
+  "median_tool_calls_when_finished": 19,
+  "repeatable": null,
+  "loadedContext": "80000",
+  "vramMiB": 23800,
+  "band": 1
+ },
+ {
+  "model": "kat-coder-v2.5-dev-apex-i-miniplus-v2.1",
+  "runs": 3,
+  "verdicts": [
+   "PASS",
+   "FAIL",
+   "PASS"
+  ],
+  "pass": 2,
+  "pass_rate": 0.6666666666666666,
+  "ci95": [
+   0.208,
+   0.939
+  ],
+  "pass_rate_runs_2plus": 0.5,
+  "median_seconds_when_finished": 200.5,
+  "median_tokens_when_finished": 66489.5,
+  "median_tool_calls_when_finished": 14.5,
+  "repeatable": false,
+  "loadedContext": "100000",
+  "vramMiB": 17195,
+  "band": 1
+ },
+ {
+  "model": "qwen3.8-27b-twin-turbo-fable-cold-fusion-709-l-uncensored-nm-dau-neo-mtp",
+  "runs": 3,
+  "verdicts": [
+   "PASS",
+   "PARTIAL",
+   "PASS"
+  ],
+  "pass": 2,
+  "pass_rate": 0.6666666666666666,
+  "ci95": [
+   0.208,
+   0.939
+  ],
+  "pass_rate_runs_2plus": 0.5,
+  "median_seconds_when_finished": 207,
+  "median_tokens_when_finished": 37992,
+  "median_tool_calls_when_finished": 10,
+  "repeatable": false,
+  "loadedContext": "100000",
+  "vramMiB": 23722,
+  "band": 1
+ },
+ {
+  "model": "dirk-qwen3.8-27b",
+  "runs": 3,
+  "verdicts": [
+   "PASS",
+   "PASS",
+   "PARTIAL"
+  ],
+  "pass": 2,
+  "pass_rate": 0.6666666666666666,
+  "ci95": [
+   0.208,
+   0.939
+  ],
+  "pass_rate_runs_2plus": 0.5,
+  "median_seconds_when_finished": 301,
+  "median_tokens_when_finished": 78740,
+  "median_tool_calls_when_finished": 10,
+  "repeatable": false,
+  "loadedContext": "100000",
+  "vramMiB": 19790,
+  "band": 1
+ },
+ {
+  "model": "orchestra-o1-8b",
+  "runs": 3,
+  "verdicts": [
+   "PARTIAL",
+   "PASS",
+   "PARTIAL"
+  ],
+  "pass": 1,
+  "pass_rate": 0.3333333333333333,
+  "ci95": [
+   0.061,
+   0.792
+  ],
+  "pass_rate_runs_2plus": 0.5,
+  "median_seconds_when_finished": 195,
+  "median_tokens_when_finished": 31953,
+  "median_tool_calls_when_finished": 11,
+  "repeatable": false,
+  "loadedContext": "100000",
+  "vramMiB": 20489,
+  "band": 1
+ },
+ {
+  "model": "neohorse-1-4b",
+  "runs": 3,
+  "verdicts": [
+   "PARTIAL",
+   "PARTIAL",
+   "PASS"
+  ],
+  "pass": 1,
+  "pass_rate": 0.3333333333333333,
+  "ci95": [
+   0.061,
+   0.792
+  ],
+  "pass_rate_runs_2plus": 0.5,
+  "median_seconds_when_finished": 334,
+  "median_tokens_when_finished": 82865,
+  "median_tool_calls_when_finished": 28,
+  "repeatable": false,
+  "loadedContext": "100000",
+  "vramMiB": 7074,
+  "band": 1
+ },
+ {
+  "model": "aztec-coder-4b",
+  "runs": 3,
+  "verdicts": [
+   "FAIL",
+   "PASS",
+   "FAIL"
+  ],
+  "pass": 1,
+  "pass_rate": 0.3333333333333333,
+  "ci95": [
+   0.061,
+   0.792
+  ],
+  "pass_rate_runs_2plus": 0.5,
+  "median_seconds_when_finished": 358,
+  "median_tokens_when_finished": 65831,
+  "median_tool_calls_when_finished": 28,
+  "repeatable": false,
+  "loadedContext": "100000",
+  "vramMiB": 6756,
+  "band": 1
+ },
+ {
+  "model": "kiwen1.1-27b-mtp",
+  "runs": 3,
+  "verdicts": [
+   "PASS",
+   "FAIL",
+   "PARTIAL"
+  ],
+  "pass": 1,
+  "pass_rate": 0.3333333333333333,
+  "ci95": [
+   0.061,
+   0.792
+  ],
+  "pass_rate_runs_2plus": 0.0,
+  "median_seconds_when_finished": 400.0,
+  "median_tokens_when_finished": 67763.5,
+  "median_tool_calls_when_finished": 10.5,
+  "repeatable": false,
+  "loadedContext": "100000",
+  "vramMiB": 20854,
+  "band": 1
+ },
+ {
+  "model": "neohorse-1-9b",
+  "runs": 3,
+  "verdicts": [
+   "PASS",
+   "PARTIAL",
+   "FAIL"
+  ],
+  "pass": 1,
+  "pass_rate": 0.3333333333333333,
+  "ci95": [
+   0.061,
+   0.792
+  ],
+  "pass_rate_runs_2plus": 0.0,
+  "median_seconds_when_finished": 484.0,
+  "median_tokens_when_finished": 114449.5,
+  "median_tool_calls_when_finished": 19.5,
+  "repeatable": false,
+  "loadedContext": "100000",
+  "vramMiB": 9237,
+  "band": 1
+ },
+ {
+  "model": "oxcoder-9b-mernik",
+  "runs": 3,
+  "verdicts": [
+   "FAIL",
+   "PARTIAL",
+   "PARTIAL"
+  ],
+  "pass": 0,
+  "pass_rate": 0.0,
+  "ci95": [
+   0.0,
+   0.562
+  ],
+  "pass_rate_runs_2plus": 0.0,
+  "median_seconds_when_finished": 264.5,
+  "median_tokens_when_finished": 73509.0,
+  "median_tool_calls_when_finished": 16.0,
+  "repeatable": false,
+  "loadedContext": "100000",
+  "vramMiB": 9074,
+  "band": 1
+ },
+ {
+  "model": "orchestrator_v1_gguf",
+  "runs": 3,
+  "verdicts": [
+   "PARTIAL",
+   "PARTIAL",
+   "PARTIAL"
+  ],
+  "pass": 0,
+  "pass_rate": 0.0,
+  "ci95": [
+   0.0,
+   0.562
+  ],
+  "pass_rate_runs_2plus": 0.0,
+  "median_seconds_when_finished": 269,
+  "median_tokens_when_finished": 95701,
+  "median_tool_calls_when_finished": 18,
+  "repeatable": true,
+  "loadedContext": "100000",
+  "vramMiB": 5701,
+  "band": 1
+ },
+ {
+  "model": "nex-n2.5-mini-apex-i-miniplus-v2.1",
+  "runs": 3,
+  "verdicts": [
+   "FAIL",
+   "PARTIAL",
+   "FAIL"
+  ],
+  "pass": 0,
+  "pass_rate": 0.0,
+  "ci95": [
+   0.0,
+   0.562
+  ],
+  "pass_rate_runs_2plus": 0.0,
+  "median_seconds_when_finished": 543,
+  "median_tokens_when_finished": 75315,
+  "median_tool_calls_when_finished": 12,
+  "repeatable": false,
+  "loadedContext": "100000",
+  "vramMiB": 17896,
+  "band": 1
+ },
+ {
+  "model": "minicpm5-2b",
+  "runs": 3,
+  "verdicts": [
+   "FAIL",
+   "FAIL",
+   "FAIL"
+  ],
+  "pass": 0,
+  "pass_rate": 0.0,
+  "ci95": [
+   0.0,
+   0.562
+  ],
+  "pass_rate_runs_2plus": 0.0,
+  "median_seconds_when_finished": null,
+  "median_tokens_when_finished": null,
+  "median_tool_calls_when_finished": null,
+  "repeatable": true,
+  "loadedContext": "100000",
+  "vramMiB": 5729,
+  "band": 1
+ },
+ {
+  "model": "nail-qwen3.6-35b-a3b-mtp",
+  "runs": 1,
+  "verdicts": [
+   "PARTIAL",
+   "INFRA",
+   "INFRA"
+  ],
+  "pass": 0,
+  "pass_rate": 0.0,
+  "ci95": [
+   0.0,
+   0.793
+  ],
+  "pass_rate_runs_2plus": null,
+  "median_seconds_when_finished": 134,
+  "median_tokens_when_finished": 50787,
+  "median_tool_calls_when_finished": 9,
+  "repeatable": null,
+  "loadedContext": "100000",
+  "vramMiB": 23530,
+  "band": 1
+ },
+ {
+  "model": "spark-x2.5-4b",
+  "runs": 1,
+  "verdicts": [
+   "FAIL"
+  ],
+  "pass": 0,
+  "pass_rate": 0.0,
+  "ci95": [
+   0.0,
+   0.793
+  ],
+  "pass_rate_runs_2plus": null,
+  "median_seconds_when_finished": null,
+  "median_tokens_when_finished": null,
+  "median_tool_calls_when_finished": null,
+  "repeatable": null,
+  "loadedContext": "100000",
+  "vramMiB": 7612,
+  "band": 1
+ },
+ {
+  "model": "hunter-4b",
+  "runs": 1,
+  "verdicts": [
+   "FAIL"
+  ],
+  "pass": 0,
+  "pass_rate": 0.0,
+  "ci95": [
+   0.0,
+   0.793
+  ],
+  "pass_rate_runs_2plus": null,
+  "median_seconds_when_finished": null,
+  "median_tokens_when_finished": null,
+  "median_tool_calls_when_finished": null,
+  "repeatable": null,
+  "loadedContext": "100000",
+  "vramMiB": 17908,
+  "band": 1
+ },
+ {
+  "model": "tiel-coder-35b-a3b-apex-i-miniplus-v2.1",
+  "runs": 1,
+  "verdicts": [
+   "FAIL"
+  ],
+  "pass": 0,
+  "pass_rate": 0.0,
+  "ci95": [
+   0.0,
+   0.793
+  ],
+  "pass_rate_runs_2plus": null,
+  "median_seconds_when_finished": null,
+  "median_tokens_when_finished": null,
+  "median_tool_calls_when_finished": null,
+  "repeatable": null,
+  "loadedContext": "100000",
+  "vramMiB": 17610,
+  "band": 1
+ },
+ {
+  "model": "vibe-coder-7b-max",
+  "runs": 1,
+  "verdicts": [
+   "FAIL"
+  ],
+  "pass": 0,
+  "pass_rate": 0.0,
+  "ci95": [
+   0.0,
+   0.793
+  ],
+  "pass_rate_runs_2plus": null,
+  "median_seconds_when_finished": null,
+  "median_tokens_when_finished": null,
+  "median_tool_calls_when_finished": null,
+  "repeatable": null,
+  "loadedContext": "100000",
+  "vramMiB": 10709,
+  "band": 1
+ },
+ {
+  "model": "nvidia_orchestrator-8b",
+  "runs": 1,
+  "verdicts": [
+   "FAIL"
+  ],
+  "pass": 0,
+  "pass_rate": 0.0,
+  "ci95": [
+   0.0,
+   0.793
+  ],
+  "pass_rate_runs_2plus": null,
+  "median_seconds_when_finished": null,
+  "median_tokens_when_finished": null,
+  "median_tool_calls_when_finished": null,
+  "repeatable": null,
+  "loadedContext": "100000",
+  "vramMiB": 19563,
+  "band": 1
+ },
+ {
+  "model": "captaineris-davidau-fusion-12b-i1",
+  "runs": 1,
+  "verdicts": [
+   "FAIL"
+  ],
+  "pass": 0,
+  "pass_rate": 0.0,
+  "ci95": [
+   0.0,
+   0.793
+  ],
+  "pass_rate_runs_2plus": null,
+  "median_seconds_when_finished": null,
+  "median_tokens_when_finished": null,
+  "median_tool_calls_when_finished": null,
+  "repeatable": null,
+  "loadedContext": "100000",
+  "vramMiB": 23364,
+  "band": 1
+ },
+ {
+  "model": "lfm2.5-8b-a1b-qwen3.8-turbo-brilliance-power-x12-neo-max",
+  "runs": 1,
+  "verdicts": [
+   "FAIL"
+  ],
+  "pass": 0,
+  "pass_rate": 0.0,
+  "ci95": [
+   0.0,
+   0.793
+  ],
+  "pass_rate_runs_2plus": null,
+  "median_seconds_when_finished": null,
+  "median_tokens_when_finished": null,
+  "median_tool_calls_when_finished": null,
+  "repeatable": null,
+  "loadedContext": "100000",
+  "vramMiB": 10731,
+  "band": 1
+ },
+ {
+  "model": "liquid/lfm2.5-1.2b",
+  "runs": 1,
+  "verdicts": [
+   "FAIL"
+  ],
+  "pass": 0,
+  "pass_rate": 0.0,
+  "ci95": [
+   0.0,
+   0.793
+  ],
+  "pass_rate_runs_2plus": null,
+  "median_seconds_when_finished": null,
+  "median_tokens_when_finished": null,
+  "median_tool_calls_when_finished": null,
+  "repeatable": null,
+  "loadedContext": "100000",
+  "vramMiB": 3173,
+  "band": 1
+ },
+ {
+  "model": "ornith-1.5-9b-nvfp4-mtp",
+  "runs": 1,
+  "verdicts": [
+   "FAIL"
+  ],
+  "pass": 0,
+  "pass_rate": 0.0,
+  "ci95": [
+   0.0,
+   0.793
+  ],
+  "pass_rate_runs_2plus": null,
+  "median_seconds_when_finished": null,
+  "median_tokens_when_finished": null,
+  "median_tool_calls_when_finished": null,
+  "repeatable": null,
+  "loadedContext": "100000",
+  "vramMiB": 9581,
+  "band": 1
+ },
+ {
+  "model": "triumvirate-qwopus-mimo-ornith-9b-coder",
+  "runs": 1,
+  "verdicts": [
+   "FAIL"
+  ],
+  "pass": 0,
+  "pass_rate": 0.0,
+  "ci95": [
+   0.0,
+   0.793
+  ],
+  "pass_rate_runs_2plus": null,
+  "median_seconds_when_finished": null,
+  "median_tokens_when_finished": null,
+  "median_tool_calls_when_finished": null,
+  "repeatable": null,
+  "loadedContext": "100000",
+  "vramMiB": 10021,
+  "band": 1
+ },
+ {
+  "model": "nemotron-orchestrator-8b",
+  "runs": 1,
+  "verdicts": [
+   "FAIL"
+  ],
+  "pass": 0,
+  "pass_rate": 0.0,
+  "ci95": [
+   0.0,
+   0.793
+  ],
+  "pass_rate_runs_2plus": null,
+  "median_seconds_when_finished": null,
+  "median_tokens_when_finished": null,
+  "median_tool_calls_when_finished": null,
+  "repeatable": null,
+  "loadedContext": "100000",
+  "vramMiB": 19777,
+  "band": 1
+ },
+ {
+  "model": "humo-coder-35b-a3b",
+  "runs": 1,
+  "verdicts": [
+   "FAIL"
+  ],
+  "pass": 0,
+  "pass_rate": 0.0,
+  "ci95": [
+   0.0,
+   0.793
+  ],
+  "pass_rate_runs_2plus": null,
+  "median_seconds_when_finished": null,
+  "median_tokens_when_finished": null,
+  "median_tool_calls_when_finished": null,
+  "repeatable": null,
+  "loadedContext": "65000-auto-offload",
+  "vramMiB": 20050,
+  "band": 1
+ },
+ {
+  "model": "plano-orchestrator-4b",
+  "runs": 1,
+  "verdicts": [
+   "FAIL"
+  ],
+  "pass": 0,
+  "pass_rate": 0.0,
+  "ci95": [
+   0.0,
+   0.793
+  ],
+  "pass_rate_runs_2plus": null,
+  "median_seconds_when_finished": null,
+  "median_tokens_when_finished": null,
+  "median_tool_calls_when_finished": null,
+  "repeatable": null,
+  "loadedContext": "100000",
+  "vramMiB": 17989,
+  "band": 1
+ },
+ {
+  "model": "qwen3.8-27b-orcarouter-gsq-rco-uncensored",
+  "runs": 1,
+  "verdicts": [
+   "FAIL"
+  ],
+  "pass": 0,
+  "pass_rate": 0.0,
+  "ci95": [
+   0.0,
+   0.793
+  ],
+  "pass_rate_runs_2plus": null,
+  "median_seconds_when_finished": null,
+  "median_tokens_when_finished": null,
+  "median_tool_calls_when_finished": null,
+  "repeatable": null,
+  "loadedContext": "100000",
+  "vramMiB": 19436,
+  "band": 1
+ },
+ {
+  "model": "qwen3.8-27b-twinturbo-residual-bonsai-2-pq2_0",
+  "runs": 0,
+  "verdicts": [
+   "INFRA"
+  ],
+  "pass": 0,
+  "pass_rate": null,
+  "ci95": [
+   0.0,
+   1.0
+  ],
+  "pass_rate_runs_2plus": null,
+  "median_seconds_when_finished": null,
+  "median_tokens_when_finished": null,
+  "median_tool_calls_when_finished": null,
+  "repeatable": null,
+  "loadedContext": null,
+  "vramMiB": null,
+  "band": null
+ }
+]

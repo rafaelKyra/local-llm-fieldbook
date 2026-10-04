@@ -1,0 +1,57 @@
+{
+ "model": "orchestra-o1-8b",
+ "elapsedSeconds": 243,
+ "timedOut": false,
+ "threw": null,
+ "planSteps": 4,
+ "planAbandoned": null,
+ "upstreamError": null,
+ "stepsFailed": [],
+ "aborts": [],
+ "tools": {
+  "submit_plan": 1,
+  "bash": 9
+ },
+ "toolCalls": 10,
+ "stepTokens": 28621,
+ "stepCosts": [
+  4184,
+  4116,
+  2923,
+  17398
+ ],
+ "gates": {
+  "passed": 4,
+  "blocked": 0,
+  "blockedKinds": []
+ },
+ "contextWindows": [
+  100000
+ ],
+ "readOnlyKept": true,
+ "reportChecks": {
+  "mentionsJavac": true,
+  "mentionsTests74": false,
+  "mentionsApkSize": false,
+  "claimsNoChanges": true
+ },
+ "loadedContext": "100000",
+ "vramMiBAfterLoad": 20694,
+ "loadSeconds": 17,
+ "projectChanges": {
+  "created": {
+   "count": 0,
+   "names": []
+  },
+  "modified": {
+   "count": 0,
+   "names": []
+  },
+  "deleted": {
+   "count": 0,
+   "names": []
+  }
+ },
+ "armExit": 0,
+ "arm": "Harness Lab (primary arm)"
+}

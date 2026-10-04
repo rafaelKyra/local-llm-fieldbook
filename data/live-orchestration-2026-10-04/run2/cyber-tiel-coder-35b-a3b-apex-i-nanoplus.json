@@ -1,0 +1,59 @@
+{
+ "model": "cyber-tiel-coder-35b-a3b-apex-i-nanoplus",
+ "elapsedSeconds": 368,
+ "timedOut": false,
+ "threw": null,
+ "planSteps": 4,
+ "planAbandoned": null,
+ "upstreamError": null,
+ "stepsFailed": [],
+ "aborts": [],
+ "tools": {
+  "submit_plan": 1,
+  "bash": 6
+ },
+ "toolCalls": 7,
+ "stepTokens": 54395,
+ "stepCosts": [
+  14345,
+  5217,
+  2413,
+  32420
+ ],
+ "gates": {
+  "passed": 3,
+  "blocked": 1,
+  "blockedKinds": [
+   ""
+  ]
+ },
+ "contextWindows": [
+  100000
+ ],
+ "readOnlyKept": true,
+ "reportChecks": {
+  "mentionsJavac": true,
+  "mentionsTests74": true,
+  "mentionsApkSize": true,
+  "claimsNoChanges": true
+ },
+ "loadedContext": "100000",
+ "vramMiBAfterLoad": 16125,
+ "loadSeconds": 31,
+ "projectChanges": {
+  "created": {
+   "count": 0,
+   "names": []
+  },
+  "modified": {
+   "count": 0,
+   "names": []
+  },
+  "deleted": {
+   "count": 0,
+   "names": []
+  }
+ },
+ "armExit": 0,
+ "arm": "Harness Lab (primary arm)"
+}

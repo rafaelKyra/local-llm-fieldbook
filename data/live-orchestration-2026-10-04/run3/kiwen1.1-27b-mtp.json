@@ -1,0 +1,59 @@
+{
+ "model": "kiwen1.1-27b-mtp",
+ "elapsedSeconds": 423,
+ "timedOut": false,
+ "threw": null,
+ "planSteps": 4,
+ "planAbandoned": null,
+ "upstreamError": null,
+ "stepsFailed": [],
+ "aborts": [],
+ "tools": {
+  "submit_plan": 1,
+  "bash": 9
+ },
+ "toolCalls": 10,
+ "stepTokens": 76894,
+ "stepCosts": [
+  14368,
+  18417,
+  16467,
+  27642
+ ],
+ "gates": {
+  "passed": 3,
+  "blocked": 1,
+  "blockedKinds": [
+   ""
+  ]
+ },
+ "contextWindows": [
+  100000
+ ],
+ "readOnlyKept": true,
+ "reportChecks": {
+  "mentionsJavac": true,
+  "mentionsTests74": false,
+  "mentionsApkSize": true,
+  "claimsNoChanges": false
+ },
+ "loadedContext": "100000",
+ "vramMiBAfterLoad": 21175,
+ "loadSeconds": 34,
+ "projectChanges": {
+  "created": {
+   "count": 0,
+   "names": []
+  },
+  "modified": {
+   "count": 0,
+   "names": []
+  },
+  "deleted": {
+   "count": 0,
+   "names": []
+  }
+ },
+ "armExit": 0,
+ "arm": "Harness Lab (primary arm)"
+}

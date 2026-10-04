@@ -1,0 +1,62 @@
+{
+ "model": "kat-coder-v2.5-dev-apex-i-miniplus-v2.1",
+ "elapsedSeconds": 333,
+ "timedOut": false,
+ "threw": null,
+ "planSteps": 4,
+ "planAbandoned": null,
+ "upstreamError": null,
+ "stepsFailed": [],
+ "aborts": [],
+ "tools": {
+  "submit_plan": 1,
+  "bash": 17,
+  "todo_write": 4,
+  "task": 1,
+  "read": 8
+ },
+ "toolCalls": 31,
+ "stepTokens": 127393,
+ "stepCosts": [
+  51835,
+  33964,
+  36194,
+  5400
+ ],
+ "gates": {
+  "passed": 4,
+  "blocked": 0,
+  "blockedKinds": []
+ },
+ "contextWindows": [
+  100000
+ ],
+ "readOnlyKept": false,
+ "reportChecks": {
+  "mentionsJavac": true,
+  "mentionsTests74": false,
+  "mentionsApkSize": true,
+  "claimsNoChanges": true
+ },
+ "loadedContext": "100000",
+ "vramMiBAfterLoad": 17411,
+ "loadSeconds": 16,
+ "projectChanges": {
+  "created": {
+   "count": 1,
+   "names": [
+    "20261004-144236-reader-k9kh8.md"
+   ]
+  },
+  "modified": {
+   "count": 0,
+   "names": []
+  },
+  "deleted": {
+   "count": 0,
+   "names": []
+  }
+ },
+ "armExit": 0,
+ "arm": "Harness Lab (primary arm)"
+}

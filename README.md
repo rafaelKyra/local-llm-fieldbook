@@ -43,6 +43,26 @@ band while its interval overlaps its band leader's. Models in one band are not r
 each other. The interval reflects only which 14 tasks were chosen; run-to-run noise needs
 repeated runs, which `harness/run_all.sh` supports (`RUNS=3`).
 
+## Second ruler: live orchestration (2026-10-04)
+
+A different ruler, kept apart from the grid above: one fixed, read-only verification task on a real project, run through
+a real orchestration arm (**Harness Lab, primary arm**: plan, approval, step-by-step execution, recovery, evidence gate).
+It measures **model + harness together**, on 31 models, not coding ability. The protocol was registered before the
+confirmatory runs: [`harness/live-orchestration/PROTOCOL.md`](harness/live-orchestration/PROTOCOL.md). Data, sanitised,
+in `data/live-orchestration-2026-10-04/` (`run1/`, `run2/`, `run3/`, `analysis.json`).
+
+| # | Finding | Status |
+|---|---|---|
+| 1 | One run is not a measurement. 8 of 31 models passed in run 1; of the 14 models run three times, only **2 passed every run** (`holo4-35b-a3b-i1`, `cyber-tiel-coder-35b-a3b-apex-i-nanoplus`), 3 passed twice, and only 4 of 14 gave the same verdict in all three runs. | Measured here |
+| 2 | Across the 42 runs of the repeated models: 17 passes, 14 partial reports, 6 ten-minute timeouts, 4 runs that wrote into the project, 1 empty report. | Measured here |
+| 3 | The extremes separate, the middle does not: 3/3 against 0/3 gives Fisher exact two-sided p = 0.10; the Wilson intervals of the best and the worst overlap (0.44-1.00 against 0.00-0.56). | Measured here |
+| 4 | Some models write files although the prompt says not to modify any file (4 models in run 1, 4 further runs among the repeated ones). | Measured here |
+| 5 | One model family fails at once with an HTTP 400 grammar error from the runtime before any tool runs (one run, not repeated). | Single run, not claimed as reproducible |
+
+Not reproducible end to end from this repository: the arm's code is not published. The prompt, load settings, runner
+(`harness/live-orchestration/live-eval.sh`), analysis (`analyze.py`), sanitiser (`sanitize.py`) and every run's
+sanitised result are. Findings about the arm itself are secondary and are in the report.
+
 ## Reported earlier, not yet reproduced here
 
 These come from an earlier hand-written report. The raw data is not in this repository, so

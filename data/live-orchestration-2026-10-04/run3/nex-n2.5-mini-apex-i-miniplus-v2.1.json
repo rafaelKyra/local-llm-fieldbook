@@ -1,0 +1,59 @@
+{
+ "model": "nex-n2.5-mini-apex-i-miniplus-v2.1",
+ "elapsedSeconds": 600,
+ "timedOut": true,
+ "threw": null,
+ "planSteps": 6,
+ "planAbandoned": null,
+ "upstreamError": null,
+ "stepsFailed": [
+  "s2:thinking_only_result",
+  "s2:Connection"
+ ],
+ "aborts": [],
+ "tools": {
+  "submit_plan": 2,
+  "bash": 6
+ },
+ "toolCalls": 8,
+ "stepTokens": 44397,
+ "stepCosts": [
+  14136,
+  4067,
+  26194
+ ],
+ "gates": {
+  "passed": 3,
+  "blocked": 0,
+  "blockedKinds": []
+ },
+ "contextWindows": [
+  100000
+ ],
+ "readOnlyKept": true,
+ "reportChecks": {
+  "mentionsJavac": false,
+  "mentionsTests74": false,
+  "mentionsApkSize": false,
+  "claimsNoChanges": true
+ },
+ "loadedContext": "100000",
+ "vramMiBAfterLoad": 18202,
+ "loadSeconds": 38,
+ "projectChanges": {
+  "created": {
+   "count": 0,
+   "names": []
+  },
+  "modified": {
+   "count": 0,
+   "names": []
+  },
+  "deleted": {
+   "count": 0,
+   "names": []
+  }
+ },
+ "armExit": 0,
+ "arm": "Harness Lab (primary arm)"
+}

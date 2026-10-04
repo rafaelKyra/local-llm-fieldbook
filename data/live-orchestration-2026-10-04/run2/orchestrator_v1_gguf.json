@@ -1,0 +1,58 @@
+{
+ "model": "orchestrator_v1_gguf",
+ "elapsedSeconds": 269,
+ "timedOut": false,
+ "threw": null,
+ "planSteps": 4,
+ "planAbandoned": null,
+ "upstreamError": null,
+ "stepsFailed": [],
+ "aborts": [],
+ "tools": {
+  "submit_plan": 1,
+  "bash": 13,
+  "read_text_file": 4
+ },
+ "toolCalls": 18,
+ "stepTokens": 128601,
+ "stepCosts": [
+  28366,
+  32983,
+  32866,
+  34386
+ ],
+ "gates": {
+  "passed": 4,
+  "blocked": 0,
+  "blockedKinds": []
+ },
+ "contextWindows": [
+  100000
+ ],
+ "readOnlyKept": true,
+ "reportChecks": {
+  "mentionsJavac": true,
+  "mentionsTests74": false,
+  "mentionsApkSize": true,
+  "claimsNoChanges": true
+ },
+ "loadedContext": "100000",
+ "vramMiBAfterLoad": 6063,
+ "loadSeconds": 16,
+ "projectChanges": {
+  "created": {
+   "count": 0,
+   "names": []
+  },
+  "modified": {
+   "count": 0,
+   "names": []
+  },
+  "deleted": {
+   "count": 0,
+   "names": []
+  }
+ },
+ "armExit": 0,
+ "arm": "Harness Lab (primary arm)"
+}

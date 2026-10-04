@@ -1,0 +1,70 @@
+{
+ "model": "aztec-coder-4b",
+ "elapsedSeconds": 601,
+ "timedOut": true,
+ "threw": null,
+ "planSteps": 3,
+ "planAbandoned": null,
+ "upstreamError": null,
+ "stepsFailed": [
+  "s2:failure_trajectory_exceeded",
+  "s3:final_report_evidence_missing",
+  "s3:final_report_evidence_missing"
+ ],
+ "aborts": [
+  "failure_trajectory_exceeded"
+ ],
+ "tools": {
+  "bash": 50,
+  "submit_plan": 2,
+  "wait_background": 1,
+  "read": 6
+ },
+ "toolCalls": 59,
+ "stepTokens": 191970,
+ "stepCosts": [
+  24491,
+  43722,
+  45869,
+  31618,
+  46270
+ ],
+ "gates": {
+  "passed": 1,
+  "blocked": 3,
+  "blockedKinds": [
+   "\"no_change_contradiction\"",
+   "\"diff_or_content\",\"size\",\"test_run\"",
+   "\"no_change_contradiction\""
+  ]
+ },
+ "contextWindows": [
+  100000
+ ],
+ "readOnlyKept": true,
+ "reportChecks": {
+  "mentionsJavac": false,
+  "mentionsTests74": false,
+  "mentionsApkSize": false,
+  "claimsNoChanges": false
+ },
+ "loadedContext": "100000",
+ "vramMiBAfterLoad": 7229,
+ "loadSeconds": 10,
+ "projectChanges": {
+  "created": {
+   "count": 0,
+   "names": []
+  },
+  "modified": {
+   "count": 0,
+   "names": []
+  },
+  "deleted": {
+   "count": 0,
+   "names": []
+  }
+ },
+ "armExit": 0,
+ "arm": "Harness Lab (primary arm)"
+}

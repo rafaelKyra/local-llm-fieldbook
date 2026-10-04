@@ -10,6 +10,9 @@ Usage: python3 harness/build_report.py [DATA_DIR] [OUT_HTML]
 import html, json, sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import live_section
+
 ROOT = Path(__file__).resolve().parent.parent
 DATA = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / "data" / "grid-2026-09-20"
 OUT = Path(sys.argv[2]) if len(sys.argv) > 2 else ROOT / "docs" / "index.html"
@@ -135,9 +138,9 @@ page = f"""<!doctype html>
 <span><b>Rig:</b> dual Xeon E5-2680 v4 · 192 GB DDR4 ECC · RTX 3090 24 GB</span><span><b>Runtime:</b> LM Studio</span></div>
 </header>
 
-<div class="note"><b>How to read this page.</b> Everything below is regenerated from the saved answers in
-<span class="mono">data/grid-2026-09-20/</span> by <span class="mono">harness/build_report.py</span>; none of it is typed
-by hand. Measurements and field notes are kept apart: a field note can be right and still not be a measurement.
+<div class="note"><b>How to read this page.</b> Everything below is regenerated from the saved data in
+<span class="mono">data/grid-2026-09-20/</span> and <span class="mono">data/live-orchestration-2026-10-04/</span> by
+<span class="mono">harness/build_report.py</span>; none of it is typed by hand but the framing text. Measurements and field notes are kept apart: a field note can be right and still not be a measurement.
 Models are grouped in <b>bands</b>, never ranked by position.</div>
 
 <h2>What the data shows</h2>
@@ -184,9 +187,11 @@ See <a href="https://github.com/rafaelKyra/local-llm-fieldbook/blob/main/CORRECT
 <li>Executable repair of six real defects from a private repository: 0 valid fixes in 30 runs. The cases stay private; the method and results will be published.</li>
 </ul>
 
+{live_section.build(ROOT / "data" / "live-orchestration-2026-10-04")}
+
 <h2>Limits</h2>
 <ul>
-<li>One machine; speeds do not transfer. One run per build; no repeated-run data yet.</li>
+<li>One machine; speeds do not transfer. The grid has one run per build; the live-orchestration ruler repeats the models it qualifies.</li>
 <li>Model files are community builds with unstable names, and file hashes are not yet recorded.</li>
 <li>Pass rules are keyword and structure checks, not execution. A pass is not a verified solution.</li>
 <li>The saved answers are outputs of third-party models, each under its own license; the author claims no rights over them.</li>

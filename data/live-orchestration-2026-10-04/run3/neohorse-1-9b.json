@@ -1,0 +1,62 @@
+{
+ "model": "neohorse-1-9b",
+ "elapsedSeconds": 600,
+ "timedOut": true,
+ "threw": null,
+ "planSteps": 4,
+ "planAbandoned": null,
+ "upstreamError": null,
+ "stepsFailed": [
+  "s4:final_report_evidence_missing"
+ ],
+ "aborts": [],
+ "tools": {
+  "submit_plan": 1,
+  "bash": 20
+ },
+ "toolCalls": 21,
+ "stepTokens": 105481,
+ "stepCosts": [
+  20641,
+  33257,
+  17227,
+  34356
+ ],
+ "gates": {
+  "passed": 2,
+  "blocked": 2,
+  "blockedKinds": [
+   "\"no_change_contradiction\"",
+   "\"no_change_contradiction\""
+  ]
+ },
+ "contextWindows": [
+  100000
+ ],
+ "readOnlyKept": true,
+ "reportChecks": {
+  "mentionsJavac": true,
+  "mentionsTests74": true,
+  "mentionsApkSize": true,
+  "claimsNoChanges": true
+ },
+ "loadedContext": "100000",
+ "vramMiBAfterLoad": 9584,
+ "loadSeconds": 16,
+ "projectChanges": {
+  "created": {
+   "count": 0,
+   "names": []
+  },
+  "modified": {
+   "count": 0,
+   "names": []
+  },
+  "deleted": {
+   "count": 0,
+   "names": []
+  }
+ },
+ "armExit": 0,
+ "arm": "Harness Lab (primary arm)"
+}

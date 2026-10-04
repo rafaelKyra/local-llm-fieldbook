@@ -93,3 +93,13 @@ anything that still matches a forbidden pattern.
   offload. Not comparable with the others.
 * 2026-10-04, run 1: the PASS rule was refined after the first batch was seen (a recovered run counts; strictness on
   failed steps was removed). The rule above is the one applied to all runs, run 1 included, by `analyze.py`.
+* 2026-10-04, before run 2: two of the 16 qualifying models, `qwen3.8-27b-omnimerge-v6-mtp` and
+  `nail-qwen3.6-35b-a3b-mtp`, were no longer installed in LM Studio (`No model found that matches model key`). They
+  could not be repeated, keep their single run-1 result, and are not counted as failures. Fourteen models therefore
+  have three runs.
+* 2026-10-04, runs 2 and 3: some models wrote into the project again (one created a copy of a Gradle home with about
+  4,500 directories; one wrote subagent notes). Their files were moved to quarantine as designed, but the empty
+  directories stayed in the project until the end of the runs, so models run after them saw stray empty directories.
+  Effect believed nil. Directories were removed afterwards and the project verified equal to the pristine copy.
+* 2026-10-04, analysis: as expected for three runs, the intervals overlap, so the bands collapse to one. The ruler
+  orders the extremes (3/3 against 0/3, Fisher exact two-sided p = 0.10), not the middle.

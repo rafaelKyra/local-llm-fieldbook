@@ -1,0 +1,68 @@
+{
+ "model": "kiwen1.1-27b-mtp",
+ "elapsedSeconds": 586,
+ "timedOut": false,
+ "threw": null,
+ "planSteps": 4,
+ "planAbandoned": null,
+ "upstreamError": null,
+ "stepsFailed": [],
+ "aborts": [],
+ "tools": {
+  "submit_plan": 1,
+  "bash": 12
+ },
+ "toolCalls": 13,
+ "stepTokens": 73151,
+ "stepCosts": [
+  14831,
+  25228,
+  4540,
+  28552
+ ],
+ "gates": {
+  "passed": 3,
+  "blocked": 1,
+  "blockedKinds": [
+   "\"no_change_contradiction\""
+  ]
+ },
+ "contextWindows": [
+  100000
+ ],
+ "readOnlyKept": false,
+ "reportChecks": {
+  "mentionsJavac": true,
+  "mentionsTests74": false,
+  "mentionsApkSize": true,
+  "claimsNoChanges": true
+ },
+ "loadedContext": "100000",
+ "vramMiBAfterLoad": 21022,
+ "loadSeconds": 13,
+ "projectChanges": {
+  "created": {
+   "count": 4565,
+   "names": [
+    "FakeDependency.jar",
+    "last-build.bin",
+    "fileContent.lock",
+    "fileHashes.bin",
+    "fileHashes.lock",
+    "resourceHashesCache.bin",
+    "generated-gradle-jars.lock",
+    "gradle-api-8.7.jar"
+   ]
+  },
+  "modified": {
+   "count": 0,
+   "names": []
+  },
+  "deleted": {
+   "count": 0,
+   "names": []
+  }
+ },
+ "armExit": 0,
+ "arm": "Harness Lab (primary arm)"
+}

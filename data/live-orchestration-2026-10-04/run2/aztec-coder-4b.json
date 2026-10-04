@@ -1,0 +1,60 @@
+{
+ "model": "aztec-coder-4b",
+ "elapsedSeconds": 358,
+ "timedOut": false,
+ "threw": null,
+ "planSteps": 4,
+ "planAbandoned": null,
+ "upstreamError": null,
+ "stepsFailed": [],
+ "aborts": [],
+ "tools": {
+  "bash": 22,
+  "run_code": 1,
+  "submit_plan": 1,
+  "todo_write": 3,
+  "read_text_file": 1
+ },
+ "toolCalls": 28,
+ "stepTokens": 65831,
+ "stepCosts": [
+  21102,
+  35075,
+  7648,
+  2006
+ ],
+ "gates": {
+  "passed": 4,
+  "blocked": 0,
+  "blockedKinds": []
+ },
+ "contextWindows": [
+  100000
+ ],
+ "readOnlyKept": true,
+ "reportChecks": {
+  "mentionsJavac": true,
+  "mentionsTests74": true,
+  "mentionsApkSize": true,
+  "claimsNoChanges": true
+ },
+ "loadedContext": "100000",
+ "vramMiBAfterLoad": 7116,
+ "loadSeconds": 9,
+ "projectChanges": {
+  "created": {
+   "count": 0,
+   "names": []
+  },
+  "modified": {
+   "count": 0,
+   "names": []
+  },
+  "deleted": {
+   "count": 0,
+   "names": []
+  }
+ },
+ "armExit": 0,
+ "arm": "Harness Lab (primary arm)"
+}

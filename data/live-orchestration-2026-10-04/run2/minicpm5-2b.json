@@ -1,0 +1,67 @@
+{
+ "model": "minicpm5-2b",
+ "elapsedSeconds": 600,
+ "timedOut": true,
+ "threw": null,
+ "planSteps": 4,
+ "planAbandoned": null,
+ "upstreamError": null,
+ "stepsFailed": [
+  "s2:failure_trajectory_exceeded",
+  "s2:failure_trajectory_exceeded",
+  "s1:engineering_zero_tool_call"
+ ],
+ "aborts": [
+  "failure_trajectory_exceeded",
+  "failure_trajectory_exceeded"
+ ],
+ "tools": {
+  "submit_plan": 2,
+  "bash": 15,
+  "todo_write": 41
+ },
+ "toolCalls": 58,
+ "stepTokens": 59609,
+ "stepCosts": [
+  6632,
+  8982,
+  3006,
+  40989
+ ],
+ "gates": {
+  "passed": 1,
+  "blocked": 1,
+  "blockedKinds": [
+   "\"size\""
+  ]
+ },
+ "contextWindows": [
+  100000
+ ],
+ "readOnlyKept": true,
+ "reportChecks": {
+  "mentionsJavac": false,
+  "mentionsTests74": false,
+  "mentionsApkSize": false,
+  "claimsNoChanges": false
+ },
+ "loadedContext": "100000",
+ "vramMiBAfterLoad": 5934,
+ "loadSeconds": 9,
+ "projectChanges": {
+  "created": {
+   "count": 0,
+   "names": []
+  },
+  "modified": {
+   "count": 0,
+   "names": []
+  },
+  "deleted": {
+   "count": 0,
+   "names": []
+  }
+ },
+ "armExit": 0,
+ "arm": "Harness Lab (primary arm)"
+}

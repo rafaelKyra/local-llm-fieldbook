@@ -84,7 +84,7 @@ def main():
     print("%-4s %-50s %-3s %-12s %-14s %-9s %-7s %-7s" % ("band", "model", "n", "verdicts", "PASS rate 95%CI", "median s", "tokens", "repeat"))
     for r in rows:
         print("%-4s %-50s %-3s %-12s %-14s %-9s %-7s %-7s" % (
-            r["band"], r["model"][:50], r["runs"], "/".join(v[0] for v in r["verdicts"]),
+            r["band"], r["model"][:50], r["runs"], "/".join({"PASS": "P", "PARTIAL": "~", "FAIL": "x", "INFRA": "-"}[v] for v in r["verdicts"]),
             "%d/%d [%.2f-%.2f]" % (r["pass"], r["runs"], r["ci95"][0], r["ci95"][1]) if r["runs"] else "-",
             r["median_seconds_when_finished"], r["median_tokens_when_finished"],
             {True: "yes", False: "no", None: "n=1"}[r["repeatable"]]))
