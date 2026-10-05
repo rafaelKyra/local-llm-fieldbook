@@ -1,0 +1,62 @@
+{
+ "model": "qwen3.8-27b-gsq-rco",
+ "elapsedSeconds": 335,
+ "timedOut": false,
+ "threw": null,
+ "planSteps": 4,
+ "planAbandoned": null,
+ "upstreamError": null,
+ "stepsFailed": [
+  "s2:ghost"
+ ],
+ "aborts": [],
+ "tools": {
+  "submit_plan": 1,
+  "bash": 11
+ },
+ "toolCalls": 12,
+ "stepTokens": 66309,
+ "stepCosts": [
+  14207,
+  20675,
+  1510,
+  2721,
+  27196
+ ],
+ "gates": {
+  "passed": 4,
+  "blocked": 1,
+  "blockedKinds": [
+   "\"no_change_contradiction\""
+  ]
+ },
+ "contextWindows": [
+  100000
+ ],
+ "readOnlyKept": true,
+ "reportChecks": {
+  "mentionsJavac": true,
+  "mentionsTests74": true,
+  "mentionsApkSize": true,
+  "claimsNoChanges": true
+ },
+ "loadedContext": "100000",
+ "vramMiBAfterLoad": 18546,
+ "loadSeconds": 7,
+ "projectChanges": {
+  "created": {
+   "count": 0,
+   "names": []
+  },
+  "modified": {
+   "count": 0,
+   "names": []
+  },
+  "deleted": {
+   "count": 0,
+   "names": []
+  }
+ },
+ "armExit": 0,
+ "arm": "Harness Lab (primary arm)"
+}

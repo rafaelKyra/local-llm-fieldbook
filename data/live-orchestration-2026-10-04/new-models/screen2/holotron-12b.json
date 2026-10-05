@@ -1,0 +1,65 @@
+{
+ "model": "holotron-12b",
+ "elapsedSeconds": 601,
+ "timedOut": true,
+ "threw": null,
+ "planSteps": 4,
+ "planAbandoned": null,
+ "upstreamError": null,
+ "stepsFailed": [
+  "s4:final_report_evidence_missing"
+ ],
+ "aborts": [
+  "sdk_replay_loop_exceeded"
+ ],
+ "tools": {
+  "submit_plan": 1,
+  "bash": 7,
+  "read_text_file": 4,
+  "list_dir": 1
+ },
+ "toolCalls": 13,
+ "stepTokens": 43599,
+ "stepCosts": [
+  14709,
+  2525,
+  2683,
+  23682
+ ],
+ "gates": {
+  "passed": 3,
+  "blocked": 1,
+  "blockedKinds": [
+   ""
+  ]
+ },
+ "contextWindows": [
+  100000
+ ],
+ "readOnlyKept": true,
+ "reportChecks": {
+  "mentionsJavac": false,
+  "mentionsTests74": false,
+  "mentionsApkSize": false,
+  "claimsNoChanges": false
+ },
+ "loadedContext": "100000",
+ "vramMiBAfterLoad": 10073,
+ "loadSeconds": 19,
+ "projectChanges": {
+  "created": {
+   "count": 0,
+   "names": []
+  },
+  "modified": {
+   "count": 0,
+   "names": []
+  },
+  "deleted": {
+   "count": 0,
+   "names": []
+  }
+ },
+ "armExit": 0,
+ "arm": "Harness Lab (primary arm)"
+}

@@ -1,0 +1,20 @@
+{
+ "model": "hcompany.holotron4-30b-a3b",
+ "loadFailed": true,
+ "projectChanges": {
+  "created": {
+   "count": 0,
+   "names": []
+  },
+  "modified": {
+   "count": 0,
+   "names": []
+  },
+  "deleted": {
+   "count": 0,
+   "names": []
+  }
+ },
+ "armExit": null,
+ "arm": "Harness Lab (primary arm)"
+}

@@ -131,6 +131,53 @@ the later original runs and the replication (judged from its preference file, no
 property of the model.</div>
 <div class="sc"><table><thead><tr><th>Configuration</th><th>Model</th><th>Verdicts</th><th>Median s</th></tr></thead><tbody>{trs}</tbody></table></div>
 """
+    newm = ""
+    ndir = data_dir / "new-models"
+    if ndir.exists():
+        reasons = {
+            "qwen3.8-27b-iu4-kairic-edge": "not loadable: the installed engine rejects its tensor type",
+            "qwen3.8-27b-turbo-fable-cold-fusion-735-882-heretic-uncensored-neo-coder-max-mtp": "does not fit in 24 GB VRAM",
+            "hcompany.holotron4-30b-a3b": "does not fit in 24 GB VRAM",
+        }
+
+        def vn(d):
+            if d.get("loadFailed"):
+                return "INFRA"
+            facts = sum(1 for x in (d.get("reportChecks") or {}).values() if x)
+            if d.get("upstreamError") or d.get("timedOut") or d.get("threw") or d.get("noResult") or not d.get("readOnlyKept", False):
+                return "FAIL"
+            return "PASS" if facts == 4 else "PARTIAL" if facts >= 2 else "FAIL"
+
+        groups = {}
+        for f in sorted(glob.glob(str(ndir / "*" / "*.json"))):
+            d = json.load(open(f))
+            if "model" not in d:
+                continue
+            name = d["model"].split("/")[-1].replace(".gguf", "")
+            groups.setdefault(name, []).append((os.path.basename(os.path.dirname(f)), d))
+        trs = ""
+        order = {"PASS": 0, "PARTIAL": 1, "FAIL": 2, "INFRA": 3}
+        rows_new = []
+        for name, items in groups.items():
+            vs = [vn(d) for _, d in items]
+            secs = sorted(d["elapsedSeconds"] for _, d in items if d.get("elapsedSeconds") is not None)
+            vram = max((d.get("vramMiBAfterLoad") or 0) for _, d in items)
+            limit = "20 min (3 runs) and 10 min (1 run)" if any(k.startswith("dense20") for k, _ in items) else "10 min"
+            note = reasons.get(name, "")
+            rows_new.append((min(order[v] for v in vs), name, vs, secs, vram, limit, note))
+        for _, name, vs, secs, vram, limit, note in sorted(rows_new):
+            trs += (f'<tr><td class="mono">{e(name[:46])}</td><td class="n">{len(vs)}</td>'
+                    f'<td class="mono">{" ".join(SYM[v] for v in vs)}</td><td class="n">{fmt(secs[len(secs) // 2]) if secs else "–"}</td>'
+                    f'<td class="n">{vram / 1024:.1f}</td><td class="n mut">{e(limit)}</td><td class="mut">{e(note)}</td></tr>')
+        newm = f"""<h3>Models added after the confirmatory runs (same day, outside the registered protocol)</h3>
+<p>Each was downloaded later and run with a fixed LM Studio configuration saved next to the result: context 100000, KV cache q8_0,
+temperature 0.7, top_k 20, top_p 0.90, min_p 0, repeat penalty 1.0. Only one model, Qwen3.8 27B GSQ RCO (IQ3_S), got
+repeats: it passed in two of three confirmatory runs and in its first screening run. The dense Holo4 27B was run once at the
+registered 10-minute limit and three times at 20 minutes; the extra time did not change the outcome. Published benchmark
+scores for that model are for computer-use tasks, which this verification task is not. One run per model is an observation,
+not a ranking.</p>
+<div class="sc"><table><thead><tr><th>Model</th><th>Runs</th><th>Verdicts</th><th>Median s</th><th>VRAM GB</th><th>Limit</th><th>Note</th></tr></thead><tbody>{trs}</tbody></table></div>
+"""
     n_pass_all = sum(1 for r in repeated if r["runs"] and r["pass"] == r["runs"])
     consistent = sum(1 for r in repeated if r["repeatable"])
     return f"""
@@ -158,6 +205,7 @@ that a model fails reproducibly.</p>
 <div class="sc"><table><thead><tr>{head}</tr></thead><tbody>{once_rows}</tbody></table></div>
 {addendum}
 {repl}
+{newm}
 <p class="mut">Did not load (excluded from rates): {inf}.</p>
 <h2>Harness notes (secondary)</h2>
 <p>Observations about the arm, not about the models. None was changed in order to obtain the table above.</p>
