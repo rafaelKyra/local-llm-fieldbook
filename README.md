@@ -71,13 +71,14 @@ Read finding 1 as "passed three times, once". Models added later are in `new-mod
 settings used stored in every result.
 
 Running many models also exposed faults in the arm itself. They were corrected in steps and the same four models were run
-again three times after each step (`arm-iterations/`, versions v2 to v4; v1 is the earlier data):
+again three times after each step (`arm-iterations/`, versions v2 to v5; v1 is the earlier data):
 
 | # | Finding | Status |
 |---|---|---|
 | 6 | The first batch of corrections made the result worse: a safety default refused the build commands the task ordered (a stderr merge was read as a file redirect), and the dense base model went from 3 of 3 passes to 0 of 3. The rerun showed it; it was corrected. | Measured here |
-| 7 | After the final corrections no run wrote into the project and the read-only policy refused no command (v3 had six refusals of read-only commands). The pass count moved within noise (9 of 12 in v3, 8 of 12 in v4): the corrections are judged by the failure they removed, not by a better score. | Measured here |
-| 8 | Three defects of the arm remain open and are listed in the report (the final step does not receive raw outputs of earlier steps; a second one-step replan is rejected; the evidence gate can repeat a refusal with no way out). | Open |
+| 7 | After the corrections of v4 no run wrote into the project and the read-only policy refused no command (v3 had six refusals of read-only commands). The pass count moved within noise (9, 8 and 8 of 12 in v3, v4 and v5): the corrections are judged by the failure they removed, not by a better score. | Measured here |
+| 8 | v5 gave the report step the last lines of the latest commands, to stop reports from lacking a fact. It did not work as hoped: four of twelve reports still lack one fact in v4 and again in v5. Reported as it came out. | Measured here |
+| 9 | Open defects of the arm, listed in the report: the final step still lacks some earlier output, a second one-step replan is rejected, the evidence gate can repeat a refusal, and a model that keeps asking for a refused action has no way out (fourteen refused writes in one run, which ended at the time limit). | Open |
 
 Twelve runs made while the runtime's server restarted under the batch were set aside as invalid and are in no table. Results
 are labelled by arm version and must not be compared across versions as if the arm were the same.

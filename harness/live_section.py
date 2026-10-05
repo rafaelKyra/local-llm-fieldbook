@@ -184,7 +184,7 @@ not a ranking.</p>
         models_arm = [("base27", "qwen3.8-27b"), ("gsq", "qwen3.8-27b-gsq-rco"),
                       ("cyber", "cyber-tiel-coder-35b-a3b-apex-i-nanoplus"), ("holo4", "holo4-35b-a3b-i1")]
         v1_src = {"base27": "new-models/base27-run*", "gsq": "new-models/gsq-run*", "holo4": "replication/cellB-run*"}
-        v_dirs = {"v2": "v2-first-fixes-with-regression", "v3": "v3-corrected", "v4": "v4-final"}
+        v_dirs = {"v2": "v2-first-fixes-with-regression", "v3": "v3-corrected", "v4": "v4-final", "v5": "v5-latest-outputs"}
 
         def va(d):
             facts = sum(1 for x in (d.get("reportChecks") or {}).values() if x)
@@ -202,17 +202,18 @@ not a ranking.</p>
 
         table = {}
         for tag, model in models_arm:
-            table[tag] = {v: load_runs(v, tag, model) for v in ("v1", "v2", "v3", "v4")}
+            table[tag] = {v: load_runs(v, tag, model) for v in ("v1", "v2", "v3", "v4", "v5")}
         vt = ""
         for tag, model in models_arm:
             cells = ""
-            for v in ("v1", "v2", "v3", "v4"):
+            for v in ("v1", "v2", "v3", "v4", "v5"):
                 runs = table[tag][v]
                 cells += (f'<td class="mono">{" ".join(SYM[va(d)] for d in runs) if runs else "n/a"}</td>')
             vt += f'<tr><td class="mono">{e(model[:40])}</td>{cells}</tr>'
         mech = ""
         for v, label in (("v1", "v1 · as first run"), ("v2", "v2 · first corrections (with a regression)"),
-                         ("v3", "v3 · regression corrected"), ("v4", "v4 · final corrections")):
+                         ("v3", "v3 · regression corrected"), ("v4", "v4 · quoting and scratch paths corrected"),
+                         ("v5", "v5 · report step given the latest command output")):
             runs = [d for tag, _ in models_arm for d in table[tag][v]]
             if not runs:
                 continue
@@ -230,14 +231,18 @@ the same prompt and the same recorded LM Studio settings (context 100000, KV cac
 top_p 0.90, min_p 0, repeat penalty 1.0). <b>The first batch of corrections made the result worse</b> (v2): a safety
 default refused the very build commands the task ordered. The rerun showed it, and it was corrected. Results are therefore
 labelled by arm version and must not be compared across versions as if the arm were the same. The arm's code is not published.</div>
-<div class="sc"><table><thead><tr><th>Model</th><th>v1 · before</th><th>v2 · first corrections</th><th>v3 · regression corrected</th><th>v4 · final</th></tr></thead><tbody>{vt}</tbody></table></div>
+<div class="sc"><table><thead><tr><th>Model</th><th>v1 · before</th><th>v2 · first corrections</th><th>v3 · regression corrected</th><th>v4 · quoting corrected</th><th>v5 · latest outputs</th></tr></thead><tbody>{vt}</tbody></table></div>
 <p class="mut">v1 has no run of cyber-tiel under these exact settings; v1 for holo4 is the replication cell with the same settings.
 Each cell is three runs, in order.</p>
 <div class="sc"><table><thead><tr><th>Arm version</th><th>Runs</th><th>PASS</th><th>Wrote into the project</th><th>Commands refused by the read-only policy</th><th>Report with 2 or 3 of 4 facts</th></tr></thead><tbody>{mech}</tbody></table></div>
-<p><b>What the tables show.</b> The pass count moves within noise between v3 and v4, so the corrections cannot be credited with a
-better model score. What changed is the mechanism: in v4 no run wrote into the project and the read-only policy refused no
-command, where v3 had six refusals of read-only commands and v2 refused the builds the task asked for. A correction was
-judged by the failure it removed, not by the pass rate.</p>
+<p><b>What the tables show.</b> The pass count moves within noise from v3 to v5 (9, 8 and 8 of 12), so the corrections cannot be
+credited with a better model score. What changed is the mechanism: in v4 no run wrote into the project and the read-only
+policy refused no command, where v3 had six refusals of read-only commands and v2 refused the builds the task asked for. A
+correction was judged by the failure it removed, not by the pass rate. <b>v5 did not do what it was meant to</b>: giving the
+report step the latest command output left the number of reports lacking a fact at 4 of 12 (the missing test count fell from 4
+to 3 runs, other facts went missing instead). In v5 the policy refused 14 calls, all of them the same model asking again and
+again to write a file into the read-only project in one run, which ended at the time limit: the refusal was right, and the
+model had no way out of it.</p>
 <div class="sc"><table><thead><tr><th>#</th><th>Defect in the arm</th><th>How it showed</th><th>Correction</th><th>State</th></tr></thead><tbody>
 <tr><td>1</td><td>Bookkeeping calls (plan, report) counted as file writes by the evidence gate</td><td>A truthful "no files changed" report was refused five times in one run</td><td>Those calls are left out of the free-text write heuristic</td><td>fixed</td></tr>
 <tr><td>2</td><td>A "write a file now" directive sent to a task that forbade writes</td><td>A verification step was told to write</td><td>The directive is never sent on a read-only task</td><td>fixed</td></tr>
@@ -246,9 +251,10 @@ judged by the failure it removed, not by the pass rate.</p>
 <tr><td>5</td><td>A quoted character and a log under the project's own scratch directory were refused</td><td>Six refusals of read-only commands in one model's runs</td><td>Quoted text is data; a payload passed to a shell is judged on its own</td><td>fixed</td></tr>
 <tr><td>6</td><td>The runner wrote a note into the project it was told not to change</td><td>One run counted as modified</td><td>The note is not written on a read-only task</td><td>fixed</td></tr>
 <tr><td>7</td><td>A model that could not be loaded was reported as a protocol problem</td><td>HTTP 400 with a hint pointing at the wrong settings</td><td>A message that names memory, context and quantization</td><td>fixed</td></tr>
-<tr><td>8</td><td>The final step does not receive the raw output of earlier steps</td><td>Some v4 reports lack one fact (APK size or the test count) although the commands ran</td><td>not corrected</td><td><b>open</b></td></tr>
+<tr><td>8</td><td>The final step does not receive the raw output of earlier steps</td><td>Four of twelve reports lack one fact (usually the test count) in v4 and again in v5</td><td>v5 passes the last lines of the latest commands to the report step; it did not lower the count of incomplete reports</td><td><b>open</b>, one attempt made</td></tr>
 <tr><td>9</td><td>A second replan with one step is rejected</td><td>Seen in the logs of several runs</td><td>not corrected</td><td><b>open</b></td></tr>
 <tr><td>10</td><td>The evidence gate can repeat the same refusal two to four times with no way out; a step can be declared empty on an otherwise good run</td><td>Repeated refusals and "ghost" steps in v3 and v4 runs</td><td>not corrected</td><td><b>open</b></td></tr>
+<tr><td>11</td><td>A model that keeps asking for a refused action has no way out</td><td>In one v5 run the model asked fourteen times to write a file into the read-only project and the run ended at the time limit</td><td>not corrected; the refusal is right, what is missing is a way to end the step</td><td><b>open</b></td></tr>
 </tbody></table></div>
 <p class="mut">Measurement faults found on the way, all outside the arm: the first runs did not record the KV-cache type or the sampling
 values; a result file was named differently from what the runner looked for when a model key held an at-sign; a vision

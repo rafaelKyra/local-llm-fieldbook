@@ -116,3 +116,5 @@ anything that still matches a forbidden pattern.
   the arm: a correction is judged by the failure it removed (writes into the project, refused commands), not by the pass rate.
 * 2026-10-05: twelve runs of the final arm were set aside as invalid because the runtime's server restarted while the batch
   ran and every later load failed with an out-of-memory error. They are not counted and the batch was run again in full.
+* 2026-10-05, amendment: version v5 of the arm gave the report step the last lines of the latest commands. Four of twelve
+  reports still lacked a fact, as in v4; the change is published as it came out and is not counted as a success.
