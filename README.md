@@ -63,6 +63,25 @@ Not reproducible end to end from this repository: the arm's code is not publishe
 (`harness/live-orchestration/live-eval.sh`), analysis (`analyze.py`), sanitiser (`sanitize.py`) and every run's
 sanitised result are. Findings about the arm itself are secondary and are in the report.
 
+### Replication, new models, and correcting the arm (2026-10-04 and 2026-10-05)
+
+Finding 1 above did not survive a replication made the same day: the two models that passed three times were run again
+under three LM Studio configurations, three runs each, and neither repeated three passes in any cell (`replication/`).
+Read finding 1 as "passed three times, once". Models added later are in `new-models/`, one to four runs each, with the
+settings used stored in every result.
+
+Running many models also exposed faults in the arm itself. They were corrected in steps and the same four models were run
+again three times after each step (`arm-iterations/`, versions v2 to v4; v1 is the earlier data):
+
+| # | Finding | Status |
+|---|---|---|
+| 6 | The first batch of corrections made the result worse: a safety default refused the build commands the task ordered (a stderr merge was read as a file redirect), and the dense base model went from 3 of 3 passes to 0 of 3. The rerun showed it; it was corrected. | Measured here |
+| 7 | After the final corrections no run wrote into the project and the read-only policy refused no command (v3 had six refusals of read-only commands). The pass count moved within noise (9 of 12 in v3, 8 of 12 in v4): the corrections are judged by the failure they removed, not by a better score. | Measured here |
+| 8 | Three defects of the arm remain open and are listed in the report (the final step does not receive raw outputs of earlier steps; a second one-step replan is rejected; the evidence gate can repeat a refusal with no way out). | Open |
+
+Twelve runs made while the runtime's server restarted under the batch were set aside as invalid and are in no table. Results
+are labelled by arm version and must not be compared across versions as if the arm were the same.
+
 ## Reported earlier, not yet reproduced here
 
 These come from an earlier hand-written report. The raw data is not in this repository, so

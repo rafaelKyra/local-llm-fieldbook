@@ -57,6 +57,17 @@
    "names": []
   }
  },
+ "policyDenialCount": null,
+ "lmStudioSettings": {
+  "contextLength": 100000,
+  "kvCacheK": "q8_0",
+  "kvCacheV": "q8_0",
+  "temperature": 0.7,
+  "topK": 20,
+  "topP": 0.9,
+  "minP": 0.0,
+  "repeatPenalty": 1.0
+ },
  "armExit": 0,
  "arm": "Harness Lab (primary arm)"
 }

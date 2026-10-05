@@ -1,6 +1,6 @@
 {
- "model": "holo4-35b-a3b-i1",
- "elapsedSeconds": 116,
+ "model": "qwen3.6-35b-a3b",
+ "elapsedSeconds": 153,
  "timedOut": false,
  "threw": null,
  "planSteps": 4,
@@ -10,22 +10,21 @@
  "aborts": [],
  "tools": {
   "submit_plan": 1,
-  "bash": 5
+  "bash": 15,
+  "read": 4
  },
- "toolCalls": 6,
- "stepTokens": 19590,
+ "toolCalls": 20,
+ "stepTokens": 77474,
  "stepCosts": [
-  14078,
-  3199,
-  1171,
-  1142
+  14229,
+  25797,
+  5829,
+  31619
  ],
  "gates": {
-  "passed": 3,
-  "blocked": 1,
-  "blockedKinds": [
-   ""
-  ]
+  "passed": 4,
+  "blocked": 0,
+  "blockedKinds": []
  },
  "contextWindows": [
   100000
@@ -38,7 +37,7 @@
   "claimsNoChanges": true
  },
  "loadedContext": "100000",
- "vramMiBAfterLoad": 23584,
+ "vramMiBAfterLoad": 22429,
  "loadSeconds": 8,
  "projectChanges": {
   "created": {
@@ -54,8 +53,17 @@
    "names": []
   }
  },
- "policyDenialCount": null,
- "lmStudioSettings": null,
+ "policyDenialCount": 0,
+ "lmStudioSettings": {
+  "contextLength": 100000,
+  "kvCacheK": "q8_0",
+  "kvCacheV": "q8_0",
+  "temperature": 0.7,
+  "topK": 20,
+  "topP": 0.9,
+  "minP": 0.0,
+  "repeatPenalty": 1.0
+ },
  "armExit": 0,
  "arm": "Harness Lab (primary arm)"
 }

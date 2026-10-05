@@ -1,27 +1,34 @@
 {
- "model": "qwen3.8-27b-gsq-rco",
- "elapsedSeconds": 290,
- "timedOut": false,
+ "model": "qwen3.8-27b",
+ "elapsedSeconds": 600,
+ "timedOut": true,
  "threw": null,
  "planSteps": 4,
  "planAbandoned": null,
  "upstreamError": null,
- "stepsFailed": [],
+ "stepsFailed": [
+  "s4:partial_action_pending",
+  "s4:partial_action_pending"
+ ],
  "aborts": [],
  "tools": {
-  "submit_plan": 1,
-  "bash": 10
+  "submit_plan": 2,
+  "bash": 12,
+  "list_dir": 4,
+  "read": 10,
+  "task": 2
  },
- "toolCalls": 11,
- "stepTokens": 65034,
+ "toolCalls": 30,
+ "stepTokens": 97763,
  "stepCosts": [
-  14154,
-  23468,
-  3912,
-  23500
+  14259,
+  22736,
+  1515,
+  28115,
+  31138
  ],
  "gates": {
-  "passed": 3,
+  "passed": 4,
   "blocked": 1,
   "blockedKinds": [
    ""
@@ -30,20 +37,22 @@
  "contextWindows": [
   100000
  ],
- "readOnlyKept": true,
+ "readOnlyKept": false,
  "reportChecks": {
   "mentionsJavac": true,
   "mentionsTests74": true,
-  "mentionsApkSize": true,
+  "mentionsApkSize": false,
   "claimsNoChanges": true
  },
  "loadedContext": "100000",
- "vramMiBAfterLoad": 18595,
- "loadSeconds": 7,
+ "vramMiBAfterLoad": 22226,
+ "loadSeconds": 9,
  "projectChanges": {
   "created": {
-   "count": 0,
-   "names": []
+   "count": 1,
+   "names": [
+    "20261005-082540-reader-y67wk.md"
+   ]
   },
   "modified": {
    "count": 0,

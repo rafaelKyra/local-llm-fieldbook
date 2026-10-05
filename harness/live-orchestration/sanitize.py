@@ -15,6 +15,7 @@ KEEP = [
     "model", "loadFailed", "noResult", "elapsedSeconds", "timedOut", "threw", "planSteps", "planAbandoned",
     "upstreamError", "stepsFailed", "aborts", "tools", "toolCalls", "stepTokens", "stepCosts", "gates",
     "contextWindows", "readOnlyKept", "reportChecks", "loadedContext", "vramMiBAfterLoad", "loadSeconds",
+    "policyActive",
 ]
 # Generic rules that name nothing private. The project-specific ones (its name, package, class names, the arm's product
 # name) are read from a PRIVATE file given with --terms, one per line: pattern<TAB>replacement. That file is not part of
@@ -54,6 +55,34 @@ def scrub(value):
     return value
 
 
+def settings_of(src_dir, raw):
+    """The LM Studio settings the run used, read from the config saved next to the result (values only).
+
+    The file is named after the model key; if it is not there the settings are reported as unknown (None) rather
+    than taken from some other model's file."""
+    wanted = re.sub(r"[/@]", "_", str(raw.get("model", ""))) + ".lmstudio-config.json"
+    path = os.path.join(src_dir, wanted)
+    if not os.path.exists(path):
+        return None
+    cfg = json.load(open(path))
+    fields = {f["key"]: f["value"] for sec in ("load", "operation") for f in (cfg.get(sec) or {}).get("fields", [])}
+
+    def val(k):
+        v = fields.get(k)
+        return v.get("value") if isinstance(v, dict) else v
+
+    return {
+        "contextLength": val("llm.load.contextLength"),
+        "kvCacheK": val("llm.load.llama.kCacheQuantizationType"),
+        "kvCacheV": val("llm.load.llama.vCacheQuantizationType"),
+        "temperature": val("llm.prediction.temperature"),
+        "topK": val("llm.prediction.topKSampling"),
+        "topP": val("llm.prediction.topPSampling"),
+        "minP": val("llm.prediction.minPSampling"),
+        "repeatPenalty": val("llm.prediction.repeatPenalty"),
+    }
+
+
 def changes(raw):
     ch = raw.get("projectChanges") or {}
     return {k: {"count": len(ch.get(k) or []), "names": [scrub(os.path.basename(n)) for n in (ch.get(k) or [])][:8]}
@@ -75,6 +104,9 @@ def main():
             continue
         out = {k: scrub(raw[k]) for k in KEEP if k in raw}
         out["projectChanges"] = changes(raw)
+        # Absent in runs made before the arm logged refused commands: unknown, not zero.
+        out["policyDenialCount"] = len(raw["policyDenials"]) if "policyDenials" in raw else None
+        out["lmStudioSettings"] = settings_of(src, raw)
         out["armExit"] = raw.get("armExit", raw.get("vitestExit"))
         out["arm"] = ARM_NAME
         text = json.dumps(out, indent=1, ensure_ascii=False)

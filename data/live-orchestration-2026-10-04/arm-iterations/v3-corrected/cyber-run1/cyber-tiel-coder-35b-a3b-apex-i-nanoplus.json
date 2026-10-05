@@ -1,27 +1,30 @@
 {
- "model": "holo4-35b-a3b-i1",
- "elapsedSeconds": 116,
+ "model": "cyber-tiel-coder-35b-a3b-apex-i-nanoplus",
+ "elapsedSeconds": 478,
  "timedOut": false,
  "threw": null,
- "planSteps": 4,
+ "planSteps": 5,
  "planAbandoned": null,
  "upstreamError": null,
  "stepsFailed": [],
  "aborts": [],
  "tools": {
-  "submit_plan": 1,
-  "bash": 5
+  "submit_plan": 2,
+  "bash": 13,
+  "list_dir": 1,
+  "read": 4
  },
- "toolCalls": 6,
- "stepTokens": 19590,
+ "toolCalls": 20,
+ "stepTokens": 85891,
  "stepCosts": [
-  14078,
-  3199,
-  1171,
-  1142
+  14537,
+  6364,
+  23063,
+  8754,
+  33173
  ],
  "gates": {
-  "passed": 3,
+  "passed": 4,
   "blocked": 1,
   "blockedKinds": [
    ""
@@ -33,13 +36,14 @@
  "readOnlyKept": true,
  "reportChecks": {
   "mentionsJavac": true,
-  "mentionsTests74": false,
+  "mentionsTests74": true,
   "mentionsApkSize": true,
   "claimsNoChanges": true
  },
  "loadedContext": "100000",
- "vramMiBAfterLoad": 23584,
- "loadSeconds": 8,
+ "vramMiBAfterLoad": 15025,
+ "loadSeconds": 22,
+ "policyActive": true,
  "projectChanges": {
   "created": {
    "count": 0,
@@ -54,8 +58,17 @@
    "names": []
   }
  },
- "policyDenialCount": null,
- "lmStudioSettings": null,
+ "policyDenialCount": 3,
+ "lmStudioSettings": {
+  "contextLength": 100000,
+  "kvCacheK": "q8_0",
+  "kvCacheV": "q8_0",
+  "temperature": 0.7,
+  "topK": 20,
+  "topP": 0.9,
+  "minP": 0.0,
+  "repeatPenalty": 1.0
+ },
  "armExit": 0,
  "arm": "Harness Lab (primary arm)"
 }

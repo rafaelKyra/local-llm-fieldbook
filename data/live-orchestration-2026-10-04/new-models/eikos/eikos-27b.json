@@ -1,7 +1,7 @@
 {
- "model": "qwen3.8-27b-gsq-rco",
- "elapsedSeconds": 290,
- "timedOut": false,
+ "model": "eikos-27b",
+ "elapsedSeconds": 600,
+ "timedOut": true,
  "threw": null,
  "planSteps": 4,
  "planAbandoned": null,
@@ -10,36 +10,35 @@
  "aborts": [],
  "tools": {
   "submit_plan": 1,
-  "bash": 10
+  "bash": 3
  },
- "toolCalls": 11,
- "stepTokens": 65034,
+ "toolCalls": 4,
+ "stepTokens": 38884,
  "stepCosts": [
-  14154,
-  23468,
-  3912,
-  23500
+  14427,
+  24457
  ],
  "gates": {
-  "passed": 3,
-  "blocked": 1,
+  "passed": 0,
+  "blocked": 2,
   "blockedKinds": [
-   ""
+   "\"no_change_contradiction\"",
+   "\"no_change_contradiction\""
   ]
  },
  "contextWindows": [
-  100000
+  65000
  ],
  "readOnlyKept": true,
  "reportChecks": {
-  "mentionsJavac": true,
-  "mentionsTests74": true,
-  "mentionsApkSize": true,
-  "claimsNoChanges": true
+  "mentionsJavac": false,
+  "mentionsTests74": false,
+  "mentionsApkSize": false,
+  "claimsNoChanges": false
  },
- "loadedContext": "100000",
- "vramMiBAfterLoad": 18595,
- "loadSeconds": 7,
+ "loadedContext": "65000",
+ "vramMiBAfterLoad": 23873,
+ "loadSeconds": 85,
  "projectChanges": {
   "created": {
    "count": 0,
@@ -54,7 +53,7 @@
    "names": []
   }
  },
- "policyDenialCount": null,
+ "policyDenialCount": 0,
  "lmStudioSettings": {
   "contextLength": 100000,
   "kvCacheK": "q8_0",

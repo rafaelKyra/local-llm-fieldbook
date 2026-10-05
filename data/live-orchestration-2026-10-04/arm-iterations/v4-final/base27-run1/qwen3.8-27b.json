@@ -1,30 +1,36 @@
 {
- "model": "qwen3.8-27b-gsq-rco",
- "elapsedSeconds": 290,
+ "model": "qwen3.8-27b",
+ "elapsedSeconds": 542,
  "timedOut": false,
  "threw": null,
  "planSteps": 4,
  "planAbandoned": null,
  "upstreamError": null,
- "stepsFailed": [],
+ "stepsFailed": [
+  "s4:final_report_evidence_missing",
+  "s4:final_report_evidence_missing"
+ ],
  "aborts": [],
  "tools": {
-  "submit_plan": 1,
-  "bash": 10
+  "submit_plan": 2,
+  "bash": 9
  },
  "toolCalls": 11,
- "stepTokens": 65034,
+ "stepTokens": 117067,
  "stepCosts": [
-  14154,
-  23468,
-  3912,
-  23500
+  14107,
+  18172,
+  21659,
+  30257,
+  2589,
+  30283
  ],
  "gates": {
-  "passed": 3,
-  "blocked": 1,
+  "passed": 4,
+  "blocked": 2,
   "blockedKinds": [
-   ""
+   "\"no_change_contradiction\"",
+   "\"no_change_contradiction\""
   ]
  },
  "contextWindows": [
@@ -38,8 +44,9 @@
   "claimsNoChanges": true
  },
  "loadedContext": "100000",
- "vramMiBAfterLoad": 18595,
- "loadSeconds": 7,
+ "vramMiBAfterLoad": 22382,
+ "loadSeconds": 9,
+ "policyActive": true,
  "projectChanges": {
   "created": {
    "count": 0,
@@ -54,7 +61,7 @@
    "names": []
   }
  },
- "policyDenialCount": null,
+ "policyDenialCount": 0,
  "lmStudioSettings": {
   "contextLength": 100000,
   "kvCacheK": "q8_0",

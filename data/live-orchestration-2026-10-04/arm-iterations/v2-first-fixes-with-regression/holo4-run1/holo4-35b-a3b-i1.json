@@ -1,6 +1,6 @@
 {
  "model": "holo4-35b-a3b-i1",
- "elapsedSeconds": 116,
+ "elapsedSeconds": 113,
  "timedOut": false,
  "threw": null,
  "planSteps": 4,
@@ -10,15 +10,16 @@
  "aborts": [],
  "tools": {
   "submit_plan": 1,
-  "bash": 5
+  "bash": 6,
+  "todo_write": 1
  },
- "toolCalls": 6,
- "stepTokens": 19590,
+ "toolCalls": 8,
+ "stepTokens": 22579,
  "stepCosts": [
-  14078,
-  3199,
-  1171,
-  1142
+  14010,
+  5374,
+  2184,
+  1011
  ],
  "gates": {
   "passed": 3,
@@ -33,13 +34,13 @@
  "readOnlyKept": true,
  "reportChecks": {
   "mentionsJavac": true,
-  "mentionsTests74": false,
+  "mentionsTests74": true,
   "mentionsApkSize": true,
   "claimsNoChanges": true
  },
  "loadedContext": "100000",
- "vramMiBAfterLoad": 23584,
- "loadSeconds": 8,
+ "vramMiBAfterLoad": 21315,
+ "loadSeconds": 26,
  "projectChanges": {
   "created": {
    "count": 0,
@@ -55,7 +56,16 @@
   }
  },
  "policyDenialCount": null,
- "lmStudioSettings": null,
+ "lmStudioSettings": {
+  "contextLength": 100000,
+  "kvCacheK": "q8_0",
+  "kvCacheV": "q8_0",
+  "temperature": 0.7,
+  "topK": 20,
+  "topP": 0.9,
+  "minP": 0.0,
+  "repeatPenalty": 1.0
+ },
  "armExit": 0,
  "arm": "Harness Lab (primary arm)"
 }

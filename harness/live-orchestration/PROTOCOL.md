@@ -103,3 +103,16 @@ anything that still matches a forbidden pattern.
   Effect believed nil. Directories were removed afterwards and the project verified equal to the pristine copy.
 * 2026-10-04, analysis: as expected for three runs, the intervals overlap, so the bands collapse to one. The ruler
   orders the extremes (3/3 against 0/3, Fisher exact two-sided p = 0.10), not the middle.
+* 2026-10-04, same day: the two models that passed every run were run again under three LM Studio configurations,
+  three runs each (outside this protocol). Neither repeated three passes in any cell; see `replication/`. The earlier
+  runs did not record the KV-cache type or the sampling values, so which setting differs cannot be said.
+* 2026-10-04 and 05, after the runs above (amendment): models downloaded later were run once, or three times when they
+  passed, with a fixed LM Studio configuration saved next to each result (`new-models/`). Context 100000, KV cache q8_0,
+  temperature 0.7, top_k 20, top_p 0.90, min_p 0, repeat penalty 1.0. A model whose weights plus context do not fit in 24 GB
+  is reported as not loadable, not as a failure.
+* 2026-10-05, amendment: the arm itself was corrected in steps and four models were run three times after each step
+  (`arm-iterations/`). Results carry the arm version. The first step made the result worse (a safety default refused the
+  commands the task ordered) and was corrected after the rerun showed it. Pass counts across versions are not a ranking of
+  the arm: a correction is judged by the failure it removed (writes into the project, refused commands), not by the pass rate.
+* 2026-10-05: twelve runs of the final arm were set aside as invalid because the runtime's server restarted while the batch
+  ran and every later load failed with an out-of-memory error. They are not counted and the batch was run again in full.

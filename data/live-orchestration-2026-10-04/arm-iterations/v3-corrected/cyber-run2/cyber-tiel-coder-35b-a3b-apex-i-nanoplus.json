@@ -1,31 +1,39 @@
 {
- "model": "qwen3.8-27b-gsq-rco",
- "elapsedSeconds": 290,
+ "model": "cyber-tiel-coder-35b-a3b-apex-i-nanoplus",
+ "elapsedSeconds": 563,
  "timedOut": false,
  "threw": null,
- "planSteps": 4,
+ "planSteps": 6,
  "planAbandoned": null,
  "upstreamError": null,
- "stepsFailed": [],
+ "stepsFailed": [
+  "s1:ghost",
+  "s2:ghost",
+  "s2:ghost"
+ ],
  "aborts": [],
  "tools": {
-  "submit_plan": 1,
-  "bash": 10
+  "submit_plan": 2,
+  "bash": 13
  },
- "toolCalls": 11,
- "stepTokens": 65034,
+ "toolCalls": 15,
+ "stepTokens": 133023,
  "stepCosts": [
-  14154,
-  23468,
-  3912,
-  23500
+  14205,
+  811,
+  530,
+  599,
+  4142,
+  1244,
+  27542,
+  28719,
+  28770,
+  26461
  ],
  "gates": {
-  "passed": 3,
-  "blocked": 1,
-  "blockedKinds": [
-   ""
-  ]
+  "passed": 10,
+  "blocked": 0,
+  "blockedKinds": []
  },
  "contextWindows": [
   100000
@@ -38,8 +46,9 @@
   "claimsNoChanges": true
  },
  "loadedContext": "100000",
- "vramMiBAfterLoad": 18595,
- "loadSeconds": 7,
+ "vramMiBAfterLoad": 15029,
+ "loadSeconds": 6,
+ "policyActive": true,
  "projectChanges": {
   "created": {
    "count": 0,
@@ -54,7 +63,7 @@
    "names": []
   }
  },
- "policyDenialCount": null,
+ "policyDenialCount": 0,
  "lmStudioSettings": {
   "contextLength": 100000,
   "kvCacheK": "q8_0",

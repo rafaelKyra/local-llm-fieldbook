@@ -52,6 +52,8 @@
    "names": []
   }
  },
+ "policyDenialCount": null,
+ "lmStudioSettings": null,
  "armExit": 0,
  "arm": "Harness Lab (primary arm)"
 }
