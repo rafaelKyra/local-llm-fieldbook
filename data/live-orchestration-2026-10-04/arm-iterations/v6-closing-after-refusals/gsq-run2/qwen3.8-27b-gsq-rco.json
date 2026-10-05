@@ -1,0 +1,81 @@
+{
+ "model": "qwen3.8-27b-gsq-rco",
+ "elapsedSeconds": 601,
+ "timedOut": true,
+ "threw": null,
+ "planSteps": 4,
+ "planAbandoned": null,
+ "upstreamError": null,
+ "stepsFailed": [
+  "s4:final_report_evidence_missing",
+  "s4:final_report_evidence_missing",
+  "s4:final_report_evidence_missing"
+ ],
+ "aborts": [],
+ "tools": {
+  "submit_plan": 3,
+  "bash": 24
+ },
+ "toolCalls": 27,
+ "stepTokens": 127648,
+ "stepCosts": [
+  14086,
+  23073,
+  21447,
+  4573,
+  24665,
+  39804
+ ],
+ "gates": {
+  "passed": 1,
+  "blocked": 5,
+  "blockedKinds": [
+   "\"no_change_contradiction\"",
+   "\"diff_or_content\",\"size\"",
+   "\"no_change_contradiction\"",
+   "\"no_change_contradiction\"",
+   "\"no_change_contradiction\""
+  ]
+ },
+ "contextWindows": [
+  100000
+ ],
+ "readOnlyKept": true,
+ "reportChecks": {
+  "mentionsJavac": true,
+  "mentionsTests74": false,
+  "mentionsApkSize": true,
+  "claimsNoChanges": false
+ },
+ "loadedContext": "100000",
+ "vramMiBAfterLoad": 18282,
+ "loadSeconds": 34,
+ "policyActive": true,
+ "projectChanges": {
+  "created": {
+   "count": 0,
+   "names": []
+  },
+  "modified": {
+   "count": 0,
+   "names": []
+  },
+  "deleted": {
+   "count": 0,
+   "names": []
+  }
+ },
+ "policyDenialCount": 0,
+ "lmStudioSettings": {
+  "contextLength": 100000,
+  "kvCacheK": "q8_0",
+  "kvCacheV": "q8_0",
+  "temperature": 0.7,
+  "topK": 20,
+  "topP": 0.9,
+  "minP": 0.0,
+  "repeatPenalty": 1.0
+ },
+ "armExit": 0,
+ "arm": "Harness Lab (primary arm)"
+}

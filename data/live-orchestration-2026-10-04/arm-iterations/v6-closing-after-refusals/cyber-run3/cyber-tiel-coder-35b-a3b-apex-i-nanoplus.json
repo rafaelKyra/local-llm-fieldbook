@@ -1,0 +1,73 @@
+{
+ "model": "cyber-tiel-coder-35b-a3b-apex-i-nanoplus",
+ "elapsedSeconds": 322,
+ "timedOut": false,
+ "threw": null,
+ "planSteps": 5,
+ "planAbandoned": null,
+ "upstreamError": null,
+ "stepsFailed": [
+  "s3:ghost"
+ ],
+ "aborts": [],
+ "tools": {
+  "submit_plan": 2,
+  "bash": 9
+ },
+ "toolCalls": 11,
+ "stepTokens": 118449,
+ "stepCosts": [
+  14524,
+  3071,
+  25226,
+  25833,
+  22452,
+  27343
+ ],
+ "gates": {
+  "passed": 6,
+  "blocked": 0,
+  "blockedKinds": []
+ },
+ "contextWindows": [
+  100000
+ ],
+ "readOnlyKept": true,
+ "reportChecks": {
+  "mentionsJavac": true,
+  "mentionsTests74": true,
+  "mentionsApkSize": true,
+  "claimsNoChanges": true
+ },
+ "loadedContext": "100000",
+ "vramMiBAfterLoad": 15052,
+ "loadSeconds": 6,
+ "policyActive": true,
+ "projectChanges": {
+  "created": {
+   "count": 0,
+   "names": []
+  },
+  "modified": {
+   "count": 0,
+   "names": []
+  },
+  "deleted": {
+   "count": 0,
+   "names": []
+  }
+ },
+ "policyDenialCount": 0,
+ "lmStudioSettings": {
+  "contextLength": 100000,
+  "kvCacheK": "q8_0",
+  "kvCacheV": "q8_0",
+  "temperature": 0.7,
+  "topK": 20,
+  "topP": 0.9,
+  "minP": 0.0,
+  "repeatPenalty": 1.0
+ },
+ "armExit": 0,
+ "arm": "Harness Lab (primary arm)"
+}

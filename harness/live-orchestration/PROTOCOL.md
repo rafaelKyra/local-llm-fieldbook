@@ -118,3 +118,6 @@ anything that still matches a forbidden pattern.
   ran and every later load failed with an out-of-memory error. They are not counted and the batch was run again in full.
 * 2026-10-05, amendment: version v5 of the arm gave the report step the last lines of the latest commands. Four of twelve
   reports still lacked a fact, as in v4; the change is published as it came out and is not counted as a success.
+* 2026-10-05, amendment: version v6 of the arm closes tool use for the rest of a step after five refused calls. Four acceptance
+  criteria were written before the runs (no write into the project; no read or build command refused wrongly; a closed step
+  ends in text; at least 6 of 12 passes). Three were met; the third was not exercised, because the limit was never reached.
