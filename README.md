@@ -82,6 +82,9 @@ again three times after each step (`arm-iterations/`, versions v2 to v8; v1 is t
 | 10 | v7 (replan, one definition of a write, early probes kept) met its four criteria. v8 (the lane that revises the draft is given the whole task) corrected a real fault but did not meet its criteria: 6 passes against a target of 8, and 6 reports with a fact missing against a target of at most 2. The missing test total is partly a model listing per-class counts without adding them, which the check does not accept: a stricter proxy than the task's wording. | Measured here |
 | 11 | Still open and listed in the report: the final step still lacks some earlier output (the test count is missing from some reports), a second one-step replan is rejected, and the evidence gate can repeat a refusal until the time limit. | Open |
 
+An outside review of the arm and of these corrections was requested on 2026-10-06; its findings will be added here when they
+arrive. Weaknesses of the arm's own safeguards are not described in detail until they are corrected.
+
 Twelve runs made while the runtime's server restarted under the batch were set aside as invalid and are in no table. Results
 are labelled by arm version and must not be compared across versions as if the arm were the same.
 

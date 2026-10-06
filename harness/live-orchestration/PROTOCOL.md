@@ -127,3 +127,6 @@ anything that still matches a forbidden pattern.
   contradiction from a temp-directory write; at most 2 of 12 reports with a missing fact; at least 8 passes) were NOT met (one
   contradiction, 6 reports, 6 passes). Published as it came out. The test-total check accepts only the total, so a report
   listing correct per-class counts without the sum counts as missing a fact; this is noted as a limit of the check.
+* 2026-10-06, amendment: an outside review of the arm and of its corrections was requested. Its findings will be added to the
+  report as received, including those that contradict it. A defect found while preparing the review (the read-only mark of a task
+  lasting as long as the session) was corrected after v8 and is shown by a unit test; no live run covers it yet.
