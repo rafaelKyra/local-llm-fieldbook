@@ -130,3 +130,9 @@ anything that still matches a forbidden pattern.
 * 2026-10-06, amendment: an outside review of the arm and of its corrections was requested. Its findings will be added to the
   report as received, including those that contradict it. A defect found while preparing the review (the read-only mark of a task
   lasting as long as the session) was corrected after v8 and is shown by a unit test; no live run covers it yet.
+* 2026-10-06, amendment: an independent review read the sources and ran the classification functions (no live model runs). It found
+  that one figure was miscounted (the evidence gate refused in seven of twelve v8 runs, not nine); the figure is corrected on the
+  page. The PASS rule of `analyze.py` now also rejects an abandoned plan, as the harness does; every abandoned plan in the data was
+  already a failure, so no verdict changes (checked: `analysis.json` is byte for byte the same). `arm_iterations.py` reproduces the
+  per-version table. The corrections made after the review (read-only filter, evidence gate, labelling of command output, scope of
+  the data given to another endpoint) are covered by unit tests and by no live run yet.

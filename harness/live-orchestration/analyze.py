@@ -3,7 +3,10 @@
 
 <data-dir> holds run1/, run2/, ... each with one <model>.json per model (sanitised).
 Per model, over the runs it has:
-  PASS      final report holds all four facts, the project was not touched, the session ended on its own
+  PASS      final report holds all four facts, the project was not touched, the plan was not abandoned and the session ended on its own
+            (a step that failed and was recovered still counts, see the deviation log; the facts are matched by regular expressions:
+            the test total must appear as the literal 74 and 'none' anywhere stands for 'no file changed', so the check can accept
+            or reject a report a person would judge differently)
   PARTIAL   same, but at least two (not four) facts
   FAIL      anything else (did not finish, endpoint error, timed out, touched the project, fewer than two facts)
   INFRA     did not load: excluded from rates (reported separately)
@@ -29,7 +32,9 @@ def verdict(d):
     if d.get("loadFailed"):
         return "INFRA"
     facts = sum(1 for v in (d.get("reportChecks") or {}).values() if v)
-    if d.get("upstreamError") or d.get("timedOut") or d.get("threw") or d.get("noResult"):
+    # A plan that was abandoned is not a session that ended on its own (the harness' own `finished` says so too).
+    # A step that failed and was recovered still counts: that was decided in the deviation log of PROTOCOL.md.
+    if d.get("upstreamError") or d.get("timedOut") or d.get("threw") or d.get("noResult") or d.get("planAbandoned"):
         return "FAIL"
     if not d.get("readOnlyKept", False):
         return "FAIL"
