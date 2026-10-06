@@ -136,3 +136,6 @@ anything that still matches a forbidden pattern.
   already a failure, so no verdict changes (checked: `analysis.json` is byte for byte the same). `arm_iterations.py` reproduces the
   per-version table. The corrections made after the review (read-only filter, evidence gate, labelling of command output, scope of
   the data given to another endpoint) are covered by unit tests and by no live run yet.
+* 2026-10-06, amendment: v9 of the arm carried the corrections made after the outside review. Criteria written beforehand: no write
+  into the project (met); at most 3 of 12 runs with an evidence-gate refusal (NOT met: 7); at least 7 of 12 passes (NOT met: 5); no
+  read or build command refused wrongly (met: one refusal, a real attempt to use a writing tool). Published as it came out.
