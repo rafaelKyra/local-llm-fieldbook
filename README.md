@@ -71,7 +71,7 @@ Read finding 1 as "passed three times, once". Models added later are in `new-mod
 settings used stored in every result.
 
 Running many models also exposed faults in the arm itself. They were corrected in steps and the same four models were run
-again three times after each step (`arm-iterations/`, versions v2 to v6; v1 is the earlier data):
+again three times after each step (`arm-iterations/`, versions v2 to v8; v1 is the earlier data):
 
 | # | Finding | Status |
 |---|---|---|
@@ -79,7 +79,8 @@ again three times after each step (`arm-iterations/`, versions v2 to v6; v1 is t
 | 7 | After the corrections of v4 no run wrote into the project and the read-only policy refused no command (v3 had six refusals of read-only commands). The pass count moved within noise (9, 8 and 8 of 12 in v3, v4 and v5): the corrections are judged by the failure they removed, not by a better score. | Measured here |
 | 8 | v5 gave the report step the last lines of the latest commands, to stop reports from lacking a fact. It did not work as hoped: four of twelve reports still lack one fact in v4 and again in v5. Reported as it came out. | Measured here |
 | 9 | v6 closes tool use for a step after five refused calls (a model had asked fourteen times to write into the read-only project). Judged against four criteria written beforehand: three met, one not exercised live (shown by a unit test); 7 of 12 passes against 8 in v5, within noise. | Measured here |
-| 10 | Still open and listed in the report: the final step still lacks some earlier output (the test count is missing from some reports), a second one-step replan is rejected, and the evidence gate can repeat a refusal until the time limit. | Open |
+| 10 | v7 (replan, one definition of a write, early probes kept) met its four criteria. v8 (the lane that revises the draft is given the whole task) corrected a real fault but did not meet its criteria: 6 passes against a target of 8, and 6 reports with a fact missing against a target of at most 2. The missing test total is partly a model listing per-class counts without adding them, which the check does not accept: a stricter proxy than the task's wording. | Measured here |
+| 11 | Still open and listed in the report: the final step still lacks some earlier output (the test count is missing from some reports), a second one-step replan is rejected, and the evidence gate can repeat a refusal until the time limit. | Open |
 
 Twelve runs made while the runtime's server restarted under the batch were set aside as invalid and are in no table. Results
 are labelled by arm version and must not be compared across versions as if the arm were the same.

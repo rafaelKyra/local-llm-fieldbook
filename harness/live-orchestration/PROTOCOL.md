@@ -121,3 +121,9 @@ anything that still matches a forbidden pattern.
 * 2026-10-05, amendment: version v6 of the arm closes tool use for the rest of a step after five refused calls. Four acceptance
   criteria were written before the runs (no write into the project; no read or build command refused wrongly; a closed step
   ends in text; at least 6 of 12 passes). Three were met; the third was not exercised, because the limit was never reached.
+* 2026-10-06, amendment: v7 and v8 of the arm. v7: a replan may depend on finished steps; the evidence gate and the read-only
+  policy share one definition of a write; the report step keeps early command output. Criteria written beforehand, all met. v8:
+  the lane that revises the draft is given the observations of the whole task. Criteria written beforehand (no write; no
+  contradiction from a temp-directory write; at most 2 of 12 reports with a missing fact; at least 8 passes) were NOT met (one
+  contradiction, 6 reports, 6 passes). Published as it came out. The test-total check accepts only the total, so a report
+  listing correct per-class counts without the sum counts as missing a fact; this is noted as a limit of the check.
