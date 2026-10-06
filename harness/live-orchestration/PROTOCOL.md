@@ -139,3 +139,8 @@ anything that still matches a forbidden pattern.
 * 2026-10-06, amendment: v9 of the arm carried the corrections made after the outside review. Criteria written beforehand: no write
   into the project (met); at most 3 of 12 runs with an evidence-gate refusal (NOT met: 7); at least 7 of 12 passes (NOT met: 5); no
   read or build command refused wrongly (met: one refusal, a real attempt to use a writing tool). Published as it came out.
+* 2026-10-06, amendment: v10 of the arm counts a read-only shell command as an inspection in the evidence gate. Criteria written beforehand:
+  no write into the project (met); at most 3 of 12 runs with an evidence-gate refusal (met: 2, against 7 in v8 and v9); at least 7 of 12
+  passes (NOT met: 6); no read or build command refused wrongly (met). In five of twelve runs the only missing fact is the test total;
+  the check wants the literal 74, so per-class counts without a sum count as missing. A scorer that accepts them has not been written and,
+  to be fair, would have to be fixed beforehand and applied to every version.

@@ -184,7 +184,7 @@ not a ranking.</p>
         models_arm = [("base27", "qwen3.8-27b"), ("gsq", "qwen3.8-27b-gsq-rco"),
                       ("cyber", "cyber-tiel-coder-35b-a3b-apex-i-nanoplus"), ("holo4", "holo4-35b-a3b-i1")]
         v1_src = {"base27": "new-models/base27-run*", "gsq": "new-models/gsq-run*", "holo4": "replication/cellB-run*"}
-        v_dirs = {"v2": "v2-first-fixes-with-regression", "v3": "v3-corrected", "v4": "v4-final", "v5": "v5-latest-outputs", "v6": "v6-closing-after-refusals", "v7": "v7-replan-gate-facts", "v8": "v8-verifier-whole-task", "v9": "v9-audit-corrections"}
+        v_dirs = {"v2": "v2-first-fixes-with-regression", "v3": "v3-corrected", "v4": "v4-final", "v5": "v5-latest-outputs", "v6": "v6-closing-after-refusals", "v7": "v7-replan-gate-facts", "v8": "v8-verifier-whole-task", "v9": "v9-audit-corrections", "v10": "v10-shell-inspection"}
 
         def va(d):
             facts = sum(1 for x in (d.get("reportChecks") or {}).values() if x)
@@ -202,11 +202,11 @@ not a ranking.</p>
 
         table = {}
         for tag, model in models_arm:
-            table[tag] = {v: load_runs(v, tag, model) for v in ("v1", "v2", "v3", "v4", "v5", "v6", "v7", "v8", "v9")}
+            table[tag] = {v: load_runs(v, tag, model) for v in ("v1", "v2", "v3", "v4", "v5", "v6", "v7", "v8", "v9", "v10")}
         vt = ""
         for tag, model in models_arm:
             cells = ""
-            for v in ("v1", "v2", "v3", "v4", "v5", "v6", "v7", "v8", "v9"):
+            for v in ("v1", "v2", "v3", "v4", "v5", "v6", "v7", "v8", "v9", "v10"):
                 runs = table[tag][v]
                 cells += (f'<td class="mono">{" ".join(SYM[va(d)] for d in runs) if runs else "n/a"}</td>')
             vt += f'<tr><td class="mono">{e(model[:40])}</td>{cells}</tr>'
@@ -217,7 +217,8 @@ not a ranking.</p>
                          ("v6", "v6 · tool use closed after repeated refusals"),
                          ("v7", "v7 · replan, one definition of a write, early probes kept"),
                          ("v8", "v8 · verification lane given the whole task"),
-                         ("v9", "v9 · corrections after the outside review")):
+                         ("v9", "v9 · corrections after the outside review"),
+                         ("v10", "v10 · a read-only shell command counts as inspection")):
             runs = [d for tag, _ in models_arm for d in table[tag][v]]
             if not runs:
                 continue
@@ -235,11 +236,11 @@ the same prompt and the same recorded LM Studio settings (context 100000, KV cac
 top_p 0.90, min_p 0, repeat penalty 1.0). <b>The first batch of corrections made the result worse</b> (v2): a safety
 default refused the very build commands the task ordered. The rerun showed it, and it was corrected. Results are therefore
 labelled by arm version and must not be compared across versions as if the arm were the same. The arm's code is not published.</div>
-<div class="sc"><table><thead><tr><th>Model</th><th>v1 · before</th><th>v2 · first corrections</th><th>v3 · regression corrected</th><th>v4 · quoting corrected</th><th>v5 · latest outputs</th><th>v6 · closing after refusals</th><th>v7 · replan, write rule, probes</th><th>v8 · verifier, whole task</th><th>v9 · after the review</th></tr></thead><tbody>{vt}</tbody></table></div>
+<div class="sc"><table><thead><tr><th>Model</th><th>v1 · before</th><th>v2 · first corrections</th><th>v3 · regression corrected</th><th>v4 · quoting corrected</th><th>v5 · latest outputs</th><th>v6 · closing after refusals</th><th>v7 · replan, write rule, probes</th><th>v8 · verifier, whole task</th><th>v9 · after the review</th><th>v10 · shell inspection</th></tr></thead><tbody>{vt}</tbody></table></div>
 <p class="mut">v1 has no run of cyber-tiel under these exact settings; v1 for holo4 is the replication cell with the same settings.
 Each cell is three runs, in order.</p>
 <div class="sc"><table><thead><tr><th>Arm version</th><th>Runs</th><th>PASS</th><th>Wrote into the project</th><th>Commands refused by the read-only policy</th><th>Report with 2 or 3 of 4 facts</th></tr></thead><tbody>{mech}</tbody></table></div>
-<p><b>What the tables show.</b> The pass count moves within noise from v3 to v9 (9, 8, 8, 7, 8, 6 and 5 of 12; the last two are the lowest, which three runs per model neither show to be a decline nor exclude), so the corrections cannot be
+<p><b>What the tables show.</b> The pass count moves within noise from v3 to v10 (9, 8, 8, 7, 8, 6, 5 and 6 of 12; three runs per model neither show a decline nor exclude one), so the corrections cannot be
 credited with a better model score. What changed is the mechanism: in v4 no run wrote into the project and the read-only
 policy refused no command, where v3 had six refusals of read-only commands and v2 refused the builds the task asked for. A
 correction was judged by the failure it removed, not by the pass rate. <b>v5 did not do what it was meant to</b>: giving the
@@ -272,7 +273,19 @@ written before the runs. Met: no run wrote into the project (0 of 12); no read o
 real attempt to use a writing tool). <b>Not met</b>: the evidence gate refused in at most three of twelve runs (it refused in seven,
 as in v8) and at least seven passes (five). The correction to the gate for a report backed by a test run therefore did not lower the
 number of refusals in live runs: that defect does not explain most of them, and their cause stays open. No correction made after the
-review has, as yet, shown an effect in a live run.</p>
+review had, at that point, shown an effect in a live run.</p>
+<p><b>v10</b> followed from a measurement, not a guess. The gate was made to report the conditions of its read-only exemption, and for a
+report whose only evidence was a listing it said that no inspection had happened: its evidence text holds tool outputs, not
+commands, and models inspect almost only through the shell. A shell command that writes nothing and prints something now counts as
+an inspection, as it already did in the read-only policy. Criteria written before the runs: no write into the project (met, 0 of
+12); the gate refused in at most three of twelve runs (<b>met</b>: two, against seven in v8 and v9, the first correction that
+showed its effect live); at least seven passes (<b>not met</b>: six); no read or build command refused wrongly (met, none). The
+gate is therefore not what held the pass count down. In five of the twelve runs the only missing fact is the test total, and in
+four of them it is the only fact missing: a report listing the per-class counts without adding them up is scored as missing it.
+The scorer is a stricter proxy than the task's wording, so most of what separates six passes from ten is a property of the
+measurement, not of the arm; a scorer that accepts the per-class counts would have to be fixed beforehand and applied to every
+version, and has not been written. The two refusals left (one run where the gate saw a mutation although the policy refused no
+write, one where it was handed a single observation) are leads, not explanations.</p>
 <div class="sc"><table><thead><tr><th>#</th><th>Defect in the arm</th><th>How it showed</th><th>Correction</th><th>State</th></tr></thead><tbody>
 <tr><td>1</td><td>Bookkeeping calls (plan, report) counted as file writes by the evidence gate</td><td>A truthful "no files changed" report was refused five times in one run</td><td>Those calls are left out of the free-text write heuristic</td><td>fixed</td></tr>
 <tr><td>2</td><td>A "write a file now" directive sent to a task that forbade writes</td><td>A verification step was told to write</td><td>The directive is never sent on a read-only task</td><td>fixed</td></tr>
@@ -300,7 +313,7 @@ evidence gate refused in seven of twelve v8 runs, not nine (corrected above). Wh
 below; what was not corrected is stated as open. The review itself is private because it describes ways around the guard.</p>
 <div class="sc"><table><thead><tr><th>#</th><th>Raised by the review</th><th>State</th></tr></thead><tbody>
 <tr><td>16</td><td>The read-only filter let some constructs through (the part of a command after a harmless pipe, a command substitution inside quotes, tools that write by name)</td><td>reproduced and corrected, with tests. The filter remains best-effort; the arm must not be described as enforcing read-only. Enforcement by the operating system, and a capability model that refuses unclassified tools, are not done</td></tr>
-<tr><td>17</td><td>The evidence gate refused a true read-only report ("files changed: none, all tests pass") that rested on a real test run</td><td>reproduced and corrected, with tests; no effect on the number of refusals in the live runs of v9 (seven of twelve runs, as in v8)</td></tr>
+<tr><td>17</td><td>The evidence gate refused a true read-only report ("files changed: none, all tests pass") that rested on a real test run</td><td>reproduced and corrected, with tests; no effect on the number of refusals in the live runs of v9 (seven of twelve runs, as in v8); the cause found afterwards (a read-only shell command was not recognised as an inspection) lowered them to two of twelve in v10</td></tr>
 <tr><td>18</td><td>What a command printed was placed in the prompt under a heading that said the application had recorded it</td><td>relabelled untrusted and fenced, and the step is told never to follow instructions in it. This reduces confusion; it is not a guarantee against injection</td></tr>
 <tr><td>19</td><td>The verification lane received the whole task's output; another endpoint could receive it</td><td>another endpoint now receives only the current run, as before; redaction and an authorisation of what leaves the application are not done</td></tr>
 <tr><td>20</td><td>The public scorer did not reject an abandoned plan, the harness did; the check is a regular expression (the literal 74, "none" anywhere)</td><td>scorer partly aligned: an abandoned plan is now rejected (no published verdict changes: every abandoned plan was already a failure), but a step that failed and was recovered still counts in the public scorer and not in the harness's own verdict field, a decision recorded in the protocol; a script reproduces this table from the data (v1 has nine runs, the others twelve); the regular-expression check is unchanged and can accept or reject a report a person would judge differently</td></tr>

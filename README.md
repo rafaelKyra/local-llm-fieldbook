@@ -71,7 +71,7 @@ Read finding 1 as "passed three times, once". Models added later are in `new-mod
 settings used stored in every result.
 
 Running many models also exposed faults in the arm itself. They were corrected in steps and the same four models were run
-again three times after each step (`arm-iterations/`, versions v2 to v9; v1 is the earlier data):
+again three times after each step (`arm-iterations/`, versions v2 to v10; v1 is the earlier data):
 
 | # | Finding | Status |
 |---|---|---|
@@ -81,7 +81,8 @@ again three times after each step (`arm-iterations/`, versions v2 to v9; v1 is t
 | 9 | v6 closes tool use for a step after five refused calls (a model had asked fourteen times to write into the read-only project). Judged against four criteria written beforehand: three met, one not exercised live (shown by a unit test); 7 of 12 passes against 8 in v5, within noise. | Measured here |
 | 10 | v7 (replan, one definition of a write, early probes kept) met its four criteria. v8 (the lane that revises the draft is given the whole task) corrected a real fault but did not meet its criteria: 6 passes against a target of 8, and 6 reports with a fact missing against a target of at most 2. The missing test total is partly a model listing per-class counts without adding them, which the check does not accept: a stricter proxy than the task's wording. | Measured here |
 | 11 | v9 (the corrections made after the outside review) did not meet two of its four criteria written beforehand: five passes against a target of seven, and the evidence gate refused in seven of twelve runs against a target of three. Nothing was written into the project. The corrections have not, as yet, shown an effect in a live run. | Measured here |
-| 12 | Still open and listed in the report: the final step still lacks some earlier output (the test count is missing from some reports), a second one-step replan is rejected, and the evidence gate can repeat a refusal until the time limit. | Open |
+| 12 | v10 followed from a measurement: the gate was made to report why it refused, and it showed that a read-only shell command was not recognised as an inspection. After the correction the gate refused in 2 of 12 runs, against 7 in v8 and v9 (met); 6 passes against a target of 7 (not met). In five of the twelve runs the only missing fact is the test total: a report listing per-class counts without adding them up is scored as missing it, so most of what separates 6 passes from 10 is a property of the scorer, not of the arm. | Measured here |
+| 13 | Still open and listed in the report: the final step still lacks some earlier output (the test count is missing from some reports), a second one-step replan is rejected, and the evidence gate can repeat a refusal until the time limit. | Open |
 
 An independent review of the arm and of these corrections was made on 2026-10-06 (sources read, classification functions run, no live
 model runs). Its verdict: the corrections fix real faults, but the read-only mode is a best-effort guard, not a guarantee that no

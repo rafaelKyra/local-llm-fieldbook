@@ -1,0 +1,83 @@
+{
+ "model": "holo4-35b-a3b-i1",
+ "elapsedSeconds": 252,
+ "timedOut": false,
+ "threw": null,
+ "planSteps": 4,
+ "planAbandoned": "step \"Build debug APK\" unrecoverable after 2 replans (0/2 steps done)",
+ "upstreamError": null,
+ "stepsFailed": [
+  "s3:engineering_zero_tool_call",
+  "s3:engineering_zero_tool_call",
+  "s2:engineering_zero_tool_call",
+  "s2:engineering_zero_tool_call",
+  "s3:engineering_zero_tool_call",
+  "s3:engineering_zero_tool_call"
+ ],
+ "aborts": [],
+ "tools": {
+  "submit_plan": 3,
+  "bash": 9,
+  "todo_write": 3,
+  "submit_report": 1
+ },
+ "toolCalls": 16,
+ "stepTokens": 78206,
+ "stepCosts": [
+  20435,
+  28828,
+  1755,
+  1845,
+  8993,
+  1895,
+  1947,
+  10283,
+  2225
+ ],
+ "gates": {
+  "passed": 9,
+  "blocked": 0,
+  "blockedKinds": []
+ },
+ "contextWindows": [
+  100000
+ ],
+ "readOnlyKept": true,
+ "reportChecks": {
+  "mentionsJavac": true,
+  "mentionsTests74": true,
+  "mentionsApkSize": true,
+  "claimsNoChanges": true
+ },
+ "loadedContext": "100000",
+ "vramMiBAfterLoad": 21271,
+ "loadSeconds": 8,
+ "policyActive": true,
+ "projectChanges": {
+  "created": {
+   "count": 0,
+   "names": []
+  },
+  "modified": {
+   "count": 0,
+   "names": []
+  },
+  "deleted": {
+   "count": 0,
+   "names": []
+  }
+ },
+ "policyDenialCount": 0,
+ "lmStudioSettings": {
+  "contextLength": 100000,
+  "kvCacheK": "q8_0",
+  "kvCacheV": "q8_0",
+  "temperature": 0.7,
+  "topK": 20,
+  "topP": 0.9,
+  "minP": 0.0,
+  "repeatPenalty": 1.0
+ },
+ "armExit": 0,
+ "arm": "Harness Lab (primary arm)"
+}

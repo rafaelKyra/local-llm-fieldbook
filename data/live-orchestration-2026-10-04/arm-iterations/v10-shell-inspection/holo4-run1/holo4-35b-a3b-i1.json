@@ -1,0 +1,82 @@
+{
+ "model": "holo4-35b-a3b-i1",
+ "elapsedSeconds": 240,
+ "timedOut": false,
+ "threw": null,
+ "planSteps": 4,
+ "planAbandoned": null,
+ "upstreamError": null,
+ "stepsFailed": [
+  "s3:engineering_zero_tool_call",
+  "s3:engineering_zero_tool_call",
+  "s4:engineering_zero_tool_call"
+ ],
+ "aborts": [
+  "sdk_replay_loop_exceeded"
+ ],
+ "tools": {
+  "submit_plan": 2,
+  "bash": 8,
+  "todo_write": 4
+ },
+ "toolCalls": 14,
+ "stepTokens": 149481,
+ "stepCosts": [
+  13864,
+  6956,
+  28751,
+  1592,
+  7770,
+  58410,
+  30180,
+  1958
+ ],
+ "gates": {
+  "passed": 7,
+  "blocked": 1,
+  "blockedKinds": [
+   ""
+  ]
+ },
+ "contextWindows": [
+  100000
+ ],
+ "readOnlyKept": true,
+ "reportChecks": {
+  "mentionsJavac": true,
+  "mentionsTests74": false,
+  "mentionsApkSize": true,
+  "claimsNoChanges": true
+ },
+ "loadedContext": "100000",
+ "vramMiBAfterLoad": 21028,
+ "loadSeconds": 54,
+ "policyActive": true,
+ "projectChanges": {
+  "created": {
+   "count": 0,
+   "names": []
+  },
+  "modified": {
+   "count": 0,
+   "names": []
+  },
+  "deleted": {
+   "count": 0,
+   "names": []
+  }
+ },
+ "policyDenialCount": 0,
+ "lmStudioSettings": {
+  "contextLength": 100000,
+  "kvCacheK": "q8_0",
+  "kvCacheV": "q8_0",
+  "temperature": 0.7,
+  "topK": 20,
+  "topP": 0.9,
+  "minP": 0.0,
+  "repeatPenalty": 1.0
+ },
+ "armExit": 0,
+ "arm": "Harness Lab (primary arm)"
+}
