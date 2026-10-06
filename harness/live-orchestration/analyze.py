@@ -28,10 +28,18 @@ def wilson(k, n, z=1.96):
     return (max(0.0, c - h), min(1.0, c + h))
 
 
-def verdict(d):
+V1_FACTS = ("mentionsJavac", "mentionsTests74", "mentionsApkSize", "claimsNoChanges")
+V2_FACTS = ("mentionsJavac", "testsFactV2", "mentionsApkSize", "claimsNoChanges")
+
+
+def verdict(d, scorer=1):
+    """scorer 1 = the published instrument (literal 74). scorer 2 = the test fact also accepts the four per-class counts; it exists
+    only for runs that record `testsFactV2` (a change of instrument, fixed before use, never applied to older runs)."""
     if d.get("loadFailed"):
         return "INFRA"
-    facts = sum(1 for v in (d.get("reportChecks") or {}).values() if v)
+    checks = d.get("reportChecks") or {}
+    keys = V2_FACTS if scorer == 2 and "testsFactV2" in checks else V1_FACTS
+    facts = sum(1 for k in keys if checks.get(k))
     # A plan that was abandoned is not a session that ended on its own (the harness' own `finished` says so too).
     # A step that failed and was recovered still counts: that was decided in the deviation log of PROTOCOL.md.
     if d.get("upstreamError") or d.get("timedOut") or d.get("threw") or d.get("noResult") or d.get("planAbandoned"):
