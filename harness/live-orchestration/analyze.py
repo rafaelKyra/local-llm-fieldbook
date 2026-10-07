@@ -30,15 +30,21 @@ def wilson(k, n, z=1.96):
 
 V1_FACTS = ("mentionsJavac", "mentionsTests74", "mentionsApkSize", "claimsNoChanges")
 V2_FACTS = ("mentionsJavac", "testsFactV2", "mentionsApkSize", "claimsNoChanges")
+V3_FACTS = ("mentionsJavac", "testsFactV3", "mentionsApkSize", "claimsNoChanges")
 
 
 def verdict(d, scorer=1):
     """scorer 1 = the published instrument (literal 74). scorer 2 = the test fact also accepts the four per-class counts; it exists
-    only for runs that record `testsFactV2` (a change of instrument, fixed before use, never applied to older runs)."""
+    only for runs that record `testsFactV2` (a change of instrument, fixed before use, never applied to older runs).
+    scorer 3 (from 2026-10-07) takes the expected test counts from the project's own result files at the START of each run (stored in the
+    run as `expectedTests`), because the project gained a test and v1 (literal 74) and v2 (four fixed classes) then failed correct reports."""
     if d.get("loadFailed"):
         return "INFRA"
     checks = d.get("reportChecks") or {}
-    keys = V2_FACTS if scorer == 2 and "testsFactV2" in checks else V1_FACTS
+    if scorer == 3 and "testsFactV3" in checks:
+        keys = V3_FACTS
+    else:
+        keys = V2_FACTS if scorer == 2 and "testsFactV2" in checks else V1_FACTS
     facts = sum(1 for k in keys if checks.get(k))
     # A plan that was abandoned is not a session that ended on its own (the harness' own `finished` says so too).
     # A step that failed and was recovered still counts: that was decided in the deviation log of PROTOCOL.md.

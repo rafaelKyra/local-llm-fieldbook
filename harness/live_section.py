@@ -97,7 +97,9 @@ and run once, same prompt and settings, outside the registered protocol. They do
         def v_of(d):
             # Scorer v1: the four original facts only. Newer runs also record scorer-v2 fields in reportChecks.
             checks = d.get("reportChecks") or {}
-            facts = sum(1 for k in ("mentionsJavac", "mentionsTests74", "mentionsApkSize", "claimsNoChanges") if checks.get(k))
+            # From v12 on a run carries scorer 3 (expected test counts read from the project at the start of the run): use it.
+            fact_keys = ("mentionsJavac", "testsFactV3", "mentionsApkSize", "claimsNoChanges") if "testsFactV3" in checks else ("mentionsJavac", "mentionsTests74", "mentionsApkSize", "claimsNoChanges")
+            facts = sum(1 for k in fact_keys if checks.get(k))
             if d.get("upstreamError") or d.get("timedOut") or d.get("threw") or d.get("noResult") or not d.get("readOnlyKept", False):
                 return "FAIL"
             return "PASS" if facts == 4 else "PARTIAL" if facts >= 2 else "FAIL"
@@ -186,13 +188,16 @@ not a ranking.</p>
         models_arm = [("base27", "qwen3.8-27b"), ("gsq", "qwen3.8-27b-gsq-rco"),
                       ("cyber", "cyber-tiel-coder-35b-a3b-apex-i-nanoplus"), ("holo4", "holo4-35b-a3b-i1")]
         v1_src = {"base27": "new-models/base27-run*", "gsq": "new-models/gsq-run*", "holo4": "replication/cellB-run*"}
-        v_dirs = {"v2": "v2-first-fixes-with-regression", "v3": "v3-corrected", "v4": "v4-final", "v5": "v5-latest-outputs", "v6": "v6-closing-after-refusals", "v7": "v7-replan-gate-facts", "v8": "v8-verifier-whole-task", "v9": "v9-audit-corrections", "v10": "v10-shell-inspection", "v11": "v11-audit-items-os-overlay"}
+        v_dirs = {"v2": "v2-first-fixes-with-regression", "v3": "v3-corrected", "v4": "v4-final", "v5": "v5-latest-outputs", "v6": "v6-closing-after-refusals", "v7": "v7-replan-gate-facts", "v8": "v8-verifier-whole-task", "v9": "v9-audit-corrections", "v10": "v10-shell-inspection", "v11": "v11-audit-items-os-overlay", "v12": "v12-gate-policy-detectors", "v13": "v13-external-patch-v2"}
 
         def va(d):
             # Scorer v1: the four original facts only (newer runs also record scorer-v2 fields in reportChecks), and a plan
             # that was abandoned is not a session that ended on its own: the same rule as analyze.py.
             checks = d.get("reportChecks") or {}
-            facts = sum(1 for k in ("mentionsJavac", "mentionsTests74", "mentionsApkSize", "claimsNoChanges") if checks.get(k))
+            # From v12 on a run carries scorer 3 (expected test counts read from the project at the start of the run): use it.
+            fact_keys = (("mentionsJavac", "testsFactV3", "mentionsApkSize", "claimsNoChanges") if "testsFactV3" in checks
+                         else ("mentionsJavac", "mentionsTests74", "mentionsApkSize", "claimsNoChanges"))
+            facts = sum(1 for k in fact_keys if checks.get(k))
             if d.get("upstreamError") or d.get("timedOut") or d.get("threw") or d.get("noResult") or d.get("planAbandoned") or not d.get("readOnlyKept", False):
                 return "FAIL"
             return "PASS" if facts == 4 else "PARTIAL" if facts >= 2 else "FAIL"
@@ -207,11 +212,11 @@ not a ranking.</p>
 
         table = {}
         for tag, model in models_arm:
-            table[tag] = {v: load_runs(v, tag, model) for v in ("v1", "v2", "v3", "v4", "v5", "v6", "v7", "v8", "v9", "v10", "v11")}
+            table[tag] = {v: load_runs(v, tag, model) for v in ("v1", "v2", "v3", "v4", "v5", "v6", "v7", "v8", "v9", "v10", "v11", "v12", "v13")}
         vt = ""
         for tag, model in models_arm:
             cells = ""
-            for v in ("v1", "v2", "v3", "v4", "v5", "v6", "v7", "v8", "v9", "v10", "v11"):
+            for v in ("v1", "v2", "v3", "v4", "v5", "v6", "v7", "v8", "v9", "v10", "v11", "v12", "v13"):
                 runs = table[tag][v]
                 cells += (f'<td class="mono">{" ".join(SYM[va(d)] for d in runs) if runs else "n/a"}</td>')
             vt += f'<tr><td class="mono">{e(model[:40])}</td>{cells}</tr>'
@@ -224,7 +229,9 @@ not a ranking.</p>
                          ("v8", "v8 · verification lane given the whole task"),
                          ("v9", "v9 · corrections after the outside review"),
                          ("v10", "v10 · a read-only shell command counts as inspection"),
-                         ("v11", "v11 · audit items, capability model, OS overlay")):
+                         ("v11", "v11 · audit items, capability model, OS overlay"),
+                         ("v12", "v12 · gate sees what the policy refuses, detector fixes, noise fixes (scorer 3)"),
+                         ("v13", "v13 · external patch applied unmodified, new flags off (scorer 3)")):
             runs = [d for tag, _ in models_arm for d in table[tag][v]]
             if not runs:
                 continue
@@ -232,7 +239,7 @@ not a ranking.</p>
             wrote = sum(1 for d in runs if not d.get("readOnlyKept", True))
             den = [d.get("policyDenialCount") for d in runs if d.get("policyDenialCount") is not None]
             denied = str(sum(den)) if den else "not recorded"
-            lacking = sum(1 for d in runs if 0 < sum(1 for k in ("mentionsJavac", "mentionsTests74", "mentionsApkSize", "claimsNoChanges") if (d.get("reportChecks") or {}).get(k)) < 4)
+            lacking = sum(1 for d in runs if 0 < sum(1 for k in (("mentionsJavac", "testsFactV3", "mentionsApkSize", "claimsNoChanges") if "testsFactV3" in (d.get("reportChecks") or {}) else ("mentionsJavac", "mentionsTests74", "mentionsApkSize", "claimsNoChanges")) if (d.get("reportChecks") or {}).get(k)) < 4)
             mech += (f'<tr><td>{e(label)}</td><td class="n">{len(runs)}</td><td class="n">{passes}</td>'
                      f'<td class="n">{wrote}</td><td class="n">{denied}</td><td class="n">{lacking}</td></tr>')
         arm = f"""<h3>The arm was corrected after this ruler showed its defects, and the same runs were repeated</h3>
@@ -242,11 +249,11 @@ the same prompt and the same recorded LM Studio settings (context 100000, KV cac
 top_p 0.90, min_p 0, repeat penalty 1.0). <b>The first batch of corrections made the result worse</b> (v2): a safety
 default refused the very build commands the task ordered. The rerun showed it, and it was corrected. Results are therefore
 labelled by arm version and must not be compared across versions as if the arm were the same. The arm's code is not published.</div>
-<div class="sc"><table><thead><tr><th>Model</th><th>v1 · before</th><th>v2 · first corrections</th><th>v3 · regression corrected</th><th>v4 · quoting corrected</th><th>v5 · latest outputs</th><th>v6 · closing after refusals</th><th>v7 · replan, write rule, probes</th><th>v8 · verifier, whole task</th><th>v9 · after the review</th><th>v10 · shell inspection</th><th>v11 · audit items, OS overlay</th></tr></thead><tbody>{vt}</tbody></table></div>
+<div class="sc"><table><thead><tr><th>Model</th><th>v1 · before</th><th>v2 · first corrections</th><th>v3 · regression corrected</th><th>v4 · quoting corrected</th><th>v5 · latest outputs</th><th>v6 · closing after refusals</th><th>v7 · replan, write rule, probes</th><th>v8 · verifier, whole task</th><th>v9 · after the review</th><th>v10 · shell inspection</th><th>v11 · audit items, OS overlay</th><th>v12 · gate and detectors (scorer 3)</th><th>v13 · external patch (scorer 3)</th></tr></thead><tbody>{vt}</tbody></table></div>
 <p class="mut">v1 has no run of cyber-tiel under these exact settings; v1 for holo4 is the replication cell with the same settings.
 Each cell is three runs, in order.</p>
 <div class="sc"><table><thead><tr><th>Arm version</th><th>Runs</th><th>PASS</th><th>Wrote into the project</th><th>Commands refused by the read-only policy</th><th>Report with 2 or 3 of 4 facts</th></tr></thead><tbody>{mech}</tbody></table></div>
-<p><b>What the tables show.</b> The pass count moves within noise from v3 to v11 (9, 8, 8, 7, 8, 6, 5, 6 and 5 of 12; three runs per model neither show a decline nor exclude one), so the corrections cannot be
+<p><b>What the tables show.</b> The pass count moves within noise from v3 to v13 (9, 8, 8, 7, 8, 6, 5, 6, 5, 4 and 7 of 12; three runs per model neither show a decline nor exclude one), so the corrections cannot be
 credited with a better model score. What changed is the mechanism: in v4 no run wrote into the project and the read-only
 policy refused no command, where v3 had six refusals of read-only commands and v2 refused the builds the task asked for. A
 correction was judged by the failure it removed, not by the pass rate. <b>v5 did not do what it was meant to</b>: giving the
@@ -282,6 +289,10 @@ number of refusals in live runs: that defect does not explain most of them, and 
 review had, at that point, shown an effect in a live run.</p>
 <p><b>v11</b> carries the open items of the outside audit: more shell writers denied; a core of "writes the project" (the writer commands, <code>touch</code>, the scratch rule) shared by the tool policy and the evidence gate, which still differ on a substitution, a delete after a pipe and an interpreter write; a quoted absolute path counts as scratch only under the workspace's own scratch directories; a capability model that refuses a tool nobody classified; secrets replaced before text leaves for a different verifier endpoint; and, switched on by a flag for this batch, the workspace of a read-only task mounted by the operating system as a throwaway overlay (checked first on one real project: the build and the unit tests ran inside it and the project on disk did not change; it was applied in all 12 runs). Criteria written beforehand: no write into the project (<b>met</b>, 0 of 12); at most three runs with a gate refusal (<b>met</b>: two); at least six passes (<b>not met</b>: five; the second scorer, which also accepts per-class test counts, gives eight); no read or build command refused wrongly and no build broken by the overlay (<b>met</b>). All eleven refusals came from one rule that read the word "wrote" in a shell command or its output as a file write; it was corrected afterwards, which is why the pass count fell short. The gate diagnostics found two defects of the same kind while this batch was prepared: a write the runner had recorded to a scratch directory counted as a change (a first attempt was stopped after three runs and is not counted), and the same wording rule. A confirmation batch of the corrected build is registered before its runs. <b>What is and is not shown:</b> the overlay was checked on one project, whose Android SDK lies inside it; a project with a toolchain in the home directory needs it left off. The capability model refuses unknown tools in a read-only task, which a custom tool may need to be told to pass. Read-only remains a best-effort guard, not a security boundary.</p>
 <p><b>One more model, collected as data only</b> (<code>arm-iterations/v11-kat-addendum</code>, same task, same settings, 100,000 tokens of context loaded, 23.7 GB of 24): a code model of about 22 GB passed 3 of 3 runs, 185 to 255 seconds, no write and no refused command. Three runs do not rank it.</p>
+<p><b>A batch that measured the wrong thing, and a change of instrument.</b> A confirmation batch of the arm after v11 came out with every report scored PARTIAL, with only the test total missing. It was not the arm: between two batches the project had gained a test (the owner had asked a model to add one in the application window), so it now held 75 tests, and the two earlier scorers look for the literal 74 or for four fixed class counts. The reports said 75, and were right. The batch was set aside as invalid for scoring (seven complete runs, published separately as <code>v12-invalid-ground-truth-75-tests</code>, one interrupted run recorded as interrupted and not as a failure) and not repeated as if nothing had happened. <b>Scorer 3</b> reads the expected test counts from the project's own result files at the start of each run and stores them with the run; it was fixed before the next batch, v1 and v2 stay as they were, and only runs that carry scorer 3 are scored with it (the v12 and v13 columns). Recomputing the seven invalid runs after the fact with 75 gives 4 passes; that is labelled as such and not counted in any column.</p>
+<p><b>v12</b> (build with the wording-rule fix, a detector that no longer reads "explain how to fix" as a request to change, a gate that sees what the policy refuses, scratch targets written with <code>$PWD</code>, an overlay that refuses symlinked scratch directories, and two noise fixes: no ghost banner on a plan step that is already done, middle steps told not to write the final report). Criteria written beforehand: no write (<b>met</b>, 0 of 12); at most three runs with a gate refusal (<b>met</b>: none, the first batch with no refusal at all); at least six passes (<b>not met</b>: four); no command refused wrongly (<b>met</b>). Four reports were incomplete in a fact other than the test total, against one or two in the three earlier batches; the cause is not established (a planner change that tells middle steps not to write the report is the candidate, twelve runs do not show it) and it is stated as open.</p>
+<p><b>v13</b> applies an external audit patch unmodified (hashes of the ten files equal to the manifest of its author; type check, its own 146 tests, the golden regression and the full suite equal to the recorded red baseline apart from one check that needs the new files committed). It budgets the tool schemas offered to a local model, validates the arguments of a hidden target tool before it runs, gives the count request its own deadline, and widens the loopback detector. Its two opt-in flags were left off, so the batch measures only the default-on changes. Criteria written beforehand: no write (<b>met</b>), at most three runs with a refusal (<b>met</b>: none), at least four passes, the v12 figure (<b>met</b>: seven of twelve), nothing new in the logs about schemas, validation or the count hook (<b>met</b>). Seven against four is not an improvement that twelve runs can separate, and with the flags off the new paths barely run: this shows that the patch did not break the task, not that it helps. The effect of the two flags is not measured.</p>
+<p><b>One scenario in the application window</b> (an owner-run check of a build with the corrections, one model, one coding task: add one unit test to an existing class): the read-only policy did not switch on, every step after the first received the record of files written, no ghost banner appeared, the file list in the report was correct and explained, and the test count on disk matched the report. A report-like message still appeared in one middle step, so the report showed twice, down from three or four times. The test the model added asserted on a local value and did not call the code under test, in the style of the class it was added to; it was replaced afterwards by one that calls the real method. This is one scenario, so it is "validated on one scenario", not on the build.</p>
 <p><b>A second batch of the v10 arm</b> (same behaviour; the gate log gained diagnostics, the harness stores the full report and a second test fact that also accepts the four per-class counts, fixed before the runs). Criteria written beforehand were all met: no write (0 of 12), gate refusals in 2 of 12 runs, 7 passes against a target of 6, no wrongful refusal. Scorer v2 changed no verdict (7 of 12 under both): the reports that lacked the test fact gave one class count (three holo4 runs) or counts the model itself said it had inferred, so the limit seen in v10 did not recur as a formatting problem. The diagnostics located the refusals: all three fell on the first step of a plan, before that step had run a tool, and the earlier lead of a refusal with a counted write did not recur. Reading the logs resolved it: in those runs step 1 ended twice with text and no tool call, and the gate correctly refused text that claimed results without evidence; on an intermediate step the runner treats the refusal as advisory, so it did not stop the run. It is the model answering before running anything, not a gate defect, and the criterion counts these advisory refusals too.</p>
 <p><b>v10</b> followed from a measurement, not a guess. The gate was made to report the conditions of its read-only exemption, and for a
 report whose only evidence was a listing it said that no inspection had happened: its evidence text holds tool outputs, not

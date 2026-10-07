@@ -71,7 +71,7 @@ Read finding 1 as "passed three times, once". Models added later are in `new-mod
 settings used stored in every result.
 
 Running many models also exposed faults in the arm itself. They were corrected in steps and the same four models were run
-again three times after each step (`arm-iterations/`, versions v2 to v11; v1 is the earlier data):
+again three times after each step (`arm-iterations/`, versions v2 to v13; v1 is the earlier data):
 
 | # | Finding | Status |
 |---|---|---|
@@ -84,7 +84,10 @@ again three times after each step (`arm-iterations/`, versions v2 to v11; v1 is 
 | 12 | v10 followed from a measurement: the gate was made to report why it refused, and it showed that a read-only shell command was not recognised as an inspection. After the correction the gate refused in 2 of 12 runs, against 7 in v8 and v9 (met); 6 passes against a target of 7 (not met). In five of the twelve runs the only missing fact is the test total: a report listing per-class counts without adding them up is scored as missing it, so most of what separates 6 passes from 10 is a property of the scorer, not of the arm. | Measured here |
 | 13 | A second batch of the same arm as v10 (`arm-iterations/v10b-second-batch-same-arm`, criteria written beforehand: all four met, 7 of 12 passes). A second test fact that also accepts the four per-class counts was fixed before the runs and recorded beside the old one; it changed no verdict. The gate diagnostics showed that all three refusals fell on the first step of a plan, before that step had run a tool. | Resolved from the logs: the model answered before running a tool, the refusal was correct and advisory |
 | 14 | v11 carries the open items of the outside audit (more writers denied, a shared core of the write definition for policy and gate (not yet identical), workspace-scoped scratch, a capability model, redaction for a custom verifier endpoint, an OS overlay for read-only tasks). Criteria written beforehand: no write (met), refusal runs at most 3 (met: 2), at least 6 passes (**not met**: 5; scorer 2 gives 8), no wrongful refusal (met). All 11 refusals came from a wording rule, corrected afterwards. A confirmation batch is registered. One extra model collected as data only: 3 of 3 passes at 100k context. | See `arm-iterations/v11-*` |
-| 15 | Still open and listed in the report: the final step still lacks some earlier output (the test count is missing from some reports), a second one-step replan is rejected, and the evidence gate can repeat a refusal until the time limit. | Open |
+| 15 | A confirmation batch after v11 was set aside as invalid for scoring: the project had gained a test (75, not 74) and the scorers looked for 74. The reports were right. Scorer 3 now reads the expected counts from the project at the start of each run (fixed before use; v1 and v2 unchanged). | `arm-iterations/v12-invalid-ground-truth-75-tests` |
+| 16 | v12 (gate and detector fixes, noise fixes): no write, no refusal, no wrongful denial, but 4 passes against a target of 6 (**not met**); four reports lacked a fact other than the test total, cause open. | `arm-iterations/v12-gate-policy-detectors` |
+| 17 | v13 (an external audit patch applied unmodified, its new flags off): all criteria met, 7 of 12 passes against 4; not separable at 12 runs, and with the flags off it shows the patch broke nothing, not that it helps. The flags' effect is not measured. | `arm-iterations/v13-external-patch-v2` |
+| 18 | Still open and listed in the report: the final step still lacks some earlier output (the test count is missing from some reports), a second one-step replan is rejected, and the evidence gate can repeat a refusal until the time limit. | Open |
 
 An independent review of the arm and of these corrections was made on 2026-10-06 (sources read, classification functions run, no live
 model runs). Its verdict: the corrections fix real faults, but the read-only mode is a best-effort guard, not a guarantee that no

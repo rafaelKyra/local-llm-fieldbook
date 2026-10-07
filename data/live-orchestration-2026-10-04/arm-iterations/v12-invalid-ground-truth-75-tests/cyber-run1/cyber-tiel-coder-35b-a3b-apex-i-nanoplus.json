@@ -1,0 +1,81 @@
+{
+ "model": "cyber-tiel-coder-35b-a3b-apex-i-nanoplus",
+ "elapsedSeconds": 556,
+ "timedOut": false,
+ "threw": null,
+ "planSteps": 5,
+ "planAbandoned": null,
+ "upstreamError": null,
+ "stepsFailed": [
+  "s5:final_report_evidence_missing"
+ ],
+ "aborts": [],
+ "tools": {
+  "submit_plan": 1,
+  "bash": 12
+ },
+ "toolCalls": 13,
+ "stepTokens": 126423,
+ "stepCosts": [
+  14482,
+  21948,
+  27627,
+  28814,
+  29927,
+  3625
+ ],
+ "gates": {
+  "passed": 3,
+  "blocked": 3,
+  "blockedKinds": [
+   "\"no_change_contradiction\"",
+   "\"no_change_contradiction\"",
+   "\"no_change_contradiction\""
+  ]
+ },
+ "contextWindows": [
+  100000
+ ],
+ "readOnlyKept": true,
+ "reportChecks": {
+  "mentionsJavac": true,
+  "mentionsTests74": false,
+  "mentionsTestsPerClass": false,
+  "testsFactV2": false,
+  "mentionsApkSize": true,
+  "claimsNoChanges": true
+ },
+ "loadedContext": "100000",
+ "vramMiBAfterLoad": 14951,
+ "loadSeconds": 7,
+ "policyActive": true,
+ "sandboxApplied": true,
+ "verdictV2": "FAIL",
+ "projectChanges": {
+  "created": {
+   "count": 0,
+   "names": []
+  },
+  "modified": {
+   "count": 0,
+   "names": []
+  },
+  "deleted": {
+   "count": 0,
+   "names": []
+  }
+ },
+ "policyDenialCount": 1,
+ "lmStudioSettings": {
+  "contextLength": 100000,
+  "kvCacheK": "q8_0",
+  "kvCacheV": "q8_0",
+  "temperature": 0.7,
+  "topK": 20,
+  "topP": 0.9,
+  "minP": 0.0,
+  "repeatPenalty": 1.0
+ },
+ "armExit": 0,
+ "arm": "Harness Lab (primary arm)"
+}
