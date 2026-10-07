@@ -152,5 +152,7 @@ anything that still matches a forbidden pattern.
   were wrong (base27 run 1 gave 12 and 15 for two classes, and said itself that it had inferred them), so the scorer v1 limit
   seen in v10 did not recur as a formatting problem. The new diagnostics showed that all three gate refusals (cyber 2, holo4 1) fell on the FIRST step
   of the plan, before that step had run a tool: the gate saw one earlier observation (the plan) and none from the current run, and judged text
-  that claims no change. The earlier lead of a refusal with a counted mutation (gsq, v10) did not recur. Open: why a first-step turn is judged as a
-  final report.
+  that claims no change. The earlier lead of a refusal with a counted mutation (gsq, v10) did not recur. Resolved by reading the run logs (holo4 run 3): in those runs step 1 first ended with text and no tool call (a ghost turn), the retry again
+  wrote text without a tool call, and the gate refused that text because it claimed results with no evidence. The refusal was correct, and on an
+  intermediate step the runner treats it as advisory ("recorded, judged by its acceptance instead"), so it did not block the run. Not a gate defect;
+  the criterion that counts refusals counts these advisory ones too. The cause is the model answering before running anything.
