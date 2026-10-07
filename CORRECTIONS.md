@@ -27,3 +27,4 @@ against the saved answers in `data/grid-2026-09-20/`.
 4. **Measured and asserted figures shared a column.** Owner-confirmed numbers appeared next
    to measured pass rates in one score column. They are now kept in separate places.
 5. **Machine-specific paths and a storage description were removed** from the published text.
+6. **The arm-version table counted passes by a looser rule than the analysis script** (2026-10-07). The page counted an abandoned plan as a pass and counted every recorded report field, so the v10 row read 7 passes while the analysis and the text said 6. The page now uses the analysis script's rule (the four original facts, an abandoned plan fails) and the row reads 6; the other rows are unchanged.

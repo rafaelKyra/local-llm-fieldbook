@@ -19,7 +19,7 @@ MODELS = [("base27", "qwen3.8-27b"), ("gsq", "qwen3.8-27b-gsq-rco"),
           ("cyber", "cyber-tiel-coder-35b-a3b-apex-i-nanoplus"), ("holo4", "holo4-35b-a3b-i1")]
 V1 = {"base27": "new-models/base27-run*", "gsq": "new-models/gsq-run*", "holo4": "replication/cellB-run*"}
 VERSIONS = [("v2", "v2-first-fixes-with-regression"), ("v3", "v3-corrected"), ("v4", "v4-final"), ("v5", "v5-latest-outputs"),
-            ("v6", "v6-closing-after-refusals"), ("v7", "v7-replan-gate-facts"), ("v8", "v8-verifier-whole-task"), ("v9", "v9-audit-corrections"), ("v10", "v10-shell-inspection")]
+            ("v6", "v6-closing-after-refusals"), ("v7", "v7-replan-gate-facts"), ("v8", "v8-verifier-whole-task"), ("v9", "v9-audit-corrections"), ("v10", "v10-shell-inspection"), ("v11", "v11-audit-items-os-overlay")]
 
 
 def load(files):

@@ -156,3 +156,14 @@ anything that still matches a forbidden pattern.
   wrote text without a tool call, and the gate refused that text because it claimed results with no evidence. The refusal was correct, and on an
   intermediate step the runner treats it as advisory ("recorded, judged by its acceptance instead"), so it did not block the run. Not a gate defect;
   the criterion that counts refusals counts these advisory ones too. The cause is the model answering before running anything.
+* 2026-10-07, amendment: v11 of the arm carries the open items of the outside audit: more shell writers denied, one definition of "writes the
+  project" for the tool policy and the evidence gate, a quoted absolute path counts as scratch only under the workspace's own scratch dirs,
+  a capability model that refuses a tool nobody classified, redaction of secrets before text leaves for a different verifier endpoint, and
+  (for this batch, switched on by a flag) the workspace of a read-only task mounted as a throwaway overlay by the operating system. Criteria
+  written beforehand: no write into the project (met, 0 of 12); at most 3 of 12 runs with an evidence-gate refusal (met: 2 runs, 11 refusals);
+  at least 6 passes (NOT met: 5; scorer v2 gives 8); no read or build command refused wrongly and no build broken by the overlay (met; the
+  overlay was applied in 12 of 12 runs). The two runs with refusals were refused for the same reason, a wording rule that read the word "wrote"
+  in a shell command or its output as a write; that rule is why the pass count fell short, and it was corrected afterwards. Two earlier
+  defects of the same kind were found by the gate diagnostics while preparing the batch: a first attempt was stopped after three runs because
+  a write the runner had recorded to a scratch directory counted as a change (corrected, those runs are not counted), and the diagnostics
+  were extended to name the rule that counted each write. A confirmation batch of the corrected build is registered before its runs.

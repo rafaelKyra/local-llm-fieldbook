@@ -1,0 +1,90 @@
+{
+ "model": "qwen3.8-27b",
+ "elapsedSeconds": 601,
+ "timedOut": true,
+ "threw": null,
+ "planSteps": 4,
+ "planAbandoned": null,
+ "upstreamError": null,
+ "stepsFailed": [
+  "s4:final_report_evidence_missing",
+  "s4:final_report_evidence_missing",
+  "s4:final_report_evidence_missing"
+ ],
+ "aborts": [],
+ "tools": {
+  "submit_plan": 2,
+  "bash": 12
+ },
+ "toolCalls": 14,
+ "stepTokens": 136978,
+ "stepCosts": [
+  14141,
+  24364,
+  25292,
+  26878,
+  3585,
+  4998,
+  26703,
+  6418,
+  4599
+ ],
+ "gates": {
+  "passed": 2,
+  "blocked": 8,
+  "blockedKinds": [
+   "\"no_change_contradiction\"",
+   "\"diff_or_content\",\"write_readback\",\"size\"",
+   "\"diff_or_content\",\"write_readback\",\"size\"",
+   "\"diff_or_content\",\"write_readback\",\"size\"",
+   "\"diff_or_content\",\"write_readback\",\"size\"",
+   "\"diff_or_content\",\"write_readback\",\"size\"",
+   "\"no_change_contradiction\"",
+   "\"no_change_contradiction\""
+  ]
+ },
+ "contextWindows": [
+  100000
+ ],
+ "readOnlyKept": true,
+ "reportChecks": {
+  "mentionsJavac": false,
+  "mentionsTests74": false,
+  "mentionsTestsPerClass": false,
+  "testsFactV2": false,
+  "mentionsApkSize": false,
+  "claimsNoChanges": false
+ },
+ "loadedContext": "100000",
+ "vramMiBAfterLoad": 22149,
+ "loadSeconds": 8,
+ "policyActive": true,
+ "sandboxApplied": true,
+ "projectChanges": {
+  "created": {
+   "count": 0,
+   "names": []
+  },
+  "modified": {
+   "count": 0,
+   "names": []
+  },
+  "deleted": {
+   "count": 0,
+   "names": []
+  }
+ },
+ "policyDenialCount": 0,
+ "lmStudioSettings": {
+  "contextLength": 100000,
+  "kvCacheK": "q8_0",
+  "kvCacheV": "q8_0",
+  "temperature": 0.7,
+  "topK": 20,
+  "topP": 0.9,
+  "minP": 0.0,
+  "repeatPenalty": 1.0
+ },
+ "armExit": 0,
+ "arm": "Harness Lab (primary arm)"
+}

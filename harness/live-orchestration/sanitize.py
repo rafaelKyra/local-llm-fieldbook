@@ -15,7 +15,7 @@ KEEP = [
     "model", "loadFailed", "noResult", "elapsedSeconds", "timedOut", "threw", "planSteps", "planAbandoned",
     "upstreamError", "stepsFailed", "aborts", "tools", "toolCalls", "stepTokens", "stepCosts", "gates",
     "contextWindows", "readOnlyKept", "reportChecks", "loadedContext", "vramMiBAfterLoad", "loadSeconds",
-    "policyActive",
+    "policyActive", "sandboxApplied",
 ]
 # Generic rules that name nothing private. The project-specific ones (its name, package, class names, the arm's product
 # name) are read from a PRIVATE file given with --terms, one per line: pattern<TAB>replacement. That file is not part of
