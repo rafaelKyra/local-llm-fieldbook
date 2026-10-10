@@ -1,0 +1,84 @@
+{
+ "model": "cyber-tiel-coder-35b-a3b-apex-i-nanoplus",
+ "elapsedSeconds": 601,
+ "timedOut": true,
+ "threw": null,
+ "planSteps": 4,
+ "planAbandoned": null,
+ "upstreamError": null,
+ "stepsFailed": [
+  "s3:engineering_zero_tool_call"
+ ],
+ "aborts": [],
+ "tools": {
+  "submit_plan": 1,
+  "bash": 5
+ },
+ "toolCalls": 6,
+ "stepTokens": 105824,
+ "stepCosts": [
+  18339,
+  2342,
+  57802,
+  27341
+ ],
+ "gates": {
+  "passed": 4,
+  "blocked": 0,
+  "blockedKinds": []
+ },
+ "contextWindows": [
+  100000
+ ],
+ "readOnlyKept": true,
+ "reportChecks": {
+  "mentionsTestsExpected": false,
+  "testsFactV3": false,
+  "mentionsJavac": false,
+  "mentionsTests74": false,
+  "mentionsTestsPerClass": false,
+  "testsFactV2": false,
+  "mentionsApkSize": true,
+  "claimsNoChanges": false
+ },
+ "loadedContext": "100000",
+ "vramMiBAfterLoad": 15001,
+ "loadSeconds": 6,
+ "policyActive": true,
+ "sandboxApplied": true,
+ "expectedTests": {
+  "classes": {
+   "<TestClass>": 22
+  },
+  "total": 76
+ },
+ "verdictV2": "FAIL",
+ "verdictV3": "FAIL",
+ "projectChanges": {
+  "created": {
+   "count": 0,
+   "names": []
+  },
+  "modified": {
+   "count": 0,
+   "names": []
+  },
+  "deleted": {
+   "count": 0,
+   "names": []
+  }
+ },
+ "policyDenialCount": 0,
+ "lmStudioSettings": {
+  "contextLength": 100000,
+  "kvCacheK": "q8_0",
+  "kvCacheV": "q8_0",
+  "temperature": 0.7,
+  "topK": 20,
+  "topP": 0.9,
+  "minP": 0.0,
+  "repeatPenalty": 1.0
+ },
+ "armExit": 0,
+ "arm": "Harness Lab (primary arm)"
+}

@@ -1,0 +1,47 @@
+COMPARISON cmp1: the previous line of the arm (A) against its next line (B). FROZEN 2026-10-08 BEFORE any run of this comparison.
+
+ARMS (same instrument for both)
+  A = the previous line of the arm, with the new measuring harness (SHA-256 content manifest, scorer 3) added.
+  B = the next line: an external patch applied unmodified, my audit tests, and one repair found while auditing it.
+  Both: the SHA-256 content-identity manifest (a bare `touch` is not a change; chmod and symlinks are), scorer 3 (expected test counts
+  read from the project's XML at the start of each run), the same read-only Android verification prompt, overlay ON
+  (the OS overlay for read-only tasks on), the opt-in flags of the external patches OFF.
+
+HELD EQUAL
+  Models: qwen3.8-27b, qwen3.8-27b-gsq-rco, cyber-tiel-coder-35b-a3b-apex-i-nanoplus, holo4-35b-a3b-i1.
+  LM Studio settings and the context chain (100000 -> 80000 -> 65000, the first that loads), as in every earlier batch; loaded context
+  is recorded per run. Prompt file: the same. Project: the same directory; a fingerprint of the project (sources, tests and results
+  outside build/.gradle*/.tmp/.git/node_modules) is taken before each arm round and must equal the first one, else the round is
+  aborted and reported. Budgets: harness timeout 600 s per run, unchanged.
+  Repetitions: 3 per model per arm = 12 runs per arm, 24 in total. ORDER: interleaved by round (round r: arm A for the 4 models, then arm B
+  for the 4 models, r = 1..3) so that time of day, thermal state and LM Studio state affect both arms alike.
+
+REPORTED SEPARATELY
+  SUCCESS: PASS/PARTIAL/FAIL by scorer 3 per run, per model, per arm; runs that finished; writes into the project; gate refusals
+  (counted from `evidence_gate_blocked` in run.log); policy denials.
+  LATENCY: elapsedSeconds per run: median over all runs, median over PASS runs, number of 600 s timeouts; tool calls; step tokens.
+  Success and latency are never merged into one number.
+
+WHEN A DIFFERENCE IS CLAIMED
+  Success: only if a two-sided Fisher exact test on PASS counts (12 vs 12) gives p < 0.05. Otherwise "no separable difference", whatever
+  the raw counts say.
+  Latency: only if the medians differ by more than 25% AND the sign agrees in at least 3 of the 4 models. Otherwise "no separable difference".
+  No statement about "SOTA", "better" or "worse" beyond these rules; real-model gain on tasks other than this one is not measured.
+
+CRITICAL-REGRESSION RULE (decides whether the patch is restored)
+  B is a critical regression if ANY of: (a) a run of B writes into the project and no run of A does; (b) B has at least 3 more runs than A
+  that time out or do not finish; (c) PASS(B) is lower than PASS(A) by 5 or more; (d) a new kind of failure appears in B's logs that points to
+  the new code (admission queue timeouts that drop the judge/router for most runs, protocol errors from the bounded inference reader,
+  worker or search failures), judged by hand and listed. On a critical regression: the installed build is restored from the backup of the
+  previous line, the evidence is kept, and the result is reported as a regression.
+
+DETERMINISTIC SCENARIOS (no GPU; the same tests run on both arms' product code; each reported pass/fail per arm)
+  Stop during verification / recovery / media wait / legal artifact; supersede by a newer invocation (concurrency on one session);
+  subagent protocol (malformed batches, duplicate ids, closing response with tools, context budget); recovery (exact bytes, symlink refusal,
+  restore on failure/supersede); legal artifact cancellation; media job ownership; process-group kill of a timed-out verification command.
+  Tests written by the author of the external patch measure what that author specified; the process-group and the supersede-restore tests
+  were written independently here. Windows is NOT verified.
+
+NOT MEASURED BY THIS COMPARISON
+  Windows behaviour; the opt-in flags; long tasks that compact the context; legal and media tasks with real models; any task other than
+  the read-only Android verification; whether the patch helps on them.

@@ -20,7 +20,8 @@ MODELS = [("base27", "qwen3.8-27b"), ("gsq", "qwen3.8-27b-gsq-rco"),
 V1 = {"base27": "new-models/base27-run*", "gsq": "new-models/gsq-run*", "holo4": "replication/cellB-run*"}
 VERSIONS = [("v2", "v2-first-fixes-with-regression"), ("v3", "v3-corrected"), ("v4", "v4-final"), ("v5", "v5-latest-outputs"),
             ("v6", "v6-closing-after-refusals"), ("v7", "v7-replan-gate-facts"), ("v8", "v8-verifier-whole-task"), ("v9", "v9-audit-corrections"), ("v10", "v10-shell-inspection"), ("v11", "v11-audit-items-os-overlay"),
-            ("v12", "v12-gate-policy-detectors"), ("v13", "v13-external-patch-v2")]
+            ("v12", "v12-gate-policy-detectors"), ("v13", "v13-external-patch-v2"),
+            ("v14", "v14-external-patch-v3")]
 
 
 def load(files):
@@ -38,9 +39,9 @@ def main():
         for v, folder in VERSIONS:
             sets.append((v, load(glob.glob(os.path.join(root, "arm-iterations", folder, f"{tag}-run*", f"{model}.json")))))
         for v, rs in sets:
-            cells.append("%-6s" % ("".join(SYM[analyze.verdict(d, 3)] for d in rs) or "n/a"))
+            cells.append("%-6s" % ("".join(SYM[analyze.run_verdict(d)] for d in rs) or "n/a"))
             totals[v][0] += len(rs)
-            totals[v][1] += sum(analyze.verdict(d, 3) == "PASS" for d in rs)
+            totals[v][1] += sum(analyze.run_verdict(d) == "PASS" for d in rs)
             totals[v][2] += sum(1 for d in rs if not d.get("readOnlyKept", True))
         print("%-42s %s" % (model[:42], "  ".join(cells)))
     print()

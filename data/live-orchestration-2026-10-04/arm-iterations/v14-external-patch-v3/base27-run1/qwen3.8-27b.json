@@ -1,0 +1,82 @@
+{
+ "model": "qwen3.8-27b",
+ "elapsedSeconds": 289,
+ "timedOut": false,
+ "threw": null,
+ "planSteps": 4,
+ "planAbandoned": null,
+ "upstreamError": null,
+ "stepsFailed": [],
+ "aborts": [],
+ "tools": {
+  "submit_plan": 1,
+  "bash": 6
+ },
+ "toolCalls": 7,
+ "stepTokens": 91458,
+ "stepCosts": [
+  14327,
+  23956,
+  25286,
+  27889
+ ],
+ "gates": {
+  "passed": 4,
+  "blocked": 0,
+  "blockedKinds": []
+ },
+ "contextWindows": [
+  100000
+ ],
+ "readOnlyKept": true,
+ "reportChecks": {
+  "mentionsTestsExpected": false,
+  "testsFactV3": false,
+  "mentionsJavac": true,
+  "mentionsTests74": false,
+  "mentionsTestsPerClass": false,
+  "testsFactV2": false,
+  "mentionsApkSize": true,
+  "claimsNoChanges": true
+ },
+ "loadedContext": "100000",
+ "vramMiBAfterLoad": 22070,
+ "loadSeconds": 9,
+ "policyActive": true,
+ "sandboxApplied": true,
+ "expectedTests": {
+  "classes": {
+   "<TestClass>": 22
+  },
+  "total": 76
+ },
+ "verdictV2": "PARTIAL",
+ "verdictV3": "PARTIAL",
+ "projectChanges": {
+  "created": {
+   "count": 0,
+   "names": []
+  },
+  "modified": {
+   "count": 0,
+   "names": []
+  },
+  "deleted": {
+   "count": 0,
+   "names": []
+  }
+ },
+ "policyDenialCount": 0,
+ "lmStudioSettings": {
+  "contextLength": 100000,
+  "kvCacheK": "q8_0",
+  "kvCacheV": "q8_0",
+  "temperature": 0.7,
+  "topK": 20,
+  "topP": 0.9,
+  "minP": 0.0,
+  "repeatPenalty": 1.0
+ },
+ "armExit": 0,
+ "arm": "Harness Lab (primary arm)"
+}

@@ -1,0 +1,10 @@
+cmp1 (prompt P1, four models, 3 runs each, interleaved), by the rules in criteria-cmp1.txt. Recompute with:
+  python3 harness/live-orchestration/comparisons.py data/live-orchestration-2026-10-04
+
+arm A (previous line, new harness):  PASS 7/12  | unfinished 3, 600 s timeouts 1 | median 325.5 s
+arm B (next line):                   PASS 3/12  | unfinished 2, 600 s timeouts 2 | median 303.5 s
+Fisher exact two-sided p = 0.214 -> no separable difference. Latency: -7 %, per-model sign [-1, -1, +1, -1] -> no separable difference.
+No run of either arm wrote into the project; no policy denial; the new components wrote no log line in any run.
+Critical-regression rules (a) to (c) not triggered. Rule (d) was judged by hand: no new failure kind in arm B's logs.
+Reading: inconclusive, with a direction that does not favour arm B. After the fact (not part of the frozen rules): arm B's reports miss the test
+fact in 7 of 12 runs against 4 of 12. Unfinished runs and 600 s time limits are counted in the PASS denominators as the harness scored them.

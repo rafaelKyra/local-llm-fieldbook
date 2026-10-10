@@ -57,6 +57,16 @@ def verdict(d, scorer=1):
     return "PARTIAL" if facts >= 2 else "FAIL"
 
 
+def run_verdict(d):
+    """The verdict the run itself recorded (scorer 3), else the recomputed one. The recomputation cannot see `finished`, which the
+    published records leave out, so a run that never finished but whose report had all four facts would come out as a PASS here
+    although the harness scored it FAIL (CORRECTIONS 9). The stored verdict wins whenever there is one."""
+    stored = d.get("verdictV3")
+    if stored in ("PASS", "PARTIAL", "FAIL", "INFRA"):
+        return stored
+    return verdict(d, scorer=3)
+
+
 def load(data_dir):
     runs = {}
     for run_dir in sorted(glob.glob(os.path.join(data_dir, "run*"))):

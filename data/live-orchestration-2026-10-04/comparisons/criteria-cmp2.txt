@@ -1,0 +1,42 @@
+COMPARISON cmp2: the line without an external patch (arm B) against the same line with it (arm C). FROZEN 2026-10-08 BEFORE any run of this comparison.
+
+ARMS
+  B = the line from cmp1 arm B (the installed one).
+  C = arm B plus the next external patch applied unmodified, plus two repairs found while auditing it.
+  Same harness files in both (checked by a diff before the first run).
+  Scorer 3, SHA-256 content-identity manifest, overlay ON (the OS overlay for read-only tasks on), opt-in flags OFF, project fingerprint check
+  before every round (abort on change), same four models, same context chain, 600 s harness timeout.
+
+PROMPTS
+  P2 = the cmp1 prompt with its last step changed to: deliver the report in chat, do not write a report file. The only prompt on which the the patch
+       record-report lane can engage. PRIMARY comparison: 3 repetitions x 4 models x 2 arms = 24 runs.
+  P1 = the cmp1 prompt, unchanged. No-regression CONTROL: the lane must not engage. 2 repetitions x 4 models x 2 arms = 16 runs.
+  Order: interleaved by round (round r: P2 arm B, P2 arm C, then, for r<=2, P1 arm B, P1 arm C).
+
+REPORTED SEPARATELY (per prompt)
+  SUCCESS: PASS/PARTIAL/FAIL (verdictV3) per run/model/arm; finished; writes into the project; gate refusals (evidence_gate_blocked); policy denials.
+  LATENCY: elapsedSeconds, median over all runs, median over PASS runs, 600 s timeouts.
+  LANE ENGAGEMENT: runs whose run.log contains "terminal report: execution tools refuse", per arm and prompt.
+  HEDGING (post-hoc, descriptive): runs whose final report contains "partial excerpt" or "omitted" wording.
+
+WHEN A DIFFERENCE IS CLAIMED
+  Success: two-sided Fisher exact on PASS counts, p < 0.05; else "no separable difference". Latency: medians differ >25% AND the sign agrees
+  in >= 3 of 4 models; else "no separable difference". Sets are evaluated per prompt, never pooled.
+
+CRITICAL-REGRESSION RULE (decides whether the patch is merged)
+  C is a critical regression if ANY of, on either prompt: (a) a run of C writes into the project and no run of B does; (b) C has >= 3 more
+  unfinished/timeout runs than B; (c) PASS(C) lower than PASS(B) by >= 5 on P2 or by >= 3 on P1; (d) a new kind of failure in C's logs that
+  points to the the patch code (record-report lane refusing legitimate tool calls, a report step that never finishes, evidence-owner errors,
+  recovery conflicts), judged by hand and listed.
+  MERGE RULE: adopt the patch only if no critical regression AND (audit confirms the defects fixed) AND (C is not separably worse on any prompt).
+  A separable gain is NOT required to merge a patch whose defect fixes are proven by deterministic behavioural tests, but it will be
+  reported as "no measured gain" if there is none. If inconclusive on safety, the branch is kept and the missing evidence is listed.
+
+NOT MEASURED
+  Windows; opt-in flags; long compaction tasks; legal/media; tasks other than the read-only Android verification.
+
+OUTCOME (added after the runs; the text above is unchanged from the frozen version)
+  STOPPED EARLY by the operator after 25 of the 40 planned runs (P2: 8 + 8 of 12 + 12; P1: 5 + 4 of 8 + 8; one more run was interrupted
+  and is in no count). No comparison reached its full set, so NO verdict is stated and no merge rule was applied. The partial counts are in
+  the table of the README; they are noise at this size. The patch was adopted for a different reason (see the README row), not because of
+  this comparison.
