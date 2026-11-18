@@ -1,0 +1,51 @@
+{
+ "kit": "P3b",
+ "arm": "p3",
+ "rep": 22,
+ "seconds": 5.123,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1038,
+ "addedLines": 18,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 6,
+  "toolCalls": 7,
+  "inputTokens": 14440,
+  "outputTokens": 970,
+  "lastInputTokens": 2939,
+  "peakInputTokens": 2939,
+  "modelCalls": 6,
+  "usageReportedCalls": 6,
+  "cacheReadTokens": 12135,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 6,
+  "roles": {
+   "main": {
+    "calls": 6,
+    "reportedInput": 6,
+    "reportedOutput": 6,
+    "inputTokens": 14440,
+    "outputTokens": 970
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: - `save_report()` now writes to a temporary file created with `tempfile.mkstemp()` in the same directory as the destination. | - It flushes and `fsync`s the temp file before using `os.replace()` to atomically move it over `report.txt`. | - On any error it removes the temp file and re-raises. | Why this solves the task: a crash during the write process the temp file, never the existing `report.txt`. The final `os.replace()` is atomic on both POSIX and  | I did not add new tests, and I only have this Linux box (the production target is Windows), so the atomic-rename behavior on Windows in particular relies on the"
+}

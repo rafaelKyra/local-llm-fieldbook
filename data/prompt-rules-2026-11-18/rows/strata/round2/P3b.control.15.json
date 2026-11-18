@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 15,
+ "seconds": 40.8,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1504,
+ "addedLines": 49,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 6,
+  "toolCalls": 7,
+  "inputTokens": 16273,
+  "outputTokens": 2244,
+  "lastInputTokens": 3549,
+  "peakInputTokens": 3549,
+  "modelCalls": 6,
+  "usageReportedCalls": 6,
+  "cacheReadTokens": 14601,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 6,
+  "roles": {
+   "main": {
+    "calls": 6,
+    "reportedInput": 6,
+    "reportedOutput": 6,
+    "inputTokens": 16273,
+    "outputTokens": 2244
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: - The temp file's mode is copied from the existing report (mkstemp creates it 0600). | - Publication uses `os.replace()`, not `os.rename()`: atomic on POSIX, and on Windows it performs a single `MoveFileEx(..., MOVEFILE_REPLACE_EXISTING)`; `os.ren | - On any exception the temp file is removed (so a failed job leaves no litter); after a successful replace the containing directory is fsynced best-effort, guar | Net effect: a crash at any point leaves either the previous report or the complete new one — never a truncated file. | Check: `verify` (the fixed project check) passes — 2 tests, OK. Note that this same check also passed **before** any change, so it does not prove the fix. I add"
+}

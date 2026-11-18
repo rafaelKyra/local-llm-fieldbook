@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 3,
+ "seconds": 68.6,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1205,
+ "addedLines": 48,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 11,
+  "toolCalls": 11,
+  "inputTokens": 36144,
+  "outputTokens": 3459,
+  "lastInputTokens": 4692,
+  "peakInputTokens": 4692,
+  "modelCalls": 11,
+  "usageReportedCalls": 11,
+  "cacheReadTokens": 33336,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 11,
+  "roles": {
+   "main": {
+    "calls": 11,
+    "reportedInput": 11,
+    "reportedOutput": 11,
+    "inputTokens": 36144,
+    "outputTokens": 3459
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Changed `save_report()` in `report.py` to write crash-safe: the text now goes into a temp file created with `tempfile.mkstemp()` in the same directory as the ta | Check: `verify` (the fixed project suite) passed — 2 tests, OK — both before and after my change, so the suite does not prove the fix; the existing tests only c"
+}

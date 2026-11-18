@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3",
+ "rep": 10,
+ "seconds": 72.163,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 728,
+ "addedLines": 37,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 12,
+  "toolCalls": 12,
+  "inputTokens": 39738,
+  "outputTokens": 3593,
+  "lastInputTokens": 4936,
+  "peakInputTokens": 4936,
+  "modelCalls": 12,
+  "usageReportedCalls": 12,
+  "cacheReadTokens": 36692,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 12,
+  "roles": {
+   "main": {
+    "calls": 12,
+    "reportedInput": 12,
+    "reportedOutput": 12,
+    "inputTokens": 39738,
+    "outputTokens": 3593
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: report.py: save_report() now writes to a temp file created next to the target (tempfile.mkstemp), fsyncs it, copies the old file's permission bits, and publishe"
+}

@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 16,
+ "seconds": 104.391,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1933,
+ "addedLines": 61,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 13,
+  "toolCalls": 12,
+  "inputTokens": 55661,
+  "outputTokens": 6369,
+  "lastInputTokens": 6506,
+  "peakInputTokens": 6506,
+  "modelCalls": 13,
+  "usageReportedCalls": 13,
+  "cacheReadTokens": 51521,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 13,
+  "roles": {
+   "main": {
+    "calls": 13,
+    "reportedInput": 13,
+    "reportedOutput": 13,
+    "inputTokens": 55661,
+    "outputTokens": 6369
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made `save_report()` in `report.py` crash-safe by switching from an in-place `open(path, \"w\")` to a write-to-temp-then-atomic-rename pattern: | - The text is written to a `tempfile.mkstemp()` file created in the **same directory** as the report (so the rename stays on one volume), then `flush()` + `os.f | - A crash at any point therefore leaves either the old report or the complete new one, never a truncated file. On any exception (`BaseException`, so `KeyboardIn | - Extras kept Windows-safe and best-effort: the target's permission bits are copied onto the temp file (`mkstemp` creates 0600), and the containing directory is | Check: `verify` runs the existing 2-test suite (`test_report.py`) and it passes (2 tests, OK). Note that this suite also passed **before** any change, so it doe"
+}

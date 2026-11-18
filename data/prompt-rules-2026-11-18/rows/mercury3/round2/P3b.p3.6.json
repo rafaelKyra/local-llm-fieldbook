@@ -1,0 +1,51 @@
+{
+ "kit": "P3b",
+ "arm": "p3",
+ "rep": 6,
+ "seconds": 10.048,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 958,
+ "addedLines": 15,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 8,
+  "toolCalls": 8,
+  "inputTokens": 20439,
+  "outputTokens": 1015,
+  "lastInputTokens": 3196,
+  "peakInputTokens": 3196,
+  "modelCalls": 8,
+  "usageReportedCalls": 8,
+  "cacheReadTokens": 17494,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 8,
+  "roles": {
+   "main": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 20439,
+    "outputTokens": 1015
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: I changed `save_report()` in `report.py` to write atomically: it now writes the report to a temporary file in the same directory (via `tempfile.mkstemp`), flush | The check passes, but note it is the same test suite that already passed before any edit, so it does not prove the crash-safety behavior (the tests don't simula"
+}

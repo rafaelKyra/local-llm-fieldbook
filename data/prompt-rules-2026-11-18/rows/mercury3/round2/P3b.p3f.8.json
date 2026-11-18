@@ -1,0 +1,51 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 8,
+ "seconds": 15.926,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 941,
+ "addedLines": 18,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 9,
+  "toolCalls": 8,
+  "inputTokens": 31230,
+  "outputTokens": 3325,
+  "lastInputTokens": 5553,
+  "peakInputTokens": 5553,
+  "modelCalls": 9,
+  "usageReportedCalls": 9,
+  "cacheReadTokens": 26365,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 9,
+  "roles": {
+   "main": {
+    "calls": 9,
+    "reportedInput": 9,
+    "reportedOutput": 9,
+    "inputTokens": 31230,
+    "outputTokens": 3325
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made save_report() crash-safe in report.py. It now writes to a temp file in the same directory (tempfile.mkstemp with a .report/.tmp prefix), flush+fsync, then  | Files changed: report.py (save_report body). | Check: verify (the 2-test suite) passes. Note this same suite passed before the change, so it does not by itself prove crash-safety; I additionally verified it "
+}

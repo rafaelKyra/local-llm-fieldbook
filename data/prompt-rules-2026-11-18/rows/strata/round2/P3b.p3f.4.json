@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 4,
+ "seconds": 71.291,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1044,
+ "addedLines": 44,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 12,
+  "toolCalls": 13,
+  "inputTokens": 37833,
+  "outputTokens": 4062,
+  "lastInputTokens": 3831,
+  "peakInputTokens": 3831,
+  "modelCalls": 12,
+  "usageReportedCalls": 12,
+  "cacheReadTokens": 35881,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 12,
+  "roles": {
+   "main": {
+    "calls": 12,
+    "reportedInput": 12,
+    "reportedOutput": 12,
+    "inputTokens": 37833,
+    "outputTokens": 4062
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Changed `save_report()` in `report.py` to write atomically: the text is written to a `tempfile.mkstemp` file in the same directory as the target, flushed and `o | Verification: the fixed check (`verify`) passes (2 tests, OK) — but note it also passed before any change, so it does not prove the fix. I additionally ran a sc"
+}

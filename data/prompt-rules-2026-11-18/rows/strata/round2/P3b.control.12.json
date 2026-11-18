@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 12,
+ "seconds": 107.923,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1440,
+ "addedLines": 51,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 15,
+  "toolCalls": 15,
+  "inputTokens": 60288,
+  "outputTokens": 5895,
+  "lastInputTokens": 5364,
+  "peakInputTokens": 5364,
+  "modelCalls": 15,
+  "usageReportedCalls": 15,
+  "cacheReadTokens": 56756,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 15,
+  "roles": {
+   "main": {
+    "calls": 15,
+    "reportedInput": 15,
+    "reportedOutput": 15,
+    "inputTokens": 60288,
+    "outputTokens": 5895
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: - Restores the existing file's permission bits on the temp file so readers are unaffected. | - On any exception the temp file is unlinked and the fd closed, so no stray temp files are left; the original report is untouched. | - Best-effort directory `fsync` afterwards (POSIX only, skipped on Windows where it is unavailable) so the rename itself survives a power loss. | Only `report.py` was modified; `test_report.py` was not touched. | Check: `verify` (the fixed project check) passes — 2 tests, OK. Note, as the tool itself reports, this suite also passed before any change, so it does not by it"
+}

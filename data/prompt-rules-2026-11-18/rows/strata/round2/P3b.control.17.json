@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 17,
+ "seconds": 106.137,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1928,
+ "addedLines": 57,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 13,
+  "toolCalls": 13,
+  "inputTokens": 53354,
+  "outputTokens": 5873,
+  "lastInputTokens": 6162,
+  "peakInputTokens": 6162,
+  "modelCalls": 13,
+  "usageReportedCalls": 13,
+  "cacheReadTokens": 49034,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 13,
+  "roles": {
+   "main": {
+    "calls": 13,
+    "reportedInput": 13,
+    "reportedOutput": 13,
+    "inputTokens": 53354,
+    "outputTokens": 5873
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: - Publication uses `os.replace(tmp, path)` — atomic in-place on POSIX and on Windows (unlike `os.rename`, which raises when the destination exists on Windows).  | - On any error (`BaseException`) the fd/temp file is cleaned up and the exception re-raised, leaving the original report intact and no stray temp files. | - After the replace, a best-effort directory `fsync` is attempted; it is silently skipped where opening a directory is not permitted (Windows), since `os.replac | Check results: `verify` (the fixed project check) passed — `Ran 2 tests ... OK`. Note that this same check also passed **before** any change, so it does not by  | To actually exercise the fix I ran a temporary scratch script (since deleted, repo now contains only `report.py` and `test_report.py`) that: simulated a power l"
+}

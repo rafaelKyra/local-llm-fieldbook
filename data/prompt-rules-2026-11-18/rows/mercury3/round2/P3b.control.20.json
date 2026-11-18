@@ -1,0 +1,51 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 20,
+ "seconds": 4.752,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 838,
+ "addedLines": 15,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 6,
+  "toolCalls": 6,
+  "inputTokens": 14060,
+  "outputTokens": 893,
+  "lastInputTokens": 2861,
+  "peakInputTokens": 2861,
+  "modelCalls": 6,
+  "usageReportedCalls": 6,
+  "cacheReadTokens": 12586,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 6,
+  "roles": {
+   "main": {
+    "calls": 6,
+    "reportedInput": 6,
+    "reportedOutput": 6,
+    "inputTokens": 14060,
+    "outputTokens": 893
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made `save_report()` in report.py crash-safe. | Change: the report is no longer written straight into the destination. Instead it is written to a temporary file created in the same directory via `tempfile.mks | Files changed: report.py. | Check: verify passed on the edited files (check 2, both tests OK). Note the same check also passed before the edit, so it confirms the tests stay green but does"
+}

@@ -1,0 +1,51 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 18,
+ "seconds": 7.838,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 814,
+ "addedLines": 17,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 6,
+  "toolCalls": 6,
+  "inputTokens": 14400,
+  "outputTokens": 1030,
+  "lastInputTokens": 2976,
+  "peakInputTokens": 2976,
+  "modelCalls": 6,
+  "usageReportedCalls": 6,
+  "cacheReadTokens": 12896,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 6,
+  "roles": {
+   "main": {
+    "calls": 6,
+    "reportedInput": 6,
+    "reportedOutput": 6,
+    "inputTokens": 14400,
+    "outputTokens": 1030
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made save_report() in report.py crash-safe. It now writes the report to a temporary file (mkstemp) created in the same directory as the target, flushes and fsyn | Files changed: report.py (rewrote save_report). | Check: verify (no args) passed — the 2 existing tests are green. Note this same check also passed before the change, so it does not independently prove the cras"
+}

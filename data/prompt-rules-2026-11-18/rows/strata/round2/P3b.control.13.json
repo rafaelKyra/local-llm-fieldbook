@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 13,
+ "seconds": 47.855,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1538,
+ "addedLines": 24,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 8,
+  "toolCalls": 8,
+  "inputTokens": 22171,
+  "outputTokens": 2579,
+  "lastInputTokens": 3507,
+  "peakInputTokens": 3507,
+  "modelCalls": 8,
+  "usageReportedCalls": 8,
+  "cacheReadTokens": 20531,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 8,
+  "roles": {
+   "main": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 22171,
+    "outputTokens": 2579
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Result: a crash at any point during the write leaves the previous `report.txt` byte-for-byte intact; readers see either the old report or the complete new one,  | Verification: | - `verify` (the fixed check: `test_report.py`, 2 tests) passes — but note it also passed before any change, so it does not by itself prove the fix. | - Additional manual runs (read-only, no test files added) confirmed the behaviour: writing then re-writing yields the new content with no leftover temp files, a | Caveat for the Windows file server: `os.replace` fails with `PermissionError` if another process still has `report.txt` open for reading at the moment of the sw"
+}

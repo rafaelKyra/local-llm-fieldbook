@@ -1,0 +1,51 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 26,
+ "seconds": 7.421,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 846,
+ "addedLines": 13,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 10,
+  "toolCalls": 9,
+  "inputTokens": 27939,
+  "outputTokens": 1583,
+  "lastInputTokens": 3806,
+  "peakInputTokens": 3806,
+  "modelCalls": 10,
+  "usageReportedCalls": 10,
+  "cacheReadTokens": 24362,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 10,
+  "roles": {
+   "main": {
+    "calls": 10,
+    "reportedInput": 10,
+    "reportedOutput": 10,
+    "inputTokens": 27939,
+    "outputTokens": 1583
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made `save_report()` in `report.py` crash-safe. It now writes the report to a temporary file in the same directory via `tempfile.mkstemp`, then atomically moves | The fixed check (`verify` with no arguments) ran and passed (2 tests in test_report.py green). Note the check also passed before the change, so it does not by i"
+}

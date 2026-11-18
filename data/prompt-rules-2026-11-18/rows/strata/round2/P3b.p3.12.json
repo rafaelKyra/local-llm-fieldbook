@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3",
+ "rep": 12,
+ "seconds": 52.493,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1167,
+ "addedLines": 44,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 8,
+  "toolCalls": 10,
+  "inputTokens": 23551,
+  "outputTokens": 2592,
+  "lastInputTokens": 4172,
+  "peakInputTokens": 4172,
+  "modelCalls": 8,
+  "usageReportedCalls": 8,
+  "cacheReadTokens": 21289,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 8,
+  "roles": {
+   "main": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 23551,
+    "outputTokens": 2592
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Changed save_report() in report.py to write atomically: the text is written to a temp file created with tempfile.mkstemp() in the same directory as the target ("
+}

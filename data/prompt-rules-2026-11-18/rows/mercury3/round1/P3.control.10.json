@@ -1,0 +1,51 @@
+{
+ "kit": "P3",
+ "arm": "control",
+ "rep": 10,
+ "seconds": 5.469,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 332,
+ "addedLines": 8,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 6,
+  "toolCalls": 6,
+  "inputTokens": 15669,
+  "outputTokens": 1078,
+  "lastInputTokens": 3453,
+  "peakInputTokens": 3453,
+  "modelCalls": 6,
+  "usageReportedCalls": 6,
+  "cacheReadTokens": 12628,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 6,
+  "roles": {
+   "main": {
+    "calls": 6,
+    "reportedInput": 6,
+    "reportedOutput": 6,
+    "inputTokens": 15669,
+    "outputTokens": 1078
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True bad-input-ValueError=True\n  tail: Rewrote `total()` in `fastsum.py` to eliminate the O(n²) duplicate check, replacing it with an O(n) set-based check while preserving all validation (None, empty"
+}

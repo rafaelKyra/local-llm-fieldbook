@@ -1,0 +1,51 @@
+{
+ "kit": "P3",
+ "arm": "control",
+ "rep": 2,
+ "seconds": 3.323,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 300,
+ "addedLines": 8,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 5,
+  "toolCalls": 5,
+  "inputTokens": 11552,
+  "outputTokens": 564,
+  "lastInputTokens": 2789,
+  "peakInputTokens": 2789,
+  "modelCalls": 5,
+  "usageReportedCalls": 5,
+  "cacheReadTokens": 10264,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 5,
+  "roles": {
+   "main": {
+    "calls": 5,
+    "reportedInput": 5,
+    "reportedOutput": 5,
+    "inputTokens": 11552,
+    "outputTokens": 564
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True bad-input-ValueError=True\n  tail: Made `total()` in `fastsum.py` significantly faster by replacing the O(n^2) nested duplicate check with an O(n) `set`-based check, while preserving identical se"
+}

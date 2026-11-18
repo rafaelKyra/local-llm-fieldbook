@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 7,
+ "seconds": 43.536,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1262,
+ "addedLines": 49,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 7,
+  "toolCalls": 8,
+  "inputTokens": 19741,
+  "outputTokens": 2315,
+  "lastInputTokens": 3655,
+  "peakInputTokens": 3655,
+  "modelCalls": 7,
+  "usageReportedCalls": 7,
+  "cacheReadTokens": 17990,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 7,
+  "roles": {
+   "main": {
+    "calls": 7,
+    "reportedInput": 7,
+    "reportedOutput": 7,
+    "inputTokens": 19741,
+    "outputTokens": 2315
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Changed `save_report()` in `report.py` to write crash-safely: the text now goes into a `tempfile.mkstemp` file created in the same directory as the target, is f | Files changed: `report.py` only; `test_report.py` untouched. | Check: `verify` ran the existing suite (2 tests) and it passed — but note it also passed before my change, so the suite does not prove the fix. To cover that ga"
+}

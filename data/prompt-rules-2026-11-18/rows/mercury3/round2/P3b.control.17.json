@@ -1,0 +1,51 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 17,
+ "seconds": 3.089,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 424,
+ "addedLines": 15,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 5,
+  "toolCalls": 5,
+  "inputTokens": 11307,
+  "outputTokens": 590,
+  "lastInputTokens": 2671,
+  "peakInputTokens": 2671,
+  "modelCalls": 5,
+  "usageReportedCalls": 5,
+  "cacheReadTokens": 9654,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 5,
+  "roles": {
+   "main": {
+    "calls": 5,
+    "reportedInput": 5,
+    "reportedOutput": 5,
+    "inputTokens": 11307,
+    "outputTokens": 590
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made `save_report()` crash-safe in `report.py`. Instead of writing straight into the target report, it now writes to a temp file in the same directory (`tempfil"
+}

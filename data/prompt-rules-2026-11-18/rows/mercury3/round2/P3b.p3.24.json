@@ -1,0 +1,51 @@
+{
+ "kit": "P3b",
+ "arm": "p3",
+ "rep": 24,
+ "seconds": 5.065,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 793,
+ "addedLines": 13,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 6,
+  "toolCalls": 6,
+  "inputTokens": 14594,
+  "outputTokens": 859,
+  "lastInputTokens": 3004,
+  "peakInputTokens": 3004,
+  "modelCalls": 6,
+  "usageReportedCalls": 6,
+  "cacheReadTokens": 12380,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 6,
+  "roles": {
+   "main": {
+    "calls": 6,
+    "reportedInput": 6,
+    "reportedOutput": 6,
+    "inputTokens": 14594,
+    "outputTokens": 859
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: The implementation is complete. `save_report()` now writes to a temporary file in the same directory and atomically swaps it into place with `os.replace`, which | The fixed check passed, but it also passed before my edit and only covers the normal write/replace cases, not crash-safety itself, so it does not prove the new "
+}

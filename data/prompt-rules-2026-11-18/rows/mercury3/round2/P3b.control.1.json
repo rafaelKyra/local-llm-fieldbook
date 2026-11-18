@@ -1,0 +1,51 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 1,
+ "seconds": 11.403,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1099,
+ "addedLines": 15,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 13,
+  "toolCalls": 12,
+  "inputTokens": 47326,
+  "outputTokens": 2720,
+  "lastInputTokens": 4853,
+  "peakInputTokens": 4853,
+  "modelCalls": 13,
+  "usageReportedCalls": 13,
+  "cacheReadTokens": 42608,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 13,
+  "roles": {
+   "main": {
+    "calls": 13,
+    "reportedInput": 13,
+    "reportedOutput": 13,
+    "inputTokens": 47326,
+    "outputTokens": 2720
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made `save_report()` in `report.py` crash-safe by writing atomically. It now writes the report to a temporary file created with `tempfile.mkstemp` in the same d | I verified the behavior with an ad-hoc script that forced `os.fsync` to raise mid-write: the old report content remained intact and no temp leftovers remained; "
+}

@@ -1,0 +1,51 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 11,
+ "seconds": 11.511,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 558,
+ "addedLines": 15,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 7,
+  "toolCalls": 6,
+  "inputTokens": 16380,
+  "outputTokens": 1170,
+  "lastInputTokens": 2903,
+  "peakInputTokens": 2914,
+  "modelCalls": 7,
+  "usageReportedCalls": 7,
+  "cacheReadTokens": 11766,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 7,
+  "roles": {
+   "main": {
+    "calls": 7,
+    "reportedInput": 7,
+    "reportedOutput": 7,
+    "inputTokens": 16380,
+    "outputTokens": 1170
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made save_report() in report.py crash-safe by writing to a temp file in the same directory, flushing and fsync'ing it, then atomically os.replace()ing it over r"
+}

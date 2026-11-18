@@ -103,6 +103,22 @@ now reproduces the per-version table from the data.
 Twelve runs made while the runtime's server restarted under the batch were set aside as invalid and are in no table. Results
 are labelled by arm version and must not be compared across versions as if the arm were the same.
 
+## Third ruler: one-line prompt rules (2026-11-18)
+
+Two single-line rules for an agent's instructions (a closing line naming what was skipped or not checked; a shortcut note with a debt ledger), each tested
+as arms against a control on three models (a hosted one, a local 27B dense, a Flash-Next MoE), on small kits with hidden checks and on a 38-task bench. Rule
+texts, kits, every run row, the analysis script and the report section are in `data/prompt-rules-2026-11-18/`; the page section is "Third ruler".
+
+| # | Finding | Status |
+|---|---|---|
+| 1 | The closing line moves behaviour **when it sits in the finish tool's description**: hosted 29/30 against 22/30 control (Fisher p = 0.026), local 27B 10/10 against 0/10. In the system prompt it did nothing on the hosted model (21/30). | Measured here, one kit |
+| 2 | It did not cost solved tasks: every valid kit is fully solved on every arm; the 38-task bench is level (109/114 against 109/114). Output tokens: about -3% (bench, hosted), about +20% on the local 27B. | Measured here |
+| 3 | The shortcut ledger was followed in 0 of 110 runs with the rule on (system prompt and finish tool on the hosted model and Flash-Next, system prompt only on the local 27B). | Measured here, one kit |
+| 4 | The first round's kits could not show the behaviour (nothing to give up; no shortcut needed) and are withdrawn (CORRECTIONS 10). | Retracted |
+
+Two field notes belong with it, both labelled as not measurements of ours: [local speed: four causes found in two days](field-notes/2026-11-18-local-speed-vram-mtp-power.md)
+(an embedding model holding VRAM, a missing MTP head, a power limit) and [an outside collection of 28 model results used for selection](field-notes/2026-11-18-external-reference-lukesdevlab.md).
+
 ## Reported earlier, not yet reproduced here
 
 These come from an earlier hand-written report. The raw data is not in this repository, so
@@ -111,7 +127,7 @@ treat them as claims, not results:
 - A 4,096-token cap turned a 13/14 model into 7/14 on the same text.
 - Some GGUF chat templates reject a separate `system` parameter, so the Anthropic Messages
   API fails on them while the OpenAI-style API works.
-- Without `--gpu max`, LM Studio can silently split a model between GPU and CPU.
+- Without `--gpu max`, LM Studio can silently split a model between GPU and CPU. (Seen once more on 2026-11-17, with the cause: see [the speed note](field-notes/2026-11-18-local-speed-vram-mtp-power.md).)
 - Executable repair of six real defects from a private repository: 0 valid fixes in 30 runs.
   The cases are private and are not published; only the method and results will be.
 

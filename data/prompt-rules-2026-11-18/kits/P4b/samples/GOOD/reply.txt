@@ -1,0 +1,1 @@
+Added load_settings: splits each line on the first '='. Tests pass.

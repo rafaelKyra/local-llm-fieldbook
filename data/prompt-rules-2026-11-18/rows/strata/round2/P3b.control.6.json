@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 6,
+ "seconds": 259.993,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1821,
+ "addedLines": 70,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 29,
+  "toolCalls": 26,
+  "inputTokens": 183829,
+  "outputTokens": 13928,
+  "lastInputTokens": 11307,
+  "peakInputTokens": 11307,
+  "modelCalls": 29,
+  "usageReportedCalls": 29,
+  "cacheReadTokens": 174284,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 29,
+  "roles": {
+   "main": {
+    "calls": 29,
+    "reportedInput": 29,
+    "reportedOutput": 29,
+    "inputTokens": 183829,
+    "outputTokens": 13928
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: - If anything fails before the publish, the scratch file is removed in a `finally` block and the old report is left untouched; the error propagates. | - The scratch file inherits the existing report's permissions (mkstemp creates 0600) so other services can still read the report after the swap; chmod failures  | - Best-effort directory `fsync` after the rename (POSIX only, guarded by `hasattr(os, \"O_DIRECTORY\")`) to make the rename itself durable. | Extra file: `_scratch_crash_check.py` — a unittest I wrote to pin the property (it is not part of the project's protected test files). It asserts that at publis | Check result: `verify` (the fixed project check) PASSED — `Ran 2 tests ... OK` in test_report.py, both before and after my change. Note the check's own warning:"
+}

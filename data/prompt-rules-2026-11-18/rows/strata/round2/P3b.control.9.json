@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 9,
+ "seconds": 140.866,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 803,
+ "addedLines": 64,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 20,
+  "toolCalls": 22,
+  "inputTokens": 94049,
+  "outputTokens": 7381,
+  "lastInputTokens": 7227,
+  "peakInputTokens": 7227,
+  "modelCalls": 20,
+  "usageReportedCalls": 20,
+  "cacheReadTokens": 89121,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 20,
+  "roles": {
+   "main": {
+    "calls": 20,
+    "reportedInput": 20,
+    "reportedOutput": 20,
+    "inputTokens": 94049,
+    "outputTokens": 7381
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made save_report() in report.py crash-safe: it now writes to a uniquely named temp file created with O_EXCL in the same directory, flushes + fsyncs it, preserve"
+}

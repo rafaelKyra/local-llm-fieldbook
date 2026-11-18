@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 7,
+ "seconds": 40.165,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1734,
+ "addedLines": 37,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 7,
+  "toolCalls": 7,
+  "inputTokens": 17816,
+  "outputTokens": 2089,
+  "lastInputTokens": 3239,
+  "peakInputTokens": 3239,
+  "modelCalls": 7,
+  "usageReportedCalls": 7,
+  "cacheReadTokens": 16449,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 7,
+  "roles": {
+   "main": {
+    "calls": 7,
+    "reportedInput": 7,
+    "reportedOutput": 7,
+    "inputTokens": 17816,
+    "outputTokens": 2089
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: - Added `_sync_directory()`, which `fsync`s the containing directory after the rename so the rename itself is durable; it is a silent no-op where that is unsupp | Verification: | - The fixed check (`verify`, no arguments) passes: `Ran 2 tests ... OK`. Note, as the check itself reports, this same suite also passed **before** any edit, so  | - To exercise the new behaviour I ran an ad-hoc script (no files added): with an existing `report.txt` containing \"old report\", a `save_report()` call that fail | Caveat for the Windows file server: `os.replace()` fails with a sharing violation if another process (e.g. someone viewing `report.txt`) holds the file open wit"
+}

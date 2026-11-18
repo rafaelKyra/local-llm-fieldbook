@@ -1,0 +1,45 @@
+{
+  "passAtK": "37/38",
+  "passPowK": "37/38",
+  "wilson95": [
+    0.865,
+    0.995
+  ],
+  "label": "mercury3-p3f",
+  "model": "mercury-3",
+  "profile": "auto",
+  "runtime": "forge",
+  "tasks": 38,
+  "solved": 37,
+  "rate": 0.974,
+  "verdicts": {
+    "solved": 37,
+    "overfit": 1
+  },
+  "byCategory": {
+    "off-by-one": "2/2",
+    "async": "1/1",
+    "string": "1/1",
+    "wrong-operator": "1/1",
+    "feature": "5/5",
+    "sorting": "1/1",
+    "regex": "0/1",
+    "bug": "9/9",
+    "multi-file": "2/2",
+    "parsing": "2/2",
+    "python": "4/4",
+    "read-the-spec": "1/1",
+    "spec": "8/8"
+  },
+  "totalSeconds": 498.6,
+  "toolCalls": 246,
+  "inputTokens": 633299,
+  "outputTokens": 50283,
+  "pathologies": {
+    "regression": 1,
+    "edits_without_verify": 1,
+    "edit_thrash": 1,
+    "shell_write_refused": 1,
+    "refused_calls": 1
+  }
+}

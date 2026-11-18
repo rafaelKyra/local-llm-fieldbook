@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 1,
+ "seconds": 79.664,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1655,
+ "addedLines": 39,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 17,
+  "toolCalls": 16,
+  "inputTokens": 58807,
+  "outputTokens": 3835,
+  "lastInputTokens": 4756,
+  "peakInputTokens": 4756,
+  "modelCalls": 17,
+  "usageReportedCalls": 17,
+  "cacheReadTokens": 53971,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 17,
+  "roles": {
+   "main": {
+    "calls": 17,
+    "reportedInput": 17,
+    "reportedOutput": 17,
+    "inputTokens": 58807,
+    "outputTokens": 3835
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: - The scratch file is flushed and `os.fsync()`'ed before it is moved over the target with `os.replace()`, which atomically replaces an existing file on both Win | - On any exception (`except BaseException`) the scratch file is removed and the error re-raised, so the target is left untouched and no `.tmp` litter remains. | - After the rename, a best-effort directory `fsync` is attempted to persist the rename itself; it is skipped/ignored where unsupported (Windows has no directory | Only `report.py` was modified; `test_report.py` was not touched. | Check results: `verify` (the project's unittest suite, 2 tests) passed before the change and passed after the change (check 2) — note the suite only covers basi"
+}

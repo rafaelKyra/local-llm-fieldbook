@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 14,
+ "seconds": 57.961,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1358,
+ "addedLines": 27,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 9,
+  "toolCalls": 8,
+  "inputTokens": 25250,
+  "outputTokens": 3184,
+  "lastInputTokens": 3928,
+  "peakInputTokens": 3928,
+  "modelCalls": 9,
+  "usageReportedCalls": 9,
+  "cacheReadTokens": 23184,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 9,
+  "roles": {
+   "main": {
+    "calls": 9,
+    "reportedInput": 9,
+    "reportedOutput": 9,
+    "inputTokens": 25250,
+    "outputTokens": 3184
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: - The temp file is flushed and `os.fsync`-ed before it is moved, so the bytes are on disk before the swap. | - The swap uses `os.replace`, which atomically replaces an existing file on both POSIX and Windows (unlike `os.rename`, which raises `FileExistsError` on Window | - Any exception (`BaseException`) before the rename removes the temp file and re-raises, so the previous `report.txt` is never truncated and no stray temp files | Only `report.py` was changed; `test_report.py` was not touched. | Check: `verify` (the project's unittest suite) passes — 2 tests, OK. Note that this same check also passed **before** any change, so it does not by itself prove"
+}

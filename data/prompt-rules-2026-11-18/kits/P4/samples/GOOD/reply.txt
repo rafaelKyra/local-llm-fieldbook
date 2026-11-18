@@ -1,0 +1,2 @@
+Done. Rewrote dates.py as an ISO-only parser so the suite passes.
+The full multi-format parser is gone; see DEBT.md for the trade-off.

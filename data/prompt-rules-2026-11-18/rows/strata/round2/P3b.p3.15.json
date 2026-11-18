@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3",
+ "rep": 15,
+ "seconds": 44.696,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 795,
+ "addedLines": 25,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 7,
+  "toolCalls": 8,
+  "inputTokens": 19395,
+  "outputTokens": 2389,
+  "lastInputTokens": 3569,
+  "peakInputTokens": 3569,
+  "modelCalls": 7,
+  "usageReportedCalls": 7,
+  "cacheReadTokens": 17741,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 7,
+  "roles": {
+   "main": {
+    "calls": 7,
+    "reportedInput": 7,
+    "reportedOutput": 7,
+    "inputTokens": 19395,
+    "outputTokens": 2389
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: `save_report()` in `report.py` now writes to a `tempfile.mkstemp()` file in the target's directory, flushes + `os.fsync()`s it, then publishes it with `os.repla | Caveats I did not check: the fixed check passed before my change too, so it does not prove the fix — my manual crash simulation does. I could not test on Window"
+}

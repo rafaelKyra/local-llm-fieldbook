@@ -1,0 +1,51 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 9,
+ "seconds": 14.736,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 958,
+ "addedLines": 15,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 14,
+  "toolCalls": 14,
+  "inputTokens": 47064,
+  "outputTokens": 2513,
+  "lastInputTokens": 4907,
+  "peakInputTokens": 4907,
+  "modelCalls": 14,
+  "usageReportedCalls": 14,
+  "cacheReadTokens": 36155,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 14,
+  "roles": {
+   "main": {
+    "calls": 14,
+    "reportedInput": 14,
+    "reportedOutput": 14,
+    "inputTokens": 47064,
+    "outputTokens": 2513
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made `save_report()` in `report.py` crash-safe by switching to an atomic-write pattern. Instead of writing straight into `report.txt` (which could leave the fil | Files changed: `report.py`. | Verified: `verify` (the fixed check) passes both tests (note it also passed before the change, so it doesn't itself prove the fix). I additionally simulated a c"
+}

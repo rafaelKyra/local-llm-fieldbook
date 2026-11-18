@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 5,
+ "seconds": 101.648,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1694,
+ "addedLines": 43,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 14,
+  "toolCalls": 14,
+  "inputTokens": 53553,
+  "outputTokens": 5246,
+  "lastInputTokens": 5956,
+  "peakInputTokens": 5956,
+  "modelCalls": 14,
+  "usageReportedCalls": 14,
+  "cacheReadTokens": 49434,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 14,
+  "roles": {
+   "main": {
+    "calls": 14,
+    "reportedInput": 14,
+    "reportedOutput": 14,
+    "inputTokens": 53553,
+    "outputTokens": 5246
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: - The temp file inherits the existing report's permission bits (`mkstemp` creates 0600, which would otherwise lock out other readers). | - On POSIX only, the containing directory is fsync'ed best-effort after the rename so the rename itself is durable; this is skipped on Windows (`os.name == \"pos | Verification: | - `verify` (the fixed check: `test_report.py`, 2 tests) passes — note it also passed before any change, so it does not by itself prove the fix. | - To actually exercise the fix I ran ad-hoc scripts (not added to the repo): (1) injecting an exception from `os.fdopen`/`os.fsync` — the old report stayed inta"
+}

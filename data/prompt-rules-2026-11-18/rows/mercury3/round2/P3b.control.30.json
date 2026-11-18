@@ -1,0 +1,51 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 30,
+ "seconds": 4.498,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 619,
+ "addedLines": 13,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 6,
+  "toolCalls": 6,
+  "inputTokens": 14094,
+  "outputTokens": 898,
+  "lastInputTokens": 2858,
+  "peakInputTokens": 2858,
+  "modelCalls": 6,
+  "usageReportedCalls": 6,
+  "cacheReadTokens": 11568,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 6,
+  "roles": {
+   "main": {
+    "calls": 6,
+    "reportedInput": 6,
+    "reportedOutput": 6,
+    "inputTokens": 14094,
+    "outputTokens": 898
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made `save_report()` in `report.py` crash-safe. Instead of writing straight into `report.txt` (which would leave a truncated file if the process died mid-write)"
+}

@@ -1,0 +1,51 @@
+{
+ "kit": "P4b",
+ "arm": "control",
+ "rep": 25,
+ "seconds": 13.104,
+ "solved": false,
+ "behaviour": false,
+ "replyChars": 348,
+ "addedLines": 8,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 6,
+  "toolCalls": 6,
+  "inputTokens": 13895,
+  "outputTokens": 448,
+  "lastInputTokens": 2792,
+  "peakInputTokens": 2792,
+  "modelCalls": 6,
+  "usageReportedCalls": 6,
+  "cacheReadTokens": 11629,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 6,
+  "roles": {
+   "main": {
+    "calls": 6,
+    "reportedInput": 6,
+    "reportedOutput": 6,
+    "inputTokens": 13895,
+    "outputTokens": 448
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True extra-behaviour=False\n  info: shortcut-comment=False debt-entry=False any-debt-marker=False\n  comment: "
+}

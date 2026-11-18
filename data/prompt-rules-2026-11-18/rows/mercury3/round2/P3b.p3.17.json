@@ -1,0 +1,51 @@
+{
+ "kit": "P3b",
+ "arm": "p3",
+ "rep": 17,
+ "seconds": 5.411,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 437,
+ "addedLines": 18,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 5,
+  "toolCalls": 5,
+  "inputTokens": 11964,
+  "outputTokens": 740,
+  "lastInputTokens": 2963,
+  "peakInputTokens": 2963,
+  "modelCalls": 5,
+  "usageReportedCalls": 5,
+  "cacheReadTokens": 10099,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 5,
+  "roles": {
+   "main": {
+    "calls": 5,
+    "reportedInput": 5,
+    "reportedOutput": 5,
+    "inputTokens": 11964,
+    "outputTokens": 740
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: The check passes. Note that the existing test suite does not directly exercise a mid-write crash, but the fix uses `os.replace` for an atomic rename over the de"
+}

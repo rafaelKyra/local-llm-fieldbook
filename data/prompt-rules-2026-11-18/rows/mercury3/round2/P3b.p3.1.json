@@ -1,0 +1,51 @@
+{
+ "kit": "P3b",
+ "arm": "p3",
+ "rep": 1,
+ "seconds": 6.356,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 501,
+ "addedLines": 17,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 5,
+  "toolCalls": 6,
+  "inputTokens": 12940,
+  "outputTokens": 1398,
+  "lastInputTokens": 3350,
+  "peakInputTokens": 3350,
+  "modelCalls": 5,
+  "usageReportedCalls": 5,
+  "cacheReadTokens": 10193,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 5,
+  "roles": {
+   "main": {
+    "calls": 5,
+    "reportedInput": 5,
+    "reportedOutput": 5,
+    "inputTokens": 12940,
+    "outputTokens": 1398
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made `save_report()` in report.py crash-safe: it now writes to a temporary file in the same directory (tempfile.mkstemp) and then atomically renames it over the"
+}

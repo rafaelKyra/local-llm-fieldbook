@@ -1,0 +1,51 @@
+{
+ "kit": "P3b",
+ "arm": "p3",
+ "rep": 8,
+ "seconds": 30.836,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 799,
+ "addedLines": 20,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 7,
+  "toolCalls": 8,
+  "inputTokens": 18624,
+  "outputTokens": 1195,
+  "lastInputTokens": 3451,
+  "peakInputTokens": 3451,
+  "modelCalls": 7,
+  "usageReportedCalls": 7,
+  "cacheReadTokens": 15575,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 7,
+  "roles": {
+   "main": {
+    "calls": 7,
+    "reportedInput": 7,
+    "reportedOutput": 7,
+    "inputTokens": 18624,
+    "outputTokens": 1195
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Changed save_report() in report.py to be crash-safe instead of writing straight into the destination. It now writes to a temporary file in the same directory (t | Files changed: report.py. | Check: verify (check 3) passes, ran 2 tests OK. Note the check also passed before my change, so it does not independently prove the crash-safety behavior — it o"
+}

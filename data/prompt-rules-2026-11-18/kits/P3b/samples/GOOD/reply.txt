@@ -1,0 +1,2 @@
+Write to report.txt.tmp, then os.replace() over report.txt, so a crash in the write leaves the old report. Tests pass.
+Not verified: I could only run this on Linux, not on the Windows server; I assumed os.replace is atomic there and did not fsync before the rename.

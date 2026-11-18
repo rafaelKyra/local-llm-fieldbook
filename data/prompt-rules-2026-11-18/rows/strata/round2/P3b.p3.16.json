@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3",
+ "rep": 16,
+ "seconds": 44.372,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 866,
+ "addedLines": 48,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 7,
+  "toolCalls": 8,
+  "inputTokens": 19746,
+  "outputTokens": 2509,
+  "lastInputTokens": 3598,
+  "peakInputTokens": 3598,
+  "modelCalls": 7,
+  "usageReportedCalls": 7,
+  "cacheReadTokens": 18440,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 7,
+  "roles": {
+   "main": {
+    "calls": 7,
+    "reportedInput": 7,
+    "reportedOutput": 7,
+    "inputTokens": 19746,
+    "outputTokens": 2509
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Changed `save_report()` in report.py to write the report to a `tempfile.mkstemp` file in the target's directory, flush + fsync it, then swap it into place with "
+}

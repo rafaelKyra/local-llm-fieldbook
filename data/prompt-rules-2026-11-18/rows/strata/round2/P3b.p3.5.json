@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3",
+ "rep": 5,
+ "seconds": 100.47,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1136,
+ "addedLines": 39,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 15,
+  "toolCalls": 14,
+  "inputTokens": 57796,
+  "outputTokens": 5241,
+  "lastInputTokens": 5387,
+  "peakInputTokens": 5387,
+  "modelCalls": 15,
+  "usageReportedCalls": 15,
+  "cacheReadTokens": 54284,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 15,
+  "roles": {
+   "main": {
+    "calls": 15,
+    "reportedInput": 15,
+    "reportedOutput": 15,
+    "inputTokens": 57796,
+    "outputTokens": 5241
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Changed `save_report()` in report.py to write into a `tempfile.mkstemp()` file in the same directory as the target, flush + `os.fsync` it, then publish it with  | Caveat you should know: the fixed check (2 existing tests) passed before my change too, so it does not prove crash-safety. I proved it separately with a throwaw"
+}

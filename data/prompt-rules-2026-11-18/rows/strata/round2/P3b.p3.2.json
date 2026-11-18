@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3",
+ "rep": 2,
+ "seconds": 125.304,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1264,
+ "addedLines": 56,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 18,
+  "toolCalls": 18,
+  "inputTokens": 86158,
+  "outputTokens": 6523,
+  "lastInputTokens": 6960,
+  "peakInputTokens": 6960,
+  "modelCalls": 18,
+  "usageReportedCalls": 18,
+  "cacheReadTokens": 81058,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 18,
+  "roles": {
+   "main": {
+    "calls": 18,
+    "reportedInput": 18,
+    "reportedOutput": 18,
+    "inputTokens": 86158,
+    "outputTokens": 6523
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made save_report() in report.py crash-safe: the text is now written to a temp file created with tempfile.mkstemp in the destination's own directory (so the rena | Caveat: the fixed check (2 existing unittests) passed before my change as well, so it does not prove the fix. I separately ran a scratch script that patched os."
+}

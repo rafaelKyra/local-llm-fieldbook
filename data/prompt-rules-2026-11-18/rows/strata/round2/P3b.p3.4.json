@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3",
+ "rep": 4,
+ "seconds": 58.97,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 856,
+ "addedLines": 33,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 8,
+  "toolCalls": 9,
+  "inputTokens": 22716,
+  "outputTokens": 3307,
+  "lastInputTokens": 3618,
+  "peakInputTokens": 3618,
+  "modelCalls": 8,
+  "usageReportedCalls": 8,
+  "cacheReadTokens": 21008,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 8,
+  "roles": {
+   "main": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 22716,
+    "outputTokens": 3307
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Changed `save_report()` in report.py to write into a `tempfile.mkstemp` file in the same directory as the target, flush + `os.fsync` it, copy the existing file'"
+}

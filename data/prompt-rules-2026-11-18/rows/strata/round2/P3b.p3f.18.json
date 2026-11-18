@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 18,
+ "seconds": 47.794,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1452,
+ "addedLines": 40,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 9,
+  "toolCalls": 10,
+  "inputTokens": 27667,
+  "outputTokens": 2310,
+  "lastInputTokens": 4384,
+  "peakInputTokens": 4384,
+  "modelCalls": 9,
+  "usageReportedCalls": 9,
+  "cacheReadTokens": 25669,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 9,
+  "roles": {
+   "main": {
+    "calls": 9,
+    "reportedInput": 9,
+    "reportedOutput": 9,
+    "inputTokens": 27667,
+    "outputTokens": 2310
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Rewrote `save_report()` in `report.py` to be crash-safe: the text now goes into a `tempfile.mkstemp()` file created in the target's own directory, is flushed an | Check: `verify` ran the existing 2 tests and passed — but note it also passed before any edit, so it does not prove the fix. I proved the behaviour separately w | Risk to know about: on Windows `os.replace` fails with `PermissionError` if another process (the next job, a share viewer, or antivirus) still has `report.txt` "
+}

@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 16,
+ "seconds": 46.873,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1258,
+ "addedLines": 39,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 8,
+  "toolCalls": 8,
+  "inputTokens": 22147,
+  "outputTokens": 2464,
+  "lastInputTokens": 3753,
+  "peakInputTokens": 3753,
+  "modelCalls": 8,
+  "usageReportedCalls": 8,
+  "cacheReadTokens": 20261,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 8,
+  "roles": {
+   "main": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 22147,
+    "outputTokens": 2464
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: - `os.replace()` then swaps it into place atomically on both POSIX and Windows, so a reader/crash sees either the whole old report or the whole new one — never  | - On any exception the partial temp file is removed and the original report is left untouched. | - Best-effort directory `fsync` after the rename so the rename itself survives a power cut; wrapped in try/except OSError because Windows cannot open a director | Files changed: `report.py` only (no tests or check files touched). | Check: `verify` (the fixed project check) passes — `Ran 2 tests ... OK`. Note, as the harness also reported, this same check passed **before** any change, so it"
+}

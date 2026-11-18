@@ -1,0 +1,51 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 2,
+ "seconds": 4.665,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 627,
+ "addedLines": 13,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 6,
+  "toolCalls": 6,
+  "inputTokens": 14348,
+  "outputTokens": 982,
+  "lastInputTokens": 3008,
+  "peakInputTokens": 3008,
+  "modelCalls": 6,
+  "usageReportedCalls": 6,
+  "cacheReadTokens": 12376,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 6,
+  "roles": {
+   "main": {
+    "calls": 6,
+    "reportedInput": 6,
+    "reportedOutput": 6,
+    "inputTokens": 14348,
+    "outputTokens": 982
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made save_report() crash-safe in report.py. It now writes to a temporary file in the same directory (tempfile.mkstemp) and then atomically replaces the destinat | Files: report.py | Check: verify (the fixed test suite) passes — 2 tests OK. Note the check also passed before the edit, so it does not itself prove the crash-safety behavior, onl"
+}

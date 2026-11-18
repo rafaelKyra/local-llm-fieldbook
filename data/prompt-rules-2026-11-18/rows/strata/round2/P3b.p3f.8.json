@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 8,
+ "seconds": 112.872,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 2050,
+ "addedLines": 55,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 16,
+  "toolCalls": 16,
+  "inputTokens": 63848,
+  "outputTokens": 6343,
+  "lastInputTokens": 6081,
+  "peakInputTokens": 6081,
+  "modelCalls": 16,
+  "usageReportedCalls": 16,
+  "cacheReadTokens": 60003,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 16,
+  "roles": {
+   "main": {
+    "calls": 16,
+    "reportedInput": 16,
+    "reportedOutput": 16,
+    "inputTokens": 63848,
+    "outputTokens": 6343
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: 4. moves it into place with `os.replace()`, atomic on Windows (`MoveFileEx` with `REPLACE_EXISTING`) and on POSIX; | 5. best-effort fsyncs the containing directory on POSIX so the rename itself survives a power cut (silently skipped on Windows, where the driver handles it). | Any failure before the replace closes and unlinks the temp file, so the old report is untouched and no `.report-*.tmp` litter is left. A crash at any point leav | Check: `verify` (the fixed project check) passes on the current files — `Ran 2 tests ... OK`. Important caveat: this same suite also passed before any change, s | Caveats not checked here: everything ran on Linux only — the Windows path (`os.replace` semantics, no directory fsync, `chmod` being effectively a no-op) is not"
+}

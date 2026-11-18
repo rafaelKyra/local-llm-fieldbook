@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 6,
+ "seconds": 46.47,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1590,
+ "addedLines": 49,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 9,
+  "toolCalls": 9,
+  "inputTokens": 27844,
+  "outputTokens": 2409,
+  "lastInputTokens": 3985,
+  "peakInputTokens": 3985,
+  "modelCalls": 9,
+  "usageReportedCalls": 9,
+  "cacheReadTokens": 25753,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 9,
+  "roles": {
+   "main": {
+    "calls": 9,
+    "reportedInput": 9,
+    "reportedOutput": 9,
+    "inputTokens": 27844,
+    "outputTokens": 2409
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Changed `save_report()` in `report.py` to write crash-safely: the text now goes into a `tempfile.mkstemp()` file created in the same directory as the target, is | Files touched: `report.py` only; `test_report.py` was not modified. | Check: `verify` (the project's unittest suite, 2 tests) passed — but note it also passed before any change, so it does not prove the fix. To actually exercise t | Risk to know: on Windows the durability guarantee is weaker than on Linux — `os.replace` is atomic, but the directory fsync is a no-op there, so after a power l"
+}

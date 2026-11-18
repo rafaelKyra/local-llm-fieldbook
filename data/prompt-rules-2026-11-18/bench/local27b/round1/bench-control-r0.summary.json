@@ -1,0 +1,42 @@
+{
+  "passAtK": "34/38",
+  "passPowK": "34/38",
+  "wilson95": [
+    0.759,
+    0.958
+  ],
+  "label": "local27b-control",
+  "model": "qwen3.8-27b-turbo-fable-cold-fusion-735-882-heretic-uncensored-neo-coder-max-mtp",
+  "profile": "auto",
+  "runtime": "forge",
+  "tasks": 38,
+  "solved": 34,
+  "rate": 0.895,
+  "verdicts": {
+    "solved": 34,
+    "overfit": 4
+  },
+  "byCategory": {
+    "off-by-one": "2/2",
+    "wrong-operator": "1/1",
+    "string": "0/1",
+    "async": "1/1",
+    "sorting": "1/1",
+    "regex": "0/1",
+    "feature": "5/5",
+    "bug": "9/9",
+    "multi-file": "2/2",
+    "parsing": "1/2",
+    "read-the-spec": "1/1",
+    "python": "4/4",
+    "spec": "7/8"
+  },
+  "totalSeconds": 2120.6,
+  "toolCalls": 203,
+  "inputTokens": 525274,
+  "outputTokens": 36727,
+  "pathologies": {
+    "edits_without_verify": 1,
+    "edit_thrash": 1
+  }
+}

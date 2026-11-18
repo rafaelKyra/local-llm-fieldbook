@@ -12,6 +12,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import live_section
+import prompt_rules_section
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / "data" / "grid-2026-09-20"
@@ -188,6 +189,7 @@ See <a href="https://github.com/rafaelKyra/local-llm-fieldbook/blob/main/CORRECT
 </ul>
 
 {live_section.build(ROOT / "data" / "live-orchestration-2026-10-04")}
+{prompt_rules_section.build(ROOT / "data" / "prompt-rules-2026-11-18")}
 
 <h2>Limits</h2>
 <ul>

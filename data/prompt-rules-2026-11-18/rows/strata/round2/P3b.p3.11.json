@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3",
+ "rep": 11,
+ "seconds": 85.667,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1257,
+ "addedLines": 50,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 12,
+  "toolCalls": 11,
+  "inputTokens": 47177,
+  "outputTokens": 4551,
+  "lastInputTokens": 5657,
+  "peakInputTokens": 5657,
+  "modelCalls": 12,
+  "usageReportedCalls": 12,
+  "cacheReadTokens": 43410,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 12,
+  "roles": {
+   "main": {
+    "calls": 12,
+    "reportedInput": 12,
+    "reportedOutput": 12,
+    "inputTokens": 47177,
+    "outputTokens": 4551
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made save_report() in report.py crash-safe: the text is now written to a temp file created with tempfile.mkstemp in the same directory as the target, flushed +  | Check: verify (the fixed project check) passes — 2 tests, OK — but note it also passed before any change, so it does not prove the fix. To actually exercise the"
+}

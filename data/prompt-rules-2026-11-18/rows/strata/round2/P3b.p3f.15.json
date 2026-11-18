@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 15,
+ "seconds": 47.161,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1650,
+ "addedLines": 44,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 7,
+  "toolCalls": 8,
+  "inputTokens": 19609,
+  "outputTokens": 2887,
+  "lastInputTokens": 3557,
+  "peakInputTokens": 3557,
+  "modelCalls": 7,
+  "usageReportedCalls": 7,
+  "cacheReadTokens": 18448,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 7,
+  "roles": {
+   "main": {
+    "calls": 7,
+    "reportedInput": 7,
+    "reportedOutput": 7,
+    "inputTokens": 19609,
+    "outputTokens": 2887
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Changed `save_report()` in `report.py` to write crash-safe: the text is written to a `tempfile.mkstemp` scratch file in the *same* directory as the target, flus | Files touched: `report.py` only. No tests or check files were modified. | Verification: the fixed check (2 existing tests in `test_report.py`) passes, but note it also passed *before* any edit, so it does not prove the fix — the exist | Risk/caveat: the durability of the rename itself cannot be fsynced on Windows, so after a power loss the rename may not have landed — but the old report is stil"
+}

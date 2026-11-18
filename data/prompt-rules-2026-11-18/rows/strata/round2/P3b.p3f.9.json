@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 9,
+ "seconds": 62.652,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1814,
+ "addedLines": 50,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 8,
+  "toolCalls": 8,
+  "inputTokens": 24818,
+  "outputTokens": 3681,
+  "lastInputTokens": 4113,
+  "peakInputTokens": 4113,
+  "modelCalls": 8,
+  "usageReportedCalls": 8,
+  "cacheReadTokens": 23096,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 8,
+  "roles": {
+   "main": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 24818,
+    "outputTokens": 3681
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Changed `save_report()` in `report.py` to write crash-safely: the text is written to a `tempfile.mkstemp` file in the *same* directory as the target, flushed wi | Files changed: `report.py` only. No tests or check files were touched. | Check: `verify` (the project's 2-test unittest suite) passes. Note that this same check also passed *before* any edit, so it does not prove the fix — the existi | Not verified / risks: I could not exercise the real Windows code path (no Windows machine here), so the `os.replace` overwrite semantics and the skipped fsync/c"
+}

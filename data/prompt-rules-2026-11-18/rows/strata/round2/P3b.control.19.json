@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 19,
+ "seconds": 60.126,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1594,
+ "addedLines": 52,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 9,
+  "toolCalls": 9,
+  "inputTokens": 26010,
+  "outputTokens": 3348,
+  "lastInputTokens": 4091,
+  "peakInputTokens": 4091,
+  "modelCalls": 9,
+  "usageReportedCalls": 9,
+  "cacheReadTokens": 23781,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 9,
+  "roles": {
+   "main": {
+    "calls": 9,
+    "reportedInput": 9,
+    "reportedOutput": 9,
+    "inputTokens": 26010,
+    "outputTokens": 3348
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: - A `finally` block unlinks the temp file if anything fails before the rename, so no stray `.tmp` files are left behind. | - Permissions of an existing report are copied onto the temp file before the replace; a best-effort `_sync_directory()` fsyncs the directory on POSIX (no-op/ski | Verification: | - The fixed check (`verify`, no arguments) passes: `Ran 2 tests ... OK`. Note, as the check itself reports, these 2 tests also passed **before** any change — th | - To actually exercise the new behaviour I ran an ad-hoc script (no test files were added or modified): with `os.fdopen` patched to raise mid-write, and separat"
+}

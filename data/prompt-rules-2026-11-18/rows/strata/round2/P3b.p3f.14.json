@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 14,
+ "seconds": 120.087,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 2371,
+ "addedLines": 52,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 17,
+  "toolCalls": 16,
+  "inputTokens": 73435,
+  "outputTokens": 7308,
+  "lastInputTokens": 6202,
+  "peakInputTokens": 6202,
+  "modelCalls": 17,
+  "usageReportedCalls": 17,
+  "cacheReadTokens": 69579,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 17,
+  "roles": {
+   "main": {
+    "calls": 17,
+    "reportedInput": 17,
+    "reportedOutput": 17,
+    "inputTokens": 73435,
+    "outputTokens": 7308
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: **Extra verification I ran separately** — a throwaway script (since deleted/emptied) that killed a child process mid-write after a partial flush and simulated a | **Leftovers / risks**: | - `_scratch_crash_check.py` remains in the repo as an empty file — I could not delete it (`rm` is refused by the tooling); please remove it. | - If the process is killed hard (`os._exit`/power loss) *during* the write, the abandoned `.tmp` file is left behind in the report directory; the report itself  | - On Windows, `os.chmod` only toggles the read-only bit and `os.replace` fails if another process holds `report.txt` open (e.g. a reader or antivirus); that fai"
+}

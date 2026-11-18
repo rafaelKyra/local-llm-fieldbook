@@ -1,0 +1,915 @@
+{
+ "kit_rows": [
+  {
+   "model": "local27b",
+   "round": "round1",
+   "kit": "P3",
+   "arm": "control",
+   "withdrawn": true,
+   "runs": 10,
+   "solved": 10,
+   "behaviour": 0,
+   "behaviour_ci95": [
+    0,
+    0.278
+   ],
+   "mean_output_tokens": 630.5,
+   "mean_seconds": 39.0,
+   "mean_reply_chars": 145.0,
+   "crashes": 0
+  },
+  {
+   "model": "local27b",
+   "round": "round1",
+   "kit": "P3",
+   "arm": "p3",
+   "withdrawn": true,
+   "runs": 10,
+   "solved": 4,
+   "behaviour": 0,
+   "behaviour_ci95": [
+    0,
+    0.278
+   ],
+   "mean_output_tokens": 890.7,
+   "mean_seconds": 54.0,
+   "mean_reply_chars": 153.8,
+   "crashes": 0
+  },
+  {
+   "model": "local27b",
+   "round": "round1",
+   "kit": "P3",
+   "arm": "p34",
+   "withdrawn": true,
+   "runs": 10,
+   "solved": 10,
+   "behaviour": 0,
+   "behaviour_ci95": [
+    0,
+    0.278
+   ],
+   "mean_output_tokens": 693.4,
+   "mean_seconds": 42.5,
+   "mean_reply_chars": 163.0,
+   "crashes": 0
+  },
+  {
+   "model": "local27b",
+   "round": "round1",
+   "kit": "P3",
+   "arm": "p4",
+   "withdrawn": true,
+   "runs": 10,
+   "solved": 9,
+   "behaviour": 0,
+   "behaviour_ci95": [
+    0,
+    0.278
+   ],
+   "mean_output_tokens": 620.9,
+   "mean_seconds": 38.7,
+   "mean_reply_chars": 173.4,
+   "crashes": 0
+  },
+  {
+   "model": "local27b",
+   "round": "round1",
+   "kit": "P4",
+   "arm": "control",
+   "withdrawn": true,
+   "runs": 10,
+   "solved": 5,
+   "behaviour": 0,
+   "behaviour_ci95": [
+    0,
+    0.278
+   ],
+   "mean_output_tokens": 1003.0,
+   "mean_seconds": 59.3,
+   "mean_reply_chars": 209.0,
+   "crashes": 0
+  },
+  {
+   "model": "local27b",
+   "round": "round1",
+   "kit": "P4",
+   "arm": "p3",
+   "withdrawn": true,
+   "runs": 10,
+   "solved": 10,
+   "behaviour": 0,
+   "behaviour_ci95": [
+    0,
+    0.278
+   ],
+   "mean_output_tokens": 984.3,
+   "mean_seconds": 58.2,
+   "mean_reply_chars": 224.6,
+   "crashes": 0
+  },
+  {
+   "model": "local27b",
+   "round": "round1",
+   "kit": "P4",
+   "arm": "p34",
+   "withdrawn": true,
+   "runs": 10,
+   "solved": 10,
+   "behaviour": 0,
+   "behaviour_ci95": [
+    0,
+    0.278
+   ],
+   "mean_output_tokens": 1018.8,
+   "mean_seconds": 60.0,
+   "mean_reply_chars": 221.3,
+   "crashes": 0
+  },
+  {
+   "model": "local27b",
+   "round": "round1",
+   "kit": "P4",
+   "arm": "p4",
+   "withdrawn": true,
+   "runs": 10,
+   "solved": 8,
+   "behaviour": 0,
+   "behaviour_ci95": [
+    0,
+    0.278
+   ],
+   "mean_output_tokens": 1047.1,
+   "mean_seconds": 61.7,
+   "mean_reply_chars": 213.9,
+   "crashes": 0
+  },
+  {
+   "model": "local27b",
+   "round": "round2",
+   "kit": "P3b",
+   "arm": "control",
+   "withdrawn": false,
+   "runs": 10,
+   "solved": 10,
+   "behaviour": 0,
+   "behaviour_ci95": [
+    0,
+    0.278
+   ],
+   "mean_output_tokens": 1057.6,
+   "mean_seconds": 56.5,
+   "mean_reply_chars": 389.7,
+   "crashes": 0
+  },
+  {
+   "model": "local27b",
+   "round": "round2",
+   "kit": "P3b",
+   "arm": "p3",
+   "withdrawn": false,
+   "runs": 10,
+   "solved": 10,
+   "behaviour": 7,
+   "behaviour_ci95": [
+    0.397,
+    0.892
+   ],
+   "mean_output_tokens": 955.3,
+   "mean_seconds": 51.8,
+   "mean_reply_chars": 367.4,
+   "crashes": 0
+  },
+  {
+   "model": "local27b",
+   "round": "round2",
+   "kit": "P3b",
+   "arm": "p3f",
+   "withdrawn": false,
+   "runs": 10,
+   "solved": 10,
+   "behaviour": 10,
+   "behaviour_ci95": [
+    0.722,
+    1
+   ],
+   "mean_output_tokens": 1267.0,
+   "mean_seconds": 56.4,
+   "mean_reply_chars": 357.0,
+   "crashes": 0
+  },
+  {
+   "model": "local27b",
+   "round": "round2",
+   "kit": "P4b",
+   "arm": "control",
+   "withdrawn": false,
+   "runs": 10,
+   "solved": 10,
+   "behaviour": 0,
+   "behaviour_ci95": [
+    0,
+    0.278
+   ],
+   "mean_output_tokens": 585.4,
+   "mean_seconds": 26.8,
+   "mean_reply_chars": 189.4,
+   "crashes": 0
+  },
+  {
+   "model": "local27b",
+   "round": "round2",
+   "kit": "P4b",
+   "arm": "p4",
+   "withdrawn": false,
+   "runs": 10,
+   "solved": 10,
+   "behaviour": 0,
+   "behaviour_ci95": [
+    0,
+    0.278
+   ],
+   "mean_output_tokens": 604.8,
+   "mean_seconds": 27.7,
+   "mean_reply_chars": 208.4,
+   "crashes": 0
+  },
+  {
+   "model": "mercury3",
+   "round": "round1",
+   "kit": "P3",
+   "arm": "control",
+   "withdrawn": true,
+   "runs": 15,
+   "solved": 15,
+   "behaviour": 0,
+   "behaviour_ci95": [
+    0,
+    0.204
+   ],
+   "mean_output_tokens": 888.1,
+   "mean_seconds": 4.6,
+   "mean_reply_chars": 349.7,
+   "crashes": 0
+  },
+  {
+   "model": "mercury3",
+   "round": "round1",
+   "kit": "P3",
+   "arm": "p3",
+   "withdrawn": true,
+   "runs": 15,
+   "solved": 15,
+   "behaviour": 0,
+   "behaviour_ci95": [
+    0,
+    0.204
+   ],
+   "mean_output_tokens": 1017.7,
+   "mean_seconds": 5.4,
+   "mean_reply_chars": 344.7,
+   "crashes": 0
+  },
+  {
+   "model": "mercury3",
+   "round": "round1",
+   "kit": "P3",
+   "arm": "p34",
+   "withdrawn": true,
+   "runs": 15,
+   "solved": 15,
+   "behaviour": 0,
+   "behaviour_ci95": [
+    0,
+    0.204
+   ],
+   "mean_output_tokens": 957.8,
+   "mean_seconds": 5.1,
+   "mean_reply_chars": 372.3,
+   "crashes": 0
+  },
+  {
+   "model": "mercury3",
+   "round": "round1",
+   "kit": "P3",
+   "arm": "p4",
+   "withdrawn": true,
+   "runs": 15,
+   "solved": 15,
+   "behaviour": 0,
+   "behaviour_ci95": [
+    0,
+    0.204
+   ],
+   "mean_output_tokens": 997.1,
+   "mean_seconds": 5.2,
+   "mean_reply_chars": 357.7,
+   "crashes": 0
+  },
+  {
+   "model": "mercury3",
+   "round": "round1",
+   "kit": "P4",
+   "arm": "control",
+   "withdrawn": true,
+   "runs": 15,
+   "solved": 15,
+   "behaviour": 0,
+   "behaviour_ci95": [
+    0,
+    0.204
+   ],
+   "mean_output_tokens": 768.5,
+   "mean_seconds": 4.2,
+   "mean_reply_chars": 367.8,
+   "crashes": 0
+  },
+  {
+   "model": "mercury3",
+   "round": "round1",
+   "kit": "P4",
+   "arm": "p3",
+   "withdrawn": true,
+   "runs": 15,
+   "solved": 15,
+   "behaviour": 0,
+   "behaviour_ci95": [
+    0,
+    0.204
+   ],
+   "mean_output_tokens": 874.1,
+   "mean_seconds": 4.3,
+   "mean_reply_chars": 364.7,
+   "crashes": 0
+  },
+  {
+   "model": "mercury3",
+   "round": "round1",
+   "kit": "P4",
+   "arm": "p34",
+   "withdrawn": true,
+   "runs": 15,
+   "solved": 15,
+   "behaviour": 0,
+   "behaviour_ci95": [
+    0,
+    0.204
+   ],
+   "mean_output_tokens": 826.7,
+   "mean_seconds": 4.4,
+   "mean_reply_chars": 439.3,
+   "crashes": 0
+  },
+  {
+   "model": "mercury3",
+   "round": "round1",
+   "kit": "P4",
+   "arm": "p4",
+   "withdrawn": true,
+   "runs": 15,
+   "solved": 14,
+   "behaviour": 0,
+   "behaviour_ci95": [
+    0,
+    0.204
+   ],
+   "mean_output_tokens": 938.5,
+   "mean_seconds": 4.7,
+   "mean_reply_chars": 424.4,
+   "crashes": 0
+  },
+  {
+   "model": "mercury3",
+   "round": "round2",
+   "kit": "P3b",
+   "arm": "control",
+   "withdrawn": false,
+   "runs": 30,
+   "solved": 30,
+   "behaviour": 22,
+   "behaviour_ci95": [
+    0.556,
+    0.858
+   ],
+   "mean_output_tokens": 1286.1,
+   "mean_seconds": 7.9,
+   "mean_reply_chars": 675.5,
+   "crashes": 0
+  },
+  {
+   "model": "mercury3",
+   "round": "round2",
+   "kit": "P3b",
+   "arm": "p3",
+   "withdrawn": false,
+   "runs": 30,
+   "solved": 30,
+   "behaviour": 21,
+   "behaviour_ci95": [
+    0.521,
+    0.833
+   ],
+   "mean_output_tokens": 1132.4,
+   "mean_seconds": 11.0,
+   "mean_reply_chars": 595.6,
+   "crashes": 0
+  },
+  {
+   "model": "mercury3",
+   "round": "round2",
+   "kit": "P3b",
+   "arm": "p3f",
+   "withdrawn": false,
+   "runs": 30,
+   "solved": 30,
+   "behaviour": 29,
+   "behaviour_ci95": [
+    0.833,
+    0.994
+   ],
+   "mean_output_tokens": 1277.0,
+   "mean_seconds": 12.3,
+   "mean_reply_chars": 695.7,
+   "crashes": 0
+  },
+  {
+   "model": "mercury3",
+   "round": "round2",
+   "kit": "P4b",
+   "arm": "control",
+   "withdrawn": false,
+   "runs": 30,
+   "solved": 30,
+   "behaviour": 0,
+   "behaviour_ci95": [
+    0,
+    0.114
+   ],
+   "mean_output_tokens": 528.6,
+   "mean_seconds": 3.8,
+   "mean_reply_chars": 340.6,
+   "crashes": 0
+  },
+  {
+   "model": "mercury3",
+   "round": "round2",
+   "kit": "P4b",
+   "arm": "p4",
+   "withdrawn": false,
+   "runs": 30,
+   "solved": 30,
+   "behaviour": 0,
+   "behaviour_ci95": [
+    0,
+    0.114
+   ],
+   "mean_output_tokens": 536.1,
+   "mean_seconds": 3.9,
+   "mean_reply_chars": 354.7,
+   "crashes": 0
+  },
+  {
+   "model": "mercury3",
+   "round": "round2",
+   "kit": "P4b",
+   "arm": "p4f",
+   "withdrawn": false,
+   "runs": 30,
+   "solved": 30,
+   "behaviour": 0,
+   "behaviour_ci95": [
+    0,
+    0.114
+   ],
+   "mean_output_tokens": 518.8,
+   "mean_seconds": 4.2,
+   "mean_reply_chars": 330.7,
+   "crashes": 0
+  },
+  {
+   "model": "mercury3",
+   "round": "round2-p4b-v1-withdrawn",
+   "kit": "P4b",
+   "arm": "control",
+   "withdrawn": true,
+   "runs": 30,
+   "solved": 22,
+   "behaviour": 0,
+   "behaviour_ci95": [
+    0,
+    0.114
+   ],
+   "mean_output_tokens": 455.2,
+   "mean_seconds": 6.5,
+   "mean_reply_chars": 287.4,
+   "crashes": 0
+  },
+  {
+   "model": "mercury3",
+   "round": "round2-p4b-v1-withdrawn",
+   "kit": "P4b",
+   "arm": "p4",
+   "withdrawn": true,
+   "runs": 30,
+   "solved": 18,
+   "behaviour": 0,
+   "behaviour_ci95": [
+    0,
+    0.114
+   ],
+   "mean_output_tokens": 464.1,
+   "mean_seconds": 6.6,
+   "mean_reply_chars": 286.8,
+   "crashes": 0
+  },
+  {
+   "model": "strata",
+   "round": "round2",
+   "kit": "P3b",
+   "arm": "control",
+   "withdrawn": false,
+   "runs": 20,
+   "solved": 20,
+   "behaviour": 18,
+   "behaviour_ci95": [
+    0.699,
+    0.972
+   ],
+   "mean_output_tokens": 4945.3,
+   "mean_seconds": 92.8,
+   "mean_reply_chars": 1469.7,
+   "crashes": 0
+  },
+  {
+   "model": "strata",
+   "round": "round2",
+   "kit": "P3b",
+   "arm": "p3",
+   "withdrawn": false,
+   "runs": 20,
+   "solved": 20,
+   "behaviour": 20,
+   "behaviour_ci95": [
+    0.839,
+    1
+   ],
+   "mean_output_tokens": 3956.1,
+   "mean_seconds": 75.8,
+   "mean_reply_chars": 973.3,
+   "crashes": 0
+  },
+  {
+   "model": "strata",
+   "round": "round2",
+   "kit": "P3b",
+   "arm": "p3f",
+   "withdrawn": false,
+   "runs": 20,
+   "solved": 20,
+   "behaviour": 20,
+   "behaviour_ci95": [
+    0.839,
+    1
+   ],
+   "mean_output_tokens": 3727.9,
+   "mean_seconds": 67.6,
+   "mean_reply_chars": 1573.6,
+   "crashes": 0
+  },
+  {
+   "model": "strata",
+   "round": "round2",
+   "kit": "P4b",
+   "arm": "control",
+   "withdrawn": false,
+   "runs": 20,
+   "solved": 20,
+   "behaviour": 0,
+   "behaviour_ci95": [
+    0,
+    0.161
+   ],
+   "mean_output_tokens": 1667.3,
+   "mean_seconds": 42.5,
+   "mean_reply_chars": 586.5,
+   "crashes": 0
+  },
+  {
+   "model": "strata",
+   "round": "round2",
+   "kit": "P4b",
+   "arm": "p4",
+   "withdrawn": false,
+   "runs": 20,
+   "solved": 20,
+   "behaviour": 0,
+   "behaviour_ci95": [
+    0,
+    0.161
+   ],
+   "mean_output_tokens": 1546.5,
+   "mean_seconds": 40.4,
+   "mean_reply_chars": 628.6,
+   "crashes": 0
+  },
+  {
+   "model": "strata",
+   "round": "round2",
+   "kit": "P4b",
+   "arm": "p4f",
+   "withdrawn": false,
+   "runs": 20,
+   "solved": 20,
+   "behaviour": 0,
+   "behaviour_ci95": [
+    0,
+    0.161
+   ],
+   "mean_output_tokens": 1253.7,
+   "mean_seconds": 29.4,
+   "mean_reply_chars": 473.9,
+   "crashes": 0
+  }
+ ],
+ "comparisons": [
+  {
+   "model": "local27b",
+   "round": "round2",
+   "kit": "P3b",
+   "arm": "p3",
+   "behaviour": "7/10",
+   "control_behaviour": "0/10",
+   "fisher_p": 0.0031,
+   "solved": "10/10",
+   "control_solved": "10/10",
+   "output_tokens_vs_control_pct": -9.7
+  },
+  {
+   "model": "local27b",
+   "round": "round2",
+   "kit": "P3b",
+   "arm": "p3f",
+   "behaviour": "10/10",
+   "control_behaviour": "0/10",
+   "fisher_p": 0.0,
+   "solved": "10/10",
+   "control_solved": "10/10",
+   "output_tokens_vs_control_pct": 19.8
+  },
+  {
+   "model": "local27b",
+   "round": "round2",
+   "kit": "P4b",
+   "arm": "p4",
+   "behaviour": "0/10",
+   "control_behaviour": "0/10",
+   "fisher_p": 1.0,
+   "solved": "10/10",
+   "control_solved": "10/10",
+   "output_tokens_vs_control_pct": 3.3
+  },
+  {
+   "model": "mercury3",
+   "round": "round2",
+   "kit": "P3b",
+   "arm": "p3",
+   "behaviour": "21/30",
+   "control_behaviour": "22/30",
+   "fisher_p": 1.0,
+   "solved": "30/30",
+   "control_solved": "30/30",
+   "output_tokens_vs_control_pct": -12.0
+  },
+  {
+   "model": "mercury3",
+   "round": "round2",
+   "kit": "P3b",
+   "arm": "p3f",
+   "behaviour": "29/30",
+   "control_behaviour": "22/30",
+   "fisher_p": 0.0257,
+   "solved": "30/30",
+   "control_solved": "30/30",
+   "output_tokens_vs_control_pct": -0.7
+  },
+  {
+   "model": "mercury3",
+   "round": "round2",
+   "kit": "P4b",
+   "arm": "p4",
+   "behaviour": "0/30",
+   "control_behaviour": "0/30",
+   "fisher_p": 1.0,
+   "solved": "30/30",
+   "control_solved": "30/30",
+   "output_tokens_vs_control_pct": 1.4
+  },
+  {
+   "model": "mercury3",
+   "round": "round2",
+   "kit": "P4b",
+   "arm": "p4f",
+   "behaviour": "0/30",
+   "control_behaviour": "0/30",
+   "fisher_p": 1.0,
+   "solved": "30/30",
+   "control_solved": "30/30",
+   "output_tokens_vs_control_pct": -1.9
+  },
+  {
+   "model": "strata",
+   "round": "round2",
+   "kit": "P3b",
+   "arm": "p3",
+   "behaviour": "20/20",
+   "control_behaviour": "18/20",
+   "fisher_p": 0.4872,
+   "solved": "20/20",
+   "control_solved": "20/20",
+   "output_tokens_vs_control_pct": -20.0
+  },
+  {
+   "model": "strata",
+   "round": "round2",
+   "kit": "P3b",
+   "arm": "p3f",
+   "behaviour": "20/20",
+   "control_behaviour": "18/20",
+   "fisher_p": 0.4872,
+   "solved": "20/20",
+   "control_solved": "20/20",
+   "output_tokens_vs_control_pct": -24.6
+  },
+  {
+   "model": "strata",
+   "round": "round2",
+   "kit": "P4b",
+   "arm": "p4",
+   "behaviour": "0/20",
+   "control_behaviour": "0/20",
+   "fisher_p": 1.0,
+   "solved": "20/20",
+   "control_solved": "20/20",
+   "output_tokens_vs_control_pct": -7.2
+  },
+  {
+   "model": "strata",
+   "round": "round2",
+   "kit": "P4b",
+   "arm": "p4f",
+   "behaviour": "0/20",
+   "control_behaviour": "0/20",
+   "fisher_p": 1.0,
+   "solved": "20/20",
+   "control_solved": "20/20",
+   "output_tokens_vs_control_pct": -24.8
+  }
+ ],
+ "bench": [
+  {
+   "model": "local27b",
+   "round": "round1",
+   "arm": "control",
+   "passes": 2,
+   "tasks": 76,
+   "solved": 68,
+   "output_tokens": 73454,
+   "input_tokens": 1050548,
+   "seconds": 4283.3,
+   "rate": 0.895,
+   "solved_ci95": [
+    0.806,
+    0.946
+   ]
+  },
+  {
+   "model": "local27b",
+   "round": "round1",
+   "arm": "p3",
+   "passes": 2,
+   "tasks": 76,
+   "solved": 64,
+   "output_tokens": 65526,
+   "input_tokens": 1067874,
+   "seconds": 3842.4,
+   "rate": 0.842,
+   "solved_ci95": [
+    0.744,
+    0.907
+   ]
+  },
+  {
+   "model": "local27b",
+   "round": "round1",
+   "arm": "p34",
+   "passes": 2,
+   "tasks": 76,
+   "solved": 70,
+   "output_tokens": 65386,
+   "input_tokens": 1096370,
+   "seconds": 3849.6,
+   "rate": 0.921,
+   "solved_ci95": [
+    0.838,
+    0.963
+   ]
+  },
+  {
+   "model": "local27b",
+   "round": "round1",
+   "arm": "p4",
+   "passes": 2,
+   "tasks": 76,
+   "solved": 68,
+   "output_tokens": 81854,
+   "input_tokens": 1251422,
+   "seconds": 4775.5,
+   "rate": 0.895,
+   "solved_ci95": [
+    0.806,
+    0.946
+   ]
+  },
+  {
+   "model": "mercury3",
+   "round": "round1",
+   "arm": "control",
+   "passes": 3,
+   "tasks": 114,
+   "solved": 109,
+   "output_tokens": 150736,
+   "input_tokens": 2097649,
+   "seconds": 1483.6,
+   "rate": 0.956,
+   "solved_ci95": [
+    0.901,
+    0.981
+   ]
+  },
+  {
+   "model": "mercury3",
+   "round": "round1",
+   "arm": "p3",
+   "passes": 3,
+   "tasks": 114,
+   "solved": 109,
+   "output_tokens": 157024,
+   "input_tokens": 2211049,
+   "seconds": 1682.7,
+   "rate": 0.956,
+   "solved_ci95": [
+    0.901,
+    0.981
+   ]
+  },
+  {
+   "model": "mercury3",
+   "round": "round1",
+   "arm": "p34",
+   "passes": 3,
+   "tasks": 114,
+   "solved": 110,
+   "output_tokens": 161744,
+   "input_tokens": 2419697,
+   "seconds": 1748.3,
+   "rate": 0.965,
+   "solved_ci95": [
+    0.913,
+    0.986
+   ]
+  },
+  {
+   "model": "mercury3",
+   "round": "round1",
+   "arm": "p4",
+   "passes": 3,
+   "tasks": 114,
+   "solved": 110,
+   "output_tokens": 145417,
+   "input_tokens": 2200612,
+   "seconds": 1756.4,
+   "rate": 0.965,
+   "solved_ci95": [
+    0.913,
+    0.986
+   ]
+  },
+  {
+   "model": "mercury3",
+   "round": "round2",
+   "arm": "p3f",
+   "passes": 3,
+   "tasks": 114,
+   "solved": 109,
+   "output_tokens": 146426,
+   "input_tokens": 1955852,
+   "seconds": 1453.0,
+   "rate": 0.956,
+   "solved_ci95": [
+    0.901,
+    0.981
+   ]
+  }
+ ],
+ "note": "behaviour counts runs that were solved AND showed the behaviour; fisher_p is two-sided on behaviour counts of all runs vs control; no multiple-comparison correction."
+}

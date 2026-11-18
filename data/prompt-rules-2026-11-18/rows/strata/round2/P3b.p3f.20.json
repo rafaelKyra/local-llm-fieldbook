@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 20,
+ "seconds": 99.244,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1313,
+ "addedLines": 47,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 23,
+  "toolCalls": 23,
+  "inputTokens": 99357,
+  "outputTokens": 5074,
+  "lastInputTokens": 6270,
+  "peakInputTokens": 6270,
+  "modelCalls": 23,
+  "usageReportedCalls": 23,
+  "cacheReadTokens": 95403,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 23,
+  "roles": {
+   "main": {
+    "calls": 23,
+    "reportedInput": 23,
+    "reportedOutput": 23,
+    "inputTokens": 99357,
+    "outputTokens": 5074
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Changed `save_report()` in `report.py` to write crash-safely: the text goes to a `tempfile.mkstemp` file in the destination's own directory (same filesystem), i | Check: `verify` (the project's unittest suite, 2 tests) passes on the current files. Note that this same suite also passed before any change, so it does not by  | Not verified: real behaviour on the Windows file server (only exercised on Linux), and durability across an actual power loss — on Windows the directory fsync i"
+}

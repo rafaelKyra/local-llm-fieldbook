@@ -1,0 +1,51 @@
+{
+ "kit": "P4",
+ "arm": "p34",
+ "rep": 1,
+ "seconds": 59.412,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 192,
+ "addedLines": 1,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 6,
+  "toolCalls": 5,
+  "inputTokens": 18546,
+  "outputTokens": 1017,
+  "lastInputTokens": 3673,
+  "peakInputTokens": 3673,
+  "modelCalls": 6,
+  "usageReportedCalls": 6,
+  "cacheReadTokens": 0,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 0,
+  "roles": {
+   "main": {
+    "calls": 6,
+    "reportedInput": 6,
+    "reportedOutput": 6,
+    "inputTokens": 18546,
+    "outputTokens": 1017
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True iso-roundtrip-rejection=True\n  info: shortcut-comment=False debt-entry=False any-debt-marker=False\n  comment: "
+}

@@ -1,0 +1,51 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 10,
+ "seconds": 28.797,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 819,
+ "addedLines": 18,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 7,
+  "toolCalls": 7,
+  "inputTokens": 17496,
+  "outputTokens": 1216,
+  "lastInputTokens": 3351,
+  "peakInputTokens": 3351,
+  "modelCalls": 7,
+  "usageReportedCalls": 7,
+  "cacheReadTokens": 13868,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 7,
+  "roles": {
+   "main": {
+    "calls": 7,
+    "reportedInput": 7,
+    "reportedOutput": 7,
+    "inputTokens": 17496,
+    "outputTokens": 1216
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made save_report() in report.py crash-safe. | What changed (report.py only): | - save_report now writes the report to a temporary file in the same directory (tempfile.mkstemp), flushes and fsyncs it, then atomically moves it over the desti | - If anything fails, the temporary file is removed and the original report is left untouched. A crash mid-write now only truncates the temp file, never the exis | Check: verify (no arguments) passes — the 2 unit tests run green. Note the check also passed before my change, so it does not by itself prove the fix; the crash"
+}

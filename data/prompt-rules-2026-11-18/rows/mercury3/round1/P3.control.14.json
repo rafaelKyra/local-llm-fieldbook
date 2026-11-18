@@ -1,0 +1,51 @@
+{
+ "kit": "P3",
+ "arm": "control",
+ "rep": 14,
+ "seconds": 5.869,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 322,
+ "addedLines": 8,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 8,
+  "toolCalls": 8,
+  "inputTokens": 23331,
+  "outputTokens": 1100,
+  "lastInputTokens": 3717,
+  "peakInputTokens": 3805,
+  "modelCalls": 8,
+  "usageReportedCalls": 8,
+  "cacheReadTokens": 19645,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 8,
+  "roles": {
+   "main": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 23331,
+    "outputTokens": 1100
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True bad-input-ValueError=True\n  tail: Rewrote `total()` in `fastsum.py` to be fast: replaced the O(n^2) nested-loop duplicate check with an O(n) set-based check, while preserving the same semantics "
+}

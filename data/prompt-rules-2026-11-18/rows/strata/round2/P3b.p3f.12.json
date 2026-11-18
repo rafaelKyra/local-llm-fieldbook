@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 12,
+ "seconds": 48.432,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 2054,
+ "addedLines": 49,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 6,
+  "toolCalls": 7,
+  "inputTokens": 16539,
+  "outputTokens": 3105,
+  "lastInputTokens": 3617,
+  "peakInputTokens": 3617,
+  "modelCalls": 6,
+  "usageReportedCalls": 6,
+  "cacheReadTokens": 15208,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 6,
+  "roles": {
+   "main": {
+    "calls": 6,
+    "reportedInput": 6,
+    "reportedOutput": 6,
+    "inputTokens": 16539,
+    "outputTokens": 3105
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: 5. best-effort `fsync` of the containing directory so the rename itself is durable (skipped silently on Windows, which has no directory fsync). | - Any exception (`BaseException`, so a `KeyboardInterrupt` counts too) closes and deletes the temp file, leaving the previous report untouched. | `os.replace` rather than `os.rename` is the Windows-relevant part: `os.rename` raises if the destination already exists on Windows, while `os.replace` overwrite | **Verification** — `verify` (the fixed check): 2 tests, OK. Note that this same check also passed *before* any edit, so it does not prove the fix; I additionall | **Risks to know:** on Windows, `os.replace` fails with `PermissionError` if another process holds `report.txt` open without `FILE_SHARE_DELETE` (e.g. a reader o"
+}

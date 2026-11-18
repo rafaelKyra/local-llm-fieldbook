@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3",
+ "rep": 20,
+ "seconds": 108.982,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 846,
+ "addedLines": 46,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 14,
+  "toolCalls": 13,
+  "inputTokens": 54844,
+  "outputTokens": 6222,
+  "lastInputTokens": 5355,
+  "peakInputTokens": 5355,
+  "modelCalls": 14,
+  "usageReportedCalls": 14,
+  "cacheReadTokens": 51369,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 14,
+  "roles": {
+   "main": {
+    "calls": 14,
+    "reportedInput": 14,
+    "reportedOutput": 14,
+    "inputTokens": 54844,
+    "outputTokens": 6222
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Changed save_report() in report.py to write atomically: text is written to a temp file created with tempfile.mkstemp in the same directory as the target, flushe"
+}

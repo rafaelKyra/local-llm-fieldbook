@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 19,
+ "seconds": 64.374,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1697,
+ "addedLines": 40,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 11,
+  "toolCalls": 11,
+  "inputTokens": 34683,
+  "outputTokens": 3741,
+  "lastInputTokens": 3985,
+  "peakInputTokens": 3985,
+  "modelCalls": 11,
+  "usageReportedCalls": 11,
+  "cacheReadTokens": 33074,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 11,
+  "roles": {
+   "main": {
+    "calls": 11,
+    "reportedInput": 11,
+    "reportedOutput": 11,
+    "inputTokens": 34683,
+    "outputTokens": 3741
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Changed `save_report()` in `report.py` to write crash-safely: the text is written to a `tempfile.mkstemp()` file created in the *same* directory as the target ( | Files touched: `report.py` only. No tests or check files were modified. | Check: `verify` (the fixed project check) passed — 2 tests, OK — and `python3 -m unittest discover -v` confirms both tests. Note the check also passed *before*  | Risks to know: (1) On Windows, `os.replace` fails with `PermissionError` if another process holds `report.txt` open without `FILE_SHARE_DELETE` (Python's `open`"
+}

@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3",
+ "rep": 14,
+ "seconds": 136.056,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1440,
+ "addedLines": 49,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 17,
+  "toolCalls": 17,
+  "inputTokens": 77095,
+  "outputTokens": 7851,
+  "lastInputTokens": 6550,
+  "peakInputTokens": 6550,
+  "modelCalls": 17,
+  "usageReportedCalls": 17,
+  "cacheReadTokens": 72410,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 17,
+  "roles": {
+   "main": {
+    "calls": 17,
+    "reportedInput": 17,
+    "reportedOutput": 17,
+    "inputTokens": 77095,
+    "outputTokens": 7851
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made save_report() in report.py crash-safe: the text is written to a temp file created with tempfile.mkstemp in the *same* directory as the target, flushed + os | Verification: the fixed check (verify, 2 existing tests) passes — but note it also passed before any change, so it does not prove the fix. To prove it I ran a s | Caveats: test_report.py is protected so I could not add a regression test to the suite; my two scratch scripts (crash_check.py, old_behaviour_check.py) are stil"
+}

@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 4,
+ "seconds": 65.905,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 1708,
+ "addedLines": 29,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 10,
+  "toolCalls": 10,
+  "inputTokens": 30710,
+  "outputTokens": 3278,
+  "lastInputTokens": 4505,
+  "peakInputTokens": 4505,
+  "modelCalls": 10,
+  "usageReportedCalls": 10,
+  "cacheReadTokens": 28062,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 10,
+  "roles": {
+   "main": {
+    "calls": 10,
+    "reportedInput": 10,
+    "reportedOutput": 10,
+    "inputTokens": 30710,
+    "outputTokens": 3278
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: 4. On any exception (`BaseException`, so a `KeyboardInterrupt` counts too) before the swap, the half-written temp file is removed and the error propagates; the  | A crash at any point therefore leaves either the old report or the new one, never a truncated mix. | **Check results:** | - `verify` (the fixed check: `python -m unittest` on the suite) — PASSED, 2 tests OK, both before and after my change. Note: this check passed before any edit,  | - To actually exercise the fix I ran an extra scratch script (via `run_command`, not added to the repo): it wrote a good report, then forced a failure inside th"
+}

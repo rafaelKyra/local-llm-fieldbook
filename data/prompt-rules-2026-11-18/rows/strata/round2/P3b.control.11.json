@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 11,
+ "seconds": 61.912,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 890,
+ "addedLines": 45,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 10,
+  "toolCalls": 12,
+  "inputTokens": 31078,
+  "outputTokens": 2983,
+  "lastInputTokens": 4472,
+  "peakInputTokens": 4472,
+  "modelCalls": 10,
+  "usageReportedCalls": 10,
+  "cacheReadTokens": 28463,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 10,
+  "roles": {
+   "main": {
+    "calls": 10,
+    "reportedInput": 10,
+    "reportedOutput": 10,
+    "inputTokens": 31078,
+    "outputTokens": 2983
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made save_report() in report.py crash-safe (atomic write): write to a temp file created with tempfile.mkstemp in the target's directory, fsync the data, then pu"
+}

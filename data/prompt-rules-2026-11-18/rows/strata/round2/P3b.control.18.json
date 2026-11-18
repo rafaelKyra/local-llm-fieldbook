@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 18,
+ "seconds": 160.948,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1922,
+ "addedLines": 44,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 20,
+  "toolCalls": 15,
+  "inputTokens": 145430,
+  "outputTokens": 8765,
+  "lastInputTokens": 11854,
+  "peakInputTokens": 11854,
+  "modelCalls": 20,
+  "usageReportedCalls": 20,
+  "cacheReadTokens": 135383,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 20,
+  "roles": {
+   "main": {
+    "calls": 20,
+    "reportedInput": 20,
+    "reportedOutput": 20,
+    "inputTokens": 145430,
+    "outputTokens": 8765
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: - A best-effort os.fsync() of the directory after the rename is attempted and silently skipped where the OS/filesystem does not support it (Windows), so the cod | Verification: | - The fixed check (verify, no arguments) passes: the existing 2 tests in test_report.py run OK. Note: this check also passed BEFORE any edit, so by itself it do | - To actually prove the behaviour I added scratch_crash_check.py (a standalone script, not a unittest file — the repo's test files are protected and could not b | - No test files or check definitions were modified."
+}

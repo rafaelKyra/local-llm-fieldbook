@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 1,
+ "seconds": 116.479,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1921,
+ "addedLines": 58,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 21,
+  "toolCalls": 21,
+  "inputTokens": 91470,
+  "outputTokens": 5230,
+  "lastInputTokens": 6663,
+  "peakInputTokens": 6663,
+  "modelCalls": 21,
+  "usageReportedCalls": 21,
+  "cacheReadTokens": 84707,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 21,
+  "roles": {
+   "main": {
+    "calls": 21,
+    "reportedInput": 21,
+    "reportedOutput": 21,
+    "inputTokens": 91470,
+    "outputTokens": 5230
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: 3. Publication uses `os.replace()` — atomic on POSIX and the correct primitive on Windows, where `os.rename` would raise if the target already exists. | 4. Any exception (`BaseException`, so `KeyboardInterrupt` included) closes and unlinks the temp file, leaving the original report untouched and no litter. | 5. `_preserve_mode()` copies the old file's permission bits onto the temp file (`mkstemp` creates 0600, which would otherwise make the report owner-readable-onl | 6. `_fsync_dir()` best-effort fsyncs the directory so the rename is durable; it silently no-ops on Windows, where directories cannot be opened. | **Caveats you should know:** the existing 2-test suite passed *before* my change too, so it does not prove crash-safety. To actually exercise it I ran two throw"
+}

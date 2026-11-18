@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 3,
+ "seconds": 136.259,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 1805,
+ "addedLines": 44,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 19,
+  "toolCalls": 17,
+  "inputTokens": 85023,
+  "outputTokens": 7278,
+  "lastInputTokens": 7082,
+  "peakInputTokens": 7082,
+  "modelCalls": 19,
+  "usageReportedCalls": 19,
+  "cacheReadTokens": 79753,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 19,
+  "roles": {
+   "main": {
+    "calls": 19,
+    "reportedInput": 19,
+    "reportedOutput": 19,
+    "inputTokens": 85023,
+    "outputTokens": 7278
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Added file: crash_proof.py — a standalone script (not part of the suite, no test files were modified) that injects failures into report.os.fdopen and report.os. | Check results: | - verify (the fixed check: the existing unittest suite, 2 tests) passes. Note: it also passed BEFORE any change, so it does not by itself prove the fix — the su | - python3 crash_proof.py exits 0: \"crash during write: content='old report' leftovers=[]\", \"crash before rename: content='old report' leftovers=[]\", \"normal wri | - Also confirmed manually that file permissions of an existing report (0644) are preserved across the swap and that writing a brand-new path works."
+}

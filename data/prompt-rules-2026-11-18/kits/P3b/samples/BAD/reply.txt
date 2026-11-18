@@ -1,0 +1,1 @@
+Write to report.txt.tmp, then os.replace() over report.txt. Tests pass. Done.
