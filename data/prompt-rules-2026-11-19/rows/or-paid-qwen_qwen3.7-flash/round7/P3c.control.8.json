@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "control",
+ "rep": 8,
+ "seconds": 14.065,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 227,
+ "addedLines": 7,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 7,
+  "toolCalls": 7,
+  "inputTokens": 17970,
+  "outputTokens": 899,
+  "lastInputTokens": 3099,
+  "peakInputTokens": 3099,
+  "modelCalls": 7,
+  "usageReportedCalls": 7,
+  "cacheReadTokens": 4736,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 7,
+  "roles": {
+   "main": {
+    "calls": 7,
+    "reportedInput": 7,
+    "reportedOutput": 7,
+    "inputTokens": 17970,
+    "outputTokens": 899
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: Modified `parse_date()` in `feed.py` to accept both date formats: the new `DD/MM/YYYY` format (tried first) and the legacy `YYYY-MM-DD` format (fallback). If ne"
+}

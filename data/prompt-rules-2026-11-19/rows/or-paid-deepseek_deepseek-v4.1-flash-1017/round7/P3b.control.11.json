@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 11,
+ "seconds": 36.176,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1668,
+ "addedLines": 55,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 12,
+  "toolCalls": 16,
+  "inputTokens": 47453,
+  "outputTokens": 10042,
+  "lastInputTokens": 7086,
+  "peakInputTokens": 7086,
+  "modelCalls": 12,
+  "usageReportedCalls": 12,
+  "cacheReadTokens": 39168,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 12,
+  "roles": {
+   "main": {
+    "calls": 12,
+    "reportedInput": 12,
+    "reportedOutput": 12,
+    "inputTokens": 47453,
+    "outputTokens": 10042
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: - `save_report()` now writes to a `tempfile.mkstemp` file in the *same directory* as the target, flushes and `os.fsync()`es it, then `os.replace()`s it onto the | - On any failure the temp file is unlinked and the exception re-raised, so no stray `.tmp` files accumulate and the existing report is untouched. | - `_new_file_mode()` preserves the existing report's permission bits (mkstemp creates 0600, which would have made the report unreadable to the next job on the s | - `_fsync_directory()` best-effort fsyncs the directory so the rename itself is durable; it is a no-op where directories can't be opened (Windows), where the re | Check: `verify` (the fixed check) passes — 2 tests, OK. Note it also passed before my change, so it does not by itself prove the fix; it only shows the suite is"
+}

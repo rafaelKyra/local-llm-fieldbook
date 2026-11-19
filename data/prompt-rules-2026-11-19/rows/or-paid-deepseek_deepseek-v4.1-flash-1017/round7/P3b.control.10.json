@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 10,
+ "seconds": 37.384,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1663,
+ "addedLines": 66,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 19,
+  "toolCalls": 16,
+  "inputTokens": 92131,
+  "outputTokens": 8095,
+  "lastInputTokens": 7555,
+  "peakInputTokens": 7555,
+  "modelCalls": 19,
+  "usageReportedCalls": 19,
+  "cacheReadTokens": 83968,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 19,
+  "roles": {
+   "main": {
+    "calls": 19,
+    "reportedInput": 19,
+    "reportedOutput": 19,
+    "inputTokens": 92131,
+    "outputTokens": 8095
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: - `_fsync_dir()` fsyncs the directory on POSIX so the rename itself is durable (no-op on Windows). | - `os.path.realpath()` keeps the old behaviour of writing through symlinks; the existing file's mode is preserved, and a brand-new report gets the umask-based m | Verification: | - The fixed check (`verify`, no arguments) passes: 2 tests, OK. Note it also passed before my change, so it does not by itself prove the fix. | - I additionally simulated crashes with throwaway scripts: an exception mid-write and an exception before the rename both left the previous report content (`'ol"
+}

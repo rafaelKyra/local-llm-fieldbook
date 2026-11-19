@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 1,
+ "seconds": 18.567,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 206,
+ "addedLines": 10,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 7,
+  "toolCalls": 7,
+  "inputTokens": 17944,
+  "outputTokens": 1081,
+  "lastInputTokens": 3119,
+  "peakInputTokens": 3119,
+  "modelCalls": 7,
+  "usageReportedCalls": 7,
+  "cacheReadTokens": 13312,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 7,
+  "roles": {
+   "main": {
+    "calls": 7,
+    "reportedInput": 7,
+    "reportedOutput": 7,
+    "inputTokens": 17944,
+    "outputTokens": 1081
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Changed save_report() in report.py to write to a temp file first, then atomically rename it with os.replace(). This ensures a crash during the write never damag"
+}

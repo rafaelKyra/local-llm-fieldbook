@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 10,
+ "seconds": 10.722,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 906,
+ "addedLines": 23,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 5,
+  "toolCalls": 6,
+  "inputTokens": 17467,
+  "outputTokens": 1816,
+  "lastInputTokens": 4289,
+  "peakInputTokens": 4289,
+  "modelCalls": 5,
+  "usageReportedCalls": 5,
+  "cacheReadTokens": 0,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 5,
+  "roles": {
+   "main": {
+    "calls": 5,
+    "reportedInput": 5,
+    "reportedOutput": 5,
+    "inputTokens": 17467,
+    "outputTokens": 1816
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Changed save_report() in report.py to write atomically: it writes to a mkstemp temp file in the same directory, flushes and fsyncs it, then calls os.replace() o | Verification: the project suite (verify, check 2) passes, 2 tests OK. That suite also passed before the change, so it does not prove the fix. I also ran a direc | Not tested: the Windows file server itself. One known Windows caveat: os.replace raises PermissionError if another process holds report.txt open at that moment,"
+}

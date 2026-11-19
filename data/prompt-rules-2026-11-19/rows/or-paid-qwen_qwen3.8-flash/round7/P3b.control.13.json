@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 13,
+ "seconds": 122.786,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1978,
+ "addedLines": 69,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 15,
+  "toolCalls": 17,
+  "inputTokens": 64812,
+  "outputTokens": 6350,
+  "lastInputTokens": 6439,
+  "peakInputTokens": 6439,
+  "modelCalls": 15,
+  "usageReportedCalls": 15,
+  "cacheReadTokens": 55552,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 15,
+  "roles": {
+   "main": {
+    "calls": 15,
+    "reportedInput": 15,
+    "reportedOutput": 15,
+    "inputTokens": 64812,
+    "outputTokens": 6350
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: - `os.replace()` swaps the scratch file onto `report.txt`. It is the portable atomic-overwrite primitive: `rename(2)` on Linux, `MoveFileEx(..., MOVEFILE_REPLAC | - On any failure before the swap (`BaseException`, so Ctrl-C counts too) the scratch file is closed/removed and the original is left untouched; the exception is | - `_sync_directory()` fsyncs the directory after the rename (POSIX durability for the rename itself); it is a no-op on Windows, where the call is swallowed. | - `_inherit_mode()` keeps permissions stable across the swap, because `mkstemp` creates 0600 files: the existing file's mode is copied, or the umask-derived def | Check result: `verify` reports CHECK PASSED — 2 tests, OK. Note the caveat the tool itself prints: this same check also passed *before* any change (the suite on"
+}

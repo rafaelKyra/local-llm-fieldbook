@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 13,
+ "seconds": 14.829,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 290,
+ "addedLines": 3,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 7,
+  "toolCalls": 7,
+  "inputTokens": 17438,
+  "outputTokens": 901,
+  "lastInputTokens": 2943,
+  "peakInputTokens": 2943,
+  "modelCalls": 7,
+  "usageReportedCalls": 7,
+  "cacheReadTokens": 15232,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 7,
+  "roles": {
+   "main": {
+    "calls": 7,
+    "reportedInput": 7,
+    "reportedOutput": 7,
+    "inputTokens": 17438,
+    "outputTokens": 901
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made `save_report()` crash-safe by writing to a temporary file (`path + \".tmp\"`) first, then using `os.replace()` to atomically rename it to the target path. Th"
+}

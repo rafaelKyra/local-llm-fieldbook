@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "p3f",
+ "rep": 7,
+ "seconds": 20.366,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 273,
+ "addedLines": 7,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 10,
+  "toolCalls": 11,
+  "inputTokens": 24571,
+  "outputTokens": 1028,
+  "lastInputTokens": 2034,
+  "peakInputTokens": 3540,
+  "modelCalls": 10,
+  "usageReportedCalls": 10,
+  "cacheReadTokens": 5952,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 10,
+  "roles": {
+   "main": {
+    "calls": 10,
+    "reportedInput": 10,
+    "reportedOutput": 10,
+    "inputTokens": 24571,
+    "outputTokens": 1028
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: Modified parse_date in feed.py to accept both %Y-%m-%d and %d/%m/%Y formats, raising ValueError on unrecognized format. parse_row now works for both old and new"
+}

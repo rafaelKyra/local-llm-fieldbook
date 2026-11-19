@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 8,
+ "seconds": 318.275,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 2034,
+ "addedLines": 94,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 23,
+  "toolCalls": 22,
+  "inputTokens": 145435,
+  "outputTokens": 16383,
+  "lastInputTokens": 10142,
+  "peakInputTokens": 10142,
+  "modelCalls": 23,
+  "usageReportedCalls": 23,
+  "cacheReadTokens": 126720,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 23,
+  "roles": {
+   "main": {
+    "calls": 23,
+    "reportedInput": 23,
+    "reportedOutput": 23,
+    "inputTokens": 145435,
+    "outputTokens": 16383
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made save_report() in report.py crash-safe: write to a temp file created in the destination directory, flush + fsync the data, then publish with a single atomic | Files: report.py (rewritten), plus two new verification scripts crash_safety_check.py (11 checks) and naive_baseline_check.py. | Check results: the fixed check (verify) passes — Ran 2 tests, OK — but note it passed identically BEFORE any change, so it does not by itself prove the fix; the | Not checked / risks: I could only run on Linux, so the Windows/SMB paths (os.replace semantics, sharing-violation retries, ACL behaviour) are reasoned from docu"
+}

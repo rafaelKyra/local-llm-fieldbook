@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 3,
+ "seconds": 4.798,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 272,
+ "addedLines": 14,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 7,
+  "toolCalls": 6,
+  "inputTokens": 11492,
+  "outputTokens": 897,
+  "lastInputTokens": 2112,
+  "peakInputTokens": 2112,
+  "modelCalls": 7,
+  "usageReportedCalls": 7,
+  "cacheReadTokens": 9152,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 7,
+  "roles": {
+   "main": {
+    "calls": 7,
+    "reportedInput": 7,
+    "reportedOutput": 7,
+    "inputTokens": 11492,
+    "outputTokens": 897
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: - Added detailed docstring. | - Writes to a hidden temporary file in the same directory. | - Flushes and syncs file to disk. | - Atomically replaces the target file with `os.replace`. | All existing tests continue to pass."
+}

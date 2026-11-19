@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 3,
+ "seconds": 8.179,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 662,
+ "addedLines": 22,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 5,
+  "toolCalls": 6,
+  "inputTokens": 11108,
+  "outputTokens": 553,
+  "lastInputTokens": 2633,
+  "peakInputTokens": 2633,
+  "modelCalls": 5,
+  "usageReportedCalls": 5,
+  "cacheReadTokens": 8169,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 5,
+  "roles": {
+   "main": {
+    "calls": 5,
+    "reportedInput": 5,
+    "reportedOutput": 5,
+    "inputTokens": 11108,
+    "outputTokens": 553
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Rewrote `save_report()` in report.py to write atomically: it writes the text to a temp file in the same directory (mkstemp), flushes and fsyncs it, then swaps i"
+}

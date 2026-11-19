@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 14,
+ "seconds": 50.729,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 2164,
+ "addedLines": 64,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 23,
+  "toolCalls": 22,
+  "inputTokens": 113833,
+  "outputTokens": 9514,
+  "lastInputTokens": 8171,
+  "peakInputTokens": 8171,
+  "modelCalls": 23,
+  "usageReportedCalls": 23,
+  "cacheReadTokens": 106880,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 23,
+  "roles": {
+   "main": {
+    "calls": 23,
+    "reportedInput": 23,
+    "reportedOutput": 23,
+    "inputTokens": 113833,
+    "outputTokens": 9514
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: - Cleanup on any exception (including `BaseException`, so `KeyboardInterrupt`/`SystemExit` mid-write also cleans up) unlinks the temp file and re-raises. | **Verification:** | - I wrote `repro_crash_safety.py` (6 tests) covering: failure during `fsync`, failure mid-`write`, no leftover temp files on success, permission preservation, r | - The fixed check (`verify`, no arguments) passes: `Ran 2 tests ... OK`. Note that this check also passed *before* my change, so it does not by itself prove the | **Caveat:** I could only test on Linux. The Windows-specific paths (the `PermissionError` retry loop and the skipped directory fsync) are guarded by `os.name =="
+}

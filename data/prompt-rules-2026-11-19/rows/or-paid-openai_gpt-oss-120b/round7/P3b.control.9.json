@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 9,
+ "seconds": 4.086,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 419,
+ "addedLines": 14,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 7,
+  "toolCalls": 6,
+  "inputTokens": 11485,
+  "outputTokens": 898,
+  "lastInputTokens": 2109,
+  "peakInputTokens": 2109,
+  "modelCalls": 7,
+  "usageReportedCalls": 7,
+  "cacheReadTokens": 9664,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 7,
+  "roles": {
+   "main": {
+    "calls": 7,
+    "reportedInput": 7,
+    "reportedOutput": 7,
+    "inputTokens": 11485,
+    "outputTokens": 898
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: - Ensured data is flushed and synced to disk. | - Atomically replaced the target file with `os.replace`. | ### Files Modified | - **report.py** – Replaced the original simple write with the safe write implementation. | All tests continue to pass."
+}

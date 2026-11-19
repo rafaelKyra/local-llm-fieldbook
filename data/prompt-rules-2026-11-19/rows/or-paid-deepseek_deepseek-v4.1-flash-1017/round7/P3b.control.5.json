@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 5,
+ "seconds": 133.684,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 2297,
+ "addedLines": 67,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 36,
+  "toolCalls": 35,
+  "inputTokens": 285326,
+  "outputTokens": 15869,
+  "lastInputTokens": 14830,
+  "peakInputTokens": 14830,
+  "modelCalls": 36,
+  "usageReportedCalls": 36,
+  "cacheReadTokens": 268928,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 36,
+  "roles": {
+   "main": {
+    "calls": 36,
+    "reportedInput": 36,
+    "reportedOutput": 36,
+    "inputTokens": 285326,
+    "outputTokens": 15869
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: - `_fsync_dir()` fsyncs the directory on POSIX for rename durability and is a silent no-op on Windows, where directories can't be opened as files. | - `_target_mode()` preserves an existing report's permissions, and gives a new file the normal umask-derived default rather than mkstemp's 0600. | **Check:** `verify` (the fixed check) passes — 2 tests, OK. Note it also passed before my change, so it does not by itself prove the fix; it only confirms the s | To actually prove the behavior I wrote a temporary scratch suite (11 tests, all passing, then deleted so the repo is back to `report.py` + `test_report.py`). It | I did not touch `test_report.py`; test files are protected from edits here, so the crash tests live only in the deleted scratch file."
+}

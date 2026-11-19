@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 14,
+ "seconds": 222.304,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 391,
+ "addedLines": 7,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 6,
+  "toolCalls": 5,
+  "inputTokens": 12560,
+  "outputTokens": 869,
+  "lastInputTokens": 2394,
+  "peakInputTokens": 2394,
+  "modelCalls": 6,
+  "usageReportedCalls": 6,
+  "cacheReadTokens": 7070,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 6,
+  "roles": {
+   "main": {
+    "calls": 6,
+    "reportedInput": 6,
+    "reportedOutput": 6,
+    "inputTokens": 12560,
+    "outputTokens": 869
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Changed `save_report()` in report.py to write crash-safe by using a temporary file pattern. The function now writes to a temporary file first, then atomically r"
+}

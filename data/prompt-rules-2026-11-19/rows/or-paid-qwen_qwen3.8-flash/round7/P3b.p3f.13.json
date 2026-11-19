@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 13,
+ "seconds": 99.335,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1400,
+ "addedLines": 42,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 12,
+  "toolCalls": 12,
+  "inputTokens": 43653,
+  "outputTokens": 5116,
+  "lastInputTokens": 5182,
+  "peakInputTokens": 5182,
+  "modelCalls": 12,
+  "usageReportedCalls": 12,
+  "cacheReadTokens": 36608,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 12,
+  "roles": {
+   "main": {
+    "calls": 12,
+    "reportedInput": 12,
+    "reportedOutput": 12,
+    "inputTokens": 43653,
+    "outputTokens": 5116
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made save_report() in report.py crash-safe: it now writes to a temp file created with tempfile.mkstemp in the SAME directory as the target, fsyncs it, and publi | Verification caveat: the fixed check (verify) passes with 2 tests OK, but it also passed BEFORE any change (I ran it first as a baseline), so its green result d | Not checked / risks: os.replace atomicity on the production Windows/SMB share could not be tested from this Linux machine, and durability across a power loss st"
+}

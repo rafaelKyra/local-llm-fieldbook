@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 8,
+ "seconds": 22.893,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1375,
+ "addedLines": 54,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 10,
+  "toolCalls": 10,
+  "inputTokens": 33249,
+  "outputTokens": 3745,
+  "lastInputTokens": 4492,
+  "peakInputTokens": 4492,
+  "modelCalls": 10,
+  "usageReportedCalls": 10,
+  "cacheReadTokens": 26624,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 10,
+  "roles": {
+   "main": {
+    "calls": 10,
+    "reportedInput": 10,
+    "reportedOutput": 10,
+    "inputTokens": 33249,
+    "outputTokens": 3745
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Rewrote `save_report()` in `report.py` to be crash-safe: it now writes the text to a temporary file created with `tempfile.mkstemp` in the *same directory* as t | Verification: the fixed check (`verify`, the 2 existing tests in `test_report.py`) passes. Note it also passed before the change, so it does not by itself prove | Not checked: no real Windows machine was available, so the Windows path (`os.replace` overwrite semantics, skipped directory fsync) is reasoned about but untest"
+}

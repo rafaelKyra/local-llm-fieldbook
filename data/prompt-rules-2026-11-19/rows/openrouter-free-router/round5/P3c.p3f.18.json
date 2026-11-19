@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "p3f",
+ "rep": 18,
+ "seconds": 57.828,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 512,
+ "addedLines": 7,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 20,
+  "toolCalls": 20,
+  "inputTokens": 55605,
+  "outputTokens": 1791,
+  "lastInputTokens": 3717,
+  "peakInputTokens": 4135,
+  "modelCalls": 20,
+  "usageReportedCalls": 20,
+  "cacheReadTokens": 24128,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 20,
+  "roles": {
+   "main": {
+    "calls": 20,
+    "reportedInput": 20,
+    "reportedOutput": 20,
+    "inputTokens": 55605,
+    "outputTokens": 1791
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: Updated `parse_date()` in `feed.py` to try the existing `%Y-%m-%d` format first, then fall back to the vendor's new day-first `%d/%m/%Y` format, raising `ValueE"
+}

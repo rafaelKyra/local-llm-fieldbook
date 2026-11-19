@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "p3f",
+ "rep": 20,
+ "seconds": 27.225,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 583,
+ "addedLines": 5,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 10,
+  "toolCalls": 10,
+  "inputTokens": 25970,
+  "outputTokens": 1101,
+  "lastInputTokens": 2963,
+  "peakInputTokens": 3454,
+  "modelCalls": 10,
+  "usageReportedCalls": 10,
+  "cacheReadTokens": 14656,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 10,
+  "roles": {
+   "main": {
+    "calls": 10,
+    "reportedInput": 10,
+    "reportedOutput": 10,
+    "inputTokens": 25970,
+    "outputTokens": 1101
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: Updated `parse_date()` in `feed.py` to try the existing `%Y-%m-%d` format first and fall back to `%d/%m/%Y` (day-first) when that fails, so `parse_row()` now re"
+}

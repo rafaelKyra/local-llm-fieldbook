@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 13,
+ "seconds": 20.201,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 270,
+ "addedLines": 12,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 13,
+  "toolCalls": 14,
+  "inputTokens": 40754,
+  "outputTokens": 733,
+  "lastInputTokens": 4062,
+  "peakInputTokens": 4062,
+  "modelCalls": 13,
+  "usageReportedCalls": 13,
+  "cacheReadTokens": 33408,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 13,
+  "roles": {
+   "main": {
+    "calls": 13,
+    "reportedInput": 13,
+    "reportedOutput": 13,
+    "inputTokens": 40754,
+    "outputTokens": 733
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Modified `save_report()` in `report.py` to write crash-safely by writing to a temporary file first, then atomically renaming it to the target path. This ensures"
+}

@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 8,
+ "seconds": 11.655,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1006,
+ "addedLines": 23,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 6,
+  "toolCalls": 7,
+  "inputTokens": 21028,
+  "outputTokens": 1848,
+  "lastInputTokens": 4328,
+  "peakInputTokens": 4328,
+  "modelCalls": 6,
+  "usageReportedCalls": 6,
+  "cacheReadTokens": 0,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 6,
+  "roles": {
+   "main": {
+    "calls": 6,
+    "reportedInput": 6,
+    "reportedOutput": 6,
+    "inputTokens": 21028,
+    "outputTokens": 1848
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: - `verify` passes (2 tests), both before and after the edit. | - A quick manual run: when the write fails partway (a non-string input raises `TypeError`), the existing `r.txt` still reads `'old'` and no temp file is left be | **Not verified:** | - Behaviour on the Windows file server. `os.replace` is a replace-existing move there, but I could not run it on Windows. A replace fails if another process has | - A real crash (kill -9 mid-write) was not tested. The fsync is there so the data is on disk before the rename. The directory itself is not fsynced, which POSIX"
+}

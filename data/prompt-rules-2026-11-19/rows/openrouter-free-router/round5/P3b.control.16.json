@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 16,
+ "seconds": 40.614,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 582,
+ "addedLines": 24,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 11,
+  "toolCalls": 10,
+  "inputTokens": 31238,
+  "outputTokens": 3876,
+  "lastInputTokens": 4349,
+  "peakInputTokens": 4349,
+  "modelCalls": 11,
+  "usageReportedCalls": 11,
+  "cacheReadTokens": 9536,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 11,
+  "roles": {
+   "main": {
+    "calls": 11,
+    "reportedInput": 11,
+    "reportedOutput": 11,
+    "inputTokens": 31238,
+    "outputTokens": 3876
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: 2. Flushes and `fsync`s the temp file to ensure data hits disk. | 3. Sets permissions to 0644 so the report is readable on the Windows file server. | 4. Atomically replaces the old report with `os.replace` (atomic on POSIX and Windows). | 5. Cleans up the temp file on any exception. | The existing test suite passes (2 tests). Manual crash-simulation tests confirm: a crash mid-write leaves the original report intact and no leftover temp files."
+}

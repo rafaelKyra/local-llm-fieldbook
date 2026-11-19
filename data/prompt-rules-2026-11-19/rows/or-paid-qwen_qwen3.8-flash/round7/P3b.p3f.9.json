@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 9,
+ "seconds": 297.832,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 2030,
+ "addedLines": 35,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 31,
+  "toolCalls": 27,
+  "inputTokens": 187387,
+  "outputTokens": 15560,
+  "lastInputTokens": 10402,
+  "peakInputTokens": 10402,
+  "modelCalls": 31,
+  "usageReportedCalls": 31,
+  "cacheReadTokens": 168448,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 31,
+  "roles": {
+   "main": {
+    "calls": 31,
+    "reportedInput": 31,
+    "reportedOutput": 31,
+    "inputTokens": 187387,
+    "outputTokens": 15560
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: What changed: `save_report()` in `report.py` no longer writes into `report.txt` directly. It now (1) creates a temp file in the *same directory* via `tempfile.m | Files touched: `report.py` (rewritten), `scratch_crash_test.py` (new; crash-injection checks). `test_report.py` was not modified — it is protected, so I could n | What the check showed: `verify` reports the project suite green (2 tests, OK) on the current files. Important caveat, as the check itself flags: that same suite | Risks to know about: I could only run on Linux, so the Windows behaviour is by-the-book, not tested — `os.replace` maps to `MoveFileEx(..., REPLACE_EXISTING)` a"
+}

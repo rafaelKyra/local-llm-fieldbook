@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 2,
+ "seconds": 11.355,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1028,
+ "addedLines": 23,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 6,
+  "toolCalls": 7,
+  "inputTokens": 21223,
+  "outputTokens": 1893,
+  "lastInputTokens": 4405,
+  "peakInputTokens": 4405,
+  "modelCalls": 6,
+  "usageReportedCalls": 6,
+  "cacheReadTokens": 0,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 6,
+  "roles": {
+   "main": {
+    "calls": 6,
+    "reportedInput": 6,
+    "reportedOutput": 6,
+    "inputTokens": 21223,
+    "outputTokens": 1893
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: - `verify` passed (2 tests). It also passed before my edit, so it does not prove this change. | - A manual script forced `os.fsync` to fail mid-write. It raised as expected, `report.txt` still contained `old`, and no temp files were left behind. | **Not checked:** | - I have not run this on Windows. `os.replace` there fails with a `PermissionError` if another process has `report.txt` open, so a reader holding the file could | - The `fsync` on the directory is not done, because it is not possible on Windows. After a power loss, the rename could in theory be lost, but the old report wo"
+}

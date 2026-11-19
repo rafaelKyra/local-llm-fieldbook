@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 1,
+ "seconds": 20.969,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1580,
+ "addedLines": 51,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 10,
+  "toolCalls": 10,
+  "inputTokens": 31882,
+  "outputTokens": 3510,
+  "lastInputTokens": 4061,
+  "peakInputTokens": 4061,
+  "modelCalls": 10,
+  "usageReportedCalls": 10,
+  "cacheReadTokens": 25088,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 10,
+  "roles": {
+   "main": {
+    "calls": 10,
+    "reportedInput": 10,
+    "reportedOutput": 10,
+    "inputTokens": 31882,
+    "outputTokens": 3510
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: - Existing file permissions are preserved (mkstemp creates 0600); this is guarded to POSIX since Windows has no POSIX mode bits. | - `_sync_directory()` fsyncs the directory entry for durability, and is a no-op on Windows where a directory cannot be opened for fsync. | Verification: | - `verify` (the fixed check) passes: 2 tests, OK. Note that this check also passed before the change, so it does not by itself prove the fix — it only confirms  | - I additionally ran a throwaway script (since deleted) that patched `os.replace` to raise mid-write: the existing report still read back as `old`, no temp file"
+}

@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "control",
+ "rep": 16,
+ "seconds": 12.01,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 781,
+ "addedLines": 9,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 7,
+  "toolCalls": 8,
+  "inputTokens": 26908,
+  "outputTokens": 1951,
+  "lastInputTokens": 5198,
+  "peakInputTokens": 5198,
+  "modelCalls": 7,
+  "usageReportedCalls": 7,
+  "cacheReadTokens": 0,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 7,
+  "roles": {
+   "main": {
+    "calls": 7,
+    "reportedInput": 7,
+    "reportedOutput": 7,
+    "inputTokens": 26908,
+    "outputTokens": 1951
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: Changed feed.py: parse_date() now tries the old ISO format (%Y-%m-%d) and then the vendor's day-first format (%d/%m/%Y), still stripping whitespace. Unrecognise | Check: verify passed after the edit (check 2), but it also passed before any change (check 1), so it does not prove the new behaviour. I tried to add a test for"
+}

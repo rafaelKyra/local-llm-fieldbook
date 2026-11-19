@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 8,
+ "seconds": 16.486,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 806,
+ "addedLines": 10,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 7,
+  "toolCalls": 7,
+  "inputTokens": 17928,
+  "outputTokens": 1080,
+  "lastInputTokens": 3103,
+  "peakInputTokens": 3103,
+  "modelCalls": 7,
+  "usageReportedCalls": 7,
+  "cacheReadTokens": 15488,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 7,
+  "roles": {
+   "main": {
+    "calls": 7,
+    "reportedInput": 7,
+    "reportedOutput": 7,
+    "inputTokens": 17928,
+    "outputTokens": 1080
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: The check passes. Here's what changed: | **File modified:** `report.py` | **Change:** `save_report()` now writes to a temporary file first via `tempfile.mkstemp()`, then atomically renames it to the target path using `os.replace()`. I | **Why this is crash-safe:** On the same filesystem, `os.replace()` is an atomic rename operation. If the process crashes during the write to the temp file, the "
+}

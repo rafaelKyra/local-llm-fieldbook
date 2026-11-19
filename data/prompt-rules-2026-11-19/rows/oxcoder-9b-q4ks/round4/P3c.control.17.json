@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "control",
+ "rep": 17,
+ "seconds": 74.796,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 237,
+ "addedLines": 5,
+ "replyShortcut": false,
+ "status": "unverified",
+ "stopReason": "finished without a passing check",
+ "usage": {
+  "turns": 37,
+  "toolCalls": 38,
+  "inputTokens": 159057,
+  "outputTokens": 5604,
+  "lastInputTokens": 6508,
+  "peakInputTokens": 6508,
+  "modelCalls": 40,
+  "usageReportedCalls": 40,
+  "cacheReadTokens": 0,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 0,
+  "roles": {
+   "main": {
+    "calls": 37,
+    "reportedInput": 37,
+    "reportedOutput": 37,
+    "inputTokens": 154500,
+    "outputTokens": 4452
+   },
+   "explorer": {
+    "calls": 3,
+    "reportedInput": 3,
+    "reportedOutput": 3,
+    "inputTokens": 4557,
+    "outputTokens": 1152
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: Modified feed.py's parse_date() function to accept both old format (YYYY-MM-DD) and new vendor format (DD/MM/YYYY). The try/except pattern attempts YYYY-MM-DD f"
+}

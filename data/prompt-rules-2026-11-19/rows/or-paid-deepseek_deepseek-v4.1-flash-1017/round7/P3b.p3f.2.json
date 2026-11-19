@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 2,
+ "seconds": 23.033,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1774,
+ "addedLines": 68,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 13,
+  "toolCalls": 16,
+  "inputTokens": 50989,
+  "outputTokens": 3594,
+  "lastInputTokens": 5850,
+  "peakInputTokens": 5850,
+  "modelCalls": 13,
+  "usageReportedCalls": 13,
+  "cacheReadTokens": 44032,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 13,
+  "roles": {
+   "main": {
+    "calls": 13,
+    "reportedInput": 13,
+    "reportedOutput": 13,
+    "inputTokens": 50989,
+    "outputTokens": 3594
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: - Permissions are preserved: the replacement keeps the old file's mode, and a brand-new report gets the normal `0o666 & ~umask` mode instead of mkstemp's `0600` | - `_fsync_dir()` best-effort fsyncs the directory so the rename is durable; it silently no-ops where directories can't be opened (Windows). | **Check** — `verify` (the fixed check) passes: 2 tests, OK. Note it also passed before my change, so it does not by itself prove the fix; it only confirms the s | **Extra evidence** (ad-hoc script, not part of the suite): with `os.fsync` patched to raise mid-write, the old content `old` survived intact and no temp file wa | **Not verified:** I could not test on Windows — the sharing-violation retry and the directory-fsync no-op are reasoned from documented behaviour, not observed o"
+}

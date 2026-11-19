@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "p3f",
+ "rep": 9,
+ "seconds": 20.284,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 776,
+ "addedLines": 9,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 9,
+  "toolCalls": 9,
+  "inputTokens": 22407,
+  "outputTokens": 1893,
+  "lastInputTokens": 3013,
+  "peakInputTokens": 3013,
+  "modelCalls": 9,
+  "usageReportedCalls": 9,
+  "cacheReadTokens": 21248,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 9,
+  "roles": {
+   "main": {
+    "calls": 9,
+    "reportedInput": 9,
+    "reportedOutput": 9,
+    "inputTokens": 22407,
+    "outputTokens": 1893
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: Changed `parse_date` in feed.py (which `parse_row` uses) to try both the old ISO format `%Y-%m-%d` and the vendor's new day-first format `%d/%m/%Y`, raising Val"
+}

@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 5,
+ "seconds": 19.266,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 375,
+ "addedLines": 15,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 7,
+  "toolCalls": 7,
+  "inputTokens": 17469,
+  "outputTokens": 1229,
+  "lastInputTokens": 3407,
+  "peakInputTokens": 3407,
+  "modelCalls": 7,
+  "usageReportedCalls": 7,
+  "cacheReadTokens": 5184,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 7,
+  "roles": {
+   "main": {
+    "calls": 7,
+    "reportedInput": 7,
+    "reportedOutput": 7,
+    "inputTokens": 17469,
+    "outputTokens": 1229
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Changed `save_report()` in `report.py` to use an atomic write pattern: writes to a temp file (`.report-<pid>.tmp` in the same directory), flushes + fsyncs, then"
+}

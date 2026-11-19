@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "p3f",
+ "rep": 4,
+ "seconds": 13.596,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 549,
+ "addedLines": 8,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 8,
+  "toolCalls": 8,
+  "inputTokens": 18497,
+  "outputTokens": 1148,
+  "lastInputTokens": 2809,
+  "peakInputTokens": 2809,
+  "modelCalls": 8,
+  "usageReportedCalls": 8,
+  "cacheReadTokens": 15488,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 8,
+  "roles": {
+   "main": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 18497,
+    "outputTokens": 1148
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: `parse_date` in feed.py now tries both `%Y-%m-%d` and `%d/%m/%Y` (day-first) after stripping, raising ValueError if neither matches, so `parse_row` reads both v"
+}

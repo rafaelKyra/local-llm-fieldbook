@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "p3f",
+ "rep": 12,
+ "seconds": 39.975,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 565,
+ "addedLines": 10,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 8,
+  "toolCalls": 9,
+  "inputTokens": 21944,
+  "outputTokens": 1811,
+  "lastInputTokens": 3507,
+  "peakInputTokens": 3507,
+  "modelCalls": 8,
+  "usageReportedCalls": 8,
+  "cacheReadTokens": 20357,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 8,
+  "roles": {
+   "main": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 21944,
+    "outputTokens": 1811
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: parse_date() in feed.py now accepts both \"%Y-%m-%d\" and \"%d/%m/%Y\" (day-first), raising ValueError for anything else; parse_row() is unchanged. The fixed check "
+}

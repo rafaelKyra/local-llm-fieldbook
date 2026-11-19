@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 14,
+ "seconds": 392.108,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1960,
+ "addedLines": 87,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 35,
+  "toolCalls": 33,
+  "inputTokens": 374183,
+  "outputTokens": 23731,
+  "lastInputTokens": 18239,
+  "peakInputTokens": 18239,
+  "modelCalls": 35,
+  "usageReportedCalls": 35,
+  "cacheReadTokens": 343552,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 35,
+  "roles": {
+   "main": {
+    "calls": 35,
+    "reportedInput": 35,
+    "reportedOutput": 35,
+    "inputTokens": 374183,
+    "outputTokens": 23731
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: 3. restores the permissions the report had (or would have had from `open()`) — `mkstemp` makes a private `0600` file and `os.replace` moves that inode onto the  | 4. publishes it with `os.replace()`, an atomic overwrite on both POSIX and Windows, | 5. `fsync`s the directory afterwards (best-effort; Windows rejects it, so failures are ignored). | Any failure before step 4 leaves the old report byte-identical and the temp file is removed in the `finally` block. The docstring records the one Windows caveat | **Check** — `verify` passes (`Ran 2 tests ... OK`). Important: it also passed *before* any change, so the project suite alone does not prove the fix; `test_repo"
+}

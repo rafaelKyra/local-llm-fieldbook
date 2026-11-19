@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 12,
+ "seconds": 116.667,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 356,
+ "addedLines": 11,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 7,
+  "toolCalls": 6,
+  "inputTokens": 15602,
+  "outputTokens": 1386,
+  "lastInputTokens": 2738,
+  "peakInputTokens": 2738,
+  "modelCalls": 7,
+  "usageReportedCalls": 7,
+  "cacheReadTokens": 84,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 7,
+  "roles": {
+   "main": {
+    "calls": 7,
+    "reportedInput": 7,
+    "reportedOutput": 7,
+    "inputTokens": 15602,
+    "outputTokens": 1386
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made the report writing crash-safe by implementing the temporary file + atomic rename pattern. The `save_report()` function now writes to a temporary file first"
+}

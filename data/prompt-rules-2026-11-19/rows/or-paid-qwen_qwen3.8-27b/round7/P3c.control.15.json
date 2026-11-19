@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "control",
+ "rep": 15,
+ "seconds": 16.188,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 542,
+ "addedLines": 9,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 7,
+  "toolCalls": 8,
+  "inputTokens": 20210,
+  "outputTokens": 2059,
+  "lastInputTokens": 3588,
+  "peakInputTokens": 3588,
+  "modelCalls": 7,
+  "usageReportedCalls": 7,
+  "cacheReadTokens": 13440,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 7,
+  "roles": {
+   "main": {
+    "calls": 7,
+    "reportedInput": 7,
+    "reportedOutput": 7,
+    "inputTokens": 20210,
+    "outputTokens": 2059
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: Updated parse_date() in feed.py to accept both the vendor's old `YYYY-MM-DD` format and the new day-first `DD/MM/YYYY` format (old format tried first), still st"
+}

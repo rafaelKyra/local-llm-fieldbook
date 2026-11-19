@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 5,
+ "seconds": 137.532,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1825,
+ "addedLines": 62,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 16,
+  "toolCalls": 15,
+  "inputTokens": 82418,
+  "outputTokens": 7097,
+  "lastInputTokens": 7546,
+  "peakInputTokens": 7546,
+  "modelCalls": 16,
+  "usageReportedCalls": 16,
+  "cacheReadTokens": 70656,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 16,
+  "roles": {
+   "main": {
+    "calls": 16,
+    "reportedInput": 16,
+    "reportedOutput": 16,
+    "inputTokens": 82418,
+    "outputTokens": 7097
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: - Directory entry is fsynced after the rename on POSIX (`_fsync_dir`), skipped where `O_DIRECTORY` is unavailable (Windows). | - On any exception (including `KeyboardInterrupt`/`SystemExit`) the temp file is removed and the existing report is left untouched. | - `_target_mode` preserves the existing file's permission bits (otherwise `mkstemp`'s 0600 would silently tighten `report.txt`), falling back to the umask defau | **Check result:** `verify` → 2 tests, OK (test suite untouched and still green). Scratch checks confirmed: old content survives a crash during open/write/fsync, | **Risks to know:** I could only test on Linux — on the Windows file server `os.replace` is atomic but *fails with `PermissionError` if another process holds `re"
+}

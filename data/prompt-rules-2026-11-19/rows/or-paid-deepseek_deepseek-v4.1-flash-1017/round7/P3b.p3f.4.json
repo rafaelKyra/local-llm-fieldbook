@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 4,
+ "seconds": 25.833,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1885,
+ "addedLines": 47,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 15,
+  "toolCalls": 15,
+  "inputTokens": 60453,
+  "outputTokens": 4382,
+  "lastInputTokens": 6227,
+  "peakInputTokens": 6227,
+  "modelCalls": 15,
+  "usageReportedCalls": 15,
+  "cacheReadTokens": 55552,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 15,
+  "roles": {
+   "main": {
+    "calls": 15,
+    "reportedInput": 15,
+    "reportedOutput": 15,
+    "inputTokens": 60453,
+    "outputTokens": 4382
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: - On any exception before the rename, the temp file is unlinked and the error re-raised, so the old report is untouched and no `.report-*.tmp` litter is left. | - `_fsync_dir()` fsyncs the parent directory on POSIX only (directories can't be fsynced on Windows; it's a guarded no-op there). | - Preserved the old report's permission bits, since `mkstemp` creates files as 0600 and would otherwise silently tighten the report's mode. | Verification: `verify` (the fixed check) passes — 2 tests OK. Note that this check also passed *before* my change, so it does not by itself prove the fix; it on | Not checked: I could not run anything on Windows, so the production path is reasoned about, not executed — `os.replace` atomicity and the directory-fsync no-op "
+}

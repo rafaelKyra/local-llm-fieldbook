@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 12,
+ "seconds": 25.754,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 458,
+ "addedLines": 19,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 9,
+  "toolCalls": 8,
+  "inputTokens": 19423,
+  "outputTokens": 1625,
+  "lastInputTokens": 2687,
+  "peakInputTokens": 3003,
+  "modelCalls": 9,
+  "usageReportedCalls": 9,
+  "cacheReadTokens": 6208,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 9,
+  "roles": {
+   "main": {
+    "calls": 9,
+    "reportedInput": 9,
+    "reportedOutput": 9,
+    "inputTokens": 19423,
+    "outputTokens": 1625
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made save_report() crash-safe via atomic write. | Changed: report.py — save_report() now writes to a temp file (tempfile.mkstemp in the same directory) and atomically replaces the target with os.replace(). On a | Check: verify (no arguments) — PASSED (2 tests OK). Note: this check passed before the edit too, so it does not prove the fix; it only confirms the suite stays "
+}

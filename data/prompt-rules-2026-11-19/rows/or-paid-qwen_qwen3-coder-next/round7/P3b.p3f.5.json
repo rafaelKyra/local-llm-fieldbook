@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 5,
+ "seconds": 27.207,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 260,
+ "addedLines": 12,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 16,
+  "toolCalls": 15,
+  "inputTokens": 53677,
+  "outputTokens": 1007,
+  "lastInputTokens": 4485,
+  "peakInputTokens": 4485,
+  "modelCalls": 16,
+  "usageReportedCalls": 16,
+  "cacheReadTokens": 42048,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 16,
+  "roles": {
+   "main": {
+    "calls": 16,
+    "reportedInput": 16,
+    "reportedOutput": 16,
+    "inputTokens": 53677,
+    "outputTokens": 1007
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Modified `save_report()` in `/tmp/kit-P3b-f7QqF4/report.py` to write crash-safely by using atomic rename: writes to a temp file first, then renames it to the ta"
+}

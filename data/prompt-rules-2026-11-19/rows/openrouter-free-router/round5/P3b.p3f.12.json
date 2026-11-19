@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 12,
+ "seconds": 29.334,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 715,
+ "addedLines": 15,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 8,
+  "toolCalls": 8,
+  "inputTokens": 17951,
+  "outputTokens": 2330,
+  "lastInputTokens": 3018,
+  "peakInputTokens": 3106,
+  "modelCalls": 8,
+  "usageReportedCalls": 8,
+  "cacheReadTokens": 9280,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 8,
+  "roles": {
+   "main": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 17951,
+    "outputTokens": 2330
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: The change makes `save_report()` crash-safe by writing to a temporary file in the same directory and then atomically renaming it over the destination. If the pr | **What changed:** | - `report.py` — `save_report()` now creates a temp file via `tempfile.mkstemp` in the same directory, writes and `fsync`s it, then calls `os.replace()` (atomic  | **Check result:** `verify` ran the 2 tests in `test_report.py` — both pass (`OK`). The check also passed before any change, so this doesn't prove the crash-safe"
+}

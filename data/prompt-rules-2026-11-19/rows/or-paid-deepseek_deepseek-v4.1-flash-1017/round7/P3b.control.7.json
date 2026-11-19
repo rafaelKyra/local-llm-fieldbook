@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 7,
+ "seconds": 30.163,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1724,
+ "addedLines": 71,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 9,
+  "toolCalls": 12,
+  "inputTokens": 32320,
+  "outputTokens": 5013,
+  "lastInputTokens": 5715,
+  "peakInputTokens": 5715,
+  "modelCalls": 9,
+  "usageReportedCalls": 9,
+  "cacheReadTokens": 24320,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 9,
+  "roles": {
+   "main": {
+    "calls": 9,
+    "reportedInput": 9,
+    "reportedOutput": 9,
+    "inputTokens": 32320,
+    "outputTokens": 5013
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: - `os.replace(tmp, path)` then swaps it in. `os.replace` is atomic on POSIX and on Windows (it overwrites an existing file, unlike `os.rename` on Windows), so a | - On any exception the temp file is unlinked and the error re-raised, so a crash mid-write leaves the previous report byte-for-byte intact and no litter behind. | - Windows-specific care: the final rename is retried a few times on `PermissionError` (a reader holding the file open briefly blocks the replace on Windows file | - Permissions: an existing report keeps its mode; a brand-new report gets the normal umask-derived mode rather than mkstemp's 0600. | Check results: `verify` (the fixed check) passes — 2 tests, OK. Note it also passed before my change, so it does not by itself prove the fix. I therefore also r"
+}

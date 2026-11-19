@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 3,
+ "seconds": 19.97,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1899,
+ "addedLines": 69,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 15,
+  "toolCalls": 17,
+  "inputTokens": 63696,
+  "outputTokens": 7586,
+  "lastInputTokens": 6511,
+  "peakInputTokens": 6511,
+  "modelCalls": 15,
+  "usageReportedCalls": 15,
+  "cacheReadTokens": 52480,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 15,
+  "roles": {
+   "main": {
+    "calls": 15,
+    "reportedInput": 15,
+    "reportedOutput": 15,
+    "inputTokens": 63696,
+    "outputTokens": 7586
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: - `_report_mode()` gives the temp file the permissions the report would normally have (the old report's mode, or `0o666 & ~umask` for a new file), since `mkstem | - After the rename, the directory is fsynced on POSIX only (guarded, best-effort) so the rename itself is durable; Windows cannot fsync a directory. | Verification: | - `verify` (the fixed check) passes: 2 tests, OK. Note it also passed before my change, so it does not by itself prove the fix. | - I added `scratch_crash_check.py`, a manual script that simulates the process dying mid-write (it wraps `os.fdopen` so `write` raises after 2 characters). It r"
+}

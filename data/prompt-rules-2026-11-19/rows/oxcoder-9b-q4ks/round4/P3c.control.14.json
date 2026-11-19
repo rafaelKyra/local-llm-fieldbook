@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "control",
+ "rep": 14,
+ "seconds": 40.025,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 252,
+ "addedLines": 8,
+ "replyShortcut": false,
+ "status": "unverified",
+ "stopReason": "finished without a passing check",
+ "usage": {
+  "turns": 23,
+  "toolCalls": 20,
+  "inputTokens": 77705,
+  "outputTokens": 2967,
+  "lastInputTokens": 4708,
+  "peakInputTokens": 4708,
+  "modelCalls": 23,
+  "usageReportedCalls": 23,
+  "cacheReadTokens": 0,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 0,
+  "roles": {
+   "main": {
+    "calls": 23,
+    "reportedInput": 23,
+    "reportedOutput": 23,
+    "inputTokens": 77705,
+    "outputTokens": 2967
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: Modified feed.py parse_date() to accept both old format (YYYY-MM-DD) and new vendor format (DD/MM/YYYY). The function tries YYYY-MM-DD first, then falls back to"
+}

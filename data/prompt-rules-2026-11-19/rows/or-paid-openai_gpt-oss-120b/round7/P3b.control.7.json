@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 7,
+ "seconds": 4.39,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 296,
+ "addedLines": 22,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 7,
+  "toolCalls": 6,
+  "inputTokens": 11509,
+  "outputTokens": 1009,
+  "lastInputTokens": 2142,
+  "peakInputTokens": 2142,
+  "modelCalls": 7,
+  "usageReportedCalls": 7,
+  "cacheReadTokens": 9152,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 7,
+  "roles": {
+   "main": {
+    "calls": 7,
+    "reportedInput": 7,
+    "reportedOutput": 7,
+    "inputTokens": 11509,
+    "outputTokens": 1009
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: - Added detailed docstring. | - Writes to a temporary file in the same directory using `tempfile.mkstemp`. | - Atomically replaces the target file with `os.replace`. | - Ensures cleanup of the temporary file on errors. | All tests continue to pass."
+}

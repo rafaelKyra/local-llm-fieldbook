@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 11,
+ "seconds": 21.17,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 972,
+ "addedLines": 23,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 11,
+  "toolCalls": 11,
+  "inputTokens": 35133,
+  "outputTokens": 1210,
+  "lastInputTokens": 4337,
+  "peakInputTokens": 4337,
+  "modelCalls": 11,
+  "usageReportedCalls": 11,
+  "cacheReadTokens": 27072,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 11,
+  "roles": {
+   "main": {
+    "calls": 11,
+    "reportedInput": 11,
+    "reportedOutput": 11,
+    "inputTokens": 35133,
+    "outputTokens": 1210
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: **Why this works:** | - If the process crashes during writing, only the temporary file is corrupted, leaving the original report intact | - `os.replace()` is atomic on both Linux and Windows, so the target file either has the old content or the new content, never a partial write | - Writing to the same directory ensures the rename is truly atomic (cross-directory renames may not be atomic) | **Tests:** All 2 existing tests pass without modification."
+}

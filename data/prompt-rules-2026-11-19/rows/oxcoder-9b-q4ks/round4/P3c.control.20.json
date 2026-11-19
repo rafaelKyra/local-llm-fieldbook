@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "control",
+ "rep": 20,
+ "seconds": 16.001,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 169,
+ "addedLines": 6,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 10,
+  "toolCalls": 10,
+  "inputTokens": 26930,
+  "outputTokens": 1228,
+  "lastInputTokens": 3163,
+  "peakInputTokens": 3163,
+  "modelCalls": 10,
+  "usageReportedCalls": 10,
+  "cacheReadTokens": 0,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 0,
+  "roles": {
+   "main": {
+    "calls": 10,
+    "reportedInput": 10,
+    "reportedOutput": 10,
+    "inputTokens": 26930,
+    "outputTokens": 1228
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: Modified feed.py parse_date() to handle both DD/MM/YYYY (new) and YYYY-MM-DD (old) formats by trying new first, then falling back to old on ValueError. All 3 te"
+}

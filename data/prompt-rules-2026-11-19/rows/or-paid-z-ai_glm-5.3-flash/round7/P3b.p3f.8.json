@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 8,
+ "seconds": 71.547,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1475,
+ "addedLines": 21,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 15,
+  "toolCalls": 14,
+  "inputTokens": 48940,
+  "outputTokens": 7238,
+  "lastInputTokens": 4798,
+  "peakInputTokens": 4798,
+  "modelCalls": 15,
+  "usageReportedCalls": 15,
+  "cacheReadTokens": 40704,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 15,
+  "roles": {
+   "main": {
+    "calls": 15,
+    "reportedInput": 15,
+    "reportedOutput": 15,
+    "inputTokens": 48940,
+    "outputTokens": 7238
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made `save_report()` in `report.py` crash-safe: it now writes to a unique temp file in the same directory (so the rename stays a same-volume atomic operation),  | The fixed check was run before editing, after the change, and again on the final state (checks 1–3): all pass, 2/2 tests OK — the suite never covered crash safe"
+}

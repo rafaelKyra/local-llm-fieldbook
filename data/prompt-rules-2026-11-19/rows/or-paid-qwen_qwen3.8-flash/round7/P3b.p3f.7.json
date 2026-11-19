@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 7,
+ "seconds": 62.782,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1473,
+ "addedLines": 49,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 10,
+  "toolCalls": 11,
+  "inputTokens": 32550,
+  "outputTokens": 3205,
+  "lastInputTokens": 4241,
+  "peakInputTokens": 4241,
+  "modelCalls": 10,
+  "usageReportedCalls": 10,
+  "cacheReadTokens": 26624,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 10,
+  "roles": {
+   "main": {
+    "calls": 10,
+    "reportedInput": 10,
+    "reportedOutput": 10,
+    "inputTokens": 32550,
+    "outputTokens": 3205
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made `save_report()` in `report.py` crash-safe: it now writes into a `tempfile.mkstemp()` scratch file created in the target's own directory, flushes + `os.fsyn | Only `report.py` changed; `test_report.py` was left untouched. Verification: `verify` passes (2 tests OK) — but note the check already passed before any edit, s | Not checked/risks: I could not run anything on Windows, so the atomicity claim there rests on `os.replace()` mapping to `MoveFileEx(..., MOVEFILE_REPLACE_EXISTI"
+}

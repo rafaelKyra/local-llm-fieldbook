@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 4,
+ "seconds": 12.786,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1197,
+ "addedLines": 20,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 7,
+  "toolCalls": 8,
+  "inputTokens": 26153,
+  "outputTokens": 2023,
+  "lastInputTokens": 4712,
+  "peakInputTokens": 4712,
+  "modelCalls": 7,
+  "usageReportedCalls": 7,
+  "cacheReadTokens": 0,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 7,
+  "roles": {
+   "main": {
+    "calls": 7,
+    "reportedInput": 7,
+    "reportedOutput": 7,
+    "inputTokens": 26153,
+    "outputTokens": 2023
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: - `verify` (2 existing tests): passes before and after the change. | - Ad-hoc check: I forced `fsync` to fail mid-write. The exception propagated, `report.txt` still contained `old`, and no temp file was left behind. | **Not checked:** | - I didn't run on Windows. `os.replace` is atomic on NTFS when source and target are on the same volume, which holds here since the temp file is in the same dir | - A crash after the replace but before the directory metadata reaches disk is not covered by fsync on the file alone. That's a much narrower window and I didn't"
+}

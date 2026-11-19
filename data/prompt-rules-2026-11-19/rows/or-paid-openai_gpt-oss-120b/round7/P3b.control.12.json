@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 12,
+ "seconds": 20.242,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 291,
+ "addedLines": 21,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 13,
+  "toolCalls": 9,
+  "inputTokens": 26827,
+  "outputTokens": 1243,
+  "lastInputTokens": 3173,
+  "peakInputTokens": 3173,
+  "modelCalls": 13,
+  "usageReportedCalls": 13,
+  "cacheReadTokens": 24304,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 13,
+  "roles": {
+   "main": {
+    "calls": 13,
+    "reportedInput": 13,
+    "reportedOutput": 13,
+    "inputTokens": 26827,
+    "outputTokens": 1243
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: - Added detailed docstring. | - Imported `tempfile`. | - Wrote to a temporary file in the same directory, then atomically replaced the target using `os.replace`. | - Ensured cleanup of temporary files on failure. | All tests continue to pass."
+}

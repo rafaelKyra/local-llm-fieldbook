@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "p3f",
+ "rep": 14,
+ "seconds": 12.467,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 655,
+ "addedLines": 8,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 9,
+  "toolCalls": 9,
+  "inputTokens": 20944,
+  "outputTokens": 1021,
+  "lastInputTokens": 2720,
+  "peakInputTokens": 2720,
+  "modelCalls": 9,
+  "usageReportedCalls": 9,
+  "cacheReadTokens": 20160,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 9,
+  "roles": {
+   "main": {
+    "calls": 9,
+    "reportedInput": 9,
+    "reportedOutput": 9,
+    "inputTokens": 20944,
+    "outputTokens": 1021
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: parse_date() in feed.py now tries both \"%Y-%m-%d\" and the vendor's new \"%d/%m/%Y\" (day-first) format, raising ValueError with a message if neither matches, so p"
+}

@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "control",
+ "rep": 8,
+ "seconds": 30.06,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1019,
+ "addedLines": 12,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 15,
+  "toolCalls": 16,
+  "inputTokens": 55692,
+  "outputTokens": 4331,
+  "lastInputTokens": 4964,
+  "peakInputTokens": 4964,
+  "modelCalls": 15,
+  "usageReportedCalls": 15,
+  "cacheReadTokens": 49664,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 15,
+  "roles": {
+   "main": {
+    "calls": 15,
+    "reportedInput": 15,
+    "reportedOutput": 15,
+    "inputTokens": 55692,
+    "outputTokens": 4331
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: `parse_date()` in `feed.py` now accepts both date styles: the old ISO `%Y-%m-%d` and the vendor's new day-first `%d/%m/%Y`. It tries each format in turn and rai | Proof: I wrote a temporary reproduction script (since deleted) that asserted `parse_row(\"04/03/2026,10.5\")` and `parse_date(\"25/12/2026\")` (day > 12, so day-fir | Caveat: the fixed check (`verify`, 3 tests in `test_feed.py`) passed both before and after my change, so it does not by itself prove the fix — it only confirms "
+}

@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "control",
+ "rep": 15,
+ "seconds": 35.871,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 556,
+ "addedLines": 8,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 8,
+  "toolCalls": 9,
+  "inputTokens": 19569,
+  "outputTokens": 1180,
+  "lastInputTokens": 3070,
+  "peakInputTokens": 3110,
+  "modelCalls": 8,
+  "usageReportedCalls": 8,
+  "cacheReadTokens": 6912,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 8,
+  "roles": {
+   "main": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 19569,
+    "outputTokens": 1180
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: The check passes. Here's a summary of the change: | **What changed:** `parse_date()` in `feed.py` now tries both date formats before raising an error. | **Files modified:** | - `feed.py` — replaced the single-format `strptime` call with a loop over `DATE_FORMATS = (\"%Y-%m-%d\", \"%d/%m/%Y\")`, so both the old `2026-03-04` style and the  | **Check result:** `python3 -m pytest -q` → 3 tests passed. The existing tests cover the old format, stripping, and garbage rejection; the new format is handled "
+}

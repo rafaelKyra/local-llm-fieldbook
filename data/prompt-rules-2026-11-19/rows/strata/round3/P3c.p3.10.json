@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "p3",
+ "rep": 10,
+ "seconds": 46.083,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 816,
+ "addedLines": 12,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 10,
+  "toolCalls": 9,
+  "inputTokens": 27691,
+  "outputTokens": 2224,
+  "lastInputTokens": 3626,
+  "peakInputTokens": 3626,
+  "modelCalls": 10,
+  "usageReportedCalls": 10,
+  "cacheReadTokens": 26398,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 10,
+  "roles": {
+   "main": {
+    "calls": 10,
+    "reportedInput": 10,
+    "reportedOutput": 10,
+    "inputTokens": 27691,
+    "outputTokens": 2224
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: Changed parse_date() in feed.py to try both date styles — the old \"%Y-%m-%d\" and the vendor's new day-first \"%d/%m/%Y\" — picking whichever parses, and raising V"
+}

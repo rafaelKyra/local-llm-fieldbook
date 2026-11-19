@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 10,
+ "seconds": 49.129,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1134,
+ "addedLines": 12,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 13,
+  "toolCalls": 13,
+  "inputTokens": 45413,
+  "outputTokens": 3006,
+  "lastInputTokens": 5042,
+  "peakInputTokens": 5042,
+  "modelCalls": 13,
+  "usageReportedCalls": 13,
+  "cacheReadTokens": 8832,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 13,
+  "roles": {
+   "main": {
+    "calls": 13,
+    "reportedInput": 13,
+    "reportedOutput": 13,
+    "inputTokens": 45413,
+    "outputTokens": 3006
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: - The temp file is flushed and `os.fsync`-ed so its contents are on disk before the swap. | - `os.replace(temp_path, path)` then atomically swaps the new file into place. On both POSIX and Windows, `os.replace` is atomic, so a crash mid-write leaves th | Verification: | - `verify` (the fixed check) passes: the 2 existing tests in `test_report.py` are green. Note: this check also passed before my change, so it does not by itself | - I additionally ran an ad-hoc script confirming: basic write, replacing old text, crash-safety (a simulated partial temp write leaves the original report untou"
+}

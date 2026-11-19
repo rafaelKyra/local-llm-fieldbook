@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 8,
+ "seconds": 8.219,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 741,
+ "addedLines": 23,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 4,
+  "toolCalls": 5,
+  "inputTokens": 12773,
+  "outputTokens": 1423,
+  "lastInputTokens": 3949,
+  "peakInputTokens": 3949,
+  "modelCalls": 4,
+  "usageReportedCalls": 4,
+  "cacheReadTokens": 0,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 4,
+  "roles": {
+   "main": {
+    "calls": 4,
+    "reportedInput": 4,
+    "reportedOutput": 4,
+    "inputTokens": 12773,
+    "outputTokens": 1423
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Changed `save_report()` in report.py to write atomically. The text now goes to a temp file created in the same directory, is flushed and fsynced, and then `os.r | Caveats: the check already passed before any edit, so it does not prove the crash-safety. I did not simulate a crash or test on Windows, which is the production"
+}

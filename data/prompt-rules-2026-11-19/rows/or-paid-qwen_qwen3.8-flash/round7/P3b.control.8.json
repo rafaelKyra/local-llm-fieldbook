@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 8,
+ "seconds": 205.139,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 2605,
+ "addedLines": 76,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 18,
+  "toolCalls": 17,
+  "inputTokens": 111841,
+  "outputTokens": 11427,
+  "lastInputTokens": 10999,
+  "peakInputTokens": 10999,
+  "modelCalls": 18,
+  "usageReportedCalls": 18,
+  "cacheReadTokens": 96000,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 18,
+  "roles": {
+   "main": {
+    "calls": 18,
+    "reportedInput": 18,
+    "reportedOutput": 18,
+    "inputTokens": 111841,
+    "outputTokens": 11427
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: 4. Swaps it into place with `os.replace` — atomic on both POSIX (`rename`) and Windows (`MoveFileEx` with `MOVEFILE_REPLACE_EXISTING`, which overwrites an exist | 5. On Windows the replace can hit `PermissionError` while another process holds the report open, so it is retried with exponential back-off (`REPLACE_ATTEMPTS`/ | 6. Any failure (including `BaseException`, e.g. `KeyboardInterrupt`) unlinks the temp file and re-raises, leaving the previous report intact; on POSIX the paren | **Files touched:** `report.py` (rewritten). Added `crash_safety_check.py` — I could not delete my scratch verification script (`rm` is refused, and `test_*.py`  | **Check results:** The fixed project check (`verify`) passes — 2 tests, OK. Note, as the tool itself flagged: **that check also passed before any change**, so i"
+}

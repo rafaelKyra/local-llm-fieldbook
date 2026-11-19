@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "control",
+ "rep": 8,
+ "seconds": 45.67,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 244,
+ "addedLines": 6,
+ "replyShortcut": false,
+ "status": "unverified",
+ "stopReason": "finished without a passing check",
+ "usage": {
+  "turns": 30,
+  "toolCalls": 27,
+  "inputTokens": 126715,
+  "outputTokens": 3168,
+  "lastInputTokens": 6110,
+  "peakInputTokens": 6110,
+  "modelCalls": 30,
+  "usageReportedCalls": 30,
+  "cacheReadTokens": 0,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 0,
+  "roles": {
+   "main": {
+    "calls": 30,
+    "reportedInput": 30,
+    "reportedOutput": 30,
+    "inputTokens": 126715,
+    "outputTokens": 3168
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: Modified parse_date() in feed.py to handle both old (YYYY-MM-DD) and new (DD/MM/YYYY) date formats by trying the old format first and falling back to the new on"
+}

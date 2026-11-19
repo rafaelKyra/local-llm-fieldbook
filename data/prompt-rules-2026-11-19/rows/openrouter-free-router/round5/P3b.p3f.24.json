@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 24,
+ "seconds": 29.497,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 297,
+ "addedLines": 16,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 9,
+  "toolCalls": 10,
+  "inputTokens": 23213,
+  "outputTokens": 926,
+  "lastInputTokens": 2177,
+  "peakInputTokens": 3678,
+  "modelCalls": 9,
+  "usageReportedCalls": 9,
+  "cacheReadTokens": 7168,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 9,
+  "roles": {
+   "main": {
+    "calls": 9,
+    "reportedInput": 9,
+    "reportedOutput": 9,
+    "inputTokens": 23213,
+    "outputTokens": 926
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Changed save_report to write atomically: create a temporary file in the same directory, write the full content, then atomically replace the target file with os."
+}

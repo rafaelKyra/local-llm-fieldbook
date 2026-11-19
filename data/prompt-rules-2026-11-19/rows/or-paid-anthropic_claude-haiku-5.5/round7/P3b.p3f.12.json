@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 12,
+ "seconds": 11.704,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1152,
+ "addedLines": 20,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 6,
+  "toolCalls": 7,
+  "inputTokens": 21220,
+  "outputTokens": 1886,
+  "lastInputTokens": 4380,
+  "peakInputTokens": 4380,
+  "modelCalls": 6,
+  "usageReportedCalls": 6,
+  "cacheReadTokens": 0,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 6,
+  "roles": {
+   "main": {
+    "calls": 6,
+    "reportedInput": 6,
+    "reportedOutput": 6,
+    "inputTokens": 21220,
+    "outputTokens": 1886
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: I've made `save_report()` write atomically, and the check passes. The check also passed before the edit, so it doesn't prove the change by itself. | **What changed:** `report.py` now writes the text to a temporary file in the same directory, flushes and fsyncs it, then calls `os.replace()` to swap it over `r | **What I checked:** I ran a one-off script that simulated a crash during the write (by making `fsync` raise). The original `report.txt` still contained `old`, a | **What I did not check:** I have not run this on Windows, which is where the job runs. `os.replace()` is supposed to overwrite an existing file there, but it ca"
+}

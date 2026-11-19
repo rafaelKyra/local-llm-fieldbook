@@ -1,4 +1,5 @@
 {
+ "excluded_not_completed": {},
  "kit_rows": [
   {
    "model": "local27b",

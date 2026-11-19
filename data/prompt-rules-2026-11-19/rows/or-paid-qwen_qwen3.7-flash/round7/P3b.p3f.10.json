@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 10,
+ "seconds": 17.761,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 466,
+ "addedLines": 10,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 8,
+  "toolCalls": 8,
+  "inputTokens": 20920,
+  "outputTokens": 978,
+  "lastInputTokens": 3157,
+  "peakInputTokens": 3157,
+  "modelCalls": 8,
+  "usageReportedCalls": 8,
+  "cacheReadTokens": 18304,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 8,
+  "roles": {
+   "main": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 20920,
+    "outputTokens": 978
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: The check passes. Here's what changed: | **`report.py`** — `save_report()` now writes to a temporary file first via `tempfile.mkstemp()`, then atomically renames it to the target path with `os.replace("
+}

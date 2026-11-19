@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 3,
+ "seconds": 41.989,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 607,
+ "addedLines": 8,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 11,
+  "toolCalls": 10,
+  "inputTokens": 27388,
+  "outputTokens": 1501,
+  "lastInputTokens": 3096,
+  "peakInputTokens": 3096,
+  "modelCalls": 11,
+  "usageReportedCalls": 11,
+  "cacheReadTokens": 0,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 11,
+  "roles": {
+   "main": {
+    "calls": 11,
+    "reportedInput": 11,
+    "reportedOutput": 11,
+    "inputTokens": 27388,
+    "outputTokens": 1501
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made the report write crash-safe by implementing a two-step process: | 1. Write the report content to a temporary file using `tempfile.NamedTemporaryFile` | 2. Atomically rename the temporary file to the final destination using `os.replace()` | This ensures that if the process crashes during the write, the original report file remains intact and the temporary file is left behind (to be cleaned up by th | The test suite passes (2/2 tests), confirming the functionality remains unchanged while gaining crash safety."
+}

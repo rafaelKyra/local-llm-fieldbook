@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 12,
+ "seconds": 29.97,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1744,
+ "addedLines": 50,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 16,
+  "toolCalls": 14,
+  "inputTokens": 58192,
+  "outputTokens": 7686,
+  "lastInputTokens": 5148,
+  "peakInputTokens": 5148,
+  "modelCalls": 16,
+  "usageReportedCalls": 16,
+  "cacheReadTokens": 50688,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 16,
+  "roles": {
+   "main": {
+    "calls": 16,
+    "reportedInput": 16,
+    "reportedOutput": 16,
+    "inputTokens": 58192,
+    "outputTokens": 7686
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: - On any exception (including `KeyboardInterrupt`/`BaseException`) the temp file is unlinked and the error re-raised, so the old report is untouched and no stra | - `_replace()` retries `os.replace` on `PermissionError` (up to 10 times, 50 ms apart) because Windows fails the rename while another process has the target ope | - `_copy_mode()` carries the existing file's permission bits over to the temp file so the replacement does not silently change the report's mode. | - `_fsync_dir()` fsyncs the containing directory after the rename to persist the directory entry; it is a no-op where directories cannot be opened (Windows), so | Verification: `verify` (the fixed check, `python -m unittest`) passes — 2 tests, OK. Note that this check also passed before the change, so it does not by itsel"
+}

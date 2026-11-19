@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 4,
+ "seconds": 22.265,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 804,
+ "addedLines": 26,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 7,
+  "toolCalls": 8,
+  "inputTokens": 20268,
+  "outputTokens": 3946,
+  "lastInputTokens": 3652,
+  "peakInputTokens": 3652,
+  "modelCalls": 7,
+  "usageReportedCalls": 7,
+  "cacheReadTokens": 16320,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 7,
+  "roles": {
+   "main": {
+    "calls": 7,
+    "reportedInput": 7,
+    "reportedOutput": 7,
+    "inputTokens": 20268,
+    "outputTokens": 3946
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made save_report() in report.py crash-safe using the atomic-replace pattern: it now writes to a temp file (tempfile.mkstemp) in the same directory, flushes and "
+}

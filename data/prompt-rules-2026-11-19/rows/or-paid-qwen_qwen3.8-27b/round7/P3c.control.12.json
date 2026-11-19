@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "control",
+ "rep": 12,
+ "seconds": 14.552,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 627,
+ "addedLines": 8,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 6,
+  "toolCalls": 8,
+  "inputTokens": 16364,
+  "outputTokens": 1825,
+  "lastInputTokens": 3393,
+  "peakInputTokens": 3393,
+  "modelCalls": 6,
+  "usageReportedCalls": 6,
+  "cacheReadTokens": 12416,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 6,
+  "roles": {
+   "main": {
+    "calls": 6,
+    "reportedInput": 6,
+    "reportedOutput": 6,
+    "inputTokens": 16364,
+    "outputTokens": 1825
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: Updated parse_date() in feed.py to accept both the old `YYYY-MM-DD` and the vendor's new `DD/MM/YYYY` formats (day-first, per the vendor's email), trying each f"
+}

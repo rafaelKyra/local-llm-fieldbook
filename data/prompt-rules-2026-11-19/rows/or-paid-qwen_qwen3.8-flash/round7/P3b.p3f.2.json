@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 2,
+ "seconds": 243.597,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 2422,
+ "addedLines": 74,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 31,
+  "toolCalls": 29,
+  "inputTokens": 200168,
+  "outputTokens": 13743,
+  "lastInputTokens": 11633,
+  "peakInputTokens": 11633,
+  "modelCalls": 31,
+  "usageReportedCalls": 31,
+  "cacheReadTokens": 178688,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 31,
+  "roles": {
+   "main": {
+    "calls": 31,
+    "reportedInput": 31,
+    "reportedOutput": 31,
+    "inputTokens": 200168,
+    "outputTokens": 13743
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: - On any failure before the rename, the half-written temp file is removed and the descriptor closed, so no debris accumulates next to the report. | - Permissions are preserved: the temp file is created at `0666 & ~umask` (what `open(path,\"w\")` used to yield) and then chmod'ed to the mode of the report being | - A directory `fsync` is attempted after the rename on POSIX only, skipped on Windows where it is not possible. | Verification: `verify` passes the existing 2 tests, but it passed identically **before any change**, so it does not prove crash-safety. To actually test that, I | Risk to know about: I could not run anything on Windows, so the `os.replace`/`MOVEFILE_REPLACE_EXISTING` behaviour is reasoned from the documented semantics, no"
+}

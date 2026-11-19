@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 10,
+ "seconds": 25.57,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 2407,
+ "addedLines": 52,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 22,
+  "toolCalls": 22,
+  "inputTokens": 105566,
+  "outputTokens": 9754,
+  "lastInputTokens": 7278,
+  "peakInputTokens": 7278,
+  "modelCalls": 22,
+  "usageReportedCalls": 22,
+  "cacheReadTokens": 92288,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 22,
+  "roles": {
+   "main": {
+    "calls": 22,
+    "reportedInput": 22,
+    "reportedOutput": 22,
+    "inputTokens": 105566,
+    "outputTokens": 9754
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: - `_apply_mode` copies the existing file's permissions onto the temp file (or the umask default for a new file), because `mkstemp` creates files as `0600` and a | - `_fsync_dir` fsyncs the directory to make the rename durable; it is best-effort and silently no-ops where opening a directory fails (Windows). | **How it was proven** — I wrote `crash_check.py`, a manual repro that patches `open`/`os.fdopen` to write half the text, flush, then raise. Before the fix it fa | **The fixed check** — `verify` passes (2 tests, OK), but note it also passed before any change, so it does not by itself prove the fix; the repro script is what | **Caveats you should know** — I could not delete `crash_check.py` (the tools refuse `rm` and this is not a git repo), so it remains in the repo as a manual scri"
+}

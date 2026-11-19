@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 16,
+ "seconds": 11.768,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 580,
+ "addedLines": 35,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 5,
+  "toolCalls": 6,
+  "inputTokens": 10875,
+  "outputTokens": 1674,
+  "lastInputTokens": 2589,
+  "peakInputTokens": 2589,
+  "modelCalls": 5,
+  "usageReportedCalls": 5,
+  "cacheReadTokens": 9536,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 5,
+  "roles": {
+   "main": {
+    "calls": 5,
+    "reportedInput": 5,
+    "reportedOutput": 5,
+    "inputTokens": 10875,
+    "outputTokens": 1674
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: `save_report()` in report.py now writes to a temp file in the same directory, flushes and fsyncs it, then atomically swaps it over the destination with `os.repl"
+}

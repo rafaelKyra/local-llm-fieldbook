@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 5,
+ "seconds": 12.286,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 182,
+ "addedLines": 13,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 7,
+  "toolCalls": 6,
+  "inputTokens": 17900,
+  "outputTokens": 543,
+  "lastInputTokens": 3061,
+  "peakInputTokens": 3061,
+  "modelCalls": 7,
+  "usageReportedCalls": 7,
+  "cacheReadTokens": 13824,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 7,
+  "roles": {
+   "main": {
+    "calls": 7,
+    "reportedInput": 7,
+    "reportedOutput": 7,
+    "inputTokens": 17900,
+    "outputTokens": 543
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Modified `save_report()` in `report.py` to use atomic write: write to a temp file first, then rename. This ensures crashes during write never corrupt the existi"
+}

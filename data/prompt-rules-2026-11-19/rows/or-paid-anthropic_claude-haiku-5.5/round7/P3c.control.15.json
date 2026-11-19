@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "control",
+ "rep": 15,
+ "seconds": 11.328,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 623,
+ "addedLines": 5,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 7,
+  "toolCalls": 8,
+  "inputTokens": 26359,
+  "outputTokens": 1724,
+  "lastInputTokens": 4878,
+  "peakInputTokens": 4878,
+  "modelCalls": 7,
+  "usageReportedCalls": 7,
+  "cacheReadTokens": 0,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 7,
+  "roles": {
+   "main": {
+    "calls": 7,
+    "reportedInput": 7,
+    "reportedOutput": 7,
+    "inputTokens": 26359,
+    "outputTokens": 1724
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: Changed feed.py: parse_date() now strips the text and picks the format by content. Text containing \"/\" is parsed day-first (\"%d/%m/%Y\", so 04/03/2026 is 4 March"
+}

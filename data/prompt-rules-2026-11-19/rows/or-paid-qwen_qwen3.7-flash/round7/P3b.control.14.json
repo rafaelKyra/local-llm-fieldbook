@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 14,
+ "seconds": 19.855,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 250,
+ "addedLines": 10,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 8,
+  "toolCalls": 8,
+  "inputTokens": 20746,
+  "outputTokens": 1004,
+  "lastInputTokens": 3133,
+  "peakInputTokens": 3133,
+  "modelCalls": 8,
+  "usageReportedCalls": 8,
+  "cacheReadTokens": 18048,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 8,
+  "roles": {
+   "main": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 20746,
+    "outputTokens": 1004
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made save_report() crash-safe in report.py by writing to a temp file first then atomically replacing the target with os.replace(). If a crash occurs during the "
+}

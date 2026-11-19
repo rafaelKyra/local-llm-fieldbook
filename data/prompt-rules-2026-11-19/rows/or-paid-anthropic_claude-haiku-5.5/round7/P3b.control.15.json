@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 15,
+ "seconds": 7.401,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 581,
+ "addedLines": 24,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 4,
+  "toolCalls": 5,
+  "inputTokens": 12968,
+  "outputTokens": 1191,
+  "lastInputTokens": 3802,
+  "peakInputTokens": 3802,
+  "modelCalls": 4,
+  "usageReportedCalls": 4,
+  "cacheReadTokens": 0,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 4,
+  "roles": {
+   "main": {
+    "calls": 4,
+    "reportedInput": 4,
+    "reportedOutput": 4,
+    "inputTokens": 12968,
+    "outputTokens": 1191
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Changed save_report() in report.py to write atomically: data goes to a temp file in the same directory, is flushed and fsynced, then moved over report.txt with "
+}

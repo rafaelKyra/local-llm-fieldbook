@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 7,
+ "seconds": 19.744,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 276,
+ "addedLines": 11,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 13,
+  "toolCalls": 12,
+  "inputTokens": 40319,
+  "outputTokens": 714,
+  "lastInputTokens": 3970,
+  "peakInputTokens": 3970,
+  "modelCalls": 13,
+  "usageReportedCalls": 13,
+  "cacheReadTokens": 33408,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 13,
+  "roles": {
+   "main": {
+    "calls": 13,
+    "reportedInput": 13,
+    "reportedOutput": 13,
+    "inputTokens": 40319,
+    "outputTokens": 714
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Done. Modified `save_report()` in `report.py` to write crash-safely: it now writes to a temporary file first, then uses `os.rename()` to atomically replace the "
+}

@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "p3f",
+ "rep": 6,
+ "seconds": 61.209,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1156,
+ "addedLines": 14,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 10,
+  "toolCalls": 9,
+  "inputTokens": 30366,
+  "outputTokens": 3594,
+  "lastInputTokens": 4185,
+  "peakInputTokens": 4185,
+  "modelCalls": 10,
+  "usageReportedCalls": 10,
+  "cacheReadTokens": 25344,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 10,
+  "roles": {
+   "main": {
+    "calls": 10,
+    "reportedInput": 10,
+    "reportedOutput": 10,
+    "inputTokens": 30366,
+    "outputTokens": 3594
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: Changed `parse_date()` in `feed.py` to try a list of accepted formats in order — `\"%Y-%m-%d\"` (old style, still arriving) then `\"%d/%m/%Y\"` (new day-first style"
+}

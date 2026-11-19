@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "control",
+ "rep": 1,
+ "seconds": 20.478,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1069,
+ "addedLines": 10,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 7,
+  "toolCalls": 8,
+  "inputTokens": 19181,
+  "outputTokens": 2269,
+  "lastInputTokens": 3461,
+  "peakInputTokens": 3461,
+  "modelCalls": 7,
+  "usageReportedCalls": 7,
+  "cacheReadTokens": 13440,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 7,
+  "roles": {
+   "main": {
+    "calls": 7,
+    "reportedInput": 7,
+    "reportedOutput": 7,
+    "inputTokens": 19181,
+    "outputTokens": 2269
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: - `\" 04/03/2026 \"` -> date(2026,3,4); `25/12/2026` -> date(2026,12,25) (disambiguates day-first) | - `4/3/2026` -> date(2026,3,4) | - `banana` still raises ValueError | `verify` passes (3 tests OK) on the current files. Caveat: the fixed check also passed before my edit — it only exercises the old format — so it does not by its | Ambiguity note: strings like `04/03/2026` are read as day-first per the vendor email; no sample new-style file existed, so this rests on the stated format."
+}

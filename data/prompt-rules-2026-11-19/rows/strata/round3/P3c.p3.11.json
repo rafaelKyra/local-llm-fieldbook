@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "p3",
+ "rep": 11,
+ "seconds": 42.177,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 845,
+ "addedLines": 10,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 8,
+  "toolCalls": 9,
+  "inputTokens": 21472,
+  "outputTokens": 1993,
+  "lastInputTokens": 3592,
+  "peakInputTokens": 3592,
+  "modelCalls": 8,
+  "usageReportedCalls": 8,
+  "cacheReadTokens": 19811,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 8,
+  "roles": {
+   "main": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 21472,
+    "outputTokens": 1993
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: parse_date() in feed.py now tries both vendor date styles — \"%Y-%m-%d\" (old) and \"%d/%m/%Y\" (new day-first) — via a DATE_FORMATS tuple, and raises ValueError wi"
+}

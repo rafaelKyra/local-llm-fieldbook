@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 14,
+ "seconds": 118.454,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1746,
+ "addedLines": 57,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 17,
+  "toolCalls": 15,
+  "inputTokens": 67492,
+  "outputTokens": 7910,
+  "lastInputTokens": 6318,
+  "peakInputTokens": 6318,
+  "modelCalls": 17,
+  "usageReportedCalls": 17,
+  "cacheReadTokens": 56320,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 17,
+  "roles": {
+   "main": {
+    "calls": 17,
+    "reportedInput": 17,
+    "reportedOutput": 17,
+    "inputTokens": 67492,
+    "outputTokens": 7910
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: 4. Publishes it with a single `os.replace()` — atomic on POSIX (`rename(2)`) and on Windows (`MoveFileEx` with `REPLACE_EXISTING`). `os.rename()` was deliberate | 5. On any exception (`BaseException`, so interrupts count too) the scratch file is removed and the error re-raised; the real report was never opened for writing | 6. Best-effort directory `fsync` afterwards, skipped on Windows where directories can't be opened. | I verified crash-safety by monkeypatching failures into both `os.fdopen` (mid-write) and `os.replace` (mid-publish): in both cases the previous report survived  | **About the check:** the fixed check (`verify`) runs the 2 existing tests in `test_report.py` — it **also passed before I made any change**, so it does not by i"
+}

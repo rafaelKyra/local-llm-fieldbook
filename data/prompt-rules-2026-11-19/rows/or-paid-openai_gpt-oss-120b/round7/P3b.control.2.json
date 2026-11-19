@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 2,
+ "seconds": 5.446,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 318,
+ "addedLines": 14,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 7,
+  "toolCalls": 6,
+  "inputTokens": 11488,
+  "outputTokens": 909,
+  "lastInputTokens": 2110,
+  "peakInputTokens": 2110,
+  "modelCalls": 7,
+  "usageReportedCalls": 7,
+  "cacheReadTokens": 8128,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 7,
+  "roles": {
+   "main": {
+    "calls": 7,
+    "reportedInput": 7,
+    "reportedOutput": 7,
+    "inputTokens": 11488,
+    "outputTokens": 909
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: - Added detailed docstring. | - Writes to a temporary file in the same directory, flushes and syncs to disk. | - Atomically replaces the target file using `os.replace`. | - Ensures original file remains intact if a crash occurs during write. | All tests continue to pass."
+}

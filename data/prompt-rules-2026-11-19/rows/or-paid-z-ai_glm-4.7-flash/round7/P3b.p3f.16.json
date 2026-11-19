@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 16,
+ "seconds": 59.735,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 239,
+ "addedLines": 6,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 8,
+  "toolCalls": 7,
+  "inputTokens": 18075,
+  "outputTokens": 1064,
+  "lastInputTokens": 2696,
+  "peakInputTokens": 2696,
+  "modelCalls": 8,
+  "usageReportedCalls": 8,
+  "cacheReadTokens": 13190,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 8,
+  "roles": {
+   "main": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 18075,
+    "outputTokens": 1064
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made the report write crash-safe by writing to a temporary file first, then atomically renaming it to the final location using os.replace(). This ensures that a"
+}

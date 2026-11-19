@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 15,
+ "seconds": 16.887,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 811,
+ "addedLines": 13,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 7,
+  "toolCalls": 6,
+  "inputTokens": 14567,
+  "outputTokens": 1154,
+  "lastInputTokens": 2419,
+  "peakInputTokens": 2767,
+  "modelCalls": 7,
+  "usageReportedCalls": 7,
+  "cacheReadTokens": 5120,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 7,
+  "roles": {
+   "main": {
+    "calls": 7,
+    "reportedInput": 7,
+    "reportedOutput": 7,
+    "inputTokens": 14567,
+    "outputTokens": 1154
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: **What changed:** `save_report()` in `report.py` no longer writes directly to the target file. | - It now writes the report to a temporary file created via `tempfile.mkstemp()` in the same directory as the target. | - It flushes/closes the temp file, then atomically swaps it into place with `os.replace(tmp, path)` — an atomic rename on both Linux and Windows, so readers nev | - On any failure it cleans up the temp file before re-raising, so no stray temp files are left behind. | **Verification:** Ran the project's check (`verify`, no arguments) after the edit — all tests pass. Note the check also passed before the change, so it does not"
+}

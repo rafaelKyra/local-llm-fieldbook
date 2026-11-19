@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 16,
+ "seconds": 46.549,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1766,
+ "addedLines": 69,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 24,
+  "toolCalls": 27,
+  "inputTokens": 137387,
+  "outputTokens": 6339,
+  "lastInputTokens": 9019,
+  "peakInputTokens": 9019,
+  "modelCalls": 24,
+  "usageReportedCalls": 24,
+  "cacheReadTokens": 128768,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 24,
+  "roles": {
+   "main": {
+    "calls": 24,
+    "reportedInput": 24,
+    "reportedOutput": 24,
+    "inputTokens": 137387,
+    "outputTokens": 6339
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: - Only after the data is durable is the temp file renamed over the target with `os.replace()`, which is atomic on both POSIX and Windows. A crash before that po | - On any failure the temp file is unlinked and the exception re-raised, so no partial files are left behind. | - Permissions: the replacement keeps the existing report's mode; for a brand-new report it falls back to the umask-derived default (0o666 & ~umask) instead of m | - Windows specifics: `_replace()` retries `os.replace` briefly on `PermissionError` (Windows refuses to rename over a file another process has open), and `_fsyn | Check result: `verify` (the fixed check, `python -m unittest`) passes — 2 tests, OK. Note that this check also passed before my change, so it does not by itself"
+}

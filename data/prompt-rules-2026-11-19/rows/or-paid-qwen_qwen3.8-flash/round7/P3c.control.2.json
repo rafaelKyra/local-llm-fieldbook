@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "control",
+ "rep": 2,
+ "seconds": 36.204,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1254,
+ "addedLines": 10,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 8,
+  "toolCalls": 9,
+  "inputTokens": 23206,
+  "outputTokens": 1884,
+  "lastInputTokens": 3609,
+  "peakInputTokens": 3609,
+  "modelCalls": 8,
+  "usageReportedCalls": 8,
+  "cacheReadTokens": 18176,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 8,
+  "roles": {
+   "main": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 23206,
+    "outputTokens": 1884
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: **Change** (`feed.py`): `parse_date()` now tries a list of accepted formats instead of a single one — `\"%Y-%m-%d\"` (old style, still arriving) then `\"%d/%m/%Y\"` | **Verification:** | - Direct runs against the current file: `parse_row(\"04/03/2026,10.5\")` -> `(date(2026, 3, 4), 10.5)`, `parse_row(\"2026-03-04,10.5\")` -> `(date(2026, 3, 4), 10.5 | - `verify`: PASSED, 3 tests OK. Note: this check also passed before any edit (it is recorded as passing at the untouched baseline), so it does not by itself pro | One caveat worth flagging: `04/03/2026` is unambiguous only because the vendor confirmed day-first; the two formats never overlap, so no old-format value is rei"
+}

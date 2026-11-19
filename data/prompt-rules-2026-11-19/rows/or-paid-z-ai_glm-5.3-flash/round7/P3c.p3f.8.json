@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "p3f",
+ "rep": 8,
+ "seconds": 6.962,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 332,
+ "addedLines": 8,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 6,
+  "toolCalls": 6,
+  "inputTokens": 12889,
+  "outputTokens": 268,
+  "lastInputTokens": 2531,
+  "peakInputTokens": 2531,
+  "modelCalls": 6,
+  "usageReportedCalls": 6,
+  "cacheReadTokens": 9848,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 6,
+  "roles": {
+   "main": {
+    "calls": 6,
+    "reportedInput": 6,
+    "reportedOutput": 6,
+    "inputTokens": 12889,
+    "outputTokens": 268
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: `parse_date` in feed.py now tries both `%Y-%m-%d` and `%d/%m/%Y` (day-first) formats, raising ValueError for anything else, so `parse_row` reads both vendor sty"
+}

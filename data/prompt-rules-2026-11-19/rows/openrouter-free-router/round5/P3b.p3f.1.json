@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 1,
+ "seconds": 18.796,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1084,
+ "addedLines": 10,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 8,
+  "toolCalls": 8,
+  "inputTokens": 21970,
+  "outputTokens": 1723,
+  "lastInputTokens": 2798,
+  "peakInputTokens": 3369,
+  "modelCalls": 8,
+  "usageReportedCalls": 8,
+  "cacheReadTokens": 1152,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 8,
+  "roles": {
+   "main": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 21970,
+    "outputTokens": 1723
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: 1. Write the new content to a temporary file in the same directory via `tempfile.NamedTemporaryFile` (same filesystem → same volume, so the rename is atomic). | 2. Flush and `os.fsync()` the temp file to force data to disk. | 3. Atomically replace the target via `os.replace(tmp_path, path)` — this overwrites the destination in a single atomic operation, so readers never see a partial | **Verification:** The check (`verify`, no arguments) passed — both existing tests (`test_writes_text`, `test_replaces_old_text`) are green, confirming the repor | **Note:** The check passed before and after my change, so it did not validate the new behavior — it only confirmed I didn't break the existing suite. I did not "
+}

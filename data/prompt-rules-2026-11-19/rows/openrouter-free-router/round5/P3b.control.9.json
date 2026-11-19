@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 9,
+ "seconds": 24.544,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 554,
+ "addedLines": 15,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 7,
+  "toolCalls": 6,
+  "inputTokens": 17243,
+  "outputTokens": 1069,
+  "lastInputTokens": 3239,
+  "peakInputTokens": 3239,
+  "modelCalls": 7,
+  "usageReportedCalls": 7,
+  "cacheReadTokens": 5760,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 7,
+  "roles": {
+   "main": {
+    "calls": 7,
+    "reportedInput": 7,
+    "reportedOutput": 7,
+    "inputTokens": 17243,
+    "outputTokens": 1069
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: 1. Creating a temporary file in the same directory as the target (using `tempfile.mkstemp`) | 2. Writing the report text to the temp file with `flush()` and `os.fsync()` to ensure data reaches disk | 3. Atomically replacing the target file with `os.replace()` (atomic on both Windows and Linux) | 4. Cleaning up the temp file on any exception | The test suite passes (2 tests). The check passed before and after the change, confirming the existing behavior is preserved while adding crash safety."
+}

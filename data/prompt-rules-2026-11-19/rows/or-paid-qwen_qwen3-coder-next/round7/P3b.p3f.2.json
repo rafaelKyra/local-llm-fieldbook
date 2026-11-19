@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 2,
+ "seconds": 55.293,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 931,
+ "addedLines": 20,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 11,
+  "toolCalls": 11,
+  "inputTokens": 34996,
+  "outputTokens": 1199,
+  "lastInputTokens": 4308,
+  "peakInputTokens": 4308,
+  "modelCalls": 11,
+  "usageReportedCalls": 11,
+  "cacheReadTokens": 28800,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 11,
+  "roles": {
+   "main": {
+    "calls": 11,
+    "reportedInput": 11,
+    "reportedOutput": 11,
+    "inputTokens": 34996,
+    "outputTokens": 1199
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: **Why this works:** | - If the process crashes during writing, only the temporary file is corrupted, leaving the original report intact | - The `os.replace()` operation is atomic - the target file either has the old content or the new content, never a partial write | - Using the same directory for the temp file ensures the atomic rename works across platforms | All existing tests pass without modification, confirming backward compatibility."
+}

@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "control",
+ "rep": 21,
+ "seconds": 48.455,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 710,
+ "addedLines": 8,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 10,
+  "toolCalls": 9,
+  "inputTokens": 26694,
+  "outputTokens": 1743,
+  "lastInputTokens": 3267,
+  "peakInputTokens": 3565,
+  "modelCalls": 10,
+  "usageReportedCalls": 10,
+  "cacheReadTokens": 5888,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 10,
+  "roles": {
+   "main": {
+    "calls": 10,
+    "reportedInput": 10,
+    "reportedOutput": 10,
+    "inputTokens": 26694,
+    "outputTokens": 1743
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: `parse_date()` in feed.py now tries both formats: the existing `%Y-%m-%d` and the vendor's new day-first `%d/%m/%Y`, via a `DATE_FORMATS` tuple. It still strips | Files changed: feed.py (only). | Check: `verify` (check 2) passed on the current files — 3 tests, OK. Note that this check also passed before my edit, so it does not by itself prove the change;"
+}

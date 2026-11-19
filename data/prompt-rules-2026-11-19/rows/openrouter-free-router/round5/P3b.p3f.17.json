@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 17,
+ "seconds": 37.469,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 858,
+ "addedLines": 15,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 10,
+  "toolCalls": 9,
+  "inputTokens": 22393,
+  "outputTokens": 1213,
+  "lastInputTokens": 3496,
+  "peakInputTokens": 3496,
+  "modelCalls": 10,
+  "usageReportedCalls": 10,
+  "cacheReadTokens": 9600,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 10,
+  "roles": {
+   "main": {
+    "calls": 10,
+    "reportedInput": 10,
+    "reportedOutput": 10,
+    "inputTokens": 22393,
+    "outputTokens": 1213
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made `save_report()` crash-safe by using an atomic replace pattern: | - **What changed**: `report.py` now writes to a temporary file (via `tempfile.mkstemp()`), flushes/fsyncs it, then atomically replaces the original report with  | - **Files modified**: `report.py` (replaced the original 8-line direct-open implementation with the crash-safe version). | - **Tests**: The existing test suite (`test_report.py`) passes unchanged — both `test_writes_text` and `test_replaces_old_text` succeed. | - **Why it's safe**: `os.replace()` is atomic on Linux (and Windows), so the file on disk is either the old version or the new version, never a truncated partia"
+}

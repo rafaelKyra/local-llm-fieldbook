@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 14,
+ "seconds": 24.051,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 554,
+ "addedLines": 16,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 9,
+  "toolCalls": 8,
+  "inputTokens": 21854,
+  "outputTokens": 5011,
+  "lastInputTokens": 3175,
+  "peakInputTokens": 3175,
+  "modelCalls": 9,
+  "usageReportedCalls": 9,
+  "cacheReadTokens": 19968,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 9,
+  "roles": {
+   "main": {
+    "calls": 9,
+    "reportedInput": 9,
+    "reportedOutput": 9,
+    "inputTokens": 21854,
+    "outputTokens": 5011
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: save_report() in report.py now writes atomically instead of truncating report.txt in place: it creates a temp file in the same directory (mkstemp), writes, flus"
+}

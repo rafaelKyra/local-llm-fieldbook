@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "control",
+ "rep": 13,
+ "seconds": 19.324,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 324,
+ "addedLines": 7,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 8,
+  "toolCalls": 8,
+  "inputTokens": 18075,
+  "outputTokens": 1011,
+  "lastInputTokens": 3283,
+  "peakInputTokens": 3283,
+  "modelCalls": 8,
+  "usageReportedCalls": 8,
+  "cacheReadTokens": 7616,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 8,
+  "roles": {
+   "main": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 18075,
+    "outputTokens": 1011
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: Updated `parse_date()` in `feed.py` to try both `%Y-%m-%d` (old vendor format) and `%d/%m/%Y` (new vendor format with day first). The function strips whitespace"
+}

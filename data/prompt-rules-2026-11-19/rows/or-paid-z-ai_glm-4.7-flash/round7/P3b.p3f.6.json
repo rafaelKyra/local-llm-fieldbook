@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 6,
+ "seconds": 24.151,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 331,
+ "addedLines": 8,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 6,
+  "toolCalls": 5,
+  "inputTokens": 13322,
+  "outputTokens": 921,
+  "lastInputTokens": 2587,
+  "peakInputTokens": 2587,
+  "modelCalls": 6,
+  "usageReportedCalls": 6,
+  "cacheReadTokens": 0,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 6,
+  "roles": {
+   "main": {
+    "calls": 6,
+    "reportedInput": 6,
+    "reportedOutput": 6,
+    "inputTokens": 13322,
+    "outputTokens": 921
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Modified `save_report()` in `report.py` to write crash-safely. The function now writes to a temporary file first using `tempfile.NamedTemporaryFile`, then atomi"
+}

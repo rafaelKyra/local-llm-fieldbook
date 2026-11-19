@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 8,
+ "seconds": 24.466,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 302,
+ "addedLines": 5,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 6,
+  "toolCalls": 5,
+  "inputTokens": 13052,
+  "outputTokens": 1100,
+  "lastInputTokens": 2505,
+  "peakInputTokens": 2505,
+  "modelCalls": 6,
+  "usageReportedCalls": 6,
+  "cacheReadTokens": 0,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 6,
+  "roles": {
+   "main": {
+    "calls": 6,
+    "reportedInput": 6,
+    "reportedOutput": 6,
+    "inputTokens": 13052,
+    "outputTokens": 1100
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made the report write crash-safe by modifying `save_report()` in `report.py`. The function now writes to a temporary file first, then uses `os.replace()` to ato"
+}

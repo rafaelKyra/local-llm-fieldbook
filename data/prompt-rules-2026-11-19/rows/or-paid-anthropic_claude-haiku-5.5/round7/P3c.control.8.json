@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "control",
+ "rep": 8,
+ "seconds": 10.825,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 670,
+ "addedLines": 11,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 7,
+  "toolCalls": 8,
+  "inputTokens": 26377,
+  "outputTokens": 1671,
+  "lastInputTokens": 4807,
+  "peakInputTokens": 4807,
+  "modelCalls": 7,
+  "usageReportedCalls": 7,
+  "cacheReadTokens": 0,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 7,
+  "roles": {
+   "main": {
+    "calls": 7,
+    "reportedInput": 7,
+    "reportedOutput": 7,
+    "inputTokens": 26377,
+    "outputTokens": 1671
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: Changed feed.py: parse_date() now tries \"%Y-%m-%d\" (old style) and then \"%d/%m/%d\" day-first \"%d/%m/%Y\" (new style), raising ValueError for anything else; parse"
+}

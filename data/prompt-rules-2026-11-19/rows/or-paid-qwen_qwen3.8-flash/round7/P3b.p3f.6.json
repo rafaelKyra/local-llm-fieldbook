@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 6,
+ "seconds": 247.297,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 2145,
+ "addedLines": 61,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 31,
+  "toolCalls": 26,
+  "inputTokens": 176203,
+  "outputTokens": 16937,
+  "lastInputTokens": 9593,
+  "peakInputTokens": 9593,
+  "modelCalls": 31,
+  "usageReportedCalls": 31,
+  "cacheReadTokens": 156672,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 31,
+  "roles": {
+   "main": {
+    "calls": 31,
+    "reportedInput": 31,
+    "reportedOutput": 31,
+    "inputTokens": 176203,
+    "outputTokens": 16937
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made `save_report()` in `report.py` write-and-rename instead of write-in-place: the text now goes to a unique temp file created by `tempfile.mkstemp()` in the t | Files: `report.py` (rewritten), plus `scratch_crash_check.py`, a scratch reproduction script I added at the repo root — delete it if you do not want it committe | Verification: the fixed check (`verify`, no arguments) runs the existing 2-test suite and it passes — but it also passed before my change, so it does not prove  | Risk to know about: on Windows, `os.replace()` fails with `PermissionError` if another process holds `report.txt` open (e.g. someone viewing it on the share). T"
+}

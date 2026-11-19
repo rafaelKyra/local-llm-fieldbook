@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "p3",
+ "rep": 16,
+ "seconds": 28.254,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 322,
+ "addedLines": 11,
+ "replyShortcut": false,
+ "status": "unverified",
+ "stopReason": "finished without a passing check",
+ "usage": {
+  "turns": 18,
+  "toolCalls": 15,
+  "inputTokens": 59000,
+  "outputTokens": 2176,
+  "lastInputTokens": 4302,
+  "peakInputTokens": 4302,
+  "modelCalls": 18,
+  "usageReportedCalls": 18,
+  "cacheReadTokens": 0,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 0,
+  "roles": {
+   "main": {
+    "calls": 18,
+    "reportedInput": 18,
+    "reportedOutput": 18,
+    "inputTokens": 59000,
+    "outputTokens": 2176
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: Modified feed.py parse_date() function to support both old format (YYYY-MM-DD) and new vendor format (DD/MM/YYYY). The function tries the old format first, then"
+}

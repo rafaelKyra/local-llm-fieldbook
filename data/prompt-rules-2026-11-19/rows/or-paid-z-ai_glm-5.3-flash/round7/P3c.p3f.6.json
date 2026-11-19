@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "p3f",
+ "rep": 6,
+ "seconds": 23.443,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 832,
+ "addedLines": 10,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 11,
+  "toolCalls": 9,
+  "inputTokens": 30613,
+  "outputTokens": 2527,
+  "lastInputTokens": 3529,
+  "peakInputTokens": 3529,
+  "modelCalls": 11,
+  "usageReportedCalls": 11,
+  "cacheReadTokens": 28672,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 11,
+  "roles": {
+   "main": {
+    "calls": 11,
+    "reportedInput": 11,
+    "reportedOutput": 11,
+    "inputTokens": 30613,
+    "outputTokens": 2527
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: `parse_date()` in `feed.py` now tries both date formats: the old ISO `%Y-%m-%d` and the vendor's new day-first `%d/%m/%Y`, raising a clear `ValueError` if neith"
+}

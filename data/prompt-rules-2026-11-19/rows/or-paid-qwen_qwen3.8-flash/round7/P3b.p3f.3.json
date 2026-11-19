@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 3,
+ "seconds": 157.88,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 907,
+ "addedLines": 70,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 16,
+  "toolCalls": 18,
+  "inputTokens": 91842,
+  "outputTokens": 8996,
+  "lastInputTokens": 8707,
+  "peakInputTokens": 8707,
+  "modelCalls": 16,
+  "usageReportedCalls": 16,
+  "cacheReadTokens": 78848,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 16,
+  "roles": {
+   "main": {
+    "calls": 16,
+    "reportedInput": 16,
+    "reportedOutput": 16,
+    "inputTokens": 91842,
+    "outputTokens": 8996
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made save_report() in report.py crash-safe: write to a temp file in the same directory, fsync it, then atomically swap it into place with os.replace (Windows-sa"
+}

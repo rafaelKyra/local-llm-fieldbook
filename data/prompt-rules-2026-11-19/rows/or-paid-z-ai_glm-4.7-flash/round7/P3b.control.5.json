@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 5,
+ "seconds": 26.001,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 430,
+ "addedLines": 9,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 7,
+  "toolCalls": 6,
+  "inputTokens": 15833,
+  "outputTokens": 1205,
+  "lastInputTokens": 2736,
+  "peakInputTokens": 2736,
+  "modelCalls": 7,
+  "usageReportedCalls": 7,
+  "cacheReadTokens": 0,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 7,
+  "roles": {
+   "main": {
+    "calls": 7,
+    "reportedInput": 7,
+    "reportedOutput": 7,
+    "inputTokens": 15833,
+    "outputTokens": 1205
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made the report writing crash-safe by using a temporary file and atomic rename. The `save_report()` function now: | 1. Writes the report to a temporary file first | 2. Uses `os.replace()` to atomically rename the temporary file to the final destination | This ensures that if the process crashes during the write, the original report.txt file remains intact and uncorrupted. The change is backward compatible - all "
+}

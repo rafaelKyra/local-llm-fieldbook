@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 11,
+ "seconds": 42.337,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1895,
+ "addedLines": 41,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 23,
+  "toolCalls": 22,
+  "inputTokens": 95831,
+  "outputTokens": 10195,
+  "lastInputTokens": 6597,
+  "peakInputTokens": 6597,
+  "modelCalls": 23,
+  "usageReportedCalls": 23,
+  "cacheReadTokens": 88320,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 23,
+  "roles": {
+   "main": {
+    "calls": 23,
+    "reportedInput": 23,
+    "reportedOutput": 23,
+    "inputTokens": 95831,
+    "outputTokens": 10195
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: - On any exception (including `BaseException` such as `KeyboardInterrupt`) the temp file is unlinked and the error re-raised, so a failed run leaves the previou | - Preserves the existing file's permission bits (falls back to `0o666 & ~umask` for a new file), since `mkstemp` creates `0600`. | - Added `_replace_with_retry()`: retries `os.replace` a few times on `PermissionError`, which is what Windows raises for a transient sharing violation when anot | Verification: `verify` (the fixed check, `python -m unittest`) passes — 2 tests OK. Note that this check also passed before my change, so it does not by itself  | Not checked: real Windows behaviour (atomicity of `os.replace` under an open handle, and whether the retry window is long enough for the production reader) — I "
+}

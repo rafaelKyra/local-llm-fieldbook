@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "control",
+ "rep": 7,
+ "seconds": 9.896,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 447,
+ "addedLines": 13,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 7,
+  "toolCalls": 6,
+  "inputTokens": 11460,
+  "outputTokens": 870,
+  "lastInputTokens": 2137,
+  "peakInputTokens": 2137,
+  "modelCalls": 7,
+  "usageReportedCalls": 7,
+  "cacheReadTokens": 9421,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 7,
+  "roles": {
+   "main": {
+    "calls": 7,
+    "reportedInput": 7,
+    "reportedOutput": 7,
+    "inputTokens": 11460,
+    "outputTokens": 870
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: Implemented robust date parsing in **feed.py**: | - Added comprehensive docstring. | - Strips whitespace and attempts ISO (`%Y-%m-%d`) parsing first, then European (`%d/%m/%Y`). | - Raises a clear `ValueError` if neither format matches. | All existing tests continue to pass (the check was already green before the change). This update enables `parse_row()` to handle both the original `YYYY-MM-DD` "
+}

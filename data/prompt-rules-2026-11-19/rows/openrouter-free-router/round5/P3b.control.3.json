@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 3,
+ "seconds": 25.328,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 461,
+ "addedLines": 13,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 7,
+  "toolCalls": 7,
+  "inputTokens": 15574,
+  "outputTokens": 1647,
+  "lastInputTokens": 3270,
+  "peakInputTokens": 3270,
+  "modelCalls": 7,
+  "usageReportedCalls": 7,
+  "cacheReadTokens": 5440,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 7,
+  "roles": {
+   "main": {
+    "calls": 7,
+    "reportedInput": 7,
+    "reportedOutput": 7,
+    "inputTokens": 15574,
+    "outputTokens": 1647
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Changed `save_report()` in `report.py` to use an atomic write pattern: writes to a temporary file (via `tempfile.NamedTemporaryFile` with `delete=False`), then "
+}

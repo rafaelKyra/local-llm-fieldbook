@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "p3f",
+ "rep": 2,
+ "seconds": 9.976,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 554,
+ "addedLines": 8,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 7,
+  "toolCalls": 8,
+  "inputTokens": 15536,
+  "outputTokens": 790,
+  "lastInputTokens": 2590,
+  "peakInputTokens": 2590,
+  "modelCalls": 7,
+  "usageReportedCalls": 7,
+  "cacheReadTokens": 11776,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 7,
+  "roles": {
+   "main": {
+    "calls": 7,
+    "reportedInput": 7,
+    "reportedOutput": 7,
+    "inputTokens": 15536,
+    "outputTokens": 790
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: `parse_date` in feed.py now tries both `%Y-%m-%d` and the vendor's new day-first `%d/%m/%Y` format (stripping whitespace first), raising ValueError with the off"
+}

@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 16,
+ "seconds": 27.767,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 300,
+ "addedLines": 10,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 8,
+  "toolCalls": 6,
+  "inputTokens": 18847,
+  "outputTokens": 1580,
+  "lastInputTokens": 3461,
+  "peakInputTokens": 3461,
+  "modelCalls": 8,
+  "usageReportedCalls": 8,
+  "cacheReadTokens": 5248,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 8,
+  "roles": {
+   "main": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 18847,
+    "outputTokens": 1580
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made save_report() crash-safe by writing to a temp file in the same directory, fsyncing it, then atomically replacing report.txt via os.replace(). The original "
+}

@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 15,
+ "seconds": 48.748,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1646,
+ "addedLines": 51,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 9,
+  "toolCalls": 10,
+  "inputTokens": 28937,
+  "outputTokens": 3850,
+  "lastInputTokens": 4355,
+  "peakInputTokens": 4355,
+  "modelCalls": 9,
+  "usageReportedCalls": 9,
+  "cacheReadTokens": 23552,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 9,
+  "roles": {
+   "main": {
+    "calls": 9,
+    "reportedInput": 9,
+    "reportedOutput": 9,
+    "inputTokens": 28937,
+    "outputTokens": 3850
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made `save_report()` in `report.py` crash-safe using write-to-temp-then-atomic-rename: the text is written to a `tempfile.mkstemp` file created in the destinati | Files changed: `report.py` only (test suite untouched). Verified with `verify` (2 existing tests pass) — note this check also passed before my change, so it doe"
+}

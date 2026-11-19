@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 3,
+ "seconds": 26.424,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 921,
+ "addedLines": 21,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 16,
+  "toolCalls": 16,
+  "inputTokens": 57434,
+  "outputTokens": 2064,
+  "lastInputTokens": 5552,
+  "peakInputTokens": 5552,
+  "modelCalls": 16,
+  "usageReportedCalls": 16,
+  "cacheReadTokens": 50097,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 16,
+  "roles": {
+   "main": {
+    "calls": 16,
+    "reportedInput": 16,
+    "reportedOutput": 16,
+    "inputTokens": 57434,
+    "outputTokens": 2064
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Changed `save_report()` in `report.py` to write atomically: it writes the new content to a temporary file in the same directory (via `tempfile.mkstemp`), flushe | The fixed check (`verify`, the existing 2-test suite in `test_report.py`) passed both before and after the change, so it does not prove the fix by itself. To ac"
+}

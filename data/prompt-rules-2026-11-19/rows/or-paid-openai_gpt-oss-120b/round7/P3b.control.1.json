@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 1,
+ "seconds": 6.579,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 349,
+ "addedLines": 24,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 8,
+  "toolCalls": 7,
+  "inputTokens": 15612,
+  "outputTokens": 1437,
+  "lastInputTokens": 2978,
+  "peakInputTokens": 2978,
+  "modelCalls": 8,
+  "usageReportedCalls": 8,
+  "cacheReadTokens": 3904,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 8,
+  "roles": {
+   "main": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 15612,
+    "outputTokens": 1437
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: - Utilized `tempfile.NamedTemporaryFile` to write to a temporary file in the same directory. | - Ensured data is flushed and synced to disk. | - Atomically replaced the target file with `os.replace`. | - Cleaned up temporary files on failure. | All tests continue to pass."
+}

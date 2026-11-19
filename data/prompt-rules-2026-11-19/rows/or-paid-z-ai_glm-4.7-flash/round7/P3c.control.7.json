@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "control",
+ "rep": 7,
+ "seconds": 82.007,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 301,
+ "addedLines": 5,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 10,
+  "toolCalls": 10,
+  "inputTokens": 25485,
+  "outputTokens": 1187,
+  "lastInputTokens": 3075,
+  "peakInputTokens": 3075,
+  "modelCalls": 10,
+  "usageReportedCalls": 10,
+  "cacheReadTokens": 42,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 10,
+  "roles": {
+   "main": {
+    "calls": 10,
+    "reportedInput": 10,
+    "reportedOutput": 10,
+    "inputTokens": 25485,
+    "outputTokens": 1187
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: Updated `parse_date()` in `feed.py` to handle both date formats. The function now tries the old format (`%Y-%m-%d`) first, and if that fails, tries the new form"
+}

@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "p3f",
+ "rep": 1,
+ "seconds": 16.617,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 674,
+ "addedLines": 7,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 7,
+  "toolCalls": 8,
+  "inputTokens": 19540,
+  "outputTokens": 1660,
+  "lastInputTokens": 3385,
+  "peakInputTokens": 3385,
+  "modelCalls": 7,
+  "usageReportedCalls": 7,
+  "cacheReadTokens": 8192,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 7,
+  "roles": {
+   "main": {
+    "calls": 7,
+    "reportedInput": 7,
+    "reportedOutput": 7,
+    "inputTokens": 19540,
+    "outputTokens": 1660
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: Changed `parse_date()` in `feed.py` to try both the old `%Y-%m-%d` and the new vendor format `%d/%m/%Y` (day first), still stripping whitespace and raising `Val"
+}

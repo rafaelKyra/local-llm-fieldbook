@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 6,
+ "seconds": 24.381,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 550,
+ "addedLines": 21,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 8,
+  "toolCalls": 8,
+  "inputTokens": 20310,
+  "outputTokens": 1133,
+  "lastInputTokens": 3459,
+  "peakInputTokens": 3459,
+  "modelCalls": 8,
+  "usageReportedCalls": 8,
+  "cacheReadTokens": 5376,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 8,
+  "roles": {
+   "main": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 20310,
+    "outputTokens": 1133
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made save_report() crash-safe in report.py by writing to a temp file in the same directory (via tempfile.mkstemp, so it's on the same volume as the target — req"
+}

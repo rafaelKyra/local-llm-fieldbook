@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 12,
+ "seconds": 18.607,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 498,
+ "addedLines": 10,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 7,
+  "toolCalls": 7,
+  "inputTokens": 18037,
+  "outputTokens": 1214,
+  "lastInputTokens": 3150,
+  "peakInputTokens": 3150,
+  "modelCalls": 7,
+  "usageReportedCalls": 7,
+  "cacheReadTokens": 15488,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 7,
+  "roles": {
+   "main": {
+    "calls": 7,
+    "reportedInput": 7,
+    "reportedOutput": 7,
+    "inputTokens": 18037,
+    "outputTokens": 1214
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Changed `save_report()` in `report.py` to use an atomic write pattern for crash safety. Instead of writing directly to the target file, it now: | 1. Writes to a temporary file in the same directory via `tempfile.mkstemp()` | 2. Uses `os.replace()` to atomically rename the temp file to the target path | 3. Cleans up the temp file on any failure | This ensures the existing report is never damaged — it's either the old complete version or the new complete version, never truncated. The test suite passes."
+}

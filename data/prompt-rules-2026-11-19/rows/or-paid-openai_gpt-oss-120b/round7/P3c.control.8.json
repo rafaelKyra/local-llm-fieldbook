@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "control",
+ "rep": 8,
+ "seconds": 8.937,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 430,
+ "addedLines": 11,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 7,
+  "toolCalls": 6,
+  "inputTokens": 11404,
+  "outputTokens": 851,
+  "lastInputTokens": 2109,
+  "peakInputTokens": 2109,
+  "modelCalls": 7,
+  "usageReportedCalls": 7,
+  "cacheReadTokens": 9408,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 7,
+  "roles": {
+   "main": {
+    "calls": 7,
+    "reportedInput": 7,
+    "reportedOutput": 7,
+    "inputTokens": 11404,
+    "outputTokens": 851
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: The date parser was updated to accept both the original ISO format (`YYYY‑MM‑DD`) and the new European format (`DD/MM/YYYY`). Whitespace is stripped, ISO is tri | All existing tests continue to pass (the suite was already green before the change). | **Changed files:** `feed.py` – enhanced `parse_date` to handle both date formats."
+}

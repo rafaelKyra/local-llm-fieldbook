@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 4,
+ "seconds": 39.138,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 405,
+ "addedLines": 17,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 17,
+  "toolCalls": 17,
+  "inputTokens": 55174,
+  "outputTokens": 2042,
+  "lastInputTokens": 5297,
+  "peakInputTokens": 5297,
+  "modelCalls": 17,
+  "usageReportedCalls": 17,
+  "cacheReadTokens": 27584,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 17,
+  "roles": {
+   "main": {
+    "calls": 17,
+    "reportedInput": 17,
+    "reportedOutput": 17,
+    "inputTokens": 55174,
+    "outputTokens": 2042
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made `save_report()` crash-safe by writing to a temp file in the same directory, flushing + fsyncing it, then atomically replacing the target with `os.replace()"
+}

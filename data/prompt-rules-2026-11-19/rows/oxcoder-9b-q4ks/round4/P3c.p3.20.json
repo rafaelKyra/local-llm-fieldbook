@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "p3",
+ "rep": 20,
+ "seconds": 68.494,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 238,
+ "addedLines": 8,
+ "replyShortcut": false,
+ "status": "unverified",
+ "stopReason": "finished without a passing check",
+ "usage": {
+  "turns": 41,
+  "toolCalls": 38,
+  "inputTokens": 198839,
+  "outputTokens": 5046,
+  "lastInputTokens": 7318,
+  "peakInputTokens": 7318,
+  "modelCalls": 41,
+  "usageReportedCalls": 41,
+  "cacheReadTokens": 0,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 0,
+  "roles": {
+   "main": {
+    "calls": 41,
+    "reportedInput": 41,
+    "reportedOutput": 41,
+    "inputTokens": 198839,
+    "outputTokens": 5046
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: Modified feed.py: parse_date() now tries DD/MM/YYYY format first (new vendor style), falls back to YYYY-MM-DD if that fails. All 3 existing tests pass, and both"
+}

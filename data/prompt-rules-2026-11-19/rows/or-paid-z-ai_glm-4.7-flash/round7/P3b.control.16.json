@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 16,
+ "seconds": 29.81,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 330,
+ "addedLines": 5,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 11,
+  "toolCalls": 9,
+  "inputTokens": 25403,
+  "outputTokens": 1400,
+  "lastInputTokens": 2872,
+  "peakInputTokens": 2872,
+  "modelCalls": 11,
+  "usageReportedCalls": 11,
+  "cacheReadTokens": 22554,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 11,
+  "roles": {
+   "main": {
+    "calls": 11,
+    "reportedInput": 11,
+    "reportedOutput": 11,
+    "inputTokens": 25403,
+    "outputTokens": 1400
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Modified `report.py` to make `save_report()` crash-safe. The function now writes to a temporary file first (path + \".tmp\") and then atomically renames it to the"
+}

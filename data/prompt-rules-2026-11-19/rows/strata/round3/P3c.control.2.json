@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "control",
+ "rep": 2,
+ "seconds": 51.503,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 917,
+ "addedLines": 10,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 12,
+  "toolCalls": 11,
+  "inputTokens": 34439,
+  "outputTokens": 2159,
+  "lastInputTokens": 3775,
+  "peakInputTokens": 3775,
+  "modelCalls": 12,
+  "usageReportedCalls": 12,
+  "cacheReadTokens": 32532,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 12,
+  "roles": {
+   "main": {
+    "calls": 12,
+    "reportedInput": 12,
+    "reportedOutput": 12,
+    "inputTokens": 34439,
+    "outputTokens": 2159
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: Changed `parse_date()` in `feed.py` to try a list of accepted formats (`DATE_FORMATS = (\"%Y-%m-%d\", \"%d/%m/%Y\")`) and raise `ValueError` with the offending text | Verification: `verify` (the project's unittest suite, 3 tests) passed — note it also passed before the change, so the suite alone does not prove the new format "
+}

@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 9,
+ "seconds": 15.13,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 462,
+ "addedLines": 13,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 8,
+  "toolCalls": 8,
+  "inputTokens": 19592,
+  "outputTokens": 1037,
+  "lastInputTokens": 2645,
+  "peakInputTokens": 3191,
+  "modelCalls": 8,
+  "usageReportedCalls": 8,
+  "cacheReadTokens": 10688,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 8,
+  "roles": {
+   "main": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 19592,
+    "outputTokens": 1037
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made save_report() crash-safe. | Changed report.py: save_report() now writes the report to a temporary file created via tempfile.mkstemp() in the same directory as the target, then atomically s | The check passed (2 tests OK) after the change; it also passed before the change, so it does not prove the fix."
+}

@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 10,
+ "seconds": 259.876,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1753,
+ "addedLines": 38,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 31,
+  "toolCalls": 29,
+  "inputTokens": 147168,
+  "outputTokens": 13128,
+  "lastInputTokens": 7543,
+  "peakInputTokens": 7543,
+  "modelCalls": 31,
+  "usageReportedCalls": 31,
+  "cacheReadTokens": 129536,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 31,
+  "roles": {
+   "main": {
+    "calls": 31,
+    "reportedInput": 31,
+    "reportedOutput": 31,
+    "inputTokens": 147168,
+    "outputTokens": 13128
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Verification: | - `verify` passed: 2 tests OK (recorded as check 4). | - Manual checks: fresh file gets the umask default mode (0o664 here), an existing 0o640 report keeps 0o640 after rewriting, and with `os.replace` patched to rai | - Note: I deleted two stray files (`l1\\nl2\\n`, `good`) that my own earlier probe commands accidentally created in the repo root by passing arguments in the wron | - Known Windows caveat (unchanged behaviour, not part of the task): `os.replace` fails with PermissionError if another process holds report.txt open; the old re"
+}

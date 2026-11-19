@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "p3f",
+ "rep": 7,
+ "seconds": 8.466,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 720,
+ "addedLines": 11,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 5,
+  "toolCalls": 7,
+  "inputTokens": 17403,
+  "outputTokens": 1232,
+  "lastInputTokens": 4331,
+  "peakInputTokens": 4331,
+  "modelCalls": 5,
+  "usageReportedCalls": 5,
+  "cacheReadTokens": 0,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 5,
+  "roles": {
+   "main": {
+    "calls": 5,
+    "reportedInput": 5,
+    "reportedOutput": 5,
+    "inputTokens": 17403,
+    "outputTokens": 1232
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: Changed feed.py: parse_date() now tries the old \"%Y-%m-%d\" format and then the new \"%d/%m/%Y\" (day first) format, stripping whitespace first, and raises ValueEr"
+}

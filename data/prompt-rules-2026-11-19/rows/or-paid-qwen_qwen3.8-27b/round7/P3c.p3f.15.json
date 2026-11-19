@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "p3f",
+ "rep": 15,
+ "seconds": 10.247,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 503,
+ "addedLines": 7,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 7,
+  "toolCalls": 8,
+  "inputTokens": 18689,
+  "outputTokens": 1719,
+  "lastInputTokens": 3149,
+  "peakInputTokens": 3149,
+  "modelCalls": 7,
+  "usageReportedCalls": 7,
+  "cacheReadTokens": 16640,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 7,
+  "roles": {
+   "main": {
+    "calls": 7,
+    "reportedInput": 7,
+    "reportedOutput": 7,
+    "inputTokens": 18689,
+    "outputTokens": 1719
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: Made `parse_date()` in feed.py accept both the old `YYYY-MM-DD` and the new vendor `DD/MM/YYYY` formats (day-first), so `parse_row()` reads both; unparseable in"
+}

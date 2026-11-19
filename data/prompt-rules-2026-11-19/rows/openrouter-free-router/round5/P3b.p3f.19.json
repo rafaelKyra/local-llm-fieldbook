@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 19,
+ "seconds": 26.216,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 609,
+ "addedLines": 22,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 6,
+  "toolCalls": 6,
+  "inputTokens": 14048,
+  "outputTokens": 1518,
+  "lastInputTokens": 3169,
+  "peakInputTokens": 3169,
+  "modelCalls": 6,
+  "usageReportedCalls": 6,
+  "cacheReadTokens": 5888,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 6,
+  "roles": {
+   "main": {
+    "calls": 6,
+    "reportedInput": 6,
+    "reportedOutput": 6,
+    "inputTokens": 14048,
+    "outputTokens": 1518
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made `save_report()` crash-safe by writing atomically: it now writes the report to a temporary file in the same directory, flushes and fsyncs it, then moves it  | File changed: `report.py`. | Check: the existing test suite passes (check 2). Note: the pre-existing tests don't cover crash safety, so passing them confirms no regression but doesn't prove"
+}

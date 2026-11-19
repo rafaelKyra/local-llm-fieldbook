@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 5,
+ "seconds": 18.138,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 663,
+ "addedLines": 10,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 7,
+  "toolCalls": 7,
+  "inputTokens": 17972,
+  "outputTokens": 1121,
+  "lastInputTokens": 3117,
+  "peakInputTokens": 3117,
+  "modelCalls": 7,
+  "usageReportedCalls": 7,
+  "cacheReadTokens": 15232,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 7,
+  "roles": {
+   "main": {
+    "calls": 7,
+    "reportedInput": 7,
+    "reportedOutput": 7,
+    "inputTokens": 17972,
+    "outputTokens": 1121
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: **Change:** `save_report()` now writes to a temporary file first (via `tempfile.mkstemp` in the same directory), then atomically renames it to the target path u | This makes the write crash-safe because: | - On POSIX and Windows, `os.replace()` is atomic when source and destination are on the same filesystem | - If the process dies mid-write, the original `report.txt` remains untouched (or doesn't exist yet for the first run) | - The next job will never read a truncated or corrupted file"
+}

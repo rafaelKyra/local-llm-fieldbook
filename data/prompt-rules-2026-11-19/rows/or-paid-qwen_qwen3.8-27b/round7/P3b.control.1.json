@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 1,
+ "seconds": 22.327,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 769,
+ "addedLines": 19,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 7,
+  "toolCalls": 8,
+  "inputTokens": 20105,
+  "outputTokens": 2748,
+  "lastInputTokens": 3940,
+  "peakInputTokens": 3940,
+  "modelCalls": 7,
+  "usageReportedCalls": 7,
+  "cacheReadTokens": 8000,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 7,
+  "roles": {
+   "main": {
+    "calls": 7,
+    "reportedInput": 7,
+    "reportedOutput": 7,
+    "inputTokens": 20105,
+    "outputTokens": 2748
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made save_report() in report.py crash-safe: it now writes to a tempfile.mkstemp file in the same directory, flushes + os.fsyncs it, then atomically os.replace() | Verification: | - The fixed check (verify, no args) passes on the current files — but note it also passed before any change (recorded as check 1), so it does not by itself prov | - I additionally simulated a crash mid-write (write() raising OSError): the existing report was left intact, no temp files were left behind, and normal write/ov"
+}

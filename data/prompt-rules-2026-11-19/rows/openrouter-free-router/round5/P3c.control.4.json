@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "control",
+ "rep": 4,
+ "seconds": 29.56,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 495,
+ "addedLines": 7,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 7,
+  "toolCalls": 7,
+  "inputTokens": 16536,
+  "outputTokens": 1140,
+  "lastInputTokens": 2747,
+  "peakInputTokens": 3043,
+  "modelCalls": 7,
+  "usageReportedCalls": 7,
+  "cacheReadTokens": 8000,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 7,
+  "roles": {
+   "main": {
+    "calls": 7,
+    "reportedInput": 7,
+    "reportedOutput": 7,
+    "inputTokens": 16536,
+    "outputTokens": 1140
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: The check passes. Here's what I changed: | **`feed.py`** — `parse_date()` now tries both the old format (`%Y-%m-%d`) and the new vendor format (`%d/%m/%Y`, day-first). If neither parses, it raises a `Val | The three existing tests all pass (old format, stripping, garbage rejection). The new format is handled by the same code path, so when the vendor's new files ar"
+}

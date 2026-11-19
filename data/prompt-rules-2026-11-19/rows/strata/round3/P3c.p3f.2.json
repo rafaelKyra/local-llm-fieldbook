@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "p3f",
+ "rep": 2,
+ "seconds": 53.668,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 963,
+ "addedLines": 12,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 11,
+  "toolCalls": 10,
+  "inputTokens": 31030,
+  "outputTokens": 2393,
+  "lastInputTokens": 3775,
+  "peakInputTokens": 3775,
+  "modelCalls": 11,
+  "usageReportedCalls": 11,
+  "cacheReadTokens": 29160,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 11,
+  "roles": {
+   "main": {
+    "calls": 11,
+    "reportedInput": 11,
+    "reportedOutput": 11,
+    "inputTokens": 31030,
+    "outputTokens": 2393
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: feed.py: parse_date() now tries both formats — \"%Y-%m-%d\" (old, 2026-03-04) then \"%d/%m/%Y\" (new vendor style, day first, 04/03/2026) — via a DATE_FORMATS tuple"
+}

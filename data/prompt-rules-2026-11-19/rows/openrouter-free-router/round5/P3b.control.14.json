@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 14,
+ "seconds": 81.627,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1045,
+ "addedLines": 50,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 24,
+  "toolCalls": 22,
+  "inputTokens": 93661,
+  "outputTokens": 4277,
+  "lastInputTokens": 6457,
+  "peakInputTokens": 6457,
+  "modelCalls": 24,
+  "usageReportedCalls": 24,
+  "cacheReadTokens": 42880,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 24,
+  "roles": {
+   "main": {
+    "calls": 24,
+    "reportedInput": 24,
+    "reportedOutput": 24,
+    "inputTokens": 93661,
+    "outputTokens": 4277
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: 2. Flush and `fsync` the temp file so data is durable. | 3. Atomically move the temp file over the target with `os.replace()` (atomic on both POSIX and Windows on the same volume). | 4. Best-effort `fsync` of the directory so the rename itself is durable. | This guarantees that a crash at any point during the write leaves either the previous complete report or the new complete report — never a truncated/garbage fil | The existing test suite (2 tests) passes, and the official check passes. Note: the check also passed before any change, so it does not by itself prove the fix; "
+}

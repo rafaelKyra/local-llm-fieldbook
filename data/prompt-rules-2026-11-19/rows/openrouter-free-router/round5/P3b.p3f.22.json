@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 22,
+ "seconds": 73.141,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 614,
+ "addedLines": 24,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 8,
+  "toolCalls": 10,
+  "inputTokens": 23022,
+  "outputTokens": 2196,
+  "lastInputTokens": 3902,
+  "peakInputTokens": 3902,
+  "modelCalls": 8,
+  "usageReportedCalls": 8,
+  "cacheReadTokens": 7360,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 8,
+  "roles": {
+   "main": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 23022,
+    "outputTokens": 2196
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: - Preserves the original file's permissions (or defaults to 0o644 for new files) | - Flushes and `os.fsync()`s the temp file before renaming | - Atomically replaces the target with `os.replace()` (works on both Linux and Windows) | - Cleans up the temp file on any exception | The existing test suite passes (2 tests). Manual verification confirms: a simulated crash mid-write leaves the old report intact with no leftover temp files, an"
+}

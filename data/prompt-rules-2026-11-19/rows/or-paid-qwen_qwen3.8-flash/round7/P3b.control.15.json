@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 15,
+ "seconds": 132.969,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1831,
+ "addedLines": 73,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 23,
+  "toolCalls": 24,
+  "inputTokens": 129592,
+  "outputTokens": 10205,
+  "lastInputTokens": 8853,
+  "peakInputTokens": 8853,
+  "modelCalls": 23,
+  "usageReportedCalls": 23,
+  "cacheReadTokens": 112384,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 23,
+  "roles": {
+   "main": {
+    "calls": 23,
+    "reportedInput": 23,
+    "reportedOutput": 23,
+    "inputTokens": 129592,
+    "outputTokens": 10205
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: - `os.replace` rather than `os.rename`, because `os.rename` raises when the destination already exists on Windows — the production platform. | - On failure (any `BaseException`, including `KeyboardInterrupt`/`SystemExit` mid-write) the descriptor is closed and the temp file removed, so the existing rep | - After the replace, the directory entry is fsynced best-effort (`_sync_directory`); it is silently skipped where opening a directory is not permitted, which is | - `_target_mode()` preserves the file permissions: `mkstemp` creates 0600, so without this the nightly report would have lost the mode it already had (or the um | Check: `verify` passes (2 tests, OK) — but it also passed before any change, so the suite alone does not prove the fix. To actually verify crash safety I ran a "
+}

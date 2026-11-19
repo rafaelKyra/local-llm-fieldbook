@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "control",
+ "rep": 16,
+ "seconds": 16.602,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 773,
+ "addedLines": 8,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 8,
+  "toolCalls": 10,
+  "inputTokens": 19287,
+  "outputTokens": 2370,
+  "lastInputTokens": 3130,
+  "peakInputTokens": 3130,
+  "modelCalls": 8,
+  "usageReportedCalls": 8,
+  "cacheReadTokens": 16064,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 8,
+  "roles": {
+   "main": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 19287,
+    "outputTokens": 2370
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: Done. Summary: | **What changed** — `feed.py` only. `parse_date()` now tries both date formats in order (`%Y-%m-%d` old style, then `%d/%m/%Y` new day-first style) and raises a  | **Check** — the fixed `verify` (3 tests) passes. Note: it also passed *before* the change, so it doesn't prove the new behavior by itself. I confirmed the gap d"
+}

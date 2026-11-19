@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 2,
+ "seconds": 24.176,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 2341,
+ "addedLines": 68,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 21,
+  "toolCalls": 21,
+  "inputTokens": 122724,
+  "outputTokens": 8742,
+  "lastInputTokens": 9167,
+  "peakInputTokens": 9167,
+  "modelCalls": 21,
+  "usageReportedCalls": 21,
+  "cacheReadTokens": 107776,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 21,
+  "roles": {
+   "main": {
+    "calls": 21,
+    "reportedInput": 21,
+    "reportedOutput": 21,
+    "inputTokens": 122724,
+    "outputTokens": 8742
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: To actually prove the property I wrote a temporary scratch suite (since removed) that injected failures at each stage. It showed: | - The **original** implementation, killed mid-write, left `report.txt` containing `'NEW'` — truncated garbage, exactly the reported bug. | - The **new** implementation, killed mid-write, during `fsync`, or during `replace`, left `report.txt` as `'OLD REPORT'` with no temp files leaked. | - Happy path, new-file creation, unicode round-trip, permission preservation (0o640 kept), and the locked-destination retry (succeeded on the 3rd attempt) all p | All 8 scratch tests passed against the final `report.py`; the scratch files were deleted, leaving only `report.py` and `test_report.py`."
+}

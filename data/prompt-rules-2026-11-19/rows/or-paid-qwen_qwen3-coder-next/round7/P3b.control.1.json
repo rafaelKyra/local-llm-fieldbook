@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 1,
+ "seconds": 166,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 395,
+ "addedLines": 13,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 13,
+  "toolCalls": 11,
+  "inputTokens": 38993,
+  "outputTokens": 775,
+  "lastInputTokens": 3851,
+  "peakInputTokens": 3851,
+  "modelCalls": 13,
+  "usageReportedCalls": 13,
+  "cacheReadTokens": 32256,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 13,
+  "roles": {
+   "main": {
+    "calls": 13,
+    "reportedInput": 13,
+    "reportedOutput": 13,
+    "inputTokens": 38993,
+    "outputTokens": 775
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Done. Modified `save_report()` in `report.py` to write crash-safely by: | 1. Writing to a temporary file first using `tempfile.mkstemp()` | 2. Renaming the temp file to the target path atomically with `os.rename()` | 3. Cleaning up the temp file on error | This ensures that if the process crashes mid-write, the existing report file remains intact. All tests pass and verify confirms the check passes."
+}

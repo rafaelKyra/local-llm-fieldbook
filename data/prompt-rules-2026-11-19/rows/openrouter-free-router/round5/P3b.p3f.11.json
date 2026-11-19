@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 11,
+ "seconds": 42.923,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 578,
+ "addedLines": 18,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 10,
+  "toolCalls": 9,
+  "inputTokens": 24000,
+  "outputTokens": 1656,
+  "lastInputTokens": 3683,
+  "peakInputTokens": 3683,
+  "modelCalls": 10,
+  "usageReportedCalls": 10,
+  "cacheReadTokens": 6784,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 10,
+  "roles": {
+   "main": {
+    "calls": 10,
+    "reportedInput": 10,
+    "reportedOutput": 10,
+    "inputTokens": 24000,
+    "outputTokens": 1656
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: - Writes to a temporary file (via `tempfile.mkstemp` in the same directory) instead of opening the target directly. | - After writing, calls `fh.flush()` and `os.fsync()` to force the data to disk before replacing the original. | - Uses `os.replace()` to atomically swap the temp file into place — on Linux this is a rename that is crash-safe. | - On any exception, removes the temporary file so a crashed run never leaves a truncated/partial report. | The existing test suite (`test_report.py`) passes unchanged."
+}

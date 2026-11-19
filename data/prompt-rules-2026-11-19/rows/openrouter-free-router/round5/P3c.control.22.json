@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "control",
+ "rep": 22,
+ "seconds": 46.672,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 184,
+ "addedLines": 7,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 12,
+  "toolCalls": 10,
+  "inputTokens": 32764,
+  "outputTokens": 1170,
+  "lastInputTokens": 2226,
+  "peakInputTokens": 3970,
+  "modelCalls": 12,
+  "usageReportedCalls": 12,
+  "cacheReadTokens": 11008,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 12,
+  "roles": {
+   "main": {
+    "calls": 12,
+    "reportedInput": 12,
+    "reportedOutput": 12,
+    "inputTokens": 32764,
+    "outputTokens": 1170
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: Updated `parse_date()` in `feed.py` to accept both the old ISO format (`%Y-%m-%d`) and the new day-first format (`%d/%m/%Y`) by trying each format in turn. The "
+}

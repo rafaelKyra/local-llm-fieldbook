@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "control",
+ "rep": 14,
+ "seconds": 43.738,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 155,
+ "addedLines": 11,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 12,
+  "toolCalls": 10,
+  "inputTokens": 31582,
+  "outputTokens": 2072,
+  "lastInputTokens": 2990,
+  "peakInputTokens": 3536,
+  "modelCalls": 12,
+  "usageReportedCalls": 12,
+  "cacheReadTokens": 13504,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 12,
+  "roles": {
+   "main": {
+    "calls": 12,
+    "reportedInput": 12,
+    "reportedOutput": 12,
+    "inputTokens": 31582,
+    "outputTokens": 2072
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: Updated parse_date() in feed.py to accept both the old ISO format (YYYY-MM-DD) and the new vendor format (DD/MM/YYYY). The check suite passes (3 tests OK)."
+}

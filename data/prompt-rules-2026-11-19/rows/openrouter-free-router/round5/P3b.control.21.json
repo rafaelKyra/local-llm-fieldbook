@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 21,
+ "seconds": 78.157,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 680,
+ "addedLines": 42,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 23,
+  "toolCalls": 17,
+  "inputTokens": 85066,
+  "outputTokens": 3118,
+  "lastInputTokens": 5349,
+  "peakInputTokens": 5392,
+  "modelCalls": 23,
+  "usageReportedCalls": 23,
+  "cacheReadTokens": 40032,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 23,
+  "roles": {
+   "main": {
+    "calls": 23,
+    "reportedInput": 23,
+    "reportedOutput": 23,
+    "inputTokens": 85066,
+    "outputTokens": 3118
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made save_report() crash-safe by writing to a temporary file in the same directory, flushing and fsyncing it, then atomically moving it over the destination wit"
+}

@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 11,
+ "seconds": 117.944,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1801,
+ "addedLines": 50,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 14,
+  "toolCalls": 12,
+  "inputTokens": 52770,
+  "outputTokens": 6235,
+  "lastInputTokens": 5616,
+  "peakInputTokens": 5616,
+  "modelCalls": 14,
+  "usageReportedCalls": 14,
+  "cacheReadTokens": 43264,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 14,
+  "roles": {
+   "main": {
+    "calls": 14,
+    "reportedInput": 14,
+    "reportedOutput": 14,
+    "inputTokens": 52770,
+    "outputTokens": 6235
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: - Publication is a single atomic `os.replace(tmp_path, path)`. `os.replace` (not `os.rename`) is used because the job runs on a Windows file server, where `os.r | - Best-effort directory `fsync` after the rename (skipped silently where unsupported, e.g. Windows/NTFS, where the rename is already journaled). | - On any exception (including `BaseException` such as `KeyboardInterrupt`) the leftover temp file is unlinked and the error is re-raised, so the original report | Behaviour: a crash at any point leaves either the previous report or the new report intact, never a truncated file. | Check results: `verify` passed both before and after my change — it ran 2 existing unittests (`test_writes_text`, `test_replaces_old_text`) with \"Ran 2 tests .."
+}

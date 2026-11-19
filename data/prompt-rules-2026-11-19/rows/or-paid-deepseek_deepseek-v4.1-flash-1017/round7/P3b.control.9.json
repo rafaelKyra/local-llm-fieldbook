@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 9,
+ "seconds": 26.022,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1221,
+ "addedLines": 49,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 8,
+  "toolCalls": 9,
+  "inputTokens": 23867,
+  "outputTokens": 3482,
+  "lastInputTokens": 3896,
+  "peakInputTokens": 3896,
+  "modelCalls": 8,
+  "usageReportedCalls": 8,
+  "cacheReadTokens": 19968,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 8,
+  "roles": {
+   "main": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 23867,
+    "outputTokens": 3482
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Rewrote `save_report()` in `report.py` to be crash-safe. It now writes the text to a temporary file created with `tempfile.mkstemp` in the same directory as the | Verification: `verify` (the fixed check) passes — 2 tests OK. Note it also passed before the change, so it does not by itself prove the fix. I additionally ran "
+}

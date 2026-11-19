@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 15,
+ "seconds": 24.319,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 773,
+ "addedLines": 24,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 8,
+  "toolCalls": 7,
+  "inputTokens": 19187,
+  "outputTokens": 4589,
+  "lastInputTokens": 3266,
+  "peakInputTokens": 3266,
+  "modelCalls": 8,
+  "usageReportedCalls": 8,
+  "cacheReadTokens": 15488,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 8,
+  "roles": {
+   "main": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 19187,
+    "outputTokens": 4589
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Changed save_report() in report.py to write crash-safe: it writes to a tempfile.mkstemp file in the same directory, flushes + os.fsync, then swaps it in with os"
+}

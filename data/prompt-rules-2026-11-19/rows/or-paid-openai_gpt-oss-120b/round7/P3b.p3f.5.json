@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 5,
+ "seconds": 3.753,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 344,
+ "addedLines": 14,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 6,
+  "toolCalls": 5,
+  "inputTokens": 12465,
+  "outputTokens": 729,
+  "lastInputTokens": 1893,
+  "peakInputTokens": 3346,
+  "modelCalls": 6,
+  "usageReportedCalls": 6,
+  "cacheReadTokens": 7760,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 6,
+  "roles": {
+   "main": {
+    "calls": 6,
+    "reportedInput": 6,
+    "reportedOutput": 6,
+    "inputTokens": 12465,
+    "outputTokens": 729
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Implemented crash‑safe report writing in **report.py**. The new `save_report` now writes to a hidden temporary file in the same directory, flushes and syncs the"
+}

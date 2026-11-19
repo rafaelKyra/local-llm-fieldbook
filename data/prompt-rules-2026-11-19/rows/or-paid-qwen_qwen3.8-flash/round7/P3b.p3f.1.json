@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 1,
+ "seconds": 181.657,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 2122,
+ "addedLines": 46,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 20,
+  "toolCalls": 18,
+  "inputTokens": 102676,
+  "outputTokens": 10237,
+  "lastInputTokens": 8203,
+  "peakInputTokens": 8203,
+  "modelCalls": 20,
+  "usageReportedCalls": 20,
+  "cacheReadTokens": 86784,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 20,
+  "roles": {
+   "main": {
+    "calls": 20,
+    "reportedInput": 20,
+    "reportedOutput": 20,
+    "inputTokens": 102676,
+    "outputTokens": 10237
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: 2. Text is written, `flush()`ed and `os.fsync()`ed so the bytes are on disk before the file becomes visible as `report.txt`. | 3. `os.replace()` publishes it — atomic on POSIX, and on Windows maps to `MoveFileEx(..., MOVEFILE_REPLACE_EXISTING)`, atomic on NTFS within a volume. | 4. Any exception (including `KeyboardInterrupt`/system-exit via `BaseException`) closes the descriptor and unlinks the staging file, so the next job never sees  | **Verification.** The fixed check (`verify`) passes — 2 tests, OK — but it also passed before my change, so it does **not** prove anything about crash-safety, a | **Skipped / risks:** nothing was run on Windows, so the atomicity there rests on the documented `MoveFileEx` semantics rather than measurement — worth one run o"
+}

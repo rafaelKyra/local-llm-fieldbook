@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 9,
+ "seconds": 20.273,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 628,
+ "addedLines": 22,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 6,
+  "toolCalls": 8,
+  "inputTokens": 16415,
+  "outputTokens": 4196,
+  "lastInputTokens": 3555,
+  "peakInputTokens": 3555,
+  "modelCalls": 6,
+  "usageReportedCalls": 6,
+  "cacheReadTokens": 14080,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 6,
+  "roles": {
+   "main": {
+    "calls": 6,
+    "reportedInput": 6,
+    "reportedOutput": 6,
+    "inputTokens": 16415,
+    "outputTokens": 4196
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made save_report() in report.py crash-safe: it now writes to a temp file in the same directory (tempfile.mkstemp), flushes and fsyncs it, then moves it over the"
+}

@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "p3",
+ "rep": 20,
+ "seconds": 46.312,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 862,
+ "addedLines": 9,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 11,
+  "toolCalls": 10,
+  "inputTokens": 30989,
+  "outputTokens": 1985,
+  "lastInputTokens": 3638,
+  "peakInputTokens": 3638,
+  "modelCalls": 11,
+  "usageReportedCalls": 11,
+  "cacheReadTokens": 29357,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 11,
+  "roles": {
+   "main": {
+    "calls": 11,
+    "reportedInput": 11,
+    "reportedOutput": 11,
+    "inputTokens": 30989,
+    "outputTokens": 1985
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: Changed `parse_date()` in feed.py to try the old `%Y-%m-%d` format and then the vendor's new day-first `%d/%m/%Y` format, raising ValueError with the offending "
+}

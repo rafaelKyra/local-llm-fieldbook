@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 12,
+ "seconds": 361.647,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 2228,
+ "addedLines": 53,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 39,
+  "toolCalls": 39,
+  "inputTokens": 430914,
+  "outputTokens": 20964,
+  "lastInputTokens": 18044,
+  "peakInputTokens": 18044,
+  "modelCalls": 39,
+  "usageReportedCalls": 39,
+  "cacheReadTokens": 396800,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 39,
+  "roles": {
+   "main": {
+    "calls": 39,
+    "reportedInput": 39,
+    "reportedOutput": 39,
+    "inputTokens": 430914,
+    "outputTokens": 20964
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: - `_preserve_mode()` copies the existing report's mode onto the temp file first: `mkstemp` makes 0600, so a plain replace would have silently locked other reade | - `os.replace()` (not `os.rename`, which raises `FileExistsError` on Windows when the destination exists) publishes it in one atomic step. | - Any exception (`BaseException`, so it covers interrupts too) removes the temp file and re-raises, leaving the previous report untouched; `_sync_directory()` b | **Verification.** `test_report.py` is protected and could not be edited, so the official check is unchanged by me: `verify` passes (2 tests, OK) — **but it also | Note: a hard `os._exit` mid-write can still leave the `.report-*.tmp` file behind (no handler can run); the guarantee is that `report.txt` itself is never damag"
+}

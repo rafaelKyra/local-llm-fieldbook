@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "control",
+ "rep": 12,
+ "seconds": 49.785,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 622,
+ "addedLines": 8,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 10,
+  "toolCalls": 9,
+  "inputTokens": 26713,
+  "outputTokens": 2034,
+  "lastInputTokens": 3893,
+  "peakInputTokens": 3893,
+  "modelCalls": 10,
+  "usageReportedCalls": 10,
+  "cacheReadTokens": 12288,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 10,
+  "roles": {
+   "main": {
+    "calls": 10,
+    "reportedInput": 10,
+    "reportedOutput": 10,
+    "inputTokens": 26713,
+    "outputTokens": 2034
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: Made `parse_date()` in `feed.py` read both date styles. It now tries the old ISO format (`%Y-%m-%d`, e.g. `2026-03-04`) first, then the vendor's new day-first f"
+}

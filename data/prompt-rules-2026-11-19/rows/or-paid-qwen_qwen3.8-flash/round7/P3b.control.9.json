@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 9,
+ "seconds": 82.462,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1845,
+ "addedLines": 63,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 13,
+  "toolCalls": 14,
+  "inputTokens": 51808,
+  "outputTokens": 4093,
+  "lastInputTokens": 5768,
+  "peakInputTokens": 5768,
+  "modelCalls": 13,
+  "usageReportedCalls": 13,
+  "cacheReadTokens": 43776,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 13,
+  "roles": {
+   "main": {
+    "calls": 13,
+    "reportedInput": 13,
+    "reportedOutput": 13,
+    "inputTokens": 51808,
+    "outputTokens": 4093
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: - The parent directory is `fsync`ed afterwards (best-effort; guarded, since Windows has no such support) so the rename itself survives a power cut. | - On any exception (`BaseException`, so `KeyboardInterrupt` counts) the temp file is removed and the error re-raised, leaving the previous `report.txt` untouche | - Permissions of the replaced file are preserved, otherwise the default `0666 & ~umask` is used, so the atomic write does not silently turn the report into `060 | Check results — important caveat: the fixed check (`verify`) **passed before I made any change**, so it does not prove the fix; it only exercises the two pre-ex | To actually demonstrate durability I ran an ad-hoc script (not part of the suite): with `report.txt` holding \"v1\" and `os.fsync` patched to raise mid-write, the"
+}

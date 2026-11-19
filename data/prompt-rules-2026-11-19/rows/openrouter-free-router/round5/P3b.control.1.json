@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 1,
+ "seconds": 23.51,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 92,
+ "addedLines": 17,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 11,
+  "toolCalls": 9,
+  "inputTokens": 29869,
+  "outputTokens": 2131,
+  "lastInputTokens": 3020,
+  "peakInputTokens": 3762,
+  "modelCalls": 11,
+  "usageReportedCalls": 11,
+  "cacheReadTokens": 2304,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 11,
+  "roles": {
+   "main": {
+    "calls": 11,
+    "reportedInput": 11,
+    "reportedOutput": 11,
+    "inputTokens": 29869,
+    "outputTokens": 2131
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made save_report() crash-safe via atomic temp-file write + os.replace. Tests pass (check 3)."
+}

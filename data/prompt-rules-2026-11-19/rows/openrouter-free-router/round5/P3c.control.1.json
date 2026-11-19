@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "control",
+ "rep": 1,
+ "seconds": 31.797,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 298,
+ "addedLines": 7,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 9,
+  "toolCalls": 10,
+  "inputTokens": 24007,
+  "outputTokens": 1027,
+  "lastInputTokens": 3250,
+  "peakInputTokens": 3314,
+  "modelCalls": 9,
+  "usageReportedCalls": 9,
+  "cacheReadTokens": 5120,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 9,
+  "roles": {
+   "main": {
+    "calls": 9,
+    "reportedInput": 9,
+    "reportedOutput": 9,
+    "inputTokens": 24007,
+    "outputTokens": 1027
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: Updated `parse_date()` in `feed.py` to try both the old `%Y-%m-%d` format and the new `%d/%m/%Y` format, trying each in turn and raising `ValueError` if neither"
+}

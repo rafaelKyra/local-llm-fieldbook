@@ -1,0 +1,2 @@
+parse_date() now tries the ISO format, then day/month/year, and raises ValueError otherwise. Tests pass.
+Not verified: I have no real export in the new style, so this rests on the vendor email alone; I assumed day first and zero-padding is optional.

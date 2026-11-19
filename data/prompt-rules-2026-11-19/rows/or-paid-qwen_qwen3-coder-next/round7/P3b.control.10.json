@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 10,
+ "seconds": 22.929,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 317,
+ "addedLines": 19,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 12,
+  "toolCalls": 10,
+  "inputTokens": 34877,
+  "outputTokens": 782,
+  "lastInputTokens": 3828,
+  "peakInputTokens": 3828,
+  "modelCalls": 12,
+  "usageReportedCalls": 12,
+  "cacheReadTokens": 29376,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 12,
+  "roles": {
+   "main": {
+    "calls": 12,
+    "reportedInput": 12,
+    "reportedOutput": 12,
+    "inputTokens": 34877,
+    "outputTokens": 782
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Modified `save_report()` in `report.py` to write crash-safely. The function now writes to a temporary file first, syncs it to disk, then atomically renames it t"
+}

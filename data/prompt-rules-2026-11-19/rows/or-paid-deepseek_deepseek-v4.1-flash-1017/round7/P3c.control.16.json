@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "control",
+ "rep": 16,
+ "seconds": 18.981,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 747,
+ "addedLines": 8,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 10,
+  "toolCalls": 9,
+  "inputTokens": 26568,
+  "outputTokens": 5314,
+  "lastInputTokens": 3277,
+  "peakInputTokens": 3277,
+  "modelCalls": 10,
+  "usageReportedCalls": 10,
+  "cacheReadTokens": 23552,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 10,
+  "roles": {
+   "main": {
+    "calls": 10,
+    "reportedInput": 10,
+    "reportedOutput": 10,
+    "inputTokens": 26568,
+    "outputTokens": 5314
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: Changed `parse_date()` in `feed.py` to try a list of formats (`%Y-%m-%d` then `%d/%m/%Y`) and raise `ValueError` if none match, so `parse_row()` now reads both  | Check: `verify` passed (3 tests, OK) — but note it also passed before the change, so it does not by itself prove the new format works. I additionally ran the co"
+}

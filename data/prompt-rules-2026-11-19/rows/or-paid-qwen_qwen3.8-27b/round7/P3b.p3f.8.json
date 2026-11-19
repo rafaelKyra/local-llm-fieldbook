@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 8,
+ "seconds": 13.295,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 613,
+ "addedLines": 22,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 9,
+  "toolCalls": 10,
+  "inputTokens": 27534,
+  "outputTokens": 2369,
+  "lastInputTokens": 4094,
+  "peakInputTokens": 4094,
+  "modelCalls": 9,
+  "usageReportedCalls": 9,
+  "cacheReadTokens": 24832,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 9,
+  "roles": {
+   "main": {
+    "calls": 9,
+    "reportedInput": 9,
+    "reportedOutput": 9,
+    "inputTokens": 27534,
+    "outputTokens": 2369
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made `save_report()` in `report.py` crash-safe: it now writes to a temp file in the same directory (`tempfile.mkstemp`), flushes and `os.fsync`s it, then atomic"
+}

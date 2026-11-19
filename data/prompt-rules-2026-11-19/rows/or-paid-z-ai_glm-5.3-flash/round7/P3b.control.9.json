@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 9,
+ "seconds": 46.652,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 606,
+ "addedLines": 26,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 16,
+  "toolCalls": 15,
+  "inputTokens": 48366,
+  "outputTokens": 7216,
+  "lastInputTokens": 4561,
+  "peakInputTokens": 4561,
+  "modelCalls": 16,
+  "usageReportedCalls": 16,
+  "cacheReadTokens": 42688,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 16,
+  "roles": {
+   "main": {
+    "calls": 16,
+    "reportedInput": 16,
+    "reportedOutput": 16,
+    "inputTokens": 48366,
+    "outputTokens": 7216
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made save_report() in report.py crash-safe: it now writes to a temp file in the same directory (tempfile.mkstemp), flushes and fsyncs, then atomically renames w"
+}

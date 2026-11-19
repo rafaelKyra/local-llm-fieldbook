@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "control",
+ "rep": 11,
+ "seconds": 68.959,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1256,
+ "addedLines": 15,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 9,
+  "toolCalls": 14,
+  "inputTokens": 29892,
+  "outputTokens": 3838,
+  "lastInputTokens": 4682,
+  "peakInputTokens": 4682,
+  "modelCalls": 9,
+  "usageReportedCalls": 9,
+  "cacheReadTokens": 23296,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 9,
+  "roles": {
+   "main": {
+    "calls": 9,
+    "reportedInput": 9,
+    "reportedOutput": 9,
+    "inputTokens": 29892,
+    "outputTokens": 3838
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: Changed `parse_date()` in `feed.py` so `parse_row()` reads both vendor date styles: it now tries each format in a new module-level `DATE_FORMATS = (\"%Y-%m-%d\",  | No test files were modified. The fixed check (`verify`) passed both before my edit (recorded as check 1) and after it (check 2, 3 tests OK) — so the suite resul"
+}

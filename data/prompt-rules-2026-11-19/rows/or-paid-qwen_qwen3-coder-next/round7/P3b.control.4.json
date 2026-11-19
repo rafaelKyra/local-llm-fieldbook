@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 4,
+ "seconds": 28.643,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 299,
+ "addedLines": 14,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 18,
+  "toolCalls": 17,
+  "inputTokens": 58362,
+  "outputTokens": 994,
+  "lastInputTokens": 4419,
+  "peakInputTokens": 4419,
+  "modelCalls": 18,
+  "usageReportedCalls": 18,
+  "cacheReadTokens": 50688,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 18,
+  "roles": {
+   "main": {
+    "calls": 18,
+    "reportedInput": 18,
+    "reportedOutput": 18,
+    "inputTokens": 58362,
+    "outputTokens": 994
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Modified `save_report()` in `report.py` to write crash-safely by using atomic write: writes to a temporary file first, then uses `os.replace()` to atomically mo"
+}

@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "control",
+ "rep": 19,
+ "seconds": 41.386,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 735,
+ "addedLines": 7,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 13,
+  "toolCalls": 13,
+  "inputTokens": 36575,
+  "outputTokens": 1108,
+  "lastInputTokens": 3120,
+  "peakInputTokens": 3725,
+  "modelCalls": 13,
+  "usageReportedCalls": 13,
+  "cacheReadTokens": 12224,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 13,
+  "roles": {
+   "main": {
+    "calls": 13,
+    "reportedInput": 13,
+    "reportedOutput": 13,
+    "inputTokens": 36575,
+    "outputTokens": 1108
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: `parse_row(\"04/03/2026,10.5\")` correctly yields `(datetime.date(2026, 3, 4), 10.5)`, while old-style rows continue to work as before. | Verification results: | - `python3 -m unittest test_feed.py -v` → **Ran 3 tests, OK** | - `verify` (the project check) → **CHECK PASSED** | Files changed: only `feed.py`."
+}

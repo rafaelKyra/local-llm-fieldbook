@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 16,
+ "seconds": 124.899,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1783,
+ "addedLines": 41,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 17,
+  "toolCalls": 17,
+  "inputTokens": 83740,
+  "outputTokens": 10568,
+  "lastInputTokens": 6773,
+  "peakInputTokens": 6773,
+  "modelCalls": 17,
+  "usageReportedCalls": 17,
+  "cacheReadTokens": 70912,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 17,
+  "roles": {
+   "main": {
+    "calls": 17,
+    "reportedInput": 17,
+    "reportedOutput": 17,
+    "inputTokens": 83740,
+    "outputTokens": 10568
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: - On any exception (`BaseException`) the scratch file is removed and the error re-raised, so no junk files accumulate next to `report.txt`. | - Best-effort directory fsync after the rename, wrapped in `try/except OSError` so it is a silent no-op on Windows, where a directory cannot be fsynced. | - `os.path.abspath()` is used to derive the directory so relative paths (how the nightly job calls it) still work. | `test_report.py` is protected and could not be modified, so the suite is unchanged. Note: the fixed check (`verify`) ran the 2 existing tests and **it passed be | To actually prove the behaviour I wrote a temporary script that mocked `os.replace`/`os.fsync` and asserted: the destination still holds the old report up to th"
+}

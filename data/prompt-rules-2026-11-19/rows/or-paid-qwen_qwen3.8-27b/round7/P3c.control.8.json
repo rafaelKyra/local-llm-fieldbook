@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "control",
+ "rep": 8,
+ "seconds": 23.595,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 518,
+ "addedLines": 7,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 6,
+  "toolCalls": 8,
+  "inputTokens": 15660,
+  "outputTokens": 2376,
+  "lastInputTokens": 3200,
+  "peakInputTokens": 3200,
+  "modelCalls": 6,
+  "usageReportedCalls": 6,
+  "cacheReadTokens": 11008,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 6,
+  "roles": {
+   "main": {
+    "calls": 6,
+    "reportedInput": 6,
+    "reportedOutput": 6,
+    "inputTokens": 15660,
+    "outputTokens": 2376
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: Updated parse_date() in feed.py to accept both the old `YYYY-MM-DD` and the new vendor `DD/MM/YYYY` formats (try each, raise ValueError if neither matches); par"
+}

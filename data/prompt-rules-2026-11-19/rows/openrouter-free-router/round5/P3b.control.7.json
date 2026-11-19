@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 7,
+ "seconds": 17.833,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 958,
+ "addedLines": 3,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 8,
+  "toolCalls": 7,
+  "inputTokens": 18706,
+  "outputTokens": 1110,
+  "lastInputTokens": 2509,
+  "peakInputTokens": 2774,
+  "modelCalls": 8,
+  "usageReportedCalls": 8,
+  "cacheReadTokens": 8768,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 8,
+  "roles": {
+   "main": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 18706,
+    "outputTokens": 1110
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: - The original `path` is never touched until the final `os.replace`, so a crash during the write leaves the existing report intact. | - `os.replace` makes the move atomic on POSIX and works correctly on Windows (the temp file is fully written before the rename). | Verified: | - `test_report.py` suite passes (`Ran 2 tests ... OK`). | - The check command `python -m unittest test_report -v` reports **PASSED**."
+}

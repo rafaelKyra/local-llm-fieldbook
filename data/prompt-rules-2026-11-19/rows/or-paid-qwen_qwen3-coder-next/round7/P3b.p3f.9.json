@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 9,
+ "seconds": 43.505,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 540,
+ "addedLines": 23,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 15,
+  "toolCalls": 12,
+  "inputTokens": 59268,
+  "outputTokens": 2332,
+  "lastInputTokens": 5636,
+  "peakInputTokens": 5636,
+  "modelCalls": 15,
+  "usageReportedCalls": 15,
+  "cacheReadTokens": 50112,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 15,
+  "roles": {
+   "main": {
+    "calls": 15,
+    "reportedInput": 15,
+    "reportedOutput": 15,
+    "inputTokens": 59268,
+    "outputTokens": 2332
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: 1. Writes to a temporary file first using `tempfile.mkstemp()` | 2. Flushes and syncs the data to disk with `os.fsync()` | 3. Atomically renames the temp file to the target path using `os.replace()` | 4. Cleans up the temp file on any error | This ensures that if the process crashes during writing, the existing report file remains intact and uncorrupted. The existing test suite passes without modific"
+}

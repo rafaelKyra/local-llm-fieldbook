@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 12,
+ "seconds": 63.683,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1680,
+ "addedLines": 27,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 20,
+  "toolCalls": 17,
+  "inputTokens": 92301,
+  "outputTokens": 11877,
+  "lastInputTokens": 7462,
+  "peakInputTokens": 7462,
+  "modelCalls": 20,
+  "usageReportedCalls": 20,
+  "cacheReadTokens": 84224,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 20,
+  "roles": {
+   "main": {
+    "calls": 20,
+    "reportedInput": 20,
+    "reportedOutput": 20,
+    "inputTokens": 92301,
+    "outputTokens": 11877
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made `save_report()` in `report.py` crash-safe. It now writes the new report to a `tempfile.mkstemp` file in the same directory as the target, flushes and `os.f | Verification: `verify` (the fixed check) passes — 2 tests, OK. Note that this check also passed before my change, so it does not by itself prove the fix. To pro | I could not add a permanent regression test: new test files are protected, and writing outside the repo was refused, so the crash repro exists only as the inlin"
+}

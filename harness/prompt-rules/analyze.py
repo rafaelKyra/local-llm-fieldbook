@@ -4,6 +4,7 @@
 Reads rows/<model>/<round>/<kit>.<arm>.<rep>.json (one agent run each, written by kitrun.mjs) and
 bench/<model>/<round>/bench-<arm>-r<N>.summary.json (one full pass of the 38-task bench).
 Writes analysis.json, which prompt_rules_section.py renders; nothing on the page is typed by hand except framing text.
+Runs whose status is "interrupted" (cut off by an endpoint limit) are left out and listed under excluded_not_completed.
 Standard library only.
 """
 import glob, json, os, sys
@@ -40,9 +41,13 @@ def mean(xs):
 
 
 kits = {}
+excluded = {}
 for f in sorted(glob.glob(str(DATA / "rows" / "*" / "*" / "*.json"))):
     model, rnd = f.split(os.sep)[-3:-1]
     r = json.load(open(f, encoding="utf-8"))
+    if r.get("status") == "interrupted":  # a run cut off by an endpoint limit never finished: not a failure, not counted (CORRECTIONS 11). "unverified" = the agent finished without a passing check: a real run, counted
+        excluded[(model, rnd)] = excluded.get((model, rnd), 0) + 1
+        continue
     kits.setdefault((model, rnd, r["kit"], r["arm"]), []).append(r)
 
 kit_rows = []
@@ -90,7 +95,7 @@ bench_rows = []
 for (model, rnd, arm), a in sorted(bench.items()):
     bench_rows.append({"model": model, "round": rnd, "arm": arm, **a, "rate": round(a["solved"] / a["tasks"], 3), "solved_ci95": wilson(a["solved"], a["tasks"])})
 
-out = {"kit_rows": kit_rows, "comparisons": comparisons, "bench": bench_rows,
+out = {"excluded_not_completed": {f"{m}/{r}": n for (m, r), n in sorted(excluded.items())}, "kit_rows": kit_rows, "comparisons": comparisons, "bench": bench_rows,
        "note": "behaviour counts runs that were solved AND showed the behaviour; fisher_p is two-sided on behaviour counts of all runs vs control; no multiple-comparison correction."}
 (DATA / "analysis.json").write_text(json.dumps(out, indent=1), encoding="utf-8")
 print(f"{len(kit_rows)} kit cells, {len(comparisons)} comparisons, {len(bench_rows)} bench cells -> {DATA / 'analysis.json'}")

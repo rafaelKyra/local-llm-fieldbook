@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "p3f",
+ "rep": 13,
+ "seconds": 36.849,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1011,
+ "addedLines": 10,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 13,
+  "toolCalls": 12,
+  "inputTokens": 38596,
+  "outputTokens": 3266,
+  "lastInputTokens": 3847,
+  "peakInputTokens": 3847,
+  "modelCalls": 13,
+  "usageReportedCalls": 13,
+  "cacheReadTokens": 30720,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 13,
+  "roles": {
+   "main": {
+    "calls": 13,
+    "reportedInput": 13,
+    "reportedOutput": 13,
+    "inputTokens": 38596,
+    "outputTokens": 3266
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: parse_date() in feed.py now accepts both the old ISO format and the new day-first format: it strips the text, tries `%Y-%m-%d` (old files keep arriving) then `%"
+}

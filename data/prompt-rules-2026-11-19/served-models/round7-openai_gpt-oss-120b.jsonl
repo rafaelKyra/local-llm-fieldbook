@@ -1,0 +1,491 @@
+{"t":1795073878900,"ms":689,"status":200,"model":"openai/gpt-oss-120b","provider":"Crusoe","pt":1236,"ct":35,"err":null}
+{"t":1795073879751,"ms":700,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1392,"ct":51,"err":null}
+{"t":1795073880462,"ms":276,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1426,"ct":57,"err":null}
+{"t":1795073880748,"ms":1332,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1508,"ct":464,"err":null}
+{"t":1795073882094,"ms":392,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1845,"ct":53,"err":null}
+{"t":1795073882645,"ms":1605,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":2335,"ct":639,"err":null}
+{"t":1795073884256,"ms":398,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":2892,"ct":57,"err":null}
+{"t":1795073884793,"ms":577,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":2978,"ct":81,"err":null}
+{"t":1795073885900,"ms":463,"status":200,"model":"openai/gpt-oss-120b","provider":"Crusoe","pt":1268,"ct":37,"err":null}
+{"t":1795073886529,"ms":496,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1425,"ct":51,"err":null}
+{"t":1795073887035,"ms":307,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1459,"ct":54,"err":null}
+{"t":1795073887350,"ms":708,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1541,"ct":215,"err":null}
+{"t":1795073888064,"ms":1602,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1779,"ct":470,"err":null}
+{"t":1795073889677,"ms":359,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":2093,"ct":58,"err":null}
+{"t":1795073890043,"ms":343,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":2142,"ct":92,"err":null}
+{"t":1795073890393,"ms":380,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":2257,"ct":32,"err":null}
+{"t":1795073890916,"ms":654,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":2341,"ct":86,"err":null}
+{"t":1795073891580,"ms":1115,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":2638,"ct":271,"err":null}
+{"t":1795073892712,"ms":778,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":2716,"ct":235,"err":null}
+{"t":1795073894016,"ms":1786,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1245,"ct":33,"err":null}
+{"t":1795073895965,"ms":1273,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1336,"ct":49,"err":null}
+{"t":1795073897253,"ms":1249,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1380,"ct":52,"err":null}
+{"t":1795073898511,"ms":1081,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1533,"ct":72,"err":null}
+{"t":1795073899602,"ms":2753,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1799,"ct":323,"err":null}
+{"t":1795073902366,"ms":879,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":2032,"ct":27,"err":null}
+{"t":1795073903412,"ms":1885,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":2130,"ct":231,"err":null}
+{"t":1795073905810,"ms":637,"status":200,"model":"openai/gpt-oss-120b","provider":"AkashML","pt":1280,"ct":29,"err":null}
+{"t":1795073906618,"ms":1020,"status":200,"model":"openai/gpt-oss-120b","provider":"Crusoe","pt":1357,"ct":47,"err":null}
+{"t":1795073907649,"ms":1109,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1408,"ct":52,"err":null}
+{"t":1795073908766,"ms":1060,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1561,"ct":72,"err":null}
+{"t":1795073909834,"ms":2454,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1827,"ct":398,"err":null}
+{"t":1795073912300,"ms":807,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":2043,"ct":33,"err":null}
+{"t":1795073913257,"ms":2235,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":2137,"ct":295,"err":null}
+{"t":1795073916028,"ms":344,"status":200,"model":"openai/gpt-oss-120b","provider":"Crusoe","pt":1268,"ct":35,"err":null}
+{"t":1795073916531,"ms":510,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1424,"ct":54,"err":null}
+{"t":1795073917054,"ms":314,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1458,"ct":54,"err":null}
+{"t":1795073917375,"ms":1056,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1540,"ct":320,"err":null}
+{"t":1795073918444,"ms":277,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1744,"ct":62,"err":null}
+{"t":1795073918863,"ms":334,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1827,"ct":76,"err":null}
+{"t":1795073919206,"ms":858,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":2065,"ct":242,"err":null}
+{"t":1795073920595,"ms":487,"status":200,"model":"openai/gpt-oss-120b","provider":"Crusoe","pt":1236,"ct":35,"err":null}
+{"t":1795073921251,"ms":267,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1392,"ct":51,"err":null}
+{"t":1795073921528,"ms":345,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1426,"ct":54,"err":null}
+{"t":1795073921881,"ms":1481,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1508,"ct":408,"err":null}
+{"t":1795073923373,"ms":813,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1789,"ct":51,"err":null}
+{"t":1795073924192,"ms":401,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":2027,"ct":80,"err":null}
+{"t":1795073924755,"ms":1184,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":2110,"ct":230,"err":null}
+{"t":1795073926457,"ms":375,"status":200,"model":"openai/gpt-oss-120b","provider":"Crusoe","pt":1280,"ct":28,"err":null}
+{"t":1795073926992,"ms":1065,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1364,"ct":50,"err":null}
+{"t":1795073928070,"ms":1015,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1486,"ct":60,"err":null}
+{"t":1795073929095,"ms":1226,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1639,"ct":106,"err":null}
+{"t":1795073930329,"ms":2613,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1905,"ct":376,"err":null}
+{"t":1795073932952,"ms":1147,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":2141,"ct":23,"err":null}
+{"t":1795073934245,"ms":2715,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":2235,"ct":344,"err":null}
+{"t":1795073937483,"ms":372,"status":200,"model":"openai/gpt-oss-120b","provider":"Crusoe","pt":1248,"ct":35,"err":null}
+{"t":1795073938032,"ms":1075,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1336,"ct":49,"err":null}
+{"t":1795073939117,"ms":949,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1380,"ct":52,"err":null}
+{"t":1795073940076,"ms":1064,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1533,"ct":72,"err":null}
+{"t":1795073941148,"ms":2022,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1799,"ct":312,"err":null}
+{"t":1795073943180,"ms":852,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1954,"ct":26,"err":null}
+{"t":1795073944170,"ms":2005,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":2052,"ct":255,"err":null}
+{"t":1795073946700,"ms":371,"status":200,"model":"openai/gpt-oss-120b","provider":"Crusoe","pt":1236,"ct":35,"err":null}
+{"t":1795073947224,"ms":920,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1392,"ct":51,"err":null}
+{"t":1795073948137,"ms":402,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1426,"ct":57,"err":null}
+{"t":1795073948546,"ms":1263,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1508,"ct":409,"err":null}
+{"t":1795073949820,"ms":384,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1790,"ct":51,"err":null}
+{"t":1795073950211,"ms":376,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":2028,"ct":58,"err":null}
+{"t":1795073950729,"ms":666,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":2112,"ct":236,"err":null}
+{"t":1795073951965,"ms":350,"status":200,"model":"openai/gpt-oss-120b","provider":"Crusoe","pt":1268,"ct":35,"err":null}
+{"t":1795073952498,"ms":388,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1424,"ct":51,"err":null}
+{"t":1795073952897,"ms":250,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1458,"ct":35,"err":null}
+{"t":1795073953157,"ms":1097,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1540,"ct":360,"err":null}
+{"t":1795073954266,"ms":296,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1813,"ct":40,"err":null}
+{"t":1795073954695,"ms":672,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1896,"ct":193,"err":null}
+{"t":1795073955877,"ms":334,"status":200,"model":"openai/gpt-oss-120b","provider":"Crusoe","pt":1248,"ct":35,"err":null}
+{"t":1795073956378,"ms":972,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1336,"ct":49,"err":null}
+{"t":1795073957362,"ms":1011,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1380,"ct":52,"err":null}
+{"t":1795073958382,"ms":1257,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1533,"ct":72,"err":null}
+{"t":1795073959647,"ms":2100,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1799,"ct":312,"err":null}
+{"t":1795073961758,"ms":1013,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1954,"ct":27,"err":null}
+{"t":1795073962916,"ms":1977,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":2052,"ct":235,"err":null}
+{"t":1795073965423,"ms":330,"status":200,"model":"openai/gpt-oss-120b","provider":"Crusoe","pt":1280,"ct":37,"err":null}
+{"t":1795073965942,"ms":1131,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1369,"ct":73,"err":null}
+{"t":1795073967086,"ms":909,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1413,"ct":52,"err":null}
+{"t":1795073968005,"ms":1116,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1566,"ct":72,"err":null}
+{"t":1795073969129,"ms":2142,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1832,"ct":310,"err":null}
+{"t":1795073971281,"ms":780,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1987,"ct":26,"err":null}
+{"t":1795073972196,"ms":1917,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":2085,"ct":268,"err":null}
+{"t":1795073974641,"ms":392,"status":200,"model":"openai/gpt-oss-120b","provider":"Crusoe","pt":1268,"ct":35,"err":null}
+{"t":1795073975194,"ms":337,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1424,"ct":53,"err":null}
+{"t":1795073975542,"ms":258,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1458,"ct":54,"err":null}
+{"t":1795073975808,"ms":992,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":3076,"ct":357,"err":null}
+{"t":1795073976810,"ms":377,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1810,"ct":44,"err":null}
+{"t":1795073977194,"ms":394,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":2048,"ct":66,"err":null}
+{"t":1795073977727,"ms":564,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":2132,"ct":175,"err":null}
+{"t":1795073978833,"ms":528,"status":200,"model":"openai/gpt-oss-120b","provider":"Crusoe","pt":1236,"ct":35,"err":null}
+{"t":1795073979523,"ms":412,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1392,"ct":51,"err":null}
+{"t":1795073979945,"ms":352,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1426,"ct":54,"err":null}
+{"t":1795073980305,"ms":1207,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1508,"ct":464,"err":null}
+{"t":1795073981522,"ms":312,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1845,"ct":44,"err":null}
+{"t":1795073981979,"ms":1153,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":2331,"ct":466,"err":null}
+{"t":1795073983138,"ms":424,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":2699,"ct":60,"err":null}
+{"t":1795073983568,"ms":251,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":3015,"ct":27,"err":null}
+{"t":1795073983956,"ms":405,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":3101,"ct":74,"err":null}
+{"t":1795073984920,"ms":881,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1277,"ct":34,"err":null}
+{"t":1795073985968,"ms":1040,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1368,"ct":52,"err":null}
+{"t":1795073987021,"ms":1046,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1490,"ct":49,"err":null}
+{"t":1795073988079,"ms":1108,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1643,"ct":106,"err":null}
+{"t":1795073989196,"ms":1841,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1909,"ct":261,"err":null}
+{"t":1795073991049,"ms":906,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":2064,"ct":26,"err":null}
+{"t":1795073992095,"ms":2272,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":2162,"ct":293,"err":null}
+{"t":1795073994912,"ms":506,"status":200,"model":"openai/gpt-oss-120b","provider":"Crusoe","pt":1248,"ct":35,"err":null}
+{"t":1795073995572,"ms":994,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1336,"ct":49,"err":null}
+{"t":1795073996577,"ms":804,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1380,"ct":52,"err":null}
+{"t":1795073997391,"ms":1057,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1533,"ct":72,"err":null}
+{"t":1795073998456,"ms":2054,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1799,"ct":312,"err":null}
+{"t":1795074000520,"ms":983,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1954,"ct":26,"err":null}
+{"t":1795074001650,"ms":1870,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":2052,"ct":239,"err":null}
+{"t":1795074004059,"ms":789,"status":200,"model":"openai/gpt-oss-120b","provider":"AkashML","pt":1236,"ct":35,"err":null}
+{"t":1795074005012,"ms":321,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1392,"ct":51,"err":null}
+{"t":1795074005342,"ms":331,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1426,"ct":54,"err":null}
+{"t":1795074005683,"ms":1034,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1508,"ct":406,"err":null}
+{"t":1795074006727,"ms":257,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1788,"ct":44,"err":null}
+{"t":1795074006992,"ms":529,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":2026,"ct":57,"err":null}
+{"t":1795074007662,"ms":1241,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":2109,"ct":262,"err":null}
+{"t":1795074009409,"ms":623,"status":200,"model":"openai/gpt-oss-120b","provider":"AkashML","pt":1268,"ct":35,"err":null}
+{"t":1795074010200,"ms":337,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1424,"ct":54,"err":null}
+{"t":1795074010547,"ms":274,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1458,"ct":54,"err":null}
+{"t":1795074010831,"ms":1096,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":3076,"ct":357,"err":null}
+{"t":1795074011938,"ms":429,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":3346,"ct":39,"err":null}
+{"t":1795074012511,"ms":547,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1893,"ct":190,"err":null}
+{"t":1795074013587,"ms":423,"status":200,"model":"openai/gpt-oss-120b","provider":"Crusoe","pt":1248,"ct":35,"err":null}
+{"t":1795074014178,"ms":1023,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1336,"ct":49,"err":null}
+{"t":1795074015212,"ms":1013,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1380,"ct":52,"err":null}
+{"t":1795074016236,"ms":1134,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1533,"ct":72,"err":null}
+{"t":1795074017377,"ms":2021,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1799,"ct":312,"err":null}
+{"t":1795074019408,"ms":810,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1954,"ct":26,"err":null}
+{"t":1795074020349,"ms":2122,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":2052,"ct":230,"err":null}
+{"t":1795074023001,"ms":594,"status":200,"model":"openai/gpt-oss-120b","provider":"AkashML","pt":1280,"ct":28,"err":null}
+{"t":1795074023757,"ms":1172,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1364,"ct":53,"err":null}
+{"t":1795074024942,"ms":911,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1486,"ct":60,"err":null}
+{"t":1795074025862,"ms":1210,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1639,"ct":115,"err":null}
+{"t":1795074027080,"ms":2114,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1905,"ct":329,"err":null}
+{"t":1795074029204,"ms":940,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":2152,"ct":23,"err":null}
+{"t":1795074030288,"ms":1644,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":2246,"ct":210,"err":null}
+{"t":1795074032464,"ms":365,"status":200,"model":"openai/gpt-oss-120b","provider":"Crusoe","pt":1268,"ct":35,"err":null}
+{"t":1795074032997,"ms":333,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1424,"ct":54,"err":null}
+{"t":1795074033341,"ms":599,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1458,"ct":54,"err":null}
+{"t":1795074033951,"ms":1218,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":3076,"ct":357,"err":null}
+{"t":1795074035183,"ms":265,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1810,"ct":44,"err":null}
+{"t":1795074035457,"ms":305,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":2048,"ct":65,"err":null}
+{"t":1795074035919,"ms":628,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":2131,"ct":162,"err":null}
+{"t":1795074037080,"ms":342,"status":200,"model":"openai/gpt-oss-120b","provider":"Crusoe","pt":1236,"ct":35,"err":null}
+{"t":1795074037581,"ms":323,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1392,"ct":51,"err":null}
+{"t":1795074037914,"ms":334,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1426,"ct":54,"err":null}
+{"t":1795074038256,"ms":1419,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1508,"ct":406,"err":null}
+{"t":1795074039683,"ms":252,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1788,"ct":44,"err":null}
+{"t":1795074039941,"ms":330,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":2026,"ct":57,"err":null}
+{"t":1795074040413,"ms":643,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":2109,"ct":213,"err":null}
+{"t":1795074041590,"ms":409,"status":200,"model":"openai/gpt-oss-120b","provider":"Crusoe","pt":1280,"ct":37,"err":null}
+{"t":1795074042161,"ms":1097,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1369,"ct":51,"err":null}
+{"t":1795074043270,"ms":1214,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1491,"ct":58,"err":null}
+{"t":1795074044493,"ms":1029,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1644,"ct":106,"err":null}
+{"t":1795074045530,"ms":2122,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1910,"ct":303,"err":null}
+{"t":1795074047662,"ms":719,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":2065,"ct":26,"err":null}
+{"t":1795074048526,"ms":1702,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":2163,"ct":218,"err":null}
+{"t":1795074050257,"ms":1016,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":2255,"ct":67,"err":null}
+{"t":1795074051323,"ms":1454,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":2323,"ct":162,"err":null}
+{"t":1795074053292,"ms":12086,"status":200,"model":"openai/gpt-oss-120b","provider":"Crusoe","pt":1248,"ct":35,"err":null}
+{"t":1795074065562,"ms":1044,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1336,"ct":49,"err":null}
+{"t":1795074066617,"ms":1027,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1380,"ct":52,"err":null}
+{"t":1795074067651,"ms":1315,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1533,"ct":72,"err":null}
+{"t":1795074068975,"ms":2341,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1799,"ct":312,"err":null}
+{"t":1795074071327,"ms":1218,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1954,"ct":26,"err":null}
+{"t":1795074072685,"ms":2010,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":2052,"ct":239,"err":null}
+{"t":1795074075217,"ms":386,"status":200,"model":"openai/gpt-oss-120b","provider":"Crusoe","pt":1236,"ct":35,"err":null}
+{"t":1795074075761,"ms":321,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1392,"ct":41,"err":null}
+{"t":1795074076092,"ms":322,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1426,"ct":54,"err":null}
+{"t":1795074076421,"ms":565,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1508,"ct":164,"err":null}
+{"t":1795074076993,"ms":1279,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1746,"ct":464,"err":null}
+{"t":1795074078282,"ms":309,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":2059,"ct":58,"err":null}
+{"t":1795074078731,"ms":773,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":2142,"ct":193,"err":null}
+{"t":1795074080035,"ms":379,"status":200,"model":"openai/gpt-oss-120b","provider":"Crusoe","pt":1268,"ct":35,"err":null}
+{"t":1795074080569,"ms":498,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1424,"ct":54,"err":null}
+{"t":1795074081077,"ms":280,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1458,"ct":54,"err":null}
+{"t":1795074081366,"ms":1482,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":3076,"ct":316,"err":null}
+{"t":1795074082859,"ms":456,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1769,"ct":26,"err":null}
+{"t":1795074083451,"ms":635,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1852,"ct":219,"err":null}
+{"t":1795074084639,"ms":604,"status":200,"model":"openai/gpt-oss-120b","provider":"AkashML","pt":1248,"ct":29,"err":null}
+{"t":1795074085427,"ms":945,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1332,"ct":49,"err":null}
+{"t":1795074086382,"ms":1054,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1376,"ct":52,"err":null}
+{"t":1795074087445,"ms":997,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1529,"ct":70,"err":null}
+{"t":1795074088447,"ms":2428,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1795,"ct":349,"err":null}
+{"t":1795074090885,"ms":990,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":2043,"ct":23,"err":null}
+{"t":1795074092023,"ms":2408,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":2137,"ct":298,"err":null}
+{"t":1795074094950,"ms":554,"status":200,"model":"openai/gpt-oss-120b","provider":"Crusoe","pt":1280,"ct":35,"err":null}
+{"t":1795074095649,"ms":921,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1368,"ct":52,"err":null}
+{"t":1795074096582,"ms":897,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1490,"ct":49,"err":null}
+{"t":1795074097487,"ms":1350,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1643,"ct":106,"err":null}
+{"t":1795074098846,"ms":2022,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1909,"ct":255,"err":null}
+{"t":1795074100879,"ms":851,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":2064,"ct":26,"err":null}
+{"t":1795074101875,"ms":2110,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":2162,"ct":292,"err":null}
+{"t":1795074104521,"ms":682,"status":200,"model":"openai/gpt-oss-120b","provider":"AkashML","pt":1268,"ct":35,"err":null}
+{"t":1795074105354,"ms":264,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1425,"ct":51,"err":null}
+{"t":1795074105628,"ms":364,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1459,"ct":54,"err":null}
+{"t":1795074106004,"ms":605,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":3077,"ct":215,"err":null}
+{"t":1795074106613,"ms":1261,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1779,"ct":460,"err":null}
+{"t":1795074107885,"ms":294,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":2004,"ct":47,"err":null}
+{"t":1795074108315,"ms":798,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":2088,"ct":185,"err":null}
+{"t":1795074109658,"ms":399,"status":200,"model":"openai/gpt-oss-120b","provider":"Crusoe","pt":1236,"ct":35,"err":null}
+{"t":1795074110223,"ms":269,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1392,"ct":41,"err":null}
+{"t":1795074110502,"ms":303,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1426,"ct":54,"err":null}
+{"t":1795074110815,"ms":1052,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1508,"ct":406,"err":null}
+{"t":1795074111878,"ms":262,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1788,"ct":44,"err":null}
+{"t":1795074112148,"ms":284,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":2026,"ct":57,"err":null}
+{"t":1795074112568,"ms":559,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":2109,"ct":183,"err":null}
+{"t":1795074113670,"ms":515,"status":200,"model":"openai/gpt-oss-120b","provider":"AkashML","pt":1280,"ct":29,"err":null}
+{"t":1795074114356,"ms":995,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1364,"ct":53,"err":null}
+{"t":1795074115366,"ms":1109,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1486,"ct":60,"err":null}
+{"t":1795074116484,"ms":1322,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1639,"ct":115,"err":null}
+{"t":1795074117814,"ms":2154,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1905,"ct":329,"err":null}
+{"t":1795074119979,"ms":990,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":2152,"ct":23,"err":null}
+{"t":1795074121113,"ms":2086,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":2246,"ct":218,"err":null}
+{"t":1795074123726,"ms":602,"status":200,"model":"openai/gpt-oss-120b","provider":"AkashML","pt":1248,"ct":29,"err":null}
+{"t":1795074124488,"ms":889,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1332,"ct":49,"err":null}
+{"t":1795074125391,"ms":916,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1376,"ct":52,"err":null}
+{"t":1795074126315,"ms":915,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1529,"ct":73,"err":null}
+{"t":1795074127238,"ms":2480,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1795,"ct":388,"err":null}
+{"t":1795074129728,"ms":1083,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":2015,"ct":70,"err":null}
+{"t":1795074130952,"ms":1606,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":2109,"ct":190,"err":null}
+{"t":1795074133088,"ms":324,"status":200,"model":"openai/gpt-oss-120b","provider":"Crusoe","pt":1236,"ct":35,"err":null}
+{"t":1795074133574,"ms":461,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1392,"ct":51,"err":null}
+{"t":1795074134046,"ms":270,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1426,"ct":54,"err":null}
+{"t":1795074134325,"ms":1022,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1508,"ct":406,"err":null}
+{"t":1795074135359,"ms":246,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1788,"ct":44,"err":null}
+{"t":1795074135612,"ms":365,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":2026,"ct":78,"err":null}
+{"t":1795074136120,"ms":950,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":2109,"ct":230,"err":null}
+{"t":1795074137606,"ms":407,"status":200,"model":"openai/gpt-oss-120b","provider":"Crusoe","pt":1268,"ct":35,"err":null}
+{"t":1795074138186,"ms":407,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1424,"ct":54,"err":null}
+{"t":1795074138603,"ms":345,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1458,"ct":54,"err":null}
+{"t":1795074138958,"ms":1055,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":3076,"ct":357,"err":null}
+{"t":1795074140023,"ms":269,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":3602,"ct":44,"err":null}
+{"t":1795074140299,"ms":685,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":4093,"ct":66,"err":null}
+{"t":1795074141134,"ms":585,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":2132,"ct":188,"err":null}
+{"t":1795074142251,"ms":328,"status":200,"model":"openai/gpt-oss-120b","provider":"Crusoe","pt":1248,"ct":35,"err":null}
+{"t":1795074142746,"ms":970,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1336,"ct":49,"err":null}
+{"t":1795074143725,"ms":1058,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1380,"ct":52,"err":null}
+{"t":1795074144791,"ms":1223,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1533,"ct":72,"err":null}
+{"t":1795074146020,"ms":2007,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1799,"ct":312,"err":null}
+{"t":1795074148040,"ms":791,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1954,"ct":26,"err":null}
+{"t":1795074148974,"ms":1806,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":2052,"ct":239,"err":null}
+{"t":1795074151313,"ms":471,"status":200,"model":"openai/gpt-oss-120b","provider":"Crusoe","pt":1280,"ct":37,"err":null}
+{"t":1795074151944,"ms":1088,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1369,"ct":55,"err":null}
+{"t":1795074153045,"ms":910,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1491,"ct":49,"err":null}
+{"t":1795074153965,"ms":1115,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1644,"ct":106,"err":null}
+{"t":1795074155088,"ms":1824,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1910,"ct":269,"err":null}
+{"t":1795074156921,"ms":924,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":2065,"ct":26,"err":null}
+{"t":1795074157972,"ms":2435,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":2163,"ct":297,"err":null}
+{"t":1795074160932,"ms":804,"status":200,"model":"openai/gpt-oss-120b","provider":"AkashML","pt":1268,"ct":35,"err":null}
+{"t":1795074161919,"ms":264,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1424,"ct":53,"err":null}
+{"t":1795074162195,"ms":268,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":1458,"ct":54,"err":null}
+{"t":1795074162473,"ms":1004,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":3076,"ct":357,"err":null}
+{"t":1795074163488,"ms":332,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":3602,"ct":44,"err":null}
+{"t":1795074163829,"ms":485,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":4093,"ct":66,"err":null}
+{"t":1795074164454,"ms":576,"status":200,"model":"openai/gpt-oss-120b","provider":"Groq","pt":2132,"ct":190,"err":null}
+{"t":1795074165553,"ms":1099,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1236,"ct":37,"err":null}
+{"t":1795074166835,"ms":981,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1318,"ct":49,"err":null}
+{"t":1795074167823,"ms":895,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1393,"ct":42,"err":null}
+{"t":1795074168728,"ms":932,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1431,"ct":58,"err":null}
+{"t":1795074169665,"ms":986,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1504,"ct":40,"err":null}
+{"t":1795074170660,"ms":2296,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1599,"ct":210,"err":null}
+{"t":1795074172963,"ms":3975,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1850,"ct":449,"err":null}
+{"t":1795074176951,"ms":1120,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":2139,"ct":50,"err":null}
+{"t":1795074178218,"ms":2700,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":2223,"ct":246,"err":null}
+{"t":1795074181451,"ms":458,"status":200,"model":"openai/gpt-oss-120b","provider":"Crusoe","pt":1280,"ct":37,"err":null}
+{"t":1795074182071,"ms":1071,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1369,"ct":55,"err":null}
+{"t":1795074183158,"ms":961,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1491,"ct":49,"err":null}
+{"t":1795074184128,"ms":1160,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1644,"ct":106,"err":null}
+{"t":1795074185297,"ms":1903,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1910,"ct":269,"err":null}
+{"t":1795074187210,"ms":874,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":2065,"ct":26,"err":null}
+{"t":1795074188219,"ms":2084,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":2163,"ct":254,"err":null}
+{"t":1795074190838,"ms":377,"status":200,"model":"openai/gpt-oss-120b","provider":"Crusoe","pt":1248,"ct":35,"err":null}
+{"t":1795074191383,"ms":904,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1336,"ct":49,"err":null}
+{"t":1795074192294,"ms":897,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1380,"ct":52,"err":null}
+{"t":1795074193200,"ms":1202,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1533,"ct":72,"err":null}
+{"t":1795074194409,"ms":2424,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1799,"ct":333,"err":null}
+{"t":1795074196845,"ms":1039,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":2042,"ct":27,"err":null}
+{"t":1795074198027,"ms":1494,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":2140,"ct":172,"err":null}
+{"t":1795074200049,"ms":361,"status":200,"model":"openai/gpt-oss-120b","provider":"Crusoe","pt":1236,"ct":35,"err":null}
+{"t":1795074200571,"ms":988,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1317,"ct":49,"err":null}
+{"t":1795074201567,"ms":740,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1392,"ct":30,"err":null}
+{"t":1795074202319,"ms":1658,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1486,"ct":140,"err":null}
+{"t":1795074203982,"ms":919,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1559,"ct":40,"err":null}
+{"t":1795074204909,"ms":1885,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1654,"ct":163,"err":null}
+{"t":1795074206799,"ms":2986,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1905,"ct":295,"err":null}
+{"t":1795074209797,"ms":2423,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":2093,"ct":135,"err":null}
+{"t":1795074212367,"ms":2736,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":2177,"ct":241,"err":null}
+{"t":1795074215648,"ms":667,"status":200,"model":"openai/gpt-oss-120b","provider":"AkashML","pt":1268,"ct":35,"err":null}
+{"t":1795074216474,"ms":929,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1349,"ct":48,"err":null}
+{"t":1795074217408,"ms":852,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1424,"ct":48,"err":null}
+{"t":1795074218270,"ms":1054,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1462,"ct":58,"err":null}
+{"t":1795074219329,"ms":816,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1535,"ct":40,"err":null}
+{"t":1795074220153,"ms":2469,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1630,"ct":238,"err":null}
+{"t":1795074222629,"ms":3675,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1881,"ct":468,"err":null}
+{"t":1795074226318,"ms":1175,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":2205,"ct":46,"err":null}
+{"t":1795074227641,"ms":2492,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":2289,"ct":201,"err":null}
+{"t":1795074230661,"ms":425,"status":200,"model":"openai/gpt-oss-120b","provider":"Crusoe","pt":1248,"ct":35,"err":null}
+{"t":1795074231243,"ms":1170,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1336,"ct":49,"err":null}
+{"t":1795074232423,"ms":1097,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1380,"ct":52,"err":null}
+{"t":1795074233530,"ms":1219,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1533,"ct":72,"err":null}
+{"t":1795074234758,"ms":2039,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1799,"ct":312,"err":null}
+{"t":1795074236808,"ms":774,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1954,"ct":26,"err":null}
+{"t":1795074237716,"ms":1951,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":2052,"ct":239,"err":null}
+{"t":1795074240187,"ms":374,"status":200,"model":"openai/gpt-oss-120b","provider":"Crusoe","pt":1280,"ct":37,"err":null}
+{"t":1795074240729,"ms":1192,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1369,"ct":55,"err":null}
+{"t":1795074241932,"ms":908,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1491,"ct":49,"err":null}
+{"t":1795074242846,"ms":1484,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1644,"ct":106,"err":null}
+{"t":1795074244337,"ms":1818,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1910,"ct":269,"err":null}
+{"t":1795074246165,"ms":915,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":2065,"ct":26,"err":null}
+{"t":1795074247219,"ms":2350,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":2163,"ct":282,"err":null}
+{"t":1795074250132,"ms":747,"status":200,"model":"openai/gpt-oss-120b","provider":"AkashML","pt":1268,"ct":35,"err":null}
+{"t":1795074251048,"ms":986,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1349,"ct":48,"err":null}
+{"t":1795074252040,"ms":1109,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1424,"ct":48,"err":null}
+{"t":1795074253159,"ms":1113,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1462,"ct":55,"err":null}
+{"t":1795074254278,"ms":914,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1535,"ct":40,"err":null}
+{"t":1795074255201,"ms":3635,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1630,"ct":282,"err":null}
+{"t":1795074258857,"ms":1535,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1792,"ct":82,"err":null}
+{"t":1795074260555,"ms":3435,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1880,"ct":262,"err":null}
+{"t":1795074264522,"ms":683,"status":200,"model":"openai/gpt-oss-120b","provider":"AkashML","pt":1236,"ct":35,"err":null}
+{"t":1795074265379,"ms":1219,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1317,"ct":49,"err":null}
+{"t":1795074266605,"ms":831,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1392,"ct":30,"err":null}
+{"t":1795074267449,"ms":1648,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1486,"ct":109,"err":null}
+{"t":1795074269105,"ms":869,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1559,"ct":40,"err":null}
+{"t":1795074269984,"ms":1872,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1654,"ct":166,"err":null}
+{"t":1795074271863,"ms":4745,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1905,"ct":435,"err":null}
+{"t":1795074276621,"ms":1164,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":2201,"ct":66,"err":null}
+{"t":1795074277793,"ms":922,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":2262,"ct":53,"err":null}
+{"t":1795074278723,"ms":1606,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":2537,"ct":86,"err":null}
+{"t":1795074280483,"ms":1482,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":3024,"ct":73,"err":null}
+{"t":1795074281972,"ms":1126,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":3081,"ct":34,"err":null}
+{"t":1795074283235,"ms":1427,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":3173,"ct":67,"err":null}
+{"t":1795074285219,"ms":442,"status":200,"model":"openai/gpt-oss-120b","provider":"Crusoe","pt":1280,"ct":37,"err":null}
+{"t":1795074285824,"ms":969,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1369,"ct":55,"err":null}
+{"t":1795074286807,"ms":885,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1491,"ct":49,"err":null}
+{"t":1795074287701,"ms":1129,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1644,"ct":106,"err":null}
+{"t":1795074288838,"ms":2188,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1910,"ct":269,"err":null}
+{"t":1795074291036,"ms":954,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":2065,"ct":26,"err":null}
+{"t":1795074292134,"ms":2111,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":2163,"ct":297,"err":null}
+{"t":1795074294774,"ms":324,"status":200,"model":"openai/gpt-oss-120b","provider":"Crusoe","pt":1248,"ct":35,"err":null}
+{"t":1795074295294,"ms":1100,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1336,"ct":49,"err":null}
+{"t":1795074296408,"ms":909,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1380,"ct":52,"err":null}
+{"t":1795074297323,"ms":1120,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1533,"ct":72,"err":null}
+{"t":1795074298451,"ms":2087,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1799,"ct":312,"err":null}
+{"t":1795074300550,"ms":760,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1954,"ct":26,"err":null}
+{"t":1795074301452,"ms":2101,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":2052,"ct":239,"err":null}
+{"t":1795074304100,"ms":383,"status":200,"model":"openai/gpt-oss-120b","provider":"Crusoe","pt":1236,"ct":35,"err":null}
+{"t":1795074304635,"ms":922,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1317,"ct":49,"err":null}
+{"t":1795074305566,"ms":792,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1392,"ct":30,"err":null}
+{"t":1795074306363,"ms":652,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1448,"ct":31,"err":null}
+{"t":1795074307027,"ms":676,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1482,"ct":30,"err":null}
+{"t":1795074307711,"ms":869,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1520,"ct":60,"err":null}
+{"t":1795074308585,"ms":814,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1593,"ct":40,"err":null}
+{"t":1795074309408,"ms":1454,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1688,"ct":116,"err":null}
+{"t":1795074310870,"ms":3307,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1939,"ct":357,"err":null}
+{"t":1795074314190,"ms":1104,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":2164,"ct":49,"err":null}
+{"t":1795074315301,"ms":2647,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":2259,"ct":261,"err":null}
+{"t":1795074317955,"ms":2468,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":2450,"ct":174,"err":null}
+{"t":1795074320563,"ms":4902,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":2534,"ct":358,"err":null}
+{"t":1795074325990,"ms":366,"status":200,"model":"openai/gpt-oss-120b","provider":"Crusoe","pt":1268,"ct":35,"err":null}
+{"t":1795074326516,"ms":1033,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1349,"ct":51,"err":null}
+{"t":1795074327557,"ms":991,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1424,"ct":48,"err":null}
+{"t":1795074328558,"ms":927,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1462,"ct":53,"err":null}
+{"t":1795074329494,"ms":1964,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1557,"ct":159,"err":null}
+{"t":1795074331464,"ms":3099,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1808,"ct":322,"err":null}
+{"t":1795074334574,"ms":2843,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1865,"ct":337,"err":null}
+{"t":1795074337424,"ms":1192,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":2117,"ct":63,"err":null}
+{"t":1795074338762,"ms":2258,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":2205,"ct":224,"err":null}
+{"t":1795074341544,"ms":369,"status":200,"model":"openai/gpt-oss-120b","provider":"Crusoe","pt":1248,"ct":35,"err":null}
+{"t":1795074342072,"ms":912,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1336,"ct":49,"err":null}
+{"t":1795074342994,"ms":902,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1380,"ct":52,"err":null}
+{"t":1795074343902,"ms":1140,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1533,"ct":72,"err":null}
+{"t":1795074345049,"ms":2030,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1799,"ct":312,"err":null}
+{"t":1795074347088,"ms":978,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1954,"ct":26,"err":null}
+{"t":1795074348209,"ms":2317,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":2052,"ct":239,"err":null}
+{"t":1795074351077,"ms":350,"status":200,"model":"openai/gpt-oss-120b","provider":"Crusoe","pt":1280,"ct":37,"err":null}
+{"t":1795074351609,"ms":1208,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1369,"ct":74,"err":null}
+{"t":1795074352827,"ms":910,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1413,"ct":52,"err":null}
+{"t":1795074353745,"ms":1040,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1566,"ct":70,"err":null}
+{"t":1795074354793,"ms":2185,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1832,"ct":317,"err":null}
+{"t":1795074356989,"ms":1471,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1990,"ct":26,"err":null}
+{"t":1795074358619,"ms":2255,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":2088,"ct":327,"err":null}
+{"t":1795074361406,"ms":442,"status":200,"model":"openai/gpt-oss-120b","provider":"Crusoe","pt":1268,"ct":35,"err":null}
+{"t":1795074362021,"ms":909,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1349,"ct":51,"err":null}
+{"t":1795074362936,"ms":903,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1424,"ct":48,"err":null}
+{"t":1795074363847,"ms":939,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1462,"ct":55,"err":null}
+{"t":1795074364793,"ms":744,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1535,"ct":40,"err":null}
+{"t":1795074365548,"ms":4421,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1630,"ct":425,"err":null}
+{"t":1795074369980,"ms":865,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1924,"ct":29,"err":null}
+{"t":1795074371001,"ms":1099,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":2008,"ct":72,"err":null}
+{"t":1795074372111,"ms":2202,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":2259,"ct":227,"err":null}
+{"t":1795074374840,"ms":505,"status":200,"model":"openai/gpt-oss-120b","provider":"Crusoe","pt":1236,"ct":35,"err":null}
+{"t":1795074375506,"ms":915,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1317,"ct":49,"err":null}
+{"t":1795074376430,"ms":964,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1392,"ct":30,"err":null}
+{"t":1795074377406,"ms":1981,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1486,"ct":166,"err":null}
+{"t":1795074379394,"ms":871,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1559,"ct":40,"err":null}
+{"t":1795074380274,"ms":1776,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1654,"ct":159,"err":null}
+{"t":1795074382057,"ms":4570,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1905,"ct":352,"err":null}
+{"t":1795074386640,"ms":1607,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":2090,"ct":106,"err":null}
+{"t":1795074388408,"ms":1327,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":2589,"ct":66,"err":null}
+{"t":1795074389745,"ms":1036,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":2646,"ct":21,"err":null}
+{"t":1795074390922,"ms":1389,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":2732,"ct":68,"err":null}
+{"t":1795074392862,"ms":365,"status":200,"model":"openai/gpt-oss-120b","provider":"Crusoe","pt":1280,"ct":37,"err":null}
+{"t":1795074393402,"ms":1402,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1369,"ct":55,"err":null}
+{"t":1795074394820,"ms":1007,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1491,"ct":49,"err":null}
+{"t":1795074395838,"ms":1114,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1644,"ct":106,"err":null}
+{"t":1795074396961,"ms":1957,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1910,"ct":269,"err":null}
+{"t":1795074398929,"ms":993,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":2065,"ct":26,"err":null}
+{"t":1795074400068,"ms":2108,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":2163,"ct":297,"err":null}
+{"t":1795074402725,"ms":780,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1245,"ct":34,"err":null}
+{"t":1795074403666,"ms":1375,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1336,"ct":49,"err":null}
+{"t":1795074405053,"ms":1015,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1380,"ct":52,"err":null}
+{"t":1795074406078,"ms":1114,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1533,"ct":72,"err":null}
+{"t":1795074407199,"ms":2040,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1799,"ct":312,"err":null}
+{"t":1795074409251,"ms":808,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1954,"ct":27,"err":null}
+{"t":1795074410199,"ms":1968,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":2052,"ct":230,"err":null}
+{"t":1795074412699,"ms":373,"status":200,"model":"openai/gpt-oss-120b","provider":"Crusoe","pt":1236,"ct":35,"err":null}
+{"t":1795074413241,"ms":943,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1317,"ct":49,"err":null}
+{"t":1795074414192,"ms":723,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1392,"ct":30,"err":null}
+{"t":1795074414927,"ms":1584,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1486,"ct":128,"err":null}
+{"t":1795074416517,"ms":915,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1559,"ct":40,"err":null}
+{"t":1795074417442,"ms":2386,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1654,"ct":233,"err":null}
+{"t":1795074419840,"ms":1097,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1800,"ct":58,"err":null}
+{"t":1795074421091,"ms":2611,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1884,"ct":267,"err":null}
+{"t":1795074424246,"ms":380,"status":200,"model":"openai/gpt-oss-120b","provider":"Crusoe","pt":1268,"ct":35,"err":null}
+{"t":1795074424785,"ms":919,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1349,"ct":48,"err":null}
+{"t":1795074425708,"ms":873,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1424,"ct":48,"err":null}
+{"t":1795074426590,"ms":1082,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1462,"ct":55,"err":null}
+{"t":1795074427679,"ms":812,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1535,"ct":40,"err":null}
+{"t":1795074428501,"ms":2054,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1630,"ct":169,"err":null}
+{"t":1795074430562,"ms":2115,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1881,"ct":187,"err":null}
+{"t":1795074432688,"ms":3557,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1938,"ct":382,"err":null}
+{"t":1795074436255,"ms":1350,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":2243,"ct":86,"err":null}
+{"t":1795074437749,"ms":2725,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":2327,"ct":227,"err":null}
+{"t":1795074441018,"ms":693,"status":200,"model":"openai/gpt-oss-120b","provider":"AkashML","pt":1248,"ct":29,"err":null}
+{"t":1795074441894,"ms":1142,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1332,"ct":101,"err":null}
+{"t":1795074443045,"ms":1138,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1376,"ct":52,"err":null}
+{"t":1795074444192,"ms":1200,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1529,"ct":73,"err":null}
+{"t":1795074445399,"ms":2651,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1795,"ct":325,"err":null}
+{"t":1795074448063,"ms":814,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":2031,"ct":23,"err":null}
+{"t":1795074449033,"ms":2388,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":2125,"ct":307,"err":null}
+{"t":1795074451927,"ms":732,"status":200,"model":"openai/gpt-oss-120b","provider":"AkashML","pt":1280,"ct":28,"err":null}
+{"t":1795074452824,"ms":937,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1364,"ct":53,"err":null}
+{"t":1795074453773,"ms":1035,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1486,"ct":60,"err":null}
+{"t":1795074454818,"ms":1219,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1639,"ct":115,"err":null}
+{"t":1795074456044,"ms":2451,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1905,"ct":340,"err":null}
+{"t":1795074458505,"ms":911,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":2134,"ct":23,"err":null}
+{"t":1795074459552,"ms":2117,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":2228,"ct":285,"err":null}
+{"t":1795074462202,"ms":900,"status":200,"model":"openai/gpt-oss-120b","provider":"Crusoe","pt":1268,"ct":35,"err":null}
+{"t":1795074463277,"ms":1009,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1349,"ct":51,"err":null}
+{"t":1795074464293,"ms":858,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1424,"ct":48,"err":null}
+{"t":1795074465160,"ms":922,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1462,"ct":58,"err":null}
+{"t":1795074466087,"ms":740,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1535,"ct":37,"err":null}
+{"t":1795074466836,"ms":3314,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1630,"ct":305,"err":null}
+{"t":1795074470158,"ms":1239,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1832,"ct":59,"err":null}
+{"t":1795074471550,"ms":1179,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1916,"ct":74,"err":null}
+{"t":1795074472738,"ms":2368,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":2167,"ct":208,"err":null}
+{"t":1795074475618,"ms":451,"status":200,"model":"openai/gpt-oss-120b","provider":"Crusoe","pt":1236,"ct":37,"err":null}
+{"t":1795074476232,"ms":966,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1318,"ct":49,"err":null}
+{"t":1795074477206,"ms":809,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1393,"ct":42,"err":null}
+{"t":1795074478024,"ms":1157,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1431,"ct":82,"err":null}
+{"t":1795074479187,"ms":812,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1504,"ct":40,"err":null}
+{"t":1795074480008,"ms":2478,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1599,"ct":202,"err":null}
+{"t":1795074482492,"ms":4061,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":1850,"ct":446,"err":null}
+{"t":1795074486565,"ms":1267,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":2143,"ct":85,"err":null}
+{"t":1795074487987,"ms":3433,"status":200,"model":"openai/gpt-oss-120b","provider":"Near AI","pt":2232,"ct":284,"err":null}
+{"t":1795074491967,"ms":456,"status":200,"model":"openai/gpt-oss-120b","provider":"Crusoe","pt":1280,"ct":37,"err":null}
+{"t":1795074492589,"ms":975,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1369,"ct":50,"err":null}
+{"t":1795074493577,"ms":901,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1491,"ct":58,"err":null}
+{"t":1795074494487,"ms":1590,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1644,"ct":106,"err":null}
+{"t":1795074496084,"ms":2142,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1910,"ct":277,"err":null}
+{"t":1795074498239,"ms":808,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":2065,"ct":26,"err":null}
+{"t":1795074499190,"ms":1984,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":2163,"ct":195,"err":null}
+{"t":1795074501202,"ms":1120,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":2257,"ct":70,"err":null}
+{"t":1795074502374,"ms":1587,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":2325,"ct":182,"err":null}
+{"t":1795074504516,"ms":448,"status":200,"model":"openai/gpt-oss-120b","provider":"Crusoe","pt":1248,"ct":35,"err":null}
+{"t":1795074505127,"ms":1014,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1336,"ct":74,"err":null}
+{"t":1795074506152,"ms":945,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1380,"ct":52,"err":null}
+{"t":1795074507104,"ms":1158,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1533,"ct":72,"err":null}
+{"t":1795074508270,"ms":2358,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":1799,"ct":387,"err":null}
+{"t":1795074510638,"ms":1260,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":2013,"ct":72,"err":null}
+{"t":1795074512060,"ms":1921,"status":200,"model":"openai/gpt-oss-120b","provider":"Sail Research","pt":2111,"ct":265,"err":null}

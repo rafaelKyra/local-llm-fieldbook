@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "control",
+ "rep": 10,
+ "seconds": 26.7,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 797,
+ "addedLines": 11,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 6,
+  "toolCalls": 8,
+  "inputTokens": 13587,
+  "outputTokens": 3055,
+  "lastInputTokens": 2845,
+  "peakInputTokens": 2845,
+  "modelCalls": 6,
+  "usageReportedCalls": 6,
+  "cacheReadTokens": 11776,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 6,
+  "roles": {
+   "main": {
+    "calls": 6,
+    "reportedInput": 6,
+    "reportedOutput": 6,
+    "inputTokens": 13587,
+    "outputTokens": 3055
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: `feed.py` now reads both vendor date styles. `parse_date()` tries the old `%Y-%m-%d` format first, then the vendor's new day-first `%d/%m/%Y` format (e.g. `04/0 | Verification: the fixed check (verify, no arguments) passed after the edit (3 tests, OK). It also passed before the edit, so it alone does not prove the change;"
+}

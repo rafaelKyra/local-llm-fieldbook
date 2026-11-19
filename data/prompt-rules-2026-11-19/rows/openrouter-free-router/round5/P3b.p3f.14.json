@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 14,
+ "seconds": 77.051,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 569,
+ "addedLines": 6,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 11,
+  "toolCalls": 8,
+  "inputTokens": 32365,
+  "outputTokens": 6133,
+  "lastInputTokens": 4224,
+  "peakInputTokens": 4224,
+  "modelCalls": 11,
+  "usageReportedCalls": 11,
+  "cacheReadTokens": 2496,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 11,
+  "roles": {
+   "main": {
+    "calls": 11,
+    "reportedInput": 11,
+    "reportedOutput": 11,
+    "inputTokens": 32365,
+    "outputTokens": 6133
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made `save_report()` crash-safe in `report.py`. It now writes the report to a temp file (`.report.txt.tmp`) in the same directory, flushes and fsyncs it, then a"
+}

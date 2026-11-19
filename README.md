@@ -119,6 +119,10 @@ texts, kits, every run row, the analysis script and the report section are in `d
 Two field notes belong with it, both labelled as not measurements of ours: [local speed: four causes found in two days](field-notes/2026-11-18-local-speed-vram-mtp-power.md)
 (an embedding model holding VRAM, a missing MTP head, a power limit) and [an outside collection of 28 model results used for selection](field-notes/2026-11-18-external-reference-lukesdevlab.md).
 
+### Third ruler, continued (2026-11-19)
+
+The closing-line sentence in the `finish` tool description (`p3f`) was run on more models: a local Strata model (closing line 20/20 against 9/20 on the new kit P3c, bench +21.8 % output tokens), a 9B model (no effect), the `openrouter/free` router (no effect on the mixture) and nine cheap paid models (clear effect on deepseek-v4.1-flash, suggestive on qwen3.8-flash, nothing on models that never or always write the line; solved never lower). Data, plans written beforehand and the exact tables are in `data/prompt-rules-2026-11-19/`; one correction (interrupted runs were first counted as failures) is CORRECTIONS 11. The report page was not regenerated for this update.
+
 ## Reported earlier, not yet reproduced here
 
 These come from an earlier hand-written report. The raw data is not in this repository, so

@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 6,
+ "seconds": 114.683,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 2335,
+ "addedLines": 68,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 27,
+  "toolCalls": 26,
+  "inputTokens": 161514,
+  "outputTokens": 9914,
+  "lastInputTokens": 9339,
+  "peakInputTokens": 9339,
+  "modelCalls": 27,
+  "usageReportedCalls": 27,
+  "cacheReadTokens": 150528,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 27,
+  "roles": {
+   "main": {
+    "calls": 27,
+    "reportedInput": 27,
+    "reportedOutput": 27,
+    "inputTokens": 161514,
+    "outputTokens": 9914
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: **Checks run:** | - `verify` (the fixed check): PASSED, 2 tests OK — but note it also passed before my change, so it does not by itself prove the fix. | - I added `check_crash.py` (5 tests) that actually simulates the failure: it patches `os.fdopen` to die half-way through the write, and separately patches `os.r | - I confirmed the check is meaningful by temporarily restoring the old `open(path, \"w\")` implementation: the two crash tests then FAILED (`Boom not raised` / `O | **Not verified:** I could not test on Windows — the `PermissionError` retry path and the `os.replace` semantics there are reasoned from the documented API, not "
+}

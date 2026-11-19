@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 15,
+ "seconds": 53.013,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 2459,
+ "addedLines": 66,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 28,
+  "toolCalls": 30,
+  "inputTokens": 192930,
+  "outputTokens": 9079,
+  "lastInputTokens": 11314,
+  "peakInputTokens": 11314,
+  "modelCalls": 28,
+  "usageReportedCalls": 28,
+  "cacheReadTokens": 183680,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 28,
+  "roles": {
+   "main": {
+    "calls": 28,
+    "reportedInput": 28,
+    "reportedOutput": 28,
+    "inputTokens": 192930,
+    "outputTokens": 9079
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Verification: | - The fixed check (`verify`, no arguments) passes: 2 tests, OK. Note it also passed before my change, so it does not by itself prove the fix — it only confirms  | - Because the existing suite never exercises a crash, I added `check_crashsafe.py` (a separate file; I did not modify `test_report.py`). It passes 9/9 and cover | - One test in that file deliberately runs the *old* implementation and asserts it loses data (file becomes `\"NEW\"` instead of the old report). It passes, which  | Caveat worth flagging: I could only test on Linux. The Windows-specific behavior (atomicity of `os.replace`, the `PermissionError` retry, skipping the directory"
+}

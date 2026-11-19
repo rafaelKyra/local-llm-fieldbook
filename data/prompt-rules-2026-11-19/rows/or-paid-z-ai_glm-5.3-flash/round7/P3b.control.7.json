@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 7,
+ "seconds": 46.144,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1276,
+ "addedLines": 6,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 6,
+  "toolCalls": 6,
+  "inputTokens": 12821,
+  "outputTokens": 4767,
+  "lastInputTokens": 2466,
+  "peakInputTokens": 2466,
+  "modelCalls": 6,
+  "usageReportedCalls": 6,
+  "cacheReadTokens": 11264,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 6,
+  "roles": {
+   "main": {
+    "calls": 6,
+    "reportedInput": 6,
+    "reportedOutput": 6,
+    "inputTokens": 12821,
+    "outputTokens": 4767
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: - `save_report()` no longer opens the destination with `\"w\"` directly (which truncated `report.txt` the moment the process died mid-write). | - It now writes the full text to a sibling temp file, `flush()` + `os.fsync()` so the bytes are on disk, then `os.replace(tmp, path)` — atomic on both POSIX and | - Any crash before the replace leaves the old `report.txt` intact, plus a stray `.tmp` sibling that the next successful run overwrites. | - All writes are confined to the target's own directory, so it still works when `path` lives on a different filesystem/mount than `os.getcwd()` (a `tempfile`-ba | **Verification**: `verify()` (the fixed, no-argument check) ran twice — before and after the edit — and passed both times with 2 tests OK. Since it was already "
+}

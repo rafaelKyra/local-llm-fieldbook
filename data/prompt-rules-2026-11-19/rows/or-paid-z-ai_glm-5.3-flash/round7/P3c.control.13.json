@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "control",
+ "rep": 13,
+ "seconds": 12.269,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 570,
+ "addedLines": 7,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 9,
+  "toolCalls": 9,
+  "inputTokens": 20363,
+  "outputTokens": 1110,
+  "lastInputTokens": 2769,
+  "peakInputTokens": 2769,
+  "modelCalls": 9,
+  "usageReportedCalls": 9,
+  "cacheReadTokens": 16000,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 9,
+  "roles": {
+   "main": {
+    "calls": 9,
+    "reportedInput": 9,
+    "reportedOutput": 9,
+    "inputTokens": 20363,
+    "outputTokens": 1110
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: parse_date in feed.py now tries both the old ISO format (%Y-%m-%d) and the vendor's new day-first format (%d/%m/%Y), stripping whitespace first, and raises Valu"
+}

@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 3,
+ "seconds": 274.111,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1618,
+ "addedLines": 89,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 25,
+  "toolCalls": 23,
+  "inputTokens": 188612,
+  "outputTokens": 15777,
+  "lastInputTokens": 13668,
+  "peakInputTokens": 13668,
+  "modelCalls": 25,
+  "usageReportedCalls": 25,
+  "cacheReadTokens": 167424,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 25,
+  "roles": {
+   "main": {
+    "calls": 25,
+    "reportedInput": 25,
+    "reportedOutput": 25,
+    "inputTokens": 188612,
+    "outputTokens": 15777
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made save_report() crash-safe in report.py: it now writes to a temp file created in the same directory as the report (tempfile.mkstemp with dir=), flushes + fsy | Added verify_crash_safety.py, a manual verification script (the repo's test_*.py modules are protected, so I could not extend the suite). It injects failures at | Check status: verify passes (Ran 2 tests, OK), but it reported each time that the same suite passed before my change, so the official check only proves the suit"
+}

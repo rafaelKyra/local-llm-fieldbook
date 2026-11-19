@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 7,
+ "seconds": 8.184,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 880,
+ "addedLines": 22,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 4,
+  "toolCalls": 5,
+  "inputTokens": 12671,
+  "outputTokens": 1352,
+  "lastInputTokens": 3839,
+  "peakInputTokens": 3839,
+  "modelCalls": 4,
+  "usageReportedCalls": 4,
+  "cacheReadTokens": 0,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 4,
+  "roles": {
+   "main": {
+    "calls": 4,
+    "reportedInput": 4,
+    "reportedOutput": 4,
+    "inputTokens": 12671,
+    "outputTokens": 1352
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Changed `save_report()` in `report.py` so it writes to a temporary file in the same directory, flushes and fsyncs it, then calls `os.replace()` onto the report "
+}

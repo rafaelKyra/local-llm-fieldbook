@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 10,
+ "seconds": 14.742,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1089,
+ "addedLines": 23,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 7,
+  "toolCalls": 8,
+  "inputTokens": 26920,
+  "outputTokens": 2442,
+  "lastInputTokens": 4987,
+  "peakInputTokens": 4987,
+  "modelCalls": 7,
+  "usageReportedCalls": 7,
+  "cacheReadTokens": 0,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 7,
+  "roles": {
+   "main": {
+    "calls": 7,
+    "reportedInput": 7,
+    "reportedOutput": 7,
+    "inputTokens": 26920,
+    "outputTokens": 2442
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Changed `save_report()` in `report.py` to write atomically: it writes to a temp file in the same directory, fsyncs it, then calls `os.replace()` onto the target | Checks: the fixed verify check passed before any edit, so it doesn't prove the change. After the edit I ran `python -m unittest test_report` through verify (2 t | Not checked: I could not run on Windows, so the `os.replace` overwrite behaviour there is unverified. A crash after the replace but before the directory entry i"
+}

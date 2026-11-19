@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 1,
+ "seconds": 11.478,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1246,
+ "addedLines": 18,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 7,
+  "toolCalls": 8,
+  "inputTokens": 16696,
+  "outputTokens": 850,
+  "lastInputTokens": 2832,
+  "peakInputTokens": 2832,
+  "modelCalls": 7,
+  "usageReportedCalls": 7,
+  "cacheReadTokens": 11485,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 7,
+  "roles": {
+   "main": {
+    "calls": 7,
+    "reportedInput": 7,
+    "reportedOutput": 7,
+    "inputTokens": 16696,
+    "outputTokens": 850
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: 2. Writes the text, flushes, and `os.fsync()`s the file so the data is on disk before the swap. | 3. Atomically swaps it into place with `os.replace()` (which maps to `MoveFileEx` with `MOVEFILE_REPLACE_EXISTING` on Windows, so it's atomic there as well). | 4. On any failure (including `KeyboardInterrupt`/`SystemExit`, since it catches `BaseException`), it removes the temp file and re-raises — the existing `report. | **Files changed** — `report.py` only; the test suite was not modified. | **Check** — `verify` (the fixed check, the existing 2-test suite) passed both before and after the edit; it only covers that the file is written and replaced, s"
+}

@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 4,
+ "seconds": 19.069,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 688,
+ "addedLines": 10,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 9,
+  "toolCalls": 9,
+  "inputTokens": 24231,
+  "outputTokens": 1095,
+  "lastInputTokens": 3333,
+  "peakInputTokens": 3333,
+  "modelCalls": 9,
+  "usageReportedCalls": 9,
+  "cacheReadTokens": 21120,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 9,
+  "roles": {
+   "main": {
+    "calls": 9,
+    "reportedInput": 9,
+    "reportedOutput": 9,
+    "inputTokens": 24231,
+    "outputTokens": 1095
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: The check passes. Here's what changed: | **File modified:** `report.py` | **Change:** `save_report()` now writes to a temporary file first (via `tempfile.mkstemp()` in the same directory), then atomically renames it to the target path | This makes the write crash-safe: if the process dies mid-write, the original `report.txt` is untouched — it will contain either the previous complete report or "
+}

@@ -1,0 +1,54 @@
+{
+  "passAtK": "25/38",
+  "passPowK": "25/38",
+  "wilson95": [
+    0.499,
+    0.788
+  ],
+  "label": "oxcoder-control",
+  "model": "oxcoder-9b-mtp",
+  "profile": "auto",
+  "runtime": "forge",
+  "tasks": 38,
+  "solved": 25,
+  "rate": 0.658,
+  "verdicts": {
+    "solved": 25,
+    "overfit": 8,
+    "budget": 5
+  },
+  "byCategory": {
+    "off-by-one": "2/2",
+    "wrong-operator": "1/1",
+    "string": "0/1",
+    "async": "1/1",
+    "sorting": "1/1",
+    "regex": "1/1",
+    "feature": "4/5",
+    "bug": "9/9",
+    "multi-file": "2/2",
+    "parsing": "0/2",
+    "read-the-spec": "0/1",
+    "python": "4/4",
+    "spec": "0/8"
+  },
+  "totalSeconds": 3932.7,
+  "toolCalls": 481,
+  "inputTokens": 3330802,
+  "outputTokens": 370141,
+  "pathologies": {
+    "finish_without_verify": 12,
+    "claimed_without_verify": 2,
+    "refused_calls": 11,
+    "edits_without_verify": 25,
+    "edit_thrash": 12,
+    "stall_nudge": 5,
+    "truncated_reply": 11,
+    "regression": 1,
+    "stall_narrow": 2,
+    "same_error": 3,
+    "stall_replan": 2,
+    "stall_supervisor": 1,
+    "repeat_call": 1
+  }
+}

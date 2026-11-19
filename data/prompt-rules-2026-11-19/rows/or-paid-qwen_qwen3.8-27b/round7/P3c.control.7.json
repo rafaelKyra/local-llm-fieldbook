@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "control",
+ "rep": 7,
+ "seconds": 9.46,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 532,
+ "addedLines": 7,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 6,
+  "toolCalls": 7,
+  "inputTokens": 15608,
+  "outputTokens": 1532,
+  "lastInputTokens": 3107,
+  "peakInputTokens": 3107,
+  "modelCalls": 6,
+  "usageReportedCalls": 6,
+  "cacheReadTokens": 13824,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 6,
+  "roles": {
+   "main": {
+    "calls": 6,
+    "reportedInput": 6,
+    "reportedOutput": 6,
+    "inputTokens": 15608,
+    "outputTokens": 1532
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: Updated `parse_date()` in feed.py to accept both the old `YYYY-MM-DD` and the new day-first `DD/MM/YYYY` vendor date formats, trying each in turn and raising Va"
+}

@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 9,
+ "seconds": 55.343,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 2079,
+ "addedLines": 65,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 25,
+  "toolCalls": 22,
+  "inputTokens": 144313,
+  "outputTokens": 10030,
+  "lastInputTokens": 9081,
+  "peakInputTokens": 9081,
+  "modelCalls": 25,
+  "usageReportedCalls": 25,
+  "cacheReadTokens": 133888,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 25,
+  "roles": {
+   "main": {
+    "calls": 25,
+    "reportedInput": 25,
+    "reportedOutput": 25,
+    "inputTokens": 144313,
+    "outputTokens": 10030
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: - `_target_mode()` copies the existing file's permission bits onto the new file (default 0o644 for a new report), so the nightly job doesn't silently change per | - `_sync_directory()` fsyncs the directory on POSIX only (no-op on Windows, where the rename is already durable) so the rename itself survives a power loss. | - `_replace()` retries `os.replace` briefly (10 × 50 ms) on `PermissionError` **only on Windows**, because on the production Windows file server a reader holdin | Check results: `verify` passes (2 tests, OK). I also ran a throwaway script (since deleted) that monkeypatched `os.fsync` and `os.replace` to simulate a crash m | Caveats: the fixed check passed before my change too, so it does not by itself prove the fix — the crash simulation above is the actual evidence. I could not ad"
+}

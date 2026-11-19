@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 13,
+ "seconds": 10.803,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 758,
+ "addedLines": 23,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 6,
+  "toolCalls": 7,
+  "inputTokens": 21364,
+  "outputTokens": 1746,
+  "lastInputTokens": 4415,
+  "peakInputTokens": 4415,
+  "modelCalls": 6,
+  "usageReportedCalls": 6,
+  "cacheReadTokens": 0,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 6,
+  "roles": {
+   "main": {
+    "calls": 6,
+    "reportedInput": 6,
+    "reportedOutput": 6,
+    "inputTokens": 21364,
+    "outputTokens": 1746
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: `save_report()` in `report.py` now writes to a temporary file in the same directory, fsyncs it, and then swaps it into place with `os.replace`. A crash during t | The check passed both before and after the change, so it does not prove the fix. The existing tests only check that the output is written and overwritten. To te | Not checked: I only ran this on Linux. `os.replace` is documented to replace an existing file on Windows, but I haven't run it on the Windows file server. Also,"
+}

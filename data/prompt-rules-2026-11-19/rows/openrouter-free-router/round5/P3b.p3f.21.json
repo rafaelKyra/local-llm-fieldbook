@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 21,
+ "seconds": 101.505,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 525,
+ "addedLines": 21,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 21,
+  "toolCalls": 15,
+  "inputTokens": 79600,
+  "outputTokens": 5171,
+  "lastInputTokens": 2569,
+  "peakInputTokens": 5555,
+  "modelCalls": 21,
+  "usageReportedCalls": 21,
+  "cacheReadTokens": 32048,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 21,
+  "roles": {
+   "main": {
+    "calls": 21,
+    "reportedInput": 21,
+    "reportedOutput": 21,
+    "inputTokens": 79600,
+    "outputTokens": 5171
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Changed `save_report()` in `report.py` to use an atomic write pattern: the report text is first written to a temporary file (via `tempfile.mkstemp`), flushed an"
+}

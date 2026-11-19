@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 4,
+ "seconds": 145.723,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1735,
+ "addedLines": 54,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 20,
+  "toolCalls": 18,
+  "inputTokens": 109058,
+  "outputTokens": 8249,
+  "lastInputTokens": 8312,
+  "peakInputTokens": 8312,
+  "modelCalls": 20,
+  "usageReportedCalls": 20,
+  "cacheReadTokens": 93696,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 20,
+  "roles": {
+   "main": {
+    "calls": 20,
+    "reportedInput": 20,
+    "reportedOutput": 20,
+    "inputTokens": 109058,
+    "outputTokens": 8249
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: - On any exception (including `BaseException`, e.g. KeyboardInterrupt) the half-written temp file is closed and unlinked, then the error is re-raised, so the ol | - Best-effort directory `fsync` after the rename (skipped silently on Windows, where opening a directory is not permitted; NTFS journals the rename). | - Preserves the existing report's file mode, which `mkstemp` would otherwise reset to 0600. | Only `report.py` changed; `test_report.py` was not touched. | Check status: `verify` reports CHECK PASSED (2 tests OK) — but note this same check also passed before any change, so the suite alone does not prove the fix. To"
+}

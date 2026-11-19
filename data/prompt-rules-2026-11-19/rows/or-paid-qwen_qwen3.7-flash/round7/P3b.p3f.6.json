@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 6,
+ "seconds": 16.465,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 701,
+ "addedLines": 10,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 7,
+  "toolCalls": 7,
+  "inputTokens": 17898,
+  "outputTokens": 1101,
+  "lastInputTokens": 3105,
+  "peakInputTokens": 3105,
+  "modelCalls": 7,
+  "usageReportedCalls": 7,
+  "cacheReadTokens": 15744,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 7,
+  "roles": {
+   "main": {
+    "calls": 7,
+    "reportedInput": 7,
+    "reportedOutput": 7,
+    "inputTokens": 17898,
+    "outputTokens": 1101
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: **Change:** `save_report()` now writes to a temporary file first (in the same directory as the target), then atomically renames it to the target path using `os. | This makes the write crash-safe because: | - The original `report.txt` is never opened for writing until the new content is fully written to the temp file | - `os.replace()` is atomic on both Linux and Windows (when source and destination are on the same filesystem) | - A crash mid-write leaves only the temp file behind; the existing report remains intact"
+}

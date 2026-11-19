@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 15,
+ "seconds": 48.28,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 2768,
+ "addedLines": 89,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 15,
+  "toolCalls": 19,
+  "inputTokens": 78082,
+  "outputTokens": 7806,
+  "lastInputTokens": 8868,
+  "peakInputTokens": 8868,
+  "modelCalls": 15,
+  "usageReportedCalls": 15,
+  "cacheReadTokens": 69120,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 15,
+  "roles": {
+   "main": {
+    "calls": 15,
+    "reportedInput": 15,
+    "reportedOutput": 15,
+    "inputTokens": 78082,
+    "outputTokens": 7806
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: - `_replace()` retries `os.replace()` briefly on `PermissionError`, which is what Windows raises when another process (e.g. the next job) still has the report o | - `_fsync_dir()` best-effort fsyncs the directory so the rename itself is durable; it is a no-op where directories cannot be opened (Windows), so it is safe on  | - On any exception the temp file is unlinked, so a failed run leaves no `.report-*.tmp` litter behind. | Check results: `verify` (the fixed check) passed on the current files — 2 tests, OK. Note that it also passed before my change, so it does not by itself prove t | Not verified: I could not run this on Windows, so the Windows-specific behaviour (atomicity of `os.replace`, the `PermissionError` retry, and the no-op director"
+}

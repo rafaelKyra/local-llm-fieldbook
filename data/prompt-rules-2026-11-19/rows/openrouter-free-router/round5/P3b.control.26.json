@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 26,
+ "seconds": 113.927,
+ "solved": false,
+ "behaviour": false,
+ "replyChars": 213,
+ "addedLines": 0,
+ "replyShortcut": false,
+ "status": "interrupted",
+ "stopReason": "model endpoint unavailable (rate_limited): HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day-high-balance. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"1000\",\"X-RateLim…",
+ "usage": {
+  "turns": 3,
+  "toolCalls": 4,
+  "inputTokens": 4012,
+  "outputTokens": 339,
+  "lastInputTokens": 1893,
+  "peakInputTokens": 2119,
+  "modelCalls": 3,
+  "usageReportedCalls": 2,
+  "cacheReadTokens": 2880,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 2,
+  "roles": {
+   "main": {
+    "calls": 3,
+    "reportedInput": 2,
+    "reportedOutput": 2,
+    "inputTokens": 4012,
+    "outputTokens": 339
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=False\n  tail: Stopped: model endpoint unavailable (rate_limited): HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day-high-balance. \",\"code\":429,\"metadata"
+}

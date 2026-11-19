@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 6,
+ "seconds": 111.129,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1735,
+ "addedLines": 25,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 11,
+  "toolCalls": 10,
+  "inputTokens": 37574,
+  "outputTokens": 7972,
+  "lastInputTokens": 5125,
+  "peakInputTokens": 5125,
+  "modelCalls": 11,
+  "usageReportedCalls": 11,
+  "cacheReadTokens": 27648,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 11,
+  "roles": {
+   "main": {
+    "calls": 11,
+    "reportedInput": 11,
+    "reportedOutput": 11,
+    "inputTokens": 37574,
+    "outputTokens": 7972
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Only `report.py` was modified; `test_report.py` and the check were left untouched. | Verification: | - The fixed check (`verify`) passes: `Ran 2 tests ... OK`. **Note: that same check also passed before any change** (recorded as check 1 on the original truncati | - To actually exercise the new behaviour I ran ad-hoc crash simulations (not added to the repo): injecting an exception at the fsync/pre-rename point and at the | Known Windows caveat (unchanged by this fix): `os.replace` fails with `PermissionError` if another process holds `report.txt` open without share-delete access; "
+}

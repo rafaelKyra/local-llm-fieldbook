@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "control",
+ "rep": 4,
+ "seconds": 21.923,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 731,
+ "addedLines": 8,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 8,
+  "toolCalls": 9,
+  "inputTokens": 19495,
+  "outputTokens": 2418,
+  "lastInputTokens": 3144,
+  "peakInputTokens": 3144,
+  "modelCalls": 8,
+  "usageReportedCalls": 8,
+  "cacheReadTokens": 15168,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 8,
+  "roles": {
+   "main": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 19495,
+    "outputTokens": 2418
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: Added support for the vendor's new day-first date format in feed.py. `parse_date()` now tries both `%Y-%m-%d` and `%d/%m/%Y` (via a `DATE_FORMATS` tuple) and ra"
+}

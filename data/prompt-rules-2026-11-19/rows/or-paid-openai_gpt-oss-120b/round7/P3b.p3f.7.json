@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 7,
+ "seconds": 4.152,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 330,
+ "addedLines": 10,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 6,
+  "toolCalls": 5,
+  "inputTokens": 10847,
+  "outputTokens": 704,
+  "lastInputTokens": 1852,
+  "peakInputTokens": 3076,
+  "modelCalls": 6,
+  "usageReportedCalls": 6,
+  "cacheReadTokens": 8416,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 6,
+  "roles": {
+   "main": {
+    "calls": 6,
+    "reportedInput": 6,
+    "reportedOutput": 6,
+    "inputTokens": 10847,
+    "outputTokens": 704
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Implemented crash‑safe report writing in **report.py**: | - Writes content to a temporary file first. | - Flushes and syncs to disk. | - Atomically replaces the original file with the temporary one using `os.replace`. | This prevents corruption of the existing report if a crash occurs during the write. The test suite continues to pass."
+}

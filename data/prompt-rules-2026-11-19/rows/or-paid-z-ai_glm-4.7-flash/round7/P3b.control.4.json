@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 4,
+ "seconds": 27.308,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 431,
+ "addedLines": 8,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 6,
+  "toolCalls": 5,
+  "inputTokens": 13141,
+  "outputTokens": 1170,
+  "lastInputTokens": 2539,
+  "peakInputTokens": 2539,
+  "modelCalls": 6,
+  "usageReportedCalls": 6,
+  "cacheReadTokens": 0,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 6,
+  "roles": {
+   "main": {
+    "calls": 6,
+    "reportedInput": 6,
+    "reportedOutput": 6,
+    "inputTokens": 13141,
+    "outputTokens": 1170
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made the report writing crash-safe by using a temporary file and atomic rename operation. The `save_report()` function now: | 1. Writes the report to a temporary file using `tempfile.NamedTemporaryFile` with `delete=False` | 2. Uses `os.replace()` to atomically replace the original file | This ensures that if the process crashes during the write, the original `report.txt` remains intact and uncorrupted. The test suite remains green."
+}

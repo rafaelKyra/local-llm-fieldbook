@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 11,
+ "seconds": 8.543,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1052,
+ "addedLines": 20,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 4,
+  "toolCalls": 5,
+  "inputTokens": 12607,
+  "outputTokens": 1346,
+  "lastInputTokens": 3797,
+  "peakInputTokens": 3797,
+  "modelCalls": 4,
+  "usageReportedCalls": 4,
+  "cacheReadTokens": 0,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 4,
+  "roles": {
+   "main": {
+    "calls": 4,
+    "reportedInput": 4,
+    "reportedOutput": 4,
+    "inputTokens": 12607,
+    "outputTokens": 1346
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Changed `save_report()` in report.py to write atomically: the text goes to a temp file in the same directory, is flushed and fsynced, then `os.replace()` swaps  | The verify check passed before my edit and after it (2 tests, OK). It does not cover this change: the existing tests only check that the file contents are writt | Risks to check on the file server: `os.replace` on Windows fails if another process holds report.txt open without share-delete rights, so a reader holding the f"
+}

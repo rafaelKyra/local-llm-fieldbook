@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "control",
+ "rep": 8,
+ "seconds": 94.288,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 365,
+ "addedLines": 7,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 30,
+  "toolCalls": 26,
+  "inputTokens": 150290,
+  "outputTokens": 4494,
+  "lastInputTokens": 8753,
+  "peakInputTokens": 8753,
+  "modelCalls": 30,
+  "usageReportedCalls": 30,
+  "cacheReadTokens": 52496,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 30,
+  "roles": {
+   "main": {
+    "calls": 30,
+    "reportedInput": 30,
+    "reportedOutput": 30,
+    "inputTokens": 150290,
+    "outputTokens": 4494
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: Modified `feed.py` to make `parse_date()` accept both the vendor's old date format (`2026-03-04`, `%Y-%m-%d`) and the new day-first format (`04/03/2026`, `%d/%m"
+}

@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 20,
+ "seconds": 42.787,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 623,
+ "addedLines": 18,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 9,
+  "toolCalls": 10,
+  "inputTokens": 23738,
+  "outputTokens": 2283,
+  "lastInputTokens": 3298,
+  "peakInputTokens": 3324,
+  "modelCalls": 9,
+  "usageReportedCalls": 9,
+  "cacheReadTokens": 11648,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 9,
+  "roles": {
+   "main": {
+    "calls": 9,
+    "reportedInput": 9,
+    "reportedOutput": 9,
+    "inputTokens": 23738,
+    "outputTokens": 2283
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: **Change:** `report.py` now writes to a temporary file in the same directory and atomically renames it over the destination (`os.replace`). If the process dies  | **Verification:** | - `verify` passes (2 tests OK). | - Manual crash test: after forcing the rename to fail, the file still contained the old content (`old`) and no temp file was left behind. | Note: the check passed both before and after the change, so it doesn't prove the fix — only that the suite stays green."
+}

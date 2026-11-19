@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "control",
+ "rep": 8,
+ "seconds": 103.951,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1215,
+ "addedLines": 10,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 21,
+  "toolCalls": 16,
+  "inputTokens": 73174,
+  "outputTokens": 4698,
+  "lastInputTokens": 5101,
+  "peakInputTokens": 5101,
+  "modelCalls": 21,
+  "usageReportedCalls": 21,
+  "cacheReadTokens": 69896,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 21,
+  "roles": {
+   "main": {
+    "calls": 21,
+    "reportedInput": 21,
+    "reportedOutput": 21,
+    "inputTokens": 73174,
+    "outputTokens": 4698
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: Changed `parse_date()` in `feed.py` to try a list of accepted formats — `(\"%Y-%m-%d\", \"%d/%m/%Y\")` — so `parse_row()` reads both the current `2026-03-04` export | Files changed: `feed.py` only. `test_feed.py` is protected and could not be edited, so no existing test was modified. | Check: `verify` (the fixed project suite, 3 tests) passes — but it also passed before any edit, so it does not by itself prove the new behaviour. To prove the n"
+}

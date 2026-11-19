@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "p3",
+ "rep": 19,
+ "seconds": 40.609,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 204,
+ "addedLines": 6,
+ "replyShortcut": false,
+ "status": "unverified",
+ "stopReason": "finished without a passing check",
+ "usage": {
+  "turns": 26,
+  "toolCalls": 23,
+  "inputTokens": 103532,
+  "outputTokens": 3011,
+  "lastInputTokens": 5939,
+  "peakInputTokens": 5939,
+  "modelCalls": 26,
+  "usageReportedCalls": 26,
+  "cacheReadTokens": 0,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 0,
+  "roles": {
+   "main": {
+    "calls": 26,
+    "reportedInput": 26,
+    "reportedOutput": 26,
+    "inputTokens": 103532,
+    "outputTokens": 3011
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: Modified feed.py: parse_date() now tries DD/MM/YYYY format first, then falls back to YYYY-MM-DD if that fails. All 3 existing tests pass and both date formats c"
+}

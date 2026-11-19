@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 2,
+ "seconds": 251.526,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 2323,
+ "addedLines": 88,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 27,
+  "toolCalls": 29,
+  "inputTokens": 250428,
+  "outputTokens": 14183,
+  "lastInputTokens": 14325,
+  "peakInputTokens": 14325,
+  "modelCalls": 27,
+  "usageReportedCalls": 27,
+  "cacheReadTokens": 225536,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 27,
+  "roles": {
+   "main": {
+    "calls": 27,
+    "reportedInput": 27,
+    "reportedOutput": 27,
+    "inputTokens": 250428,
+    "outputTokens": 14183
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: - `fsync` of the directory afterwards (best effort, ignored where unsupported) to persist the rename; | - `except BaseException` cleanup that unlinks the temp file and re-raises, so a failed write leaves the previous report untouched; | - preserves the target's permission bits (mkstemp creates 0600 whereas `open(path,\"w\")` kept the old mode — matters if the reader job runs as another user). | **Windows production note (documented in the module docstring):** `os.replace` maps to `MoveFileEx` with `MOVEFILE_REPLACE_EXISTING`, which is atomic but raises | **Verification:** the fixed check (`verify`) passes — 2 existing tests, `test_writes_text` and `test_replaces_old_text`, both OK, plus `py_compile` clean. **Cav"
+}
