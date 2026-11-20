@@ -1,6 +1,8 @@
 {
  "excluded_not_completed": {
-  "openrouter-free-router/round5": 19
+  "openrouter-free-router/round5": 19,
+  "or-free-google_gemma-4-31b-it_free/round6": 4,
+  "or-free-nvidia_nemotron-3-ultra-550b-a55b_free/round6": 1
  },
  "kit_rows": [
   {
@@ -73,6 +75,78 @@
    "mean_output_tokens": 1512.3,
    "mean_seconds": 39.1,
    "mean_reply_chars": 493.0,
+   "crashes": 0
+  },
+  {
+   "model": "or-free-nvidia_nemotron-3-ultra-550b-a55b_free",
+   "round": "round6",
+   "kit": "P3b",
+   "arm": "control",
+   "withdrawn": false,
+   "runs": 16,
+   "solved": 16,
+   "behaviour": 1,
+   "behaviour_ci95": [
+    0.011,
+    0.283
+   ],
+   "mean_output_tokens": 919.5,
+   "mean_seconds": 22.2,
+   "mean_reply_chars": 435.2,
+   "crashes": 0
+  },
+  {
+   "model": "or-free-nvidia_nemotron-3-ultra-550b-a55b_free",
+   "round": "round6",
+   "kit": "P3b",
+   "arm": "p3f",
+   "withdrawn": false,
+   "runs": 16,
+   "solved": 16,
+   "behaviour": 0,
+   "behaviour_ci95": [
+    0,
+    0.194
+   ],
+   "mean_output_tokens": 909.1,
+   "mean_seconds": 22.8,
+   "mean_reply_chars": 465.3,
+   "crashes": 0
+  },
+  {
+   "model": "or-free-nvidia_nemotron-3-ultra-550b-a55b_free",
+   "round": "round6",
+   "kit": "P3c",
+   "arm": "control",
+   "withdrawn": false,
+   "runs": 16,
+   "solved": 16,
+   "behaviour": 0,
+   "behaviour_ci95": [
+    0,
+    0.194
+   ],
+   "mean_output_tokens": 897.1,
+   "mean_seconds": 22.3,
+   "mean_reply_chars": 361.8,
+   "crashes": 0
+  },
+  {
+   "model": "or-free-nvidia_nemotron-3-ultra-550b-a55b_free",
+   "round": "round6",
+   "kit": "P3c",
+   "arm": "p3f",
+   "withdrawn": false,
+   "runs": 16,
+   "solved": 16,
+   "behaviour": 0,
+   "behaviour_ci95": [
+    0,
+    0.194
+   ],
+   "mean_output_tokens": 942.5,
+   "mean_seconds": 26.0,
+   "mean_reply_chars": 386.8,
    "crashes": 0
   },
   {
@@ -910,6 +984,30 @@
    "solved": "25/25",
    "control_solved": "25/25",
    "output_tokens_vs_control_pct": -7.1
+  },
+  {
+   "model": "or-free-nvidia_nemotron-3-ultra-550b-a55b_free",
+   "round": "round6",
+   "kit": "P3b",
+   "arm": "p3f",
+   "behaviour": "0/16",
+   "control_behaviour": "1/16",
+   "fisher_p": 1.0,
+   "solved": "16/16",
+   "control_solved": "16/16",
+   "output_tokens_vs_control_pct": -1.1
+  },
+  {
+   "model": "or-free-nvidia_nemotron-3-ultra-550b-a55b_free",
+   "round": "round6",
+   "kit": "P3c",
+   "arm": "p3f",
+   "behaviour": "0/16",
+   "control_behaviour": "0/16",
+   "fisher_p": 1.0,
+   "solved": "16/16",
+   "control_solved": "16/16",
+   "output_tokens_vs_control_pct": 5.1
   },
   {
    "model": "or-paid-anthropic_claude-haiku-5.5",

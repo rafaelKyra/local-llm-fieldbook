@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 12,
+ "seconds": 21.021,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 467,
+ "addedLines": 7,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 8,
+  "toolCalls": 7,
+  "inputTokens": 21687,
+  "outputTokens": 821,
+  "lastInputTokens": 3237,
+  "peakInputTokens": 3237,
+  "modelCalls": 8,
+  "usageReportedCalls": 8,
+  "cacheReadTokens": 0,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 8,
+  "roles": {
+   "main": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 21687,
+    "outputTokens": 821
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Changed `save_report()` in `report.py` to write crash-safe by: | 1. Writing to a temporary file in the same directory using `tempfile.NamedTemporaryFile(delete=False)` | 2. Atomically replacing the target file with `os.replace(tmp_name, path)` | This ensures that if the process dies during the write, the original `report.txt` remains intact and uncorrupted. The `os.replace()` is atomic on both Windows a"
+}

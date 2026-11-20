@@ -1,0 +1,45 @@
+{
+  "passAtK": "7/20",
+  "passPowK": "7/20",
+  "wilson95": [
+    0.181,
+    0.567
+  ],
+  "label": "strata-p3f",
+  "model": "qwen3.8-flash-next-iq3_s",
+  "profile": "auto",
+  "runtime": "forge",
+  "tasks": 20,
+  "solved": 7,
+  "rate": 0.35,
+  "verdicts": {
+    "failed": 2,
+    "solved": 7,
+    "budget": 10,
+    "overfit": 1
+  },
+  "byCategory": {
+    "pilot": "7/20"
+  },
+  "totalSeconds": 11229.6,
+  "toolCalls": 1103,
+  "inputTokens": 15004545,
+  "outputTokens": 601539,
+  "pathologies": {
+    "broad_search": 27,
+    "read_spiral": 27,
+    "invalid_arguments": 70,
+    "auto_explore": 17,
+    "edits_without_verify": 6,
+    "edit_thrash": 5,
+    "refused_calls": 81,
+    "read_stuck": 4,
+    "truncated_reply": 4,
+    "non_discriminating_check": 15,
+    "regression": 6,
+    "untracked_changes": 8,
+    "check_repeated": 3,
+    "finish_without_verify": 8,
+    "claimed_without_verify": 2
+  }
+}

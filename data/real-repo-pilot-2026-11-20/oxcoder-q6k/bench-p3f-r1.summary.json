@@ -1,0 +1,48 @@
+{
+  "passAtK": "2/20",
+  "passPowK": "2/20",
+  "wilson95": [
+    0.028,
+    0.301
+  ],
+  "label": "oxcoder-q6k-p3f",
+  "model": "oxcoder-q6k",
+  "profile": "auto",
+  "runtime": "forge",
+  "tasks": 20,
+  "solved": 2,
+  "rate": 0.1,
+  "verdicts": {
+    "budget": 11,
+    "solved": 2,
+    "blocked": 2,
+    "overfit": 3,
+    "failed": 2
+  },
+  "byCategory": {
+    "pilot": "2/20"
+  },
+  "totalSeconds": 4850.9,
+  "toolCalls": 986,
+  "inputTokens": 20876309,
+  "outputTokens": 297071,
+  "pathologies": {
+    "edits_without_verify": 6,
+    "shell_write_refused": 4,
+    "refused_calls": 79,
+    "broad_search": 22,
+    "read_spiral": 20,
+    "auto_explore": 15,
+    "repeat_call": 74,
+    "read_stuck": 4,
+    "validator_correction_declined": 1,
+    "regression": 2,
+    "non_discriminating_check": 6,
+    "edit_thrash": 5,
+    "truncated_reply": 3,
+    "auto_revert": 1,
+    "stall_nudge": 1,
+    "untracked_changes": 6,
+    "finish_without_verify": 1
+  }
+}

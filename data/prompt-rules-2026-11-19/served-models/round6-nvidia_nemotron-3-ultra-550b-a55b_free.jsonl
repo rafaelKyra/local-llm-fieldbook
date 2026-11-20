@@ -1,0 +1,621 @@
+{"t":1795059960055,"ms":103,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day-high-balance. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"1000\",\"X-RateLimit-Remainin"}
+{"t":1795059962657,"ms":37,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day-high-balance. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"1000\",\"X-RateLimit-Remainin"}
+{"t":1795059966787,"ms":89,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day-high-balance. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"1000\",\"X-RateLimit-Remainin"}
+{"t":1795059975033,"ms":67,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day-high-balance. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"1000\",\"X-RateLimit-Remainin"}
+{"t":1795059991397,"ms":2129,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day-high-balance. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"1000\",\"X-RateLimit-Remainin"}
+{"t":1795060023916,"ms":97,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day-high-balance. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"1000\",\"X-RateLimit-Remainin"}
+{"t":1795060054068,"ms":71,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day-high-balance. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"1000\",\"X-RateLimit-Remainin"}
+{"t":1795060377293,"ms":365,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day-high-balance. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"1000\",\"X-RateLimit-Remainin"}
+{"t":1795060379914,"ms":39,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day-high-balance. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"1000\",\"X-RateLimit-Remainin"}
+{"t":1795060384248,"ms":83,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day-high-balance. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"1000\",\"X-RateLimit-Remainin"}
+{"t":1795060392631,"ms":60,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day-high-balance. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"1000\",\"X-RateLimit-Remainin"}
+{"t":1795060409145,"ms":77,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day-high-balance. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"1000\",\"X-RateLimit-Remainin"}
+{"t":1795060439567,"ms":91,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day-high-balance. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"1000\",\"X-RateLimit-Remainin"}
+{"t":1795060470119,"ms":56,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day-high-balance. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"1000\",\"X-RateLimit-Remainin"}
+{"t":1795132920590,"ms":2789,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2247,"ct":112,"err":null}
+{"t":1795132923403,"ms":1103,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2293,"ct":42,"err":null}
+{"t":1795132924517,"ms":1966,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2397,"ct":42,"err":null}
+{"t":1795132926491,"ms":1392,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2687,"ct":72,"err":null}
+{"t":1795132928019,"ms":5394,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2778,"ct":320,"err":null}
+{"t":1795132933427,"ms":908,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3028,"ct":28,"err":null}
+{"t":1795132934471,"ms":1606,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3126,"ct":48,"err":null}
+{"t":1795132936083,"ms":6136,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3291,"ct":296,"err":null}
+{"t":1795142010056,"ms":1671,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2234,"ct":107,"err":null}
+{"t":1795142011743,"ms":2032,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2281,"ct":67,"err":null}
+{"t":1795142013788,"ms":2495,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2665,"ct":103,"err":null}
+{"t":1795142016424,"ms":2625,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2756,"ct":216,"err":null}
+{"t":1795142019063,"ms":1134,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2915,"ct":28,"err":null}
+{"t":1795142020329,"ms":1382,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3013,"ct":93,"err":null}
+{"t":1795142021778,"ms":1193,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3138,"ct":91,"err":null}
+{"t":1795142023034,"ms":2093,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3263,"ct":60,"err":null}
+{"t":1795142025297,"ms":2564,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3419,"ct":160,"err":null}
+{"t":1795142028269,"ms":3580,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2266,"ct":107,"err":null}
+{"t":1795142031871,"ms":1241,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2313,"ct":67,"err":null}
+{"t":1795142033120,"ms":2452,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2697,"ct":95,"err":null}
+{"t":1795142035711,"ms":2281,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2788,"ct":216,"err":null}
+{"t":1795142037999,"ms":737,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2947,"ct":28,"err":null}
+{"t":1795142038868,"ms":11515,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3045,"ct":93,"err":null}
+{"t":1795142050450,"ms":1337,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3170,"ct":91,"err":null}
+{"t":1795142051849,"ms":1443,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3295,"ct":61,"err":null}
+{"t":1795142053465,"ms":3438,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3453,"ct":44,"err":null}
+{"t":1795142056911,"ms":1313,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3642,"ct":33,"err":null}
+{"t":1795142058238,"ms":3064,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3727,"ct":145,"err":null}
+{"t":1795142061775,"ms":2637,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2247,"ct":112,"err":null}
+{"t":1795142064429,"ms":1315,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2293,"ct":39,"err":null}
+{"t":1795142065753,"ms":1803,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2397,"ct":42,"err":null}
+{"t":1795142067561,"ms":1752,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2687,"ct":148,"err":null}
+{"t":1795142069450,"ms":2744,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2778,"ct":244,"err":null}
+{"t":1795142072207,"ms":816,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2975,"ct":28,"err":null}
+{"t":1795142073165,"ms":1589,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3073,"ct":48,"err":null}
+{"t":1795142074760,"ms":2350,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3237,"ct":225,"err":null}
+{"t":1795142077555,"ms":1872,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2215,"ct":112,"err":null}
+{"t":1795142079458,"ms":1440,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2261,"ct":42,"err":null}
+{"t":1795142080910,"ms":954,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2365,"ct":42,"err":null}
+{"t":1795142081871,"ms":2625,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2655,"ct":153,"err":null}
+{"t":1795142084644,"ms":3779,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2746,"ct":268,"err":null}
+{"t":1795142088436,"ms":860,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2944,"ct":28,"err":null}
+{"t":1795142089430,"ms":30,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-min. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateL"}
+{"t":1795142091650,"ms":33,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-min. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateL"}
+{"t":1795142095830,"ms":1648,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3042,"ct":48,"err":null}
+{"t":1795142097486,"ms":27,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-min. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateL"}
+{"t":1795142099601,"ms":3518,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3207,"ct":231,"err":null}
+{"t":1795142103349,"ms":2728,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2215,"ct":112,"err":null}
+{"t":1795142106082,"ms":3082,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2261,"ct":42,"err":null}
+{"t":1795142109171,"ms":1159,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2365,"ct":42,"err":null}
+{"t":1795142110335,"ms":2512,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2655,"ct":101,"err":null}
+{"t":1795142112965,"ms":9610,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2775,"ct":272,"err":null}
+{"t":1795142122581,"ms":1321,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3000,"ct":57,"err":null}
+{"t":1795142124016,"ms":2246,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3127,"ct":48,"err":null}
+{"t":1795142126268,"ms":10862,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3323,"ct":245,"err":null}
+{"t":1795142137579,"ms":1551,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2266,"ct":107,"err":null}
+{"t":1795142139144,"ms":2007,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2313,"ct":67,"err":null}
+{"t":1795142141158,"ms":2204,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2697,"ct":95,"err":null}
+{"t":1795142143512,"ms":2477,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2788,"ct":216,"err":null}
+{"t":1795142146000,"ms":1047,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2947,"ct":28,"err":null}
+{"t":1795142147172,"ms":1208,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3045,"ct":92,"err":null}
+{"t":1795142148442,"ms":1516,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3170,"ct":91,"err":null}
+{"t":1795142150030,"ms":2227,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3295,"ct":61,"err":null}
+{"t":1795142152423,"ms":2922,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3454,"ct":161,"err":null}
+{"t":1795142155746,"ms":1766,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2234,"ct":107,"err":null}
+{"t":1795142157534,"ms":1292,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2281,"ct":67,"err":null}
+{"t":1795142158838,"ms":1725,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2665,"ct":95,"err":null}
+{"t":1795142160714,"ms":2947,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2756,"ct":216,"err":null}
+{"t":1795142163672,"ms":1195,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2915,"ct":28,"err":null}
+{"t":1795142165004,"ms":1501,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3013,"ct":93,"err":null}
+{"t":1795142166574,"ms":1673,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3138,"ct":89,"err":null}
+{"t":1795142168307,"ms":4977,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3263,"ct":61,"err":null}
+{"t":1795142173512,"ms":32,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-min. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateL"}
+{"t":1795142176027,"ms":2255,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3419,"ct":160,"err":null}
+{"t":1795142178668,"ms":1618,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2215,"ct":112,"err":null}
+{"t":1795142180308,"ms":1661,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2261,"ct":42,"err":null}
+{"t":1795142181977,"ms":913,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2365,"ct":42,"err":null}
+{"t":1795142182896,"ms":24,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-min. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateL"}
+{"t":1795142184977,"ms":1599,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2655,"ct":116,"err":null}
+{"t":1795142186713,"ms":6840,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2746,"ct":330,"err":null}
+{"t":1795142193567,"ms":997,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2994,"ct":28,"err":null}
+{"t":1795142194713,"ms":1425,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3092,"ct":47,"err":null}
+{"t":1795142196147,"ms":2820,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3256,"ct":220,"err":null}
+{"t":1795142199333,"ms":2075,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2247,"ct":112,"err":null}
+{"t":1795142201431,"ms":753,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2293,"ct":39,"err":null}
+{"t":1795142202195,"ms":1877,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2397,"ct":42,"err":null}
+{"t":1795142204078,"ms":1954,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2687,"ct":122,"err":null}
+{"t":1795142206175,"ms":25,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-min. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateL"}
+{"t":1795142208331,"ms":36,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-min. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateL"}
+{"t":1795142212626,"ms":4364,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2778,"ct":281,"err":null}
+{"t":1795142217000,"ms":4905,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2976,"ct":28,"err":null}
+{"t":1795142222034,"ms":2424,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3074,"ct":48,"err":null}
+{"t":1795142224466,"ms":4122,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3239,"ct":260,"err":null}
+{"t":1795142228948,"ms":2121,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2234,"ct":107,"err":null}
+{"t":1795142231092,"ms":1346,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2281,"ct":67,"err":null}
+{"t":1795142232452,"ms":2497,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2665,"ct":103,"err":null}
+{"t":1795142235097,"ms":3601,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2756,"ct":216,"err":null}
+{"t":1795142238713,"ms":974,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2915,"ct":28,"err":null}
+{"t":1795142239822,"ms":1744,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3013,"ct":92,"err":null}
+{"t":1795142241634,"ms":1365,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3138,"ct":91,"err":null}
+{"t":1795142243069,"ms":925,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3263,"ct":59,"err":null}
+{"t":1795142244196,"ms":2284,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3419,"ct":153,"err":null}
+{"t":1795142246933,"ms":2814,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2266,"ct":107,"err":null}
+{"t":1795142249779,"ms":1409,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2313,"ct":67,"err":null}
+{"t":1795142251202,"ms":2651,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2697,"ct":103,"err":null}
+{"t":1795142253987,"ms":5191,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2788,"ct":216,"err":null}
+{"t":1795142259188,"ms":1246,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2947,"ct":28,"err":null}
+{"t":1795142260567,"ms":2400,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3045,"ct":92,"err":null}
+{"t":1795142263032,"ms":1092,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3170,"ct":91,"err":null}
+{"t":1795142264187,"ms":1160,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3295,"ct":59,"err":null}
+{"t":1795142265550,"ms":2749,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3451,"ct":147,"err":null}
+{"t":1795142268755,"ms":1999,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2247,"ct":112,"err":null}
+{"t":1795142270770,"ms":901,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2293,"ct":42,"err":null}
+{"t":1795142271679,"ms":1111,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2397,"ct":42,"err":null}
+{"t":1795142272795,"ms":2354,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2687,"ct":155,"err":null}
+{"t":1795142275306,"ms":3426,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2778,"ct":276,"err":null}
+{"t":1795142278740,"ms":1249,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2976,"ct":28,"err":null}
+{"t":1795142280129,"ms":1681,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3074,"ct":48,"err":null}
+{"t":1795142281816,"ms":248,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-min. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateL"}
+{"t":1795142284336,"ms":28,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-min. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateL"}
+{"t":1795142288502,"ms":5698,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3239,"ct":228,"err":null}
+{"t":1795142294594,"ms":2167,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2215,"ct":112,"err":null}
+{"t":1795142296784,"ms":1134,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2261,"ct":44,"err":null}
+{"t":1795142297929,"ms":1083,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2365,"ct":42,"err":null}
+{"t":1795142299019,"ms":2530,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2655,"ct":153,"err":null}
+{"t":1795142301699,"ms":3611,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2746,"ct":323,"err":null}
+{"t":1795142305324,"ms":1338,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2995,"ct":28,"err":null}
+{"t":1795142306813,"ms":1109,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3093,"ct":44,"err":null}
+{"t":1795142307929,"ms":4090,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3258,"ct":233,"err":null}
+{"t":1795142312422,"ms":2258,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2266,"ct":107,"err":null}
+{"t":1795142314699,"ms":1180,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2313,"ct":67,"err":null}
+{"t":1795142315889,"ms":2570,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2697,"ct":95,"err":null}
+{"t":1795142318596,"ms":3355,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2788,"ct":216,"err":null}
+{"t":1795142321960,"ms":1004,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2947,"ct":28,"err":null}
+{"t":1795142323101,"ms":1494,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3045,"ct":93,"err":null}
+{"t":1795142324657,"ms":1697,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3170,"ct":91,"err":null}
+{"t":1795142326419,"ms":1880,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3295,"ct":61,"err":null}
+{"t":1795142328502,"ms":2357,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3451,"ct":56,"err":null}
+{"t":1795142330866,"ms":2199,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3640,"ct":31,"err":null}
+{"t":1795142333077,"ms":19792,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3725,"ct":145,"err":null}
+{"t":1795142353320,"ms":1536,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2234,"ct":107,"err":null}
+{"t":1795142354879,"ms":3201,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2281,"ct":67,"err":null}
+{"t":1795142358094,"ms":2461,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2665,"ct":103,"err":null}
+{"t":1795142360703,"ms":2515,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2756,"ct":216,"err":null}
+{"t":1795142363228,"ms":1423,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2915,"ct":28,"err":null}
+{"t":1795142364791,"ms":1196,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3013,"ct":93,"err":null}
+{"t":1795142366057,"ms":2691,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3138,"ct":91,"err":null}
+{"t":1795142368813,"ms":2392,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3263,"ct":58,"err":null}
+{"t":1795142371376,"ms":3003,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3420,"ct":160,"err":null}
+{"t":1795142374838,"ms":2101,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2215,"ct":112,"err":null}
+{"t":1795142376955,"ms":1009,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2261,"ct":42,"err":null}
+{"t":1795142377972,"ms":1275,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2365,"ct":42,"err":null}
+{"t":1795142379253,"ms":1661,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2655,"ct":115,"err":null}
+{"t":1795142381059,"ms":3080,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2746,"ct":382,"err":null}
+{"t":1795142384152,"ms":706,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2995,"ct":28,"err":null}
+{"t":1795142384986,"ms":1273,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3093,"ct":48,"err":null}
+{"t":1795142386266,"ms":4702,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3258,"ct":213,"err":null}
+{"t":1795142391454,"ms":2997,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2247,"ct":112,"err":null}
+{"t":1795142394470,"ms":1721,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2293,"ct":42,"err":null}
+{"t":1795142396200,"ms":1219,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2397,"ct":42,"err":null}
+{"t":1795142397423,"ms":2250,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2687,"ct":152,"err":null}
+{"t":1795142399814,"ms":34,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-min. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateL"}
+{"t":1795142402062,"ms":3845,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2778,"ct":266,"err":null}
+{"t":1795142405914,"ms":1746,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2976,"ct":28,"err":null}
+{"t":1795142407782,"ms":1618,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3074,"ct":48,"err":null}
+{"t":1795142409407,"ms":3537,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3239,"ct":252,"err":null}
+{"t":1795142413371,"ms":4017,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2234,"ct":107,"err":null}
+{"t":1795142417407,"ms":2156,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2281,"ct":67,"err":null}
+{"t":1795142419572,"ms":2639,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2665,"ct":95,"err":null}
+{"t":1795142422359,"ms":2404,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2756,"ct":216,"err":null}
+{"t":1795142424772,"ms":857,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2915,"ct":28,"err":null}
+{"t":1795142425755,"ms":4425,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3013,"ct":74,"err":null}
+{"t":1795142430248,"ms":2187,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3109,"ct":71,"err":null}
+{"t":1795142432496,"ms":1379,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3205,"ct":61,"err":null}
+{"t":1795142434116,"ms":26,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-min. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateL"}
+{"t":1795142436507,"ms":2254,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3417,"ct":160,"err":null}
+{"t":1795142439210,"ms":1829,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2266,"ct":107,"err":null}
+{"t":1795142441055,"ms":1042,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2313,"ct":44,"err":null}
+{"t":1795142442105,"ms":883,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2447,"ct":47,"err":null}
+{"t":1795142442994,"ms":2042,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2711,"ct":123,"err":null}
+{"t":1795142445174,"ms":4229,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2802,"ct":216,"err":null}
+{"t":1795142449418,"ms":942,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2961,"ct":28,"err":null}
+{"t":1795142450512,"ms":27,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-min. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateL"}
+{"t":1795142452719,"ms":1015,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3059,"ct":92,"err":null}
+{"t":1795142453805,"ms":1238,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3184,"ct":91,"err":null}
+{"t":1795142455104,"ms":3038,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3309,"ct":61,"err":null}
+{"t":1795142458339,"ms":1955,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3466,"ct":57,"err":null}
+{"t":1795142460299,"ms":2556,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3655,"ct":206,"err":null}
+{"t":1795142463307,"ms":2004,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2247,"ct":112,"err":null}
+{"t":1795142465345,"ms":991,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2293,"ct":42,"err":null}
+{"t":1795142466348,"ms":1012,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2397,"ct":42,"err":null}
+{"t":1795142467368,"ms":2023,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2687,"ct":148,"err":null}
+{"t":1795142469527,"ms":2771,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2778,"ct":271,"err":null}
+{"t":1795142472309,"ms":2042,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2976,"ct":28,"err":null}
+{"t":1795142474481,"ms":1173,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3074,"ct":48,"err":null}
+{"t":1795142475660,"ms":24,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-min. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateL"}
+{"t":1795142478098,"ms":4632,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3239,"ct":225,"err":null}
+{"t":1795142483146,"ms":1314,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2215,"ct":112,"err":null}
+{"t":1795142484478,"ms":2849,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2261,"ct":42,"err":null}
+{"t":1795142487335,"ms":1528,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2365,"ct":42,"err":null}
+{"t":1795142488869,"ms":41,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-min. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateL"}
+{"t":1795142491112,"ms":35,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-min. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateL"}
+{"t":1795142495303,"ms":2347,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2655,"ct":121,"err":null}
+{"t":1795142497794,"ms":4486,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2746,"ct":268,"err":null}
+{"t":1795142502288,"ms":809,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2944,"ct":28,"err":null}
+{"t":1795142503228,"ms":1356,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3042,"ct":48,"err":null}
+{"t":1795142504589,"ms":3731,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3207,"ct":218,"err":null}
+{"t":1795142508783,"ms":1381,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2266,"ct":107,"err":null}
+{"t":1795142510185,"ms":2164,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2313,"ct":67,"err":null}
+{"t":1795142512360,"ms":1274,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2697,"ct":103,"err":null}
+{"t":1795142513763,"ms":2749,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2788,"ct":216,"err":null}
+{"t":1795142516522,"ms":866,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2947,"ct":28,"err":null}
+{"t":1795142517538,"ms":3582,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3045,"ct":91,"err":null}
+{"t":1795142521191,"ms":1369,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3170,"ct":91,"err":null}
+{"t":1795142522626,"ms":2280,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3295,"ct":61,"err":null}
+{"t":1795142525064,"ms":1408,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3453,"ct":33,"err":null}
+{"t":1795142526489,"ms":3266,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3538,"ct":145,"err":null}
+{"t":1795142530151,"ms":1926,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2234,"ct":107,"err":null}
+{"t":1795142532092,"ms":2749,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2281,"ct":67,"err":null}
+{"t":1795142534851,"ms":2289,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2665,"ct":103,"err":null}
+{"t":1795142537285,"ms":5236,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2756,"ct":216,"err":null}
+{"t":1795142542532,"ms":956,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2915,"ct":28,"err":null}
+{"t":1795142543650,"ms":2445,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3013,"ct":93,"err":null}
+{"t":1795142546160,"ms":2199,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3138,"ct":91,"err":null}
+{"t":1795142548422,"ms":2893,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3263,"ct":61,"err":null}
+{"t":1795142551511,"ms":3708,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3421,"ct":160,"err":null}
+{"t":1795142555698,"ms":2286,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2215,"ct":112,"err":null}
+{"t":1795142558000,"ms":1418,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2261,"ct":44,"err":null}
+{"t":1795142559426,"ms":938,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2365,"ct":42,"err":null}
+{"t":1795142560370,"ms":2684,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2655,"ct":153,"err":null}
+{"t":1795142563201,"ms":3488,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2746,"ct":267,"err":null}
+{"t":1795142566699,"ms":1265,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2943,"ct":28,"err":null}
+{"t":1795142568103,"ms":1863,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3041,"ct":48,"err":null}
+{"t":1795142569971,"ms":3525,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3205,"ct":225,"err":null}
+{"t":1795142573937,"ms":31,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-min. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateL"}
+{"t":1795142576081,"ms":1939,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2247,"ct":112,"err":null}
+{"t":1795142578040,"ms":1141,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2293,"ct":44,"err":null}
+{"t":1795142579190,"ms":1534,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2397,"ct":42,"err":null}
+{"t":1795142580730,"ms":1319,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2687,"ct":79,"err":null}
+{"t":1795142582187,"ms":5004,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2778,"ct":268,"err":null}
+{"t":1795142587198,"ms":1815,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2976,"ct":28,"err":null}
+{"t":1795142589140,"ms":2416,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3074,"ct":48,"err":null}
+{"t":1795142591562,"ms":3185,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3239,"ct":238,"err":null}
+{"t":1795142595224,"ms":1570,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2234,"ct":107,"err":null}
+{"t":1795142596819,"ms":2230,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2281,"ct":67,"err":null}
+{"t":1795142599056,"ms":23,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-min. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateL"}
+{"t":1795142601437,"ms":28,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-min. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateL"}
+{"t":1795142605480,"ms":2783,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2665,"ct":95,"err":null}
+{"t":1795142608408,"ms":2145,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2756,"ct":216,"err":null}
+{"t":1795142610561,"ms":2515,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2915,"ct":28,"err":null}
+{"t":1795142613209,"ms":2427,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3013,"ct":146,"err":null}
+{"t":1795142615701,"ms":1367,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3221,"ct":42,"err":null}
+{"t":1795142617082,"ms":2036,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3306,"ct":44,"err":null}
+{"t":1795142619123,"ms":31,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-min. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateL"}
+{"t":1795142621433,"ms":3829,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3495,"ct":189,"err":null}
+{"t":1795142625705,"ms":4883,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2266,"ct":107,"err":null}
+{"t":1795142630611,"ms":1306,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2313,"ct":67,"err":null}
+{"t":1795142631930,"ms":1217,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2697,"ct":103,"err":null}
+{"t":1795142633282,"ms":2302,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2788,"ct":216,"err":null}
+{"t":1795142635597,"ms":946,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2947,"ct":28,"err":null}
+{"t":1795142636681,"ms":1586,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3045,"ct":92,"err":null}
+{"t":1795142638329,"ms":3214,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3170,"ct":91,"err":null}
+{"t":1795142641610,"ms":1163,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3295,"ct":61,"err":null}
+{"t":1795142642969,"ms":3182,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3451,"ct":160,"err":null}
+{"t":1795142646535,"ms":1769,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2247,"ct":112,"err":null}
+{"t":1795142648319,"ms":904,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2293,"ct":44,"err":null}
+{"t":1795142649231,"ms":27,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-min. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateL"}
+{"t":1795142651442,"ms":1114,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2397,"ct":42,"err":null}
+{"t":1795142652561,"ms":2500,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2687,"ct":123,"err":null}
+{"t":1795142655204,"ms":39,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-min. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateL"}
+{"t":1795142657330,"ms":35,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-min. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateL"}
+{"t":1795142661481,"ms":4231,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2778,"ct":272,"err":null}
+{"t":1795142665720,"ms":1015,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2976,"ct":28,"err":null}
+{"t":1795142666866,"ms":2136,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3074,"ct":48,"err":null}
+{"t":1795142669010,"ms":2743,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3239,"ct":218,"err":null}
+{"t":1795142672193,"ms":2120,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2215,"ct":112,"err":null}
+{"t":1795142674335,"ms":1513,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2261,"ct":42,"err":null}
+{"t":1795142675859,"ms":1694,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2365,"ct":42,"err":null}
+{"t":1795142677561,"ms":1979,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2655,"ct":119,"err":null}
+{"t":1795142679686,"ms":29,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-min. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateL"}
+{"t":1795142682178,"ms":3603,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2746,"ct":361,"err":null}
+{"t":1795142685793,"ms":29,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-min. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateL"}
+{"t":1795142687910,"ms":2172,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2959,"ct":28,"err":null}
+{"t":1795142690210,"ms":998,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3057,"ct":48,"err":null}
+{"t":1795142691215,"ms":15850,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3241,"ct":284,"err":null}
+{"t":1795142707514,"ms":1716,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2266,"ct":107,"err":null}
+{"t":1795142709264,"ms":1027,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2313,"ct":67,"err":null}
+{"t":1795142710300,"ms":2515,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2697,"ct":103,"err":null}
+{"t":1795142712953,"ms":3548,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2788,"ct":216,"err":null}
+{"t":1795142716511,"ms":1322,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2947,"ct":28,"err":null}
+{"t":1795142717982,"ms":3230,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3045,"ct":91,"err":null}
+{"t":1795142721274,"ms":4195,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3170,"ct":91,"err":null}
+{"t":1795142725527,"ms":2443,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3295,"ct":61,"err":null}
+{"t":1795142728152,"ms":2256,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3452,"ct":163,"err":null}
+{"t":1795142730838,"ms":2866,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2234,"ct":107,"err":null}
+{"t":1795142733722,"ms":1109,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2281,"ct":67,"err":null}
+{"t":1795142734840,"ms":1322,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2665,"ct":103,"err":null}
+{"t":1795142736296,"ms":2221,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2756,"ct":216,"err":null}
+{"t":1795142738523,"ms":813,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2915,"ct":28,"err":null}
+{"t":1795142739463,"ms":1123,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3013,"ct":74,"err":null}
+{"t":1795142740650,"ms":1861,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3109,"ct":71,"err":null}
+{"t":1795142742586,"ms":1987,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3205,"ct":141,"err":null}
+{"t":1795142745033,"ms":3008,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2215,"ct":112,"err":null}
+{"t":1795142748065,"ms":1205,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2261,"ct":44,"err":null}
+{"t":1795142749282,"ms":909,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2365,"ct":42,"err":null}
+{"t":1795142750199,"ms":10292,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2655,"ct":116,"err":null}
+{"t":1795142760636,"ms":2829,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2746,"ct":279,"err":null}
+{"t":1795142763471,"ms":851,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2943,"ct":28,"err":null}
+{"t":1795142764438,"ms":1751,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3041,"ct":48,"err":null}
+{"t":1795142766193,"ms":5365,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3205,"ct":225,"err":null}
+{"t":1795142771935,"ms":1808,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2247,"ct":112,"err":null}
+{"t":1795142773760,"ms":1700,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2293,"ct":44,"err":null}
+{"t":1795142775472,"ms":1236,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2397,"ct":42,"err":null}
+{"t":1795142776716,"ms":3376,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2687,"ct":155,"err":null}
+{"t":1795142780235,"ms":2622,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2778,"ct":253,"err":null}
+{"t":1795142782866,"ms":1631,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2976,"ct":28,"err":null}
+{"t":1795142784621,"ms":2538,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3074,"ct":48,"err":null}
+{"t":1795142787164,"ms":2861,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3239,"ct":231,"err":null}
+{"t":1795142790392,"ms":3174,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2234,"ct":107,"err":null}
+{"t":1795142793589,"ms":1556,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2281,"ct":67,"err":null}
+{"t":1795142795160,"ms":1961,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2665,"ct":103,"err":null}
+{"t":1795142797278,"ms":2747,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2756,"ct":216,"err":null}
+{"t":1795142800035,"ms":143,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-min. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateL"}
+{"t":1795142802268,"ms":848,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2915,"ct":28,"err":null}
+{"t":1795142803261,"ms":1817,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3013,"ct":92,"err":null}
+{"t":1795142805144,"ms":1266,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3138,"ct":91,"err":null}
+{"t":1795142806479,"ms":2811,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3263,"ct":61,"err":null}
+{"t":1795142809446,"ms":2699,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3419,"ct":142,"err":null}
+{"t":1795142812591,"ms":1703,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2266,"ct":107,"err":null}
+{"t":1795142814311,"ms":37,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-min. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateL"}
+{"t":1795142816800,"ms":1339,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2313,"ct":67,"err":null}
+{"t":1795142818152,"ms":1605,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2697,"ct":103,"err":null}
+{"t":1795142819891,"ms":26,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-min. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateL"}
+{"t":1795142822219,"ms":3808,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2788,"ct":216,"err":null}
+{"t":1795142826035,"ms":27,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-min. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateL"}
+{"t":1795142828501,"ms":4303,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2947,"ct":28,"err":null}
+{"t":1795142832936,"ms":2045,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3045,"ct":92,"err":null}
+{"t":1795142835048,"ms":27,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-min. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateL"}
+{"t":1795142837433,"ms":9225,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3170,"ct":90,"err":null}
+{"t":1795142846717,"ms":1779,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3295,"ct":61,"err":null}
+{"t":1795142848652,"ms":3121,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3452,"ct":154,"err":null}
+{"t":1795142852141,"ms":2090,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2247,"ct":112,"err":null}
+{"t":1795142854255,"ms":1204,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2293,"ct":42,"err":null}
+{"t":1795142855471,"ms":807,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2397,"ct":42,"err":null}
+{"t":1795142856286,"ms":1833,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2687,"ct":72,"err":null}
+{"t":1795142858271,"ms":4817,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2778,"ct":244,"err":null}
+{"t":1795142863100,"ms":1678,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2975,"ct":28,"err":null}
+{"t":1795142864923,"ms":1080,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3073,"ct":47,"err":null}
+{"t":1795142866008,"ms":3266,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3237,"ct":223,"err":null}
+{"t":1795142869648,"ms":2819,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2215,"ct":112,"err":null}
+{"t":1795142872489,"ms":2018,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2261,"ct":42,"err":null}
+{"t":1795142874517,"ms":1196,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2365,"ct":42,"err":null}
+{"t":1795142875720,"ms":2268,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2655,"ct":160,"err":null}
+{"t":1795142878133,"ms":4668,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2746,"ct":275,"err":null}
+{"t":1795142882813,"ms":728,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2971,"ct":28,"err":null}
+{"t":1795142883672,"ms":972,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3069,"ct":48,"err":null}
+{"t":1795142884651,"ms":2757,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3265,"ct":235,"err":null}
+{"t":1795142887887,"ms":2498,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2266,"ct":107,"err":null}
+{"t":1795142890408,"ms":1711,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2313,"ct":41,"err":null}
+{"t":1795142892132,"ms":1114,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2447,"ct":47,"err":null}
+{"t":1795142893254,"ms":2557,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2711,"ct":103,"err":null}
+{"t":1795142895952,"ms":2930,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2802,"ct":216,"err":null}
+{"t":1795142898892,"ms":747,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2961,"ct":28,"err":null}
+{"t":1795142899778,"ms":3869,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3059,"ct":92,"err":null}
+{"t":1795142903718,"ms":6552,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3184,"ct":91,"err":null}
+{"t":1795142910337,"ms":35,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-min. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateL"}
+{"t":1795142912457,"ms":1426,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3309,"ct":61,"err":null}
+{"t":1795142914108,"ms":1257,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3467,"ct":33,"err":null}
+{"t":1795142915382,"ms":3874,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3552,"ct":147,"err":null}
+{"t":1795142919662,"ms":1232,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2234,"ct":107,"err":null}
+{"t":1795142920910,"ms":2644,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2281,"ct":67,"err":null}
+{"t":1795142923562,"ms":2267,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2665,"ct":95,"err":null}
+{"t":1795142925973,"ms":2191,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2756,"ct":216,"err":null}
+{"t":1795142928171,"ms":759,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2915,"ct":28,"err":null}
+{"t":1795142929060,"ms":986,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3013,"ct":92,"err":null}
+{"t":1795142930108,"ms":23,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-min. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateL"}
+{"t":1795142932545,"ms":1514,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3138,"ct":91,"err":null}
+{"t":1795142934122,"ms":3673,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3263,"ct":61,"err":null}
+{"t":1795142937995,"ms":3386,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3420,"ct":160,"err":null}
+{"t":1795142941826,"ms":2109,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2215,"ct":112,"err":null}
+{"t":1795142943951,"ms":1315,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2261,"ct":42,"err":null}
+{"t":1795142945274,"ms":2347,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2365,"ct":42,"err":null}
+{"t":1795142947627,"ms":1146,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2655,"ct":72,"err":null}
+{"t":1795142948912,"ms":29,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-min. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateL"}
+{"t":1795142951228,"ms":3589,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2746,"ct":244,"err":null}
+{"t":1795142954827,"ms":1384,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2943,"ct":28,"err":null}
+{"t":1795142956338,"ms":908,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3041,"ct":48,"err":null}
+{"t":1795142957252,"ms":4602,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3205,"ct":227,"err":null}
+{"t":1795142962327,"ms":2474,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2247,"ct":112,"err":null}
+{"t":1795142964826,"ms":1739,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2293,"ct":42,"err":null}
+{"t":1795142966572,"ms":1061,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2397,"ct":42,"err":null}
+{"t":1795142967642,"ms":4862,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2687,"ct":181,"err":null}
+{"t":1795142972639,"ms":30,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-min. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateL"}
+{"t":1795142974843,"ms":3395,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2807,"ct":280,"err":null}
+{"t":1795142978245,"ms":2515,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3005,"ct":57,"err":null}
+{"t":1795142980890,"ms":932,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3132,"ct":45,"err":null}
+{"t":1795142981829,"ms":42,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-min. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateL"}
+{"t":1795142984276,"ms":4612,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3297,"ct":221,"err":null}
+{"t":1795142989316,"ms":2418,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2234,"ct":107,"err":null}
+{"t":1795142991747,"ms":25,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-min. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateL"}
+{"t":1795142994274,"ms":1650,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2281,"ct":67,"err":null}
+{"t":1795142995935,"ms":1460,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2665,"ct":103,"err":null}
+{"t":1795142997559,"ms":30,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-min. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateL"}
+{"t":1795142999971,"ms":3823,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2756,"ct":216,"err":null}
+{"t":1795143003804,"ms":2500,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2915,"ct":28,"err":null}
+{"t":1795143006448,"ms":2109,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3013,"ct":92,"err":null}
+{"t":1795143008629,"ms":1562,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3138,"ct":91,"err":null}
+{"t":1795143010262,"ms":1871,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3263,"ct":141,"err":null}
+{"t":1795143012642,"ms":3587,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2266,"ct":107,"err":null}
+{"t":1795143016246,"ms":4356,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2313,"ct":67,"err":null}
+{"t":1795143020611,"ms":3138,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2697,"ct":103,"err":null}
+{"t":1795143023892,"ms":3010,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2788,"ct":216,"err":null}
+{"t":1795143026910,"ms":1698,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2947,"ct":28,"err":null}
+{"t":1795143028768,"ms":1292,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3045,"ct":92,"err":null}
+{"t":1795143030129,"ms":1131,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3170,"ct":91,"err":null}
+{"t":1795143031321,"ms":1456,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3295,"ct":61,"err":null}
+{"t":1795143032974,"ms":3020,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3452,"ct":160,"err":null}
+{"t":1795143036451,"ms":2445,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2247,"ct":112,"err":null}
+{"t":1795143038919,"ms":1033,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2293,"ct":42,"err":null}
+{"t":1795143039963,"ms":842,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2397,"ct":42,"err":null}
+{"t":1795143040811,"ms":30,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-min. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateL"}
+{"t":1795143042969,"ms":24,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-min. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateL"}
+{"t":1795143047289,"ms":2139,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2687,"ct":72,"err":null}
+{"t":1795143049587,"ms":2046,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2778,"ct":244,"err":null}
+{"t":1795143051641,"ms":1112,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2975,"ct":28,"err":null}
+{"t":1795143052885,"ms":1532,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3073,"ct":48,"err":null}
+{"t":1795143054422,"ms":2925,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3237,"ct":233,"err":null}
+{"t":1795143057823,"ms":1756,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2215,"ct":112,"err":null}
+{"t":1795143059595,"ms":1717,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2261,"ct":44,"err":null}
+{"t":1795143061321,"ms":1400,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2365,"ct":42,"err":null}
+{"t":1795143062727,"ms":2870,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2655,"ct":148,"err":null}
+{"t":1795143065741,"ms":5682,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2746,"ct":350,"err":null}
+{"t":1795143071437,"ms":1607,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2991,"ct":28,"err":null}
+{"t":1795143073169,"ms":906,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3089,"ct":48,"err":null}
+{"t":1795143074080,"ms":2464,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3253,"ct":203,"err":null}
+{"t":1795143076924,"ms":1257,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2266,"ct":107,"err":null}
+{"t":1795143078205,"ms":2007,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2313,"ct":67,"err":null}
+{"t":1795143080225,"ms":1234,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2697,"ct":95,"err":null}
+{"t":1795143081611,"ms":3776,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2788,"ct":216,"err":null}
+{"t":1795143085398,"ms":1590,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2947,"ct":28,"err":null}
+{"t":1795143087152,"ms":2806,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3045,"ct":92,"err":null}
+{"t":1795143090026,"ms":6281,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3170,"ct":91,"err":null}
+{"t":1795143096364,"ms":1361,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3295,"ct":61,"err":null}
+{"t":1795143097882,"ms":3163,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3454,"ct":160,"err":null}
+{"t":1795143101536,"ms":2159,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2234,"ct":107,"err":null}
+{"t":1795143103717,"ms":1601,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2281,"ct":67,"err":null}
+{"t":1795143105332,"ms":1523,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2665,"ct":95,"err":null}
+{"t":1795143106997,"ms":6073,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2756,"ct":250,"err":null}
+{"t":1795143113079,"ms":769,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2949,"ct":28,"err":null}
+{"t":1795143113979,"ms":1224,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3047,"ct":92,"err":null}
+{"t":1795143115284,"ms":2050,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3172,"ct":89,"err":null}
+{"t":1795143117399,"ms":3920,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3297,"ct":109,"err":null}
+{"t":1795143121686,"ms":2453,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2215,"ct":112,"err":null}
+{"t":1795143124163,"ms":25,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-min. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateL"}
+{"t":1795143126555,"ms":1086,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2261,"ct":42,"err":null}
+{"t":1795143127652,"ms":44,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-min. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateL"}
+{"t":1795143129863,"ms":1797,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2365,"ct":42,"err":null}
+{"t":1795143131667,"ms":3094,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2655,"ct":121,"err":null}
+{"t":1795143134907,"ms":2952,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2746,"ct":272,"err":null}
+{"t":1795143137865,"ms":1263,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2944,"ct":28,"err":null}
+{"t":1795143139265,"ms":1382,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3042,"ct":48,"err":null}
+{"t":1795143140654,"ms":5154,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3207,"ct":225,"err":null}
+{"t":1795143146174,"ms":27,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-min. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateL"}
+{"t":1795143148283,"ms":1755,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2247,"ct":112,"err":null}
+{"t":1795143150050,"ms":993,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2293,"ct":42,"err":null}
+{"t":1795143151051,"ms":6082,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2397,"ct":42,"err":null}
+{"t":1795143157143,"ms":6543,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2687,"ct":121,"err":null}
+{"t":1795143163833,"ms":2926,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2778,"ct":244,"err":null}
+{"t":1795143166766,"ms":1101,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2975,"ct":28,"err":null}
+{"t":1795143167996,"ms":1221,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3073,"ct":48,"err":null}
+{"t":1795143169223,"ms":4376,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3237,"ct":219,"err":null}
+{"t":1795143174064,"ms":2204,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2234,"ct":107,"err":null}
+{"t":1795143176285,"ms":4056,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2281,"ct":67,"err":null}
+{"t":1795143180351,"ms":1364,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2665,"ct":103,"err":null}
+{"t":1795143181893,"ms":2274,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2756,"ct":216,"err":null}
+{"t":1795143184178,"ms":1460,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2915,"ct":28,"err":null}
+{"t":1795143185767,"ms":1399,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3013,"ct":92,"err":null}
+{"t":1795143187226,"ms":1766,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3138,"ct":91,"err":null}
+{"t":1795143189047,"ms":1062,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3263,"ct":60,"err":null}
+{"t":1795143190385,"ms":2138,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3419,"ct":152,"err":null}
+{"t":1795143192888,"ms":1438,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2266,"ct":107,"err":null}
+{"t":1795143194350,"ms":27,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-min. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateL"}
+{"t":1795143196515,"ms":27,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-min. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateL"}
+{"t":1795143200723,"ms":907,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2313,"ct":41,"err":null}
+{"t":1795143201644,"ms":2746,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2447,"ct":47,"err":null}
+{"t":1795143204394,"ms":2505,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2711,"ct":123,"err":null}
+{"t":1795143207064,"ms":3094,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2802,"ct":216,"err":null}
+{"t":1795143210168,"ms":1490,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2961,"ct":28,"err":null}
+{"t":1795143211786,"ms":10576,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3059,"ct":214,"err":null}
+{"t":1795143222431,"ms":3430,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3386,"ct":158,"err":null}
+{"t":1795143226406,"ms":1717,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2247,"ct":112,"err":null}
+{"t":1795143228137,"ms":2045,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2293,"ct":42,"err":null}
+{"t":1795143230191,"ms":2201,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2397,"ct":42,"err":null}
+{"t":1795143232399,"ms":2867,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2687,"ct":152,"err":null}
+{"t":1795143235422,"ms":4745,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2807,"ct":301,"err":null}
+{"t":1795143240179,"ms":973,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3004,"ct":57,"err":null}
+{"t":1795143241279,"ms":984,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3131,"ct":48,"err":null}
+{"t":1795143242271,"ms":14729,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3295,"ct":225,"err":null}
+{"t":1795143257384,"ms":1843,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2215,"ct":112,"err":null}
+{"t":1795143259246,"ms":1107,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2261,"ct":42,"err":null}
+{"t":1795143260362,"ms":1528,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2365,"ct":42,"err":null}
+{"t":1795143261895,"ms":2042,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2655,"ct":121,"err":null}
+{"t":1795143264077,"ms":3164,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2746,"ct":268,"err":null}
+{"t":1795143267254,"ms":771,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2944,"ct":28,"err":null}
+{"t":1795143268166,"ms":1506,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3042,"ct":48,"err":null}
+{"t":1795143269677,"ms":3264,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3207,"ct":223,"err":null}
+{"t":1795143273334,"ms":2081,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2266,"ct":107,"err":null}
+{"t":1795143275437,"ms":1358,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2313,"ct":67,"err":null}
+{"t":1795143276804,"ms":1469,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2697,"ct":95,"err":null}
+{"t":1795143278409,"ms":1753,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2788,"ct":216,"err":null}
+{"t":1795143280173,"ms":1172,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2947,"ct":28,"err":null}
+{"t":1795143281478,"ms":2004,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3045,"ct":92,"err":null}
+{"t":1795143283554,"ms":1375,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3170,"ct":91,"err":null}
+{"t":1795143285015,"ms":1780,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3295,"ct":65,"err":null}
+{"t":1795143286999,"ms":3030,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3451,"ct":160,"err":null}
+{"t":1795143290419,"ms":32,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-min. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateL"}
+{"t":1795143292942,"ms":3866,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2234,"ct":107,"err":null}
+{"t":1795143296826,"ms":1815,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2281,"ct":67,"err":null}
+{"t":1795143298652,"ms":37,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-min. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateL"}
+{"t":1795143300930,"ms":2308,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2665,"ct":103,"err":null}
+{"t":1795143303394,"ms":2677,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2756,"ct":216,"err":null}
+{"t":1795143306081,"ms":1274,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2915,"ct":28,"err":null}
+{"t":1795143307472,"ms":29,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-min. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateL"}
+{"t":1795143309687,"ms":32,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-min. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateL"}
+{"t":1795143314000,"ms":2214,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3013,"ct":93,"err":null}
+{"t":1795143316282,"ms":1670,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3138,"ct":91,"err":null}
+{"t":1795143318014,"ms":3268,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3263,"ct":142,"err":null}
+{"t":1795143321759,"ms":2185,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2215,"ct":112,"err":null}
+{"t":1795143323958,"ms":908,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2261,"ct":42,"err":null}
+{"t":1795143324874,"ms":1077,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2365,"ct":42,"err":null}
+{"t":1795143325956,"ms":1558,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2655,"ct":79,"err":null}
+{"t":1795143327655,"ms":4793,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2746,"ct":274,"err":null}
+{"t":1795143332457,"ms":1830,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2944,"ct":28,"err":null}
+{"t":1795143334433,"ms":1801,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3042,"ct":48,"err":null}
+{"t":1795143336240,"ms":4703,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3207,"ct":221,"err":null}
+{"t":1795143341371,"ms":1517,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2247,"ct":112,"err":null}
+{"t":1795143342903,"ms":2443,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2293,"ct":42,"err":null}
+{"t":1795143345354,"ms":1118,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2397,"ct":42,"err":null}
+{"t":1795143346478,"ms":3373,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2687,"ct":116,"err":null}
+{"t":1795143350002,"ms":3106,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2778,"ct":265,"err":null}
+{"t":1795143353116,"ms":1958,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2976,"ct":28,"err":null}
+{"t":1795143355211,"ms":1604,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3074,"ct":48,"err":null}
+{"t":1795143356819,"ms":2453,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3239,"ct":229,"err":null}
+{"t":1795143359760,"ms":1970,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2234,"ct":107,"err":null}
+{"t":1795143361746,"ms":1230,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2281,"ct":67,"err":null}
+{"t":1795143362983,"ms":1430,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2665,"ct":103,"err":null}
+{"t":1795143364568,"ms":2384,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2756,"ct":216,"err":null}
+{"t":1795143366960,"ms":26,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-min. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateL"}
+{"t":1795143369372,"ms":1003,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2915,"ct":28,"err":null}
+{"t":1795143370518,"ms":1376,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3013,"ct":92,"err":null}
+{"t":1795143371956,"ms":2173,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3138,"ct":91,"err":null}
+{"t":1795143374190,"ms":1106,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3263,"ct":61,"err":null}
+{"t":1795143375512,"ms":2091,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3420,"ct":160,"err":null}
+{"t":1795143378036,"ms":1656,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2266,"ct":107,"err":null}
+{"t":1795143379713,"ms":1360,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2313,"ct":67,"err":null}
+{"t":1795143381082,"ms":2034,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2697,"ct":103,"err":null}
+{"t":1795143383236,"ms":2764,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2788,"ct":216,"err":null}
+{"t":1795143386008,"ms":1325,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2947,"ct":28,"err":null}
+{"t":1795143387465,"ms":55,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-min. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateL"}
+{"t":1795143389964,"ms":2618,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3045,"ct":92,"err":null}
+{"t":1795143392652,"ms":30,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-min. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateL"}
+{"t":1795143394738,"ms":40,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-min. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateL"}
+{"t":1795143398970,"ms":1317,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3170,"ct":91,"err":null}
+{"t":1795143400357,"ms":957,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3295,"ct":59,"err":null}
+{"t":1795143401501,"ms":3024,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3452,"ct":147,"err":null}
+{"t":1795143404955,"ms":4569,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2247,"ct":112,"err":null}
+{"t":1795143409539,"ms":38,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-min. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateL"}
+{"t":1795143411817,"ms":2302,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2293,"ct":44,"err":null}
+{"t":1795143414129,"ms":1358,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2397,"ct":42,"err":null}
+{"t":1795143415492,"ms":3556,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2687,"ct":152,"err":null}
+{"t":1795143419185,"ms":3469,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2778,"ct":317,"err":null}
+{"t":1795143422659,"ms":39,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-min. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateL"}
+{"t":1795143424808,"ms":1199,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3027,"ct":28,"err":null}
+{"t":1795143426149,"ms":1027,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3125,"ct":48,"err":null}
+{"t":1795143427181,"ms":4379,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3290,"ct":249,"err":null}
+{"t":1795143432047,"ms":1734,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2215,"ct":112,"err":null}
+{"t":1795143433796,"ms":1089,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2261,"ct":44,"err":null}
+{"t":1795143434895,"ms":800,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2365,"ct":42,"err":null}
+{"t":1795143435703,"ms":26,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-min. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateL"}
+{"t":1795143437930,"ms":2096,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2655,"ct":125,"err":null}
+{"t":1795143440175,"ms":2005,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2746,"ct":268,"err":null}
+{"t":1795143442187,"ms":1224,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2944,"ct":28,"err":null}
+{"t":1795143443542,"ms":1297,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3042,"ct":47,"err":null}
+{"t":1795143444845,"ms":27,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-min. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateL"}
+{"t":1795143446958,"ms":5150,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3207,"ct":225,"err":null}
+{"t":1795143452542,"ms":1358,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2266,"ct":107,"err":null}
+{"t":1795143453915,"ms":1737,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2313,"ct":67,"err":null}
+{"t":1795143455659,"ms":3028,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2697,"ct":103,"err":null}
+{"t":1795143458834,"ms":2801,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2788,"ct":216,"err":null}
+{"t":1795143461645,"ms":1121,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2947,"ct":28,"err":null}
+{"t":1795143462911,"ms":1240,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3045,"ct":92,"err":null}
+{"t":1795143464225,"ms":1535,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3170,"ct":91,"err":null}
+{"t":1795143465824,"ms":45,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-min. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateL"}
+{"t":1795143468198,"ms":1187,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3295,"ct":61,"err":null}
+{"t":1795143469613,"ms":2212,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3452,"ct":160,"err":null}
+{"t":1795143472229,"ms":2147,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2234,"ct":107,"err":null}
+{"t":1795143474397,"ms":2531,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2281,"ct":67,"err":null}
+{"t":1795143476942,"ms":40,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-min. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateL"}
+{"t":1795143479031,"ms":28,"status":429,"model":null,"provider":null,"pt":null,"ct":null,"err":"{\"error\":{\"message\":\"Rate limit exceeded: free-models-per-min. \",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateL"}
+{"t":1795143483308,"ms":1576,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2665,"ct":103,"err":null}
+{"t":1795143485032,"ms":3031,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2756,"ct":216,"err":null}
+{"t":1795143488071,"ms":742,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":2915,"ct":28,"err":null}
+{"t":1795143488936,"ms":2208,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3013,"ct":92,"err":null}
+{"t":1795143491208,"ms":2006,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3138,"ct":90,"err":null}
+{"t":1795143493275,"ms":1563,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3263,"ct":60,"err":null}
+{"t":1795143495059,"ms":2698,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3419,"ct":33,"err":null}
+{"t":1795143497770,"ms":3042,"status":200,"model":"nvidia/nemotron-3-ultra-550b-a55b:free","provider":"Nvidia","pt":3504,"ct":138,"err":null}

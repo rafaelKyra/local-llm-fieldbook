@@ -14,7 +14,7 @@ Question: on more models, does it make the agent state what it skipped, and does
 | 7 | nine cheap paid OpenRouter models with fixed ids | kits P3b, P3c, control against `p3f`, 16 repetitions per kit and arm; plan in `plans/PREREG-round7-paid-models.md` (written before any run, spend cap 4 USD) | `rows/or-paid-*/round7`, `served-models/round7-*.jsonl` |
 
 Kit `P3c` (`kits/P3c/`) is a second crash-safety-style task whose control arm does *not* habitually write a closing line, which makes the rule visible; on `P3b` strong models already write one by habit (ceiling).
-Round 6 (four pinned free models) is planned and not yet run; it is not in this folder.
+Round 6 (four pinned free models, `plans/PREREG-round6-fixed-free-models.md` in the audit pack; 16 repetitions per kit and arm) is **partial**: `nvidia/nemotron-3-ultra-550b-a55b:free` is complete (`rows/or-free-nvidia_nemotron-3-ultra-550b-a55b_free/round6`), `google/gemma-4-31b-it:free` has only interrupted rows (the provider answered every request with HTTP 429 "temporarily rate-limited upstream"), the other two have not started. Snapshot taken 2026-11-20 06:00; this folder is updated when more finishes. A real-repository pilot is described in [`../real-repo-pilot-2026-11-20/`](../real-repo-pilot-2026-11-20/README.md).
 
 ## Results
 
@@ -48,3 +48,5 @@ Hosted models may be served in other quantisations than the local ones and the p
 ## Files
 
 `rows/<model>/<round>/<kit>.<arm>.<rep>.json` one run each; `bench/<model>/<round>/bench-<arm>-r<N>.summary.json`; `served-models/` which model and provider answered each OpenRouter request (no keys); `plans/` the two plans written before the runs; `kits/P3c`; `analysis.json`. Drivers and the logging proxy: `harness/prompt-rules/` (`v3b.sh`, `v3s.sh`, `v4.sh`, `v5.sh`, `v7.sh`, `or-proxy.mjs`). The drivers need the Forge agent core (not published); the numbers can be re-analysed without it.
+
+**Round 6, nemotron-3-ultra (free, pinned id):** P3b closing line 0/16 with `p3f` against 1/16 control (p = 1.0), P3c 0/16 against 0/16; solved 64/64 on all four cells (ceiling). The model does not write the line even when told to put it in the `finish` tool description, so the rule has nothing to act on here; output tokens -1 % (P3b) and +5 % (P3c) against control, noise. Nothing can be said yet about gemma, north-mini-code or inkling.

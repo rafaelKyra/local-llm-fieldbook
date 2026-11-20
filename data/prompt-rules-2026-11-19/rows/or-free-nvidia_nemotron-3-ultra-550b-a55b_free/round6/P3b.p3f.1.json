@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 1,
+ "seconds": 21.72,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 528,
+ "addedLines": 7,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 8,
+  "toolCalls": 7,
+  "inputTokens": 21847,
+  "outputTokens": 960,
+  "lastInputTokens": 3291,
+  "peakInputTokens": 3291,
+  "modelCalls": 8,
+  "usageReportedCalls": 8,
+  "cacheReadTokens": 0,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 8,
+  "roles": {
+   "main": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 21847,
+    "outputTokens": 960
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Changed `save_report()` in `report.py` to write crash-safe by using a temporary file + atomic replace. The function now: | 1. Creates a temporary file in the same directory as the target (`tempfile.NamedTemporaryFile` with `delete=False`) | 2. Writes the report text to the temp file | 3. Atomically replaces the target file with `os.replace()` (atomic on both Windows and Linux) | If the process crashes during the write, the original `report.txt` remains intact; only the temp file is left behind. The test suite passes (2 tests OK)."
+}

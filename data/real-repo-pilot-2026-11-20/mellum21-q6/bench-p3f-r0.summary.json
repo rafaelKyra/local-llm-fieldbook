@@ -1,0 +1,48 @@
+{
+  "passAtK": "4/20",
+  "passPowK": "4/20",
+  "wilson95": [
+    0.081,
+    0.416
+  ],
+  "label": "mellum21-q6-p3f",
+  "model": "mellum21-q6",
+  "profile": "auto",
+  "runtime": "forge",
+  "tasks": 20,
+  "solved": 4,
+  "rate": 0.2,
+  "verdicts": {
+    "solved": 4,
+    "budget": 14,
+    "blocked": 1,
+    "failed": 1
+  },
+  "byCategory": {
+    "pilot": "4/20"
+  },
+  "totalSeconds": 11328.4,
+  "toolCalls": 1138,
+  "inputTokens": 22219989,
+  "outputTokens": 1226512,
+  "pathologies": {
+    "untracked_changes": 13,
+    "empty_reply": 26,
+    "broad_search": 31,
+    "truncated_reply": 14,
+    "refused_calls": 71,
+    "repeat_call": 36,
+    "stall_nudge": 7,
+    "read_spiral": 27,
+    "auto_explore": 17,
+    "edits_without_verify": 4,
+    "edit_thrash": 4,
+    "test_edit": 5,
+    "stall_narrow": 1,
+    "same_error": 1,
+    "check_repeated": 5,
+    "finish_without_verify": 4,
+    "regression": 1,
+    "claimed_without_verify": 1
+  }
+}
