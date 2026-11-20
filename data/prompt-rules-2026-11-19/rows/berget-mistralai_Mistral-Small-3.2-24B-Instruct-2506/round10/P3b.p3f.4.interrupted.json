@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 4,
+ "seconds": 30.656,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 365,
+ "addedLines": 5,
+ "replyShortcut": false,
+ "status": "unverified",
+ "stopReason": "finished without a passing check",
+ "usage": {
+  "turns": 18,
+  "toolCalls": 14,
+  "inputTokens": 51964,
+  "outputTokens": 1154,
+  "lastInputTokens": 4134,
+  "peakInputTokens": 4134,
+  "modelCalls": 18,
+  "usageReportedCalls": 18,
+  "cacheReadTokens": 0,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 0,
+  "roles": {
+   "main": {
+    "calls": 18,
+    "reportedInput": 18,
+    "reportedOutput": 18,
+    "inputTokens": 51964,
+    "outputTokens": 1154
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Imported the `tempfile` module and modified the `save_report` function in `report.py` to write to a temporary file first and then replace the original file. The"
+}

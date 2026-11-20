@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 2,
+ "seconds": 64.026,
+ "solved": false,
+ "behaviour": false,
+ "replyChars": 63,
+ "addedLines": 0,
+ "replyShortcut": false,
+ "status": "budget",
+ "stopReason": "tool budget exhausted",
+ "usage": {
+  "turns": 17,
+  "toolCalls": 40,
+  "inputTokens": 64555,
+  "outputTokens": 1693,
+  "lastInputTokens": 519,
+  "peakInputTokens": 3336,
+  "modelCalls": 49,
+  "usageReportedCalls": 49,
+  "cacheReadTokens": 0,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 0,
+  "roles": {
+   "main": {
+    "calls": 17,
+    "reportedInput": 17,
+    "reportedOutput": 17,
+    "inputTokens": 42809,
+    "outputTokens": 538
+   },
+   "explorer": {
+    "calls": 32,
+    "reportedInput": 32,
+    "reportedOutput": 32,
+    "inputTokens": 21746,
+    "outputTokens": 1155
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=False\n  tail: I still don't see Python in the PATH. I will look for it again."
+}

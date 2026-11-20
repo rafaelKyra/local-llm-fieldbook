@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 1,
+ "seconds": 43.527,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 319,
+ "addedLines": 3,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 19,
+  "toolCalls": 15,
+  "inputTokens": 57902,
+  "outputTokens": 1652,
+  "lastInputTokens": 4574,
+  "peakInputTokens": 4574,
+  "modelCalls": 20,
+  "usageReportedCalls": 20,
+  "cacheReadTokens": 0,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 0,
+  "roles": {
+   "main": {
+    "calls": 19,
+    "reportedInput": 19,
+    "reportedOutput": 19,
+    "inputTokens": 57376,
+    "outputTokens": 1594
+   },
+   "explorer": {
+    "calls": 1,
+    "reportedInput": 1,
+    "reportedOutput": 1,
+    "inputTokens": 526,
+    "outputTokens": 58
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: The test passes, but it does not prove the change because it also passed before the change. I will have to make the change and verify it manually. The change is"
+}

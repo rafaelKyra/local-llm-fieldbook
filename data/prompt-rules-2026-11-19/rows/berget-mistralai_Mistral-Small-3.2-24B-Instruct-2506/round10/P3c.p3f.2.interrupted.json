@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "p3f",
+ "rep": 2,
+ "seconds": 56.925,
+ "solved": false,
+ "behaviour": false,
+ "replyChars": 114,
+ "addedLines": 0,
+ "replyShortcut": false,
+ "status": "budget",
+ "stopReason": "tool budget exhausted",
+ "usage": {
+  "turns": 40,
+  "toolCalls": 40,
+  "inputTokens": 140664,
+  "outputTokens": 1454,
+  "lastInputTokens": 5233,
+  "peakInputTokens": 5233,
+  "modelCalls": 40,
+  "usageReportedCalls": 40,
+  "cacheReadTokens": 0,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 0,
+  "roles": {
+   "main": {
+    "calls": 40,
+    "reportedInput": 40,
+    "reportedOutput": 40,
+    "inputTokens": 140664,
+    "outputTokens": 1454
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True formats-and-errors=False\n  tail: The check is not a program but a command that runs the project's existing tests. I will run it with `run_command`."
+}

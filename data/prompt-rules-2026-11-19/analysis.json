@@ -1,7 +1,7 @@
 {
  "excluded_not_completed": {
   "openrouter-free-router/round5": 19,
-  "or-free-google_gemma-4-31b-it_free/round6": 18,
+  "or-free-google_gemma-4-31b-it_free/round6": 21,
   "or-free-nvidia_nemotron-3-ultra-550b-a55b_free/round6": 1
  },
  "kit_rows": [
@@ -75,6 +75,78 @@
    "mean_output_tokens": 690.1,
    "mean_seconds": 20.3,
    "mean_reply_chars": 327.6,
+   "crashes": 0
+  },
+  {
+   "model": "berget-mistralai_Mistral-Small-3.2-24B-Instruct-2506",
+   "round": "round10",
+   "kit": "P3b",
+   "arm": "control",
+   "withdrawn": false,
+   "runs": 6,
+   "solved": 4,
+   "behaviour": 0,
+   "behaviour_ci95": [
+    0,
+    0.39
+   ],
+   "mean_output_tokens": 1015.8,
+   "mean_seconds": 31.3,
+   "mean_reply_chars": 184.7,
+   "crashes": 0
+  },
+  {
+   "model": "berget-mistralai_Mistral-Small-3.2-24B-Instruct-2506",
+   "round": "round10",
+   "kit": "P3b",
+   "arm": "p3f",
+   "withdrawn": false,
+   "runs": 5,
+   "solved": 4,
+   "behaviour": 3,
+   "behaviour_ci95": [
+    0.231,
+    0.882
+   ],
+   "mean_output_tokens": 1174.8,
+   "mean_seconds": 31.5,
+   "mean_reply_chars": 369.4,
+   "crashes": 0
+  },
+  {
+   "model": "berget-mistralai_Mistral-Small-3.2-24B-Instruct-2506",
+   "round": "round10",
+   "kit": "P3c",
+   "arm": "control",
+   "withdrawn": false,
+   "runs": 4,
+   "solved": 3,
+   "behaviour": 0,
+   "behaviour_ci95": [
+    0,
+    0.49
+   ],
+   "mean_output_tokens": 785.0,
+   "mean_seconds": 25.7,
+   "mean_reply_chars": 177.5,
+   "crashes": 0
+  },
+  {
+   "model": "berget-mistralai_Mistral-Small-3.2-24B-Instruct-2506",
+   "round": "round10",
+   "kit": "P3c",
+   "arm": "p3f",
+   "withdrawn": false,
+   "runs": 3,
+   "solved": 2,
+   "behaviour": 2,
+   "behaviour_ci95": [
+    0.208,
+    0.939
+   ],
+   "mean_output_tokens": 1091.3,
+   "mean_seconds": 35.7,
+   "mean_reply_chars": 195.3,
    "crashes": 0
   },
   {
@@ -1202,6 +1274,30 @@
    "output_tokens_vs_control_pct": -5.8
   },
   {
+   "model": "berget-mistralai_Mistral-Small-3.2-24B-Instruct-2506",
+   "round": "round10",
+   "kit": "P3b",
+   "arm": "p3f",
+   "behaviour": "3/5",
+   "control_behaviour": "0/6",
+   "fisher_p": 0.0606,
+   "solved": "4/5",
+   "control_solved": "4/6",
+   "output_tokens_vs_control_pct": 15.7
+  },
+  {
+   "model": "berget-mistralai_Mistral-Small-3.2-24B-Instruct-2506",
+   "round": "round10",
+   "kit": "P3c",
+   "arm": "p3f",
+   "behaviour": "2/3",
+   "control_behaviour": "0/4",
+   "fisher_p": 0.1429,
+   "solved": "2/3",
+   "control_solved": "3/4",
+   "output_tokens_vs_control_pct": 39.0
+  },
+  {
    "model": "berget-zai-org_GLM-5.3-Flash",
    "round": "round10",
    "kit": "P3b",
@@ -1623,15 +1719,15 @@
    "model": "or-paid-deepseek_deepseek-v4.1-flash-1017",
    "round": "round9",
    "arm": "control",
-   "passes": 5,
-   "tasks": 190,
-   "solved": 188,
-   "output_tokens": 303908,
-   "input_tokens": 3262522,
-   "seconds": 1964.5,
-   "rate": 0.989,
+   "passes": 8,
+   "tasks": 304,
+   "solved": 301,
+   "output_tokens": 442960,
+   "input_tokens": 5193135,
+   "seconds": 3020.7,
+   "rate": 0.99,
    "solved_ci95": [
-    0.962,
+    0.971,
     0.997
    ]
   },
@@ -1639,16 +1735,16 @@
    "model": "or-paid-deepseek_deepseek-v4.1-flash-1017",
    "round": "round9",
    "arm": "p3f",
-   "passes": 5,
-   "tasks": 190,
-   "solved": 185,
-   "output_tokens": 246947,
-   "input_tokens": 3332531,
-   "seconds": 2008.5,
-   "rate": 0.974,
+   "passes": 8,
+   "tasks": 304,
+   "solved": 299,
+   "output_tokens": 395396,
+   "input_tokens": 5375029,
+   "seconds": 3198.1,
+   "rate": 0.984,
    "solved_ci95": [
-    0.94,
-    0.989
+    0.962,
+    0.993
    ]
   },
   {
