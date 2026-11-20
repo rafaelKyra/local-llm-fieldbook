@@ -10,7 +10,7 @@ spent() { python3 - <<'PY'
 import glob, json
 P = {"gemma": (0.25, 0.5), "GLM": (0.25, 0.5), "Mistral": (0.3, 0.3)}
 t = 0.0
-for f in glob.glob("night10/*/kits/*.json") + glob.glob("night10/*/interrupted/*.json"):
+for f in glob.glob("night10/*/kits/*.json") + glob.glob("night10/*/interrupted/*.json") + glob.glob("night10/*/redone-discarded/*.json"):
     try:
         u = json.load(open(f))["usage"]
     except Exception:

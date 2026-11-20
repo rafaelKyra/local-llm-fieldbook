@@ -30,14 +30,14 @@ All numbers are re-derived by `python3 harness/prompt-rules/analyze.py data/prom
 
 | Model | closing line `p3f` | control | p (pooled) | reading |
 |---|---|---|---|---|
-| deepseek-v4.1-flash | 30/32 | 19/32 | 0.0024 | passes the threshold |
-| qwen3.8-flash | 32/32 | 25/32 | 0.011 | suggestive, same family as Strata |
+| deepseek-v4.1-flash | 30/32 | 18/32 | 0.0010 | passes the threshold (corrected, CORRECTIONS 13; first report 19/32, p = 0.0024) |
+| qwen3.8-flash | 31/32 | 24/32 | 0.0265 | suggestive, same family as Strata (corrected; first report 32/32 against 25/32, p = 0.011) |
 | glm-5.3-flash | 25/32 | 17/32 | 0.064 | same direction, not significant |
 | claude-haiku-5.5 | 32/32 | 30/32 | 0.49 | writes it anyway |
 | qwen3.8-27b | 17/32 | 16/32 | 1.0 | no effect |
 | gpt-oss-120b, qwen3.7-flash, glm-4.7-flash, qwen3-coder-next | 0 to 2 of 32 | 0 to 2 of 32 | 0.49 to 1.0 | the model does not write the line in either arm |
 
-Solved never dropped except one run for qwen3-coder-next (31/32 against 32/32; 12 of its runs were interrupted by endpoint errors, redone and not counted). Output-token ratio per model 0.86 to 1.18; every interval contains 1.0. The per-kit rows in `analysis.json` show the effect sits on P3c (for example deepseek 14/16 against 3/16): on P3b the control already writes the line. That per-kit split was not the planned comparison and is descriptive.
+Solved never dropped (qwen3-coder-next 30/32 against 29/32 after the correction; the 12 of its runs that the first report called interrupted by endpoint errors were real outcomes: 5 unverified, 6 over the tool budget, 1 blocked, see CORRECTIONS 13). Output-token ratio per model 0.86 to 1.18; every interval contains 1.0. The per-kit rows in `analysis.json` show the effect sits on P3c (for example deepseek 14/16 against 3/16): on P3b the control already writes the line. That per-kit split was not the planned comparison and is descriptive.
 
 **Overall reading:** the sentence in the `finish` description moves the closing line on models that can write it but do not always do so (Mercury-3, the Strata model, Qwen3.8-Flash, DeepSeek flash, probably GLM-5.3 flash) and does nothing on models that never write it or always do. It never lowered solved counts. The cost in output tokens is within noise on the paid models and +21.8 % on the Strata bench, which is the one measured cost.
 

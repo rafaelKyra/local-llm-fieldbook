@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 5,
+ "seconds": 22.309,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 236,
+ "addedLines": 3,
+ "replyShortcut": false,
+ "status": "unverified",
+ "stopReason": "finished without a passing check",
+ "usage": {
+  "turns": 14,
+  "toolCalls": 10,
+  "inputTokens": 33448,
+  "outputTokens": 752,
+  "lastInputTokens": 3005,
+  "peakInputTokens": 3005,
+  "modelCalls": 14,
+  "usageReportedCalls": 14,
+  "cacheReadTokens": 0,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 0,
+  "roles": {
+   "main": {
+    "calls": 14,
+    "reportedInput": 14,
+    "reportedOutput": 14,
+    "inputTokens": 33448,
+    "outputTokens": 752
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Changed `save_report()` in `report.py` to write to a temporary file first and then rename it to the final destination. The test suite passes. Did not test on Wi"
+}

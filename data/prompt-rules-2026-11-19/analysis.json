@@ -1,7 +1,7 @@
 {
  "excluded_not_completed": {
   "openrouter-free-router/round5": 19,
-  "or-free-google_gemma-4-31b-it_free/round6": 21,
+  "or-free-google_gemma-4-31b-it_free/round6": 27,
   "or-free-nvidia_nemotron-3-ultra-550b-a55b_free/round6": 1
  },
  "kit_rows": [
@@ -83,16 +83,16 @@
    "kit": "P3b",
    "arm": "control",
    "withdrawn": false,
-   "runs": 6,
-   "solved": 4,
+   "runs": 7,
+   "solved": 6,
    "behaviour": 0,
    "behaviour_ci95": [
     0,
-    0.39
+    0.354
    ],
-   "mean_output_tokens": 1015.8,
-   "mean_seconds": 31.3,
-   "mean_reply_chars": 184.7,
+   "mean_output_tokens": 943.6,
+   "mean_seconds": 30.1,
+   "mean_reply_chars": 163.1,
    "crashes": 0
   },
   {
@@ -101,16 +101,16 @@
    "kit": "P3b",
    "arm": "p3f",
    "withdrawn": false,
-   "runs": 5,
-   "solved": 4,
-   "behaviour": 3,
+   "runs": 7,
+   "solved": 6,
+   "behaviour": 5,
    "behaviour_ci95": [
-    0.231,
-    0.882
+    0.359,
+    0.918
    ],
-   "mean_output_tokens": 1174.8,
-   "mean_seconds": 31.5,
-   "mean_reply_chars": 369.4,
+   "mean_output_tokens": 1009.3,
+   "mean_seconds": 32.3,
+   "mean_reply_chars": 290.1,
    "crashes": 0
   },
   {
@@ -119,16 +119,16 @@
    "kit": "P3c",
    "arm": "control",
    "withdrawn": false,
-   "runs": 4,
-   "solved": 3,
+   "runs": 7,
+   "solved": 6,
    "behaviour": 0,
    "behaviour_ci95": [
     0,
-    0.49
+    0.354
    ],
-   "mean_output_tokens": 785.0,
-   "mean_seconds": 25.7,
-   "mean_reply_chars": 177.5,
+   "mean_output_tokens": 1282.7,
+   "mean_seconds": 44.0,
+   "mean_reply_chars": 188.0,
    "crashes": 0
   },
   {
@@ -137,16 +137,16 @@
    "kit": "P3c",
    "arm": "p3f",
    "withdrawn": false,
-   "runs": 3,
-   "solved": 2,
-   "behaviour": 2,
+   "runs": 6,
+   "solved": 4,
+   "behaviour": 4,
    "behaviour_ci95": [
-    0.208,
-    0.939
+    0.3,
+    0.903
    ],
-   "mean_output_tokens": 1091.3,
-   "mean_seconds": 35.7,
-   "mean_reply_chars": 195.3,
+   "mean_output_tokens": 1399.5,
+   "mean_seconds": 35.9,
+   "mean_reply_chars": 280.8,
    "crashes": 0
   },
   {
@@ -517,14 +517,14 @@
    "withdrawn": false,
    "runs": 16,
    "solved": 16,
-   "behaviour": 16,
+   "behaviour": 15,
    "behaviour_ci95": [
-    0.806,
-    1
+    0.717,
+    0.989
    ],
-   "mean_output_tokens": 8283.5,
-   "mean_seconds": 49.1,
-   "mean_reply_chars": 1889.9,
+   "mean_output_tokens": 8506.4,
+   "mean_seconds": 50.1,
+   "mean_reply_chars": 1800.9,
    "crashes": 0
   },
   {
@@ -660,15 +660,15 @@
    "arm": "control",
    "withdrawn": false,
    "runs": 16,
-   "solved": 16,
-   "behaviour": 2,
+   "solved": 15,
+   "behaviour": 1,
    "behaviour_ci95": [
-    0.035,
-    0.36
+    0.011,
+    0.283
    ],
-   "mean_output_tokens": 759.1,
-   "mean_seconds": 30.7,
-   "mean_reply_chars": 288.1,
+   "mean_output_tokens": 836.2,
+   "mean_seconds": 33.2,
+   "mean_reply_chars": 283.7,
    "crashes": 0
   },
   {
@@ -696,15 +696,15 @@
    "arm": "control",
    "withdrawn": false,
    "runs": 16,
-   "solved": 16,
+   "solved": 14,
    "behaviour": 0,
    "behaviour_ci95": [
     0,
     0.194
    ],
-   "mean_output_tokens": 1529.8,
-   "mean_seconds": 35.4,
-   "mean_reply_chars": 314.9,
+   "mean_output_tokens": 1929.3,
+   "mean_seconds": 46.9,
+   "mean_reply_chars": 280.7,
    "crashes": 0
   },
   {
@@ -714,15 +714,15 @@
    "arm": "p3f",
    "withdrawn": false,
    "runs": 16,
-   "solved": 16,
+   "solved": 15,
    "behaviour": 0,
    "behaviour_ci95": [
     0,
     0.194
    ],
-   "mean_output_tokens": 1533.6,
-   "mean_seconds": 40.3,
-   "mean_reply_chars": 340.1,
+   "mean_output_tokens": 1919.3,
+   "mean_seconds": 47.6,
+   "mean_reply_chars": 319.4,
    "crashes": 0
   },
   {
@@ -877,14 +877,14 @@
    "withdrawn": false,
    "runs": 16,
    "solved": 16,
-   "behaviour": 16,
+   "behaviour": 15,
    "behaviour_ci95": [
-    0.806,
-    1
+    0.717,
+    0.989
    ],
-   "mean_output_tokens": 10860.8,
-   "mean_seconds": 177.5,
-   "mean_reply_chars": 1954.8,
+   "mean_output_tokens": 11700.8,
+   "mean_seconds": 190.2,
+   "mean_reply_chars": 1861.2,
    "crashes": 0
   },
   {
@@ -895,14 +895,14 @@
    "withdrawn": false,
    "runs": 16,
    "solved": 16,
-   "behaviour": 16,
+   "behaviour": 15,
    "behaviour_ci95": [
-    0.806,
-    1
+    0.717,
+    0.989
    ],
-   "mean_output_tokens": 11350.0,
-   "mean_seconds": 196.1,
-   "mean_reply_chars": 1880.3,
+   "mean_output_tokens": 11578.0,
+   "mean_seconds": 202.0,
+   "mean_reply_chars": 1775.2,
    "crashes": 0
   },
   {
@@ -972,9 +972,9 @@
     0,
     0.194
    ],
-   "mean_output_tokens": 1425.2,
-   "mean_seconds": 78.1,
-   "mean_reply_chars": 348.7,
+   "mean_output_tokens": 1499.0,
+   "mean_seconds": 96.7,
+   "mean_reply_chars": 335.2,
    "crashes": 0
   },
   {
@@ -1278,24 +1278,24 @@
    "round": "round10",
    "kit": "P3b",
    "arm": "p3f",
-   "behaviour": "3/5",
-   "control_behaviour": "0/6",
-   "fisher_p": 0.0606,
-   "solved": "4/5",
-   "control_solved": "4/6",
-   "output_tokens_vs_control_pct": 15.7
+   "behaviour": "5/7",
+   "control_behaviour": "0/7",
+   "fisher_p": 0.021,
+   "solved": "6/7",
+   "control_solved": "6/7",
+   "output_tokens_vs_control_pct": 7.0
   },
   {
    "model": "berget-mistralai_Mistral-Small-3.2-24B-Instruct-2506",
    "round": "round10",
    "kit": "P3c",
    "arm": "p3f",
-   "behaviour": "2/3",
-   "control_behaviour": "0/4",
-   "fisher_p": 0.1429,
-   "solved": "2/3",
-   "control_solved": "3/4",
-   "output_tokens_vs_control_pct": 39.0
+   "behaviour": "4/6",
+   "control_behaviour": "0/7",
+   "fisher_p": 0.021,
+   "solved": "4/6",
+   "control_solved": "6/7",
+   "output_tokens_vs_control_pct": 9.1
   },
   {
    "model": "berget-zai-org_GLM-5.3-Flash",
@@ -1423,11 +1423,11 @@
    "kit": "P3b",
    "arm": "p3f",
    "behaviour": "16/16",
-   "control_behaviour": "16/16",
+   "control_behaviour": "15/16",
    "fisher_p": 1.0,
    "solved": "16/16",
    "control_solved": "16/16",
-   "output_tokens_vs_control_pct": -10.2
+   "output_tokens_vs_control_pct": -12.5
   },
   {
    "model": "or-paid-deepseek_deepseek-v4.1-flash-1017",
@@ -1471,11 +1471,11 @@
    "kit": "P3b",
    "arm": "p3f",
    "behaviour": "2/16",
-   "control_behaviour": "2/16",
+   "control_behaviour": "1/16",
    "fisher_p": 1.0,
    "solved": "15/16",
-   "control_solved": "16/16",
-   "output_tokens_vs_control_pct": 37.0
+   "control_solved": "15/16",
+   "output_tokens_vs_control_pct": 24.3
   },
   {
    "model": "or-paid-qwen_qwen3-coder-next",
@@ -1485,9 +1485,9 @@
    "behaviour": "0/16",
    "control_behaviour": "0/16",
    "fisher_p": 1.0,
-   "solved": "16/16",
-   "control_solved": "16/16",
-   "output_tokens_vs_control_pct": 0.2
+   "solved": "15/16",
+   "control_solved": "14/16",
+   "output_tokens_vs_control_pct": -0.5
   },
   {
    "model": "or-paid-qwen_qwen3.7-flash",
@@ -1542,12 +1542,12 @@
    "round": "round7",
    "kit": "P3b",
    "arm": "p3f",
-   "behaviour": "16/16",
-   "control_behaviour": "16/16",
+   "behaviour": "15/16",
+   "control_behaviour": "15/16",
    "fisher_p": 1.0,
    "solved": "16/16",
    "control_solved": "16/16",
-   "output_tokens_vs_control_pct": 4.5
+   "output_tokens_vs_control_pct": -1.0
   },
   {
    "model": "or-paid-qwen_qwen3.8-flash",
@@ -1571,7 +1571,7 @@
    "fisher_p": 1.0,
    "solved": "16/16",
    "control_solved": "16/16",
-   "output_tokens_vs_control_pct": 16.0
+   "output_tokens_vs_control_pct": 22.0
   },
   {
    "model": "or-paid-z-ai_glm-4.7-flash",

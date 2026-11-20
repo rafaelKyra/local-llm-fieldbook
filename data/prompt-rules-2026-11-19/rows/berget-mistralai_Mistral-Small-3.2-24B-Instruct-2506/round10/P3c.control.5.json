@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "control",
+ "rep": 5,
+ "seconds": 119.824,
+ "solved": false,
+ "behaviour": false,
+ "replyChars": 99,
+ "addedLines": 0,
+ "replyShortcut": false,
+ "status": "budget",
+ "stopReason": "tool budget exhausted",
+ "usage": {
+  "turns": 47,
+  "toolCalls": 40,
+  "inputTokens": 277324,
+  "outputTokens": 3454,
+  "lastInputTokens": 1321,
+  "peakInputTokens": 9548,
+  "modelCalls": 70,
+  "usageReportedCalls": 70,
+  "cacheReadTokens": 0,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 0,
+  "roles": {
+   "main": {
+    "calls": 47,
+    "reportedInput": 47,
+    "reportedOutput": 47,
+    "inputTokens": 261382,
+    "outputTokens": 1857
+   },
+   "explorer": {
+    "calls": 23,
+    "reportedInput": 23,
+    "reportedOutput": 23,
+    "inputTokens": 15942,
+    "outputTokens": 1597
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True formats-and-errors=False\n  tail: The delegate gave me wrong information again. There is no `Makefile`. Let me look at the test file."
+}

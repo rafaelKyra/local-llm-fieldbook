@@ -2,33 +2,33 @@
  "kit": "P3b",
  "arm": "p3f",
  "rep": 11,
- "seconds": 276.954,
+ "seconds": 371.77,
  "solved": true,
- "behaviour": true,
- "replyChars": 1875,
- "addedLines": 76,
+ "behaviour": false,
+ "replyChars": 194,
+ "addedLines": 81,
  "replyShortcut": false,
- "status": "completed",
- "stopReason": "finished",
+ "status": "budget",
+ "stopReason": "tool budget exhausted",
  "usage": {
-  "turns": 25,
-  "toolCalls": 21,
-  "inputTokens": 183955,
-  "outputTokens": 15393,
-  "lastInputTokens": 11448,
-  "peakInputTokens": 11448,
-  "modelCalls": 25,
-  "usageReportedCalls": 25,
-  "cacheReadTokens": 164352,
+  "turns": 40,
+  "toolCalls": 40,
+  "inputTokens": 316424,
+  "outputTokens": 19041,
+  "lastInputTokens": 13863,
+  "peakInputTokens": 13863,
+  "modelCalls": 40,
+  "usageReportedCalls": 40,
+  "cacheReadTokens": 288512,
   "cacheWriteTokens": 0,
-  "cacheReportedCalls": 25,
+  "cacheReportedCalls": 40,
   "roles": {
    "main": {
-    "calls": 25,
-    "reportedInput": 25,
-    "reportedOutput": 25,
-    "inputTokens": 183955,
-    "outputTokens": 15393
+    "calls": 40,
+    "reportedInput": 40,
+    "reportedOutput": 40,
+    "inputTokens": 316424,
+    "outputTokens": 19041
    },
    "explorer": {
     "calls": 0,
@@ -47,6 +47,6 @@
   }
  },
  "crash": null,
- "checkExit": 0,
- "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: `save_report()` in `report.py` is now crash-safe: instead of `open(path, \"w\")` (which truncates the live report), it creates a temp file with `tempfile.mkstemp` | Verification: the fixed check (`verify`, the 2-test suite in `test_report.py`) passes on the current files — but it also passed before any change, so it does no | Risk to be aware of: a killed process can leave a `.report.txt.*.tmp` file behind in the report directory (harmless, but a globbing job should ignore dot-prefix"
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: A real SIGKILL left the old report intact (the orphaned dot-prefixed `.tmp` is unavoidable for a killed process and is never read as the report). Cleaning up sc"
 }

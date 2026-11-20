@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Move kit rows that did not complete (status != completed: the endpoint was rate-limited or unavailable) out of the result folder, so they are re-run later
+"""Move kit rows that were cut off by the endpoint (status interrupted: rate-limited or unavailable) or crashed (status budget/unverified/blocked are real outcomes and stay) out of the result folder, so they are re-run later
 instead of being counted as failures. Prints: moved=<n> daily=<0|1> (daily=1 when the proxy log shows the key's daily limit). usage: quarantine.py OUT"""
 import glob, json, os, shutil, sys
 out = sys.argv[1]; kits = os.path.join(out, 'kits'); qd = os.path.join(out, 'interrupted'); os.makedirs(qd, exist_ok=True)
 moved = 0
 for f in sorted(glob.glob(os.path.join(kits, '*.json'))):
     r = json.load(open(f))
-    if r.get('status') != 'completed':
+    if r.get('status') == 'interrupted' or r.get('crash'):  # FIX 2026-11-20: only runs cut off by the endpoint (or that crashed); 'unverified', 'budget' and 'blocked' are REAL outcomes of the agent and must stay counted
         key = f"{r['kit']}.{r['arm']}.{r['rep']}"
         shutil.move(f, os.path.join(qd, os.path.basename(f)))
         d = os.path.join(kits, 'runs', key)

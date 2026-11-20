@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "p3f",
+ "rep": 6,
+ "seconds": 93.894,
+ "solved": false,
+ "behaviour": false,
+ "replyChars": 213,
+ "addedLines": 0,
+ "replyShortcut": false,
+ "status": "interrupted",
+ "stopReason": "model endpoint unavailable (rate_limited): HTTP 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"google/gemma-4-31b-it:free is temporarily rate-limited upstream. Please r…",
+ "usage": {
+  "turns": 1,
+  "toolCalls": 0,
+  "inputTokens": 0,
+  "outputTokens": 0,
+  "lastInputTokens": 0,
+  "peakInputTokens": 0,
+  "modelCalls": 1,
+  "usageReportedCalls": 0,
+  "cacheReadTokens": 0,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 0,
+  "roles": {
+   "main": {
+    "calls": 1,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True formats-and-errors=False\n  tail: Stopped: model endpoint unavailable (rate_limited): HTTP 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"google/gemma-4-31b-it:"
+}

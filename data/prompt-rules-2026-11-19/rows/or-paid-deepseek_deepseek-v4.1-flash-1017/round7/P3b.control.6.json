@@ -2,33 +2,33 @@
  "kit": "P3b",
  "arm": "control",
  "rep": 6,
- "seconds": 66.674,
+ "seconds": 82.316,
  "solved": true,
- "behaviour": true,
- "replyChars": 1447,
- "addedLines": 53,
+ "behaviour": false,
+ "replyChars": 23,
+ "addedLines": 76,
  "replyShortcut": false,
- "status": "completed",
- "stopReason": "finished",
+ "status": "budget",
+ "stopReason": "tool budget exhausted",
  "usage": {
-  "turns": 24,
-  "toolCalls": 27,
-  "inputTokens": 134696,
-  "outputTokens": 8503,
-  "lastInputTokens": 8582,
-  "peakInputTokens": 8582,
-  "modelCalls": 24,
-  "usageReportedCalls": 24,
-  "cacheReadTokens": 112320,
+  "turns": 34,
+  "toolCalls": 40,
+  "inputTokens": 230798,
+  "outputTokens": 12070,
+  "lastInputTokens": 12085,
+  "peakInputTokens": 12085,
+  "modelCalls": 34,
+  "usageReportedCalls": 34,
+  "cacheReadTokens": 220160,
   "cacheWriteTokens": 0,
-  "cacheReportedCalls": 24,
+  "cacheReportedCalls": 34,
   "roles": {
    "main": {
-    "calls": 24,
-    "reportedInput": 24,
-    "reportedOutput": 24,
-    "inputTokens": 134696,
-    "outputTokens": 8503
+    "calls": 34,
+    "reportedInput": 34,
+    "reportedOutput": 34,
+    "inputTokens": 230798,
+    "outputTokens": 12070
    },
    "explorer": {
     "calls": 0,
@@ -47,6 +47,6 @@
   }
  },
  "crash": null,
- "checkExit": 0,
- "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made `save_report()` in `report.py` crash-safe with an atomic write: the text goes to a `tempfile.mkstemp` file in the same directory as the target, is flushed  | Verification: `verify` (the fixed check) passed on the current files — 2 tests OK — but note it also passed before any change, so it does not by itself prove th"
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Now the official check:"
 }
