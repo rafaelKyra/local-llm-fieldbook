@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "control",
+ "rep": 2,
+ "seconds": 5.547,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 424,
+ "addedLines": 7,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 9,
+  "toolCalls": 9,
+  "inputTokens": 22967,
+  "outputTokens": 1045,
+  "lastInputTokens": 3255,
+  "peakInputTokens": 3255,
+  "modelCalls": 9,
+  "usageReportedCalls": 9,
+  "cacheReadTokens": 17654,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 9,
+  "roles": {
+   "main": {
+    "calls": 9,
+    "reportedInput": 9,
+    "reportedOutput": 9,
+    "inputTokens": 22967,
+    "outputTokens": 1045
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: Updated parse_date in feed.py to read both date formats. It now strips the input, tries the old \"%Y-%m-%d\" format first (2026-03-04), then the vendor's new day-"
+}

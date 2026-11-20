@@ -1,0 +1,45 @@
+{
+  "passAtK": "37/38",
+  "passPowK": "37/38",
+  "wilson95": [
+    0.865,
+    0.995
+  ],
+  "label": "deepseek-control",
+  "model": "deepseek/deepseek-v4.1-flash-1017",
+  "profile": "auto",
+  "runtime": "forge",
+  "tasks": 38,
+  "solved": 37,
+  "rate": 0.974,
+  "verdicts": {
+    "solved": 37,
+    "overfit": 1
+  },
+  "byCategory": {
+    "off-by-one": "2/2",
+    "wrong-operator": "1/1",
+    "string": "0/1",
+    "async": "1/1",
+    "sorting": "1/1",
+    "regex": "1/1",
+    "feature": "5/5",
+    "bug": "9/9",
+    "multi-file": "2/2",
+    "parsing": "2/2",
+    "read-the-spec": "1/1",
+    "python": "4/4",
+    "spec": "8/8"
+  },
+  "totalSeconds": 352,
+  "toolCalls": 284,
+  "inputTokens": 672536,
+  "outputTokens": 49241,
+  "pathologies": {
+    "shell_write_refused": 2,
+    "check_repeated": 1,
+    "refused_calls": 3,
+    "edits_without_verify": 1,
+    "edit_thrash": 1
+  }
+}

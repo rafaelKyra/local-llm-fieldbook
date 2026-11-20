@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 19,
+ "seconds": 4.137,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 696,
+ "addedLines": 15,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 6,
+  "toolCalls": 6,
+  "inputTokens": 13963,
+  "outputTokens": 780,
+  "lastInputTokens": 2868,
+  "peakInputTokens": 2868,
+  "modelCalls": 6,
+  "usageReportedCalls": 6,
+  "cacheReadTokens": 12020,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 6,
+  "roles": {
+   "main": {
+    "calls": 6,
+    "reportedInput": 6,
+    "reportedOutput": 6,
+    "inputTokens": 13963,
+    "outputTokens": 780
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made `save_report()` in `report.py` crash-safe by writing to a temporary file in the same directory, flushing and fsyncing it, then atomically replacing the tar | Files changed: `report.py` (imports `tempfile`; rewrite of `save_report`). | Check: `verify` (no arguments) runs the test suite — 2 tests pass. Note the check also passed before the change, so it does not by itself prove crash-safety; th"
+}

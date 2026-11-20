@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 20,
+ "seconds": 5.641,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 955,
+ "addedLines": 13,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 8,
+  "toolCalls": 8,
+  "inputTokens": 20323,
+  "outputTokens": 1498,
+  "lastInputTokens": 3530,
+  "peakInputTokens": 3530,
+  "modelCalls": 8,
+  "usageReportedCalls": 8,
+  "cacheReadTokens": 17883,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 8,
+  "roles": {
+   "main": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 20323,
+    "outputTokens": 1498
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: 2. Writes the full text to the temp file and closes it. | 3. Atomically renames it over the target with `os.replace()`, which is atomic on both POSIX and Windows (MoveFileEx / MOVEFILE_REPLACE_EXISTING). | - On any exception, the temp file is cleaned up and the error re-raised. | Result: a crash during the write can at worst leave a stray temp file; the existing report.txt is never truncated or damaged. | Check: ran verify (no arguments) – the test suite (2 tests) passes. Note the suite also passed before the edit, so it does not itself prove crash-safety; it con"
+}

@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "control",
+ "rep": 29,
+ "seconds": 5.399,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 439,
+ "addedLines": 9,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 9,
+  "toolCalls": 10,
+  "inputTokens": 24870,
+  "outputTokens": 1240,
+  "lastInputTokens": 3509,
+  "peakInputTokens": 3509,
+  "modelCalls": 9,
+  "usageReportedCalls": 9,
+  "cacheReadTokens": 21565,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 9,
+  "roles": {
+   "main": {
+    "calls": 9,
+    "reportedInput": 9,
+    "reportedOutput": 9,
+    "inputTokens": 24870,
+    "outputTokens": 1240
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: Updated `parse_date()`/`parse_row()` in `feed.py` to accept both the old (`%Y-%m-%d`, e.g. `2026-03-04`) and the new day-first (`%d/%m/%Y`, e.g. `04/03/2026`) v"
+}

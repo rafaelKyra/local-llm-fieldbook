@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 23,
+ "seconds": 3.387,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 737,
+ "addedLines": 18,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 6,
+  "toolCalls": 6,
+  "inputTokens": 13441,
+  "outputTokens": 679,
+  "lastInputTokens": 2749,
+  "peakInputTokens": 2749,
+  "modelCalls": 6,
+  "usageReportedCalls": 6,
+  "cacheReadTokens": 11402,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 6,
+  "roles": {
+   "main": {
+    "calls": 6,
+    "reportedInput": 6,
+    "reportedOutput": 6,
+    "inputTokens": 13441,
+    "outputTokens": 679
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: What changed: | - save_report() now writes to a temporary file created with tempfile.mkstemp() in the same directory, flushes and fsyncs it, then installs it into place with os | - On any exception after the temp file is created, it is unlinked before re-raising. | Files: report.py. | Check: verify (the fixed check) passes—test suite of 2 tests is green. Note the check also passed before any change, so it does not itself prove the crash-safet"
+}

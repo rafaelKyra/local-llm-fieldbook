@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 2,
+ "seconds": 13.233,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 401,
+ "addedLines": 3,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 8,
+  "toolCalls": 6,
+  "inputTokens": 16151,
+  "outputTokens": 350,
+  "lastInputTokens": 2463,
+  "peakInputTokens": 2463,
+  "modelCalls": 8,
+  "usageReportedCalls": 8,
+  "cacheReadTokens": 15760,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 8,
+  "roles": {
+   "main": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 16151,
+    "outputTokens": 350
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Implemented crash-safe writing in `save_report` by writing to a temporary file and then using `os.replace` to atomically move it to the destination path. This e | Modified: `report.py` | The test suite passed, although it does not specifically test for crash-safety (it only tests successful writes and replacements)."
+}

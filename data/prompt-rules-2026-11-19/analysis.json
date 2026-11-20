@@ -1,10 +1,226 @@
 {
  "excluded_not_completed": {
   "openrouter-free-router/round5": 19,
-  "or-free-google_gemma-4-31b-it_free/round6": 4,
+  "or-free-google_gemma-4-31b-it_free/round6": 15,
   "or-free-nvidia_nemotron-3-ultra-550b-a55b_free/round6": 1
  },
  "kit_rows": [
+  {
+   "model": "berget-google_gemma-4-31B-it",
+   "round": "round10",
+   "kit": "P3b",
+   "arm": "control",
+   "withdrawn": false,
+   "runs": 16,
+   "solved": 16,
+   "behaviour": 0,
+   "behaviour_ci95": [
+    0,
+    0.194
+   ],
+   "mean_output_tokens": 332.2,
+   "mean_seconds": 13.6,
+   "mean_reply_chars": 313.2,
+   "crashes": 0
+  },
+  {
+   "model": "berget-google_gemma-4-31B-it",
+   "round": "round10",
+   "kit": "P3b",
+   "arm": "p3f",
+   "withdrawn": false,
+   "runs": 16,
+   "solved": 16,
+   "behaviour": 0,
+   "behaviour_ci95": [
+    0,
+    0.194
+   ],
+   "mean_output_tokens": 361.0,
+   "mean_seconds": 13.7,
+   "mean_reply_chars": 435.7,
+   "crashes": 0
+  },
+  {
+   "model": "berget-google_gemma-4-31B-it",
+   "round": "round10",
+   "kit": "P3c",
+   "arm": "control",
+   "withdrawn": false,
+   "runs": 16,
+   "solved": 16,
+   "behaviour": 0,
+   "behaviour_ci95": [
+    0,
+    0.194
+   ],
+   "mean_output_tokens": 732.9,
+   "mean_seconds": 22.1,
+   "mean_reply_chars": 235.0,
+   "crashes": 0
+  },
+  {
+   "model": "berget-google_gemma-4-31B-it",
+   "round": "round10",
+   "kit": "P3c",
+   "arm": "p3f",
+   "withdrawn": false,
+   "runs": 16,
+   "solved": 16,
+   "behaviour": 0,
+   "behaviour_ci95": [
+    0,
+    0.194
+   ],
+   "mean_output_tokens": 690.1,
+   "mean_seconds": 20.3,
+   "mean_reply_chars": 327.6,
+   "crashes": 0
+  },
+  {
+   "model": "berget-zai-org_GLM-5.3-Flash",
+   "round": "round10",
+   "kit": "P3b",
+   "arm": "control",
+   "withdrawn": false,
+   "runs": 2,
+   "solved": 2,
+   "behaviour": 2,
+   "behaviour_ci95": [
+    0.342,
+    1
+   ],
+   "mean_output_tokens": 5289.0,
+   "mean_seconds": 52.9,
+   "mean_reply_chars": 1161.5,
+   "crashes": 0
+  },
+  {
+   "model": "berget-zai-org_GLM-5.3-Flash",
+   "round": "round10",
+   "kit": "P3b",
+   "arm": "p3f",
+   "withdrawn": false,
+   "runs": 2,
+   "solved": 2,
+   "behaviour": 2,
+   "behaviour_ci95": [
+    0.342,
+    1
+   ],
+   "mean_output_tokens": 2758.0,
+   "mean_seconds": 36.0,
+   "mean_reply_chars": 875.0,
+   "crashes": 0
+  },
+  {
+   "model": "berget-zai-org_GLM-5.3-Flash",
+   "round": "round10",
+   "kit": "P3c",
+   "arm": "control",
+   "withdrawn": false,
+   "runs": 2,
+   "solved": 2,
+   "behaviour": 1,
+   "behaviour_ci95": [
+    0.095,
+    0.905
+   ],
+   "mean_output_tokens": 1606.0,
+   "mean_seconds": 24.7,
+   "mean_reply_chars": 697.5,
+   "crashes": 0
+  },
+  {
+   "model": "berget-zai-org_GLM-5.3-Flash",
+   "round": "round10",
+   "kit": "P3c",
+   "arm": "p3f",
+   "withdrawn": false,
+   "runs": 2,
+   "solved": 2,
+   "behaviour": 1,
+   "behaviour_ci95": [
+    0.095,
+    0.905
+   ],
+   "mean_output_tokens": 2174.5,
+   "mean_seconds": 31.8,
+   "mean_reply_chars": 897.5,
+   "crashes": 0
+  },
+  {
+   "model": "mercury-3",
+   "round": "round11",
+   "kit": "P3b",
+   "arm": "control",
+   "withdrawn": false,
+   "runs": 32,
+   "solved": 32,
+   "behaviour": 22,
+   "behaviour_ci95": [
+    0.514,
+    0.82
+   ],
+   "mean_output_tokens": 1207.6,
+   "mean_seconds": 5.2,
+   "mean_reply_chars": 694.4,
+   "crashes": 0
+  },
+  {
+   "model": "mercury-3",
+   "round": "round11",
+   "kit": "P3b",
+   "arm": "p3f",
+   "withdrawn": false,
+   "runs": 32,
+   "solved": 32,
+   "behaviour": 25,
+   "behaviour_ci95": [
+    0.612,
+    0.89
+   ],
+   "mean_output_tokens": 1205.7,
+   "mean_seconds": 5.5,
+   "mean_reply_chars": 662.2,
+   "crashes": 0
+  },
+  {
+   "model": "mercury-3",
+   "round": "round11",
+   "kit": "P3c",
+   "arm": "control",
+   "withdrawn": false,
+   "runs": 32,
+   "solved": 32,
+   "behaviour": 1,
+   "behaviour_ci95": [
+    0.006,
+    0.157
+   ],
+   "mean_output_tokens": 1200.4,
+   "mean_seconds": 5.3,
+   "mean_reply_chars": 564.7,
+   "crashes": 0
+  },
+  {
+   "model": "mercury-3",
+   "round": "round11",
+   "kit": "P3c",
+   "arm": "p3f",
+   "withdrawn": false,
+   "runs": 32,
+   "solved": 32,
+   "behaviour": 2,
+   "behaviour_ci95": [
+    0.017,
+    0.201
+   ],
+   "mean_output_tokens": 1177.0,
+   "mean_seconds": 5.6,
+   "mean_reply_chars": 563.8,
+   "crashes": 0
+  },
   {
    "model": "openrouter-free-router",
    "round": "round5",
@@ -962,6 +1178,78 @@
  ],
  "comparisons": [
   {
+   "model": "berget-google_gemma-4-31B-it",
+   "round": "round10",
+   "kit": "P3b",
+   "arm": "p3f",
+   "behaviour": "0/16",
+   "control_behaviour": "0/16",
+   "fisher_p": 1.0,
+   "solved": "16/16",
+   "control_solved": "16/16",
+   "output_tokens_vs_control_pct": 8.7
+  },
+  {
+   "model": "berget-google_gemma-4-31B-it",
+   "round": "round10",
+   "kit": "P3c",
+   "arm": "p3f",
+   "behaviour": "0/16",
+   "control_behaviour": "0/16",
+   "fisher_p": 1.0,
+   "solved": "16/16",
+   "control_solved": "16/16",
+   "output_tokens_vs_control_pct": -5.8
+  },
+  {
+   "model": "berget-zai-org_GLM-5.3-Flash",
+   "round": "round10",
+   "kit": "P3b",
+   "arm": "p3f",
+   "behaviour": "2/2",
+   "control_behaviour": "2/2",
+   "fisher_p": 1.0,
+   "solved": "2/2",
+   "control_solved": "2/2",
+   "output_tokens_vs_control_pct": -47.9
+  },
+  {
+   "model": "berget-zai-org_GLM-5.3-Flash",
+   "round": "round10",
+   "kit": "P3c",
+   "arm": "p3f",
+   "behaviour": "1/2",
+   "control_behaviour": "1/2",
+   "fisher_p": 1.0,
+   "solved": "2/2",
+   "control_solved": "2/2",
+   "output_tokens_vs_control_pct": 35.4
+  },
+  {
+   "model": "mercury-3",
+   "round": "round11",
+   "kit": "P3b",
+   "arm": "p3f",
+   "behaviour": "25/32",
+   "control_behaviour": "22/32",
+   "fisher_p": 0.5722,
+   "solved": "32/32",
+   "control_solved": "32/32",
+   "output_tokens_vs_control_pct": -0.2
+  },
+  {
+   "model": "mercury-3",
+   "round": "round11",
+   "kit": "P3c",
+   "arm": "p3f",
+   "behaviour": "2/32",
+   "control_behaviour": "1/32",
+   "fisher_p": 1.0,
+   "solved": "32/32",
+   "control_solved": "32/32",
+   "output_tokens_vs_control_pct": -1.9
+  },
+  {
    "model": "openrouter-free-router",
    "round": "round5",
    "kit": "P3b",
@@ -1299,6 +1587,70 @@
   }
  ],
  "bench": [
+  {
+   "model": "mercury-3",
+   "round": "round11",
+   "arm": "control",
+   "passes": 1,
+   "tasks": 38,
+   "solved": 37,
+   "output_tokens": 45041,
+   "input_tokens": 636759,
+   "seconds": 158.8,
+   "rate": 0.974,
+   "solved_ci95": [
+    0.865,
+    0.995
+   ]
+  },
+  {
+   "model": "mercury-3",
+   "round": "round11",
+   "arm": "p3f",
+   "passes": 1,
+   "tasks": 38,
+   "solved": 35,
+   "output_tokens": 44918,
+   "input_tokens": 601499,
+   "seconds": 158.5,
+   "rate": 0.921,
+   "solved_ci95": [
+    0.792,
+    0.973
+   ]
+  },
+  {
+   "model": "or-paid-deepseek_deepseek-v4.1-flash-1017",
+   "round": "round9",
+   "arm": "control",
+   "passes": 3,
+   "tasks": 114,
+   "solved": 112,
+   "output_tokens": 211327,
+   "input_tokens": 1998851,
+   "seconds": 1237.8,
+   "rate": 0.982,
+   "solved_ci95": [
+    0.938,
+    0.995
+   ]
+  },
+  {
+   "model": "or-paid-deepseek_deepseek-v4.1-flash-1017",
+   "round": "round9",
+   "arm": "p3f",
+   "passes": 2,
+   "tasks": 76,
+   "solved": 74,
+   "output_tokens": 91098,
+   "input_tokens": 1233329,
+   "seconds": 834.7,
+   "rate": 0.974,
+   "solved_ci95": [
+    0.909,
+    0.993
+   ]
+  },
   {
    "model": "oxcoder-9b-q4ks",
    "round": "round4",

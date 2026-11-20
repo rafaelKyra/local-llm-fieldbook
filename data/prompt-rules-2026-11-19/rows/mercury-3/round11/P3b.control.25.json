@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 25,
+ "seconds": 10.153,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1078,
+ "addedLines": 16,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 11,
+  "toolCalls": 10,
+  "inputTokens": 36945,
+  "outputTokens": 2751,
+  "lastInputTokens": 4975,
+  "peakInputTokens": 4975,
+  "modelCalls": 11,
+  "usageReportedCalls": 11,
+  "cacheReadTokens": 32967,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 11,
+  "roles": {
+   "main": {
+    "calls": 11,
+    "reportedInput": 11,
+    "reportedOutput": 11,
+    "inputTokens": 36945,
+    "outputTokens": 2751
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Reworked `save_report()` in `report.py` to write crash-safely. It now writes the report to a temporary file in the same directory (`tempfile.mkstemp`), flushes  | Files changed: `report.py` (rewritten). Also added `repro_crash_safe.py`, a standalone proof script demonstrating (1) successful writes leave no stray temp file | Note: the fixed `verify` check passed before my change too, so it alone does not prove the change; I verified the crash-safe behavior through the reproduction s"
+}

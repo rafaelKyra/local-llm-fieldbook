@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 28,
+ "seconds": 6.868,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 702,
+ "addedLines": 15,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 8,
+  "toolCalls": 8,
+  "inputTokens": 23848,
+  "outputTokens": 2035,
+  "lastInputTokens": 4016,
+  "peakInputTokens": 4016,
+  "modelCalls": 8,
+  "usageReportedCalls": 8,
+  "cacheReadTokens": 20519,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 8,
+  "roles": {
+   "main": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 23848,
+    "outputTokens": 2035
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made `save_report()` in report.py crash-safe by writing to a temporary file in the same directory, flushing and fsync-ing it, then atomically replacing the targ | Changes: report.py (rewrote `save_report` to use `tempfile.mkstemp` + `os.replace`, with cleanup on exception). | Check: `verify` passed (2 tests OK). Note the recorded check is the pre-existing test suite, which does not itself exercise crash-safety, so it does not prove t"
+}

@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 1,
+ "seconds": 36.818,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1070,
+ "addedLines": 42,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 9,
+  "toolCalls": 9,
+  "inputTokens": 27753,
+  "outputTokens": 3639,
+  "lastInputTokens": 4928,
+  "peakInputTokens": 4928,
+  "modelCalls": 9,
+  "usageReportedCalls": 9,
+  "cacheReadTokens": 17920,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 7,
+  "roles": {
+   "main": {
+    "calls": 9,
+    "reportedInput": 9,
+    "reportedOutput": 9,
+    "inputTokens": 27753,
+    "outputTokens": 3639
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made save_report() in report.py crash-safe. It now writes to a tempfile.mkstemp file in the same directory, flushes and fsyncs it, copies the existing file's pe | Files changed: report.py only (test_report.py untouched). | Checks: the fixed verify (project suite, 2 tests) passed before the edit and passed again after (check 2) — it does not exercise crash behaviour, so it doesn't "
+}

@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 9,
+ "seconds": 4.222,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 815,
+ "addedLines": 15,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 6,
+  "toolCalls": 6,
+  "inputTokens": 14059,
+  "outputTokens": 903,
+  "lastInputTokens": 2924,
+  "peakInputTokens": 2924,
+  "modelCalls": 6,
+  "usageReportedCalls": 6,
+  "cacheReadTokens": 12052,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 6,
+  "roles": {
+   "main": {
+    "calls": 6,
+    "reportedInput": 6,
+    "reportedOutput": 6,
+    "inputTokens": 14059,
+    "outputTokens": 903
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: The check passes. The existing tests don't exercise crash-safety, so the check passing both before and after doesn't itself prove the fix — but the change imple | Summary of the change in `report.py`: | - `save_report()` no longer writes straight into `report.txt`. It now writes into a temporary file created in the same directory (via `tempfile.mkstemp`), flush | - If anything goes wrong (including a crash or exception mid-write), the temp file is cleaned up and the existing `report.txt` is never touched or truncated. | - `os.replace` is atomic on both the Linux dev machine and the production Windows file server, so a crash during the write cannot damage the existing report."
+}

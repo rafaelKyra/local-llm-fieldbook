@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 21,
+ "seconds": 16.895,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1001,
+ "addedLines": 16,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 15,
+  "toolCalls": 14,
+  "inputTokens": 96390,
+  "outputTokens": 4977,
+  "lastInputTokens": 10862,
+  "peakInputTokens": 10862,
+  "modelCalls": 15,
+  "usageReportedCalls": 15,
+  "cacheReadTokens": 85202,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 15,
+  "roles": {
+   "main": {
+    "calls": 15,
+    "reportedInput": 15,
+    "reportedOutput": 15,
+    "inputTokens": 96390,
+    "outputTokens": 4977
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made save_report() crash-safe in report.py. It now writes to a temporary file in the same directory (tempfile.mkstemp) and then atomically renames it over repor | I verified crash-safety with a script that injects a partial-write failure and confirmed the existing report stays intact and no temp files are left. The projec"
+}

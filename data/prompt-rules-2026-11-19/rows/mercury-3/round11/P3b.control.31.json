@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 31,
+ "seconds": 5.335,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1029,
+ "addedLines": 21,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 5,
+  "toolCalls": 6,
+  "inputTokens": 13269,
+  "outputTokens": 1617,
+  "lastInputTokens": 3546,
+  "peakInputTokens": 3546,
+  "modelCalls": 5,
+  "usageReportedCalls": 5,
+  "cacheReadTokens": 10572,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 5,
+  "roles": {
+   "main": {
+    "calls": 5,
+    "reportedInput": 5,
+    "reportedOutput": 5,
+    "inputTokens": 13269,
+    "outputTokens": 1617
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: - writes the text, flushes, and fsyncs it to disk | - atomically replaces the destination with os.replace(tmp_path, path), so the destination is only swapped in once the new content is fully written and durable | - cleans up the temp file if any step fails, then re-raises | The temp file lives in the destination directory so the rename is atomic (same filesystem), and os.replace overwrites existing files on Windows as well as Linux | Check: ran verify (no args) before and after the edit. It passes (2 tests, OK). The check also passed before any change, so it does not independently prove the "
+}

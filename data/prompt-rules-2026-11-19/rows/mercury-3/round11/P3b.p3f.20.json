@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 20,
+ "seconds": 5.193,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 886,
+ "addedLines": 15,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 7,
+  "toolCalls": 7,
+  "inputTokens": 19653,
+  "outputTokens": 1532,
+  "lastInputTokens": 3826,
+  "peakInputTokens": 3826,
+  "modelCalls": 7,
+  "usageReportedCalls": 7,
+  "cacheReadTokens": 16529,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 7,
+  "roles": {
+   "main": {
+    "calls": 7,
+    "reportedInput": 7,
+    "reportedOutput": 7,
+    "inputTokens": 19653,
+    "outputTokens": 1532
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made save_report() in report.py crash-safe. Instead of writing directly to report.txt (which leaves a truncated file if the process dies mid-write), it now writ | Changed files: report.py (lines 1-21). | Check: verify (no args) runs the 2-unit-test suite and passes. Note the suite only checks the write/replace behavior, not crash-safety directly, so it does not "
+}

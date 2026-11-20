@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 10,
+ "seconds": 6.575,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 753,
+ "addedLines": 16,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 8,
+  "toolCalls": 7,
+  "inputTokens": 22528,
+  "outputTokens": 1688,
+  "lastInputTokens": 4117,
+  "peakInputTokens": 4117,
+  "modelCalls": 8,
+  "usageReportedCalls": 8,
+  "cacheReadTokens": 17017,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 8,
+  "roles": {
+   "main": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 22528,
+    "outputTokens": 1688
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made save_report() in report.py crash-safe. | What changed: report.py's save_report() no longer writes directly into report.txt. It now writes the full contents to a temporary file in the same directory (te | Files: report.py | Check: ran verify (no arguments) after the edit — CHECK PASSED, both tests (test_writes_text, test_replaces_old_text) pass. Note the check also passed before th"
+}

@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 29,
+ "seconds": 4.18,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 752,
+ "addedLines": 5,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 6,
+  "toolCalls": 6,
+  "inputTokens": 13988,
+  "outputTokens": 784,
+  "lastInputTokens": 2850,
+  "peakInputTokens": 2850,
+  "modelCalls": 6,
+  "usageReportedCalls": 6,
+  "cacheReadTokens": 12073,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 6,
+  "roles": {
+   "main": {
+    "calls": 6,
+    "reportedInput": 6,
+    "reportedOutput": 6,
+    "inputTokens": 13988,
+    "outputTokens": 784
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: The change is complete. The check suite passes (2 tests green), though it also passed before my edit, so it doesn't by itself prove the change; the crash-safety | Summary: | - **`report.py`** — `save_report()` now writes to a temporary file (`<path>.tmp`) in the same directory, flushes and `fsync`s it, then calls `os.replace(tmp, pa | - Why this is crash-safe: the temp file is on the same filesystem as the target, and `os.replace` is atomic on both Windows (this production server) and POSIX/L | - Verified with `verify` (no arguments): 2 tests pass."
+}

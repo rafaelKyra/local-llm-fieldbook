@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 4,
+ "seconds": 3.953,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 763,
+ "addedLines": 15,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 6,
+  "toolCalls": 6,
+  "inputTokens": 14122,
+  "outputTokens": 972,
+  "lastInputTokens": 2827,
+  "peakInputTokens": 2827,
+  "modelCalls": 6,
+  "usageReportedCalls": 6,
+  "cacheReadTokens": 12769,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 6,
+  "roles": {
+   "main": {
+    "calls": 6,
+    "reportedInput": 6,
+    "reportedOutput": 6,
+    "inputTokens": 14122,
+    "outputTokens": 972
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: - creates a temporary file in the same directory via `tempfile.mkstemp`, | - writes, flushes, and `os.fsync`s it, | - atomically replaces the destination with `os.replace()` (atomic on both POSIX and Windows), so the existing report is either fully preserved or fully replaced | - cleans up the temp file if anything fails. | The check (`verify`) passes; both tests in `test_report.py` stay green. Note the check also passed before any edit, so it doesn't by itself prove the change — t"
+}

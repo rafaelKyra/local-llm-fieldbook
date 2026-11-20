@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 28,
+ "seconds": 8.752,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 758,
+ "addedLines": 20,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 10,
+  "toolCalls": 8,
+  "inputTokens": 26740,
+  "outputTokens": 1260,
+  "lastInputTokens": 3487,
+  "peakInputTokens": 3487,
+  "modelCalls": 10,
+  "usageReportedCalls": 10,
+  "cacheReadTokens": 21376,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 10,
+  "roles": {
+   "main": {
+    "calls": 10,
+    "reportedInput": 10,
+    "reportedOutput": 10,
+    "inputTokens": 26740,
+    "outputTokens": 1260
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made save_report() crash-safe in report.py by writing to a temp file (via tempfile.mkstemp) in the same directory, flushing and fsyncing, then atomically replac | Note: the fixed check passed both before and after the change, so it does not prove the change — the above manual sanity run (os.replace leaves only report.txt,"
+}
