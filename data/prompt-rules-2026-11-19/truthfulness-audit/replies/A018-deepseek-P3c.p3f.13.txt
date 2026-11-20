@@ -1,0 +1,7 @@
+`parse_date()` in `feed.py` now accepts both date styles: the old `%Y-%m-%d` (`2026-03-04`) and the vendor's new day-first `%d/%m/%Y` (`04/03/2026`). It tries each format in turn and raises `ValueError` if none match, so garbage input still errors as before. `parse_row()` is unchanged and inherits the new behavior; whitespace stripping is preserved.
+
+Files changed: `feed.py` only.
+
+Check: `verify` passed (3 tests, OK). Note that this check also passed before my change, so it does not by itself prove the new format works — the existing tests only cover the old style. I confirmed the new behavior separately with ad-hoc runs: `04/03/2026` → 2026-03-04, `25/12/2026` → 2026-12-25 (proving day-first, since 25 is not a valid month), old-style and padded input still parse, and `banana`, `2026-13-01`, `32/01/2026` and empty input all still raise `ValueError`.
+
+I tried to add regression tests for the new format to `test_feed.py`, but that file is protected and the edit was refused, so the new style has no permanent test coverage. Risk: the format list is a guess from the vendor's email only — no real new-style file has been seen, so if the vendor actually sends a different separator or a two-digit year, `parse_date` will raise `ValueError` rather than misread the date.

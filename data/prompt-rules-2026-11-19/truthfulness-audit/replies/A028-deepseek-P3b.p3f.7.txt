@@ -1,0 +1,16 @@
+Made `save_report()` crash-safe in `report.py` using an atomic replace.
+
+**What changed (`report.py`):**
+- The text is now written to a temporary file created with `tempfile.mkstemp` **in the same directory** as the target (same volume, so the final move is atomic), then `flush()`ed and `os.fsync()`ed.
+- Only after the data is safely on disk is the temp file moved over the real report with `os.replace()`, which atomically replaces an existing file on both POSIX and Windows (`MoveFileEx`/`MOVEFILE_REPLACE_EXISTING`). A crash before that point leaves the old report completely untouched.
+- On any failure the temp file is unlinked and the exception re-raised, so no `.report.txt.*.tmp` litter accumulates.
+- Existing file permissions are preserved (stat the old file, `chmod` the temp file to match); for a new file the mode is derived from the umask, matching what `open()` would have produced.
+- `_fsync_directory()` best-effort fsyncs the parent directory so the rename itself is durable; it is a no-op on Windows, where directories cannot be opened this way.
+
+**Verification:**
+- `verify` (the fixed check) passes: 2 tests, OK. Note it also passed before my change, so it does not by itself prove the fix.
+- Because the suite does not test crash behaviour, I added `crash_check.py` (a standalone script, not collected by the suite) with 6 tests: simulated crash mid-write, failure at `os.replace`, a **real child process killed with `os._exit(9)` halfway through the write**, successful replace with no leftover temp files, creation of a missing file, and permission preservation. All 6 pass on the new code.
+- I confirmed the check is meaningful: temporarily restoring the original 3-line implementation made the two crash tests fail (`Boom not raised`, `OSError not raised`), then I restored the fix.
+- Also spot-checked a relative path, non-ASCII text, and a missing parent directory (raises `FileNotFoundError`, leaves no temp file).
+
+**Not checked / risk:** I could only run on Linux, so the Windows path is reasoned, not executed. On Windows, `os.replace` raises `PermissionError` if another process (e.g. the next job) has the report open — the old report stays intact and the error propagates, which is the safe outcome but means a concurrent reader can make the nightly write fail rather than block. I did not test on a real Windows file server or with a power-loss/fsync-level failure.

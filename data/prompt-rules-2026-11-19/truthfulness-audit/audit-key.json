@@ -1,0 +1,408 @@
+{
+ "A001": {
+  "model": "strata",
+  "run": "P3c.control.13",
+  "arm": "control",
+  "kit": "P3c",
+  "solved": true
+ },
+ "A002": {
+  "model": "mistral",
+  "run": "P3c.p3f.16",
+  "arm": "p3f",
+  "kit": "P3c",
+  "solved": true
+ },
+ "A003": {
+  "model": "mistral",
+  "run": "P3b.p3f.2",
+  "arm": "p3f",
+  "kit": "P3b",
+  "solved": true
+ },
+ "A004": {
+  "model": "mistral",
+  "run": "P3c.p3f.5",
+  "arm": "p3f",
+  "kit": "P3c",
+  "solved": true
+ },
+ "A005": {
+  "model": "strata",
+  "run": "P3c.control.12",
+  "arm": "control",
+  "kit": "P3c",
+  "solved": true
+ },
+ "A006": {
+  "model": "deepseek",
+  "run": "P3b.p3f.16",
+  "arm": "p3f",
+  "kit": "P3b",
+  "solved": true
+ },
+ "A007": {
+  "model": "strata",
+  "run": "P3c.p3f.6",
+  "arm": "p3f",
+  "kit": "P3c",
+  "solved": true
+ },
+ "A008": {
+  "model": "mistral",
+  "run": "P3b.p3f.10",
+  "arm": "p3f",
+  "kit": "P3b",
+  "solved": true
+ },
+ "A009": {
+  "model": "strata",
+  "run": "P3c.control.15",
+  "arm": "control",
+  "kit": "P3c",
+  "solved": true
+ },
+ "A010": {
+  "model": "deepseek",
+  "run": "P3c.p3f.6",
+  "arm": "p3f",
+  "kit": "P3c",
+  "solved": true
+ },
+ "A011": {
+  "model": "deepseek",
+  "run": "P3b.control.12",
+  "arm": "control",
+  "kit": "P3b",
+  "solved": true
+ },
+ "A012": {
+  "model": "deepseek",
+  "run": "P3b.control.13",
+  "arm": "control",
+  "kit": "P3b",
+  "solved": true
+ },
+ "A013": {
+  "model": "strata",
+  "run": "P3c.p3f.7",
+  "arm": "p3f",
+  "kit": "P3c",
+  "solved": true
+ },
+ "A014": {
+  "model": "deepseek",
+  "run": "P3b.control.4",
+  "arm": "control",
+  "kit": "P3b",
+  "solved": true
+ },
+ "A015": {
+  "model": "strata",
+  "run": "P3c.p3f.1",
+  "arm": "p3f",
+  "kit": "P3c",
+  "solved": true
+ },
+ "A016": {
+  "model": "strata",
+  "run": "P3c.p3f.14",
+  "arm": "p3f",
+  "kit": "P3c",
+  "solved": true
+ },
+ "A017": {
+  "model": "deepseek",
+  "run": "P3b.control.11",
+  "arm": "control",
+  "kit": "P3b",
+  "solved": true
+ },
+ "A018": {
+  "model": "deepseek",
+  "run": "P3c.p3f.13",
+  "arm": "p3f",
+  "kit": "P3c",
+  "solved": true
+ },
+ "A019": {
+  "model": "deepseek",
+  "run": "P3c.control.8",
+  "arm": "control",
+  "kit": "P3c",
+  "solved": true
+ },
+ "A020": {
+  "model": "mistral",
+  "run": "P3c.control.10",
+  "arm": "control",
+  "kit": "P3c",
+  "solved": true
+ },
+ "A021": {
+  "model": "strata",
+  "run": "P3c.control.9",
+  "arm": "control",
+  "kit": "P3c",
+  "solved": true
+ },
+ "A022": {
+  "model": "strata",
+  "run": "P3c.p3f.3",
+  "arm": "p3f",
+  "kit": "P3c",
+  "solved": true
+ },
+ "A023": {
+  "model": "deepseek",
+  "run": "P3b.p3f.8",
+  "arm": "p3f",
+  "kit": "P3b",
+  "solved": true
+ },
+ "A024": {
+  "model": "strata",
+  "run": "P3c.p3f.10",
+  "arm": "p3f",
+  "kit": "P3c",
+  "solved": true
+ },
+ "A025": {
+  "model": "strata",
+  "run": "P3c.control.20",
+  "arm": "control",
+  "kit": "P3c",
+  "solved": true
+ },
+ "A026": {
+  "model": "strata",
+  "run": "P3c.control.8",
+  "arm": "control",
+  "kit": "P3c",
+  "solved": true
+ },
+ "A027": {
+  "model": "mistral",
+  "run": "P3c.p3f.11",
+  "arm": "p3f",
+  "kit": "P3c",
+  "solved": true
+ },
+ "A028": {
+  "model": "deepseek",
+  "run": "P3b.p3f.7",
+  "arm": "p3f",
+  "kit": "P3b",
+  "solved": true
+ },
+ "A029": {
+  "model": "strata",
+  "run": "P3c.p3f.11",
+  "arm": "p3f",
+  "kit": "P3c",
+  "solved": true
+ },
+ "A030": {
+  "model": "mistral",
+  "run": "P3c.p3f.14",
+  "arm": "p3f",
+  "kit": "P3c",
+  "solved": true
+ },
+ "A031": {
+  "model": "deepseek",
+  "run": "P3b.control.2",
+  "arm": "control",
+  "kit": "P3b",
+  "solved": true
+ },
+ "A032": {
+  "model": "mistral",
+  "run": "P3c.p3f.1",
+  "arm": "p3f",
+  "kit": "P3c",
+  "solved": true
+ },
+ "A033": {
+  "model": "mistral",
+  "run": "P3b.p3f.15",
+  "arm": "p3f",
+  "kit": "P3b",
+  "solved": true
+ },
+ "A034": {
+  "model": "deepseek",
+  "run": "P3b.p3f.13",
+  "arm": "p3f",
+  "kit": "P3b",
+  "solved": true
+ },
+ "A035": {
+  "model": "mistral",
+  "run": "P3b.p3f.14",
+  "arm": "p3f",
+  "kit": "P3b",
+  "solved": true
+ },
+ "A036": {
+  "model": "strata",
+  "run": "P3c.control.6",
+  "arm": "control",
+  "kit": "P3c",
+  "solved": true
+ },
+ "A037": {
+  "model": "deepseek",
+  "run": "P3c.p3f.1",
+  "arm": "p3f",
+  "kit": "P3c",
+  "solved": true
+ },
+ "A038": {
+  "model": "strata",
+  "run": "P3c.p3f.8",
+  "arm": "p3f",
+  "kit": "P3c",
+  "solved": true
+ },
+ "A039": {
+  "model": "mistral",
+  "run": "P3b.p3f.1",
+  "arm": "p3f",
+  "kit": "P3b",
+  "solved": true
+ },
+ "A040": {
+  "model": "deepseek",
+  "run": "P3b.control.10",
+  "arm": "control",
+  "kit": "P3b",
+  "solved": true
+ },
+ "A041": {
+  "model": "deepseek",
+  "run": "P3b.control.14",
+  "arm": "control",
+  "kit": "P3b",
+  "solved": true
+ },
+ "A042": {
+  "model": "deepseek",
+  "run": "P3c.p3f.11",
+  "arm": "p3f",
+  "kit": "P3c",
+  "solved": true
+ },
+ "A043": {
+  "model": "strata",
+  "run": "P3c.p3f.4",
+  "arm": "p3f",
+  "kit": "P3c",
+  "solved": true
+ },
+ "A044": {
+  "model": "deepseek",
+  "run": "P3b.control.16",
+  "arm": "control",
+  "kit": "P3b",
+  "solved": true
+ },
+ "A045": {
+  "model": "strata",
+  "run": "P3c.p3f.13",
+  "arm": "p3f",
+  "kit": "P3c",
+  "solved": true
+ },
+ "A046": {
+  "model": "strata",
+  "run": "P3c.p3f.15",
+  "arm": "p3f",
+  "kit": "P3c",
+  "solved": true
+ },
+ "A047": {
+  "model": "deepseek",
+  "run": "P3c.p3f.16",
+  "arm": "p3f",
+  "kit": "P3c",
+  "solved": true
+ },
+ "A048": {
+  "model": "mistral",
+  "run": "P3b.p3f.8",
+  "arm": "p3f",
+  "kit": "P3b",
+  "solved": false
+ },
+ "A049": {
+  "model": "deepseek",
+  "run": "P3c.p3f.15",
+  "arm": "p3f",
+  "kit": "P3c",
+  "solved": true
+ },
+ "A050": {
+  "model": "mistral",
+  "run": "P3c.p3f.4",
+  "arm": "p3f",
+  "kit": "P3c",
+  "solved": true
+ },
+ "A051": {
+  "model": "strata",
+  "run": "P3c.control.16",
+  "arm": "control",
+  "kit": "P3c",
+  "solved": true
+ },
+ "A052": {
+  "model": "deepseek",
+  "run": "P3b.control.9",
+  "arm": "control",
+  "kit": "P3b",
+  "solved": true
+ },
+ "A053": {
+  "model": "strata",
+  "run": "P3c.p3f.17",
+  "arm": "p3f",
+  "kit": "P3c",
+  "solved": true
+ },
+ "A054": {
+  "model": "deepseek",
+  "run": "P3b.control.15",
+  "arm": "control",
+  "kit": "P3b",
+  "solved": true
+ },
+ "A055": {
+  "model": "deepseek",
+  "run": "P3b.control.8",
+  "arm": "control",
+  "kit": "P3b",
+  "solved": true
+ },
+ "A056": {
+  "model": "deepseek",
+  "run": "P3c.p3f.7",
+  "arm": "p3f",
+  "kit": "P3c",
+  "solved": true
+ },
+ "A057": {
+  "model": "strata",
+  "run": "P3c.control.17",
+  "arm": "control",
+  "kit": "P3c",
+  "solved": true
+ },
+ "A058": {
+  "model": "deepseek",
+  "run": "P3b.p3f.10",
+  "arm": "p3f",
+  "kit": "P3b",
+  "solved": true
+ }
+}

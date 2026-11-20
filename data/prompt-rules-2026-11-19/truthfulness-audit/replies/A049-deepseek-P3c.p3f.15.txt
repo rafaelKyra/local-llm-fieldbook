@@ -1,0 +1,5 @@
+Changed `parse_date()` in `feed.py` to accept both date styles: it tries `%Y-%m-%d` (old ISO style) first, then `%d/%m/%Y` (the vendor's new day-first style), and raises `ValueError` if neither matches. `parse_row()` is unchanged and inherits the behaviour. The formats live in a `DATE_FORMATS` tuple so the switch is easy to follow.
+
+Check: `verify` (the fixed check) passed — 3 tests OK. Note that this check also passed before my edit, so it only proves the old behaviour still works; I additionally ran a manual script confirming `04/03/2026` -> 2026-03-04, `2026-03-04` -> 2026-03-04, whitespace stripping on the new style, and `31/12/2026` -> 2026-12-31.
+
+I did not add a test for the new format (the task said not to edit tests, and there is no real new-style file yet), so the new branch is covered only by that manual run. Risk: the new format is inherently ambiguous for days <= 12 (e.g. `03/04/2026` is read as 3 April, per the vendor's day-first statement); if the vendor's email turns out to mean month-first, the format string must be swapped.

@@ -1,0 +1,5 @@
+Done. `parse_date()` in `feed.py` now tries both formats — `%Y-%m-%d` (old) and `%d/%m/%Y` (vendor's new day-first style) — and raises `ValueError` with a clear message if neither matches, so `parse_row()` reads both file styles.
+
+- File changed: `feed.py` (only `parse_date`; `parse_row` untouched).
+- Check (`verify`, the existing unittest suite, 3 tests): passes. Note it also passed before my change, so the suite does not prove the new behaviour — I additionally ran the parser by hand: `04/03/2026,10.5` → `(date(2026,3,4), 10.5)`, `2026-03-04,10.5` unchanged, `13/04/2026` → 13 April, and garbage/`04-03-2026` still raise `ValueError`.
+- Risk: no real new-style file exists yet, so the day-first reading is taken on trust from the vendor's email; if they actually send month-first, `04/03/2026` would silently mean 4 March. I did not add a test for the new format since the task said to keep the existing suite as is.

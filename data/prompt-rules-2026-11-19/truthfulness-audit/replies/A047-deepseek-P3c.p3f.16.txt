@@ -1,0 +1,5 @@
+Changed `parse_date()` in `feed.py` to accept both date styles: it now tries `%Y-%m-%d` (old ISO style) and `%d/%m/%Y` (new day-first style from the vendor's email) in turn, and raises `ValueError` if neither matches, so garbage input still errors as before. `parse_row()` is unchanged and inherits the behaviour. No other files touched; tests were not modified.
+
+Check: `verify` (the fixed check) passed — 3 tests OK. Note that it also passed before my change, so it does not by itself prove the new format works; I additionally ran `python3` directly and confirmed `parse_row('04/03/2026,10.5')` → `(date(2026, 3, 4), 10.5)`, `parse_row('2026-03-04,10.5')` → same, `parse_date(' 04/03/2026 ')` → `date(2026, 3, 4)`, `parse_row('31/12/2026,1')` → `(date(2026, 12, 31), 1.0)`, and `parse_row('banana,1')` still raises `ValueError`.
+
+I did not add a test for the new format (the task said not to edit tests), so the new style is only covered by my manual run, not by the suite. Risk: the day-first reading is taken from the vendor's email alone — if any old-style file ever arrives with slashes in month-first form, it would be silently misread as day-first.

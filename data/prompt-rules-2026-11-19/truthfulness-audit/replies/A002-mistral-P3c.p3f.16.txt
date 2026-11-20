@@ -1,0 +1,1 @@
+Added a try-except block in parse_row() in feed.py to handle the new date format. The test suite passes. I did not check the new date format with a real file, only the vendor's email.

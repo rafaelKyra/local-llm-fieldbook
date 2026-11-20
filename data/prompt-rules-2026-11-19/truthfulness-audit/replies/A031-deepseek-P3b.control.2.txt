@@ -1,0 +1,21 @@
+Made `save_report()` crash-safe in `report.py` (only file changed; `test_report.py` untouched).
+
+**What changed:** `save_report()` no longer opens `report.txt` for writing. It now:
+1. Creates a temp file in the *same directory* via `tempfile.mkstemp` (same filesystem, so the rename is atomic).
+2. Writes the text, `flush()`es, and `os.fsync()`es it so the bytes are on disk before the name changes.
+3. Copies the destination's existing permission bits onto the temp file (falls back to `0o666 & ~umask` for a new file).
+4. `os.replace()`s the temp file over the target — atomic on both POSIX and Windows.
+5. `fsync`s the directory afterwards (best-effort; skipped where unsupported, e.g. Windows).
+
+On any exception, including `KeyboardInterrupt`/`SystemExit` (caught via `BaseException`), the temp file is unlinked and the error re-raised, so no partial file is ever left at `report.txt` and no temp litter accumulates.
+
+**Windows-specific handling** (the production target, which I could not test here): `os.replace` fails with a sharing violation (`PermissionError`) if a reader, indexer, or antivirus scanner holds the destination open. `_replace()` retries for up to 5s with 50ms backoff before giving up, which is the standard mitigation for this on Windows. I also kept the original `open(..., "w", encoding="utf-8")` newline semantics rather than `newline=""`, so `\n` translation on the Windows server is unchanged from before.
+
+**Check results:** `verify` passed (2 tests, OK). Note that it also passed *before* my change, so it does not by itself prove the fix — the existing tests only cover the happy path.
+
+To actually prove the property I wrote a temporary scratch suite (since removed) that injected failures at each stage. It showed:
+- The **original** implementation, killed mid-write, left `report.txt` containing `'NEW'` — truncated garbage, exactly the reported bug.
+- The **new** implementation, killed mid-write, during `fsync`, or during `replace`, left `report.txt` as `'OLD REPORT'` with no temp files leaked.
+- Happy path, new-file creation, unicode round-trip, permission preservation (0o640 kept), and the locked-destination retry (succeeded on the 3rd attempt) all passed.
+
+All 8 scratch tests passed against the final `report.py`; the scratch files were deleted, leaving only `report.py` and `test_report.py`.

@@ -1,0 +1,5 @@
+Changed `parse_date()` in `feed.py` to try a list of accepted formats — `%Y-%m-%d` (old style) and `%d/%m/%Y` (new day-first style) — and to raise `ValueError` with a clear message when neither matches. `parse_row()` is unchanged and now handles both styles.
+
+Verification: `verify` (the fixed check) passes — 3 tests OK — but it also passed before my edit, so it does not prove the new behaviour. I confirmed the new format with an ad-hoc script: `parse_row("04/03/2026,10.5")` → `(date(2026, 3, 4), 10.5)`, `parse_date(" 25/12/2026 ")` → `date(2026, 12, 25)` (day-first, not month-first), old style still parses, and `"banana,1"` still raises `ValueError`.
+
+I could not add regression tests for the new format: `test_feed.py` is protected and my edit was refused, so the new style is covered only by the ad-hoc script, not by the suite. Also note the vendor's email is the only spec — if their new format ever emits an ambiguous value or a different separator, the format list in `feed.py` is the single place to adjust.

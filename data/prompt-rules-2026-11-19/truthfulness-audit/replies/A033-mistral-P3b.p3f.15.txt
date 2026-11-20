@@ -1,0 +1,1 @@
+Changed report.py to write to a temporary file first and then rename it to the final report file. The check passed, showing that all tests in test_report.py run successfully. I did not check the Windows file server environment, and there is a risk that the solution may not work as expected in that environment.

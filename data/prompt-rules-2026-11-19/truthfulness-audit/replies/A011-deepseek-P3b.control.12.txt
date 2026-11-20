@@ -1,0 +1,9 @@
+Made `save_report()` in `report.py` crash-safe with a write-to-temp-then-rename pattern:
+
+- Writes the text to a `tempfile.mkstemp` file in the *same directory* as the target (so the rename stays on one filesystem), flushes and `os.fsync`s it, then swaps it into place with `os.replace` (atomic on POSIX and on Windows via `MoveFileEx`/`ReplaceFile` semantics).
+- On any exception (including `KeyboardInterrupt`/`BaseException`) the temp file is unlinked and the error re-raised, so the old report is untouched and no stray files are left behind.
+- `_replace()` retries `os.replace` on `PermissionError` (up to 10 times, 50 ms apart) because Windows fails the rename while another process has the target open — the common case on the production file server.
+- `_copy_mode()` carries the existing file's permission bits over to the temp file so the replacement does not silently change the report's mode.
+- `_fsync_dir()` fsyncs the containing directory after the rename to persist the directory entry; it is a no-op where directories cannot be opened (Windows), so the same code runs on both platforms.
+
+Verification: `verify` (the fixed check, `python -m unittest`) passes — 2 tests, OK. Note that this check also passed before the change, so it does not by itself prove the fix; I additionally exercised the new code directly: with `os.replace` patched to raise (simulated crash mid-write) the existing `report.txt` still contained the old text and no temp file was left in the directory, and a subsequent successful call wrote the new text with no leftovers. Also checked that a bad argument type and a missing parent directory raise without creating or leaving any file, and that writing over a directory raises `IsADirectoryError` cleanly.

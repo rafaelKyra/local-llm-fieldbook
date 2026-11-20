@@ -1,0 +1,1 @@
+The parse_date function in feed.py was updated to handle both date formats. The test suite passed, but it did not test the new format.

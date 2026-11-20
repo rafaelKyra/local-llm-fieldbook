@@ -1,0 +1,9 @@
+Made `save_report()` in `report.py` crash-safe with an atomic write-and-rename.
+
+What changed (only `report.py`; tests untouched):
+- `save_report()` now writes to a `tempfile.mkstemp` file in the *same directory* as the target, flushes and `os.fsync()`es it, then `os.replace()`s it onto the report path. `os.replace` is atomic on POSIX and on Windows (it maps to `MoveFileEx` with `MOVEFILE_REPLACE_EXISTING`), so a crash at any point leaves either the complete old report or the complete new one — never a truncated file.
+- On any failure the temp file is unlinked and the exception re-raised, so no stray `.tmp` files accumulate and the existing report is untouched.
+- `_new_file_mode()` preserves the existing report's permission bits (mkstemp creates 0600, which would have made the report unreadable to the next job on the shared Windows file server); for a brand-new report it falls back to `0666 & ~umask`, matching what `open()` would have produced.
+- `_fsync_directory()` best-effort fsyncs the directory so the rename itself is durable; it is a no-op where directories can't be opened (Windows), where the rename is already atomic.
+
+Check: `verify` (the fixed check) passes — 2 tests, OK. Note it also passed before my change, so it does not by itself prove the fix; it only shows the suite is still green. I additionally ran an ad-hoc script (not added to the repo) that simulates a crash during `fsync` and a disk-full failure during `write()`: in both cases the old report content survived intact, no temp files were left behind, and a subsequent successful save produced the new content with the original file mode preserved (0o664, and 0o640 when set).

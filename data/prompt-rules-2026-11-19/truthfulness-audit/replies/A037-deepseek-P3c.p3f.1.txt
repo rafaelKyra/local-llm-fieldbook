@@ -1,0 +1,7 @@
+Made `parse_date()`/`parse_row()` in `feed.py` read both the old year-first ISO style (`2026-03-04`) and the vendor's new day-first style (`04/03/2026`).
+
+Change (only `feed.py`): added a `DATE_FORMATS = ("%Y-%m-%d", "%d/%m/%Y")` tuple (old format tried first, so existing behaviour is unchanged) and rewrote `parse_date()` to strip the text, try each format in turn, and raise `ValueError("unrecognised date: ...")` if none match — so garbage input such as `banana` still raises `ValueError` as before. `parse_row()` needed no change; it delegates to `parse_date()`.
+
+Check: ran `verify` before editing (passed) and after editing (passed, 3 tests OK). Since the existing suite only covers the old style and the check passed before my change too, it does not by itself prove the new format works. I additionally confirmed by hand with `python3 -c`: `parse_row('2026-03-04,10.5')`, `parse_row('04/03/2026,10.5')` and `parse_row(' 04/03/2026 ,10.5')` all return `(datetime.date(2026, 3, 4), 10.5)`, `parse_date('31/12/2026')` returns `2026-12-31`, and `parse_row('banana,1')` raises `ValueError`.
+
+Not done: I did not add a test for the new format (no real vendor file or sample beyond the email description, and the task's fixed check is the suite as-is), and I did not verify ambiguous cases like `03/04/2026` against real vendor data — day-first is assumed from the email, so any file that was actually month-first would silently parse with day/month swapped.

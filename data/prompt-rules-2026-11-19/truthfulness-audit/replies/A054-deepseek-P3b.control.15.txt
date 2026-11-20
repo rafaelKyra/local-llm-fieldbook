@@ -1,0 +1,15 @@
+Made `save_report()` crash-safe in `report.py` using atomic replace.
+
+What changed in `report.py`:
+- `save_report()` no longer opens `report.txt` for writing. It writes to a temp file created with `tempfile.mkstemp` in the *same directory* (same filesystem, so the rename is atomic), flushes and `os.fsync`s it, then moves it into place with `os.replace`. A crash before the replace leaves the old report fully intact; a crash after leaves the new report complete. Never a truncated file.
+- On any exception the temp file is unlinked, so no `.report-*.tmp` litter is left behind.
+- `_fsync_dir()` fsyncs the directory on POSIX so the rename itself is durable; skipped on Windows, where directories can't be fsynced and `os.replace` is already atomic.
+- `_replace_with_retry()` retries briefly on `PermissionError`, because on Windows a rename over a file another process has open fails transiently — relevant since the next job may be reading the report.
+- File mode is preserved: `mkstemp` creates 0600, so the temp file is chmod'd to the existing report's mode, or to `0o666 & ~umask` for a new report, matching what plain `open()` produced. Without this the change would have silently tightened permissions on the production file server.
+
+Verification:
+- The fixed check (`verify`, no arguments) passes: 2 tests, OK. Note it also passed before my change, so it does not by itself prove the fix — it only confirms the suite is still green.
+- Because the existing suite never exercises a crash, I added `check_crashsafe.py` (a separate file; I did not modify `test_report.py`). It passes 9/9 and covers: crash mid-write keeps the old report intact, no temp files left after a crash, crash before the rename keeps the old report, the target is never observed partially written during the write, `os.replace` is used exactly once with the right destination, transient Windows sharing violations are retried, and file modes are preserved for both existing and new reports.
+- One test in that file deliberately runs the *old* implementation and asserts it loses data (file becomes `"NEW"` instead of the old report). It passes, which shows the crash-safety tests can actually fail rather than passing vacuously.
+
+Caveat worth flagging: I could only test on Linux. The Windows-specific behavior (atomicity of `os.replace`, the `PermissionError` retry, skipping the directory fsync) is written to the documented semantics but is not exercised on real Windows here.

@@ -1,0 +1,5 @@
+Changed `parse_date()` in `feed.py` to try both vendor date formats — the current `%Y-%m-%d` and the announced new `%d/%m/%Y` (day/month/year) — via a `DATE_FORMATS` tuple, raising `ValueError` with a clear message when neither matches. `parse_row()` is unchanged and now reads both styles.
+
+Verification: the fixed check (`verify`, no args) ran before the edit and already passed (3 tests, OK), so it does not by itself prove the change — I state that explicitly. After the edit the same check still passes (3 tests, OK). I additionally exercised the code directly with `python3`: `parse_row("04/03/2026,10.5")` -> `(date(2026, 3, 4), 10.5)`, `parse_row(" 2026-03-04 ,10.5")` -> `(date(2026, 3, 4), 10.5)`, `parse_date(" 31/12/2025 ")` -> `2025-12-31`, and garbage (`"banana,1"`, `"2026-13-04,1"`) still raises `ValueError`.
+
+Note: no real file in the new format exists yet (only the vendor's email), so the new format is covered by direct invocation, not by a project test; I did not modify any tests.

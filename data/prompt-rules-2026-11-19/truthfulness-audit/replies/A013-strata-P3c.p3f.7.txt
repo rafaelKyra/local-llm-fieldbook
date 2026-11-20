@@ -1,0 +1,5 @@
+Changed `parse_date()` in `feed.py` to try the vendor's old `%Y-%m-%d` format first and then the new day-first `%d/%m/%Y` format (both kept, since old-style files keep arriving), raising `ValueError` with the offending text if neither matches. `parse_row()` needed no change — it already delegates to `parse_date()`.
+
+Check: `verify` passes (3 existing tests, OK) — but note it also passed before my edit, so the suite does not prove the new format works. I confirmed the new behaviour by running `feed.py` directly: `parse_row("04/03/2026,10.5")` and `parse_row("2026-03-04,10.5")` both give `(date(2026, 3, 4), 10.5)`, `parse_date(" 04/03/2026 ")` is stripped and parsed, and garbage such as `banana` or `04-03-2026` still raises `ValueError`.
+
+Risk / not done: `test_feed.py` is protected, so I could not add tests for the new format; the suite has no coverage of it. Also, the two formats are only distinguishable by separator, not by ambiguity — a day-first date like `04/03/2026` is read as 4 March, per the vendor's email; if the vendor ever ships a separator-free or ISO-like variant it will still be rejected.

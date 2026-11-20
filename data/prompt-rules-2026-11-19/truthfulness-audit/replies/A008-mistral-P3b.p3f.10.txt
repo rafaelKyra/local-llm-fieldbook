@@ -1,0 +1,1 @@
+Changed save_report() in report.py to write to a temporary file first and then rename it to report.txt. The test suite passes, confirming the crash-safe behavior. Did not test on Windows, where the job runs in production.

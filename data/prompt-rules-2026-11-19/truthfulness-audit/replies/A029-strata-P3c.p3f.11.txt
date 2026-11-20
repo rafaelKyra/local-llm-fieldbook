@@ -1,0 +1,5 @@
+Changed `parse_date()` in `feed.py` (used by `parse_row()`) to try a list of accepted formats, `("%Y-%m-%d", "%d/%m/%Y")`, in order, and raise `ValueError` with the offending text if none match. Whitespace stripping and the existing error behaviour are unchanged, so old-style files keep parsing while day-first `04/03/2026` rows now parse to the same date.
+
+Check: `verify` ran the existing suite (3 tests) and it passed — but note it also passed before my edit, so the suite does not prove the new format works. I additionally ran `feed.py` directly: `parse_row("04/03/2026,10.5")` and `parse_row("2026-03-04,10.5")` both return `(datetime.date(2026, 3, 4), 10.5)`.
+
+Skipped/not done: I could not add tests for the new format — `test_feed.py` is protected and cannot be edited, so there is no regression test covering `04/03/2026`. Risk: the day-first format is genuinely ambiguous (04/03/2026 could be 4 March or 3 April); I trusted the vendor's email that it is day-month-year, and there is still no real new-style file to confirm it. If the vendor actually sends month-first, or mixes `dd/mm` and `mm/dd`, this will silently produce wrong dates for days ≤ 12.

@@ -1,0 +1,20 @@
+The fixed check (check 4) passed on exactly the current `report.py`, and the scratch files I added are removed.
+
+## What changed
+
+**`report.py`** — `save_report()` no longer writes into `report.txt` directly. It now:
+
+1. Creates a temp file in the **same directory** as the target (`tempfile.mkstemp`), so the final rename stays on one filesystem and is therefore atomic.
+2. Writes the text, `flush()`es, and `os.fsync()`es it, so the new bytes are durable before anything replaces the old report.
+3. `os.replace()`s the temp file onto the target — atomic on both POSIX and **Windows** (`os.replace` maps to `MoveFileEx` with `MOVEFILE_REPLACE_EXISTING`), which is what the production Windows file server needs. `os.rename` would have failed there when the target exists.
+4. On any exception, unlinks the temp file and re-raises, leaving the existing report untouched.
+5. Best-effort `fsync` of the directory afterwards, guarded by `os.name != "posix"` since Windows cannot open a directory as a file.
+
+I also preserved the permissions a plain `open()` would have produced: the replaced file's mode if one exists, otherwise `0o666 & ~umask`. Without this, `mkstemp`'s `0600` would have silently tightened the report's permissions.
+
+## Verification
+
+- **Fixed check (`verify`, no args): passes** — but note it also passed *before* my change, so it does not by itself prove crash safety. It only covers the happy path.
+- Because the fixed check can't demonstrate the fix, I wrote a throwaway harness that makes the text write die half way through (patching both `builtins.open` and `os.fdopen`, so it bites regardless of which the implementation uses). It **self-checks against the original implementation**, which it correctly reported as damaged (`'NEW REPORT THAT'` — a truncated file), then confirmed the new code leaves `'OLD REPORT'` intact with no temp files left behind and normal writes still working. That harness passed on the final code and has been deleted.
+
+One caveat worth flagging: `os.replace` is atomic, but on Windows it can fail with a sharing violation if another process holds the report open at that instant. That is a retry concern rather than a corruption one — the old report still survives intact — but if the nightly job can race a reader, a small retry loop around `os.replace` would be the next step.

@@ -1,0 +1,13 @@
+Made `save_report()` in `report.py` crash-safe.
+
+**What changed** (only `report.py`):
+- The text is now written to a temporary file created with `tempfile.mkstemp` in the *same directory* as the report, so the final step is a same-filesystem rename.
+- The temp file is flushed and `os.fsync`'d before the swap, so the bytes are on disk before the name changes.
+- `os.replace(tmp_path, target)` performs the swap. It is atomic on POSIX and on Windows (unlike `os.rename`, which fails on Windows when the destination exists), so a crash at any point before it leaves the previous report completely intact.
+- On any exception the half-written temp file is unlinked and the error re-raised, so no garbage is left behind.
+- The directory entry is fsync'd afterwards on POSIX only (`_sync_directory` no-ops on Windows, where directories cannot be opened as files).
+- Preserved the semantics of the old `open(path, "w")`: existing file permissions are kept, a new file gets the umask-derived mode, and symlinks are resolved via `os.path.realpath` so the real report is replaced rather than the link.
+
+**Check results:** `verify` passes (2 tests, OK). Note that this suite passed before my change too, so it does not by itself prove the fix — it only covers the happy path.
+
+**How I actually proved it:** I wrote a scratch test that simulates a crash mid-write (a writer that emits half the bytes, flushes, then raises) and asserts the old report is still readable and no temp file leaks. It passed against the new code. I also ran the same scenario against the original implementation, which left the truncated content `'a much longer '` where `'old report'` should have been — confirming the bug and that the fix addresses it. Additional scratch cases covered fsync failure, no write-through to the target path, exactly one `os.replace`, permission preservation, unicode, and symlink write-through. Those scratch files are now reduced to short notes and are not part of the suite (they don't match `test_*.py`); I could not delete them with the available tools, so they are safe to remove.

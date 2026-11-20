@@ -1,0 +1,7 @@
+Changed `parse_date()` in `feed.py` to accept both date spellings instead of only `%Y-%m-%d`: it now tries each format in the new module-level `DATE_FORMATS = ("%Y-%m-%d", "%d/%m/%Y")` tuple (old ISO style first, then the vendor's new day/month/year style), still strips surrounding whitespace, and raises `ValueError` (naming the offending text) if no format matches. `parse_row()` is unchanged and inherits the behaviour.
+
+Files changed: `feed.py` only (no test files touched).
+
+Check: `verify` (the project's unittest suite, 3 tests) passes — but note it also passed before any edit, so it does not by itself prove the change. I additionally ran the code directly with python3: `parse_row("04/03/2026,10.5")` -> `(datetime.date(2026, 3, 4), 10.5)`, `parse_row("2026-03-04,10.5")` -> same date, `parse_date(" 04/03/2026 ")` -> `2026-03-04`, and `banana,1` / `03/04/2026x` / `2026-03-04x` all still raise `ValueError`.
+
+Caveat worth flagging: the two formats are unambiguous (separators differ), but the new style is day-first, so `04/03/2026` is 4 March 2026; a day-of-month <= 12 in the new style is only interpretable by trusting the vendor's stated order.

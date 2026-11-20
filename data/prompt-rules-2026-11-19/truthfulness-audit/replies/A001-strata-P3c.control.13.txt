@@ -1,0 +1,5 @@
+Changed `parse_date()` in `feed.py` to try both date formats — the current `%Y-%m-%d` and the vendor's new day-first `%d/%m/%Y` — via a `DATE_FORMATS` tuple, raising `ValueError` (with the offending text) if neither matches. `parse_row()` is unchanged and now reads both styles.
+
+Manual spot-checks (not part of the check): `parse_row("04/03/2026,10.5")` -> `(date(2026, 3, 4), 10.5)`, `parse_row("2026-03-04,10.5")` -> same date, `parse_date(" 31/12/2025 ")` -> `2025-12-31`.
+
+Check: `verify` ran the existing test suite (3 tests) and it passed — but it also passed before any edit, so the suite does not prove this change; there is no new-style sample file or test covering `%d/%m/%Y`.

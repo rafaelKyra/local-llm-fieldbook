@@ -1,0 +1,6 @@
+Changed `parse_date()` in `feed.py` to accept both vendor date styles: it now tries a list of formats (`DATE_FORMATS = ("%Y-%m-%d", "%d/%m/%Y")`) on the stripped field and returns the first match, raising `ValueError("unknown date format: ...")` if none match. `parse_row()` needed no change since it delegates to `parse_date()`. The two formats are mutually exclusive by separator, so no ambiguity is introduced.
+
+Verification:
+- The fixed check (`verify`, the existing unittest suite: 3 tests) PASSED — but note it also passed before any edit, so it does not by itself prove the new behaviour; the existing tests only cover the old format.
+- I additionally ran the code directly (`python3`) to confirm behaviour: `parse_row("04/03/2026,10.5")` -> `(datetime.date(2026, 3, 4), 10.5)`, `parse_row("2026-03-04,10.5")` -> same date, `parse_date(" 04/03/2026 ")` -> `2026-03-04`, and garbage still raises `ValueError` ("banana,1", impossible date "31/02/2026", bad amount).
+- I attempted to add tests for the new format to `test_feed.py`, but that file is protected and cannot be edited, so the suite was left untouched.

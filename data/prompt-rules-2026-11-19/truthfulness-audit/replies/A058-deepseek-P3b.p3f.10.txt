@@ -1,0 +1,16 @@
+The check passes on the current files. Summary:
+
+**What changed** — `report.py` only (`save_report()` rewritten; `test_report.py` untouched):
+
+- The text is now written to a temporary file created with `tempfile.mkstemp` **in the same directory** as the target, so the final swap is a same-filesystem rename.
+- The temp file is `flush()`ed and `os.fsync()`ed before the swap, so the new content is on disk before it becomes visible.
+- `os.replace(tmp_path, path)` performs the swap. It is atomic on POSIX and on Windows (`MoveFileEx` with replace-existing), so a reader sees either the complete old report or the complete new one — never a truncated file.
+- On any exception the temp file is unlinked and the error re-raised, so a failed write leaves the old report intact and no litter behind.
+- `_apply_mode` copies the existing file's permissions onto the temp file (or the umask default for a new file), because `mkstemp` creates files as `0600` and a plain `open(path, "w")` would not have changed the mode.
+- `_fsync_dir` fsyncs the directory to make the rename durable; it is best-effort and silently no-ops where opening a directory fails (Windows).
+
+**How it was proven** — I wrote `crash_check.py`, a manual repro that patches `open`/`os.fdopen` to write half the text, flush, then raise. Before the fix it failed with `existing report damaged: 'NEW REPORT LINE 1\n'`; after the fix it prints `OK: old report intact after simulated crash, no temp files left`. I also checked by hand that relative paths work, that mode `0640` survives a replace, and that a brand-new file gets `0644` under umask `022`.
+
+**The fixed check** — `verify` passes (2 tests, OK), but note it also passed before any change, so it does not by itself prove the fix; the repro script is what demonstrated the bug and its absence.
+
+**Caveats you should know** — I could not delete `crash_check.py` (the tools refuse `rm` and this is not a git repo), so it remains in the repo as a manual script, not part of the unittest suite; remove it if you don't want it. Two Windows-specific risks I could not test on this Linux box: `os.replace` raises `PermissionError` if another process holds the destination open (a clean failure, not corruption, but the nightly job would error), and a hard kill between `mkstemp` and `replace` leaves a stale `.report.txt.*.tmp` file — the old report is still intact, but nothing cleans those up.

@@ -1,0 +1,7 @@
+Changed `parse_date()` in `feed.py` to accept both vendor date styles: it strips the text, picks `%d/%m/%Y` when the value contains "/" and `%Y-%m-%d` otherwise, and parses with that format. `parse_row()` is unchanged and now reads both `2026-03-04,10.5` and `04/03/2026,10.5`.
+
+Files touched: `feed.py` (the only real change). I also left a comment-only scratch file `_check_new_format.py` (used for a manual check; it holds no code and is safe to delete) because I could not remove files with the available tools. I did not edit `test_feed.py` — it is protected and the tool refused the edit.
+
+Check results, stated honestly: `verify` (the project's unittest suite, 3 tests) PASSED — but it also passed before any change, so it does not prove the new behaviour. To prove the change I ran a scratch script against the real module: `parse_row("04/03/2026,10.5")` -> `(date(2026, 3, 4), 10.5)`, `parse_row("2026-03-04,10.5")` -> `(date(2026, 3, 4), 10.5)`, `parse_date(" 31/12/2026 ")` -> `2026-12-31` (day-first confirmed), `parse_date("13/03/2026")` -> `2026-03-13` (day > 12 disambiguates the order), and garbage still raises `ValueError` (`banana`, `04-03-2026`, `2026-13-04`, and impossible dates like `31/02/2026`).
+
+Caveat worth flagging: the new format is taken from the vendor's email only — no new-style file exists yet, and the day-first order is an assumption from that email (a value like `04/03/2026` is ambiguous on its own).

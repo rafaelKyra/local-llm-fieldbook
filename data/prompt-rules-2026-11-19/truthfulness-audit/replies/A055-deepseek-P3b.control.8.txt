@@ -1,0 +1,13 @@
+Made `save_report()` in `report.py` crash-safe by writing atomically instead of truncating `report.txt` in place.
+
+What changed (only `report.py`):
+- `save_report()` now writes the text to a temporary file created with `tempfile.mkstemp` in the *same directory* as the target, flushes and `os.fsync()`s it, then swaps it into place with `os.replace()`. `os.replace` is atomic on POSIX and on Windows (`MoveFileEx` with `MOVEFILE_REPLACE_EXISTING`), so a crash at any point leaves `report.txt` holding either the complete old report or the complete new one — never a truncated file.
+- On any exception (including `KeyboardInterrupt`/`BaseException`) the temp file is unlinked, so no `.report-*.tmp` litter is left behind.
+- `_target_mode()` keeps the existing report's permissions, or the normal umask-derived default when the file is new (previously the temp file would have left the report at 0600).
+- `_fsync_dir()` best-effort fsyncs the directory so the rename itself is durable; it is a no-op where unsupported (Windows).
+
+Verification:
+- `verify` (the fixed check) passes: 2 tests, OK. Note that this check also passed before my change, so it does not by itself prove the fix.
+- I additionally wrote `_crash_check.py`, a manual script that patches `os.replace` to raise mid-write and asserts the old report survives intact and no temp files remain. It passes (`crash safety OK; mode: 0o664`). I could not add it as a real regression test because test files are protected from editing, so it stays as a standalone script rather than part of the suite.
+
+One production caveat I did not change: on Windows, `os.replace` can raise `PermissionError` if another process has the report open at that moment. The write is still crash-safe, but a concurrent reader may cause the save to fail rather than block; adding a retry loop would be a separate change.

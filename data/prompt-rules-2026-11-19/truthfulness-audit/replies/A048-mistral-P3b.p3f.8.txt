@@ -1,0 +1,1 @@
+Added a new function `save_report_safe` to `report.py` that writes the report to a temporary file and then replaces the original file. The check passed, showing that all tests ran successfully and no errors were detected. I did not check the integration with the Windows file server, as the task was performed on a Linux machine.
