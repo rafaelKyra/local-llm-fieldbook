@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 13,
+ "seconds": 37.082,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 948,
+ "addedLines": 40,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 8,
+  "toolCalls": 9,
+  "inputTokens": 20682,
+  "outputTokens": 3547,
+  "lastInputTokens": 3556,
+  "peakInputTokens": 3556,
+  "modelCalls": 8,
+  "usageReportedCalls": 8,
+  "cacheReadTokens": 18112,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 8,
+  "roles": {
+   "main": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 20682,
+    "outputTokens": 3547
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: `save_report()` in `report.py` now writes crash-safe: it creates a temp file in the same directory as the target, writes, flushes and fsyncs it, copies the old "
+}

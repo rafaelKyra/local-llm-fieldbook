@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "control",
+ "rep": 14,
+ "seconds": 25.563,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 688,
+ "addedLines": 10,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 7,
+  "toolCalls": 9,
+  "inputTokens": 17199,
+  "outputTokens": 2582,
+  "lastInputTokens": 3084,
+  "peakInputTokens": 3084,
+  "modelCalls": 7,
+  "usageReportedCalls": 7,
+  "cacheReadTokens": 14592,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 7,
+  "roles": {
+   "main": {
+    "calls": 7,
+    "reportedInput": 7,
+    "reportedOutput": 7,
+    "inputTokens": 17199,
+    "outputTokens": 2582
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: parse_date() in feed.py now accepts both vendor date styles: the old ISO `2026-03-04` and the new day-first `04/03/2026` (formats tried in order, whitespace sti"
+}

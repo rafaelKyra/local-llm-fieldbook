@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 13,
+ "seconds": 58.513,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1186,
+ "addedLines": 45,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 12,
+  "toolCalls": 12,
+  "inputTokens": 39464,
+  "outputTokens": 6456,
+  "lastInputTokens": 4872,
+  "peakInputTokens": 4872,
+  "modelCalls": 12,
+  "usageReportedCalls": 12,
+  "cacheReadTokens": 33664,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 12,
+  "roles": {
+   "main": {
+    "calls": 12,
+    "reportedInput": 12,
+    "reportedOutput": 12,
+    "inputTokens": 39464,
+    "outputTokens": 6456
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made save_report() in report.py crash-safe. It now writes to a temp file in the same directory (mkstemp), flushes and fsyncs it, copies the old report's permiss | Files changed: report.py (rewritten, 8 → 52 lines). test_report.py is protected and was not touched. | Checks: the fixed verify (2 unit tests) passed, but it also passed before the change, so it does not prove the fix. I added check_crash_safe.py, which spawns ch"
+}

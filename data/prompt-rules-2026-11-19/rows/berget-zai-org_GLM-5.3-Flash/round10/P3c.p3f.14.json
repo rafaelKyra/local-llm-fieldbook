@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "p3f",
+ "rep": 14,
+ "seconds": 25.286,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 461,
+ "addedLines": 7,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 6,
+  "toolCalls": 7,
+  "inputTokens": 13083,
+  "outputTokens": 1947,
+  "lastInputTokens": 2558,
+  "peakInputTokens": 2558,
+  "modelCalls": 6,
+  "usageReportedCalls": 6,
+  "cacheReadTokens": 11648,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 6,
+  "roles": {
+   "main": {
+    "calls": 6,
+    "reportedInput": 6,
+    "reportedOutput": 6,
+    "inputTokens": 13083,
+    "outputTokens": 1947
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: `parse_row()` in feed.py now tries the old `YYYY-MM-DD` format first and, on ValueError, falls back to the vendor's new day-first `DD/MM/YYYY` format, so both s"
+}

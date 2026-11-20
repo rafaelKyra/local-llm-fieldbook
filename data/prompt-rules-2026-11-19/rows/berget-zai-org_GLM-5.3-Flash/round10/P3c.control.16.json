@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "control",
+ "rep": 16,
+ "seconds": 19.064,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 659,
+ "addedLines": 9,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 8,
+  "toolCalls": 8,
+  "inputTokens": 19268,
+  "outputTokens": 1339,
+  "lastInputTokens": 2960,
+  "peakInputTokens": 2960,
+  "modelCalls": 8,
+  "usageReportedCalls": 8,
+  "cacheReadTokens": 17152,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 8,
+  "roles": {
+   "main": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 19268,
+    "outputTokens": 1339
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: Changed `parse_date` in feed.py to try both vendor date formats: the old `%Y-%m-%d` and the new day-first `%d/%m/%Y`, raising ValueError if neither matches (so "
+}

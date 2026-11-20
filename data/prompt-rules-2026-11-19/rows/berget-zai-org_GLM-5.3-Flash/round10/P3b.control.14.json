@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 14,
+ "seconds": 58.636,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 594,
+ "addedLines": 17,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 10,
+  "toolCalls": 9,
+  "inputTokens": 23942,
+  "outputTokens": 5265,
+  "lastInputTokens": 3045,
+  "peakInputTokens": 3045,
+  "modelCalls": 10,
+  "usageReportedCalls": 10,
+  "cacheReadTokens": 21824,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 10,
+  "roles": {
+   "main": {
+    "calls": 10,
+    "reportedInput": 10,
+    "reportedOutput": 10,
+    "inputTokens": 23942,
+    "outputTokens": 5265
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: save_report() in report.py now writes to a temp file in the same directory (tempfile.mkstemp), flushes and fsyncs it, then swaps it in with os.replace — atomic "
+}

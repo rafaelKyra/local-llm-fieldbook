@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 12,
+ "seconds": 39.858,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 969,
+ "addedLines": 41,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 11,
+  "toolCalls": 11,
+  "inputTokens": 33923,
+  "outputTokens": 4195,
+  "lastInputTokens": 4284,
+  "peakInputTokens": 4284,
+  "modelCalls": 11,
+  "usageReportedCalls": 11,
+  "cacheReadTokens": 30720,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 11,
+  "roles": {
+   "main": {
+    "calls": 11,
+    "reportedInput": 11,
+    "reportedOutput": 11,
+    "inputTokens": 33923,
+    "outputTokens": 4195
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: `save_report()` in `report.py` now writes to a temp file in the same directory, flushes and fsyncs it, then swaps it in with `os.replace()` (atomic on both POSI"
+}

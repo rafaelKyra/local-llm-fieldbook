@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "p3f",
+ "rep": 12,
+ "seconds": 27.04,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 879,
+ "addedLines": 6,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 9,
+  "toolCalls": 9,
+  "inputTokens": 21894,
+  "outputTokens": 1727,
+  "lastInputTokens": 3273,
+  "peakInputTokens": 3273,
+  "modelCalls": 9,
+  "usageReportedCalls": 9,
+  "cacheReadTokens": 19072,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 9,
+  "roles": {
+   "main": {
+    "calls": 9,
+    "reportedInput": 9,
+    "reportedOutput": 9,
+    "inputTokens": 21894,
+    "outputTokens": 1727
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: `parse_date` in feed.py now tries the old `%Y-%m-%d` format first and falls back to the vendor's new day-first `%d/%m/%Y` format, so `parse_row` reads both `202"
+}

@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 15,
+ "seconds": 30.462,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 955,
+ "addedLines": 41,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 10,
+  "toolCalls": 10,
+  "inputTokens": 27355,
+  "outputTokens": 2831,
+  "lastInputTokens": 3732,
+  "peakInputTokens": 3732,
+  "modelCalls": 10,
+  "usageReportedCalls": 10,
+  "cacheReadTokens": 22272,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 10,
+  "roles": {
+   "main": {
+    "calls": 10,
+    "reportedInput": 10,
+    "reportedOutput": 10,
+    "inputTokens": 27355,
+    "outputTokens": 2831
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made `save_report()` in report.py crash-safe: it now writes to a temp file in the same directory (mkstemp), flushes and fsyncs it, preserves the destination's p"
+}

@@ -1,7 +1,7 @@
 {
  "excluded_not_completed": {
   "openrouter-free-router/round5": 19,
-  "or-free-google_gemma-4-31b-it_free/round6": 17,
+  "or-free-google_gemma-4-31b-it_free/round6": 18,
   "or-free-nvidia_nemotron-3-ultra-550b-a55b_free/round6": 1
  },
  "kit_rows": [
@@ -83,16 +83,16 @@
    "kit": "P3b",
    "arm": "control",
    "withdrawn": false,
-   "runs": 10,
-   "solved": 10,
-   "behaviour": 10,
+   "runs": 16,
+   "solved": 16,
+   "behaviour": 16,
    "behaviour_ci95": [
-    0.722,
+    0.806,
     1
    ],
-   "mean_output_tokens": 4110.0,
-   "mean_seconds": 45.6,
-   "mean_reply_chars": 1020.5,
+   "mean_output_tokens": 4425.0,
+   "mean_seconds": 46.6,
+   "mean_reply_chars": 988.3,
    "crashes": 0
   },
   {
@@ -101,16 +101,16 @@
    "kit": "P3b",
    "arm": "p3f",
    "withdrawn": false,
-   "runs": 10,
-   "solved": 10,
-   "behaviour": 10,
+   "runs": 16,
+   "solved": 16,
+   "behaviour": 16,
    "behaviour_ci95": [
-    0.722,
+    0.806,
     1
    ],
-   "mean_output_tokens": 3359.2,
-   "mean_seconds": 41.6,
-   "mean_reply_chars": 975.4,
+   "mean_output_tokens": 3878.3,
+   "mean_seconds": 44.4,
+   "mean_reply_chars": 1038.2,
    "crashes": 0
   },
   {
@@ -119,16 +119,16 @@
    "kit": "P3c",
    "arm": "control",
    "withdrawn": false,
-   "runs": 9,
-   "solved": 9,
+   "runs": 16,
+   "solved": 16,
    "behaviour": 1,
    "behaviour_ci95": [
-    0.02,
-    0.435
+    0.011,
+    0.283
    ],
-   "mean_output_tokens": 2160.2,
-   "mean_seconds": 29.8,
-   "mean_reply_chars": 699.0,
+   "mean_output_tokens": 1985.5,
+   "mean_seconds": 26.2,
+   "mean_reply_chars": 672.2,
    "crashes": 0
   },
   {
@@ -137,16 +137,16 @@
    "kit": "P3c",
    "arm": "p3f",
    "withdrawn": false,
-   "runs": 10,
-   "solved": 10,
-   "behaviour": 5,
+   "runs": 16,
+   "solved": 16,
+   "behaviour": 8,
    "behaviour_ci95": [
-    0.237,
-    0.763
+    0.28,
+    0.72
    ],
-   "mean_output_tokens": 1719.8,
-   "mean_seconds": 26.7,
-   "mean_reply_chars": 807.3,
+   "mean_output_tokens": 1674.6,
+   "mean_seconds": 25.1,
+   "mean_reply_chars": 731.2,
    "crashes": 0
   },
   {
@@ -1206,24 +1206,24 @@
    "round": "round10",
    "kit": "P3b",
    "arm": "p3f",
-   "behaviour": "10/10",
-   "control_behaviour": "10/10",
+   "behaviour": "16/16",
+   "control_behaviour": "16/16",
    "fisher_p": 1.0,
-   "solved": "10/10",
-   "control_solved": "10/10",
-   "output_tokens_vs_control_pct": -18.3
+   "solved": "16/16",
+   "control_solved": "16/16",
+   "output_tokens_vs_control_pct": -12.4
   },
   {
    "model": "berget-zai-org_GLM-5.3-Flash",
    "round": "round10",
    "kit": "P3c",
    "arm": "p3f",
-   "behaviour": "5/10",
-   "control_behaviour": "1/9",
-   "fisher_p": 0.1409,
-   "solved": "10/10",
-   "control_solved": "9/9",
-   "output_tokens_vs_control_pct": -20.4
+   "behaviour": "8/16",
+   "control_behaviour": "1/16",
+   "fisher_p": 0.0155,
+   "solved": "16/16",
+   "control_solved": "16/16",
+   "output_tokens_vs_control_pct": -15.7
   },
   {
    "model": "mercury-3",
@@ -1623,32 +1623,32 @@
    "model": "or-paid-deepseek_deepseek-v4.1-flash-1017",
    "round": "round9",
    "arm": "control",
-   "passes": 4,
-   "tasks": 152,
-   "solved": 150,
-   "output_tokens": 258169,
-   "input_tokens": 2619281,
-   "seconds": 1613.8,
-   "rate": 0.987,
+   "passes": 5,
+   "tasks": 190,
+   "solved": 188,
+   "output_tokens": 303908,
+   "input_tokens": 3262522,
+   "seconds": 1964.5,
+   "rate": 0.989,
    "solved_ci95": [
-    0.953,
-    0.996
+    0.962,
+    0.997
    ]
   },
   {
    "model": "or-paid-deepseek_deepseek-v4.1-flash-1017",
    "round": "round9",
    "arm": "p3f",
-   "passes": 4,
-   "tasks": 152,
-   "solved": 147,
-   "output_tokens": 195519,
-   "input_tokens": 2627276,
-   "seconds": 1608.4,
-   "rate": 0.967,
+   "passes": 5,
+   "tasks": 190,
+   "solved": 185,
+   "output_tokens": 246947,
+   "input_tokens": 3332531,
+   "seconds": 2008.5,
+   "rate": 0.974,
    "solved_ci95": [
-    0.925,
-    0.986
+    0.94,
+    0.989
    ]
   },
   {
