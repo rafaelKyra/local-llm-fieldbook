@@ -1,0 +1,65 @@
+{
+ "id": "minisearch-browser-model-loaded-once",
+ "category": "public",
+ "rep": 0,
+ "verdict": "budget",
+ "visible": false,
+ "hidden": false,
+ "seconds": 136.43,
+ "crash": null,
+ "status": "budget",
+ "stopReason": "tool budget exhausted",
+ "profile": "medium",
+ "usage": {
+  "turns": 40,
+  "toolCalls": 60,
+  "inputTokens": 1082598,
+  "outputTokens": 23519,
+  "lastInputTokens": 42556,
+  "peakInputTokens": 42790,
+  "modelCalls": 48,
+  "usageReportedCalls": 48,
+  "cacheReadTokens": 994398,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 48,
+  "roles": {
+   "main": {
+    "calls": 40,
+    "reportedInput": 40,
+    "reportedOutput": 40,
+    "inputTokens": 1035167,
+    "outputTokens": 20938
+   },
+   "explorer": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 47431,
+    "outputTokens": 2581
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "broad_search": 1,
+  "read_spiral": 1,
+  "auto_explore": 1,
+  "edits_without_verify": 1,
+  "finish_without_verify": 2,
+  "regression": 1,
+  "refused_calls": 2
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Let me retry the full project check \u2014 the earlier failures were parallel-run timeouts and the sandbox is now warm:"
+}

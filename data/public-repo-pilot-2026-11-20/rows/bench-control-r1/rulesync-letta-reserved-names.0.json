@@ -1,0 +1,64 @@
+{
+ "id": "rulesync-letta-reserved-names",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": false,
+ "hidden": true,
+ "seconds": 491.597,
+ "crash": null,
+ "status": "unverified",
+ "stopReason": "finished without a passing check",
+ "profile": "medium",
+ "usage": {
+  "turns": 31,
+  "toolCalls": 31,
+  "inputTokens": 657083,
+  "outputTokens": 16266,
+  "lastInputTokens": 41872,
+  "peakInputTokens": 41872,
+  "modelCalls": 31,
+  "usageReportedCalls": 31,
+  "cacheReadTokens": 612570,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 31,
+  "roles": {
+   "main": {
+    "calls": 31,
+    "reportedInput": 31,
+    "reportedOutput": 31,
+    "inputTokens": 657083,
+    "outputTokens": 16266
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "broad_search": 1,
+  "regression": 1,
+  "finish_without_verify": 4,
+  "untracked_changes": 1,
+  "claimed_without_verify": 1,
+  "refused_calls": 4
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Extended Letta Code's reserved subagent-name set in `src/features/subagents/lettacode-subagent.ts`. `LETTACODE_RESERVED_AGENT_NAMES` previously contained only `claude-code` and `codex`; it now contains `letta`, `claude-code`, `codex`, `opencode`, `cursor`, and `memory`. `warnAboutRejectedAgentName` already logs a warning for any reserved name, so generating a subagent with any of these names now e"
+}

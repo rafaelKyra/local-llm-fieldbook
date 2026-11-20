@@ -1,0 +1,66 @@
+{
+ "id": "solid-router-template-anchor-preload",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": false,
+ "hidden": true,
+ "seconds": 144.307,
+ "crash": null,
+ "status": "unverified",
+ "stopReason": "finished without a passing check",
+ "profile": "medium",
+ "usage": {
+  "turns": 35,
+  "toolCalls": 49,
+  "inputTokens": 1081364,
+  "outputTokens": 21077,
+  "lastInputTokens": 47142,
+  "peakInputTokens": 47142,
+  "modelCalls": 43,
+  "usageReportedCalls": 43,
+  "cacheReadTokens": 1026563,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 43,
+  "roles": {
+   "main": {
+    "calls": 35,
+    "reportedInput": 35,
+    "reportedOutput": 35,
+    "inputTokens": 1038431,
+    "outputTokens": 20073
+   },
+   "explorer": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 42933,
+    "outputTokens": 1004
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "broad_search": 1,
+  "auto_explore": 1,
+  "read_spiral": 1,
+  "regression": 2,
+  "check_repeated": 2,
+  "finish_without_verify": 4,
+  "claimed_without_verify": 1,
+  "refused_calls": 5
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Fixed the eager-preload `TypeError: Invalid URL` for anchors claimed before adoption. In `src/data/events.ts` `anchorUrl`, the code read the resolved DOM `a.href` property and called `new URL(href)` with no base, so a still-detached anchor (template clone, not yet adopted) returned the raw `/a`, and `new URL(\"/a\")` threw. I changed it to read the raw attribute (`getAttribute(\"href\")`, or SVG `base"
+}

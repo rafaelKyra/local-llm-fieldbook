@@ -1,0 +1,67 @@
+{
+ "id": "htmlparser2-stream-decoding",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": true,
+ "hidden": true,
+ "seconds": 137.634,
+ "crash": null,
+ "status": "completed",
+ "stopReason": "finished",
+ "profile": "medium",
+ "usage": {
+  "turns": 47,
+  "toolCalls": 41,
+  "inputTokens": 950535,
+  "outputTokens": 25305,
+  "lastInputTokens": 32099,
+  "peakInputTokens": 32099,
+  "modelCalls": 47,
+  "usageReportedCalls": 47,
+  "cacheReadTokens": 900114,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 47,
+  "roles": {
+   "main": {
+    "calls": 47,
+    "reportedInput": 47,
+    "reportedOutput": 47,
+    "inputTokens": 950535,
+    "outputTokens": 25305
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "truncated_reply": 1,
+  "untracked_changes": 1,
+  "regression": 2,
+  "shell_write_refused": 1,
+  "edits_without_verify": 3,
+  "edit_thrash": 1,
+  "finish_without_verify": 3,
+  "check_repeated": 2,
+  "refused_calls": 6
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Fixed UTF-8 decoding when mixing byte and string chunks in the stream wrappers.\n\nChanges:\n- src/WritableStream.ts: in `_write`, when a string chunk arrives, the node `StringDecoder` is flushed via `end()` (which emits a replacement character for any incomplete multi-byte sequence and resets decoder state) before writing the string. Byte chunks are decoded as before. This makes bytes `e2 82` + stri"
+}

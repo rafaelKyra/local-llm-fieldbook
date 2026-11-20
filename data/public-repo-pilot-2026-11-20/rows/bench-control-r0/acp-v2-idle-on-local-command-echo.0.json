@@ -1,0 +1,61 @@
+{
+ "id": "acp-v2-idle-on-local-command-echo",
+ "category": "public",
+ "rep": 0,
+ "verdict": "budget",
+ "visible": false,
+ "hidden": false,
+ "seconds": 85.058,
+ "crash": null,
+ "status": "budget",
+ "stopReason": "tool budget exhausted",
+ "profile": "medium",
+ "usage": {
+  "turns": 35,
+  "toolCalls": 60,
+  "inputTokens": 906145,
+  "outputTokens": 20117,
+  "lastInputTokens": 42063,
+  "peakInputTokens": 42063,
+  "modelCalls": 43,
+  "usageReportedCalls": 43,
+  "cacheReadTokens": 803423,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 43,
+  "roles": {
+   "main": {
+    "calls": 35,
+    "reportedInput": 35,
+    "reportedOutput": 35,
+    "inputTokens": 855803,
+    "outputTokens": 17979
+   },
+   "explorer": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 50342,
+    "outputTokens": 2138
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "broad_search": 1,
+  "auto_explore": 1,
+  "read_spiral": 1
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Now let me look at how the test file handles this scenario and add a test. Let me first insert the test after the local command output test."
+}

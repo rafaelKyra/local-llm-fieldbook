@@ -1,0 +1,64 @@
+{
+ "id": "acp-model-preference-newest-row",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": true,
+ "hidden": true,
+ "seconds": 378.593,
+ "crash": null,
+ "status": "completed",
+ "stopReason": "finished",
+ "profile": "medium",
+ "usage": {
+  "turns": 46,
+  "toolCalls": 43,
+  "inputTokens": 1311754,
+  "outputTokens": 40121,
+  "lastInputTokens": 42681,
+  "peakInputTokens": 43835,
+  "modelCalls": 46,
+  "usageReportedCalls": 46,
+  "cacheReadTokens": 1228187,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 46,
+  "roles": {
+   "main": {
+    "calls": 46,
+    "reportedInput": 46,
+    "reportedOutput": 46,
+    "inputTokens": 1311754,
+    "outputTokens": 40121
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "broad_search": 1,
+  "read_spiral": 2,
+  "truncated_reply": 2,
+  "edits_without_verify": 1,
+  "edit_thrash": 1,
+  "untracked_changes": 1
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Fixed model-preference resolution against an `availableModels` allowlist so a family preference picks the newest listed versioned row instead of the first matching row.\n\nChanges:\n- `src/session-model.ts`: added `modelFamilyVersion` (extracts a row's family version from value/displayName/resolvedModel via `familyVersionOf`, null when unversioned), `versionRank` (versioned rows ahead of unversioned,"
+}

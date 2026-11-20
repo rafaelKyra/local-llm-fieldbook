@@ -1,0 +1,62 @@
+{
+ "id": "acp-v2-idle-on-local-command-echo",
+ "category": "public",
+ "rep": 0,
+ "verdict": "budget",
+ "visible": false,
+ "hidden": false,
+ "seconds": 91.974,
+ "crash": null,
+ "status": "budget",
+ "stopReason": "tool budget exhausted",
+ "profile": "medium",
+ "usage": {
+  "turns": 36,
+  "toolCalls": 60,
+  "inputTokens": 1120431,
+  "outputTokens": 34313,
+  "lastInputTokens": 51367,
+  "peakInputTokens": 51367,
+  "modelCalls": 44,
+  "usageReportedCalls": 44,
+  "cacheReadTokens": 1006589,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 44,
+  "roles": {
+   "main": {
+    "calls": 36,
+    "reportedInput": 36,
+    "reportedOutput": 36,
+    "inputTokens": 1063445,
+    "outputTokens": 32966
+   },
+   "explorer": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 56986,
+    "outputTokens": 1347
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "broad_search": 1,
+  "read_spiral": 1,
+  "auto_explore": 1,
+  "read_stuck": 1
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Let me look at the package.json scripts and the test around line 1275 (setModel)."
+}

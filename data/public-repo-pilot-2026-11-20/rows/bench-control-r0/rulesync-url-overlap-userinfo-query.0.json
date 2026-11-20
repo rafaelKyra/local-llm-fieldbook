@@ -1,0 +1,68 @@
+{
+ "id": "rulesync-url-overlap-userinfo-query",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": false,
+ "hidden": true,
+ "seconds": 448.845,
+ "crash": null,
+ "status": "unverified",
+ "stopReason": "finished without a passing check",
+ "profile": "medium",
+ "usage": {
+  "turns": 43,
+  "toolCalls": 36,
+  "inputTokens": 1227487,
+  "outputTokens": 27590,
+  "lastInputTokens": 50287,
+  "peakInputTokens": 50287,
+  "modelCalls": 43,
+  "usageReportedCalls": 43,
+  "cacheReadTokens": 1108526,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 43,
+  "roles": {
+   "main": {
+    "calls": 43,
+    "reportedInput": 43,
+    "reportedOutput": 43,
+    "inputTokens": 1227487,
+    "outputTokens": 27590
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "truncated_reply": 1,
+  "broad_search": 1,
+  "edits_without_verify": 1,
+  "edit_thrash": 1,
+  "untracked_changes": 2,
+  "regression": 1,
+  "finish_without_verify": 4,
+  "check_repeated": 1,
+  "claimed_without_verify": 1,
+  "refused_calls": 4
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Fixed `urlPatternsOverlap` (in `src/features/permissions/shadowed-allows.ts`) so URLs carrying userinfo, a query string, or a fragment are correctly compared for overlap \u2014 the allow-withholding checks are no longer bypassed.\n\nWhat changed:\n- Added `stripUserinfoQueryFragment`, which strips userinfo (up to the last `@` before any path), a query, and a fragment from a scheme-less URL pattern while k"
+}

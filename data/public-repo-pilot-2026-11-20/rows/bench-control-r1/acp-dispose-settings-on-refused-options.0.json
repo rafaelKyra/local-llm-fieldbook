@@ -1,0 +1,62 @@
+{
+ "id": "acp-dispose-settings-on-refused-options",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": false,
+ "hidden": true,
+ "seconds": 53.362,
+ "crash": null,
+ "status": "budget",
+ "stopReason": "tool budget exhausted",
+ "profile": "medium",
+ "usage": {
+  "turns": 44,
+  "toolCalls": 60,
+  "inputTokens": 909072,
+  "outputTokens": 9158,
+  "lastInputTokens": 33070,
+  "peakInputTokens": 33070,
+  "modelCalls": 52,
+  "usageReportedCalls": 52,
+  "cacheReadTokens": 822596,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 52,
+  "roles": {
+   "main": {
+    "calls": 44,
+    "reportedInput": 44,
+    "reportedOutput": 44,
+    "inputTokens": 855187,
+    "outputTokens": 8269
+   },
+   "explorer": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 53885,
+    "outputTokens": 889
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "broad_search": 1,
+  "read_spiral": 1,
+  "auto_explore": 1,
+  "read_stuck": 1
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Now the v2 fix:"
+}

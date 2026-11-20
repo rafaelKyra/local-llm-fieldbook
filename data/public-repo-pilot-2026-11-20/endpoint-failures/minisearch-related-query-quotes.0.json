@@ -1,0 +1,59 @@
+{
+ "id": "minisearch-related-query-quotes",
+ "category": "public",
+ "rep": 0,
+ "verdict": "blocked",
+ "visible": false,
+ "hidden": false,
+ "seconds": 11.989,
+ "crash": null,
+ "status": "blocked",
+ "stopReason": "model kept returning empty replies",
+ "profile": "medium",
+ "usage": {
+  "turns": 7,
+  "toolCalls": 3,
+  "inputTokens": 5010,
+  "outputTokens": 148,
+  "lastInputTokens": 3119,
+  "peakInputTokens": 3119,
+  "modelCalls": 7,
+  "usageReportedCalls": 2,
+  "cacheReadTokens": 18,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 2,
+  "roles": {
+   "main": {
+    "calls": 7,
+    "reportedInput": 2,
+    "reportedOutput": 2,
+    "inputTokens": 5010,
+    "outputTokens": 148
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "empty_reply": 5
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Stopped: model kept returning empty replies."
+}

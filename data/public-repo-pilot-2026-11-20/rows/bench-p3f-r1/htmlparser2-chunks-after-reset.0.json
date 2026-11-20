@@ -1,0 +1,67 @@
+{
+ "id": "htmlparser2-chunks-after-reset",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": true,
+ "hidden": true,
+ "seconds": 98.461,
+ "crash": null,
+ "status": "completed",
+ "stopReason": "finished",
+ "profile": "medium",
+ "usage": {
+  "turns": 30,
+  "toolCalls": 30,
+  "inputTokens": 626349,
+  "outputTokens": 19828,
+  "lastInputTokens": 32073,
+  "peakInputTokens": 32073,
+  "modelCalls": 30,
+  "usageReportedCalls": 30,
+  "cacheReadTokens": 592445,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 30,
+  "roles": {
+   "main": {
+    "calls": 30,
+    "reportedInput": 30,
+    "reportedOutput": 30,
+    "inputTokens": 626349,
+    "outputTokens": 19828
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "read_spiral": 1,
+  "broad_search": 1,
+  "truncated_reply": 1,
+  "untracked_changes": 1,
+  "shell_write_refused": 1,
+  "edits_without_verify": 1,
+  "edit_thrash": 1,
+  "regression": 1,
+  "refused_calls": 1
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Fixed a bug in src/Parser.ts where chunks queued while paused were lost if `reset()` was called from a callback during a `write()`.\n\nRoot cause: `write()` unconditionally incremented `writeIndex` after feeding a chunk to the tokenizer. When a callback (`ontext`) called `reset()` mid-write, `reset()` cleared `buffers` and set `writeIndex` back to 0, but the subsequent `writeIndex++` left `writeInde"
+}

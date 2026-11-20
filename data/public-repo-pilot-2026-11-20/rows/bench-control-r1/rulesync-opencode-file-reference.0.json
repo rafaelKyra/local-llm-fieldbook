@@ -1,0 +1,69 @@
+{
+ "id": "rulesync-opencode-file-reference",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": false,
+ "hidden": true,
+ "seconds": 490.757,
+ "crash": null,
+ "status": "unverified",
+ "stopReason": "finished without a passing check",
+ "profile": "medium",
+ "usage": {
+  "turns": 45,
+  "toolCalls": 57,
+  "inputTokens": 1026160,
+  "outputTokens": 15353,
+  "lastInputTokens": 37106,
+  "peakInputTokens": 37106,
+  "modelCalls": 53,
+  "usageReportedCalls": 53,
+  "cacheReadTokens": 971852,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 53,
+  "roles": {
+   "main": {
+    "calls": 45,
+    "reportedInput": 45,
+    "reportedOutput": 45,
+    "inputTokens": 975623,
+    "outputTokens": 13832
+   },
+   "explorer": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 50537,
+    "outputTokens": 1521
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "broad_search": 1,
+  "read_spiral": 1,
+  "auto_explore": 1,
+  "edits_without_verify": 1,
+  "edit_thrash": 1,
+  "regression": 2,
+  "finish_without_verify": 4,
+  "untracked_changes": 1,
+  "check_repeated": 1,
+  "claimed_without_verify": 1,
+  "refused_calls": 4
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Fixed OpenCode `{file:...}` config-value reference resolution in src/features/opencode-config.ts (`resolveOpencodeFileTemplate`).\n\nChanges:\n- Absolute references (`{file:/abs/path}`) are now read as written instead of being appended to the config directory (previously `join(configDir, referencedPath)` wrongly anchored them).\n- `~/` references (`{file:~/path}`) are now expanded to the home director"
+}

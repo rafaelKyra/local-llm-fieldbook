@@ -1,0 +1,65 @@
+{
+ "id": "rulesync-letta-reserved-names",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": false,
+ "hidden": true,
+ "seconds": 184.241,
+ "crash": null,
+ "status": "unverified",
+ "stopReason": "finished without a passing check",
+ "profile": "medium",
+ "usage": {
+  "turns": 31,
+  "toolCalls": 33,
+  "inputTokens": 572197,
+  "outputTokens": 9244,
+  "lastInputTokens": 30860,
+  "peakInputTokens": 31318,
+  "modelCalls": 31,
+  "usageReportedCalls": 31,
+  "cacheReadTokens": 535000,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 31,
+  "roles": {
+   "main": {
+    "calls": 31,
+    "reportedInput": 31,
+    "reportedOutput": 31,
+    "inputTokens": 572197,
+    "outputTokens": 9244
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "broad_search": 1,
+  "regression": 3,
+  "finish_without_verify": 4,
+  "untracked_changes": 1,
+  "invalid_arguments": 1,
+  "claimed_without_verify": 1,
+  "refused_calls": 4
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Changed src/features/subagents/lettacode-subagent.ts: expanded LETTACODE_RESERVED_AGENT_NAMES from {claude-code, codex} to also include letta, opencode, cursor, and memory. Now generating a subagent named any of those six triggers the existing logger warning containing \"reserved by Letta Code\". The project check (`pnpm run check`: fmt:check + oxlint + typecheck) passes on the current files (record"
+}

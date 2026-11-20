@@ -1,0 +1,63 @@
+{
+ "id": "rulesync-bob-global-modes-merge",
+ "category": "public",
+ "rep": 0,
+ "verdict": "budget",
+ "visible": false,
+ "hidden": false,
+ "seconds": 72.276,
+ "crash": null,
+ "status": "budget",
+ "stopReason": "tool budget exhausted",
+ "profile": "medium",
+ "usage": {
+  "turns": 37,
+  "toolCalls": 60,
+  "inputTokens": 943088,
+  "outputTokens": 15874,
+  "lastInputTokens": 40638,
+  "peakInputTokens": 40638,
+  "modelCalls": 45,
+  "usageReportedCalls": 45,
+  "cacheReadTokens": 854901,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 45,
+  "roles": {
+   "main": {
+    "calls": 37,
+    "reportedInput": 37,
+    "reportedOutput": 37,
+    "inputTokens": 887490,
+    "outputTokens": 13977
+   },
+   "explorer": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 55598,
+    "outputTokens": 1897
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "broad_search": 1,
+  "auto_explore": 1,
+  "read_spiral": 1,
+  "edits_without_verify": 1,
+  "edit_thrash": 1
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "I placed the field assignment before `super()`. Let me fix:"
+}

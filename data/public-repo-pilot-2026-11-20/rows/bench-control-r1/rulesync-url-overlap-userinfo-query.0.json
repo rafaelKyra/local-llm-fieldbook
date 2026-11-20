@@ -1,0 +1,63 @@
+{
+ "id": "rulesync-url-overlap-userinfo-query",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": true,
+ "hidden": true,
+ "seconds": 423.159,
+ "crash": null,
+ "status": "completed",
+ "stopReason": "finished",
+ "profile": "medium",
+ "usage": {
+  "turns": 45,
+  "toolCalls": 43,
+  "inputTokens": 1490232,
+  "outputTokens": 48179,
+  "lastInputTokens": 59450,
+  "peakInputTokens": 59450,
+  "modelCalls": 45,
+  "usageReportedCalls": 45,
+  "cacheReadTokens": 1435185,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 45,
+  "roles": {
+   "main": {
+    "calls": 45,
+    "reportedInput": 45,
+    "reportedOutput": 45,
+    "inputTokens": 1490232,
+    "outputTokens": 48179
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "broad_search": 1,
+  "truncated_reply": 2,
+  "edits_without_verify": 1,
+  "edit_thrash": 1,
+  "untracked_changes": 1
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Fixed `urlPatternsOverlap` in src/features/permissions/shadowed-allows.ts so web-fetch allow rules that carry userinfo, a query string, or a fragment properly overlap restricted host/path patterns.\n\nChanges:\n- Added a `stripUrlAuxiliaries` helper that strips userinfo (everything up to the last `@` in the authority), query strings (`?...`), and fragments (`#...`) from a scheme-less URL pattern, lea"
+}

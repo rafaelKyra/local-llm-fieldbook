@@ -1,0 +1,65 @@
+{
+ "id": "solid-router-history-depth-capped-length",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": false,
+ "hidden": true,
+ "seconds": 74.265,
+ "crash": null,
+ "status": "unverified",
+ "stopReason": "finished without a passing check",
+ "profile": "medium",
+ "usage": {
+  "turns": 24,
+  "toolCalls": 21,
+  "inputTokens": 443807,
+  "outputTokens": 13347,
+  "lastInputTokens": 27782,
+  "peakInputTokens": 27782,
+  "modelCalls": 24,
+  "usageReportedCalls": 24,
+  "cacheReadTokens": 417181,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 24,
+  "roles": {
+   "main": {
+    "calls": 24,
+    "reportedInput": 24,
+    "reportedOutput": 24,
+    "inputTokens": 443807,
+    "outputTokens": 13347
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "broad_search": 1,
+  "regression": 1,
+  "shell_write_refused": 1,
+  "check_repeated": 2,
+  "finish_without_verify": 4,
+  "claimed_without_verify": 1,
+  "refused_calls": 6
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Fixed the browser history router's depth stamping for entries pushed outside the router under a capped `history.length`.\n\nChange in `src/routers/history.ts` (`saveCurrentDepth`): when the current history entry carries no `_depth` stamp (e.g. a plain `history.pushState(null, ...)` followed by `popstate`), the depth is now derived from the last known depth (`depth + 1`) instead of `history.length - "
+}

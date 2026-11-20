@@ -1,0 +1,66 @@
+{
+ "id": "htmlparser2-chunks-after-reset",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": true,
+ "hidden": true,
+ "seconds": 137.064,
+ "crash": null,
+ "status": "completed",
+ "stopReason": "finished",
+ "profile": "medium",
+ "usage": {
+  "turns": 31,
+  "toolCalls": 41,
+  "inputTokens": 872455,
+  "outputTokens": 41895,
+  "lastInputTokens": 49100,
+  "peakInputTokens": 50705,
+  "modelCalls": 39,
+  "usageReportedCalls": 39,
+  "cacheReadTokens": 834277,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 39,
+  "roles": {
+   "main": {
+    "calls": 31,
+    "reportedInput": 31,
+    "reportedOutput": 31,
+    "inputTokens": 838205,
+    "outputTokens": 36981
+   },
+   "explorer": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 34250,
+    "outputTokens": 4914
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "broad_search": 1,
+  "read_spiral": 1,
+  "truncated_reply": 1,
+  "auto_explore": 1,
+  "untracked_changes": 1,
+  "shell_write_refused": 1,
+  "edits_without_verify": 1,
+  "refused_calls": 1
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Fixed a bug in src/Parser.ts where chunks queued while paused were lost when reset() is called from a callback. Root cause: Parser.write() unconditionally incremented writeIndex after tokenizer.write(), but a reset() invoked during parsing clears buffers and resets writeIndex to 0, leaving writeIndex inconsistent with the empty buffers array. As a result, resume()'s loop condition (writeIndex < bu"
+}

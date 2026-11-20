@@ -1,0 +1,60 @@
+{
+ "id": "nansen-solana-simulation-unparsed-token-account",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": true,
+ "hidden": true,
+ "seconds": 38.406,
+ "crash": null,
+ "status": "completed",
+ "stopReason": "finished",
+ "profile": "medium",
+ "usage": {
+  "turns": 25,
+  "toolCalls": 24,
+  "inputTokens": 468858,
+  "outputTokens": 9564,
+  "lastInputTokens": 23728,
+  "peakInputTokens": 31109,
+  "modelCalls": 25,
+  "usageReportedCalls": 25,
+  "cacheReadTokens": 414182,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 25,
+  "roles": {
+   "main": {
+    "calls": 25,
+    "reportedInput": 25,
+    "reportedOutput": 25,
+    "inputTokens": 468858,
+    "outputTokens": 9564
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "read_spiral": 1,
+  "broad_search": 1
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Fixed the Solana simulation safety check so an unparsed token account of the wallet no longer falls out of tracking. Added `rawTokenOwner()` to src/solana-simulation.js, which decodes the raw base64 pre-state and reads the owner at byte 32 (SPL/Token-2022 layout). In the pre-state writable-account loop, when an unparsed account's owner equals the wallet address it now throws `SIM_RESULT_UNPARSEABL"
+}

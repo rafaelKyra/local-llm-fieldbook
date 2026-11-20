@@ -1,0 +1,62 @@
+{
+ "id": "nansen-perp-transfer-dry-run-testnet",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": true,
+ "hidden": true,
+ "seconds": 165.739,
+ "crash": null,
+ "status": "completed",
+ "stopReason": "finished",
+ "profile": "medium",
+ "usage": {
+  "turns": 29,
+  "toolCalls": 47,
+  "inputTokens": 547514,
+  "outputTokens": 9022,
+  "lastInputTokens": 22592,
+  "peakInputTokens": 30126,
+  "modelCalls": 37,
+  "usageReportedCalls": 37,
+  "cacheReadTokens": 444075,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 37,
+  "roles": {
+   "main": {
+    "calls": 29,
+    "reportedInput": 29,
+    "reportedOutput": 29,
+    "inputTokens": 480293,
+    "outputTokens": 7553
+   },
+   "explorer": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 67221,
+    "outputTokens": 1469
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "broad_search": 1,
+  "read_spiral": 1,
+  "auto_explore": 1,
+  "regression": 1
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Fixed `perp transfer --dry-run` so it refuses the Hyperliquid testnet exactly like a real run.\n\nWhat changed:\n- src/perp.js: added an `assertPerpNetworkSupported()` call in the `transfer` command handler right after amount validation and before any plan building/gating. Previously the testnet check only ran inside `buildScreenSignSubmit` (submit time), so a dry run returned at the guard and previe"
+}

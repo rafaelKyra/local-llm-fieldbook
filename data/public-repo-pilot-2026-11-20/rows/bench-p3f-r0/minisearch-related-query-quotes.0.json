@@ -1,0 +1,63 @@
+{
+ "id": "minisearch-related-query-quotes",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": false,
+ "hidden": true,
+ "seconds": 71.958,
+ "crash": null,
+ "status": "unverified",
+ "stopReason": "finished without a passing check",
+ "profile": "medium",
+ "usage": {
+  "turns": 19,
+  "toolCalls": 15,
+  "inputTokens": 207110,
+  "outputTokens": 8136,
+  "lastInputTokens": 19291,
+  "peakInputTokens": 19291,
+  "modelCalls": 19,
+  "usageReportedCalls": 19,
+  "cacheReadTokens": 173953,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 19,
+  "roles": {
+   "main": {
+    "calls": 19,
+    "reportedInput": 19,
+    "reportedOutput": 19,
+    "inputTokens": 207110,
+    "outputTokens": 8136
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "finish_without_verify": 4,
+  "check_repeated": 1,
+  "regression": 1,
+  "claimed_without_verify": 1,
+  "refused_calls": 4
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Updated client/modules/relatedSearchQuery.ts so the generated follow-up search query strips typographic quote marks (\u2026, \u300c\u300d, \u00ab\u00bb) in addition to straight quotes (\" and ') from both ends. The old code only sliced off straight quotes; the new code uses a quote character set and a while loop to strip any number of leading/trailing quote characters. Added tests to client/modules/relatedSearchQuery.test."
+}

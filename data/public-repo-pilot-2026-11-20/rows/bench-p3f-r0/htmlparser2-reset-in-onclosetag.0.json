@@ -1,0 +1,61 @@
+{
+ "id": "htmlparser2-reset-in-onclosetag",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": true,
+ "hidden": true,
+ "seconds": 40.323,
+ "crash": null,
+ "status": "completed",
+ "stopReason": "finished",
+ "profile": "medium",
+ "usage": {
+  "turns": 16,
+  "toolCalls": 18,
+  "inputTokens": 175386,
+  "outputTokens": 5767,
+  "lastInputTokens": 15615,
+  "peakInputTokens": 15615,
+  "modelCalls": 16,
+  "usageReportedCalls": 16,
+  "cacheReadTokens": 160384,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 16,
+  "roles": {
+   "main": {
+    "calls": 16,
+    "reportedInput": 16,
+    "reportedOutput": 16,
+    "inputTokens": 175386,
+    "outputTokens": 5767
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "read_spiral": 1,
+  "broad_search": 1,
+  "untracked_changes": 1
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Fixed htmlparser2 so calling parser.reset() inside an onclosetag callback stops closing the elements that were open before the reset.\n\nRoot cause: In Parser.onclosetag, when closing a tag, the parser pops implied elements above it with a helper loop that only tests the numeric loop index against `pos`. If a callback calls `reset()` (which clears the stack), the loop kept popping `undefined` and th"
+}

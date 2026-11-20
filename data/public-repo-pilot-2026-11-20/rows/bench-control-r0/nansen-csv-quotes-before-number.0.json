@@ -1,0 +1,61 @@
+{
+ "id": "nansen-csv-quotes-before-number",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": false,
+ "hidden": true,
+ "seconds": 253.541,
+ "crash": null,
+ "status": "delivered_unverified",
+ "stopReason": "delivered without a usable check: check_too_slow",
+ "profile": "medium",
+ "usage": {
+  "turns": 26,
+  "toolCalls": 24,
+  "inputTokens": 586360,
+  "outputTokens": 35561,
+  "lastInputTokens": 42634,
+  "peakInputTokens": 42634,
+  "modelCalls": 26,
+  "usageReportedCalls": 26,
+  "cacheReadTokens": 546942,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 26,
+  "roles": {
+   "main": {
+    "calls": 26,
+    "reportedInput": 26,
+    "reportedOutput": 26,
+    "inputTokens": 586360,
+    "outputTokens": 35561
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "truncated_reply": 2,
+  "broad_search": 1,
+  "claimed_without_verify": 1
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Fixed `formatCsv` spreadsheet-formula-injection neutralization so a plain number behind leading quotes is left alone, while non-number triggers behind quotes still get the `'` prefix.\n\nChanges:\n- `src/cli.js`: in `neutralizeMidCellPieces`, strip leading quotes from each mid-cell piece before testing it against `CSV_NUMBER_LITERAL` / `CSV_NUMBER_THEN_QUOTE`. A number behind quotes (e.g. `\"-5`, `\"+1"
+}

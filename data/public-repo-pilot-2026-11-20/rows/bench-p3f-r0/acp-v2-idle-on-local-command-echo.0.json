@@ -1,0 +1,62 @@
+{
+ "id": "acp-v2-idle-on-local-command-echo",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": false,
+ "hidden": true,
+ "seconds": 121.313,
+ "crash": null,
+ "status": "budget",
+ "stopReason": "tool budget exhausted",
+ "profile": "medium",
+ "usage": {
+  "turns": 37,
+  "toolCalls": 60,
+  "inputTokens": 921444,
+  "outputTokens": 19639,
+  "lastInputTokens": 44683,
+  "peakInputTokens": 44683,
+  "modelCalls": 45,
+  "usageReportedCalls": 45,
+  "cacheReadTokens": 857299,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 45,
+  "roles": {
+   "main": {
+    "calls": 37,
+    "reportedInput": 37,
+    "reportedOutput": 37,
+    "inputTokens": 855075,
+    "outputTokens": 17413
+   },
+   "explorer": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 66369,
+    "outputTokens": 2226
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "broad_search": 1,
+  "read_spiral": 1,
+  "auto_explore": 1,
+  "untracked_changes": 1
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Let me look at the test client helper and `initializeV2` to understand what updates are expected on session creation."
+}

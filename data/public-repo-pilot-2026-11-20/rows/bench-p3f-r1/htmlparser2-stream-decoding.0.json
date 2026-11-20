@@ -1,0 +1,63 @@
+{
+ "id": "htmlparser2-stream-decoding",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": true,
+ "hidden": true,
+ "seconds": 125.258,
+ "crash": null,
+ "status": "completed",
+ "stopReason": "finished",
+ "profile": "medium",
+ "usage": {
+  "turns": 33,
+  "toolCalls": 28,
+  "inputTokens": 466330,
+  "outputTokens": 17035,
+  "lastInputTokens": 22225,
+  "peakInputTokens": 22225,
+  "modelCalls": 33,
+  "usageReportedCalls": 33,
+  "cacheReadTokens": 440128,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 33,
+  "roles": {
+   "main": {
+    "calls": 33,
+    "reportedInput": 33,
+    "reportedOutput": 33,
+    "inputTokens": 466330,
+    "outputTokens": 17035
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "truncated_reply": 1,
+  "untracked_changes": 1,
+  "regression": 2,
+  "edits_without_verify": 1,
+  "edit_thrash": 1
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Fixed mixed byte/string decoding in both stream classes.\n\nsrc/WritableStream.ts: in _write, when a chunk is a string, first flush any pending incomplete UTF-8 bytes via StringDecoder.end() (emitting a replacement character) before writing the string. Bytes now only join within a contiguous byte run, so `e2 82` + \"text\" + `ac` yields `\\uFFFDtext\\uFFFD`.\n\nsrc/WebWritableStream.ts: switched to TextDe"
+}

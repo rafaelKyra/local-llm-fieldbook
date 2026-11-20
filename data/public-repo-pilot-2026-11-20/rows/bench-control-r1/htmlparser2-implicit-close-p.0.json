@@ -1,0 +1,64 @@
+{
+ "id": "htmlparser2-implicit-close-p",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": true,
+ "hidden": true,
+ "seconds": 125.386,
+ "crash": null,
+ "status": "completed",
+ "stopReason": "finished",
+ "profile": "medium",
+ "usage": {
+  "turns": 34,
+  "toolCalls": 31,
+  "inputTokens": 642571,
+  "outputTokens": 16627,
+  "lastInputTokens": 29691,
+  "peakInputTokens": 29691,
+  "modelCalls": 34,
+  "usageReportedCalls": 34,
+  "cacheReadTokens": 611230,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 34,
+  "roles": {
+   "main": {
+    "calls": 34,
+    "reportedInput": 34,
+    "reportedOutput": 34,
+    "inputTokens": 642571,
+    "outputTokens": 16627
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "read_spiral": 1,
+  "broad_search": 1,
+  "truncated_reply": 1,
+  "edits_without_verify": 1,
+  "edit_thrash": 1,
+  "untracked_changes": 1
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "## Summary\n\nI fixed the parser's implicit tag-closing behavior for two cases in `src/Parser.ts`:\n\n**The fix** \u2014 in the `openImpliesClose` map:\n1. Added `[\"listing\", pTag]` so an open `<listing>` closes an open `<p>`.\n2. Changed the `<li>` entry from `new Set([\"li\"])` to `new Set([\"p\", \"li\"])`.\n3. Added `\"p\"` to `ddtTags` (used by `<dd>`/`<dt>`).\n\nThis makes an open `<p>` close before a sibling `<l"
+}

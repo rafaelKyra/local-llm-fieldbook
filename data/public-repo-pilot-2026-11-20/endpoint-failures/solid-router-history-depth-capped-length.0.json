@@ -1,0 +1,59 @@
+{
+ "id": "solid-router-history-depth-capped-length",
+ "category": "public",
+ "rep": 0,
+ "verdict": "blocked",
+ "visible": false,
+ "hidden": false,
+ "seconds": 6.244,
+ "crash": null,
+ "status": "blocked",
+ "stopReason": "model kept returning empty replies",
+ "profile": "medium",
+ "usage": {
+  "turns": 3,
+  "toolCalls": 0,
+  "inputTokens": 0,
+  "outputTokens": 0,
+  "lastInputTokens": 0,
+  "peakInputTokens": 0,
+  "modelCalls": 3,
+  "usageReportedCalls": 0,
+  "cacheReadTokens": 0,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 0,
+  "roles": {
+   "main": {
+    "calls": 3,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "empty_reply": 3
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Stopped: model kept returning empty replies."
+}

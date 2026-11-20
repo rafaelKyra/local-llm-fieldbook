@@ -1,0 +1,66 @@
+{
+ "id": "nansen-bridge-resumed-leg-count",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": false,
+ "hidden": true,
+ "seconds": 513.036,
+ "crash": null,
+ "status": "unverified",
+ "stopReason": "finished without a passing check",
+ "profile": "medium",
+ "usage": {
+  "turns": 34,
+  "toolCalls": 46,
+  "inputTokens": 780026,
+  "outputTokens": 19370,
+  "lastInputTokens": 40631,
+  "peakInputTokens": 40733,
+  "modelCalls": 42,
+  "usageReportedCalls": 42,
+  "cacheReadTokens": 680610,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 42,
+  "roles": {
+   "main": {
+    "calls": 34,
+    "reportedInput": 34,
+    "reportedOutput": 34,
+    "inputTokens": 728948,
+    "outputTokens": 16810
+   },
+   "explorer": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 51078,
+    "outputTokens": 2560
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "broad_search": 1,
+  "read_spiral": 1,
+  "auto_explore": 1,
+  "regression": 1,
+  "finish_without_verify": 4,
+  "check_repeated": 2,
+  "claimed_without_verify": 1,
+  "refused_calls": 5
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Fixed the Hyperliquid withdrawal bridge leg-count bug so completed sendAsset legs count toward the total, so a resumed plan with a completed sendAsset leg is refused instead of executing.\n\nChanged `preflightHlBridgeSteps` in src/bridge.js: removed the `if (item.status === 'complete') continue;` skip so completed legs are now counted in `authorizeCount`/`actionCount`, added a `pendingActionCount` c"
+}

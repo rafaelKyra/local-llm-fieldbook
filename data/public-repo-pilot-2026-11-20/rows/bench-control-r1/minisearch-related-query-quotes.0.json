@@ -1,0 +1,63 @@
+{
+ "id": "minisearch-related-query-quotes",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": true,
+ "hidden": true,
+ "seconds": 206.891,
+ "crash": null,
+ "status": "budget",
+ "stopReason": "tool budget exhausted",
+ "profile": "medium",
+ "usage": {
+  "turns": 63,
+  "toolCalls": 60,
+  "inputTokens": 1849204,
+  "outputTokens": 33703,
+  "lastInputTokens": 46061,
+  "peakInputTokens": 49266,
+  "modelCalls": 63,
+  "usageReportedCalls": 63,
+  "cacheReadTokens": 1749533,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 63,
+  "roles": {
+   "main": {
+    "calls": 63,
+    "reportedInput": 63,
+    "reportedOutput": 63,
+    "inputTokens": 1849204,
+    "outputTokens": 33703
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "edits_without_verify": 3,
+  "finish_without_verify": 3,
+  "regression": 2,
+  "edit_thrash": 1,
+  "refused_calls": 3
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Not a git repo, fine. Let me confirm the test I added:"
+}

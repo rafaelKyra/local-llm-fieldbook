@@ -1,0 +1,64 @@
+{
+ "id": "acp-model-preference-newest-row",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": true,
+ "hidden": true,
+ "seconds": 261.953,
+ "crash": null,
+ "status": "completed",
+ "stopReason": "finished",
+ "profile": "medium",
+ "usage": {
+  "turns": 31,
+  "toolCalls": 29,
+  "inputTokens": 684191,
+  "outputTokens": 14780,
+  "lastInputTokens": 28814,
+  "peakInputTokens": 34892,
+  "modelCalls": 31,
+  "usageReportedCalls": 31,
+  "cacheReadTokens": 623396,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 31,
+  "roles": {
+   "main": {
+    "calls": 31,
+    "reportedInput": 31,
+    "reportedOutput": 31,
+    "inputTokens": 684191,
+    "outputTokens": 14780
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "broad_search": 1,
+  "read_spiral": 1,
+  "edits_without_verify": 1,
+  "edit_thrash": 1,
+  "shell_write_refused": 1,
+  "refused_calls": 1
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "All checks pass. Here is a summary of the work.\n\n**Problem:** In `src/session-model.ts`, the fuzzy matching tiers of `resolveModelPreference` (`includesMatch` and `candidates`) picked the first matching row in list order. Given an allowlist with several rows of a family (oldest first, e.g. `my-opus` first), `opus`/`opus[1m]` resolved to `my-opus` instead of the newest versioned row `claude-opus-5-"
+}

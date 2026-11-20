@@ -1,0 +1,62 @@
+{
+ "id": "solid-router-template-anchor-preload",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": false,
+ "hidden": true,
+ "seconds": 124.227,
+ "crash": null,
+ "status": "budget",
+ "stopReason": "tool budget exhausted",
+ "profile": "medium",
+ "usage": {
+  "turns": 36,
+  "toolCalls": 60,
+  "inputTokens": 1001282,
+  "outputTokens": 18981,
+  "lastInputTokens": 42320,
+  "peakInputTokens": 42471,
+  "modelCalls": 44,
+  "usageReportedCalls": 44,
+  "cacheReadTokens": 880042,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 44,
+  "roles": {
+   "main": {
+    "calls": 36,
+    "reportedInput": 36,
+    "reportedOutput": 36,
+    "inputTokens": 945845,
+    "outputTokens": 17539
+   },
+   "explorer": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 55437,
+    "outputTokens": 1442
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "broad_search": 1,
+  "auto_explore": 1,
+  "read_spiral": 1,
+  "regression": 3
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "The remaining type errors are pre-existing environment issues in files I never touched (`components.tsx` missing `createOwner` export from the installed solid-js; server hydration tests referencing a `hot` option not in their `Options` type). My own type errors are fixed. Let me re-run the targeted runtime tests to confirm the fix holds."
+}

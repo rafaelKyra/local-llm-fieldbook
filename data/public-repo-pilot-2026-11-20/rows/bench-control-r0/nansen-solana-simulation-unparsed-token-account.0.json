@@ -1,0 +1,61 @@
+{
+ "id": "nansen-solana-simulation-unparsed-token-account",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": true,
+ "hidden": true,
+ "seconds": 107.029,
+ "crash": null,
+ "status": "completed",
+ "stopReason": "finished",
+ "profile": "medium",
+ "usage": {
+  "turns": 34,
+  "toolCalls": 32,
+  "inputTokens": 693326,
+  "outputTokens": 12611,
+  "lastInputTokens": 30496,
+  "peakInputTokens": 30496,
+  "modelCalls": 34,
+  "usageReportedCalls": 34,
+  "cacheReadTokens": 600735,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 34,
+  "roles": {
+   "main": {
+    "calls": 34,
+    "reportedInput": 34,
+    "reportedOutput": 34,
+    "inputTokens": 693326,
+    "outputTokens": 12611
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "broad_search": 1,
+  "read_spiral": 2,
+  "edits_without_verify": 1
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Fixed the Solana transaction simulation gap where a wallet token account whose pre-state comes back unparsed (raw base64) was silently dropped from tracking, so a hostile post-state change (e.g. a new delegate with max allowance) went unchecked.\n\nChanges:\n- src/solana-simulation.js: added `rawTokenAccountOwner(info)` helper that reads the owner from raw SPL token-account bytes (owner at byte 32, a"
+}

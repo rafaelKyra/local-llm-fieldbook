@@ -1,0 +1,67 @@
+{
+ "id": "nansen-perp-transfer-dry-run-testnet",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": false,
+ "hidden": true,
+ "seconds": 253.347,
+ "crash": null,
+ "status": "delivered_unverified",
+ "stopReason": "delivered without a usable check: check_too_slow",
+ "profile": "medium",
+ "usage": {
+  "turns": 38,
+  "toolCalls": 49,
+  "inputTokens": 848647,
+  "outputTokens": 15004,
+  "lastInputTokens": 32990,
+  "peakInputTokens": 32990,
+  "modelCalls": 46,
+  "usageReportedCalls": 46,
+  "cacheReadTokens": 781879,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 46,
+  "roles": {
+   "main": {
+    "calls": 38,
+    "reportedInput": 38,
+    "reportedOutput": 38,
+    "inputTokens": 807860,
+    "outputTokens": 12886
+   },
+   "explorer": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 40787,
+    "outputTokens": 2118
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "broad_search": 1,
+  "read_spiral": 1,
+  "auto_explore": 1,
+  "regression": 3,
+  "invalid_arguments": 1,
+  "finish_without_verify": 3,
+  "check_repeated": 2,
+  "claimed_without_verify": 1,
+  "refused_calls": 6
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Fixed `nansen perp transfer --dry-run` previewing on the Hyperliquid testnet.\n\nRoot cause: `assertPerpNetworkSupported()` (throws `UNSUPPORTED_NETWORK`) was only reached in `buildScreenSignSubmit`, after the confirmation gate. Dry-run returns inside `guardPerpAction` before that, and the transfer plan makes no proxy reads, so the testnet check never ran on a dry run.\n\nChanges:\n- `src/perp.js`: add"
+}

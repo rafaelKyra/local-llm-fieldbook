@@ -1,0 +1,63 @@
+{
+ "id": "acp-dispose-settings-on-refused-options",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": false,
+ "hidden": true,
+ "seconds": 131.34,
+ "crash": null,
+ "status": "budget",
+ "stopReason": "tool budget exhausted",
+ "profile": "medium",
+ "usage": {
+  "turns": 33,
+  "toolCalls": 60,
+  "inputTokens": 775646,
+  "outputTokens": 15585,
+  "lastInputTokens": 36444,
+  "peakInputTokens": 36444,
+  "modelCalls": 41,
+  "usageReportedCalls": 41,
+  "cacheReadTokens": 689166,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 41,
+  "roles": {
+   "main": {
+    "calls": 33,
+    "reportedInput": 33,
+    "reportedOutput": 33,
+    "inputTokens": 732069,
+    "outputTokens": 13771
+   },
+   "explorer": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 43577,
+    "outputTokens": 1814
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "broad_search": 2,
+  "read_spiral": 2,
+  "auto_explore": 1,
+  "shell_write_refused": 1,
+  "refused_calls": 1
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Let me write a temporary verification test that simulates the SDK throwing synchronously from `query()` in the v1 path."
+}

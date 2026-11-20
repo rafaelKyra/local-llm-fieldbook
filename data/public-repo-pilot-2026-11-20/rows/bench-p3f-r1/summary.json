@@ -1,0 +1,46 @@
+{
+  "passAtK": "18/20",
+  "passPowK": "18/20",
+  "wilson95": [
+    0.699,
+    0.972
+  ],
+  "label": "mercury-3",
+  "model": "mercury-3",
+  "profile": "auto",
+  "runtime": "forge",
+  "tasks": 20,
+  "solved": 18,
+  "rate": 0.9,
+  "verdicts": {
+    "solved": 18,
+    "budget": 2
+  },
+  "byCategory": {
+    "public": "18/20"
+  },
+  "totalSeconds": 3807.2,
+  "toolCalls": 808,
+  "inputTokens": 15307703,
+  "outputTokens": 380044,
+  "pathologies": {
+    "broad_search": 19,
+    "read_spiral": 17,
+    "auto_explore": 8,
+    "shell_write_refused": 8,
+    "refused_calls": 33,
+    "read_stuck": 1,
+    "truncated_reply": 9,
+    "edits_without_verify": 9,
+    "edit_thrash": 11,
+    "untracked_changes": 11,
+    "regression": 14,
+    "finish_without_verify": 20,
+    "check_repeated": 7,
+    "invalid_arguments": 1,
+    "claimed_without_verify": 4,
+    "same_error": 1,
+    "auto_revert": 1,
+    "stall_nudge": 1
+  }
+}

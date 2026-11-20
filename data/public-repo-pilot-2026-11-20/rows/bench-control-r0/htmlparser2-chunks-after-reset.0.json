@@ -1,0 +1,65 @@
+{
+ "id": "htmlparser2-chunks-after-reset",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": true,
+ "hidden": true,
+ "seconds": 102.947,
+ "crash": null,
+ "status": "completed",
+ "stopReason": "finished",
+ "profile": "medium",
+ "usage": {
+  "turns": 33,
+  "toolCalls": 45,
+  "inputTokens": 854408,
+  "outputTokens": 26926,
+  "lastInputTokens": 44204,
+  "peakInputTokens": 44204,
+  "modelCalls": 41,
+  "usageReportedCalls": 41,
+  "cacheReadTokens": 796558,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 41,
+  "roles": {
+   "main": {
+    "calls": 33,
+    "reportedInput": 33,
+    "reportedOutput": 33,
+    "inputTokens": 811301,
+    "outputTokens": 22801
+   },
+   "explorer": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 43107,
+    "outputTokens": 4125
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "broad_search": 1,
+  "read_spiral": 1,
+  "truncated_reply": 1,
+  "auto_explore": 1,
+  "non_discriminating_check": 3,
+  "regression": 1,
+  "untracked_changes": 1
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Fixed lost chunks after parser.reset() during pause.\n\nBug: In Parser.write(), `this.writeIndex++` ran *after* `tokenizer.write(chunk)`. When an `ontext` callback called `reset()` mid-write, `reset()` clears `buffers` and zeroes `writeIndex`; the outer `writeIndex++` then left `writeIndex` one ahead of `buffers.length`. The `resume()` replay loop (`while (running && writeIndex < buffers.length)`) c"
+}

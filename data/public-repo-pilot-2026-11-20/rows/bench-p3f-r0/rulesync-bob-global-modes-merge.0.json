@@ -1,0 +1,62 @@
+{
+ "id": "rulesync-bob-global-modes-merge",
+ "category": "public",
+ "rep": 0,
+ "verdict": "budget",
+ "visible": false,
+ "hidden": false,
+ "seconds": 58.339,
+ "crash": null,
+ "status": "budget",
+ "stopReason": "tool budget exhausted",
+ "profile": "medium",
+ "usage": {
+  "turns": 30,
+  "toolCalls": 60,
+  "inputTokens": 698192,
+  "outputTokens": 14851,
+  "lastInputTokens": 18827,
+  "peakInputTokens": 35520,
+  "modelCalls": 44,
+  "usageReportedCalls": 44,
+  "cacheReadTokens": 621951,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 44,
+  "roles": {
+   "main": {
+    "calls": 30,
+    "reportedInput": 30,
+    "reportedOutput": 30,
+    "inputTokens": 625877,
+    "outputTokens": 11748
+   },
+   "explorer": {
+    "calls": 14,
+    "reportedInput": 14,
+    "reportedOutput": 14,
+    "inputTokens": 72315,
+    "outputTokens": 3103
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "broad_search": 1,
+  "auto_explore": 1,
+  "edits_without_verify": 1,
+  "edit_thrash": 1
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "The install is blocked by a TTY prompt. Let me disable that prompt via .npmrc."
+}

@@ -1,0 +1,62 @@
+{
+ "id": "nansen-bridge-resumed-leg-count",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": false,
+ "hidden": true,
+ "seconds": 405.047,
+ "crash": null,
+ "status": "delivered_unverified",
+ "stopReason": "delivered without a usable check: check_too_slow",
+ "profile": "medium",
+ "usage": {
+  "turns": 17,
+  "toolCalls": 22,
+  "inputTokens": 307749,
+  "outputTokens": 11267,
+  "lastInputTokens": 28969,
+  "peakInputTokens": 28969,
+  "modelCalls": 17,
+  "usageReportedCalls": 17,
+  "cacheReadTokens": 276818,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 17,
+  "roles": {
+   "main": {
+    "calls": 17,
+    "reportedInput": 17,
+    "reportedOutput": 17,
+    "inputTokens": 307749,
+    "outputTokens": 11267
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "broad_search": 1,
+  "read_spiral": 1,
+  "edits_without_verify": 1,
+  "claimed_without_verify": 1
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Fixed a Hyperliquid bridge resume bug in `src/bridge.js` (`preflightHlBridgeSteps`): completed `sendAsset` legs were skipped during leg counting, so a resumed plan with one authorize + two sendAsset legs (one already complete) passed preflight and re-ran the withdrawal. Now all sendAsset legs count toward the plan total regardless of status, while completed legs are still skipped for re-validation"
+}

@@ -1,0 +1,291 @@
+[
+ {
+  "id": "acp-dispose-settings-on-refused-options",
+  "repo": "agentclientprotocol/claude-agent-acp",
+  "sha": "6e307116d461af22fb5d42eb4b8fbdb3643c6d6c",
+  "parent": "f31da7f9f5264eb2b57fbda577ac35141eb530c8",
+  "date": "2026-11-19T12:53:15Z",
+  "src": [
+   "src/v1/acp-agent.ts",
+   "src/v2/agent.ts"
+  ],
+  "tests": [
+   "src/tests/v1/create-session-options.test.ts",
+   "src/tests/v2/v2.test.ts"
+  ],
+  "license": "Apache-2.0"
+ },
+ {
+  "id": "acp-v2-idle-on-local-command-echo",
+  "repo": "agentclientprotocol/claude-agent-acp",
+  "sha": "f5d79167a649737bdeb1ce3b55ad449a34bb9d47",
+  "parent": "a4a8534c23b08cdfd7f656d25f9ab16068fd8ffd",
+  "date": "2026-11-10T18:49:50Z",
+  "src": [
+   "src/message-filters.ts",
+   "src/v2/session.ts"
+  ],
+  "tests": [
+   "src/tests/v2/v2.test.ts"
+  ],
+  "license": "Apache-2.0"
+ },
+ {
+  "id": "acp-model-preference-newest-row",
+  "repo": "agentclientprotocol/claude-agent-acp",
+  "sha": "e73d7909ce0295bfa351da49940e067da02ea0e4",
+  "parent": "29dde3633a13cb9f32fca6c1578a9d95b9e6c08e",
+  "date": "2026-11-16T08:30:08Z",
+  "src": [
+   "src/session-model.ts"
+  ],
+  "tests": [
+   "src/tests/model-resolution.test.ts"
+  ],
+  "license": "Apache-2.0"
+ },
+ {
+  "id": "rulesync-opencode-file-reference",
+  "repo": "dyoshikawa/rulesync",
+  "sha": "18d0900b95c388c6c4cf1a354bf84ffd09fba56c",
+  "parent": "d05f25b74098df034aa999b8c49cff0ab4b42b9f",
+  "date": "2026-11-19T23:50:14Z",
+  "src": [
+   "src/features/opencode-config.ts",
+   "src/generated/docs-content.ts"
+  ],
+  "tests": [
+   "src/features/opencode-config.test.ts"
+  ],
+  "license": "MIT"
+ },
+ {
+  "id": "rulesync-url-overlap-userinfo-query",
+  "repo": "dyoshikawa/rulesync",
+  "sha": "20e7b6a27c9d69bd4ad375244db191b3e3f7be36",
+  "parent": "183fc55c6fb40d23b421f108c0e00460b1d093b0",
+  "date": "2026-11-19T15:36:40Z",
+  "src": [
+   "src/features/permissions/shadowed-allows.ts",
+   "src/generated/docs-content.ts"
+  ],
+  "tests": [
+   "src/features/permissions/shadowed-allows.test.ts"
+  ],
+  "license": "MIT"
+ },
+ {
+  "id": "rulesync-bob-global-modes-merge",
+  "repo": "dyoshikawa/rulesync",
+  "sha": "91af13c7560ee6ced193d67e43d3ed2d24b8b3e5",
+  "parent": "a7ff9414edefe07763fce64ff6e6c657e49c67f8",
+  "date": "2026-11-20T02:50:46Z",
+  "src": [
+   "src/features/subagents/bob-subagent.ts",
+   "src/features/subagents/roo-subagent.ts"
+  ],
+  "tests": [
+   "src/features/subagents/bob-subagent.test.ts"
+  ],
+  "license": "MIT"
+ },
+ {
+  "id": "rulesync-letta-reserved-names",
+  "repo": "dyoshikawa/rulesync",
+  "sha": "36a4c5d573f12f19f6259f8934cbac547c197da3",
+  "parent": "d05f25b74098df034aa999b8c49cff0ab4b42b9f",
+  "date": "2026-11-19T23:46:30Z",
+  "src": [
+   "src/features/subagents/lettacode-subagent.ts",
+   "src/generated/docs-content.ts"
+  ],
+  "tests": [
+   "src/features/subagents/lettacode-subagent.test.ts"
+  ],
+  "license": "MIT"
+ },
+ {
+  "id": "htmlparser2-implicit-close-p",
+  "repo": "fb55/htmlparser2",
+  "sha": "5742cc49eb2fda4ed5e8bba4958fc83070da90b7",
+  "parent": "357ea4cad811f15942c6128a7bd3821e864e1896",
+  "date": "2026-11-06T01:27:16Z",
+  "src": [
+   "src/Parser.ts"
+  ],
+  "tests": [
+   "src/Parser.spec.ts"
+  ],
+  "license": "MIT"
+ },
+ {
+  "id": "htmlparser2-stream-decoding",
+  "repo": "fb55/htmlparser2",
+  "sha": "1d2f3f1c361bc08fce1000f2dfc5305c8a9b3912",
+  "parent": "1765516bdf55f1287c8458ed6dd9c88648d0db73",
+  "date": "2026-11-06T01:33:37Z",
+  "src": [
+   "src/WebWritableStream.ts",
+   "src/WritableStream.ts"
+  ],
+  "tests": [
+   "src/WebWritableStream.spec.ts",
+   "src/WritableStream.spec.ts"
+  ],
+  "license": "MIT"
+ },
+ {
+  "id": "htmlparser2-reset-in-onclosetag",
+  "repo": "fb55/htmlparser2",
+  "sha": "1765516bdf55f1287c8458ed6dd9c88648d0db73",
+  "parent": "97e19fd906bf156a93e2292e3e56225651cc8841",
+  "date": "2026-11-06T01:28:43Z",
+  "src": [
+   "src/Parser.ts"
+  ],
+  "tests": [
+   "src/Parser.spec.ts"
+  ],
+  "license": "MIT"
+ },
+ {
+  "id": "htmlparser2-chunks-after-reset",
+  "repo": "fb55/htmlparser2",
+  "sha": "97e19fd906bf156a93e2292e3e56225651cc8841",
+  "parent": "5742cc49eb2fda4ed5e8bba4958fc83070da90b7",
+  "date": "2026-11-06T01:28:43Z",
+  "src": [
+   "src/Parser.ts"
+  ],
+  "tests": [
+   "src/Parser.spec.ts"
+  ],
+  "license": "MIT"
+ },
+ {
+  "id": "htmlparser2-end-handled-once",
+  "repo": "fb55/htmlparser2",
+  "sha": "649a2414c88f376aad4fe8f2073897b0259e6135",
+  "parent": "729780cd17d6924f1467a1c653c259e05ec13fb3",
+  "date": "2026-10-11T00:20:44Z",
+  "src": [
+   "src/Tokenizer.ts"
+  ],
+  "tests": [
+   "src/Parser.spec.ts"
+  ],
+  "license": "MIT"
+ },
+ {
+  "id": "minisearch-related-query-quotes",
+  "repo": "felladrin/MiniSearch",
+  "sha": "4cd41abb8b0b9710370ee12c1a8a0f6f2e9a3865",
+  "parent": "0b3b41f936650a5a2a7bb18623d38b61ac830cda",
+  "date": "2026-11-19T15:48:10Z",
+  "src": [
+   "client/modules/relatedSearchQuery.ts"
+  ],
+  "tests": [
+   "client/modules/relatedSearchQuery.test.ts"
+  ],
+  "license": "Apache-2.0"
+ },
+ {
+  "id": "minisearch-browser-model-loaded-once",
+  "repo": "felladrin/MiniSearch",
+  "sha": "5a64b0b3a7286b5005cc130f0d85d94ac2a21ebc",
+  "parent": "a9df18be1f81f87aa22120e1253bc653ca84f802",
+  "date": "2026-11-19T15:06:38Z",
+  "src": [
+   "client/modules/textGeneration.ts"
+  ],
+  "tests": [
+   "client/modules/textGeneration.degradation.test.ts"
+  ],
+  "license": "Apache-2.0"
+ },
+ {
+  "id": "nansen-perp-transfer-dry-run-testnet",
+  "repo": "nansen-ai/nansen-cli",
+  "sha": "3e4207622f87280d74815c70c36fc943daa604be",
+  "parent": "f621b35c67ab27194925d3e2bbec8f330d10e764",
+  "date": "2026-11-16T05:05:41Z",
+  "src": [
+   "src/perp.js"
+  ],
+  "tests": [
+   "src/__tests__/perp-execute-guard.test.js"
+  ],
+  "license": "MIT"
+ },
+ {
+  "id": "nansen-solana-simulation-unparsed-token-account",
+  "repo": "nansen-ai/nansen-cli",
+  "sha": "d5ed79df8845bbbf5646bd0128ea66f0eb1bb673",
+  "parent": "bd6f39955049bf2d95bdc3a54b2fcdb4b3e88cb6",
+  "date": "2026-11-19T03:51:25Z",
+  "src": [
+   "src/solana-simulation.js"
+  ],
+  "tests": [
+   "src/__tests__/solana-simulation.test.js"
+  ],
+  "license": "MIT"
+ },
+ {
+  "id": "nansen-bridge-resumed-leg-count",
+  "repo": "nansen-ai/nansen-cli",
+  "sha": "a63e9ef76d8b163f864951e3dba0d9a6155d961b",
+  "parent": "9888c7a3ed3a624fc465965104434d91aa9db221",
+  "date": "2026-11-16T07:24:31Z",
+  "src": [
+   "src/bridge.js"
+  ],
+  "tests": [
+   "src/__tests__/bridge-hl-action-intent.test.js"
+  ],
+  "license": "MIT"
+ },
+ {
+  "id": "nansen-csv-quotes-before-number",
+  "repo": "nansen-ai/nansen-cli",
+  "sha": "defedf8faacd20772834dd8db87df01ebd9aa848",
+  "parent": "2b4ee52202514182ff7b7c58cfe98573be42df26",
+  "date": "2026-11-19T01:55:47Z",
+  "src": [
+   "src/cli.js"
+  ],
+  "tests": [
+   "src/__tests__/cli.internal.test.js"
+  ],
+  "license": "MIT"
+ },
+ {
+  "id": "solid-router-history-depth-capped-length",
+  "repo": "solidjs/solid-router",
+  "sha": "ac8c28931c987e6478b8782f4621be8943af485a",
+  "parent": "3df265a87839938e5835d9c86a5fc1837fb0f301",
+  "date": "2026-10-28T02:38:22Z",
+  "src": [
+   "src/routers/history.ts"
+  ],
+  "tests": [
+   "test/browser-history.spec.ts"
+  ],
+  "license": "MIT"
+ },
+ {
+  "id": "solid-router-template-anchor-preload",
+  "repo": "solidjs/solid-router",
+  "sha": "7488be989ca5290df58dce38c4bb3e888d986c69",
+  "parent": "56f8597462581b3a17c762bdc3a93eaf2d8cc59d",
+  "date": "2026-10-28T02:36:11Z",
+  "src": [
+   "src/data/events.ts"
+  ],
+  "tests": [
+   "test/data/events.spec.ts"
+  ],
+  "license": "MIT"
+ }
+]

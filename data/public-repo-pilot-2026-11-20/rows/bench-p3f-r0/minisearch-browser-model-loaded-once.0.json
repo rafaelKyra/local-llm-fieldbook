@@ -1,0 +1,63 @@
+{
+ "id": "minisearch-browser-model-loaded-once",
+ "category": "public",
+ "rep": 0,
+ "verdict": "budget",
+ "visible": false,
+ "hidden": false,
+ "seconds": 138.419,
+ "crash": null,
+ "status": "budget",
+ "stopReason": "tool budget exhausted",
+ "profile": "medium",
+ "usage": {
+  "turns": 25,
+  "toolCalls": 60,
+  "inputTokens": 631502,
+  "outputTokens": 20948,
+  "lastInputTokens": 25663,
+  "peakInputTokens": 43406,
+  "modelCalls": 39,
+  "usageReportedCalls": 39,
+  "cacheReadTokens": 543763,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 39,
+  "roles": {
+   "main": {
+    "calls": 25,
+    "reportedInput": 25,
+    "reportedOutput": 25,
+    "inputTokens": 558019,
+    "outputTokens": 17592
+   },
+   "explorer": {
+    "calls": 14,
+    "reportedInput": 14,
+    "reportedOutput": 14,
+    "inputTokens": 73483,
+    "outputTokens": 3356
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "broad_search": 1,
+  "auto_explore": 1,
+  "edits_without_verify": 1,
+  "shell_write_refused": 1,
+  "refused_calls": 1
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "The only suite failure is `wllama.test.ts`, which fails at module load because the sandbox denies reading the `wllama.wasm?url` asset from `node_modules` \u2014 a pre-existing environmental restriction unrelated to my change (all 1340 tests that reached execution passed). Let me review my final edits to confirm they're clean:"
+}

@@ -1,0 +1,67 @@
+{
+ "id": "rulesync-letta-reserved-names",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": false,
+ "hidden": true,
+ "seconds": 322.052,
+ "crash": null,
+ "status": "unverified",
+ "stopReason": "finished without a passing check",
+ "profile": "medium",
+ "usage": {
+  "turns": 40,
+  "toolCalls": 46,
+  "inputTokens": 1009947,
+  "outputTokens": 15785,
+  "lastInputTokens": 43343,
+  "peakInputTokens": 43343,
+  "modelCalls": 40,
+  "usageReportedCalls": 40,
+  "cacheReadTokens": 964706,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 40,
+  "roles": {
+   "main": {
+    "calls": 40,
+    "reportedInput": 40,
+    "reportedOutput": 40,
+    "inputTokens": 1009947,
+    "outputTokens": 15785
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "broad_search": 2,
+  "regression": 1,
+  "auto_revert": 1,
+  "stall_nudge": 1,
+  "finish_without_verify": 4,
+  "shell_write_refused": 2,
+  "untracked_changes": 1,
+  "claimed_without_verify": 1,
+  "refused_calls": 5
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Changed `src/features/subagents/lettacode-subagent.ts` to expand the reserved `LETTACODE_RESERVED_AGENT_NAMES` set from {claude-code, codex} to {letta, claude-code, codex, opencode, cursor, memory}, so `LettacodeSubagent.fromRulesyncSubagent` now logs a warning containing \"reserved by Letta Code\" through the passed logger for any of these names. Added an `it.each` test in `lettacode-subagent.test."
+}

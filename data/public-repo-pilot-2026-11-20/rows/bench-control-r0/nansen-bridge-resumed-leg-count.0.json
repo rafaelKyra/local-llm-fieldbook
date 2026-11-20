@@ -1,0 +1,62 @@
+{
+ "id": "nansen-bridge-resumed-leg-count",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": true,
+ "hidden": true,
+ "seconds": 565.152,
+ "crash": null,
+ "status": "completed",
+ "stopReason": "finished",
+ "profile": "medium",
+ "usage": {
+  "turns": 23,
+  "toolCalls": 26,
+  "inputTokens": 488479,
+  "outputTokens": 13770,
+  "lastInputTokens": 24635,
+  "peakInputTokens": 35674,
+  "modelCalls": 23,
+  "usageReportedCalls": 23,
+  "cacheReadTokens": 420814,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 23,
+  "roles": {
+   "main": {
+    "calls": 23,
+    "reportedInput": 23,
+    "reportedOutput": 23,
+    "inputTokens": 488479,
+    "outputTokens": 13770
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "broad_search": 1,
+  "read_spiral": 1,
+  "check_repeated": 1,
+  "refused_calls": 1
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Fixed the HL bridge preflight leg-count so completed sendAsset legs count toward the total.\n\nWhat changed:\n- src/bridge.js (`preflightHlBridgeSteps`): previously it skipped every step marked `complete` before counting, so a resumed plan with one completed sendAsset plus a pending one looked like a single pending sendAsset and executed. Now completed sendAsset legs are still counted in the total (`"
+}

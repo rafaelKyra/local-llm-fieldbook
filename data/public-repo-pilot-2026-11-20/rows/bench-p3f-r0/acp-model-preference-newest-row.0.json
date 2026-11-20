@@ -1,0 +1,65 @@
+{
+ "id": "acp-model-preference-newest-row",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": false,
+ "hidden": true,
+ "seconds": 289.824,
+ "crash": null,
+ "status": "delivered_unverified",
+ "stopReason": "delivered without a usable check: check_too_slow",
+ "profile": "medium",
+ "usage": {
+  "turns": 32,
+  "toolCalls": 29,
+  "inputTokens": 560925,
+  "outputTokens": 14869,
+  "lastInputTokens": 24516,
+  "peakInputTokens": 26357,
+  "modelCalls": 32,
+  "usageReportedCalls": 32,
+  "cacheReadTokens": 513412,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 32,
+  "roles": {
+   "main": {
+    "calls": 32,
+    "reportedInput": 32,
+    "reportedOutput": 32,
+    "inputTokens": 560925,
+    "outputTokens": 14869
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "broad_search": 1,
+  "read_spiral": 1,
+  "truncated_reply": 1,
+  "edits_without_verify": 1,
+  "unknown_tool": 1,
+  "claimed_without_verify": 1,
+  "refused_calls": 1
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Fixed model-preference resolution against an `availableModels` allowlist holding several versions of a family; `src/session-model.ts`, `src/tests/model-resolution.test.ts`.\n\nChange: in `resolveModelPreference`, the fuzzy (`includesMatch`) and tokenized (`candidates`) tiers previously picked the first matching row in list order, so `opus`/`opus[1m]` resolved to `my-opus` (the first, versionless row"
+}

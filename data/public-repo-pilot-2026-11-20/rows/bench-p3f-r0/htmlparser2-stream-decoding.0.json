@@ -1,0 +1,65 @@
+{
+ "id": "htmlparser2-stream-decoding",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": true,
+ "hidden": true,
+ "seconds": 88.762,
+ "crash": null,
+ "status": "completed",
+ "stopReason": "finished",
+ "profile": "medium",
+ "usage": {
+  "turns": 37,
+  "toolCalls": 36,
+  "inputTokens": 578841,
+  "outputTokens": 13444,
+  "lastInputTokens": 24541,
+  "peakInputTokens": 24568,
+  "modelCalls": 37,
+  "usageReportedCalls": 37,
+  "cacheReadTokens": 553133,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 37,
+  "roles": {
+   "main": {
+    "calls": 37,
+    "reportedInput": 37,
+    "reportedOutput": 37,
+    "inputTokens": 578841,
+    "outputTokens": 13444
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "untracked_changes": 1,
+  "regression": 2,
+  "edit_thrash": 2,
+  "edits_without_verify": 1,
+  "shell_write_refused": 1,
+  "check_repeated": 1,
+  "refused_calls": 2
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Fixed mixed byte/string decoding in both stream classes so incomplete bytes are flushed as a replacement character (U+FFFD) before a string chunk is handled, and the later lone byte becomes a new invalid sequence (issue 1). In WebWritableStream the decoder now uses ignoreBOM and strips a byte-order mark only when it appears at the very start of the stream (no string written before), so writing \"x\""
+}

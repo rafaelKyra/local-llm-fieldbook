@@ -1,0 +1,65 @@
+{
+ "id": "htmlparser2-reset-in-onclosetag",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": true,
+ "hidden": true,
+ "seconds": 76.082,
+ "crash": null,
+ "status": "completed",
+ "stopReason": "finished",
+ "profile": "medium",
+ "usage": {
+  "turns": 23,
+  "toolCalls": 38,
+  "inputTokens": 379918,
+  "outputTokens": 13193,
+  "lastInputTokens": 26510,
+  "peakInputTokens": 26510,
+  "modelCalls": 30,
+  "usageReportedCalls": 30,
+  "cacheReadTokens": 345556,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 30,
+  "roles": {
+   "main": {
+    "calls": 23,
+    "reportedInput": 23,
+    "reportedOutput": 23,
+    "inputTokens": 356716,
+    "outputTokens": 11121
+   },
+   "explorer": {
+    "calls": 7,
+    "reportedInput": 7,
+    "reportedOutput": 7,
+    "inputTokens": 23202,
+    "outputTokens": 2072
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "read_spiral": 1,
+  "broad_search": 1,
+  "auto_explore": 1,
+  "regression": 1,
+  "shell_write_refused": 1,
+  "untracked_changes": 1,
+  "refused_calls": 1
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Fixed a bug where calling `parser.reset()` inside an `onclosetag` callback did not stop the parser from continuing to close elements that were open before the reset.\n\nWhat changed:\n- `src/Parser.ts` (`onclosetag`, lines 627\u2013636): added a reset-guard to the backwards-popping loop, mirroring the existing pattern in `onend`/`finish()`. The loop now breaks when `index >= this.stack.length` (which happ"
+}

@@ -1,0 +1,65 @@
+{
+ "id": "minisearch-related-query-quotes",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": false,
+ "hidden": true,
+ "seconds": 152.043,
+ "crash": null,
+ "status": "unverified",
+ "stopReason": "finished without a passing check",
+ "profile": "medium",
+ "usage": {
+  "turns": 26,
+  "toolCalls": 23,
+  "inputTokens": 402906,
+  "outputTokens": 13399,
+  "lastInputTokens": 28342,
+  "peakInputTokens": 28342,
+  "modelCalls": 26,
+  "usageReportedCalls": 26,
+  "cacheReadTokens": 349107,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 26,
+  "roles": {
+   "main": {
+    "calls": 26,
+    "reportedInput": 26,
+    "reportedOutput": 26,
+    "inputTokens": 402906,
+    "outputTokens": 13399
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "broad_search": 1,
+  "regression": 3,
+  "check_repeated": 1,
+  "finish_without_verify": 4,
+  "invalid_arguments": 1,
+  "claimed_without_verify": 1,
+  "refused_calls": 5
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Fixed typographic quote stripping in the generated related-search query.\n\nChanges:\n- `client/modules/relatedSearchQuery.ts`: the quote-removal step previously only stripped straight `\"` and `'` marks. It now also strips typographic quote marks the model wraps around the query: curly `\u201c\u201d`/`\u2018\u2019`, corner brackets `\u300c\u300d`, and guillemets `\u00ab\u00bb` (checked against leading/trailing quote sets; inner quotes left"
+}

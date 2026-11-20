@@ -1,0 +1,59 @@
+{
+ "id": "nansen-solana-simulation-unparsed-token-account",
+ "category": "public",
+ "rep": 0,
+ "verdict": "blocked",
+ "visible": false,
+ "hidden": false,
+ "seconds": 8.639,
+ "crash": null,
+ "status": "blocked",
+ "stopReason": "model kept returning empty replies",
+ "profile": "medium",
+ "usage": {
+  "turns": 8,
+  "toolCalls": 2,
+  "inputTokens": 8190,
+  "outputTokens": 248,
+  "lastInputTokens": 3258,
+  "peakInputTokens": 3258,
+  "modelCalls": 8,
+  "usageReportedCalls": 3,
+  "cacheReadTokens": 27,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 3,
+  "roles": {
+   "main": {
+    "calls": 8,
+    "reportedInput": 3,
+    "reportedOutput": 3,
+    "inputTokens": 8190,
+    "outputTokens": 248
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "empty_reply": 5
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Stopped: model kept returning empty replies."
+}

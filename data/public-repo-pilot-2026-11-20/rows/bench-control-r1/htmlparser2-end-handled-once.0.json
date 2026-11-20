@@ -1,0 +1,65 @@
+{
+ "id": "htmlparser2-end-handled-once",
+ "category": "public",
+ "rep": 0,
+ "verdict": "budget",
+ "visible": false,
+ "hidden": false,
+ "seconds": 115.821,
+ "crash": null,
+ "status": "budget",
+ "stopReason": "tool budget exhausted",
+ "profile": "medium",
+ "usage": {
+  "turns": 48,
+  "toolCalls": 60,
+  "inputTokens": 1256844,
+  "outputTokens": 27815,
+  "lastInputTokens": 45258,
+  "peakInputTokens": 45548,
+  "modelCalls": 56,
+  "usageReportedCalls": 56,
+  "cacheReadTokens": 1199558,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 56,
+  "roles": {
+   "main": {
+    "calls": 48,
+    "reportedInput": 48,
+    "reportedOutput": 48,
+    "inputTokens": 1223859,
+    "outputTokens": 26989
+   },
+   "explorer": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 32985,
+    "outputTokens": 826
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "broad_search": 1,
+  "read_spiral": 1,
+  "auto_explore": 1,
+  "truncated_reply": 1,
+  "untracked_changes": 1,
+  "edits_without_verify": 1,
+  "edit_thrash": 1
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Now I fully understand. For `&timesbar`, the entity is left incomplete during `write`, so `finish()` runs inside `end()`, decodes `\u00d7`, emits `bar` and `end`, and pauses. Afterwards `Tokenizer.resume()` re-parses from `index=5` (where `emitCodePoint` positioned it) and re-emits `bar`. The fix: once the tokenizer has finished, `resume()` must not parse again.\n\nLet me remove the debug logging and app"
+}

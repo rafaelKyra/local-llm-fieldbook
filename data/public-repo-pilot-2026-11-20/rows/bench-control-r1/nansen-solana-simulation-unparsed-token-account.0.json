@@ -1,0 +1,61 @@
+{
+ "id": "nansen-solana-simulation-unparsed-token-account",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": true,
+ "hidden": true,
+ "seconds": 96.428,
+ "crash": null,
+ "status": "completed",
+ "stopReason": "finished",
+ "profile": "medium",
+ "usage": {
+  "turns": 22,
+  "toolCalls": 20,
+  "inputTokens": 337307,
+  "outputTokens": 10294,
+  "lastInputTokens": 17772,
+  "peakInputTokens": 25276,
+  "modelCalls": 22,
+  "usageReportedCalls": 22,
+  "cacheReadTokens": 283259,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 22,
+  "roles": {
+   "main": {
+    "calls": 22,
+    "reportedInput": 22,
+    "reportedOutput": 22,
+    "inputTokens": 337307,
+    "outputTokens": 10294
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "broad_search": 1,
+  "read_spiral": 1,
+  "edits_without_verify": 1
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Fixed the Solana transaction simulation check to fail closed (SIM_RESULT_UNPARSEABLE) when a wallet token account's pre-state comes back unparsed from the node.\n\nChanges in src/solana-simulation.js:\n- Added helper tokenAccountOwnerFromRaw(info): decodes raw base64 account data and reads the owner (bytes 32\u201364) of the fixed 165-byte SPL token-account layout (Token-2022 extension bytes after the 165"
+}

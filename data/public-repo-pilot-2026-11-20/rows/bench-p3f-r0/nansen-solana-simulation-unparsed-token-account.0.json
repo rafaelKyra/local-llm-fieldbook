@@ -1,0 +1,62 @@
+{
+ "id": "nansen-solana-simulation-unparsed-token-account",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": true,
+ "hidden": true,
+ "seconds": 153.45,
+ "crash": null,
+ "status": "completed",
+ "stopReason": "finished",
+ "profile": "medium",
+ "usage": {
+  "turns": 25,
+  "toolCalls": 39,
+  "inputTokens": 627913,
+  "outputTokens": 17149,
+  "lastInputTokens": 23911,
+  "peakInputTokens": 37912,
+  "modelCalls": 33,
+  "usageReportedCalls": 33,
+  "cacheReadTokens": 552021,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 33,
+  "roles": {
+   "main": {
+    "calls": 25,
+    "reportedInput": 25,
+    "reportedOutput": 25,
+    "inputTokens": 574389,
+    "outputTokens": 15520
+   },
+   "explorer": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 53524,
+    "outputTokens": 1629
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "broad_search": 1,
+  "read_spiral": 1,
+  "auto_explore": 1,
+  "edits_without_verify": 1
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Fixed the Solana simulation check so an unparsed (raw base64) pre-state for a token account belonging to the wallet fails closed with SIM_RESULT_UNPARSEABLE instead of being silently dropped from tracking.\n\nWhat changed:\n- src/solana-simulation.js: added `rawTokenAccountOwner(info)` which, for accounts owned by the SPL Token program or Token-2022 program whose data came back raw (array of base64 i"
+}

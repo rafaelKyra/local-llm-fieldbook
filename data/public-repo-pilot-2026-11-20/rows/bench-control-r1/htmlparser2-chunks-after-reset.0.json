@@ -1,0 +1,65 @@
+{
+ "id": "htmlparser2-chunks-after-reset",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": true,
+ "hidden": true,
+ "seconds": 90.162,
+ "crash": null,
+ "status": "completed",
+ "stopReason": "finished",
+ "profile": "medium",
+ "usage": {
+  "turns": 29,
+  "toolCalls": 25,
+  "inputTokens": 447116,
+  "outputTokens": 11222,
+  "lastInputTokens": 24096,
+  "peakInputTokens": 24096,
+  "modelCalls": 29,
+  "usageReportedCalls": 29,
+  "cacheReadTokens": 420453,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 29,
+  "roles": {
+   "main": {
+    "calls": 29,
+    "reportedInput": 29,
+    "reportedOutput": 29,
+    "inputTokens": 447116,
+    "outputTokens": 11222
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "read_spiral": 1,
+  "broad_search": 1,
+  "untracked_changes": 1,
+  "regression": 2,
+  "finish_without_verify": 3,
+  "check_repeated": 1,
+  "refused_calls": 5
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Fixed a bug in htmlparser2's Parser where chunks queued while paused were lost when `reset()` was called from a callback.\n\nRoot cause: in `Parser.write()` (src/Parser.ts), `writeIndex` was unconditionally incremented after `tokenizer.write(chunk)`. If the tokenizer's callback (e.g. `ontext`) called `parser.reset()`, reset cleared `buffers` and set `writeIndex = 0`, but the pending `writeIndex++` l"
+}

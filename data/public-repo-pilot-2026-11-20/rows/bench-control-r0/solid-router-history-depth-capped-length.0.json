@@ -1,0 +1,64 @@
+{
+ "id": "solid-router-history-depth-capped-length",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": false,
+ "hidden": true,
+ "seconds": 191.843,
+ "crash": null,
+ "status": "unverified",
+ "stopReason": "finished without a passing check",
+ "profile": "medium",
+ "usage": {
+  "turns": 29,
+  "toolCalls": 38,
+  "inputTokens": 609774,
+  "outputTokens": 18010,
+  "lastInputTokens": 37699,
+  "peakInputTokens": 37699,
+  "modelCalls": 29,
+  "usageReportedCalls": 29,
+  "cacheReadTokens": 571215,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 29,
+  "roles": {
+   "main": {
+    "calls": 29,
+    "reportedInput": 29,
+    "reportedOutput": 29,
+    "inputTokens": 609774,
+    "outputTokens": 18010
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "broad_search": 1,
+  "edits_without_verify": 1,
+  "edit_thrash": 1,
+  "finish_without_verify": 4,
+  "claimed_without_verify": 1,
+  "refused_calls": 3
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Fixed the browser-history depth stamping bug when `history.length` is capped.\n\nBug: `saveCurrentDepth()` (src/routers/history.ts) stamped any entry arriving without a `_depth` using `history.length - 1`. Once the browser caps session history (50 in Chromium/Firefox), `length` stops growing, so an external `history.pushState(null, \"\", \"/#anchor\")` followed by `popstate` got the same depth as the pr"
+}

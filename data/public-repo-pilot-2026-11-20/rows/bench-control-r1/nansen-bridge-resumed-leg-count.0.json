@@ -1,0 +1,63 @@
+{
+ "id": "nansen-bridge-resumed-leg-count",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": true,
+ "hidden": true,
+ "seconds": 162.817,
+ "crash": null,
+ "status": "completed",
+ "stopReason": "finished",
+ "profile": "medium",
+ "usage": {
+  "turns": 20,
+  "toolCalls": 20,
+  "inputTokens": 321481,
+  "outputTokens": 8880,
+  "lastInputTokens": 28605,
+  "peakInputTokens": 28605,
+  "modelCalls": 20,
+  "usageReportedCalls": 20,
+  "cacheReadTokens": 271859,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 20,
+  "roles": {
+   "main": {
+    "calls": 20,
+    "reportedInput": 20,
+    "reportedOutput": 20,
+    "inputTokens": 321481,
+    "outputTokens": 8880
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "broad_search": 1,
+  "read_spiral": 1,
+  "edits_without_verify": 1,
+  "check_repeated": 1,
+  "refused_calls": 1
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Fixed the Hyperliquid bridge resumed-plan leg counting in src/bridge.js.\n\nWhat changed:\n- `preflightHlBridgeSteps` previously skipped all `complete` items entirely. Now a completed leg is still counted: completed sendAsset (action) legs increment `actionCount`, and completed authorize legs increment `authorizeCount`, while per-item validation is still skipped for complete legs (so a resumed plan c"
+}

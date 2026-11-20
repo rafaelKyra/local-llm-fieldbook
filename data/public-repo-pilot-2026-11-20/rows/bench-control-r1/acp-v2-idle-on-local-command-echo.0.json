@@ -1,0 +1,65 @@
+{
+ "id": "acp-v2-idle-on-local-command-echo",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": false,
+ "hidden": true,
+ "seconds": 96.2,
+ "crash": null,
+ "status": "budget",
+ "stopReason": "tool budget exhausted",
+ "profile": "medium",
+ "usage": {
+  "turns": 33,
+  "toolCalls": 60,
+  "inputTokens": 772321,
+  "outputTokens": 20115,
+  "lastInputTokens": 30392,
+  "peakInputTokens": 35195,
+  "modelCalls": 40,
+  "usageReportedCalls": 40,
+  "cacheReadTokens": 661517,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 40,
+  "roles": {
+   "main": {
+    "calls": 33,
+    "reportedInput": 33,
+    "reportedOutput": 33,
+    "inputTokens": 714651,
+    "outputTokens": 16135
+   },
+   "explorer": {
+    "calls": 7,
+    "reportedInput": 7,
+    "reportedOutput": 7,
+    "inputTokens": 57670,
+    "outputTokens": 3980
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "broad_search": 2,
+  "auto_explore": 1,
+  "read_spiral": 2,
+  "edits_without_verify": 1,
+  "edit_thrash": 1,
+  "shell_write_refused": 1,
+  "refused_calls": 1
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Let me check whether the environment has Anthropic provider variables set, which would explain these pre-existing failures."
+}

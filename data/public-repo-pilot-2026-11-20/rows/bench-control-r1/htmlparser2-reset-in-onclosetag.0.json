@@ -1,0 +1,62 @@
+{
+ "id": "htmlparser2-reset-in-onclosetag",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": true,
+ "hidden": true,
+ "seconds": 67.103,
+ "crash": null,
+ "status": "completed",
+ "stopReason": "finished",
+ "profile": "medium",
+ "usage": {
+  "turns": 21,
+  "toolCalls": 20,
+  "inputTokens": 261213,
+  "outputTokens": 8280,
+  "lastInputTokens": 19208,
+  "peakInputTokens": 19208,
+  "modelCalls": 21,
+  "usageReportedCalls": 21,
+  "cacheReadTokens": 240601,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 21,
+  "roles": {
+   "main": {
+    "calls": 21,
+    "reportedInput": 21,
+    "reportedOutput": 21,
+    "inputTokens": 261213,
+    "outputTokens": 8280
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "read_spiral": 1,
+  "broad_search": 1,
+  "untracked_changes": 1,
+  "regression": 1
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Fixed a bug where calling `parser.reset()` inside an `onclosetag` callback did not stop the parser from continuing to close elements that were open before the reset.\n\nChanges:\n- src/Parser.ts: In `onclosetag`, the implied-close loop (which pops and emits close events for nested open elements) now detects when a callback has reset the parser. After each `popElement(true)` it checks whether the stac"
+}

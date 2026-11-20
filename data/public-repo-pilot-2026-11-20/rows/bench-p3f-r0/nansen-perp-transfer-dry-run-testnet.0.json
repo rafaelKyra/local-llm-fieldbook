@@ -1,0 +1,61 @@
+{
+ "id": "nansen-perp-transfer-dry-run-testnet",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": true,
+ "hidden": true,
+ "seconds": 104.698,
+ "crash": null,
+ "status": "completed",
+ "stopReason": "finished",
+ "profile": "medium",
+ "usage": {
+  "turns": 23,
+  "toolCalls": 42,
+  "inputTokens": 357492,
+  "outputTokens": 8538,
+  "lastInputTokens": 18639,
+  "peakInputTokens": 22240,
+  "modelCalls": 31,
+  "usageReportedCalls": 31,
+  "cacheReadTokens": 277500,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 31,
+  "roles": {
+   "main": {
+    "calls": 23,
+    "reportedInput": 23,
+    "reportedOutput": 23,
+    "inputTokens": 309763,
+    "outputTokens": 6491
+   },
+   "explorer": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 47729,
+    "outputTokens": 2047
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "broad_search": 1,
+  "read_spiral": 1,
+  "auto_explore": 1
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Fixed `perp transfer --dry-run` (and all other perp dry runs) to refuse a testnet `NANSEN_HL_API_URL` the same way a real run does.\n\nChanges:\n- src/perp.js: in `guardPerpAction`, the dry-run path now calls `assertPerpNetworkSupported()` (before screening), so a dry run on the Hyperliquid testnet throws `UNSUPPORTED_NETWORK` instead of previewing the transfer. Nothing is signed because the command "
+}

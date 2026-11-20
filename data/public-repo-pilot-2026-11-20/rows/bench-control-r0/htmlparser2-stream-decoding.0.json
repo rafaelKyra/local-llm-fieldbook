@@ -1,0 +1,64 @@
+{
+ "id": "htmlparser2-stream-decoding",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": true,
+ "hidden": true,
+ "seconds": 180.393,
+ "crash": null,
+ "status": "completed",
+ "stopReason": "finished",
+ "profile": "medium",
+ "usage": {
+  "turns": 46,
+  "toolCalls": 47,
+  "inputTokens": 1269890,
+  "outputTokens": 42052,
+  "lastInputTokens": 45490,
+  "peakInputTokens": 45914,
+  "modelCalls": 46,
+  "usageReportedCalls": 46,
+  "cacheReadTokens": 1227319,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 46,
+  "roles": {
+   "main": {
+    "calls": 46,
+    "reportedInput": 46,
+    "reportedOutput": 46,
+    "inputTokens": 1269890,
+    "outputTokens": 42052
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "truncated_reply": 2,
+  "broad_search": 1,
+  "edits_without_verify": 2,
+  "edit_thrash": 3,
+  "stall_nudge": 1,
+  "untracked_changes": 1
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Fixed UTF-8 byte/string chunk mixing in both writable streams.\n\nChanges:\n- Added `src/Utf8Decoder.ts`: a shared incremental UTF-8 decoder. It buffers incomplete multi-byte sequences, exposes `flush()`/`end()` that emit U+FFFD for pending incomplete bytes, and strips a leading BOM only when it is at the very start of the stream (BOM detection is cancelled once any prior content \u2014 string or bytes \u2014 "
+}

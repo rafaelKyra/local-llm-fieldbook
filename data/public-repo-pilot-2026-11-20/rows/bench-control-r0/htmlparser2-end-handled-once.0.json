@@ -1,0 +1,65 @@
+{
+ "id": "htmlparser2-end-handled-once",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": false,
+ "hidden": true,
+ "seconds": 116.206,
+ "crash": null,
+ "status": "budget",
+ "stopReason": "tool budget exhausted",
+ "profile": "medium",
+ "usage": {
+  "turns": 44,
+  "toolCalls": 60,
+  "inputTokens": 1266380,
+  "outputTokens": 24746,
+  "lastInputTokens": 30867,
+  "peakInputTokens": 46499,
+  "modelCalls": 52,
+  "usageReportedCalls": 52,
+  "cacheReadTokens": 1177972,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 52,
+  "roles": {
+   "main": {
+    "calls": 44,
+    "reportedInput": 44,
+    "reportedOutput": 44,
+    "inputTokens": 1223296,
+    "outputTokens": 23832
+   },
+   "explorer": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 43084,
+    "outputTokens": 914
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "broad_search": 1,
+  "read_spiral": 1,
+  "auto_explore": 1,
+  "edits_without_verify": 1,
+  "edit_thrash": 1,
+  "shell_write_refused": 1,
+  "refused_calls": 1
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "The project check is `npm test` (vitest + lint). Let me run it with verify."
+}

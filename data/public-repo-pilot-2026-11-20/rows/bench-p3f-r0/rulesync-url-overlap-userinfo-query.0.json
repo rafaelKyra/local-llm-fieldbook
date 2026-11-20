@@ -1,0 +1,68 @@
+{
+ "id": "rulesync-url-overlap-userinfo-query",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": false,
+ "hidden": true,
+ "seconds": 371.91,
+ "crash": null,
+ "status": "unverified",
+ "stopReason": "finished without a passing check",
+ "profile": "medium",
+ "usage": {
+  "turns": 44,
+  "toolCalls": 42,
+  "inputTokens": 1303688,
+  "outputTokens": 24404,
+  "lastInputTokens": 23925,
+  "peakInputTokens": 46503,
+  "modelCalls": 44,
+  "usageReportedCalls": 44,
+  "cacheReadTokens": 1203753,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 44,
+  "roles": {
+   "main": {
+    "calls": 44,
+    "reportedInput": 44,
+    "reportedOutput": 44,
+    "inputTokens": 1303688,
+    "outputTokens": 24404
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "truncated_reply": 1,
+  "broad_search": 1,
+  "read_spiral": 1,
+  "untracked_changes": 1,
+  "edits_without_verify": 1,
+  "edit_thrash": 1,
+  "finish_without_verify": 4,
+  "check_repeated": 1,
+  "claimed_without_verify": 1,
+  "refused_calls": 4
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Fixed the web-fetch overlap bypass in `src/features/permissions/shadowed-allows.ts`. `normalizeUrlPattern` and `splitUrlPattern` now strip userinfo (the part before the last `@` in the authority), a query string (from the first `?`) and a fragment (from the first `#`), so `https://user@example.com/x`, `https://example.com/x?y=1` and `example.com/x#top` all compare as `example.com/x` while the host"
+}

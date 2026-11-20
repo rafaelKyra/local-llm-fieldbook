@@ -1,0 +1,68 @@
+{
+ "id": "solid-router-history-depth-capped-length",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": false,
+ "hidden": true,
+ "seconds": 216.902,
+ "crash": null,
+ "status": "unverified",
+ "stopReason": "finished without a passing check",
+ "profile": "medium",
+ "usage": {
+  "turns": 47,
+  "toolCalls": 44,
+  "inputTokens": 1620066,
+  "outputTokens": 49201,
+  "lastInputTokens": 68828,
+  "peakInputTokens": 69576,
+  "modelCalls": 47,
+  "usageReportedCalls": 47,
+  "cacheReadTokens": 1566725,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 47,
+  "roles": {
+   "main": {
+    "calls": 47,
+    "reportedInput": 47,
+    "reportedOutput": 47,
+    "inputTokens": 1620066,
+    "outputTokens": 49201
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "non_discriminating_check": 5,
+  "truncated_reply": 1,
+  "regression": 4,
+  "check_repeated": 1,
+  "finish_without_verify": 4,
+  "untracked_changes": 1,
+  "edits_without_verify": 1,
+  "edit_thrash": 1,
+  "claimed_without_verify": 1,
+  "refused_calls": 5
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Fixed depth stamping for entries pushed outside the router when the browser caps `history.length`.\n\nChange: in src/routers/history.ts, `saveCurrentDepth()` now stamps an entry lacking `_depth` as `depth + 1` (counting up from the last known depth) instead of `history.length - 1`, which repeated the lower depth while the cap (50) froze `history.length`. A fresh load with no known depth still establ"
+}

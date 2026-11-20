@@ -1,0 +1,59 @@
+{
+ "id": "htmlparser2-end-handled-once",
+ "category": "public",
+ "rep": 0,
+ "verdict": "blocked",
+ "visible": false,
+ "hidden": false,
+ "seconds": 7.505,
+ "crash": null,
+ "status": "blocked",
+ "stopReason": "model kept returning empty replies",
+ "profile": "medium",
+ "usage": {
+  "turns": 5,
+  "toolCalls": 1,
+  "inputTokens": 1958,
+  "outputTokens": 49,
+  "lastInputTokens": 1958,
+  "peakInputTokens": 1958,
+  "modelCalls": 5,
+  "usageReportedCalls": 1,
+  "cacheReadTokens": 9,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 1,
+  "roles": {
+   "main": {
+    "calls": 5,
+    "reportedInput": 1,
+    "reportedOutput": 1,
+    "inputTokens": 1958,
+    "outputTokens": 49
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "empty_reply": 4
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Stopped: model kept returning empty replies."
+}

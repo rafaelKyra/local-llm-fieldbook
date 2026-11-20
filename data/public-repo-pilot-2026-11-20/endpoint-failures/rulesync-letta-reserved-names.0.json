@@ -1,0 +1,65 @@
+{
+ "id": "rulesync-letta-reserved-names",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": false,
+ "hidden": true,
+ "seconds": 178.108,
+ "crash": null,
+ "status": "blocked",
+ "stopReason": "model kept returning empty replies",
+ "profile": "medium",
+ "usage": {
+  "turns": 33,
+  "toolCalls": 30,
+  "inputTokens": 464217,
+  "outputTokens": 5878,
+  "lastInputTokens": 26412,
+  "peakInputTokens": 26412,
+  "modelCalls": 33,
+  "usageReportedCalls": 26,
+  "cacheReadTokens": 381470,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 26,
+  "roles": {
+   "main": {
+    "calls": 33,
+    "reportedInput": 26,
+    "reportedOutput": 26,
+    "inputTokens": 464217,
+    "outputTokens": 5878
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "broad_search": 1,
+  "regression": 2,
+  "auto_revert": 1,
+  "stall_nudge": 1,
+  "empty_reply": 7,
+  "finish_without_verify": 1,
+  "refused_calls": 1
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Let me run a final verification to confirm the current files pass the check."
+}

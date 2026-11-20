@@ -1,0 +1,68 @@
+{
+ "id": "htmlparser2-implicit-close-p",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": false,
+ "hidden": true,
+ "seconds": 142.53,
+ "crash": null,
+ "status": "unverified",
+ "stopReason": "finished without a passing check",
+ "profile": "medium",
+ "usage": {
+  "turns": 32,
+  "toolCalls": 28,
+  "inputTokens": 838464,
+  "outputTokens": 20044,
+  "lastInputTokens": 42317,
+  "peakInputTokens": 42317,
+  "modelCalls": 32,
+  "usageReportedCalls": 32,
+  "cacheReadTokens": 757193,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 32,
+  "roles": {
+   "main": {
+    "calls": 32,
+    "reportedInput": 32,
+    "reportedOutput": 32,
+    "inputTokens": 838464,
+    "outputTokens": 20044
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "broad_search": 1,
+  "read_spiral": 1,
+  "edits_without_verify": 1,
+  "edit_thrash": 1,
+  "regression": 1,
+  "check_repeated": 2,
+  "finish_without_verify": 4,
+  "untracked_changes": 1,
+  "claimed_without_verify": 1,
+  "refused_calls": 5
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Fixed implicit tag closing in the HTML parser to match browsers.\n\nChanges in src/Parser.ts (openImpliesClose):\n- `<li>` now implies closing an open `<p>` (set became {li, p}).\n- `dd`/`dt` share `ddtTags`, now {dd, dt, p}, so a new term/description closes an open `<p>` (and the sibling term) before opening.\n- Added `listing`, `plaintext`, and `xmp` entries (pTag) so those start tags close an open `"
+}

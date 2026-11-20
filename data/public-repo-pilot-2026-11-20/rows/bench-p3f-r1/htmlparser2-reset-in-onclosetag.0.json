@@ -1,0 +1,65 @@
+{
+ "id": "htmlparser2-reset-in-onclosetag",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": true,
+ "hidden": true,
+ "seconds": 46.889,
+ "crash": null,
+ "status": "completed",
+ "stopReason": "finished",
+ "profile": "medium",
+ "usage": {
+  "turns": 23,
+  "toolCalls": 23,
+  "inputTokens": 261006,
+  "outputTokens": 7379,
+  "lastInputTokens": 16018,
+  "peakInputTokens": 16553,
+  "modelCalls": 23,
+  "usageReportedCalls": 23,
+  "cacheReadTokens": 244104,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 23,
+  "roles": {
+   "main": {
+    "calls": 23,
+    "reportedInput": 23,
+    "reportedOutput": 23,
+    "inputTokens": 261006,
+    "outputTokens": 7379
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "broad_search": 1,
+  "read_spiral": 1,
+  "untracked_changes": 1,
+  "shell_write_refused": 2,
+  "regression": 1,
+  "check_repeated": 1,
+  "refused_calls": 3
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Fixed the parser so calling `parser.reset()` inside an `onclosetag` callback stops it from closing elements that were open before the reset.\n\nRoot cause: in `Parser.onclosetag` (src/Parser.ts), the loop that implicitly closes intermediate elements (and the trailing `popElement(false)` that closes the target) kept running off stale indices after a reset emptied `this.stack`, popping `undefined` and"
+}

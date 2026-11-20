@@ -1,0 +1,66 @@
+{
+ "id": "solid-router-history-depth-capped-length",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": false,
+ "hidden": true,
+ "seconds": 129.034,
+ "crash": null,
+ "status": "unverified",
+ "stopReason": "finished without a passing check",
+ "profile": "medium",
+ "usage": {
+  "turns": 35,
+  "toolCalls": 35,
+  "inputTokens": 849683,
+  "outputTokens": 27245,
+  "lastInputTokens": 41428,
+  "peakInputTokens": 41428,
+  "modelCalls": 35,
+  "usageReportedCalls": 35,
+  "cacheReadTokens": 779769,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 35,
+  "roles": {
+   "main": {
+    "calls": 35,
+    "reportedInput": 35,
+    "reportedOutput": 35,
+    "inputTokens": 849683,
+    "outputTokens": 27245
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "truncated_reply": 1,
+  "broad_search": 1,
+  "edit_thrash": 1,
+  "finish_without_verify": 4,
+  "check_repeated": 1,
+  "shell_write_refused": 1,
+  "claimed_without_verify": 1,
+  "refused_calls": 6
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Fixed the browser-history depth stamping bug in src/routers/history.ts: saveCurrentDepth now stamps an entry that lacks a depth (e.g. a plain history.pushState(null, \"\", \"/#anchor\") done outside the router, followed by popstate) with `depth + 1`, counting up from the last known depth, instead of `history.length - 1` (which collides once the browser caps history.length at 50). It still falls back t"
+}

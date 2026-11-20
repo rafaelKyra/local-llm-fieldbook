@@ -1,0 +1,60 @@
+{
+ "id": "nansen-csv-quotes-before-number",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": true,
+ "hidden": true,
+ "seconds": 144.374,
+ "crash": null,
+ "status": "completed",
+ "stopReason": "finished",
+ "profile": "medium",
+ "usage": {
+  "turns": 22,
+  "toolCalls": 21,
+  "inputTokens": 333269,
+  "outputTokens": 19793,
+  "lastInputTokens": 28446,
+  "peakInputTokens": 28446,
+  "modelCalls": 22,
+  "usageReportedCalls": 22,
+  "cacheReadTokens": 304102,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 22,
+  "roles": {
+   "main": {
+    "calls": 22,
+    "reportedInput": 22,
+    "reportedOutput": 22,
+    "inputTokens": 333269,
+    "outputTokens": 19793
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "broad_search": 1,
+  "truncated_reply": 1
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Fixed `formatCsv` CSV formula-injection neutralization so a trigger behind leading quotes is treated correctly.\n\nChanged `neutralizeMidCellPieces` in `src/cli.js`: instead of testing `CSV_NUMBER_LITERAL`/`CSV_NUMBER_THEN_QUOTE` against the whole piece (which includes leading quotes and therefore never matches a number), it now strips leading quote characters (which read as an empty string) before "
+}

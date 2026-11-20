@@ -1,0 +1,65 @@
+{
+ "id": "acp-model-preference-newest-row",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": true,
+ "hidden": true,
+ "seconds": 158.858,
+ "crash": null,
+ "status": "completed",
+ "stopReason": "finished",
+ "profile": "medium",
+ "usage": {
+  "turns": 28,
+  "toolCalls": 38,
+  "inputTokens": 637741,
+  "outputTokens": 22344,
+  "lastInputTokens": 27976,
+  "peakInputTokens": 41043,
+  "modelCalls": 36,
+  "usageReportedCalls": 36,
+  "cacheReadTokens": 556769,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 36,
+  "roles": {
+   "main": {
+    "calls": 28,
+    "reportedInput": 28,
+    "reportedOutput": 28,
+    "inputTokens": 591387,
+    "outputTokens": 20580
+   },
+   "explorer": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 46354,
+    "outputTokens": 1764
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "broad_search": 1,
+  "read_spiral": 1,
+  "truncated_reply": 1,
+  "auto_explore": 1,
+  "edits_without_verify": 1,
+  "shell_write_refused": 1,
+  "refused_calls": 1
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Fixed model-preference resolution against an `availableModels` allowlist holding several versions of a family.\n\nWhat changed (src/session-model.ts):\n- Added `rankedFamilyVersion(model)` (uses `familyVersionOf` on `value`, falling back to `resolvedModel`) and `bestNewestModel(models)`, which ranks matching rows newest-first by family version, with rows that carry no version (e.g. `my-opus`) ranked "
+}

@@ -1,0 +1,67 @@
+{
+ "id": "minisearch-browser-model-loaded-once",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": false,
+ "hidden": true,
+ "seconds": 152.41,
+ "crash": null,
+ "status": "budget",
+ "stopReason": "tool budget exhausted",
+ "profile": "medium",
+ "usage": {
+  "turns": 42,
+  "toolCalls": 60,
+  "inputTokens": 1147020,
+  "outputTokens": 30232,
+  "lastInputTokens": 47849,
+  "peakInputTokens": 47849,
+  "modelCalls": 48,
+  "usageReportedCalls": 48,
+  "cacheReadTokens": 1056372,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 48,
+  "roles": {
+   "main": {
+    "calls": 42,
+    "reportedInput": 42,
+    "reportedOutput": 42,
+    "inputTokens": 1117682,
+    "outputTokens": 28496
+   },
+   "explorer": {
+    "calls": 6,
+    "reportedInput": 6,
+    "reportedOutput": 6,
+    "inputTokens": 29338,
+    "outputTokens": 1736
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "broad_search": 1,
+  "auto_explore": 1,
+  "read_spiral": 1,
+  "truncated_reply": 1,
+  "edits_without_verify": 1,
+  "shell_write_refused": 1,
+  "edit_thrash": 1,
+  "finish_without_verify": 1,
+  "refused_calls": 2
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "The full `npm test` suite cannot fully pass because the sandbox blocks reading `wllama.wasm` (an environment limitation unrelated to my change). Let me run the check scoped to the affected module to confirm those pass as the project check."
+}

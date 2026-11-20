@@ -1,0 +1,67 @@
+{
+ "id": "rulesync-letta-reserved-names",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": false,
+ "hidden": true,
+ "seconds": 624.872,
+ "crash": null,
+ "status": "unverified",
+ "stopReason": "finished without a passing check",
+ "profile": "medium",
+ "usage": {
+  "turns": 44,
+  "toolCalls": 43,
+  "inputTokens": 1186186,
+  "outputTokens": 20392,
+  "lastInputTokens": 26557,
+  "peakInputTokens": 48807,
+  "modelCalls": 44,
+  "usageReportedCalls": 44,
+  "cacheReadTokens": 1113035,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 44,
+  "roles": {
+   "main": {
+    "calls": 44,
+    "reportedInput": 44,
+    "reportedOutput": 44,
+    "inputTokens": 1186186,
+    "outputTokens": 20392
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "broad_search": 2,
+  "invalid_arguments": 1,
+  "regression": 1,
+  "finish_without_verify": 4,
+  "check_repeated": 1,
+  "untracked_changes": 1,
+  "shell_write_refused": 4,
+  "claimed_without_verify": 1,
+  "refused_calls": 10
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "[939 characters, masked]"
+}

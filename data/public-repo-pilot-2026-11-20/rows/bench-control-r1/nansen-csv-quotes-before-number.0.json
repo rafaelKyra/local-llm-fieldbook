@@ -1,0 +1,62 @@
+{
+ "id": "nansen-csv-quotes-before-number",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": true,
+ "hidden": true,
+ "seconds": 504.959,
+ "crash": null,
+ "status": "completed",
+ "stopReason": "finished",
+ "profile": "medium",
+ "usage": {
+  "turns": 26,
+  "toolCalls": 28,
+  "inputTokens": 627068,
+  "outputTokens": 26608,
+  "lastInputTokens": 41842,
+  "peakInputTokens": 41842,
+  "modelCalls": 26,
+  "usageReportedCalls": 26,
+  "cacheReadTokens": 593393,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 26,
+  "roles": {
+   "main": {
+    "calls": 26,
+    "reportedInput": 26,
+    "reportedOutput": 26,
+    "inputTokens": 627068,
+    "outputTokens": 26608
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "truncated_reply": 1,
+  "broad_search": 1,
+  "edits_without_verify": 1,
+  "edit_thrash": 1
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Fixed `formatCsv` spreadsheet-formula neutralization so a plain number behind leading quote characters in a `;`/tab/newline-split piece is left alone, while non-number triggers behind quotes are still prefixed with `'`.\n\nChanges:\n- `src/cli.js` \u2014 in `neutralizeMidCellPieces`, the number checks (`CSV_NUMBER_LITERAL` and `CSV_NUMBER_THEN_QUOTE`) now run on the piece with leading quotes stripped (`pi"
+}

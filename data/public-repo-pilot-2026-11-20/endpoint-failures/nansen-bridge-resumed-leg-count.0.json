@@ -1,0 +1,59 @@
+{
+ "id": "nansen-bridge-resumed-leg-count",
+ "category": "public",
+ "rep": 0,
+ "verdict": "blocked",
+ "visible": false,
+ "hidden": false,
+ "seconds": 5.178,
+ "crash": null,
+ "status": "blocked",
+ "stopReason": "model kept returning empty replies",
+ "profile": "medium",
+ "usage": {
+  "turns": 6,
+  "toolCalls": 1,
+  "inputTokens": 1869,
+  "outputTokens": 49,
+  "lastInputTokens": 1869,
+  "peakInputTokens": 1869,
+  "modelCalls": 6,
+  "usageReportedCalls": 1,
+  "cacheReadTokens": 0,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 1,
+  "roles": {
+   "main": {
+    "calls": 6,
+    "reportedInput": 1,
+    "reportedOutput": 1,
+    "inputTokens": 1869,
+    "outputTokens": 49
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "empty_reply": 5
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Stopped: model kept returning empty replies."
+}

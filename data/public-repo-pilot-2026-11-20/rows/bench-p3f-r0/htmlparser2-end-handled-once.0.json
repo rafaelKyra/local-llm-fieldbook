@@ -1,0 +1,64 @@
+{
+ "id": "htmlparser2-end-handled-once",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": false,
+ "hidden": true,
+ "seconds": 179.862,
+ "crash": null,
+ "status": "budget",
+ "stopReason": "tool budget exhausted",
+ "profile": "medium",
+ "usage": {
+  "turns": 61,
+  "toolCalls": 60,
+  "inputTokens": 1871357,
+  "outputTokens": 41866,
+  "lastInputTokens": 46184,
+  "peakInputTokens": 46184,
+  "modelCalls": 61,
+  "usageReportedCalls": 61,
+  "cacheReadTokens": 1788849,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 61,
+  "roles": {
+   "main": {
+    "calls": 61,
+    "reportedInput": 61,
+    "reportedOutput": 61,
+    "inputTokens": 1871357,
+    "outputTokens": 41866
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "broad_search": 1,
+  "read_spiral": 1,
+  "truncated_reply": 2,
+  "untracked_changes": 1,
+  "edits_without_verify": 1,
+  "edit_thrash": 1
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "The lint rule wants private fields before public. Let me reorder."
+}

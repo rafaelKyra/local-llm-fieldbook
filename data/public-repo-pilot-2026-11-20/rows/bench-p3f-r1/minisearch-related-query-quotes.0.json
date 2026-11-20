@@ -1,0 +1,57 @@
+{
+ "id": "minisearch-related-query-quotes",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": true,
+ "hidden": true,
+ "seconds": 11.559,
+ "crash": null,
+ "status": "completed",
+ "stopReason": "finished",
+ "profile": "medium",
+ "usage": {
+  "turns": 9,
+  "toolCalls": 10,
+  "inputTokens": 65611,
+  "outputTokens": 2744,
+  "lastInputTokens": 10688,
+  "peakInputTokens": 10688,
+  "modelCalls": 9,
+  "usageReportedCalls": 9,
+  "cacheReadTokens": 54648,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 9,
+  "roles": {
+   "main": {
+    "calls": 9,
+    "reportedInput": 9,
+    "reportedOutput": 9,
+    "inputTokens": 65611,
+    "outputTokens": 2744
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {},
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Fixed `client/modules/relatedSearchQuery.ts` so the related-search query strips typographic quotes in addition to straight quotes. The quote-stripping logic now recognizes curly double/single quotes (\u201e \u201d, \u2018 \u2019), corner brackets (\u300c \u300d), and guillemets (\u00ab \u00bb) and repeatedly trims any of them from either end of the generated query. Added an `it.each` case to `client/modules/relatedSearchQuery.test.ts` c"
+}

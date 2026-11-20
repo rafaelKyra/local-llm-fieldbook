@@ -1,0 +1,63 @@
+{
+ "id": "nansen-perp-transfer-dry-run-testnet",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": true,
+ "hidden": true,
+ "seconds": 632.568,
+ "crash": null,
+ "status": "completed",
+ "stopReason": "finished",
+ "profile": "medium",
+ "usage": {
+  "turns": 27,
+  "toolCalls": 45,
+  "inputTokens": 610141,
+  "outputTokens": 13358,
+  "lastInputTokens": 22103,
+  "peakInputTokens": 34556,
+  "modelCalls": 35,
+  "usageReportedCalls": 35,
+  "cacheReadTokens": 534380,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 35,
+  "roles": {
+   "main": {
+    "calls": 27,
+    "reportedInput": 27,
+    "reportedOutput": 27,
+    "inputTokens": 542456,
+    "outputTokens": 10811
+   },
+   "explorer": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 67685,
+    "outputTokens": 2547
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "broad_search": 1,
+  "read_spiral": 1,
+  "auto_explore": 1,
+  "finish_without_verify": 1,
+  "refused_calls": 1
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Fixed `perp transfer --dry-run` ignoring the testnet guard. Root cause: transfer's buildPlan performs no proxy reads, so the network check in buildScreenSignSubmit (only reached after user confirmation) never fired on a dry run \u2014 so a preview succeeded where a real run refused. Added an explicit assertPerpNetworkSupported() call in the transfer handler in src/perp.js (after input validation), so d"
+}

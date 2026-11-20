@@ -1,0 +1,63 @@
+{
+ "id": "htmlparser2-implicit-close-p",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": true,
+ "hidden": true,
+ "seconds": 49.763,
+ "crash": null,
+ "status": "completed",
+ "stopReason": "finished",
+ "profile": "medium",
+ "usage": {
+  "turns": 25,
+  "toolCalls": 26,
+  "inputTokens": 294274,
+  "outputTokens": 8543,
+  "lastInputTokens": 19112,
+  "peakInputTokens": 19112,
+  "modelCalls": 25,
+  "usageReportedCalls": 25,
+  "cacheReadTokens": 273190,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 25,
+  "roles": {
+   "main": {
+    "calls": 25,
+    "reportedInput": 25,
+    "reportedOutput": 25,
+    "inputTokens": 294274,
+    "outputTokens": 8543
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "read_spiral": 1,
+  "broad_search": 1,
+  "edits_without_verify": 1,
+  "edit_thrash": 1,
+  "untracked_changes": 2
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Fixed the parser's implicit tag closing in src/Parser.ts's openImpliesClose map:\n\n1. Added `[\"listing\", pTag]` so an open `<listing>` start tag closes an open `<p>` (case 1).\n2. Changed `<li>` to close `[\"li\", \"p\"]` and `<dd>`/`<dt>` to close `[\"dd\", \"dt\", \"p\"]`, so an open `<p>` inside a list item or definition term/description is closed before the next sibling item starts (case 2). Because the p"
+}

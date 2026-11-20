@@ -1,0 +1,65 @@
+{
+ "id": "solid-router-template-anchor-preload",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": false,
+ "hidden": true,
+ "seconds": 116.661,
+ "crash": null,
+ "status": "budget",
+ "stopReason": "tool budget exhausted",
+ "profile": "medium",
+ "usage": {
+  "turns": 46,
+  "toolCalls": 60,
+  "inputTokens": 1028351,
+  "outputTokens": 13483,
+  "lastInputTokens": 27152,
+  "peakInputTokens": 35460,
+  "modelCalls": 54,
+  "usageReportedCalls": 54,
+  "cacheReadTokens": 933418,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 54,
+  "roles": {
+   "main": {
+    "calls": 46,
+    "reportedInput": 46,
+    "reportedOutput": 46,
+    "inputTokens": 976413,
+    "outputTokens": 12590
+   },
+   "explorer": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 51938,
+    "outputTokens": 893
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "broad_search": 1,
+  "auto_explore": 1,
+  "read_spiral": 1,
+  "edits_without_verify": 1,
+  "edit_thrash": 1,
+  "shell_write_refused": 1,
+  "refused_calls": 1
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Now let me remove the temporary reproduction file and run the full test suite."
+}

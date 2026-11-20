@@ -1,0 +1,62 @@
+{
+ "id": "nansen-csv-quotes-before-number",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": true,
+ "hidden": true,
+ "seconds": 129.17,
+ "crash": null,
+ "status": "completed",
+ "stopReason": "finished",
+ "profile": "medium",
+ "usage": {
+  "turns": 21,
+  "toolCalls": 21,
+  "inputTokens": 343784,
+  "outputTokens": 18078,
+  "lastInputTokens": 27382,
+  "peakInputTokens": 27382,
+  "modelCalls": 21,
+  "usageReportedCalls": 21,
+  "cacheReadTokens": 320173,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 21,
+  "roles": {
+   "main": {
+    "calls": 21,
+    "reportedInput": 21,
+    "reportedOutput": 21,
+    "inputTokens": 343784,
+    "outputTokens": 18078
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "broad_search": 1,
+  "truncated_reply": 1,
+  "edits_without_verify": 1,
+  "edit_thrash": 1
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Fixed CSV formula-injection neutralization in `src/cli.js` (`neutralizeMidCellPieces`): pieces split off by `;`/tab/newline are now checked for a plain number literal after stripping leading quotes, so a number behind leading quotes (e.g. `\"-5`, `\"+1e3`) is left alone, while a non-numeric trigger behind quotes (`\"-5&1`, `\"\"=1`) is still prefixed with `'`. Updated `src/__tests__/cli.internal.test.j"
+}

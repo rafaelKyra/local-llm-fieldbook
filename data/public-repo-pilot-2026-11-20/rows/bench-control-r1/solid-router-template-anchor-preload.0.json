@@ -1,0 +1,65 @@
+{
+ "id": "solid-router-template-anchor-preload",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": false,
+ "hidden": true,
+ "seconds": 111.022,
+ "crash": null,
+ "status": "budget",
+ "stopReason": "tool budget exhausted",
+ "profile": "medium",
+ "usage": {
+  "turns": 39,
+  "toolCalls": 60,
+  "inputTokens": 1054400,
+  "outputTokens": 22343,
+  "lastInputTokens": 26570,
+  "peakInputTokens": 43802,
+  "modelCalls": 47,
+  "usageReportedCalls": 47,
+  "cacheReadTokens": 971330,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 47,
+  "roles": {
+   "main": {
+    "calls": 39,
+    "reportedInput": 39,
+    "reportedOutput": 39,
+    "inputTokens": 1004046,
+    "outputTokens": 21041
+   },
+   "explorer": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 50354,
+    "outputTokens": 1302
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "broad_search": 1,
+  "read_spiral": 1,
+  "auto_explore": 1,
+  "edits_without_verify": 1,
+  "shell_write_refused": 1,
+  "edit_thrash": 1,
+  "refused_calls": 1
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "The `navigation-pending` failures are environmental (jsdom's unimplemented `window.scrollTo` breaking log ordering) and entirely independent of my change \u2014 that test file doesn't touch `events.ts`/preload code, and it fails the same way on its own. Let me run the check that actually proves my fix \u2014 the events suite covering preload:"
+}

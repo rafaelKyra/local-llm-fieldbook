@@ -1,0 +1,68 @@
+{
+ "id": "rulesync-opencode-file-reference",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": false,
+ "hidden": true,
+ "seconds": 450.858,
+ "crash": null,
+ "status": "unverified",
+ "stopReason": "finished without a passing check",
+ "profile": "medium",
+ "usage": {
+  "turns": 46,
+  "toolCalls": 48,
+  "inputTokens": 1039292,
+  "outputTokens": 17370,
+  "lastInputTokens": 40536,
+  "peakInputTokens": 40536,
+  "modelCalls": 46,
+  "usageReportedCalls": 46,
+  "cacheReadTokens": 969763,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 46,
+  "roles": {
+   "main": {
+    "calls": 46,
+    "reportedInput": 46,
+    "reportedOutput": 46,
+    "inputTokens": 1039292,
+    "outputTokens": 17370
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "broad_search": 1,
+  "read_spiral": 1,
+  "edits_without_verify": 1,
+  "edit_thrash": 1,
+  "untracked_changes": 1,
+  "finish_without_verify": 4,
+  "check_repeated": 2,
+  "regression": 1,
+  "claimed_without_verify": 1,
+  "refused_calls": 6
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Fixed `{file:...}` reference resolution in `src/features/opencode-config.ts` `resolveOpencodeFileTemplate`.\n\nChanges:\n- An absolute reference (`{file:/abs/...}`) is now read as written instead of being joined onto the config directory.\n- A `~/`-prefixed reference is expanded via the project's `getHomeDirectory()` helper (which honours `HOME_DIR`).\n- Relative references still resolve against `confi"
+}

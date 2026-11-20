@@ -1,0 +1,66 @@
+{
+ "id": "minisearch-browser-model-loaded-once",
+ "category": "public",
+ "rep": 0,
+ "verdict": "budget",
+ "visible": false,
+ "hidden": false,
+ "seconds": 142.466,
+ "crash": null,
+ "status": "budget",
+ "stopReason": "tool budget exhausted",
+ "profile": "medium",
+ "usage": {
+  "turns": 39,
+  "toolCalls": 60,
+  "inputTokens": 1087559,
+  "outputTokens": 33177,
+  "lastInputTokens": 33891,
+  "peakInputTokens": 48882,
+  "modelCalls": 47,
+  "usageReportedCalls": 47,
+  "cacheReadTokens": 963721,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 47,
+  "roles": {
+   "main": {
+    "calls": 39,
+    "reportedInput": 39,
+    "reportedOutput": 39,
+    "inputTokens": 1048648,
+    "outputTokens": 31212
+   },
+   "explorer": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 38911,
+    "outputTokens": 1965
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "broad_search": 1,
+  "read_spiral": 1,
+  "auto_explore": 1,
+  "truncated_reply": 1,
+  "edits_without_verify": 1,
+  "edit_thrash": 1,
+  "finish_without_verify": 2,
+  "refused_calls": 2
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "The error \"Denied ID\" appears to come from inside the repo's own tooling. Let me search for what denies module IDs:"
+}

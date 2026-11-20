@@ -1,0 +1,62 @@
+{
+ "id": "acp-dispose-settings-on-refused-options",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": true,
+ "hidden": true,
+ "seconds": 96.458,
+ "crash": null,
+ "status": "completed",
+ "stopReason": "finished",
+ "profile": "medium",
+ "usage": {
+  "turns": 29,
+  "toolCalls": 43,
+  "inputTokens": 472640,
+  "outputTokens": 7326,
+  "lastInputTokens": 16156,
+  "peakInputTokens": 24473,
+  "modelCalls": 37,
+  "usageReportedCalls": 37,
+  "cacheReadTokens": 408927,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 37,
+  "roles": {
+   "main": {
+    "calls": 29,
+    "reportedInput": 29,
+    "reportedOutput": 29,
+    "inputTokens": 424874,
+    "outputTokens": 5938
+   },
+   "explorer": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 47766,
+    "outputTokens": 1388
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "broad_search": 1,
+  "read_spiral": 1,
+  "auto_explore": 1,
+  "edits_without_verify": 1
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Fixed the settings-manager leak when the Claude SDK refuses session options by throwing synchronously from its `query()` call.\n\nChanges:\n- `src/v1/acp-agent.ts` (createSession, used by v1 `newSession`): wrapped the `query()` call in a try/catch. If it throws synchronously, `settingsManager.dispose()` is called once and the original error is rethrown (so the v1 agent rejects with the same error obj"
+}

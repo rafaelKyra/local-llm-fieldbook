@@ -1,0 +1,70 @@
+{
+ "id": "htmlparser2-end-handled-once",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": true,
+ "hidden": true,
+ "seconds": 201.119,
+ "crash": null,
+ "status": "budget",
+ "stopReason": "tool budget exhausted",
+ "profile": "medium",
+ "usage": {
+  "turns": 61,
+  "toolCalls": 60,
+  "inputTokens": 1724887,
+  "outputTokens": 32741,
+  "lastInputTokens": 39141,
+  "peakInputTokens": 48262,
+  "modelCalls": 61,
+  "usageReportedCalls": 61,
+  "cacheReadTokens": 1635664,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 61,
+  "roles": {
+   "main": {
+    "calls": 61,
+    "reportedInput": 61,
+    "reportedOutput": 61,
+    "inputTokens": 1724887,
+    "outputTokens": 32741
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "read_spiral": 1,
+  "broad_search": 1,
+  "untracked_changes": 1,
+  "truncated_reply": 1,
+  "edits_without_verify": 1,
+  "edit_thrash": 2,
+  "shell_write_refused": 1,
+  "regression": 2,
+  "same_error": 1,
+  "auto_revert": 1,
+  "stall_nudge": 1,
+  "refused_calls": 1
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "All checks pass. Let me review the final Tokenizer.ts changes:"
+}

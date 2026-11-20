@@ -1,0 +1,68 @@
+{
+ "id": "rulesync-opencode-file-reference",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": false,
+ "hidden": true,
+ "seconds": 294.403,
+ "crash": null,
+ "status": "unverified",
+ "stopReason": "finished without a passing check",
+ "profile": "medium",
+ "usage": {
+  "turns": 38,
+  "toolCalls": 55,
+  "inputTokens": 930953,
+  "outputTokens": 16341,
+  "lastInputTokens": 37527,
+  "peakInputTokens": 37593,
+  "modelCalls": 45,
+  "usageReportedCalls": 45,
+  "cacheReadTokens": 876549,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 45,
+  "roles": {
+   "main": {
+    "calls": 38,
+    "reportedInput": 38,
+    "reportedOutput": 38,
+    "inputTokens": 888320,
+    "outputTokens": 14631
+   },
+   "explorer": {
+    "calls": 7,
+    "reportedInput": 7,
+    "reportedOutput": 7,
+    "inputTokens": 42633,
+    "outputTokens": 1710
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "broad_search": 1,
+  "read_spiral": 1,
+  "auto_explore": 1,
+  "edits_without_verify": 1,
+  "untracked_changes": 1,
+  "regression": 1,
+  "finish_without_verify": 4,
+  "check_repeated": 1,
+  "claimed_without_verify": 1,
+  "refused_calls": 4
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Fixed {file:...} reference resolution in resolveOpencodeFileTemplate (src/features/opencode-config.ts). Added isAbsolute and getHomeDirectory imports. Now: an absolute reference is read as written (no longer appended to configDir); a ~/ reference is expanded against the home dir via getHomeDirectory, which honours HOME_DIR; and the containmentRoot check applies to both \u2014 inside-root absolute/~ ref"
+}

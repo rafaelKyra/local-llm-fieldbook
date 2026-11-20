@@ -1,0 +1,68 @@
+{
+ "id": "htmlparser2-implicit-close-p",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": true,
+ "hidden": true,
+ "seconds": 87.162,
+ "crash": null,
+ "status": "completed",
+ "stopReason": "finished",
+ "profile": "medium",
+ "usage": {
+  "turns": 31,
+  "toolCalls": 43,
+  "inputTokens": 708390,
+  "outputTokens": 18157,
+  "lastInputTokens": 33346,
+  "peakInputTokens": 33346,
+  "modelCalls": 39,
+  "usageReportedCalls": 39,
+  "cacheReadTokens": 641917,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 39,
+  "roles": {
+   "main": {
+    "calls": 31,
+    "reportedInput": 31,
+    "reportedOutput": 31,
+    "inputTokens": 683564,
+    "outputTokens": 17159
+   },
+   "explorer": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 24826,
+    "outputTokens": 998
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "broad_search": 1,
+  "read_spiral": 1,
+  "auto_explore": 1,
+  "edits_without_verify": 1,
+  "edit_thrash": 1,
+  "regression": 1,
+  "finish_without_verify": 2,
+  "check_repeated": 1,
+  "untracked_changes": 1,
+  "refused_calls": 3
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Fixed the parser's implicit tag closing for open paragraphs.\n\nParser fix (src/Parser.ts, openImpliesClose map):\n- Added [\"listing\", pTag], so an opening <listing> now closes an open <p> (case 1).\n- Added \"p\" to the <li> set, so a new list item closes an open <p> first, then the previous item (case 2).\n- Added \"p\" to ddtTags (<dd>/<dt>), so a new definition term/description closes an open <p> first"
+}

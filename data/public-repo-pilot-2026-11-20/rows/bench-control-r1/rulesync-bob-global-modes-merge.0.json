@@ -1,0 +1,61 @@
+{
+ "id": "rulesync-bob-global-modes-merge",
+ "category": "public",
+ "rep": 0,
+ "verdict": "budget",
+ "visible": false,
+ "hidden": false,
+ "seconds": 58.476,
+ "crash": null,
+ "status": "budget",
+ "stopReason": "tool budget exhausted",
+ "profile": "medium",
+ "usage": {
+  "turns": 18,
+  "toolCalls": 60,
+  "inputTokens": 399889,
+  "outputTokens": 9575,
+  "lastInputTokens": 16972,
+  "peakInputTokens": 30998,
+  "modelCalls": 34,
+  "usageReportedCalls": 34,
+  "cacheReadTokens": 320606,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 34,
+  "roles": {
+   "main": {
+    "calls": 18,
+    "reportedInput": 18,
+    "reportedOutput": 18,
+    "inputTokens": 277303,
+    "outputTokens": 5417
+   },
+   "explorer": {
+    "calls": 16,
+    "reportedInput": 16,
+    "reportedOutput": 16,
+    "inputTokens": 122586,
+    "outputTokens": 4158
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "broad_search": 1,
+  "auto_explore": 1,
+  "read_spiral": 1
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Stopped: tool budget exhausted."
+}

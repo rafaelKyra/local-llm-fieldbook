@@ -1,0 +1,63 @@
+{
+ "id": "rulesync-bob-global-modes-merge",
+ "category": "public",
+ "rep": 0,
+ "verdict": "budget",
+ "visible": false,
+ "hidden": false,
+ "seconds": 52.248,
+ "crash": null,
+ "status": "budget",
+ "stopReason": "tool budget exhausted",
+ "profile": "medium",
+ "usage": {
+  "turns": 38,
+  "toolCalls": 60,
+  "inputTokens": 798080,
+  "outputTokens": 12122,
+  "lastInputTokens": 21561,
+  "peakInputTokens": 33343,
+  "modelCalls": 46,
+  "usageReportedCalls": 46,
+  "cacheReadTokens": 704253,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 46,
+  "roles": {
+   "main": {
+    "calls": 38,
+    "reportedInput": 38,
+    "reportedOutput": 38,
+    "inputTokens": 733192,
+    "outputTokens": 8710
+   },
+   "explorer": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 64888,
+    "outputTokens": 3412
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "broad_search": 1,
+  "auto_explore": 1,
+  "read_spiral": 1,
+  "edits_without_verify": 1,
+  "edit_thrash": 1
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Now I understand the task. Let me write a plan and implement."
+}

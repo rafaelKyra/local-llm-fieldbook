@@ -1,0 +1,69 @@
+{
+ "id": "rulesync-opencode-file-reference",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": false,
+ "hidden": true,
+ "seconds": 784.755,
+ "crash": null,
+ "status": "budget",
+ "stopReason": "tool budget exhausted",
+ "profile": "medium",
+ "usage": {
+  "turns": 47,
+  "toolCalls": 60,
+  "inputTokens": 1109300,
+  "outputTokens": 18374,
+  "lastInputTokens": 39886,
+  "peakInputTokens": 40817,
+  "modelCalls": 55,
+  "usageReportedCalls": 55,
+  "cacheReadTokens": 991013,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 55,
+  "roles": {
+   "main": {
+    "calls": 47,
+    "reportedInput": 47,
+    "reportedOutput": 47,
+    "inputTokens": 1069748,
+    "outputTokens": 17092
+   },
+   "explorer": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 39552,
+    "outputTokens": 1282
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "broad_search": 1,
+  "read_spiral": 1,
+  "auto_explore": 1,
+  "edits_without_verify": 1,
+  "edit_thrash": 1,
+  "untracked_changes": 2,
+  "regression": 1,
+  "finish_without_verify": 3,
+  "check_repeated": 1,
+  "shell_write_refused": 1,
+  "refused_calls": 5
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Stopped: tool budget exhausted."
+}

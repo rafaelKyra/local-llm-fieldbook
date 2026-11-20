@@ -1,0 +1,64 @@
+{
+ "id": "rulesync-url-overlap-userinfo-query",
+ "category": "public",
+ "rep": 0,
+ "verdict": "solved",
+ "visible": true,
+ "hidden": true,
+ "seconds": 343.711,
+ "crash": null,
+ "status": "completed",
+ "stopReason": "finished",
+ "profile": "medium",
+ "usage": {
+  "turns": 33,
+  "toolCalls": 33,
+  "inputTokens": 829096,
+  "outputTokens": 21960,
+  "lastInputTokens": 41099,
+  "peakInputTokens": 41099,
+  "modelCalls": 33,
+  "usageReportedCalls": 33,
+  "cacheReadTokens": 746786,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 33,
+  "roles": {
+   "main": {
+    "calls": 33,
+    "reportedInput": 33,
+    "reportedOutput": 33,
+    "inputTokens": 829096,
+    "outputTokens": 21960
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "pathologies": {
+  "truncated_reply": 1,
+  "broad_search": 1,
+  "read_spiral": 1,
+  "edits_without_verify": 1,
+  "edit_thrash": 1,
+  "untracked_changes": 1
+ },
+ "integrity": {
+  "testsModified": [],
+  "protectedRefusals": 0,
+  "restoredBest": false
+ },
+ "bundle": "63f33e9570fca443",
+ "finalMessage": "Fixed `urlPatternsOverlap` (src/features/permissions/shadowed-allows.ts) so URLs carrying userinfo, a query string or a fragment are compared by their host and path only. Added `stripUrlExtras`, which strips the scheme (via the existing `stripUrlSchemeKeepingPathCase`), drops the query (`?\u2026`) and fragment (`#\u2026`), and removes userinfo up to the last `@` in the authority, keeping the host and path. "
+}
