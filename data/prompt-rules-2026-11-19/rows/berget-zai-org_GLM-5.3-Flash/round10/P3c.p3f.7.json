@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "p3f",
+ "rep": 7,
+ "seconds": 23.699,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 845,
+ "addedLines": 8,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 10,
+  "toolCalls": 10,
+  "inputTokens": 25558,
+  "outputTokens": 1750,
+  "lastInputTokens": 3198,
+  "peakInputTokens": 3198,
+  "modelCalls": 10,
+  "usageReportedCalls": 10,
+  "cacheReadTokens": 23168,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 10,
+  "roles": {
+   "main": {
+    "calls": 10,
+    "reportedInput": 10,
+    "reportedOutput": 10,
+    "inputTokens": 25558,
+    "outputTokens": 1750
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: `parse_date()` in feed.py now tries the old ISO format (`%Y-%m-%d`) first and falls back to the vendor's new day-first format (`%d/%m/%Y`), raising a ValueError"
+}

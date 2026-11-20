@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "control",
+ "rep": 4,
+ "seconds": 64.686,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 927,
+ "addedLines": 8,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 11,
+  "toolCalls": 10,
+  "inputTokens": 29481,
+  "outputTokens": 4387,
+  "lastInputTokens": 3400,
+  "peakInputTokens": 3400,
+  "modelCalls": 11,
+  "usageReportedCalls": 11,
+  "cacheReadTokens": 26112,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 11,
+  "roles": {
+   "main": {
+    "calls": 11,
+    "reportedInput": 11,
+    "reportedOutput": 11,
+    "inputTokens": 29481,
+    "outputTokens": 4387
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: parse_date() in feed.py now tries both vendor date formats: the old \"%Y-%m-%d\" (2026-03-04) and the new day-first \"%d/%m/%Y\" (04/03/2026 = 4 March 2026, per the | Files: feed.py (edited); check_new_format.py (new throwaway proof script, kept because shell deletion is not permitted here — it asserts both styles parse, day- | Checks: the fixed verify (no arguments) passed on the current files — 3 tests, OK. Note it also passed before any change (the suite only covers the old format a"
+}

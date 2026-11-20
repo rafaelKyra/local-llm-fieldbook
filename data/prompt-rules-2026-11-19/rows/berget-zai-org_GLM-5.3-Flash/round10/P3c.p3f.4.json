@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "p3f",
+ "rep": 4,
+ "seconds": 30,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 774,
+ "addedLines": 10,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 10,
+  "toolCalls": 10,
+  "inputTokens": 24920,
+  "outputTokens": 1356,
+  "lastInputTokens": 3008,
+  "peakInputTokens": 3008,
+  "modelCalls": 10,
+  "usageReportedCalls": 10,
+  "cacheReadTokens": 22336,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 10,
+  "roles": {
+   "main": {
+    "calls": 10,
+    "reportedInput": 10,
+    "reportedOutput": 10,
+    "inputTokens": 24920,
+    "outputTokens": 1356
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: `parse_date()` in feed.py now accepts both the vendor's old ISO format (`2026-03-04`) and the new day-first slash format (`04/03/2026`), trying `%Y-%m-%d` then "
+}

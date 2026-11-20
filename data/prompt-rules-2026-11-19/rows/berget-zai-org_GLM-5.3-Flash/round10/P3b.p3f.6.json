@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 6,
+ "seconds": 65.01,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 953,
+ "addedLines": 43,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 13,
+  "toolCalls": 13,
+  "inputTokens": 41428,
+  "outputTokens": 3790,
+  "lastInputTokens": 4106,
+  "peakInputTokens": 4106,
+  "modelCalls": 13,
+  "usageReportedCalls": 13,
+  "cacheReadTokens": 34880,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 13,
+  "roles": {
+   "main": {
+    "calls": 13,
+    "reportedInput": 13,
+    "reportedOutput": 13,
+    "inputTokens": 41428,
+    "outputTokens": 3790
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: `save_report()` in report.py now writes crash-safe: it writes the new text to a temp file in the same directory (mkstemp), flushes and fsyncs it, copies the old"
+}

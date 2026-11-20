@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 8,
+ "seconds": 30.633,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 873,
+ "addedLines": 36,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 12,
+  "toolCalls": 11,
+  "inputTokens": 36383,
+  "outputTokens": 2442,
+  "lastInputTokens": 3770,
+  "peakInputTokens": 3770,
+  "modelCalls": 12,
+  "usageReportedCalls": 12,
+  "cacheReadTokens": 33088,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 12,
+  "roles": {
+   "main": {
+    "calls": 12,
+    "reportedInput": 12,
+    "reportedOutput": 12,
+    "inputTokens": 36383,
+    "outputTokens": 2442
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: save_report() in report.py is now crash-safe: it writes to a temp file in the same directory, flushes and fsyncs it, then atomically moves it over the destinati"
+}

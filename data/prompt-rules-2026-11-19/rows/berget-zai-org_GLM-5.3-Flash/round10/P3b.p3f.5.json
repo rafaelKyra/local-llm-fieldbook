@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 5,
+ "seconds": 47.846,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1146,
+ "addedLines": 39,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 8,
+  "toolCalls": 8,
+  "inputTokens": 20077,
+  "outputTokens": 3131,
+  "lastInputTokens": 3375,
+  "peakInputTokens": 3375,
+  "modelCalls": 8,
+  "usageReportedCalls": 8,
+  "cacheReadTokens": 16576,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 8,
+  "roles": {
+   "main": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 20077,
+    "outputTokens": 3131
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: `save_report()` in `report.py` now writes crash-safe: it writes to a temp file created in the destination's own directory (same filesystem, so the rename works  | Files changed: `report.py` only; `test_report.py` untouched. | Check: the fixed check (verify, no arguments) passed after the change — 2 tests, OK. Note that it also passed before any change, so it does not by itself prove "
+}

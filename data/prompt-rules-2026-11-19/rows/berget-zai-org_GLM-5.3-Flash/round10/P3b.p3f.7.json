@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 7,
+ "seconds": 43.655,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 966,
+ "addedLines": 40,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 10,
+  "toolCalls": 9,
+  "inputTokens": 31882,
+  "outputTokens": 4211,
+  "lastInputTokens": 4293,
+  "peakInputTokens": 4293,
+  "modelCalls": 10,
+  "usageReportedCalls": 10,
+  "cacheReadTokens": 27776,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 10,
+  "roles": {
+   "main": {
+    "calls": 10,
+    "reportedInput": 10,
+    "reportedOutput": 10,
+    "inputTokens": 31882,
+    "outputTokens": 4211
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made `save_report()` in `report.py` crash-safe: it now writes to a temp file in the same directory, flushes and fsyncs it, copies the old file's permissions, th"
+}

@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 5,
+ "seconds": 64.365,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1298,
+ "addedLines": 38,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 7,
+  "toolCalls": 8,
+  "inputTokens": 18030,
+  "outputTokens": 4462,
+  "lastInputTokens": 3482,
+  "peakInputTokens": 3482,
+  "modelCalls": 7,
+  "usageReportedCalls": 7,
+  "cacheReadTokens": 15360,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 7,
+  "roles": {
+   "main": {
+    "calls": 7,
+    "reportedInput": 7,
+    "reportedOutput": 7,
+    "inputTokens": 18030,
+    "outputTokens": 4462
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: 4. Swaps it in with `os.replace()` — a single atomic rename on both POSIX and Windows, so the production Windows file server gets the same guarantee. | 5. On any failure (including `KeyboardInterrupt`/`SystemExit`, since it catches `BaseException`) it deletes the temp file and re-raises, leaving the old report  | 6. On POSIX it also fsyncs the directory so the rename itself is durable; on Windows that call isn't available, so it's skipped there. | **Files** — `report.py` rewritten (8 → 45 lines). `test_report.py` is protected and was not modified. | **Check** — `verify` passed (2 tests, OK). Note: the suite also passed before the change, so it doesn't prove the fix by itself; I additionally ran a crash simu"
+}

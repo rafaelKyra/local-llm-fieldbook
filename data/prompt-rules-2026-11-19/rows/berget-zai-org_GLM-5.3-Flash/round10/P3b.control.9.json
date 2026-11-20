@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 9,
+ "seconds": 32.091,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 1154,
+ "addedLines": 38,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 9,
+  "toolCalls": 8,
+  "inputTokens": 27412,
+  "outputTokens": 3939,
+  "lastInputTokens": 4247,
+  "peakInputTokens": 4247,
+  "modelCalls": 9,
+  "usageReportedCalls": 9,
+  "cacheReadTokens": 23552,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 9,
+  "roles": {
+   "main": {
+    "calls": 9,
+    "reportedInput": 9,
+    "reportedOutput": 9,
+    "inputTokens": 27412,
+    "outputTokens": 3939
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made `save_report()` in `report.py` crash-safe. Previously it opened the destination with mode \"w\", truncating `report.txt` immediately, so a crash mid-write le | Files changed: `report.py` only. `test_report.py` is protected and could not be extended, so crash-safety was proven with an inline script: it simulates a crash | Check: the fixed `verify` (2 existing tests) passed both before and after the change, so it does not itself prove the fix; the crash-safety script above is the "
+}

@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "control",
+ "rep": 7,
+ "seconds": 20.072,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 703,
+ "addedLines": 8,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 7,
+  "toolCalls": 8,
+  "inputTokens": 15789,
+  "outputTokens": 1719,
+  "lastInputTokens": 2721,
+  "peakInputTokens": 2721,
+  "modelCalls": 7,
+  "usageReportedCalls": 7,
+  "cacheReadTokens": 14336,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 7,
+  "roles": {
+   "main": {
+    "calls": 7,
+    "reportedInput": 7,
+    "reportedOutput": 7,
+    "inputTokens": 15789,
+    "outputTokens": 1719
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: `parse_date()` in feed.py now accepts both vendor date styles: the old `%Y-%m-%d` and the new day-first `%d/%m/%Y` (e.g. `04/03/2026` → 2026-03-04). It tries ea | The fixed check (verify, no arguments) passed both before and after the edit — the existing 3 tests never exercise the new format, so the passing check does not"
+}

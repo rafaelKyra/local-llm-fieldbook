@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "control",
+ "rep": 8,
+ "seconds": 21.338,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 678,
+ "addedLines": 10,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 8,
+  "toolCalls": 9,
+  "inputTokens": 19959,
+  "outputTokens": 2040,
+  "lastInputTokens": 3186,
+  "peakInputTokens": 3186,
+  "modelCalls": 8,
+  "usageReportedCalls": 8,
+  "cacheReadTokens": 16064,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 7,
+  "roles": {
+   "main": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 19959,
+    "outputTokens": 2040
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: parse_date() in feed.py now tries both date formats: the old ISO style (2026-03-04) first, then the vendor's new day-first style (04/03/2026), raising ValueErro"
+}

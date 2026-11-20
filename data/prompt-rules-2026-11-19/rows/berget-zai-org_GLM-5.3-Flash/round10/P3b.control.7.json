@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 7,
+ "seconds": 50.979,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 996,
+ "addedLines": 42,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 10,
+  "toolCalls": 9,
+  "inputTokens": 29812,
+  "outputTokens": 3987,
+  "lastInputTokens": 4289,
+  "peakInputTokens": 4289,
+  "modelCalls": 10,
+  "usageReportedCalls": 10,
+  "cacheReadTokens": 26816,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 10,
+  "roles": {
+   "main": {
+    "calls": 10,
+    "reportedInput": 10,
+    "reportedOutput": 10,
+    "inputTokens": 29812,
+    "outputTokens": 3987
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Made `save_report()` in report.py crash-safe. It now writes the new content to a temp file in the same directory (mkstemp), flushes and fsyncs it, copies the ol | Files changed: report.py only (test_report.py is protected and was not modified). | Check: verify passed (2 tests, OK). Note the suite passed before the change too, so it does not prove the fix. As extra evidence I ran a crash simulation (patch"
+}

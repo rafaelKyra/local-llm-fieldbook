@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 4,
+ "seconds": 26.567,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 947,
+ "addedLines": 43,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 8,
+  "toolCalls": 8,
+  "inputTokens": 21407,
+  "outputTokens": 2338,
+  "lastInputTokens": 3456,
+  "peakInputTokens": 3456,
+  "modelCalls": 8,
+  "usageReportedCalls": 8,
+  "cacheReadTokens": 18880,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 8,
+  "roles": {
+   "main": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 21407,
+    "outputTokens": 2338
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: `save_report()` in report.py now writes atomically: it writes to a temp file in the same directory, flushes and fsyncs it, preserves the old file's permissions, | Files changed: report.py (rewritten, 8 → 52 lines). test_report.py is protected and was not modified. | Check: the fixed verify (2 existing tests) passed both before and after the change, so it does not prove the fix. I proved the crash path separately with a thro"
+}

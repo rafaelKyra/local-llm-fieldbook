@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "control",
+ "rep": 3,
+ "seconds": 28.097,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 743,
+ "addedLines": 9,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 8,
+  "toolCalls": 9,
+  "inputTokens": 20285,
+  "outputTokens": 2795,
+  "lastInputTokens": 3269,
+  "peakInputTokens": 3269,
+  "modelCalls": 8,
+  "usageReportedCalls": 8,
+  "cacheReadTokens": 17216,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 8,
+  "roles": {
+   "main": {
+    "calls": 8,
+    "reportedInput": 8,
+    "reportedOutput": 8,
+    "inputTokens": 20285,
+    "outputTokens": 2795
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: Made parse_row() in feed.py read both date styles: the old 2026-03-04 and the vendor's upcoming day-first 04/03/2026. parse_date() now tries %Y-%m-%d then %d/%m"
+}
