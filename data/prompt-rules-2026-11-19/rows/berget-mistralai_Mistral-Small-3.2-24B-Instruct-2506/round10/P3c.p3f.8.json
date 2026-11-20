@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "p3f",
+ "rep": 8,
+ "seconds": 59.754,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 86,
+ "addedLines": 7,
+ "replyShortcut": false,
+ "status": "budget",
+ "stopReason": "tool budget exhausted",
+ "usage": {
+  "turns": 42,
+  "toolCalls": 40,
+  "inputTokens": 159008,
+  "outputTokens": 1522,
+  "lastInputTokens": 5505,
+  "peakInputTokens": 5505,
+  "modelCalls": 42,
+  "usageReportedCalls": 42,
+  "cacheReadTokens": 0,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 0,
+  "roles": {
+   "main": {
+    "calls": 42,
+    "reportedInput": 42,
+    "reportedOutput": 42,
+    "inputTokens": 159008,
+    "outputTokens": 1522
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: The `verify` script is present in the directory and is executable. Let's run it again."
+}

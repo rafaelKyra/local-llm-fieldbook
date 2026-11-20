@@ -1,8 +1,8 @@
 {
- "kit": "P3b",
+ "kit": "P3c",
  "arm": "control",
- "rep": 1,
- "seconds": 92.655,
+ "rep": 4,
+ "seconds": 92.467,
  "solved": false,
  "behaviour": false,
  "replyChars": 213,
@@ -48,5 +48,5 @@
  },
  "crash": null,
  "checkExit": 1,
- "evidence": "  info: unittest=True crash-leaves-old-report=False\n  tail: Stopped: model endpoint unavailable (rate_limited): HTTP 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"google/gemma-4-31b-it:"
+ "evidence": "  info: unittest=True formats-and-errors=False\n  tail: Stopped: model endpoint unavailable (rate_limited): HTTP 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"google/gemma-4-31b-it:"
 }

@@ -1,7 +1,7 @@
 {
  "excluded_not_completed": {
   "openrouter-free-router/round5": 19,
-  "or-free-google_gemma-4-31b-it_free/round6": 27,
+  "or-free-google_gemma-4-31b-it_free/round6": 31,
   "or-free-nvidia_nemotron-3-ultra-550b-a55b_free/round6": 1
  },
  "kit_rows": [
@@ -83,16 +83,16 @@
    "kit": "P3b",
    "arm": "control",
    "withdrawn": false,
-   "runs": 7,
-   "solved": 6,
+   "runs": 16,
+   "solved": 15,
    "behaviour": 0,
    "behaviour_ci95": [
     0,
-    0.354
+    0.194
    ],
-   "mean_output_tokens": 943.6,
-   "mean_seconds": 30.1,
-   "mean_reply_chars": 163.1,
+   "mean_output_tokens": 1196.8,
+   "mean_seconds": 35.4,
+   "mean_reply_chars": 176.3,
    "crashes": 0
   },
   {
@@ -101,16 +101,16 @@
    "kit": "P3b",
    "arm": "p3f",
    "withdrawn": false,
-   "runs": 7,
-   "solved": 6,
-   "behaviour": 5,
+   "runs": 16,
+   "solved": 14,
+   "behaviour": 12,
    "behaviour_ci95": [
-    0.359,
-    0.918
+    0.505,
+    0.898
    ],
-   "mean_output_tokens": 1009.3,
-   "mean_seconds": 32.3,
-   "mean_reply_chars": 290.1,
+   "mean_output_tokens": 1116.2,
+   "mean_seconds": 33.5,
+   "mean_reply_chars": 393.8,
    "crashes": 0
   },
   {
@@ -119,16 +119,16 @@
    "kit": "P3c",
    "arm": "control",
    "withdrawn": false,
-   "runs": 7,
-   "solved": 6,
-   "behaviour": 0,
+   "runs": 16,
+   "solved": 14,
+   "behaviour": 1,
    "behaviour_ci95": [
-    0,
-    0.354
+    0.011,
+    0.283
    ],
-   "mean_output_tokens": 1282.7,
-   "mean_seconds": 44.0,
-   "mean_reply_chars": 188.0,
+   "mean_output_tokens": 954.1,
+   "mean_seconds": 31.9,
+   "mean_reply_chars": 168.7,
    "crashes": 0
   },
   {
@@ -137,16 +137,16 @@
    "kit": "P3c",
    "arm": "p3f",
    "withdrawn": false,
-   "runs": 6,
-   "solved": 4,
-   "behaviour": 4,
+   "runs": 16,
+   "solved": 14,
+   "behaviour": 8,
    "behaviour_ci95": [
-    0.3,
-    0.903
+    0.28,
+    0.72
    ],
-   "mean_output_tokens": 1399.5,
-   "mean_seconds": 35.9,
-   "mean_reply_chars": 280.8,
+   "mean_output_tokens": 1265.0,
+   "mean_seconds": 33.7,
+   "mean_reply_chars": 270.7,
    "crashes": 0
   },
   {
@@ -1278,24 +1278,24 @@
    "round": "round10",
    "kit": "P3b",
    "arm": "p3f",
-   "behaviour": "5/7",
-   "control_behaviour": "0/7",
-   "fisher_p": 0.021,
-   "solved": "6/7",
-   "control_solved": "6/7",
-   "output_tokens_vs_control_pct": 7.0
+   "behaviour": "12/16",
+   "control_behaviour": "0/16",
+   "fisher_p": 0.0,
+   "solved": "14/16",
+   "control_solved": "15/16",
+   "output_tokens_vs_control_pct": -6.7
   },
   {
    "model": "berget-mistralai_Mistral-Small-3.2-24B-Instruct-2506",
    "round": "round10",
    "kit": "P3c",
    "arm": "p3f",
-   "behaviour": "4/6",
-   "control_behaviour": "0/7",
-   "fisher_p": 0.021,
-   "solved": "4/6",
-   "control_solved": "6/7",
-   "output_tokens_vs_control_pct": 9.1
+   "behaviour": "8/16",
+   "control_behaviour": "1/16",
+   "fisher_p": 0.0155,
+   "solved": "14/16",
+   "control_solved": "14/16",
+   "output_tokens_vs_control_pct": 32.6
   },
   {
    "model": "berget-zai-org_GLM-5.3-Flash",

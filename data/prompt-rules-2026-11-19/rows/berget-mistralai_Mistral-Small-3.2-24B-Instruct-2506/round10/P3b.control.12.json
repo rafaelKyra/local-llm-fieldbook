@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 12,
+ "seconds": 51.293,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 150,
+ "addedLines": 3,
+ "replyShortcut": false,
+ "status": "unverified",
+ "stopReason": "finished without a passing check",
+ "usage": {
+  "turns": 17,
+  "toolCalls": 23,
+  "inputTokens": 56143,
+  "outputTokens": 1107,
+  "lastInputTokens": 3572,
+  "peakInputTokens": 3572,
+  "modelCalls": 31,
+  "usageReportedCalls": 31,
+  "cacheReadTokens": 0,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 0,
+  "roles": {
+   "main": {
+    "calls": 17,
+    "reportedInput": 17,
+    "reportedOutput": 17,
+    "inputTokens": 46073,
+    "outputTokens": 790
+   },
+   "explorer": {
+    "calls": 14,
+    "reportedInput": 14,
+    "reportedOutput": 14,
+    "inputTokens": 10070,
+    "outputTokens": 317
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: The `save_report` function in `report.py` was updated to write to a temporary file first and then rename it to the target path. The test suite passes."
+}

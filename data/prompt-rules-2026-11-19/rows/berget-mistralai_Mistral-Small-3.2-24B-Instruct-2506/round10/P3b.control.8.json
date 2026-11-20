@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 8,
+ "seconds": 54.218,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 205,
+ "addedLines": 9,
+ "replyShortcut": false,
+ "status": "completed",
+ "stopReason": "finished",
+ "usage": {
+  "turns": 27,
+  "toolCalls": 20,
+  "inputTokens": 86538,
+  "outputTokens": 1610,
+  "lastInputTokens": 4562,
+  "peakInputTokens": 4562,
+  "modelCalls": 32,
+  "usageReportedCalls": 32,
+  "cacheReadTokens": 0,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 0,
+  "roles": {
+   "main": {
+    "calls": 27,
+    "reportedInput": 27,
+    "reportedOutput": 27,
+    "inputTokens": 83933,
+    "outputTokens": 1173
+   },
+   "explorer": {
+    "calls": 5,
+    "reportedInput": 5,
+    "reportedOutput": 5,
+    "inputTokens": 2605,
+    "outputTokens": 437
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Changed `save_report()` in `report.py` to write to a temporary file first and then replace the original file only if the write operation is successful. The chec"
+}

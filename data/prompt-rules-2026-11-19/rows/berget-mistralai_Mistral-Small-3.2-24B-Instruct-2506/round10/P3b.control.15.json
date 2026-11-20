@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "control",
+ "rep": 15,
+ "seconds": 110.423,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 27,
+ "addedLines": 7,
+ "replyShortcut": false,
+ "status": "budget",
+ "stopReason": "tool budget exhausted",
+ "usage": {
+  "turns": 40,
+  "toolCalls": 40,
+  "inputTokens": 259293,
+  "outputTokens": 5083,
+  "lastInputTokens": 10922,
+  "peakInputTokens": 10922,
+  "modelCalls": 40,
+  "usageReportedCalls": 40,
+  "cacheReadTokens": 0,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 0,
+  "roles": {
+   "main": {
+    "calls": 40,
+    "reportedInput": 40,
+    "reportedOutput": 40,
+    "inputTokens": 259293,
+    "outputTokens": 5083
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: I will run the check again."
+}

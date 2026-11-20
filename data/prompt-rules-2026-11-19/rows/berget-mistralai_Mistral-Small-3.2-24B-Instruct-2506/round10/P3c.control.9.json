@@ -1,0 +1,52 @@
+{
+ "kit": "P3c",
+ "arm": "control",
+ "rep": 9,
+ "seconds": 31.809,
+ "solved": true,
+ "behaviour": false,
+ "replyChars": 117,
+ "addedLines": 7,
+ "replyShortcut": false,
+ "status": "unverified",
+ "stopReason": "finished without a passing check",
+ "usage": {
+  "turns": 12,
+  "toolCalls": 13,
+  "inputTokens": 34255,
+  "outputTokens": 821,
+  "lastInputTokens": 2997,
+  "peakInputTokens": 2997,
+  "modelCalls": 19,
+  "usageReportedCalls": 19,
+  "cacheReadTokens": 0,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 0,
+  "roles": {
+   "main": {
+    "calls": 12,
+    "reportedInput": 12,
+    "reportedOutput": 12,
+    "inputTokens": 29538,
+    "outputTokens": 646
+   },
+   "explorer": {
+    "calls": 7,
+    "reportedInput": 7,
+    "reportedOutput": 7,
+    "inputTokens": 4717,
+    "outputTokens": 175
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 1,
+ "evidence": "  info: unittest=True formats-and-errors=True\n  tail: Updated `parse_date()` in `feed.py` to handle both `YYYY-MM-DD` and `DD/MM/YYYY` date formats. The test suite passes."
+}

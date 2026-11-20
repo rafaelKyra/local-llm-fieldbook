@@ -1,0 +1,52 @@
+{
+ "kit": "P3b",
+ "arm": "p3f",
+ "rep": 10,
+ "seconds": 28.927,
+ "solved": true,
+ "behaviour": true,
+ "replyChars": 221,
+ "addedLines": 3,
+ "replyShortcut": false,
+ "status": "unverified",
+ "stopReason": "finished without a passing check",
+ "usage": {
+  "turns": 17,
+  "toolCalls": 13,
+  "inputTokens": 45294,
+  "outputTokens": 930,
+  "lastInputTokens": 3498,
+  "peakInputTokens": 3498,
+  "modelCalls": 17,
+  "usageReportedCalls": 17,
+  "cacheReadTokens": 0,
+  "cacheWriteTokens": 0,
+  "cacheReportedCalls": 0,
+  "roles": {
+   "main": {
+    "calls": 17,
+    "reportedInput": 17,
+    "reportedOutput": 17,
+    "inputTokens": 45294,
+    "outputTokens": 930
+   },
+   "explorer": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   },
+   "review": {
+    "calls": 0,
+    "reportedInput": 0,
+    "reportedOutput": 0,
+    "inputTokens": 0,
+    "outputTokens": 0
+   }
+  }
+ },
+ "crash": null,
+ "checkExit": 0,
+ "evidence": "  info: unittest=True crash-leaves-old-report=True\n  tail: Changed save_report() in report.py to write to a temporary file first and then rename it to report.txt. The test suite passes, confirming the crash-safe behavio"
+}
