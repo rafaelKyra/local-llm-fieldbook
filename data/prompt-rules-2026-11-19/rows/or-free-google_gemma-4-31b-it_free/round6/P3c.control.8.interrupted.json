@@ -1,8 +1,8 @@
 {
  "kit": "P3c",
  "arm": "control",
- "rep": 3,
- "seconds": 92.417,
+ "rep": 8,
+ "seconds": 92.609,
  "solved": false,
  "behaviour": false,
  "replyChars": 213,

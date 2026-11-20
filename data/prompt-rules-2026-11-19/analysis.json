@@ -1,7 +1,7 @@
 {
  "excluded_not_completed": {
   "openrouter-free-router/round5": 19,
-  "or-free-google_gemma-4-31b-it_free/round6": 31,
+  "or-free-google_gemma-4-31b-it_free/round6": 32,
   "or-free-nvidia_nemotron-3-ultra-550b-a55b_free/round6": 1
  },
  "kit_rows": [
